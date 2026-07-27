@@ -2356,11 +2356,22 @@ function monitorCompareDims(ph) {
     const map = { '苹果':'#555', '华为':'#c41230', '小米':'#ff6900', 'vivo':'#415fff', 'OPPO':'#1ba784', '荣耀':'#0b8ed0', '三星':'#1428a0', 'NVIDIA':'#76b900', 'AMD':'#ed1c24', 'Intel':'#0071c5', '格力':'#00a0e9', '美的':'#0066cc', '海尔':'#009ad6', '石头':'#333', '追觅':'#e60012', '科沃斯':'#005bac', '云鲸':'#00b4d8', '联想':'#e2231a', '华硕':'#00b3e3', '戴尔':'#007db8', '索尼':'#000', 'Bose':'#111', 'LG':'#a50034', 'AOC':'#e2231a' };
     return map[brand] || '#999';
   }
+  // 各品类拼接搜索词用的后缀，提高图片命中精度
+  const IMG_KEYWORD = { phone:'手机', gpu:'显卡', ac:'空调', robot:'扫地机器人', laptop:'笔记本电脑', cpu:'处理器', earphone:'耳机', monitor:'显示器' };
+  function bingImage(phone) {
+    const suffix = IMG_KEYWORD[state.category] || '';
+    const q = encodeURIComponent((phone.brand + ' ' + phone.model + ' ' + suffix).trim());
+    // 轮询两个必应缩略图域名，均失败再退回 SVG 占位
+    return 'https://tse1.mm.bing.net/th?q=' + q + '&w=240&h=240&c=7';
+  }
   function phoneImage(phone) {
+    // 1) 数据自带的真实图（如手机 CDN 图）优先
     if (phone.image && phone.image.startsWith('http')) {
-      return `<img src="${phone.image}" alt="${phone.model}" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/><span style="display:none">${svgFallback(phone)}</span>`;
+      return `<img src="${phone.image}" alt="${escapeHtml(phone.model)}" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block'"/><span style="display:none">${svgFallback(phone)}</span>`;
     }
-    return svgFallback(phone);
+    // 2) 无自带图 → 按型号自动抓取必应真实产品缩略图，失败再退回 SVG
+    const bing = bingImage(phone);
+    return `<img src="${bing}" alt="${escapeHtml(phone.model)}" loading="lazy" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block'"/><span style="display:none">${svgFallback(phone)}</span>`;
   }
   function svgFallback(phone) {
     const c = brandColor(phone.brand);
