@@ -926,7 +926,7 @@ function renderCompareBar() {
 
 function addToCompare(phoneId, storage) {
   if (!canAddCompare() && !isInCompare(phoneId)) {
-    toast('最多同时对比3款手机');
+    toast('最多同时对比3款产品');
     return;
   }
   if (isInCompare(phoneId)) {
@@ -978,7 +978,7 @@ function renderNav() {
     nav.className = 'nav';
     nav.innerHTML = `
       <span class="nav-back" id="navBack">‹</span>
-      <span class="nav-title" id="navTitle">手机选购对比</span>
+      <span class="nav-title" id="navTitle">智选</span>
     `;
     $('#app').insertBefore(nav, $('#app').firstChild);
     $('#navBack').addEventListener('click', onBack);
@@ -987,10 +987,10 @@ function renderNav() {
   const title = $('#navTitle');
   if (state.page === 'home') {
     back.classList.remove('visible');
-    title.textContent = '手机选购对比';
+    title.textContent = '智选';
   } else if (state.page === 'list') {
     back.classList.add('visible');
-    const label = state.filterPriceRange || state.filterBrand || '全部机型';
+    const label = state.filterPriceRange || state.filterBrand || '全部产品';
     title.textContent = label;
   } else if (state.page === 'compare') {
     back.classList.add('visible');
@@ -1177,7 +1177,7 @@ function renderHome(page) {
         addToCompare(phoneId);
         toast('已加入对比');
       } else {
-        toast('最多同时对比3款手机');
+        toast('最多同时对比3款产品');
       }
     });
   });
@@ -1383,7 +1383,7 @@ function renderPhoneList(container) {
         addToCompare(phoneId);
         toast('已加入对比');
       } else {
-        toast('最多同时对比3款手机');
+        toast('最多同时对比3款产品');
       }
     });
   });
@@ -1653,7 +1653,7 @@ function openPhoneDetail(phoneId) {
       toast('已加入对比');
       modal.classList.remove('show');
     } else {
-      toast('最多同时对比3款手机');
+      toast('最多同时对比3款产品');
     }
   });
   modal.classList.add('show');
