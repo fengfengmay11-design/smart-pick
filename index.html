@@ -610,6 +610,9 @@
   /* 意图解析标签 */
   .am-intent { margin:14px 0 6px; }
   .am-intent .am-intent-label { font-size:11px; color:var(--text-hint); font-weight:700; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:7px; }
+  .ai-engine-badge { display:inline-flex; align-items:center; font-size:10px; font-weight:700; padding:2px 8px; border-radius:20px; margin-left:6px; text-transform:none; letter-spacing:0; vertical-align:middle; }
+  .ai-engine-badge.llm { color:#0f6e56; background:#e1f5ee; }
+  .ai-engine-badge.local { color:#854f0b; background:#faeeda; }
   .am-intent .am-intent-tags { display:flex; gap:6px; flex-wrap:wrap; }
   .am-intent .am-itag { font-size:11px; font-weight:600; color:var(--primary-dark); background:var(--primary-light); border-radius:20px; padding:4px 11px; display:inline-flex; align-items:center; gap:4px; }
   .am-intent .am-itag.miss { color:var(--text-hint); background:var(--bg); }
@@ -2231,13 +2234,54 @@ function monitorCompareDims(ph) {
     return list.filter(it => it.words.some(w => lower.includes(w.toLowerCase())));
   }
 
+  // 阶段二后端地址：优先调用云端大模型解析意图，不可用则自动降级本地规则
+  const AI_BACKEND = 'http://127.0.0.1:8000';
+
+  // 意图解析：优先云端大模型，失败/超时/未启动 → 降级本地正则关键词
+  async function resolveAiIntent(query) {
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 8000);
+      const resp = await fetch(AI_BACKEND + '/api/parse', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query, category: state.category }),
+        signal: ctrl.signal,
+      });
+      clearTimeout(timer);
+      const res = await resp.json();
+      if (res && res.ok && res.engine === 'llm') {
+        const labels = res.intent.intents || [];
+        const list = AI_INTENTS[state.category] || [];
+        const intents = list.filter(it => labels.includes(it.label));
+        const brand = (res.intent.brand && cat().brands.includes(res.intent.brand)) ? res.intent.brand : parseAiBrand(query);
+        const budget = (typeof res.intent.budget === 'number') ? res.intent.budget : parseAiBudget(query);
+        return { budget, brand, intents, engine: 'llm', model: res.model, latency: res.latency_ms, user: res.intent.user || null };
+      }
+    } catch (e) { /* 网络错误/超时/后端未启动 → 走降级 */ }
+    return { budget: parseAiBudget(query), brand: parseAiBrand(query), intents: parseAiIntents(query), engine: 'local', user: null };
+  }
+
   // 打开 AI 选购弹窗并给出推荐
-  function openAiShop(query) {
+  async function openAiShop(query) {
     const C = cat();
     const data = d();
-    const budget = parseAiBudget(query);
-    const brand = parseAiBrand(query);
-    const intents = parseAiIntents(query);
+
+    // 先弹出加载态（大模型可能要等 1~3 秒）
+    $('#amContent').innerHTML = '<div class="am-head"><div class="am-title">✨ AI 正在理解你的需求…</div><span class="am-close" id="amCloseL">✕</span></div>'
+      + '<div style="padding:34px 10px;text-align:center;color:var(--text-muted);font-size:14px;line-height:1.8;">正在解析：<b>' + escapeHtml(query) + '</b><br><span style="font-size:12px;">连接云端大模型中，若未启动后端将自动使用本地规则…</span></div>';
+    $('#aiModal').classList.add('show');
+    const _lc = $('#amContent').querySelector('#amCloseL');
+    if (_lc) _lc.addEventListener('click', () => $('#aiModal').classList.remove('show'));
+
+    const resolved = await resolveAiIntent(query);
+    const budget = resolved.budget;
+    const brand = resolved.brand;
+    const intents = resolved.intents;
+    const aiEngine = resolved.engine;
+    const aiUser = resolved.user;
+    const aiModel = resolved.model;
+    const aiLatency = resolved.latency;
 
     // 全库打分
     const scored = data.map(item => {
@@ -2296,8 +2340,14 @@ function monitorCompareDims(ph) {
     const intentTags = [];
     if (budget) intentTags.push({ t: '💰 预算约 ¥' + budget, miss: false });
     if (brand) intentTags.push({ t: '🏷️ ' + brand, miss: false });
+    if (aiUser) intentTags.push({ t: '👤 ' + aiUser, miss: false });
     intents.forEach(it => intentTags.push({ t: '✓ ' + it.label, miss: false }));
     if (intentTags.length === 0) intentTags.push({ t: '未识别到明确条件，按综合热度推荐', miss: true });
+
+    // 引擎标识徽章：云端大模型 / 本地规则
+    const engineBadge = aiEngine === 'llm'
+      ? '<span class="ai-engine-badge llm">☁️ 云端大模型 · ' + (aiModel || 'LLM') + (aiLatency ? ' · ' + aiLatency + 'ms' : '') + '</span>'
+      : '<span class="ai-engine-badge local">⚡ 本地规则引擎（未连后端）</span>';
 
     // 质量自评
     const parsedCount = (budget ? 1 : 0) + (brand ? 1 : 0) + intents.length;
@@ -2324,7 +2374,7 @@ function monitorCompareDims(ph) {
     content.innerHTML =
       '<div class="am-head"><div class="am-title">✨ AI 选购结果</div><span class="am-close" id="amClose">✕</span></div>' +
       '<div class="am-query">你的需求：<b>' + escapeHtml(query) + '</b></div>' +
-      '<div class="am-intent"><div class="am-intent-label">AI 意图解析</div><div class="am-intent-tags">' +
+      '<div class="am-intent"><div class="am-intent-label">AI 意图解析 ' + engineBadge + '</div><div class="am-intent-tags">' +
         intentTags.map(t => '<span class="am-itag' + (t.miss ? ' miss' : '') + '">' + escapeHtml(t.t) + '</span>').join('') +
       '</div></div>' +
       '<div class="help-result show" style="margin-top:14px;">' +
