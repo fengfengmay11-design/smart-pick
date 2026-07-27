@@ -87,29 +87,28 @@
   }
 
   /* 价格区间卡片 */
-  .price-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
+  .price-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; }
   .price-card {
-    background:var(--card-bg); border-radius:var(--radius-sm); padding:15px 16px;
-    display:flex; align-items:center; gap:13px; text-align:left;
+    background:var(--card-bg); border-radius:var(--radius-sm); padding:14px 15px;
+    display:flex; align-items:center; gap:11px; text-align:left;
     cursor:pointer; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s, border-color .18s;
     position:relative; overflow:hidden; border:1px solid var(--border-light);
   }
   .price-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:var(--primary); }
   .price-card:active { transform:scale(.985); }
   .price-card .pc-icon {
-    width:42px; height:42px; flex-shrink:0; border-radius:12px;
+    width:34px; height:34px; flex-shrink:0; border-radius:10px;
     background:rgba(79,70,229,.08); color:var(--primary);
-    display:flex; align-items:baseline; justify-content:center; gap:1px;
-    font-weight:700; letter-spacing:-.02em; transition:background .18s;
+    display:flex; align-items:center; justify-content:center;
+    transition:background .18s;
   }
-  .price-card .pc-icon .yen { font-size:16px; }
-  .price-card .pc-icon .lv { font-size:15px; }
-  .price-card:hover .pc-icon { background:rgba(79,70,229,.14); }
+  .price-card .pc-icon svg { width:18px; height:18px; }
+  .price-card:hover .pc-icon { background:rgba(79,70,229,.15); }
   .price-card .pc-body { flex:1; min-width:0; }
-  .price-card .p-label { font-size:15px; font-weight:700; color:var(--text); letter-spacing:-.01em; }
-  .price-card .p-count { font-size:12.5px; color:var(--text-hint); margin-top:3px; }
+  .price-card .p-label { font-size:14.5px; font-weight:700; color:var(--text); letter-spacing:-.01em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .price-card .p-count { font-size:12px; color:var(--text-hint); margin-top:2px; }
   .price-card .p-count b { color:var(--primary); font-weight:700; }
-  .price-card .pc-go { color:var(--border); font-size:19px; opacity:0; transform:translateX(-4px); transition:opacity .18s, transform .18s; flex-shrink:0; }
+  .price-card .pc-go { color:var(--border); font-size:18px; opacity:0; transform:translateX(-4px); transition:opacity .18s, transform .18s; flex-shrink:0; }
   .price-card:hover .pc-go { opacity:1; transform:translateX(0); color:var(--primary); }
 
   /* 品牌 */
@@ -1108,11 +1107,10 @@ function renderHome(page) {
       const price = C.getPrice(p);
       return price >= range.min && price < range.max;
     }).length;
-    // 用 ¥ + 档位数字表示价位高低，统一克制风格（不用花哨 emoji）
-    const lv = Math.min(idx + 1, C.priceRanges.length);
+    // 统一的价签图标（克制、不误导）
     const card = document.createElement('div');
     card.className = 'price-card';
-    card.innerHTML = `<div class="pc-icon"><span class="yen">¥</span><span class="lv">${lv}</span></div>`
+    card.innerHTML = `<div class="pc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>`
       + `<div class="pc-body"><div class="p-label">${range.label}</div>`
       + `<div class="p-count"><b>${count}</b> 款${C.name}</div></div>`
       + `<div class="pc-go">›</div>`;
