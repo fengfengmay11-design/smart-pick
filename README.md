@@ -2,13 +2,26 @@
 
 > 一个面向普通消费者的 **AI 驱动选购决策工具**：不再让用户对着一堆参数表发愁，而是把"我该买哪个"这个真实决策问题，交给一个可解释、可自评的推荐引擎来回答。
 
-覆盖 **8 大品类、528 款真实产品**，纯前端零后端即可运行，也可一键部署为在线 Demo。
+覆盖 **8 大品类、528 款真实产品**，纯前端零后端即可运行。
+
+<p align="center">
+  <a href="https://5d8be35e22104c7d896fd65b42dc23b1.tc-nanjing.share.codebuddy.woa.com"><b>🔗 在线体验 Demo</b></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/品类-8%20大类-4f46e5" alt="品类" />
+  <img src="https://img.shields.io/badge/产品-528%20款-6366f1" alt="产品数" />
+  <img src="https://img.shields.io/badge/AI-可解释推荐引擎-8b5cf6" alt="AI" />
+  <img src="https://img.shields.io/badge/技术栈-原生JS%20零依赖-0ea5e9" alt="技术栈" />
+  <img src="https://img.shields.io/badge/License-MIT-10b981" alt="License" />
+</p>
 
 <p align="center">
   <img src="docs/screenshot-home.png" width="30%" alt="首页" />
   <img src="docs/screenshot-compare.png" width="30%" alt="对比页" />
   <img src="docs/screenshot-ai.png" width="30%" alt="AI推荐" />
 </p>
+<p align="center"><sub>首页多品类浏览　·　参数对比页　·　AI 自然语言选购</sub></p>
 
 ---
 
