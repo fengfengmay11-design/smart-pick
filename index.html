@@ -558,6 +558,53 @@
     font-weight:600; box-shadow:0 8px 32px rgba(0,0,0,.15);
   }
   .toast.show { opacity:1; }
+
+  /* ===== AI 智能选购入口卡片 ===== */
+  .ai-shop-card {
+    background:linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    border-radius:var(--radius); padding:18px; margin-bottom:18px;
+    box-shadow:0 8px 28px rgba(79,70,229,.28); position:relative; overflow:hidden;
+  }
+  .ai-shop-card::after { content:""; position:absolute; right:-30px; top:-30px; width:120px; height:120px; background:rgba(255,255,255,.08); border-radius:50%; }
+  .ai-shop-card .asc-title { color:#fff; font-size:16px; font-weight:800; display:flex; align-items:center; gap:7px; margin-bottom:4px; letter-spacing:-0.01em; }
+  .ai-shop-card .asc-title .asc-tag { font-size:10px; font-weight:700; background:rgba(255,255,255,.22); color:#fff; padding:2px 8px; border-radius:20px; }
+  .ai-shop-card .asc-sub { color:rgba(255,255,255,.82); font-size:12px; margin-bottom:12px; }
+  .ai-shop-card .asc-inputwrap { display:flex; gap:8px; position:relative; z-index:1; }
+  .ai-shop-card .asc-input {
+    flex:1; border:none; border-radius:var(--radius-sm); padding:12px 14px;
+    font-size:14px; color:var(--text); background:#fff; outline:none;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+  }
+  .ai-shop-card .asc-input::placeholder { color:var(--text-hint); }
+  .ai-shop-card .asc-btn {
+    border:none; border-radius:var(--radius-sm); padding:0 18px; font-size:14px; font-weight:700;
+    color:var(--primary); background:#fff; cursor:pointer; white-space:nowrap;
+    box-shadow:0 2px 8px rgba(0,0,0,.06); transition:transform .15s;
+  }
+  .ai-shop-card .asc-btn:hover { transform:translateY(-1px); }
+  .ai-shop-card .asc-chips { display:flex; gap:6px; flex-wrap:wrap; margin-top:11px; position:relative; z-index:1; }
+  .ai-shop-card .asc-chip {
+    font-size:11px; color:#fff; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25);
+    padding:4px 11px; border-radius:20px; cursor:pointer; transition:background .15s;
+  }
+  .ai-shop-card .asc-chip:hover { background:rgba(255,255,255,.3); }
+
+  /* ===== AI 选购弹窗 ===== */
+  .ai-modal { position:fixed; inset:0; background:rgba(15,23,42,.5); backdrop-filter:blur(4px); z-index:200; display:none; align-items:flex-start; justify-content:center; overflow-y:auto; padding:40px 16px; }
+  .ai-modal.show { display:flex; }
+  .ai-modal .am-content { background:var(--card-bg); border-radius:20px; width:100%; max-width:430px; padding:24px; box-shadow:0 20px 60px rgba(0,0,0,.3); animation:amIn .3s cubic-bezier(.16,1,.3,1); }
+  @keyframes amIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  .am-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
+  .am-head .am-title { font-size:19px; font-weight:800; letter-spacing:-0.02em; display:flex; align-items:center; gap:7px; }
+  .am-head .am-close { font-size:22px; color:var(--text-hint); cursor:pointer; line-height:1; }
+  .am-query { font-size:13px; color:var(--text-secondary); background:var(--bg); border-radius:var(--radius-sm); padding:10px 13px; margin:10px 0 4px; line-height:1.5; }
+  .am-query b { color:var(--primary); }
+  /* 意图解析标签 */
+  .am-intent { margin:14px 0 6px; }
+  .am-intent .am-intent-label { font-size:11px; color:var(--text-hint); font-weight:700; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:7px; }
+  .am-intent .am-intent-tags { display:flex; gap:6px; flex-wrap:wrap; }
+  .am-intent .am-itag { font-size:11px; font-weight:600; color:var(--primary-dark); background:var(--primary-light); border-radius:20px; padding:4px 11px; display:inline-flex; align-items:center; gap:4px; }
+  .am-intent .am-itag.miss { color:var(--text-hint); background:var(--bg); }
 </style>
 </head>
 <body>
@@ -600,6 +647,11 @@
 <!-- 帮我选弹窗 -->
 <div class="help-modal" id="helpModal">
   <div class="hm-content" id="hmContent"></div>
+</div>
+
+<!-- AI 自然语言选购弹窗 -->
+<div class="ai-modal" id="aiModal">
+  <div class="am-content" id="amContent"></div>
 </div>
 
 <script src="phone-data.js"></script>
@@ -974,6 +1026,17 @@ function renderHome(page) {
     <div class="cat-tabs" id="catTabs">
       ${Object.keys(CATEGORIES).map(k => `<div class="cat-tab${state.category===k?' active':''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
     </div>
+    <div class="ai-shop-card">
+      <div class="asc-title">✨ AI 智能选购 <span class="asc-tag">自然语言</span></div>
+      <div class="asc-sub">用一句话描述需求，AI 帮你从 ${d().length} 款${C.name}里挑出最合适的</div>
+      <div class="asc-inputwrap">
+        <input type="text" class="asc-input" id="aiShopInput" placeholder="${aiPlaceholder()}">
+        <button class="asc-btn" id="aiShopBtn">找一找</button>
+      </div>
+      <div class="asc-chips" id="aiShopChips">
+        ${aiExamples().map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
+      </div>
+    </div>
     <div class="search-box">
       <span class="s-icon">🔍</span>
       <input type="text" placeholder="搜索品牌、系列、型号..." id="searchInput" value="${escapeHtml(state.searchQuery)}">
@@ -1000,6 +1063,15 @@ function renderHome(page) {
         navigateTo('home');
       }
     });
+  });
+
+  // AI 智能选购
+  const aiInput = page.querySelector('#aiShopInput');
+  const runAi = () => { const q = aiInput.value.trim(); if (q.length >= 2) openAiShop(q); else toast('多描述一点你的需求'); };
+  page.querySelector('#aiShopBtn').addEventListener('click', runAi);
+  aiInput.addEventListener('keydown', e => { if (e.key === 'Enter') runAi(); });
+  page.querySelectorAll('.asc-chip').forEach(chip => {
+    chip.addEventListener('click', function() { aiInput.value = this.dataset.q; openAiShop(this.dataset.q); });
   });
 
   // 搜索
@@ -2047,6 +2119,230 @@ function monitorCompareDims(ph) {
   }
 
   $('#helpModal').addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('show');
+  });
+
+  // ==================== AI 自然语言选购 ====================
+  // 各品类的输入占位与示例
+  const AI_PRESETS = {
+    phone:    { ph: '例如：5000左右，拍照好，续航强的手机', ex: ['5000左右拍照好续航强', '预算3000性价比高', '轻薄好看的小屏手机', '游戏性能强不发烫'] },
+    gpu:      { ph: '例如：预算4000，打4K游戏，功耗别太高', ex: ['4000元4K游戏', '大显存跑AI', '性价比高的甜品卡', '预算2000够用就行'] },
+    cpu:      { ph: '例如：预算2000，打游戏兼顾生产力', ex: ['游戏性能强', '2000元办公够用', '多核生产力强', '低功耗省电'] },
+    laptop:   { ph: '例如：8000左右，轻薄办公，续航久', ex: ['8000轻薄办公', '性能强剪视频', '预算5000学生用', '苹果生态好用'] },
+    ac:       { ph: '例如：卧室用，1.5匹，安静省电', ex: ['卧室1.5匹省电', '客厅3匹大风量', '预算3000够用', '静音又省电'] },
+    robot:    { ph: '例如：4000左右，自动洗拖布，吸力大', ex: ['自动洗拖布', '吸力大能扫毛发', '预算3000够用', '静音爬坡强'] },
+    earphone: { ph: '例如：1000左右，降噪好，续航久', ex: ['降噪好续航久', '预算500性价比', '音质好听歌', '运动防水稳固'] },
+    monitor:  { ph: '例如：2000左右，高刷电竞，色彩准', ex: ['高刷电竞屏', '4K色彩准修图', '预算1500办公', '大屏带鱼屏'] }
+  };
+  function aiPlaceholder() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ph; }
+  function aiExamples() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ex; }
+
+  // 语义意图词典：把口语映射到"标签关键词"或"数值维度"
+  // dim: 数值维度打分；tagAny: 命中 tags 中任一关键词加分
+  const AI_INTENTS = {
+    phone: [
+      { key:'拍照',   words:['拍照','影像','相机','摄影','拍视频'], label:'影像强', tagAny:['影像','徕卡','大底','长焦','人像','摄影','专业影像'] },
+      { key:'续航',   words:['续航','电池','待机','大电池','用得久'], label:'续航强', tagAny:['长续航','大电池'] },
+      { key:'轻薄',   words:['轻','薄','轻便','便携','手感'], label:'轻薄', tagAny:['轻薄','小屏'] },
+      { key:'大屏',   words:['大屏','屏幕大','看剧','2k屏'], label:'大屏', tagAny:['大屏','2K屏'] },
+      { key:'性能',   words:['性能','游戏','打游戏','电竞','流畅','不卡','散热','发烫'], label:'性能强', tagAny:['旗舰','电竞','骁龙','天玑'] },
+      { key:'性价比', words:['性价比','便宜','实惠','划算','千元','入门'], label:'性价比', tagAny:['性价比','千元机','中端'] },
+      { key:'自拍',   words:['自拍','美颜','前置'], label:'自拍好', tagAny:['自拍','人像'] }
+    ],
+    gpu: [
+      { key:'4k',     words:['4k','高画质','光追','光线追踪'], label:'4K/光追', dim:s=>((s.vram||0)>=16?1:0.3) },
+      { key:'显存',   words:['显存','大显存','ai','训练','跑模型','炼丹'], label:'大显存', dim:s=>Math.min((s.vram||0)/24,1) },
+      { key:'性能',   words:['性能','高性能','旗舰','最强','跑分'], label:'高性能', dim:s=>Math.min((s.shaders||0)/16000,1) },
+      { key:'功耗',   words:['功耗','省电','静音','低功耗','小机箱'], label:'低功耗', dim:s=>1-Math.min((s.tdp||200)/450,1) },
+      { key:'性价比', words:['性价比','甜品','便宜','够用','实惠'], label:'性价比', tagAny:['性价比','甜品'] }
+    ],
+    cpu: [
+      { key:'性能',   words:['性能','游戏','打游戏','生产力','剪辑','渲染','最强'], label:'高性能', dim:s=>Math.min((parseInt(s.cores)||4)/24,1) },
+      { key:'办公',   words:['办公','日常','够用','上网','轻度'], label:'日常够用', dim:s=>1-Math.min((parseInt(s.cores)||4)/16,1) },
+      { key:'功耗',   words:['功耗','省电','低功耗','不发热','静音'], label:'低功耗', dim:s=>1-Math.min((parseInt(s.tdp)||65)/170,1) }
+    ],
+    laptop: [
+      { key:'轻薄',   words:['轻','薄','轻薄','便携','带出门','通勤'], label:'轻薄', dim:s=>1-Math.min((parseFloat(s.weight)||1.5)/2.5,1) },
+      { key:'性能',   words:['性能','游戏','剪视频','渲染','跑分','独显'], label:'性能强', tagAny:['游戏','高性能','独显','电竞'] },
+      { key:'续航',   words:['续航','电池','用得久','待机'], label:'续航久', tagAny:['长续航','续航'] },
+      { key:'学生',   words:['学生','便宜','性价比','入门','够用'], label:'性价比', tagAny:['性价比','学生'] }
+    ],
+    ac: [
+      { key:'卧室',   words:['卧室','小房间','1.5匹','1匹','安静','静音'], label:'卧室/静音', dim:s=>((s.horsepower||'').includes('1.5')||(s.horsepower||'').includes('1匹')?1:0.3)*(1-Math.min((s.noise||40)/60,1)) },
+      { key:'客厅',   words:['客厅','大房间','3匹','2匹','大风量','制冷快'], label:'客厅/大风量', dim:s=>((s.horsepower||'').includes('3')||(s.horsepower||'').includes('2匹')?1:0.3) },
+      { key:'省电',   words:['省电','节能','一级能效','变频'], label:'省电节能', dim:s=>((s.energyRating||'').includes('一级')||(s.energyRating||'').includes('新一级')?1:0.4) }
+    ],
+    robot: [
+      { key:'基站',   words:['洗拖布','自动','基站','集尘','免手洗','解放双手'], label:'全能基站', dim:s=>(s.baseStation?1:0.2) },
+      { key:'吸力',   words:['吸力','大吸力','毛发','宠物','干净'], label:'大吸力', dim:s=>{const n=parseInt((s.suction||'').replace(/[^0-9]/g,''))||3000; return Math.min(n/12000,1);} },
+      { key:'避障',   words:['避障','智能','导航','不乱撞','爬坡'], label:'智能避障', tagAny:['避障','导航','激光'] }
+    ],
+    earphone: [
+      { key:'降噪',   words:['降噪','安静','通勤','地铁','飞机'], label:'主动降噪', dim:s=>((s.noise||'').includes('主动降噪')?1:0.2) },
+      { key:'续航',   words:['续航','用得久','电池','长续航'], label:'续航久', dim:s=>{const n=parseInt((s.battery||'').replace(/[^0-9]/g,''))||20; return Math.min(n/50,1);} },
+      { key:'音质',   words:['音质','好听','hifi','发烧','听歌','解析'], label:'音质好', tagAny:['Hi-Res','LDAC','双单元','圈铁','音质'] },
+      { key:'运动',   words:['运动','跑步','健身','防水','稳固'], label:'运动防水', tagAny:['运动','防水','耳挂'] }
+    ],
+    monitor: [
+      { key:'高刷',   words:['高刷','电竞','游戏','144','165','240','刷新'], label:'高刷电竞', dim:s=>{const n=parseInt((s.refreshRate||'').replace(/[^0-9]/g,''))||60; return Math.min(n/240,1);} },
+      { key:'4k',     words:['4k','高分辨率','清晰','修图','设计','色彩'], label:'4K/色准', dim:s=>((s.resolution||'').includes('3840')||(s.resolution||'').includes('4K')?1:0.3) },
+      { key:'大屏',   words:['大屏','带鱼屏','超宽','曲面','27','32'], label:'大屏', dim:s=>{const n=parseFloat((s.size||'').replace(/[^0-9.]/g,''))||24; return Math.min(n/34,1);} },
+      { key:'性价比', words:['性价比','便宜','办公','够用','实惠'], label:'性价比', tagAny:['性价比','办公'] }
+    ]
+  };
+
+  // 从自然语言里解析预算（元）
+  function parseAiBudget(q) {
+    let s = q.replace(/[，,、。\s]/g, '');
+    // 万 -> 元
+    let m = s.match(/(\d+(?:\.\d+)?)\s*万/);
+    if (m) return Math.round(parseFloat(m[1]) * 10000);
+    // k -> 千
+    m = s.match(/(\d+(?:\.\d+)?)\s*[kK千]/);
+    if (m) return Math.round(parseFloat(m[1]) * 1000);
+    // 预算XXXX / XXXX左右 / XXXX元 / XXXX以内 / XXXX块
+    m = s.match(/(?:预算|大概|大约)?(\d{3,6})(?:元|块|左右|上下|以内|以下|内|附近)?/);
+    if (m) { const v = parseInt(m[1]); if (v >= 200) return v; }
+    return null;
+  }
+
+  // 解析品牌
+  function parseAiBrand(q) {
+    const C = cat();
+    return C.brands.find(b => q.includes(b)) || null;
+  }
+
+  // 解析语义意图
+  function parseAiIntents(q) {
+    const list = AI_INTENTS[state.category] || [];
+    const lower = q.toLowerCase();
+    return list.filter(it => it.words.some(w => lower.includes(w.toLowerCase())));
+  }
+
+  // 打开 AI 选购弹窗并给出推荐
+  function openAiShop(query) {
+    const C = cat();
+    const data = d();
+    const budget = parseAiBudget(query);
+    const brand = parseAiBrand(query);
+    const intents = parseAiIntents(query);
+
+    // 全库打分
+    const scored = data.map(item => {
+      const price = C.getPrice(item);
+      const specs = item.specs || {};
+      const tags = item.tags || [];
+      let score = 0; const reasons = []; const tradeoffs = [];
+
+      // 预算：命中区间给分，超预算按幅度扣分
+      if (budget) {
+        if (price <= budget) { score += 25; }
+        else if (price <= budget * 1.15) { score += 8; tradeoffs.push('略超预算约' + Math.round((price - budget) / budget * 100) + '%'); }
+        else { score -= Math.min(Math.round((price - budget) / budget * 40), 40); tradeoffs.push('超预算' + Math.round((price - budget) / budget * 100) + '%'); }
+      }
+      // 品牌
+      if (brand && item.brand === brand) { score += 20; reasons.push('符合你想要的' + brand + '品牌'); }
+
+      // 语义意图
+      intents.forEach(it => {
+        if (it.dim) {
+          const v = it.dim(specs); // 0-1
+          score += Math.round(v * 22);
+          if (v >= 0.6) reasons.push(it.label);
+          else if (v <= 0.25) tradeoffs.push(it.label + '一般');
+        } else if (it.tagAny) {
+          const hit = tags.some(t => it.tagAny.some(k => String(t).includes(k)));
+          if (hit) { score += 18; reasons.push(it.label); }
+        }
+      });
+
+      // 热度作为轻微加权（同分时更受欢迎的优先）
+      score += (item.popularity || item.sales || 50) * 0.06;
+
+      return { item, price, score, reasons, tradeoffs };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    const top = scored.slice(0, 3);
+    const best = top[0];
+    const runnerUp = top[1] || null;
+
+    // 归一化匹配度
+    const raw = top.map(s => s.score);
+    const maxS = Math.max(...raw), minS = Math.min(...scored.map(s => s.score));
+    const range = maxS - minS;
+    top.forEach(s => { s.matchPct = range > 0 ? Math.round(((s.score - minS) / range) * 100) : 60; });
+
+    // 置信度
+    const lead = runnerUp ? best.score - runnerUp.score : best.score;
+    const leadNorm = maxS > 0 ? Math.min(Math.abs(lead) / Math.max(Math.abs(maxS), 1), 1) : 0;
+    const reasonBonus = Math.min(best.reasons.length * 4, 16);
+    let confidence = Math.max(55, Math.min(96, Math.round(58 + leadNorm * 28 + reasonBonus)));
+    const verdict = confidence >= 85 ? '强烈推荐 · 高度匹配' : confidence >= 72 ? '推荐 · 匹配度高' : '倾向推荐 · 可再看看';
+
+    // 意图解析展示
+    const intentTags = [];
+    if (budget) intentTags.push({ t: '💰 预算约 ¥' + budget, miss: false });
+    if (brand) intentTags.push({ t: '🏷️ ' + brand, miss: false });
+    intents.forEach(it => intentTags.push({ t: '✓ ' + it.label, miss: false }));
+    if (intentTags.length === 0) intentTags.push({ t: '未识别到明确条件，按综合热度推荐', miss: true });
+
+    // 质量自评
+    const parsedCount = (budget ? 1 : 0) + (brand ? 1 : 0) + intents.length;
+    const coverage = parsedCount > 0 ? Math.min(Math.round(best.reasons.length / parsedCount * 100), 100) : 60;
+    const separation = runnerUp ? Math.max(Math.min(best.matchPct - runnerUp.matchPct, 100), 0) : 100;
+    const understanding = Math.min(parsedCount * 30 + 10, 100); // 意图理解度：识别到的条件越多越高
+    const inBudget = budget ? (best.price <= budget * 1.05 ? 100 : 60) : 80;
+    const metricColor = v => v >= 80 ? 'g' : v >= 60 ? 'b' : 'y';
+    const qaMetric = (label, val) => '<div class="qa-metric"><div class="qa-m-label"><span>' + label + '</span><b>' + val + '%</b></div><div class="qa-m-track"><div class="qa-m-fill ' + metricColor(val) + '" style="width:' + val + '%"></div></div></div>';
+
+    let qaNote;
+    if (parsedCount === 0) qaNote = '没能从你的描述里识别出预算或明确偏好，当前按综合热度推荐。试试说"预算XXX + 你最看重的点"。';
+    else if (separation < 15) qaNote = '前几名匹配度接近，都比较符合需求，可结合取舍项按个人侧重定夺。';
+    else qaNote = '已理解你的核心诉求，Top1 匹配度明显领先，可作为可信的选购参考。';
+
+    // 组装
+    const ring = (() => {
+      const r = 24, c = 2 * Math.PI * r, off = c * (1 - confidence / 100);
+      return '<div class="hr-conf-ring"><svg width="56" height="56"><circle cx="28" cy="28" r="' + r + '" fill="none" stroke="#e0e7ff" stroke-width="6"/><circle cx="28" cy="28" r="' + r + '" fill="none" stroke="#4f46e5" stroke-width="6" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"/></svg><div class="hr-conf-num">' + confidence + '%</div></div>';
+    })();
+    const scoreBars = top.map((s, i) => '<div class="hr-sb-item"><div class="hr-sb-head"><span class="hr-sb-name">' + s.item.brand + ' ' + s.item.model + '</span><span class="hr-sb-val">' + s.matchPct + '</span></div><div class="hr-sb-track"><div class="hr-sb-fill' + (i === 0 ? '' : ' second') + '" style="width:' + s.matchPct + '%"></div></div></div>').join('');
+
+    const content = $('#amContent');
+    content.innerHTML =
+      '<div class="am-head"><div class="am-title">✨ AI 选购结果</div><span class="am-close" id="amClose">✕</span></div>' +
+      '<div class="am-query">你的需求：<b>' + escapeHtml(query) + '</b></div>' +
+      '<div class="am-intent"><div class="am-intent-label">AI 意图解析</div><div class="am-intent-tags">' +
+        intentTags.map(t => '<span class="am-itag' + (t.miss ? ' miss' : '') + '">' + escapeHtml(t.t) + '</span>').join('') +
+      '</div></div>' +
+      '<div class="help-result show" style="margin-top:14px;">' +
+        '<div class="hr-title">📌 为你推荐 <span class="ai-badge">⚡ 决策引擎</span></div>' +
+        '<div class="hr-model">' + best.item.brand + ' ' + best.item.model + '</div>' +
+        '<div style="font-size:13px;color:var(--primary);font-weight:700;margin:-6px 0 10px;">参考价 ¥' + best.price + '</div>' +
+        '<div class="hr-conf-row">' + ring + '<div class="hr-conf-meta"><div class="hr-conf-label">推荐置信度</div><div class="hr-conf-verdict">' + verdict + '</div></div></div>' +
+        '<div class="hr-reasons"><div style="font-weight:700;font-size:13px;margin-bottom:6px;">推荐理由：</div><ul>' + (best.reasons.length ? [...new Set(best.reasons)].map(r => '<li>' + r + '</li>').join('') : '<li>综合热度与参数表现均衡</li>') + '</ul></div>' +
+        (best.tradeoffs.length ? '<div class="hr-tradeoff">⚠️ 需要接受的取舍：' + [...new Set(best.tradeoffs)].join('；') + '</div>' : '') +
+        '<div style="font-weight:700;font-size:13px;margin:10px 0 6px;">候选匹配度对比：</div><div class="hr-scorebar">' + scoreBars + '</div>' +
+        '<div class="qa-panel"><div class="qa-title">🔍 AI 推荐质量自评</div><div class="qa-sub">引擎对本次自然语言理解与推荐结果的自我评估（借鉴模型评测思路）</div><div class="qa-metrics">' +
+          qaMetric('意图理解度', understanding) + qaMetric('需求覆盖度', coverage) + qaMetric('候选区分度', separation) + qaMetric('预算契合度', inBudget) +
+        '</div><div class="qa-note"><b>自评结论：</b>' + qaNote + '</div></div>' +
+        '<div style="margin-top:14px;display:flex;gap:8px;">' +
+          '<button class="hm-submit" id="amAddCompare" style="flex:1;">加入对比</button>' +
+        '</div>' +
+      '</div>';
+
+    const modal = $('#aiModal');
+    modal.classList.add('show');
+    content.querySelector('#amClose').addEventListener('click', () => modal.classList.remove('show'));
+    content.querySelector('#amAddCompare').addEventListener('click', () => {
+      top.slice(0, 3).forEach(s => { if (canAddCompare() && !isInCompare(s.item.id)) state.compareList.push({ phoneId: s.item.id, storage: s.item.defaultStorage || 'default' }); });
+      renderCompareBar();
+      modal.classList.remove('show');
+      toast('已加入对比，向下滑动查看');
+    });
+  }
+
+  $('#aiModal').addEventListener('click', function(e) {
     if (e.target === this) this.classList.remove('show');
   });
 
