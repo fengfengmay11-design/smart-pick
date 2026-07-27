@@ -89,36 +89,28 @@
   /* 价格区间卡片 */
   .price-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
   .price-card {
-    --acc:#4f46e5; --acc-soft:rgba(79,70,229,.12);
-    background:var(--card-bg); border-radius:var(--radius-sm); padding:14px 16px;
+    background:var(--card-bg); border-radius:var(--radius-sm); padding:15px 16px;
     display:flex; align-items:center; gap:13px; text-align:left;
-    cursor:pointer; box-shadow:var(--shadow); transition:transform .2s, box-shadow .2s, border-color .2s;
-    position:relative; overflow:hidden; border:1.5px solid var(--border-light);
+    cursor:pointer; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s, border-color .18s;
+    position:relative; overflow:hidden; border:1px solid var(--border-light);
   }
-  .price-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); border-color:var(--acc); }
-  .price-card:active { transform:scale(.98); }
-  /* 左侧强调竖条 */
-  .price-card::before {
-    content:''; position:absolute; top:0; left:0; bottom:0; width:4px;
-    background:var(--acc); opacity:0; transition:opacity .2s;
-  }
-  .price-card:hover::before { opacity:1; }
+  .price-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:var(--primary); }
+  .price-card:active { transform:scale(.985); }
   .price-card .pc-icon {
-    width:44px; height:44px; flex-shrink:0; border-radius:13px;
-    background:var(--acc-soft); color:var(--acc);
-    display:flex; align-items:center; justify-content:center; font-size:21px;
-    transition:transform .2s;
+    width:42px; height:42px; flex-shrink:0; border-radius:12px;
+    background:rgba(79,70,229,.08); color:var(--primary);
+    display:flex; align-items:baseline; justify-content:center; gap:1px;
+    font-weight:700; letter-spacing:-.02em; transition:background .18s;
   }
-  .price-card:hover .pc-icon { transform:scale(1.08) rotate(-4deg); }
+  .price-card .pc-icon .yen { font-size:16px; }
+  .price-card .pc-icon .lv { font-size:15px; }
+  .price-card:hover .pc-icon { background:rgba(79,70,229,.14); }
   .price-card .pc-body { flex:1; min-width:0; }
   .price-card .p-label { font-size:15px; font-weight:700; color:var(--text); letter-spacing:-.01em; }
-  .price-card .p-count { font-size:12px; color:var(--text-hint); margin-top:3px; display:flex; align-items:center; gap:5px; }
-  .price-card .pc-badge {
-    display:inline-flex; align-items:center; justify-content:center; min-width:20px; height:19px; padding:0 6px;
-    border-radius:9px; background:var(--acc-soft); color:var(--acc); font-size:12px; font-weight:700;
-  }
-  .price-card .pc-go { color:var(--text-hint); font-size:20px; font-weight:400; opacity:.5; transition:transform .2s, opacity .2s, color .2s; flex-shrink:0; }
-  .price-card:hover .pc-go { transform:translateX(3px); opacity:1; color:var(--acc); }
+  .price-card .p-count { font-size:12.5px; color:var(--text-hint); margin-top:3px; }
+  .price-card .p-count b { color:var(--primary); font-weight:700; }
+  .price-card .pc-go { color:var(--border); font-size:19px; opacity:0; transform:translateX(-4px); transition:opacity .18s, transform .18s; flex-shrink:0; }
+  .price-card:hover .pc-go { opacity:1; transform:translateX(0); color:var(--primary); }
 
   /* 品牌 */
   .brand-row { display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; }
@@ -1111,28 +1103,18 @@ function renderHome(page) {
   // 价格区间
   const priceGrid = page.querySelector('#priceGrid');
   const data = d();
-  // 按价位从低到高的递进配色 + 图标（低价性价比→高价旗舰）
-  const priceTiers = [
-    { c:'#10b981', s:'rgba(16,185,129,.12)', icon:'🪙' },
-    { c:'#0ea5e9', s:'rgba(14,165,233,.12)', icon:'💵' },
-    { c:'#6366f1', s:'rgba(99,102,241,.12)', icon:'💳' },
-    { c:'#8b5cf6', s:'rgba(139,92,246,.12)', icon:'💎' },
-    { c:'#d946ef', s:'rgba(217,70,239,.12)', icon:'👑' },
-    { c:'#f59e0b', s:'rgba(245,158,11,.14)', icon:'🏆' }
-  ];
   C.priceRanges.forEach((range, idx) => {
     const count = data.filter(p => {
       const price = C.getPrice(p);
       return price >= range.min && price < range.max;
     }).length;
-    const tier = priceTiers[Math.min(idx, priceTiers.length - 1)];
+    // 用 ¥ + 档位数字表示价位高低，统一克制风格（不用花哨 emoji）
+    const lv = Math.min(idx + 1, C.priceRanges.length);
     const card = document.createElement('div');
     card.className = 'price-card';
-    card.style.setProperty('--acc', tier.c);
-    card.style.setProperty('--acc-soft', tier.s);
-    card.innerHTML = `<div class="pc-icon">${tier.icon}</div>`
+    card.innerHTML = `<div class="pc-icon"><span class="yen">¥</span><span class="lv">${lv}</span></div>`
       + `<div class="pc-body"><div class="p-label">${range.label}</div>`
-      + `<div class="p-count"><span class="pc-badge">${count}</span>款${C.name}</div></div>`
+      + `<div class="p-count"><b>${count}</b> 款${C.name}</div></div>`
       + `<div class="pc-go">›</div>`;
     card.addEventListener('click', () => {
       state.filterPriceRange = range.label;
@@ -2393,17 +2375,20 @@ function monitorCompareDims(ph) {
   function bingImage(phone) {
     const suffix = IMG_KEYWORD[state.category] || '';
     const q = encodeURIComponent((phone.brand + ' ' + phone.model + ' ' + suffix).trim());
-    // 轮询两个必应缩略图域名，均失败再退回 SVG 占位
-    return 'https://tse1.mm.bing.net/th?q=' + q + '&w=240&h=240&c=7';
+    return 'https://tse1.mm.bing.net/th?q=' + q + '&w=300&h=300&c=7';
   }
+  // 三级图片降级：本地图 → 在线图(CDN/必应) → SVG 占位。任何一级加载失败自动降级，绝不空白。
   function phoneImage(phone) {
-    // 1) 数据自带的真实图（如手机 CDN 图）优先
-    if (phone.image && phone.image.startsWith('http')) {
-      return `<img src="${phone.image}" alt="${escapeHtml(phone.model)}" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block'"/><span style="display:none">${svgFallback(phone)}</span>`;
-    }
-    // 2) 无自带图 → 按型号自动抓取必应真实产品缩略图，失败再退回 SVG
-    const bing = bingImage(phone);
-    return `<img src="${bing}" alt="${escapeHtml(phone.model)}" loading="lazy" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block'"/><span style="display:none">${svgFallback(phone)}</span>`;
+    const local = 'images/' + phone.id + '.jpg';           // 1) 项目内本地图（离线可看、传GitHub自带）
+    const online = (phone.image && phone.image.startsWith('http')) ? phone.image : bingImage(phone); // 2) 在线兜底
+    const alt = escapeHtml(phone.model);
+    const fb = svgFallback(phone).replace(/"/g, '&quot;');  // 3) 最终 SVG 占位（存到 data 属性备用）
+    return `<img src="${local}" alt="${alt}" loading="lazy" data-stage="1" data-online="${escapeHtml(online)}"`
+      + ` style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff"`
+      + ` onerror="var s=this.getAttribute('data-stage');`
+      + ` if(s==='1'){this.setAttribute('data-stage','2');this.src=this.getAttribute('data-online');}`
+      + ` else{this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block';}"/>`
+      + `<span style="display:none">${svgFallback(phone)}</span>`;
   }
   function svgFallback(phone) {
     const c = brandColor(phone.brand);
