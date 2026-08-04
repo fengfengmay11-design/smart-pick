@@ -5,12 +5,11 @@
  *   node tests/run.js
  *   # 或 npx： npx --yes node tests/run.js
  *
- * 覆盖的是 engine.js / data-source.js 里的「真实代码」（非副本），
+ * 覆盖的是 engine.js 里的「真实代码」（非副本），
  * 保证推荐引擎的核心逻辑有可验证的正确性。
  */
 const path = require('path');
 const engine = require(path.join(__dirname, '..', 'engine.js'));
-const ds = require(path.join(__dirname, '..', 'data-source.js'));
 
 let pass = 0, fail = 0;
 function ok(name, cond) {
@@ -37,28 +36,6 @@ async function run() {
   eq('「8千」→ 8000', engine.parseAiBudget('8千'), 8000);
   eq('「没说钱」→ null', engine.parseAiBudget('没说钱'), null);
   eq('「199」单价不应误判为预算」→ null', engine.parseAiBudget('这个199'), null);
-
-  console.log('\n[3] 实时数据归一化 normalizeLiveProduct');
-  const n = ds.normalizeLiveProduct({ id: 9, title: 'WD 2TB', price: 64, image: 'https://x/9.png', rating: { rate: 3.3, count: 203 } });
-  eq('id 加 live- 前缀', n.id, 'live-9');
-  eq('映射 model', n.model, 'WD 2TB');
-  eq('映射 price', n.price, 64);
-  eq('映射 rating', n.rating, 3.3);
-  eq('映射 ratingCount', n.ratingCount, 203);
-  ok('标记 live=true', n.live === true);
-
-  console.log('\n[4] 实时数据获取 fetchLiveProducts（mock fetch）');
-  global.fetch = async () => ({ ok: true, json: async () => ([{ id: 9, title: 'A', price: 1, image: 'u', rating: { rate: 4, count: 5 } }]) });
-  const items = await ds.fetchLiveProducts('electronics', { timeoutMs: 3000 });
-  eq('返回数量', items.length, 1);
-  eq('返回项已归一化', items[0].id, 'live-9');
-
-  // 超时降级：mock 监听 abort 信号
-  global.fetch = (url, opts) => new Promise((res, rej) => { opts.signal.addEventListener('abort', () => rej(new Error('aborted'))); });
-  let threw = false;
-  try { await ds.fetchLiveProducts('electronics', { timeoutMs: 150 }); }
-  catch (e) { threw = true; }
-  ok('超时会抛出（上层据此降级到本地数据）', threw);
 
   console.log('\n========================================');
   console.log(`  通过 ${pass} 项，失败 ${fail} 项`);

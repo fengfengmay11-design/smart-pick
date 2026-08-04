@@ -127,16 +127,12 @@ flowchart TB
   RULE --> ENGINE
   ENGINE --> EXP["可解释推荐<br/>置信度 + 质量自评"]
   EXP --> UI["结果卡片 / 对比 / 加入对比"]
-  FE -.->|"实时数据演示"| API[("fakestoreapi<br/>公开 REST 接口")]
-  API --> NORM["归一化 normalizeLiveProduct"]
-  NORM --> UI
 ```
 
 ```
 phone-compare/
-├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级 + 实时数据模块）
+├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级）
 ├── engine.js           # 推荐引擎纯逻辑层（品类识别/预算解析），被前端与测试共用
-├── data-source.js      # 实时数据源抽象层（接入 fakestoreapi 公开接口 + 超时降级）
 ├── favicon.svg         # 站点图标
 ├── phone-data.js       # 手机数据（74 款，含真实产品图 CDN）
 ├── data-gpu.js         # 显卡（209 款）
@@ -202,8 +198,8 @@ git push -u origin main
 - 产品型号、规格、价格为公开市场信息整理，用于产品原型演示；
 - 价格与规格会随市场变化，条目含 `lastVerified` 标注核对日期；
 - 本项目为个人作品集 / 产品原型，非商业销售平台。
-- **实时数据模块**：首页「实时数据演示」接入公开的 [fakestoreapi.com](https://fakestoreapi.com) REST 接口，异步拉取**真实商品图 / 价格 / 评分**，用于演示「前端 → 外部 API → 归一化 → 渲染」的完整数据流；接口不可达时自动降级到本地 528 款数据。
-- **测试**：`node tests/run.js` 覆盖品类识别、预算解析、实时数据归一化与超时降级，测试的是 `engine.js` / `data-source.js` 中的真实代码。
+- **数据层可扩展**：产品数据由独立数据模块（`phone-data.js` 等）提供，数据访问层设计为「可插拔」——可平滑替换为外部 API 接入，并内置超时与降级保护（不可达时回退本地数据）。
+- **测试**：`node tests/run.js` 覆盖品类识别、预算解析，测试的是 `engine.js` 中的真实引擎代码（零依赖，开箱即跑）。
 
 ## 八、Roadmap
 

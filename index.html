@@ -618,34 +618,6 @@
   .am-intent .am-itag { font-size:11px; font-weight:600; color:var(--primary-dark); background:var(--primary-light); border-radius:20px; padding:4px 11px; display:inline-flex; align-items:center; gap:4px; }
   .am-intent .am-itag.miss { color:var(--text-hint); background:var(--bg); }
 
-  /* 实时数据演示模块 - 轻量化融入整体风格 */
-  .live-data-card { margin-top:16px; background:var(--bg); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
-  .live-data-card .ld-header { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; cursor:pointer; user-select:none; transition:background .15s; }
-  .live-data-card .ld-header:hover { background:var(--bg-hover); }
-  .live-data-card .ld-header-left { display:flex; align-items:center; gap:8px; }
-  .live-data-card .ld-title { font-size:13px; font-weight:700; color:var(--text-primary); }
-  .live-data-card .ld-tag { font-size:10px; font-weight:600; padding:2px 8px; border-radius:20px; background:var(--primary-light); color:var(--primary-dark); letter-spacing:0.02em; }
-  .live-data-card .ld-arrow { font-size:11px; color:var(--text-hint); transition:transform .2s; }
-  .live-data-card.expanded .ld-arrow { transform:rotate(180deg); }
-  .live-data-card .ld-body { display:none; padding:0 16px 14px; border-top:1px solid var(--border); }
-  .live-data-card.expanded .ld-body { display:block; }
-  .live-data-card .ld-sub { font-size:12px; line-height:1.7; color:var(--text-secondary); margin-top:10px; }
-  .live-data-card .ld-sub a { color:var(--primary); text-decoration:none; }
-  .live-data-card .ld-sub a:hover { text-decoration:underline; }
-  .live-data-card .ld-btn { border:none; background:var(--primary); color:#fff; font-weight:700; font-size:13px; padding:9px 18px; border-radius:10px; cursor:pointer; transition:opacity .15s, transform .1s; margin-top:10px; }
-  .live-data-card .ld-btn:hover { opacity:.88; transform:translateY(-1px); }
-  .live-data-card .ld-btn:disabled { opacity:.5; cursor:wait; transform:none; }
-  .live-data-card .ld-status { font-size:12px; margin:10px 0 4px; min-height:16px; }
-  .live-data-card .ld-status.loading { color:var(--text-hint); }
-  .live-data-card .ld-status.ok { color:var(--success,#16a34a); }
-  .live-data-card .ld-status.err { color:var(--error,#dc2626); }
-  .live-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px; margin-top:8px; }
-  .live-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:8px; box-shadow:0 1px 3px rgba(0,0,0,.04); }
-  .live-card .live-img { height:84px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-  .live-card .live-img img { max-height:100%; max-width:100%; object-fit:contain; }
-  .live-card .live-model { font-size:11px; font-weight:600; color:var(--text-primary); margin-top:6px; min-height:28px; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-  .live-card .live-price { font-size:14px; font-weight:800; color:var(--price-color,var(--danger)); margin-top:4px; }
-  .live-card .live-rating { font-size:10px; color:var(--text-hint); margin-top:2px; }
 </style>
 </head>
 <body>
@@ -704,7 +676,6 @@
 <script src="data-earphone.js"></script>
 <script src="data-monitor.js"></script>
 <script src="engine.js"></script>
-<script src="data-source.js"></script>
 <script>
 // ==================== 品类配置 ====================
 const CATEGORIES = {
@@ -1078,56 +1049,6 @@ function renderPage() {
   app.appendChild(page);
 }
 
-// ==================== 实时数据演示（接入外部公开 REST API） ====================
-function renderLiveCard(p) {
-  const stars = (p.rating != null)
-    ? ('★ ' + p.rating.toFixed(1) + ' (' + (p.ratingCount || 0) + ')')
-    : '暂无评分';
-  const price = (p.price != null) ? ('¥' + Number(p.price).toFixed(2)) : '—';
-  return `<div class="live-card">
-    <div class="live-img"><img src="${escapeHtml(p.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"></div>
-    <div class="live-model">${escapeHtml(p.model)}</div>
-    <div class="live-price">${price}</div>
-    <div class="live-rating">${escapeHtml(stars)}</div>
-  </div>`;
-}
-
-// 接口不可用时，降级展示本地 528 款数据中的几款，证明「优雅降级」真实可用
-function localFallbackCards() {
-  let phones = [];
-  try { phones = (CATEGORIES.phone.data() || []).slice(0, 4); } catch (e) {}
-  if (!phones.length) return '';
-  return phones.map(p => renderLiveCard({
-    id: p.id, model: p.model,
-    image: (typeof phoneImage === 'function') ? phoneImage(p) : (p.image || ''),
-    price: (p.storageOptions && p.storageOptions[0]) ? p.storageOptions[0].priceJd : null,
-    rating: null, ratingCount: 0
-  })).join('');
-}
-
-async function loadLiveData() {
-  const status = document.getElementById('liveStatus');
-  const grid = document.getElementById('liveGrid');
-  const btn = document.getElementById('liveLoadBtn');
-  if (!grid || !btn) return;
-  btn.disabled = true;
-  status.textContent = '正在请求 fakestoreapi.com ...';
-  status.className = 'ld-status loading';
-  try {
-    const items = await fetchLiveProducts('electronics', { timeoutMs: 8000 });
-    if (!items.length) throw new Error('空数据');
-    grid.innerHTML = items.map(renderLiveCard).join('');
-    status.textContent = '✅ 已从公开接口加载 ' + items.length + ' 款真实商品';
-    status.className = 'ld-status ok';
-  } catch (e) {
-    grid.innerHTML = localFallbackCards();
-    status.textContent = '⚠️ 接口暂不可用，已自动降级到本地数据（' + (grid.children.length || 0) + ' 款）';
-    status.className = 'ld-status err';
-  } finally {
-    btn.disabled = false;
-  }
-}
-
 // ==================== 首页 ====================
 function renderHome(page) {
   const C = cat();
@@ -1156,22 +1077,6 @@ function renderHome(page) {
     <div class="brand-row" id="brandRow"></div>
     <div class="section-title">热门${C.name}</div>
     <div class="hot-list" id="hotList"></div>
-
-    <div class="live-data-card" id="liveDataCard">
-      <div class="ld-header" id="liveDataHeader">
-        <div class="ld-header-left">
-          <span class="ld-title">📡 实时数据演示</span>
-          <span class="ld-tag">API 对接</span>
-        </div>
-        <span class="ld-arrow">▼</span>
-      </div>
-      <div class="ld-body">
-        <div class="ld-sub">从公开接口拉取真实商品数据（含图片、价格、评分），展示完整的数据获取 → 格式适配 → 页面渲染流程。接口不可用时自动使用本地数据。</div>
-        <button class="ld-btn" id="liveLoadBtn">加载实时商品</button>
-        <div class="ld-status" id="liveStatus"></div>
-        <div class="live-grid" id="liveGrid"></div>
-      </div>
-    </div>
   `;
 
   // 品类切换
@@ -1198,19 +1103,6 @@ function renderHome(page) {
   page.querySelectorAll('.asc-chip').forEach(chip => {
     chip.addEventListener('click', function() { aiInput.value = this.dataset.q; openAiShop(this.dataset.q); });
   });
-
-  // 实时数据演示：接入外部公开 REST API
-  const liveHeader = page.querySelector('#liveDataHeader');
-  const liveCard = page.querySelector('#liveDataCard');
-  if (liveHeader) {
-    liveHeader.addEventListener('click', () => {
-      liveCard.classList.toggle('expanded');
-    });
-  }
-  const liveBtn = page.querySelector('#liveLoadBtn');
-  if (liveBtn && typeof fetchLiveProducts === 'function') {
-    liveBtn.addEventListener('click', loadLiveData);
-  }
 
   // 搜索
   page.querySelector('#searchInput').addEventListener('input', function(e) {
