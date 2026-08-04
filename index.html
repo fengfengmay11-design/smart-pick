@@ -2360,11 +2360,23 @@ function monitorCompareDims(ph) {
       const tags = item.tags || [];
       let score = 0; const reasons = []; const tradeoffs = [];
 
-      // 预算：命中区间给分，超预算按幅度扣分
+      // 预算：硬过滤 + 渐进扣分
+      // 超过预算 2 倍的产品直接排除（不可能推荐给用户）
       if (budget) {
-        if (price <= budget) { score += 25; }
-        else if (price <= budget * 1.15) { score += 8; tradeoffs.push('略超预算约' + Math.round((price - budget) / budget * 100) + '%'); }
-        else { score -= Math.min(Math.round((price - budget) / budget * 40), 40); tradeoffs.push('超预算' + Math.round((price - budget) / budget * 100) + '%'); }
+        const ratio = price / budget;
+        if (ratio <= 1) {
+          score += 25; // 预算内，加分
+        } else if (ratio <= 1.15) {
+          score += 8;
+          tradeoffs.push('略超预算约' + Math.round((ratio - 1) * 100) + '%');
+        } else if (ratio <= 2) {
+          // 115%~200%：渐进重罚，不封顶（原来 -40 封顶导致 55 倍超预算才扣 40 分）
+          score -= Math.round((ratio - 1.15) * 80);
+          tradeoffs.push('超预算' + Math.round((ratio - 1) * 100) + '%');
+        } else {
+          // 超过 2 倍预算：直接排除
+          score = -999;
+        }
       }
       // 品牌
       if (brand && item.brand === brand) { score += 20; reasons.push('符合你想要的' + brand + '品牌'); }
@@ -2389,9 +2401,25 @@ function monitorCompareDims(ph) {
     });
 
     scored.sort((a, b) => b.score - a.score);
-    const top = scored.slice(0, 3);
-    const best = top[0];
+    let top = scored.slice(0, 3);
+    let best = top[0];
     const runnerUp = top[1] || null;
+
+    // 预算兜底：如果所有候选都被预算排除（score <= 0），回退到「最接近预算」模式
+    // 并在 UI 上明确提示用户预算与数据不匹配
+    let budgetFallback = false;
+    if (budget && top.length > 0 && top[0].score <= 0) {
+      budgetFallback = true;
+      // 按价格升序重排，取最便宜的 3 款（至少给用户一个参考）
+      const byPrice = [...scored].sort((a, b) => a.price - b.price);
+      top = byPrice.slice(0, 3).map(s => ({
+        ...s,
+        score: Math.max(s.score, 1),  // 避免负分导致 matchPct 异常
+        reasons: s.reasons.length ? s.reasons : ['当前数据集中价格最低的选项'],
+        tradeoffs: [...(s.tradeoffs || []), '远超预算，仅供参考'],
+      }));
+      best = top[0];
+    }
 
     // 归一化匹配度
     const raw = top.map(s => s.score);
@@ -2516,6 +2544,7 @@ function monitorCompareDims(ph) {
       '</div></div>' +
       '<div class="help-result show" style="margin-top:14px;">' +
         '<div class="hr-title">📌 为你推荐 <span class="ai-badge">' + (aiRec ? '☁️ 大模型增强' : '⚡ 决策引擎') + '</span></div>' +
+        (budgetFallback ? '<div style="background:#fff3cd;border:1px solid #ffc107;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;color:#856404;line-height:1.6;">⚠️ <b>你的预算 ¥' + budget + ' 低于数据集中所有产品价格（最低 ¥' + (scored.length ? [...scored].sort((a,b)=>a.price-b.price)[0].price : '?') + '）。</b>以下展示的是最接近预算的选项，仅供参考。如需低价机型，建议关注二手/百元机市场。</div>' : '') +
         '<div class="hr-model">' + best.item.brand + ' ' + best.item.model + '</div>' +
         '<div style="font-size:13px;color:var(--primary);font-weight:700;margin:-6px 0 10px;">参考价 ¥' + best.price + '</div>' +
         '<div class="hr-conf-row">' + ring + '<div class="hr-conf-meta"><div class="hr-conf-label">推荐置信度</div><div class="hr-conf-verdict">' + verdict + '</div></div></div>' +
