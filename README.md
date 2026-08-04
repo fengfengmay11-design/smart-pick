@@ -5,7 +5,9 @@
 覆盖 **8 大品类、528 款真实产品**，纯前端零后端即可运行。
 
 <p align="center">
-  <a href="https://5d8be35e22104c7d896fd65b42dc23b1.tc-nanjing.share.codebuddy.woa.com"><b>🔗 在线体验 Demo</b></a>
+  <a href="https://fengfengmay11-design.github.io/smart-pick/"><b>🔗 在线体验 Demo (GitHub Pages)</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://5d8be35e22104c7d896fd65b42dc23b1.tc-nanjing.share.codebuddy.woa.com">备用链接</a>
 </p>
 
 <p align="center">
@@ -132,6 +134,8 @@ phone-compare/
 
 ## 六、快速开始
 
+### 方式一：纯前端运行（零后端，开箱即用）
+
 ```bash
 # 克隆后，任选一种方式启动本地静态服务：
 python3 -m http.server 8000
@@ -139,6 +143,35 @@ python3 -m http.server 8000
 npx serve .
 
 # 浏览器打开 http://localhost:8000
+```
+
+### 方式二：启用大模型后端（阶段二 LLM 意图理解）
+
+```bash
+cd server
+cp .env.example .env        # 填入你的 DeepSeek / OpenAI API Key
+./venv/bin/pip install -r requirements.txt   # 首次安装依赖
+./venv/bin/python -m uvicorn main:app --port 8000
+
+# 另一个终端启动前端（同方式一），AI 选购将自动走云端大模型
+```
+
+> 详细说明（免费 Key 申请、面试话术）见 [server/README.md](server/README.md)
+
+### 部署到 GitHub Pages（永久在线 Demo）
+
+本项目是纯静态站点，可直接部署到 **GitHub Pages**，获得永久可访问的 Demo 链接：
+
+```bash
+# 1. 在 GitHub 上创建仓库 smart-pick（公开）
+# 2. 推送代码：
+git remote add origin https://github.com/fengfengmay11-design/smart-pick.git
+git push -u origin main
+
+# 3. 在仓库 Settings → Pages → Source 选择 "Deploy from a branch"
+#    Branch: main, Folder: /(root), Save
+#    等待 ~1 分钟，Demo 即可通过以下地址访问：
+#    https://fengfengmay11-design.github.io/smart-pick/
 ```
 
 ## 七、数据说明
@@ -160,7 +193,7 @@ npx serve .
 
 ## 关于作者
 
-**tornadoli** · GitHub [@tornadoli](https://github.com/tornadoli)
+**tornadoli** · GitHub [@fengfengmay11-design](https://github.com/fengfengmay11-design)
 
 AI 产品方向，关注 **AI 能力在真实消费场景的落地** 与 **AI 输出的质量评估**。本项目从一个"参数对比页"出发，重点探索了如何把 AI 做成**可解释、可自评、值得信任**的决策助手——而不只是一个更花哨的信息展示工具。
 
