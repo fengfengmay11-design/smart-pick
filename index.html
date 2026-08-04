@@ -851,6 +851,22 @@ function isInCompare(phoneId) {
   return state.compareList.some(e => e.phoneId === phoneId);
 }
 
+// 全局刷新页面上所有 +/✓ 加入对比按钮的状态（列表页 pc-add + 首页热门 h-add）
+// 不依赖当前页面类型，避免增删对比后按钮状态残留（如满3款移除后灰色按钮没变回可点）
+function refreshCompareButtons() {
+  document.querySelectorAll('.pc-add[data-phone], .h-add[data-phone]').forEach(btn => {
+    const id = btn.dataset.phone;
+    const inList = isInCompare(id);
+    const full = !canAddCompare() && !inList;
+    if (btn.classList.contains('pc-add')) {
+      btn.className = 'pc-add ' + (inList ? 'added-btn' : (full ? 'full-btn' : 'add-btn'));
+    } else {
+      btn.className = 'h-add ' + (inList ? 'added' : (full ? 'full' : ''));
+    }
+    btn.textContent = inList ? '✓' : '+';
+  });
+}
+
 function canAddCompare() { return state.compareList.length < 3; }
 
 function canStartCompare() { return state.compareList.length >= 2; }
@@ -942,14 +958,14 @@ function addToCompare(phoneId, storage) {
   }
   state.compareList.push({ phoneId, storage: storage || (getPhone(phoneId).defaultStorage || 'default') });
   renderCompareBar();
-  if (state.page === 'list') renderPhoneList($('#page-list'));
+  refreshCompareButtons();
   if (state.page === 'compare') renderComparePage();
 }
 
 function removeFromCompare(idx) {
   state.compareList.splice(idx, 1);
   renderCompareBar();
-  if (state.page === 'list') renderPhoneList($('#page-list'));
+  refreshCompareButtons();
   if (state.page === 'compare') {
     if (state.compareList.length < 2) {
       state.page = state.filterBrand ? 'list' : 'home';
@@ -1034,19 +1050,19 @@ function renderPage() {
 function renderHome(page) {
   const C = cat();
   page.innerHTML = `
-    <div class="cat-tabs" id="catTabs">
-      ${Object.keys(CATEGORIES).map(k => `<div class="cat-tab${state.category===k?' active':''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
-    </div>
     <div class="ai-shop-card">
       <div class="asc-title">✨ AI 智能选购 <span class="asc-tag">自然语言</span></div>
-      <div class="asc-sub">用一句话描述需求，AI 帮你从 ${d().length} 款${C.name}里挑出最合适的</div>
+      <div class="asc-sub">用一句话描述需求，AI 自动识别品类，从全站 ${totalProductCount()} 款产品里挑出最合适的</div>
       <div class="asc-inputwrap">
-        <input type="text" class="asc-input" id="aiShopInput" placeholder="${aiPlaceholder()}">
+        <input type="text" class="asc-input" id="aiShopInput" placeholder="${GLOBAL_AI_PLACEHOLDER}">
         <button class="asc-btn" id="aiShopBtn">找一找</button>
       </div>
       <div class="asc-chips" id="aiShopChips">
-        ${aiExamples().map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
+        ${GLOBAL_AI_EXAMPLES.map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
       </div>
+    </div>
+    <div class="cat-tabs" id="catTabs">
+      ${Object.keys(CATEGORIES).map(k => `<div class="cat-tab${state.category===k?' active':''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
     </div>
     <div class="search-box">
       <span class="s-icon">🔍</span>
@@ -1683,9 +1699,13 @@ function renderComparePageIn(page) {
   let summaryHtml = '', dimsHtml = '', conclusionHtml = '';
   try {
     // 顶部摘要
-    summaryHtml = '<div class="scroll-container"><div class="compare-summary">';
+    const csWide = phones.length >= 3;
+    const csStyle = csWide ? ' style="min-width:calc(42% - 7px);max-width:calc(42% - 7px)"' : '';
+    summaryHtml = '<div class="scroll-container">';
+    if (csWide) summaryHtml += '<div class="scroll-hint">← 左右滑动查看全部 ' + phones.length + ' 款 →</div>';
+    summaryHtml += '<div class="compare-summary">';
     phones.forEach((p, i) => {
-      summaryHtml += '<div class="cs-card">';
+      summaryHtml += '<div class="cs-card"' + csStyle + '>';
       if (C.storageOptions(p.phone).length > 0) {
         summaryHtml += '<div class="cs-actions"><button class="cs-act-btn" onclick="openStorageModal(\'' + p.phone.id + '\', (s) => { addToCompare(\'' + p.phone.id + '\', s); })">更换版本</button>';
         summaryHtml += '<button class="cs-act-btn remove" onclick="removeFromCompare(' + i + ')">移除</button></div>';
@@ -2140,17 +2160,24 @@ function monitorCompareDims(ph) {
   // ==================== AI 自然语言选购 ====================
   // 各品类的输入占位与示例
   const AI_PRESETS = {
-    phone:    { ph: '例如：5000左右，拍照好，续航强的手机', ex: ['5000左右拍照好续航强', '预算3000性价比高', '轻薄好看的小屏手机', '游戏性能强不发烫'] },
-    gpu:      { ph: '例如：预算4000，打4K游戏，功耗别太高', ex: ['4000元4K游戏', '大显存跑AI', '性价比高的甜品卡', '预算2000够用就行'] },
-    cpu:      { ph: '例如：预算2000，打游戏兼顾生产力', ex: ['游戏性能强', '2000元办公够用', '多核生产力强', '低功耗省电'] },
-    laptop:   { ph: '例如：8000左右，轻薄办公，续航久', ex: ['8000轻薄办公', '性能强剪视频', '预算5000学生用', '苹果生态好用'] },
-    ac:       { ph: '例如：卧室用，1.5匹，安静省电', ex: ['卧室1.5匹省电', '客厅3匹大风量', '预算3000够用', '静音又省电'] },
-    robot:    { ph: '例如：4000左右，自动洗拖布，吸力大', ex: ['自动洗拖布', '吸力大能扫毛发', '预算3000够用', '静音爬坡强'] },
-    earphone: { ph: '例如：1000左右，降噪好，续航久', ex: ['降噪好续航久', '预算500性价比', '音质好听歌', '运动防水稳固'] },
-    monitor:  { ph: '例如：2000左右，高刷电竞，色彩准', ex: ['高刷电竞屏', '4K色彩准修图', '预算1500办公', '大屏带鱼屏'] }
+    phone:    { ph: '例如：5000内旗舰影像，长焦拍娃，续航一天不焦虑', ex: ['5000内影像旗舰', '3000档性价比之王', '轻薄小屏单手握持', '游戏满帧不烫手'] },
+    gpu:      { ph: '例如：4000档2K高刷电竞，光追全开，功耗压得住', ex: ['2K高刷光追全开', '大显存本地跑大模型', '1080P甜品卡首选', '3000内质价比之选'] },
+    cpu:      { ph: '例如：3A游戏不瓶颈，兼顾多核剪辑渲染', ex: ['游戏高帧不瓶颈', '多核生产力渲染', '核显办公免独显', '低功耗静音小主机'] },
+    laptop:   { ph: '例如：8000内轻薄本，全天续航，高色域办公', ex: ['轻薄本全天续航', '游戏本剪辑渲染', '学生本高性价比', 'Mac生态创意设计'] },
+    ac:       { ph: '例如：卧室新一级变频，静音助眠不直吹', ex: ['卧室静音助眠', '客厅大匹数速冷', '新一级能效省电', '自清洁健康风'] },
+    robot:    { ph: '例如：全能基站自清洁，大吸力扫宠物毛发', ex: ['全能基站免手洗', '大吸力扫宠物毛', '激光导航精准避障', '超薄机身钻沙发'] },
+    earphone: { ph: '例如：通勤深度降噪，Hi-Res音质，单次续航久', ex: ['深度降噪通勤神器', 'Hi-Res发烧音质', '运动防水佩戴稳', '千元内质价比'] },
+    monitor:  { ph: '例如：2K高刷电竞屏，低延迟，出厂校色准', ex: ['2K高刷竞技电竞', '4K专业修图校色', '带鱼屏沉浸办公', '1500内高刷入门'] }
   };
   function aiPlaceholder() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ph; }
   function aiExamples() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ex; }
+
+  // AI 选购是全局入口，文案固定、不跟随下方选中品类变化
+  const GLOBAL_AI_PLACEHOLDER = '例如：5000内影像好的手机 / 4000档2K光追显卡 / 通勤降噪耳机';
+  const GLOBAL_AI_EXAMPLES = ['5000内影像旗舰手机', '4000档2K光追显卡', '通勤深度降噪耳机', '轻薄本全天续航'];
+  function totalProductCount() {
+    return Object.keys(CATEGORIES).reduce((sum, k) => { try { return sum + (CATEGORIES[k].data() || []).length; } catch (e) { return sum; } }, 0);
+  }
 
   // 语义意图词典：把口语映射到"标签关键词"或"数值维度"
   // dim: 数值维度打分；tagAny: 命中 tags 中任一关键词加分
@@ -2234,6 +2261,28 @@ function monitorCompareDims(ph) {
     return list.filter(it => it.words.some(w => lower.includes(w.toLowerCase())));
   }
 
+  // 从自然语言里识别用户想要的品类（AI 选购独立于当前选中标签的关键）
+  const CAT_KEYWORDS = {
+    phone:    ['手机','iphone','安卓机','旗舰机','千元机'],
+    gpu:      ['显卡','gpu','rtx','rx ','显存','光追','甜品卡','游戏卡','独显卡'],
+    cpu:      ['cpu','处理器','酷睿','锐龙','ryzen','i5','i7','i9'],
+    laptop:   ['笔记本电脑','笔记本','笔电','游戏本','轻薄本','本子','超极本','电脑','台式机','台式','一体机','macbook','电竞本'],
+    ac:       ['空调','挂机','柜机','变频空调'],
+    robot:    ['扫地机','扫地机器人','拖地机','扫拖机'],
+    earphone: ['耳机','耳塞','降噪豆','蓝牙耳机','tws','入耳','头戴'],
+    monitor:  ['显示器','显示屏','电竞屏','带鱼屏','曲面屏','外接屏']
+  };
+  function detectCategory(q) {
+    const lower = q.toLowerCase();
+    let best = null, bestLen = 0;
+    for (const k in CAT_KEYWORDS) {
+      for (const w of CAT_KEYWORDS[k]) {
+        if (lower.includes(w.toLowerCase()) && w.length > bestLen) { best = k; bestLen = w.length; }
+      }
+    }
+    return best; // 未识别到明确品类则返回 null
+  }
+
   // 阶段二后端地址：优先调用云端大模型解析意图，不可用则自动降级本地规则
   const AI_BACKEND = 'http://127.0.0.1:8000';
 
@@ -2264,6 +2313,21 @@ function monitorCompareDims(ph) {
 
   // 打开 AI 选购弹窗并给出推荐
   async function openAiShop(query) {
+    // AI 选购独立于下方选中标签：先从用户描述里识别目标品类
+    const detected = detectCategory(query);
+    let switchedNote = '';
+    if (detected && detected !== state.category) {
+      // 自动切到识别出的品类，保证数据源、"加入对比"等后续操作与推荐结果一致
+      state.category = detected;
+      state.filterBrand = null;
+      state.filterPriceRange = null;
+      state.sortBy = cat().defaultSort;
+      state.compareList = [];
+      state.searchQuery = '';
+      switchedNote = '已自动切换到「' + cat().name + '」品类';
+      navigateTo('home');
+    }
+
     const C = cat();
     const data = d();
 
@@ -2338,6 +2402,7 @@ function monitorCompareDims(ph) {
 
     // 意图解析展示
     const intentTags = [];
+    intentTags.push({ t: '📦 ' + C.name, miss: false });
     if (budget) intentTags.push({ t: '💰 预算约 ¥' + budget, miss: false });
     if (brand) intentTags.push({ t: '🏷️ ' + brand, miss: false });
     if (aiUser) intentTags.push({ t: '👤 ' + aiUser, miss: false });
@@ -2374,6 +2439,7 @@ function monitorCompareDims(ph) {
     content.innerHTML =
       '<div class="am-head"><div class="am-title">✨ AI 选购结果</div><span class="am-close" id="amClose">✕</span></div>' +
       '<div class="am-query">你的需求：<b>' + escapeHtml(query) + '</b></div>' +
+      (switchedNote ? '<div style="font-size:12px;color:var(--primary);margin:-4px 0 8px;font-weight:600;">🔀 ' + switchedNote + '</div>' : '') +
       '<div class="am-intent"><div class="am-intent-label">AI 意图解析 ' + engineBadge + '</div><div class="am-intent-tags">' +
         intentTags.map(t => '<span class="am-itag' + (t.miss ? ' miss' : '') + '">' + escapeHtml(t.t) + '</span>').join('') +
       '</div></div>' +
