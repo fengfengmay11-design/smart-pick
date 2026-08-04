@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>智选 · AI 电子产品决策助手</title>
 <style>
@@ -616,6 +617,27 @@
   .am-intent .am-intent-tags { display:flex; gap:6px; flex-wrap:wrap; }
   .am-intent .am-itag { font-size:11px; font-weight:600; color:var(--primary-dark); background:var(--primary-light); border-radius:20px; padding:4px 11px; display:inline-flex; align-items:center; gap:4px; }
   .am-intent .am-itag.miss { color:var(--text-hint); background:var(--bg); }
+
+  /* 实时数据演示模块 */
+  .live-data-card { margin-top:18px; background:linear-gradient(135deg,#0b1530,#13244d); border:1px solid #243a6b; border-radius:18px; padding:18px 18px 20px; color:#eaf0ff; }
+  .live-data-card .ld-title { font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px; }
+  .live-data-card .ld-tag { font-size:10px; font-weight:700; padding:3px 9px; border-radius:20px; background:#1f8fff; color:#fff; letter-spacing:0.03em; }
+  .live-data-card .ld-sub { font-size:12px; line-height:1.7; color:#aab8da; margin:8px 0 14px; }
+  .live-data-card .ld-sub a { color:#6cb4ff; text-decoration:underline; }
+  .live-data-card .ld-btn { border:none; background:#1f8fff; color:#fff; font-weight:700; font-size:14px; padding:10px 18px; border-radius:12px; cursor:pointer; transition:transform .12s, background .15s; }
+  .live-data-card .ld-btn:hover { transform:translateY(-1px); background:#3a9dff; }
+  .live-data-card .ld-btn:disabled { opacity:.55; cursor:wait; transform:none; }
+  .live-data-card .ld-status { font-size:12px; margin:12px 0 4px; min-height:16px; }
+  .live-data-card .ld-status.loading { color:#9db8ff; }
+  .live-data-card .ld-status.ok { color:#5fe0b0; }
+  .live-data-card .ld-status.err { color:#ffcf8f; }
+  .live-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px; margin-top:8px; }
+  .live-card { background:#0e1a38; border:1px solid #22345f; border-radius:12px; padding:8px; }
+  .live-card .live-img { height:84px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .live-card .live-img img { max-height:100%; max-width:100%; object-fit:contain; }
+  .live-card .live-model { font-size:11px; font-weight:600; color:#eaf0ff; margin-top:6px; min-height:28px; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .live-card .live-price { font-size:14px; font-weight:800; color:#ffd166; margin-top:4px; }
+  .live-card .live-rating { font-size:10px; color:#9db8ff; margin-top:2px; }
 </style>
 </head>
 <body>
@@ -673,6 +695,8 @@
 <script src="data-cpu.js"></script>
 <script src="data-earphone.js"></script>
 <script src="data-monitor.js"></script>
+<script src="engine.js"></script>
+<script src="data-source.js"></script>
 <script>
 // ==================== 品类配置 ====================
 const CATEGORIES = {
@@ -1046,6 +1070,56 @@ function renderPage() {
   app.appendChild(page);
 }
 
+// ==================== 实时数据演示（接入外部公开 REST API） ====================
+function renderLiveCard(p) {
+  const stars = (p.rating != null)
+    ? ('★ ' + p.rating.toFixed(1) + ' (' + (p.ratingCount || 0) + ')')
+    : '暂无评分';
+  const price = (p.price != null) ? ('¥' + Number(p.price).toFixed(2)) : '—';
+  return `<div class="live-card">
+    <div class="live-img"><img src="${escapeHtml(p.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"></div>
+    <div class="live-model">${escapeHtml(p.model)}</div>
+    <div class="live-price">${price}</div>
+    <div class="live-rating">${escapeHtml(stars)}</div>
+  </div>`;
+}
+
+// 接口不可用时，降级展示本地 528 款数据中的几款，证明「优雅降级」真实可用
+function localFallbackCards() {
+  let phones = [];
+  try { phones = (CATEGORIES.phone.data() || []).slice(0, 4); } catch (e) {}
+  if (!phones.length) return '';
+  return phones.map(p => renderLiveCard({
+    id: p.id, model: p.model,
+    image: (typeof phoneImage === 'function') ? phoneImage(p) : (p.image || ''),
+    price: (p.storageOptions && p.storageOptions[0]) ? p.storageOptions[0].priceJd : null,
+    rating: null, ratingCount: 0
+  })).join('');
+}
+
+async function loadLiveData() {
+  const status = document.getElementById('liveStatus');
+  const grid = document.getElementById('liveGrid');
+  const btn = document.getElementById('liveLoadBtn');
+  if (!grid || !btn) return;
+  btn.disabled = true;
+  status.textContent = '正在请求 fakestoreapi.com ...';
+  status.className = 'ld-status loading';
+  try {
+    const items = await fetchLiveProducts('electronics', { timeoutMs: 8000 });
+    if (!items.length) throw new Error('空数据');
+    grid.innerHTML = items.map(renderLiveCard).join('');
+    status.textContent = '✅ 已从公开接口加载 ' + items.length + ' 款真实商品';
+    status.className = 'ld-status ok';
+  } catch (e) {
+    grid.innerHTML = localFallbackCards();
+    status.textContent = '⚠️ 接口暂不可用，已自动降级到本地数据（' + (grid.children.length || 0) + ' 款）';
+    status.className = 'ld-status err';
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 // ==================== 首页 ====================
 function renderHome(page) {
   const C = cat();
@@ -1074,6 +1148,14 @@ function renderHome(page) {
     <div class="brand-row" id="brandRow"></div>
     <div class="section-title">热门${C.name}</div>
     <div class="hot-list" id="hotList"></div>
+
+    <div class="live-data-card" id="liveDataCard">
+      <div class="ld-title">📡 实时数据演示 <span class="ld-tag">公开 REST API</span></div>
+      <div class="ld-sub">接入 <a href="https://fakestoreapi.com" target="_blank" rel="noopener">fakestoreapi.com</a> 真实接口，异步拉取真实商品图 / 价格 / 评分，展示「前端 → 外部 API → 归一化 → 渲染」的完整数据流。接口超时或不可达时，自动降级到本地 528 款数据。</div>
+      <button class="ld-btn" id="liveLoadBtn">加载实时商品</button>
+      <div class="ld-status" id="liveStatus"></div>
+      <div class="live-grid" id="liveGrid"></div>
+    </div>
   `;
 
   // 品类切换
@@ -1100,6 +1182,12 @@ function renderHome(page) {
   page.querySelectorAll('.asc-chip').forEach(chip => {
     chip.addEventListener('click', function() { aiInput.value = this.dataset.q; openAiShop(this.dataset.q); });
   });
+
+  // 实时数据演示：接入外部公开 REST API
+  const liveBtn = page.querySelector('#liveLoadBtn');
+  if (liveBtn && typeof fetchLiveProducts === 'function') {
+    liveBtn.addEventListener('click', loadLiveData);
+  }
 
   // 搜索
   page.querySelector('#searchInput').addEventListener('input', function(e) {
@@ -2233,20 +2321,7 @@ function monitorCompareDims(ph) {
     ]
   };
 
-  // 从自然语言里解析预算（元）
-  function parseAiBudget(q) {
-    let s = q.replace(/[，,、。\s]/g, '');
-    // 万 -> 元
-    let m = s.match(/(\d+(?:\.\d+)?)\s*万/);
-    if (m) return Math.round(parseFloat(m[1]) * 10000);
-    // k -> 千
-    m = s.match(/(\d+(?:\.\d+)?)\s*[kK千]/);
-    if (m) return Math.round(parseFloat(m[1]) * 1000);
-    // 预算XXXX / XXXX左右 / XXXX元 / XXXX以内 / XXXX块
-    m = s.match(/(?:预算|大概|大约)?(\d{3,6})(?:元|块|左右|上下|以内|以下|内|附近)?/);
-    if (m) { const v = parseInt(m[1]); if (v >= 200) return v; }
-    return null;
-  }
+  // 预算解析 parseAiBudget() 已抽离至 engine.js（全局），测试覆盖真实代码
 
   // 解析品牌
   function parseAiBrand(q) {
@@ -2261,27 +2336,7 @@ function monitorCompareDims(ph) {
     return list.filter(it => it.words.some(w => lower.includes(w.toLowerCase())));
   }
 
-  // 从自然语言里识别用户想要的品类（AI 选购独立于当前选中标签的关键）
-  const CAT_KEYWORDS = {
-    phone:    ['手机','iphone','安卓机','旗舰机','千元机'],
-    gpu:      ['显卡','gpu','rtx','rx ','显存','光追','甜品卡','游戏卡','独显卡'],
-    cpu:      ['cpu','处理器','酷睿','锐龙','ryzen','i5','i7','i9'],
-    laptop:   ['笔记本电脑','笔记本','笔电','游戏本','轻薄本','本子','超极本','电脑','台式机','台式','一体机','macbook','电竞本'],
-    ac:       ['空调','挂机','柜机','变频空调'],
-    robot:    ['扫地机','扫地机器人','拖地机','扫拖机'],
-    earphone: ['耳机','耳塞','降噪豆','蓝牙耳机','tws','入耳','头戴'],
-    monitor:  ['显示器','显示屏','电竞屏','带鱼屏','曲面屏','外接屏']
-  };
-  function detectCategory(q) {
-    const lower = q.toLowerCase();
-    let best = null, bestLen = 0;
-    for (const k in CAT_KEYWORDS) {
-      for (const w of CAT_KEYWORDS[k]) {
-        if (lower.includes(w.toLowerCase()) && w.length > bestLen) { best = k; bestLen = w.length; }
-      }
-    }
-    return best; // 未识别到明确品类则返回 null
-  }
+  // 品类识别 detectCategory() 与 CAT_KEYWORDS 已抽离至 engine.js（全局），测试覆盖真实代码
 
   // 阶段二后端地址：优先调用云端大模型解析意图，不可用则自动降级本地规则
   const AI_BACKEND = 'http://127.0.0.1:8000';

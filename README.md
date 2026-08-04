@@ -114,9 +114,30 @@
 >
 > API Key 只存在后端环境变量，`.env` 已加入 `.gitignore`，**绝不下发前端**，杜绝盗刷风险。
 
+### 架构与数据流图
+
+```mermaid
+flowchart TB
+  U["用户自然语言<br/>「5000内影像好的手机」"] --> FE["前端 index.html<br/>AI 选购入口"]
+  FE --> DET["detectCategory<br/>识别目标品类"]
+  DET --> DEC{"后端可用?<br/>(8s 超时)"}
+  DEC -->|"是"| LLM["FastAPI /api/parse<br/>云端大模型 → 意图 JSON"]
+  DEC -->|"否 · 降级"| RULE["本地规则引擎<br/>INTENTS 词典 + 正则"]
+  LLM --> ENGINE["加权打分引擎<br/>generateHelpResult"]
+  RULE --> ENGINE
+  ENGINE --> EXP["可解释推荐<br/>置信度 + 质量自评"]
+  EXP --> UI["结果卡片 / 对比 / 加入对比"]
+  FE -.->|"实时数据演示"| API[("fakestoreapi<br/>公开 REST 接口")]
+  API --> NORM["归一化 normalizeLiveProduct"]
+  NORM --> UI
+```
+
 ```
 phone-compare/
-├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级）
+├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级 + 实时数据模块）
+├── engine.js           # 推荐引擎纯逻辑层（品类识别/预算解析），被前端与测试共用
+├── data-source.js      # 实时数据源抽象层（接入 fakestoreapi 公开接口 + 超时降级）
+├── favicon.svg         # 站点图标
 ├── phone-data.js       # 手机数据（74 款，含真实产品图 CDN）
 ├── data-gpu.js         # 显卡（209 款）
 ├── data-cpu.js         # CPU（40 款）
@@ -125,6 +146,8 @@ phone-compare/
 ├── data-robot.js       # 扫地机器人（40 款）
 ├── data-earphone.js    # 耳机（45 款）
 ├── data-monitor.js     # 显示器（40 款）
+├── tests/
+│   └── run.js          # 零依赖单元测试（node tests/run.js）
 └── server/             # 阶段二 AI 后端（Python FastAPI + 大模型意图理解）
     ├── main.py         #   /api/parse：自然语言 → 结构化意图 JSON
     ├── requirements.txt
@@ -179,6 +202,8 @@ git push -u origin main
 - 产品型号、规格、价格为公开市场信息整理，用于产品原型演示；
 - 价格与规格会随市场变化，条目含 `lastVerified` 标注核对日期；
 - 本项目为个人作品集 / 产品原型，非商业销售平台。
+- **实时数据模块**：首页「实时数据演示」接入公开的 [fakestoreapi.com](https://fakestoreapi.com) REST 接口，异步拉取**真实商品图 / 价格 / 评分**，用于演示「前端 → 外部 API → 归一化 → 渲染」的完整数据流；接口不可达时自动降级到本地 528 款数据。
+- **测试**：`node tests/run.js` 覆盖品类识别、预算解析、实时数据归一化与超时降级，测试的是 `engine.js` / `data-source.js` 中的真实代码。
 
 ## 八、Roadmap
 
