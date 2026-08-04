@@ -618,6 +618,42 @@
   .am-intent .am-itag { font-size:11px; font-weight:600; color:var(--primary-dark); background:var(--primary-light); border-radius:20px; padding:4px 11px; display:inline-flex; align-items:center; gap:4px; }
   .am-intent .am-itag.miss { color:var(--text-hint); background:var(--bg); }
 
+  /* ===== 阶段三：AI 推荐增强内容样式 ===== */
+  .ai-reason { margin:12px 0 8px; padding:12px 14px; background:linear-gradient(135deg,#f0f4ff,#eef6ff); border-left:3px solid var(--primary); border-radius:0 10px 10px 0; font-size:13px; line-height:1.75; color:var(--text-primary); }
+  .ai-reason .ai-r-label { font-size:11px; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px; }
+  .ai-compare { margin:10px 0 6px; }
+  .ai-compare .ai-c-label { font-size:12px; font-weight:700; color:var(--text-primary); margin-bottom:6px; display:flex; align-items:center; gap:5px; }
+  .ai-compare .ai-c-item { display:flex; gap:10px; padding:8px 0; border-bottom:1px solid var(--border); font-size:12.5px; line-height:1.65; }
+  .ai-compare .ai-c-item:last-child { border-bottom:none; }
+  .ai-compare .ai-c-rank { width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0;margin-top:2px; }
+  .ai-compare .ai-c-rank.r1 { background:var(--primary); }
+  .ai-compare .ai-c-rank.r2 { background:#6b7280; }
+  .ai-compare .ai-c-rank.r3 { background:#9ca3af; }
+  .ai-compare .ai-c-body { flex:1; }
+  .ai-compare .ai-c-name { font-weight:700; color:var(--text-primary); }
+  .ai-compare .ai-c-detail { color:var(--text-secondary); margin-top:1px; }
+  .ai-advice { margin:10px 0 6px; padding:11px 13px; background:#fffbeb; border:1px solid #fde68a; border-radius:10px; }
+  .ai-advice .ai-a-label { font-size:11px; font-weight:700; color:#92400e; text-transform:uppercase; letter-spacing:.04em; margin-bottom:5px; }
+  .ai-advice .ai-a-list { font-size:12.5px; line-height:1.7; color:#78350f; }
+  .ai-advice .ai-a-list li { margin-bottom:3px; padding-left:2px; }
+  .ai-summary { margin:10px 0 4px; padding:10px 14px; background:var(--primary); color:#fff; border-radius:10px; font-size:13px; line-height:1.65; font-weight:600; }
+  /* 追问区域 */
+  .ai-followup { margin-top:14px; border-top:1px solid var(--border); padding-top:12px; }
+  .ai-followup .ai-f-label { font-size:12px; font-weight:700; color:var(--text-secondary); margin-bottom:7px; }
+  .ai-followup .ai-f-inputwrap { display:flex; gap:6px; }
+  .ai-followup .ai-f-input { flex:1; border:1px solid var(--border); border-radius:10px; padding:9px 12px; font-size:13px; outline:none; transition:border-color .15s; }
+  .ai-followup .ai-f-input:focus { border-color:var(--primary); }
+  .ai-followup .ai-f-btn { border:none; background:var(--primary); color:#fff; font-weight:700; font-size:13px; padding:9px 16px; border-radius:10px; cursor:pointer; white-space:nowrap; transition:opacity .15s; }
+  .ai-followup .ai-f-btn:hover { opacity:.85; }
+  .ai-followup .ai-f-btn:disabled { opacity:.45; cursor:wait; }
+  .ai-followup .ai-f-answer { margin-top:10px; padding:10px 13px; background:var(--bg); border-radius:10px; font-size:13px; line-height:1.7; color:var(--text-primary); display:none; }
+  .ai-followup .ai-f-answer.show { display:block; animation:fadeInUp .25s ease; }
+  @keyframes fadeInUp { from{opacity:0;transform:translateY(6px);} to{opacity:1;transform:translateY(0);} }
+  /* LLM 加载态 */
+  .ai-llm-loading { padding:16px;text-align:center;color:var(--text-hint);font-size:13px;line-height:1.8; }
+  .ai-llm-loading .spinner { display:inline-block;width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .6s linear infinite;vertical-align:-3px;margin-right:6px; }
+  @keyframes spin { to{transform:rotate(360deg);} }
+
 </style>
 </head>
 <body>
@@ -2363,6 +2399,41 @@ function monitorCompareDims(ph) {
     const range = maxS - minS;
     top.forEach(s => { s.matchPct = range > 0 ? Math.round(((s.score - minS) / range) * 100) : 60; });
 
+    // ===== 阶段三：调用大模型生成个性化推荐内容 =====
+    let aiRec = null; // { reason, comparison, advice, summary }
+    if (aiEngine === 'llm') {
+      try {
+        const prodSummaries = top.map((s, i) => ({
+          rank: i + 1,
+          brand: s.item.brand,
+          model: s.item.model,
+          price: s.price,
+          score: s.score,
+          match_pct: s.matchPct,
+          reasons: s.reasons,
+          tradeoffs: s.tradeoffs,
+          specs: s.item.specs || null,
+        }));
+        const recCtrl = new AbortController();
+        const recTimer = setTimeout(() => recCtrl.abort(), 12000);
+        const recResp = await fetch(AI_BACKEND + '/api/recommend', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query, category: state.category,
+            intent: { budget, brand, intents, user: aiUser },
+            products: prodSummaries,
+          }),
+          signal: recCtrl.signal,
+        });
+        clearTimeout(recTimer);
+        if (recResp.ok) {
+          const recData = await recResp.json();
+          if (recData.ok && recData.recommendation) aiRec = recData.recommendation;
+        }
+      } catch (e) { /* 推荐内容生成失败 → 降级到模板 */ }
+    }
+
     // 置信度
     const lead = runnerUp ? best.score - runnerUp.score : best.score;
     const leadNorm = maxS > 0 ? Math.min(Math.abs(lead) / Math.max(Math.abs(maxS), 1), 1) : 0;
@@ -2406,6 +2477,36 @@ function monitorCompareDims(ph) {
     const scoreBars = top.map((s, i) => '<div class="hr-sb-item"><div class="hr-sb-head"><span class="hr-sb-name">' + s.item.brand + ' ' + s.item.model + '</span><span class="hr-sb-val">' + s.matchPct + '</span></div><div class="hr-sb-track"><div class="hr-sb-fill' + (i === 0 ? '' : ' second') + '" style="width:' + s.matchPct + '%"></div></div></div>').join('');
 
     const content = $('#amContent');
+
+    // ===== 构建 AI 增强内容片段 =====
+    const aiReasonHtml = aiRec && aiRec.reason
+      ? '<div class="ai-reason"><div class="ai-r-label">💡 AI 推荐理由</div>' + aiRec.reason + '</div>'
+      : '<div class="hr-reasons"><div style="font-weight:700;font-size:13px;margin-bottom:6px;">推荐理由：</div><ul>' + (best.reasons.length ? [...new Set(best.reasons)].map(r => '<li>' + r + '</li>').join('') : '<li>综合热度与参数表现均衡</li>') + '</ul></div>';
+
+    const aiCompareHtml = aiRec && aiRec.comparison
+      ? '<div class="ai-compare"><div class="ai-c-label">⚖️ 候选对比分析</div>' + top.map((s, i) => {
+          const rankClass = i === 0 ? 'r1' : i === 1 ? 'r2' : 'r3';
+          return '<div class="ai-c-item"><div class="ai-c-rank ' + rankClass + '">' + (i + 1) + '</div><div class="ai-c-body"><div class="ai-c-name">' + s.item.brand + ' ' + s.item.model + '</div><div class="ai-c-detail">¥' + s.price + ' · 匹配度 ' + s.matchPct + '%</div></div></div>';
+        }).join('') + '<div style="margin-top:8px;font-size:12.5px;line-height:1.7;color:var(--text-secondary);padding-left:32px;">' + aiRec.comparison + '</div></div>'
+      : '';
+
+    const aiAdviceHtml = aiRec && aiRec.advice
+      ? '<div class="ai-advice"><div class="ai-a-label">📋 决策建议</div><ul class="ai-a-list"><li>' + aiRec.advice.replace(/\n/g, '</li><li>') + '</li></ul></div>'
+      : '';
+
+    const aiSummaryHtml = aiRec && aiRec.summary
+      ? '<div class="ai-summary">🎯 ' + aiRec.summary + '</div>'
+      : '';
+
+    // 追问区域（仅大模型可用时显示）
+    const aiFollowupHtml = aiEngine === 'llm'
+      ? '<div class="ai-followup" id="aiFollowupSection">'
+        + '<div class="ai-f-label">💬 还有疑问？可以继续追问</div>'
+        + '<div class="ai-f-inputwrap"><input type="text" class="ai-f-input" id="aiFollowInput" placeholder="例如：为什么不是iPhone？这款和第二款比呢？" /><button class="ai-f-btn" id="aiFollowBtn">追问</button></div>'
+        + '<div class="ai-f-answer" id="aiFollowAnswer"></div>'
+        + '</div>'
+      : '';
+
     content.innerHTML =
       '<div class="am-head"><div class="am-title">✨ AI 选购结果</div><span class="am-close" id="amClose">✕</span></div>' +
       '<div class="am-query">你的需求：<b>' + escapeHtml(query) + '</b></div>' +
@@ -2414,16 +2515,20 @@ function monitorCompareDims(ph) {
         intentTags.map(t => '<span class="am-itag' + (t.miss ? ' miss' : '') + '">' + escapeHtml(t.t) + '</span>').join('') +
       '</div></div>' +
       '<div class="help-result show" style="margin-top:14px;">' +
-        '<div class="hr-title">📌 为你推荐 <span class="ai-badge">⚡ 决策引擎</span></div>' +
+        '<div class="hr-title">📌 为你推荐 <span class="ai-badge">' + (aiRec ? '☁️ 大模型增强' : '⚡ 决策引擎') + '</span></div>' +
         '<div class="hr-model">' + best.item.brand + ' ' + best.item.model + '</div>' +
         '<div style="font-size:13px;color:var(--primary);font-weight:700;margin:-6px 0 10px;">参考价 ¥' + best.price + '</div>' +
         '<div class="hr-conf-row">' + ring + '<div class="hr-conf-meta"><div class="hr-conf-label">推荐置信度</div><div class="hr-conf-verdict">' + verdict + '</div></div></div>' +
-        '<div class="hr-reasons"><div style="font-weight:700;font-size:13px;margin-bottom:6px;">推荐理由：</div><ul>' + (best.reasons.length ? [...new Set(best.reasons)].map(r => '<li>' + r + '</li>').join('') : '<li>综合热度与参数表现均衡</li>') + '</ul></div>' +
-        (best.tradeoffs.length ? '<div class="hr-tradeoff">⚠️ 需要接受的取舍：' + [...new Set(best.tradeoffs)].join('；') + '</div>' : '') +
+        aiReasonHtml +
+        (best.tradeoffs.length && !aiRec ? '<div class="hr-tradeoff">⚠️ 需要接受的取舍：' + [...new Set(best.tradeoffs)].join('；') + '</div>' : '') +
+        aiCompareHtml +
         '<div style="font-weight:700;font-size:13px;margin:10px 0 6px;">候选匹配度对比：</div><div class="hr-scorebar">' + scoreBars + '</div>' +
+        aiAdviceHtml +
+        aiSummaryHtml +
         '<div class="qa-panel"><div class="qa-title">🔍 AI 推荐质量自评</div><div class="qa-sub">引擎对本次自然语言理解与推荐结果的自我评估（借鉴模型评测思路）</div><div class="qa-metrics">' +
           qaMetric('意图理解度', understanding) + qaMetric('需求覆盖度', coverage) + qaMetric('候选区分度', separation) + qaMetric('预算契合度', inBudget) +
         '</div><div class="qa-note"><b>自评结论：</b>' + qaNote + '</div></div>' +
+        aiFollowupHtml +
         '<div style="margin-top:14px;display:flex;gap:8px;">' +
           '<button class="hm-submit" id="amAddCompare" style="flex:1;">加入对比</button>' +
         '</div>' +
@@ -2438,6 +2543,64 @@ function monitorCompareDims(ph) {
       modal.classList.remove('show');
       toast('已加入对比，向下滑动查看');
     });
+
+    // 追问功能（仅大模型模式）
+    const followBtn = content.querySelector('#aiFollowBtn');
+    const followInput = content.querySelector('#aiFollowInput');
+    const followAnswer = content.querySelector('#aiFollowAnswer');
+    if (followBtn && followInput && followAnswer) {
+      let convHistory = [
+        { role: 'assistant', content: '已根据你的需求「' + query + '」推荐了 ' + best.item.brand + ' ' + best.item.model + ' 等产品。' + (aiRec && aiRec.reason ? '\n推荐理由：' + aiRec.reason : '') }
+      ];
+      const doFollowup = async () => {
+        const q = followInput.value.trim();
+        if (!q.length) return;
+        followBtn.disabled = true;
+        followBtn.textContent = '思考中…';
+        followAnswer.innerHTML = '<div class="ai-llm-loading"><span class="spinner"></span>AI 正在回答…</div>';
+        followAnswer.classList.add('show');
+        convHistory.push({ role: 'user', content: q });
+        try {
+          const prodSummaries = top.map((s, i) => ({
+            rank: i + 1, brand: s.item.brand, model: s.item.model,
+            price: s.price, score: s.score, match_pct: s.matchPct,
+            reasons: s.reasons, tradeoffs: s.tradeoffs, specs: s.item.specs || null,
+          }));
+          const fCtrl = new AbortController();
+          const fTimer = setTimeout(() => fCtrl.abort(), 10000);
+          const fResp = await fetch(AI_BACKEND + '/api/followup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              query, category: state.category,
+              followup_question: q,
+              conversation_history: convHistory.slice(-8),
+              context_products: prodSummaries,
+            }),
+            signal: fCtrl.signal,
+          });
+          clearTimeout(fTimer);
+          if (fResp.ok) {
+            const fData = await fResp.json();
+            if (fData.ok && fData.answer) {
+              followAnswer.innerHTML = '<div style="white-space:pre-line;">' + escapeHtml(fData.answer) + '</div>';
+              convHistory.push({ role: 'assistant', content: fData.answer });
+            } else {
+              followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">抱歉，暂时无法回答这个问题。</div>';
+            }
+          } else {
+            followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">网络请求失败，请稍后重试。</div>';
+          }
+        } catch (e) {
+          followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">连接超时或后端不可用。</div>';
+        }
+        followInput.value = '';
+        followBtn.disabled = false;
+        followBtn.textContent = '追问';
+      };
+      followBtn.addEventListener('click', doFollowup);
+      followInput.addEventListener('keydown', e => { if (e.key === 'Enter') doFollowup(); });
+    }
   }
 
   $('#aiModal').addEventListener('click', function(e) {
