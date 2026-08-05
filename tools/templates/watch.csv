@@ -1,0 +1,6 @@
+﻿id,brand,model,image,launchDate,popularity,sales,priceDrop,price_jd,price_pdd,specs,tags,officialUrl,lastVerified
+apple-watch-s10-46,苹果,Apple Watch Series 10 (46mm),,2024-09,92,84,False,3199,2999,"{""size"": ""46mm"", ""screen"": ""1.9英寸 LTPO OLED"", ""battery"": ""18小时"", ""gps"": ""双频GPS"", ""health"": ""血氧/ECG/心率"", ""weight"": ""36.6g"", ""os"": ""watchOS""}",苹果;ECG;旗舰,,2026-08-05
+huawei-watch-gt5pro,华为,Watch GT5 Pro,,2024-09,84,78,False,2488,2288,"{""size"": ""46mm"", ""screen"": ""1.43英寸 AMOLED"", ""battery"": ""14天"", ""gps"": ""双频GPS"", ""health"": ""血氧/心率/睡眠"", ""weight"": ""53g"", ""os"": ""HarmonyOS""}",长续航;鸿蒙;运动,,2026-08-05
+samsung-watch7,三星,Galaxy Watch7,,2024-07,74,64,False,1899,1699,"{""size"": ""44mm"", ""screen"": ""1.5英寸 AMOLED"", ""battery"": ""约40小时"", ""gps"": ""GPS"", ""health"": ""血氧/心率/体脂"", ""weight"": ""33.8g"", ""os"": ""Wear OS""}",三星;WearOS,,2026-08-05
+xiaomi-watch-s4,小米,Watch S4,,2024-10,70,66,False,999,899,"{""size"": ""47mm"", ""screen"": ""1.43英寸 AMOLED"", ""battery"": ""15天"", ""gps"": ""GPS"", ""health"": ""血氧/心率/睡眠"", ""weight"": ""44.5g"", ""os"": ""HyperOS""}",性价比;长续航,,2026-08-05
+honor-watch5,荣耀,Watch 5,,2024-09,60,52,False,999,899,"{""size"": ""46mm"", ""screen"": ""1.85英寸 AMOLED"", ""battery"": ""约14天"", ""gps"": ""GPS"", ""health"": ""血氧/心率"", ""weight"": ""32g"", ""os"": ""MagicOS""}",轻商务;长续航,,2026-08-05

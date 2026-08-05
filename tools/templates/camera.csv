@@ -1,0 +1,7 @@
+﻿id,brand,model,image,launchDate,popularity,sales,priceDrop,price_jd,price_pdd,specs,tags,officialUrl,lastVerified
+sony-a7m4,索尼,Alpha 7 IV (A7M4),,2021-10,95,80,False,16999,15999,"{""sensor"": ""全画幅"", ""resolution"": ""3300万"", ""video"": ""4K60"", ""mount"": ""E卡口"", ""ibis"": ""五轴防抖"", ""weight"": ""658g"", ""screen"": ""3英寸翻转屏""}",全画幅;防抖;视频,,2026-08-05
+canon-r6ii,佳能,EOS R6 Mark II,,2022-11,90,76,False,15999,14999,"{""sensor"": ""全画幅"", ""resolution"": ""2420万"", ""video"": ""4K60"", ""mount"": ""RF卡口"", ""ibis"": ""五轴防抖"", ""weight"": ""670g"", ""screen"": ""3英寸翻转屏""}",全画幅;防抖;连拍,,2026-08-05
+nikon-z6iii,尼康,Z6 III,,2024-06,84,64,False,13999,13599,"{""sensor"": ""全画幅"", ""resolution"": ""2450万"", ""video"": ""6K60"", ""mount"": ""Z卡口"", ""ibis"": ""五轴防抖"", ""weight"": ""760g"", ""screen"": ""3.2英寸翻转屏""}",全画幅;6K视频;防抖,,2026-08-05
+fujifilm-xt5,富士,X-T5,,2022-11,86,70,False,11990,10990,"{""sensor"": ""APS-C"", ""resolution"": ""4020万"", ""video"": ""6.2K30"", ""mount"": ""X卡口"", ""ibis"": ""五轴防抖"", ""weight"": ""557g"", ""screen"": ""三向翻折屏""}",复古;高像素;胶片模拟,,2026-08-05
+sony-zve10ii,索尼,ZV-E10 II,,2024-07,78,72,False,5999,5699,"{""sensor"": ""APS-C"", ""resolution"": ""2600万"", ""video"": ""4K60"", ""mount"": ""E卡口"", ""ibis"": ""无防抖"", ""weight"": ""377g"", ""screen"": ""翻折屏""}",Vlog;轻量;4K,,2026-08-05
+canon-r50,佳能,EOS R50,,2023-02,70,66,False,4599,4299,"{""sensor"": ""APS-C"", ""resolution"": ""2420万"", ""video"": ""4K30"", ""mount"": ""RF卡口"", ""ibis"": ""无防抖"", ""weight"": ""375g"", ""screen"": ""翻折屏""}",入门;轻量;Vlog,,2026-08-05

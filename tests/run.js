@@ -27,7 +27,7 @@ async function run() {
   eq('「轻薄本全天续航」→ laptop', engine.detectCategory('轻薄本全天续航'), 'laptop');
   eq('「2K高刷电竞屏色彩准」→ monitor', engine.detectCategory('2K高刷电竞屏色彩准'), 'monitor'); // 不被「电脑」抢走
   eq('「只说预算3000」→ null', engine.detectCategory('只说预算3000'), null);
-  ok('覆盖 8 个品类关键词', Object.keys(engine.CAT_KEYWORDS).length === 8);
+  ok('覆盖 13 个品类关键词', Object.keys(engine.CAT_KEYWORDS).length === 13);
 
   console.log('\n[2] 预算解析 parseAiBudget');
   eq('「5000左右」→ 5000', engine.parseAiBudget('5000左右'), 5000);

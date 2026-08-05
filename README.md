@@ -2,7 +2,7 @@
 
 > 一个面向普通消费者的 **AI 驱动选购决策工具**：不再让用户对着一堆参数表发愁，而是把"我该买哪个"这个真实决策问题，交给一个可解释、可自评的推荐引擎来回答。
 
-覆盖 **8 大品类、528 款真实产品**，纯前端零后端即可运行。
+覆盖 **13 大品类、576 款真实产品**，纯前端零后端即可运行。
 
 <p align="center">
   <a href="https://fengfengmay11-design.github.io/smart-pick/"><b>🔗 在线体验 Demo (GitHub Pages)</b></a>
@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/品类-8%20大类-4f46e5" alt="品类" />
-  <img src="https://img.shields.io/badge/产品-528%20款-6366f1" alt="产品数" />
+  <img src="https://img.shields.io/badge/品类-13%20大类-4f46e5" alt="品类" />
+  <img src="https://img.shields.io/badge/产品-576%20款-6366f1" alt="产品数" />
   <img src="https://img.shields.io/badge/AI-可解释推荐引擎-8b5cf6" alt="AI" />
   <img src="https://img.shields.io/badge/技术栈-原生JS%20零依赖-0ea5e9" alt="技术栈" />
   <img src="https://img.shields.io/badge/License-MIT-10b981" alt="License" />
@@ -81,7 +81,7 @@
 
 ## 四、功能一览
 
-- **8 大品类对比**：手机 / 显卡 / CPU / 笔记本 / 空调 / 扫地机器人 / 耳机 / 显示器，共 528 款真实型号
+- **13 大品类对比**：手机 / 显卡 / CPU / 笔记本 / 空调 / 扫地机器人 / 耳机 / 显示器 / 平板 / 相机 / 电视 / 智能手表 / 机械键盘，共 576 款真实型号
 - **多品类通用框架**：通过品类配置对象抽象数据访问，新增品类无需改动渲染逻辑
 - **智能对比**：最多 3 款并排，按品类拆分维度、自动高亮差异、生成结论
 - **AI 自然语言选购**：一句话描述需求，AI 解析意图并从全库推荐（详见上文）
@@ -93,7 +93,7 @@
 ## 五、技术栈与架构
 
 - **纯前端单页应用**：原生 HTML/CSS/JavaScript，零框架、零依赖，开箱即用
-- **数据分层**：`index.html`（视图 + 逻辑）+ 8 个 `data-*.js` 品类数据文件
+- **数据分层**：`index.html`（视图 + 逻辑）+ 13 个品类数据文件（`phone-data.js` + 12 个 `data-*.js`）
 - **品类抽象层**：`CATEGORIES` 配置对象 + `cat()` 统一数据访问入口，解耦渲染与数据
 - **推荐引擎**：`generateHelpResult()` —— 打分 / 归一化 / 置信度 / 质量自评
 - **AI 意图理解后端（阶段二，可选）**：Python FastAPI + 大模型（DeepSeek，OpenAI 兼容），见 `server/`
@@ -134,7 +134,7 @@ phone-compare/
 ├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级）
 ├── engine.js           # 推荐引擎纯逻辑层（品类识别/预算解析），被前端与测试共用
 ├── favicon.svg         # 站点图标
-├── phone-data.js       # 手机数据（74 款，含真实产品图 CDN）
+├── phone-data.js       # 手机数据（93 款，含真实产品图 CDN）
 ├── data-gpu.js         # 显卡（209 款）
 ├── data-cpu.js         # CPU（40 款）
 ├── data-laptop.js      # 笔记本（40 款）
@@ -142,6 +142,11 @@ phone-compare/
 ├── data-robot.js       # 扫地机器人（40 款）
 ├── data-earphone.js    # 耳机（45 款）
 ├── data-monitor.js     # 显示器（40 款）
+├── data-tablet.js      # 平板（7 款）
+├── data-camera.js      # 相机（6 款）
+├── data-tv.js          # 电视（6 款）
+├── data-watch.js       # 智能手表（5 款）
+├── data-keyboard.js    # 机械键盘（5 款）
 ├── tests/
 │   └── run.js          # 零依赖单元测试（node tests/run.js）
 └── server/             # 阶段二 AI 后端（Python FastAPI + 大模型意图理解）
@@ -218,4 +223,4 @@ git push -u origin main
 
 AI 产品方向，关注 **AI 能力在真实消费场景的落地** 与 **AI 输出的质量评估**。本项目从一个"参数对比页"出发，重点探索了如何把 AI 做成**可解释、可自评、值得信任**的决策助手——而不只是一个更花哨的信息展示工具。
 
-> 项目从手机对比起步，逐步演进为覆盖 8 大品类的通用决策框架，核心是产品定位的持续迭代与 AI 能力的深度设计。
+> 项目从手机对比起步，逐步演进为覆盖 13 大品类的通用决策框架，核心是产品定位的持续迭代与 AI 能力的深度设计。

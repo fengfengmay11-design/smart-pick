@@ -1,0 +1,6 @@
+﻿id,brand,model,image,launchDate,popularity,sales,priceDrop,price_jd,price_pdd,specs,tags,officialUrl,lastVerified
+logitech-mx-keys-s,罗技,MX Keys S,,2023-01,88,80,True,699,599,"{""layout"": ""全尺寸"", ""switch"": ""薄膜剪刀脚"", ""connection"": ""蓝牙+USB接收器"", ""battery"": ""续航数月"", ""weight"": ""810g""}",办公;静音;多设备,,2026-08-05
+varmilo-va87,阿米洛,VA87 静音版,,2023-01,72,60,False,599,549,"{""layout"": ""87键"", ""switch"": ""静音红轴(机械)"", ""connection"": ""有线/蓝牙"", ""battery"": ""有线无"", ""weight"": ""1.1kg""}",静音;机械;做工,,2026-08-05
+ajazz-ak992,黑爵,AK992 三模,,2024-01,68,64,False,299,269,"{""layout"": ""98键"", ""switch"": ""机械(热插拔)"", ""connection"": ""三模(有线/蓝牙/2.4G)"", ""battery"": ""4000mAh"", ""weight"": ""1.0kg""}",三模;热插拔;性价比,,2026-08-05
+flesports-fl980,腹灵,FL980 三模,,2023-06,64,56,False,399,359,"{""layout"": ""98键"", ""switch"": ""机械(热插拔)"", ""connection"": ""三模"", ""battery"": ""4000mAh"", ""weight"": ""1.1kg""}",三模;热插拔,,2026-08-05
+ducky-k320w,杜伽,K320W 三模,,2023-03,62,52,False,399,369,"{""layout"": ""87键"", ""switch"": ""机械(热插拔)"", ""connection"": ""三模"", ""battery"": ""续航持久"", ""weight"": ""0.9kg""}",三模;复古;做工,,2026-08-05
