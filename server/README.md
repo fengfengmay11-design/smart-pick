@@ -109,44 +109,79 @@ curl http://127.0.0.1:8000/api/health
 
 ### 6.2 申请 Key
 
-1. 打开 [京东联盟开放平台](https://union.jd.com/openplatform/) 注册登录
-2. 左侧「应用管理」→「创建应用」，拿到 **app_key** 和 **app_secret**
-3. 申请接口权限：`jd.union.open.goods.query`（商品搜索）+ `jd.union.open.promotiongoodsinfo.query`（商品详情）
-4. 复制 `.env.example` 为 `.env`，填入凭据
+**完整步骤见 [`docs/JD_UNION_SETUP.md`](../docs/JD_UNION_SETUP.md)**（含填表话术、驳回原因、排错手册）。
+
+速览：
+
+1. [京东联盟](https://union.jd.com/) 用京东账号登录 → 完成**实名认证**
+2. 我的推广 → 推广管理 → 网站管理 → 创建网站（填 GitHub Pages 地址即可，无需备案）
+3. 点「查看」拿到 **appkey** / **secretkey** / **网站ID**
+4. 权限申请：<https://union.jd.com/openplatform/groupApply> → 选「**导购类**」推广模式
+   （权限按推广模式整组开通，不是逐个接口申请；审批 1-3 个工作日）
+5. 配置凭据：
 
 ```bash
-cd server
-cp .env.example .env
-# 编辑 .env，填入 JD_APP_KEY / JD_APP_SECRET / JD_SITE_ID
+cp server/.env.example server/.env
+# 编辑 server/.env 填入 JD_APP_KEY / JD_APP_SECRET / JD_SITE_ID
+python server/verify_setup.py     # 自检：凭据、签名链路、各接口权限
 ```
 
-### 6.3 使用
+**全程免费**。京东联盟靠 CPS 佣金盈利，不对接口收费。
+
+### 6.3 权限分级（重要）
+
+| 接口 | 用途 | 权限 |
+|------|------|------|
+| `goods.jingfen.query` | 京粉精选商品池 | 免申请 |
+| `goods.material.query` | 猜你喜欢推荐 | 免申请 |
+| `category.goods.get` | 商品类目查询 | 免申请 |
+| `goods.query` | **按关键词/skuId 搜商品** | 需申请 |
+
+免权限的三个接口**都不能搜指定型号**（只能按频道拉平台推荐池），
+所以给自己的产品刷价**必须有 `goods.query` 权限**。
+免权限接口的价值是：注册当天先验证签名链路通不通。
+
+### 6.4 使用
 
 ```bash
-# 预览模式（只看差异不写入）
-python refresh_prices.py --dry-run
+# 自检当前有哪些权限
+python server/verify_setup.py
 
-# 刷新全部品类
-python refresh_prices.py
+# 小范围试跑（不写文件，每品类只试5款）
+python server/refresh_prices.py --dry-run --limit 5
 
-# 只刷新手机
-python refresh_prices.py --only phone-data.js
+# 刷单个品类
+python server/refresh_prices.py --only data-tablet.js
 
-# 单个产品测试
-python jd_client.py search "iPhone 16 Pro"
-python jd_client.py detail 100065474274
-python jd_client.py refresh 苹果 iPhone 16 Pro
+# 全量刷新（659款约3.5分钟）
+python server/refresh_prices.py
+
+# 单接口调试
+python server/jd_client.py probe                  # 探测权限
+python server/jd_client.py jingfen 22             # 免权限接口试水
+python server/jd_client.py search "iPad Pro"      # 关键词搜索
+python server/jd_client.py sku 100065474274       # 按SKU精确查价
+
+# 验证写回逻辑（无需 API Key）
+python server/refresh_prices.py --self-test
 ```
 
-### 6.4 注意事项
+### 6.5 安全与容错
 
-- 调用频率限制：默认每款间隔 0.5s（`--delay` 可调）
-- 价格为京东到手价参考值，拼多多价格暂无法自动刷新（保持原值）
-- 无 Key 时脚本会报错提示，不影响前端正常使用（前端有优雅降级）
+- **`.env` 已被 gitignore**。京东官方明令禁止 key 进版本库，`verify_setup.py`
+  每次运行都会检查是否误提交
+- **定点替换**：只改价格数字本身，不整文件重写。`phone-data.js` 尾部的 helper
+  函数和 JS 风格格式都完整保留
+- **自动回滚**：写入前备份，写入后 `node --check` 校验，语法坏了自动还原
+- **匹配纠错**：关键词搜索可能抓到保护壳/翻新机，跌幅超 60% 自动跳过
+  （`--max-drop` 可调）；给产品补 `skuId` 字段可走精确查询彻底规避
+- 拼多多价格无公开 API，保持原值不变
+- 无 Key 时脚本优雅提示，不影响前端运行（纯前端零后端依赖）
 
-### 6.5 文件说明
+### 6.6 文件说明
 
 | 文件 | 职责 |
 |------|------|
-| `jd_client.py` | 京东联盟 API 客户端（签名/搜索/详情/单款刷新） |
-| `refresh_prices.py` | 批量价格刷新脚本（遍历 data-*.js → API → 回写） |
+| `jd_client.py` | API 客户端（.env加载/MD5签名/权限探测/免权限接口/关键词与SKU查询） |
+| `refresh_prices.py` | 批量刷价（定点替换/自动备份回滚/匹配纠错/自测） |
+| `verify_setup.py` | 一键自检：安全检查 → 凭据校验 → 权限探测 → 下一步建议 |
