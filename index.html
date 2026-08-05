@@ -580,7 +580,7 @@
   .ai-shop-card .asc-sub { color:rgba(255,255,255,.82); font-size:12px; margin-bottom:12px; }
   .ai-shop-card .asc-inputwrap { display:flex; gap:8px; position:relative; z-index:1; }
   .ai-shop-card .asc-input {
-    flex:1; border:none; border-radius:var(--radius-sm); padding:12px 14px;
+    width:100%; border:none; border-radius:var(--radius-sm); padding:12px 14px;
     font-size:14px; color:var(--text); background:#fff; outline:none;
     box-shadow:0 2px 8px rgba(0,0,0,.06);
   }
@@ -591,12 +591,12 @@
     box-shadow:0 2px 8px rgba(0,0,0,.06); transition:transform .15s;
   }
   .ai-shop-card .asc-btn:hover { transform:translateY(-1px); }
-  .ai-shop-card .asc-chips { display:flex; gap:6px; flex-wrap:wrap; margin-top:11px; position:relative; z-index:1; }
+  .ai-shop-card .asc-chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; position:relative; z-index:1; }
   .ai-shop-card .asc-chip {
-    font-size:11px; color:#fff; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25);
-    padding:4px 11px; border-radius:20px; cursor:pointer; transition:background .15s;
+    font-size:12.5px; color:#fff; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
+    padding:5px 13px; border-radius:20px; cursor:pointer; transition:all .18s;
   }
-  .ai-shop-card .asc-chip:hover { background:rgba(255,255,255,.3); }
+  .ai-shop-card .asc-chip:hover { background:rgba(255,255,255,.35); transform:translateY(-1px); }
 
   /* ===== AI 选购弹窗 ===== */
   .ai-modal { position:fixed; inset:0; background:rgba(15,23,42,.5); backdrop-filter:blur(4px); z-index:200; display:none; align-items:flex-start; justify-content:center; overflow-y:auto; padding:40px 16px; }
@@ -646,13 +646,36 @@
   .ai-followup .ai-f-btn { border:none; background:var(--primary); color:#fff; font-weight:700; font-size:13px; padding:9px 16px; border-radius:10px; cursor:pointer; white-space:nowrap; transition:opacity .15s; }
   .ai-followup .ai-f-btn:hover { opacity:.85; }
   .ai-followup .ai-f-btn:disabled { opacity:.45; cursor:wait; }
-  .ai-followup .ai-f-answer { margin-top:10px; padding:10px 13px; background:var(--bg); border-radius:10px; font-size:13px; line-height:1.7; color:var(--text-primary); display:none; }
+  .ai-followup .ai-f-answer { margin-top:10px; padding:16px 18px; background:#fff; border-radius:12px; font-size:13.5px; line-height:1.8; color:var(--text-primary); display:none; box-shadow:0 1px 6px rgba(0,0,0,.06); border:1px solid #eee; }
   .ai-followup .ai-f-answer.show { display:block; animation:fadeInUp .25s ease; }
+  .ai-f-md p { margin:0 0 10px 0; }
+  .ai-f-md p:last-child { margin-bottom:0; }
+  .ai-f-md strong { color:var(--primary); font-weight:700; }
+  .ai-f-md em { color:#666; }
+  .ai-f-md ul { margin:8px 0; padding-left:20px; }
+  .ai-f-md li { margin-bottom:5px; }
+  .ai-r-md p { margin:0 0 8px 0; }
+  .ai-r-md p:last-child { margin-bottom:0; }
+  .ai-r-md strong { color:var(--primary); font-weight:700; }
+  /* 追问快捷问题标签 */
+  .ai-followup .ai-f-chips { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; padding:10px 12px; background:#f8f7ff; border-radius:10px; border:1px solid rgba(79,70,229,.1); align-items:center; }
+  .ai-followup .ai-f-chip-label { font-size:12px; color:#888; font-weight:600; margin-right:4px; white-space:nowrap; }
+  .ai-followup .ai-f-chip { font-size:13px; color:var(--primary); background:#fff; border:1px solid rgba(79,70,229,.25); padding:6px 14px; border-radius:20px; cursor:pointer; transition:all .18s; font-weight:500; }
+  .ai-followup .ai-f-chip:hover { background:var(--primary); color:#fff; border-color:var(--primary); transform:translateY(-1px); box-shadow:0 2px 8px rgba(79,70,229,.3); }
+  .ai-followup .ai-f-chip:active { transform:scale(.95); }
   @keyframes fadeInUp { from{opacity:0;transform:translateY(6px);} to{opacity:1;transform:translateY(0);} }
   /* LLM 加载态 */
   .ai-llm-loading { padding:16px;text-align:center;color:var(--text-hint);font-size:13px;line-height:1.8; }
   .ai-llm-loading .spinner { display:inline-block;width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .6s linear infinite;vertical-align:-3px;margin-right:6px; }
   @keyframes spin { to{transform:rotate(360deg);} }
+  /* AI 弹窗内「加入对比」按钮 */
+  #amAddCompare {
+    width:100%; padding:12px; border-radius:14px; border:2px dashed var(--primary);
+    background:transparent; color:var(--primary); font-size:14px; font-weight:700;
+    cursor:pointer; transition:all .2s; box-sizing:border-box;
+  }
+  #amAddCompare:hover { background:var(--primary); color:#fff; border-style:solid; transform:translateY(-1px); box-shadow:0 4px 12px rgba(79,70,229,.25); }
+  #amAddCompare:active { transform:translateY(0); }
 
 </style>
 </head>
@@ -2656,14 +2679,14 @@ function keyboardCompareDims(ph) {
 
     // ===== 构建 AI 增强内容片段 =====
     const aiReasonHtml = aiRec && aiRec.reason
-      ? '<div class="ai-reason"><div class="ai-r-label">💡 AI 推荐理由</div>' + aiRec.reason + '</div>'
+      ? '<div class="ai-reason"><div class="ai-r-label">💡 AI 推荐理由</div><div class="ai-r-md">' + renderMd(aiRec.reason) + '</div></div>'
       : '<div class="hr-reasons"><div style="font-weight:700;font-size:13px;margin-bottom:6px;">推荐理由：</div><ul>' + (best.reasons.length ? [...new Set(best.reasons)].map(r => '<li>' + r + '</li>').join('') : '<li>综合热度与参数表现均衡</li>') + '</ul></div>';
 
     const aiCompareHtml = aiRec && aiRec.comparison
       ? '<div class="ai-compare"><div class="ai-c-label">⚖️ 候选对比分析</div>' + top.map((s, i) => {
           const rankClass = i === 0 ? 'r1' : i === 1 ? 'r2' : 'r3';
           return '<div class="ai-c-item"><div class="ai-c-rank ' + rankClass + '">' + (i + 1) + '</div><div class="ai-c-body"><div class="ai-c-name">' + s.item.brand + ' ' + s.item.model + '</div><div class="ai-c-detail">¥' + s.price + ' · 匹配度 ' + s.matchPct + '%</div></div></div>';
-        }).join('') + '<div style="margin-top:8px;font-size:12.5px;line-height:1.7;color:var(--text-secondary);padding-left:32px;">' + aiRec.comparison + '</div></div>'
+        }).join('')         + '<div style="margin-top:8px;font-size:12.5px;line-height:1.8;color:var(--text-secondary);padding-left:32px;">' + renderMd(aiRec.comparison) + '</div></div>'
       : '';
 
     const aiAdviceHtml = aiRec && aiRec.advice
@@ -2678,7 +2701,8 @@ function keyboardCompareDims(ph) {
     const aiFollowupHtml = aiEngine === 'llm'
       ? '<div class="ai-followup" id="aiFollowupSection">'
         + '<div class="ai-f-label">💬 还有疑问？可以继续追问</div>'
-        + '<div class="ai-f-inputwrap"><input type="text" class="ai-f-input" id="aiFollowInput" placeholder="例如：为什么不是iPhone？这款和第二款比呢？" /><button class="ai-f-btn" id="aiFollowBtn">追问</button></div>'
+        + '<div class="ai-f-inputwrap"><input type="text" class="ai-f-input" id="aiFollowInput" placeholder="或输入其他问题…" /><button class="ai-f-btn" id="aiFollowBtn">追问</button></div>'
+        + '<div class="ai-f-chips" id="aiFollowChips"></div>'
         + '<div class="ai-f-answer" id="aiFollowAnswer"></div>'
         + '</div>'
       : '';
@@ -2784,7 +2808,7 @@ function keyboardCompareDims(ph) {
       ];
       const doFollowup = async () => {
         const q = followInput.value.trim();
-        if (!q.length) return;
+        if (!q.length) { followInput.focus(); followInput.style.borderColor = 'var(--error,#dc2626)'; setTimeout(() => { followInput.style.borderColor = ''; }, 600); return; }
         followBtn.disabled = true;
         followBtn.textContent = '思考中…';
         followAnswer.innerHTML = '<div class="ai-llm-loading"><span class="spinner"></span>AI 正在回答…</div>';
@@ -2797,7 +2821,7 @@ function keyboardCompareDims(ph) {
             reasons: s.reasons, tradeoffs: s.tradeoffs, specs: s.item.specs || null,
           }));
           const fCtrl = new AbortController();
-          const fTimer = setTimeout(() => fCtrl.abort(), 10000);
+          const fTimer = setTimeout(() => fCtrl.abort(), 15000);
           const fResp = await fetch(AI_BACKEND + '/api/followup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -2805,7 +2829,6 @@ function keyboardCompareDims(ph) {
               query, category: state.category,
               followup_question: q,
               conversation_history: convHistory.slice(-8),
-              context_products: prodSummaries,
             }),
             signal: fCtrl.signal,
           });
@@ -2813,16 +2836,17 @@ function keyboardCompareDims(ph) {
           if (fResp.ok) {
             const fData = await fResp.json();
             if (fData.ok && fData.answer) {
-              followAnswer.innerHTML = '<div style="white-space:pre-line;">' + escapeHtml(fData.answer) + '</div>';
+              followAnswer.innerHTML = '<div class="ai-f-md">' + renderMd(fData.answer) + '</div>';
               convHistory.push({ role: 'assistant', content: fData.answer });
             } else {
               followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">抱歉，暂时无法回答这个问题。</div>';
             }
           } else {
-            followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">网络请求失败，请稍后重试。</div>';
+            followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">请求失败（HTTP ' + fResp.status + '），请检查后端是否运行在 127.0.0.1:8000。</div>';
           }
         } catch (e) {
-          followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">连接超时或后端不可用。</div>';
+          console.error('[AI追问] 异常:', e);
+          followAnswer.innerHTML = '<div style="color:var(--error,#dc2626);">连接失败：' + (e.name === 'AbortError' ? '响应超时（15s），请稍后重试' : '后端不可用或网络异常') + '</div>';
         }
         followInput.value = '';
         followBtn.disabled = false;
@@ -2830,6 +2854,51 @@ function keyboardCompareDims(ph) {
       };
       followBtn.addEventListener('click', doFollowup);
       followInput.addEventListener('keydown', e => { if (e.key === 'Enter') doFollowup(); });
+
+      // 上下文相关快捷追问标签
+      const followChips = content.querySelector('#aiFollowChips');
+      if (followChips && best && best.item) {
+        // 小标题
+        const label = document.createElement('span');
+        label.className = 'ai-f-chip-label';
+        label.textContent = '🔍 快捷提问';
+        followChips.appendChild(label);
+        const b = best.item;
+        // 找真正的竞品（不同品牌或不同系列）做对比，跳过同款变体
+        const coreName = b.model.replace(/\s*(USB-C|Lightning|5G|Plus|Pro|Max|Ultra|SE|mini|4G|Wi-Fi)\s*$/gi, '').trim();
+        let rival = null;
+        if (top) for (let i = 1; i < top.length; i++) {
+          const c = top[i].item;
+          const cCore = c.model.replace(/\s*(USB-C|Lightning|5G|Plus|Pro|Max|Ultra|SE|mini|4G|Wi-Fi)\s*$/gi, '').trim();
+          if (c.brand !== b.brand || cCore !== coreName) { rival = c; break; }
+        }
+
+        // 按品类生成相关追问（耳机不问拍照、手机不问音质等）
+        const cat = state.category || '';
+        const baseSuggestions = [];
+        // 续航类——通用
+        baseSuggestions.push(`这款${b.brand}${b.model}续航怎么样？`);
+        // 品类专属
+        if (['phone','tablet','laptop'].includes(cat)) baseSuggestions.push(`适合打游戏吗？`);
+        if (['phone','camera'].includes(cat)) baseSuggestions.push(`拍照实测效果如何？`);
+        if (['earphone'].includes(cat)) baseSuggestions.push(`降噪效果怎么样？实际体验`);
+        if (['tv','monitor'].includes(cat)) baseSuggestions.push(`显示效果和色彩表现如何？`);
+        if (['watch'].includes(cat)) baseSuggestions.push(`健康监测功能全不全？`);
+        if (['keyboard'].includes(cat)) baseSuggestions.push(`打字手感怎么样？轴体是什么？`);
+        // 竞品对比
+        if (rival) baseSuggestions.push(`和${rival.brand}${rival.model}比有什么优势？`);
+        // 预算/平替
+        baseSuggestions.push(`预算能再降一点吗？`);
+        baseSuggestions.push(`有没有更便宜的平替推荐？`);
+
+        baseSuggestions.forEach(q => {
+          const chip = document.createElement('span');
+          chip.className = 'ai-f-chip';
+          chip.textContent = q;
+          chip.addEventListener('click', () => { followInput.value = q; doFollowup(); });
+          followChips.appendChild(chip);
+        });
+      }
     }
   }
 
@@ -2842,6 +2911,38 @@ function keyboardCompareDims(ph) {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+  }
+  /** 轻量 markdown → HTML（处理加粗、列表、段落，防 XSS） */
+  function renderMd(raw) {
+    if (!raw) return '';
+    let html = escapeHtml(raw);
+    // 加粗 **text**
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // 斜体 *text*
+    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    // 无序列表：识别连续的 "- " 或 "* " 开头行
+    if (/^[\s]*[-*]\s+/m.test(html)) {
+      const parts = html.split('\n');
+      let inUl = false, out = [];
+      for (const line of parts) {
+        const m = line.match(/^(\s*)([-*])\s+(.+)$/);
+        if (m) {
+          if (!inUl) { out.push('<ul>'); inUl = true; }
+          out.push('<li>' + m[3] + '</li>');
+        } else {
+          if (inUl) { out.push('</ul>'); inUl = false; }
+          if (line.trim()) out.push('<p>' + line + '</p>');
+        }
+      }
+      if (inUl) out.push('</ul>');
+      html = out.join('');
+    } else {
+      // 无列表时按双换行分段
+      html = html.split(/\n\n+/).map(p => p.trim() ? '<p>' + p.trim() + '</p>' : '').join('');
+    }
+    // 单换行变 <br>
+    html = html.replace(/\n/g, '<br>');
+    return html;
   }
   function brandColor(brand) {
     const map = { '苹果':'#555', '华为':'#c41230', '小米':'#ff6900', 'vivo':'#415fff', 'OPPO':'#1ba784', '荣耀':'#0b8ed0', '三星':'#1428a0', 'NVIDIA':'#76b900', 'AMD':'#ed1c24', 'Intel':'#0071c5', '格力':'#00a0e9', '美的':'#0066cc', '海尔':'#009ad6', '石头':'#333', '追觅':'#e60012', '科沃斯':'#005bac', '云鲸':'#00b4d8', '联想':'#e2231a', '华硕':'#00b3e3', '戴尔':'#007db8', '索尼':'#000', 'Bose':'#111', 'LG':'#a50034', 'AOC':'#e2231a' };

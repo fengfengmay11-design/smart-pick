@@ -90,6 +90,21 @@ def _call_llm(system: str, user: str, temperature: float = 0.7) -> Optional[str]
         return None
 
 
+def _call_llm_messages(messages: list, temperature: float = 0.6) -> Optional[str]:
+    """用完整的 messages 列表调用大模型（支持多轮上下文）。失败返回 None。"""
+    if not client:
+        return None
+    try:
+        resp = client.chat.completions.create(
+            model=MODEL,
+            messages=messages,
+            temperature=temperature,
+        )
+        return resp.choices[0].message.content.strip()
+    except Exception:
+        return None
+
+
 def _call_llm_json(system: str, user: str) -> Optional[Dict]:
     """调用大模型并解析 JSON 输出。失败返回 None。"""
     if not client:
@@ -362,14 +377,15 @@ def followup(req: FollowUpRequest):
         {
             "role": "system",
             "content": (
-                f"你是「智选」" + cat_cn + "选购助手。用户正在挑选" + cat_cn + "，"
-                "你已经给出了初步推荐，现在用户在追问。\n"
-                "你的回答原则：\n"
-                "1. 基于产品事实回答，不要编造参数\n"
-                "2. 如果问题涉及你没掌握的信息，诚实说明\n"
-                "3. 保持简洁，2-4句话说清\n"
-                "4. 可以主动引导用户关注关键决策因素\n"
-                "5. 用中文，语气友好专业"
+                f"你是「智选」" + cat_cn + "选购顾问。用户正在挑选" + cat_cn + "，"
+                "你已经给出了初步推荐（见下方上下文），现在用户在追问。\n\n"
+                "**核心原则——你必须围绕当前推荐的产品来回答：**\n"
+                "1. 用户问「和XX比」「优势」→ 基于当前推荐产品的实际参数对比竞品，给出客观结论\n"
+                "2. 用户问「续航/降噪/拍照/打游戏」→ 针对当前推荐产品的具体参数回答，不要跑偏去聊别的型号\n"
+                "3. 如果问题涉及你没掌握的信息，诚实说明\n"
+                "4. 保持简洁，2-4句话说清，用中文，语气友好专业\n"
+                "5. 可以主动引导用户关注关键决策因素\n"
+                "6. **绝对不要凭空引入对话中没出现过的产品型号做主角**"
             ),
         }
     ]
@@ -394,11 +410,7 @@ def followup(req: FollowUpRequest):
     messages.append({"role": "user", "content": req.followup_question})
 
     t0 = time.time()
-    answer = _call_llm(
-        system="你是智选购顾问，基于已有推荐回答用户追问。保持简洁实用。",
-        user=req.followup_question,
-        temperature=0.6,
-    )
+    answer = _call_llm_messages(messages, temperature=0.6)
 
     if not answer:
         return {
