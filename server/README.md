@@ -98,3 +98,55 @@ curl http://127.0.0.1:8000/api/health
 > 前端有 8 秒超时 + 自动降级，后端不可用时无缝回退到本地规则引擎，用户无感。核心功能永远可用，大模型是「增强」而非「依赖」。
 
 **下一步（阶段三）：** 接入 RAG，把真实评测/参数手册/用户口碑灌进向量库，让「为什么推荐它」的解释带上可溯源的引用，解决大模型幻觉问题。
+
+---
+
+## 六、京东联盟价格刷新（新增）
+
+### 6.1 能力
+
+通过京东联盟开放 API 实时查询商品价格和主图，批量回写到 `data-*.js` 的 `prices.jd` 字段。
+
+### 6.2 申请 Key
+
+1. 打开 [京东联盟开放平台](https://union.jd.com/openplatform/) 注册登录
+2. 左侧「应用管理」→「创建应用」，拿到 **app_key** 和 **app_secret**
+3. 申请接口权限：`jd.union.open.goods.query`（商品搜索）+ `jd.union.open.promotiongoodsinfo.query`（商品详情）
+4. 复制 `.env.example` 为 `.env`，填入凭据
+
+```bash
+cd server
+cp .env.example .env
+# 编辑 .env，填入 JD_APP_KEY / JD_APP_SECRET / JD_SITE_ID
+```
+
+### 6.3 使用
+
+```bash
+# 预览模式（只看差异不写入）
+python refresh_prices.py --dry-run
+
+# 刷新全部品类
+python refresh_prices.py
+
+# 只刷新手机
+python refresh_prices.py --only phone-data.js
+
+# 单个产品测试
+python jd_client.py search "iPhone 16 Pro"
+python jd_client.py detail 100065474274
+python jd_client.py refresh 苹果 iPhone 16 Pro
+```
+
+### 6.4 注意事项
+
+- 调用频率限制：默认每款间隔 0.5s（`--delay` 可调）
+- 价格为京东到手价参考值，拼多多价格暂无法自动刷新（保持原值）
+- 无 Key 时脚本会报错提示，不影响前端正常使用（前端有优雅降级）
+
+### 6.5 文件说明
+
+| 文件 | 职责 |
+|------|------|
+| `jd_client.py` | 京东联盟 API 客户端（签名/搜索/详情/单款刷新） |
+| `refresh_prices.py` | 批量价格刷新脚本（遍历 data-*.js → API → 回写） |
