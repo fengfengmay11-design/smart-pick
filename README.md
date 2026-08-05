@@ -2,7 +2,7 @@
 
 > 一个面向普通消费者的 **AI 驱动选购决策工具**：不再让用户对着一堆参数表发愁，而是把"我该买哪个"这个真实决策问题，交给一个可解释、可自评的推荐引擎来回答。
 
-覆盖 **13 大品类、576 款真实产品**，纯前端零后端即可运行。
+覆盖 **13 大品类、659 款真实产品**，纯前端零后端即可运行。
 
 <p align="center">
   <a href="https://fengfengmay11-design.github.io/smart-pick/"><b>🔗 在线体验 Demo (GitHub Pages)</b></a>
@@ -12,7 +12,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/品类-13%20大类-4f46e5" alt="品类" />
-  <img src="https://img.shields.io/badge/产品-576%20款-6366f1" alt="产品数" />
+  <img src="https://img.shields.io/badge/产品-659%20款-6366f1" alt="产品数" />
   <img src="https://img.shields.io/badge/AI-可解释推荐引擎-8b5cf6" alt="AI" />
   <img src="https://img.shields.io/badge/技术栈-原生JS%20零依赖-0ea5e9" alt="技术栈" />
   <img src="https://img.shields.io/badge/License-MIT-10b981" alt="License" />
@@ -81,7 +81,7 @@
 
 ## 四、功能一览
 
-- **13 大品类对比**：手机 / 显卡 / CPU / 笔记本 / 空调 / 扫地机器人 / 耳机 / 显示器 / 平板 / 相机 / 电视 / 智能手表 / 机械键盘，共 576 款真实型号
+- **13 大品类对比**：手机 / 显卡 / CPU / 笔记本 / 空调 / 扫地机器人 / 耳机 / 显示器 / 平板 / 相机 / 电视 / 智能手表 / 机械键盘，共 659 款真实型号
 - **多品类通用框架**：通过品类配置对象抽象数据访问，新增品类无需改动渲染逻辑
 - **智能对比**：最多 3 款并排，按品类拆分维度、自动高亮差异、生成结论
 - **AI 自然语言选购**：一句话描述需求，AI 解析意图并从全库推荐（详见上文）
@@ -142,11 +142,11 @@ phone-compare/
 ├── data-robot.js       # 扫地机器人（40 款）
 ├── data-earphone.js    # 耳机（45 款）
 ├── data-monitor.js     # 显示器（40 款）
-├── data-tablet.js      # 平板（7 款）
-├── data-camera.js      # 相机（6 款）
-├── data-tv.js          # 电视（6 款）
-├── data-watch.js       # 智能手表（5 款）
-├── data-keyboard.js    # 机械键盘（5 款）
+├── data-tablet.js      # 平板（24 款）
+├── data-camera.js      # 相机（24 款）
+├── data-tv.js          # 电视（24 款）
+├── data-watch.js       # 智能手表（20 款）
+├── data-keyboard.js    # 机械键盘（20 款）
 ├── tests/
 │   └── run.js          # 零依赖单元测试（node tests/run.js）
 └── server/             # 阶段二 AI 后端（Python FastAPI + 大模型意图理解）
