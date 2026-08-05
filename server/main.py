@@ -231,7 +231,7 @@ class ProductSummary(BaseModel):
     brand: str
     model: str
     price: float
-    score: int                   # 打分引擎给的原始分
+    score: float                 # 打分引擎给的原始分（含热度加权小数，前端可能传非整数）
     match_pct: int               # 归一化匹配度百分比
     reasons: List[str]           # 引擎给出的匹配原因
     tradeoffs: List[str]         # 引擎指出的取舍项
@@ -344,7 +344,7 @@ class FollowUpRequest(BaseModel):
     category: str                    # 品类
     followup_question: str           # 追问内容
     conversation_history: List[Dict[str, str]]  # [{role:"user"/"assistant", content:"..."}]
-    context_products: List[ProductSummary]  # 当前推荐的产品上下文
+    context_products: Optional[List[ProductSummary]] = None  # 当前推荐的产品上下文（前端可能不传，靠 conversation_history 兜底）
 
 
 @app.post("/api/followup")
