@@ -439,6 +439,7 @@
   .conclusion .cl-item.suitable .cl-label { background:var(--success); color:#fff; }
   .conclusion .cl-item.unsuitable .cl-label { background:var(--danger); color:#fff; }
   .conclusion .cl-model-name { font-weight:700; }
+  .conclusion .cl-bestpick { margin:12px 0; padding:12px 16px; background:linear-gradient(135deg,#fefce8,#fff7ed); border:1.5px solid #fbbf24; border-radius:10px; font-size:13.5px; line-height:1.6; color:#92400e; }
 
   /* 对比维度 */
   .dim-section {
@@ -1880,8 +1881,12 @@ function renderComparePageIn(page) {
   } catch (e) { console.error('dims error:', e); }
 
   try {
-    const conclusion = generateConclusion(phones) || { mainDiff: '', items: [] };
+    const conclusion = generateConclusion(phones) || { mainDiff: '', items: [], bestPick: null };
     conclusionHtml = '<div class="conclusion"><h3>📊 核心对比结论</h3><div class="cl-diff">' + (conclusion.mainDiff || '') + '</div>';
+    // 推荐首选
+    if (conclusion.bestPick) {
+      conclusionHtml += '<div class="cl-bestpick">🏆 <strong>推荐首选：</strong>' + conclusion.bestPick.model + ' — ' + conclusion.bestPick.reason + '</div>';
+    }
     (conclusion.items || []).forEach(item => {
       conclusionHtml += '<div class="cl-item ' + (item.type||'') + '"><span class="cl-label">' + (item.type==='suitable'?'✓ 适合':'✕ 不适合') + '</span> <span class="cl-model-name">' + (item.model||'') + '</span>：' + (item.text||'') + '</div>';
     });
@@ -2037,84 +2042,223 @@ function keyboardCompareDims(ph) {
 
   // ==================== 核心结论生成 ====================
   function generateConclusion(phones) {
+    if (!phones || phones.length < 2) return { mainDiff: '', items: [], bestPick: null };
+
     const names = phones.map(p => p.phone.model);
     const prices = phones.map(p => p.priceSrc.price);
-    const isPhone = state.category === 'phone';
-    const weights = isPhone ? phones.map(p => (p.phone.body||{}).weight || 0) : [];
-    const screenSizes = isPhone ? phones.map(p => (p.phone.screen||{}).size || 0) : [];
-    const features = phones.map(p => p.phone.features || {});
+    const cat = state.category || 'phone';
+    const sp = p => p.phone.specs || {};
 
+    // ---- 差异摘要 ----
     const diffs = [];
     if (new Set(prices).size > 1) diffs.push('价格');
-    if (isPhone) {
-      if (new Set(weights).some(w => w > 0) && new Set(weights).size > 1) diffs.push('重量');
-      if (new Set(screenSizes).some(s => s > 0) && new Set(screenSizes).size > 1) diffs.push('屏幕尺寸');
-    }
-    const mainDiff = diffs.length > 0
-      ? '这几款在<span style="font-weight:600">' + diffs.join('、') + '</span>方面存在差异。'
-      : '这几款在核心参数上较为接近';
+    // 各品类特有维度差异检测
+    const fieldDiffs = {
+      phone:  [(p)=>(p.phone.body||{}).weight, (p)=>(p.phone.screen||{}).size],
+      watch: [(p)=>sp(p).battery, (p)=>sp(p).size, (p)=>parseFloat(sp(p).weight||0)],
+      earphone: [(p)=>sp(p).battery, (p)=>sp(p).noise, (p)=>parseFloat(sp(p).weight||0)],
+      gpu:    [(p)=>sp(p).vram, (p)=>sp(p).tdp, (p)=>sp(p).boostClock],
+      laptop: [(p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).battery, (p)=>sp(p).screen],
+      monitor:[(p)=>sp(p).refreshRate, (p)=>sp(p).size, (p)=>sp(p).resolution],
+      tablet: [(p)=>sp(p).size, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).battery],
+      camera: [(p)=>sp(p).sensor, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).resolution],
+      tv:     [(p)=>sp(p).size, (p)=>sp(p).refreshRate, (p)=>sp(p).brightness],
+      keyboard:[(p)=>sp(p).switch, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).connection],
+      ac:     [(p)=>sp(p).horsepower, (p)=>sp(p).noise, (p)=>sp(p).energyRating],
+      robot:  [(p)=>sp(p).suction, (p)=>sp(p).battery, (p)=>!!sp(p).baseStation],
+      cpu:    [(p)=>sp(p).cores, (p)=>sp(p).tdp, (p)=>sp(p).boostClock],
+    };
+    const fieldLabels = {
+      phone: ['重量','屏幕尺寸'], watch: ['续航','表盘尺寸','重量'],
+      earphone: ['续航','降噪','重量'], gpu: ['显存','功耗','频率'],
+      laptop: ['重量','电池','屏幕'], monitor: ['刷新率','尺寸','分辨率'],
+      tablet: ['屏幕尺寸','重量','电池'], camera: ['画幅','重量','像素'],
+      tv: ['尺寸','刷新率','亮度'], keyboard: ['轴体','重量','连接方式'],
+      ac: ['匹数','噪音','能效'], robot: ['吸力','续航','基站'],
+      cpu: ['核心数','功耗','加速频率'],
+    };
+    const fd = fieldDiffs[cat] || fieldDiffs.phone;
+    const fl = fieldLabels[cat] || fieldLabels.phone;
+    fd.forEach((getter, i) => {
+      const vals = phones.map(getter).filter(v => v && v !== '-' && v !== 0);
+      if (vals.length >= 2 && new Set(vals.map(String)).size > 1) diffs.push(fl[i]);
+    });
 
+    const mainDiff = diffs.length > 0
+      ? '对比发现，这几款在<span style="font-weight:600;color:var(--primary)">' + diffs.join('、') + '</span>方面存在明显差异，下面逐款分析：'
+      : '这几款在核心参数上较为接近，按各自特点推荐如下：';
+
+    // ---- 数值工具 ----
+    const maxP = Math.max(...prices), minP = Math.min(...prices);
+    const priceGap = maxP - minP;
+
+    // ---- 每品类的详细分析 ----
     const items = [];
-    const maxPrice = Math.max(...prices);
-    const minPrice = Math.min(...prices);
-    const maxWeight = weights.length ? Math.max(...weights) : 0;
-    const minWeight = weights.length ? Math.min(...weights) : 0;
-    const maxScreen = screenSizes.length ? Math.max(...screenSizes) : 0;
-    const minScreen = screenSizes.length ? Math.min(...screenSizes) : 0;
+    let bestPick = null;
 
     phones.forEach((p, i) => {
-      const suitable = [], unsuitable = [], model = p.phone.model;
+      const s = sp(p);
+      const model = p.phone.model;
+      const brand = p.phone.brand;
+      const price = p.priceSrc.price;
+      const pros = [], cons = [];
 
-      if (p.priceSrc.price === minPrice && p.priceSrc.price < maxPrice) suitable.push('预算敏感、追求性价比');
-      if (p.priceSrc.price === maxPrice && p.priceSrc.price > minPrice) unsuitable.push('对价格敏感');
+      // === 价格分析（全品类通用） ===
+      if (price === minP && priceGap > 50) pros.push(`💰 性价比首选，仅 ¥${price}（比最贵省 ¥${priceGap}）`);
+      else if (price === maxP && priceGap > 200) cons.push(`💰 预算门槛较高（¥${price}）`);
 
-      if (isPhone) {
-        if ((p.phone.body||{}).weight === minWeight && minWeight < maxWeight) suitable.push('重视轻便和单手操作');
-        if ((p.phone.body||{}).weight === maxWeight && maxWeight > minWeight) unsuitable.push('追求极致轻便');
-        if ((p.phone.screen||{}).size === maxScreen && maxScreen > minScreen) suitable.push('影音娱乐、大屏阅读');
-        if ((p.phone.screen||{}).size === minScreen && minScreen < maxScreen) suitable.push('偏好小巧机身、单手操作');
+      // === 品类专属分析 ===
+      if (cat === 'phone') {
+        const wt = (p.phone.body||{}).weight, sc = (p.phone.screen||{}).size;
+        const wts = phones.map(x=>(x.phone.body||{}).weight||0).filter(Boolean);
+        const scs = phones.map(x=>(x.phone.screen||{}).size||0).filter(Boolean);
+        const minW = Math.min(...wts), maxW = Math.max(...wts);
+        const minS = Math.min(...scs), maxS = Math.max(...scs);
+        if (wt === minW && maxW - minW > 10) pros.push(`🪶 最轻便（${wt}g），单手握持舒适`);
+        if (wt === maxW && maxW - minW > 20) cons.push(`⚖️ 偏重（${wt}g）`);
+        if (sc === maxS && maxS - minS > 0.5) pros.push(`📱 屏幕最大（${sc}"），影音体验好`);
+        if (sc < 6.3 && phones.some(x=>(x.phone.screen||{}).size >= 6.7)) cons.push(`📐 小屏设计，大屏爱好者可能不习惯`);
+        if (parseInt(p.phone.ram||0) >= 12) pros.push(`🚀 ${p.phone.ram}GB 大内存，多任务流畅`);
+        const feat = p.phone.features || {};
+        if (feat.satellite) pros.push(`🛰️ 支持卫星通信，户外/应急场景实用`);
+        if (!feat.nfc && phones.some(x=>(x.phone.features||{}).nfc)) cons.push(`❌ 不支持 NFC，公交/门禁不便`);
+        if (feat.nfc && !phones.every(x=>(x.phone.features||{}).nfc)) pros.push(`🎫 支持 NFC，刷公交/门禁方便`);
+        if (brand === '苹果') pros.push(`🍎 苹果生态闭环，Mac/iPad/AirPods 无缝联动`);
+        if (brand === '华为') pros.push(`🔗 鸿蒙生态，平板/手表/车机超级终端`);
+        if (brand === '小米') pros.push(`🏠 米家智能生态，智能家居控制中心`);
       }
-      if (isPhone && (p.phone.screen||{}).size < 6.3 && phones.some(x => (x.phone.screen||{}).size >= 6.7)) {
-        unsuitable.push('喜欢大屏影音体验的用户');
+      else if (cat === 'watch') {
+        const bat = s.battery, sz = s.size, wt = parseFloat(s.weight||0);
+        const bats = phones.map(x=>sp(x).battery).filter(Boolean);
+        const wts = phones.map(x=>parseFloat(sp(x).weight||0)).filter(Boolean);
+        const maxBat = bats.length ? Math.max(...bats.map(b=>parseInt(b)||0)) : 0;
+        const minWt = wts.length ? Math.min(...wts) : 0;
+        if (bat && maxBat > 0) { const b = parseInt(bat); if (b >= maxBat) pros.push(`🔋 续航最强（${bat}），减少充电焦虑`); else if (b < maxBat * 0.6) cons.push(`🔋 续航偏短（${bat}），需频繁充电`); }
+        if (sz) pros.push(`⌚ ${sz} 表盘${parseFloat(sz)>=42?'偏大适合男性':'小巧精致'}`);
+        if (wt && minWt > 0 && wt <= minWt) pros.push(`💎 最轻量（${wt}g），佩戴无负担`);
+        if (wt && minWt > 0 && wt > minWt + 10) cons.push(`⚖️ 份量较重（${wt}g）`);
+        if (s.health && s.health !== '-') pros.push(`❤️ 健康监测全面（${s.health}）`);
+        if (s.gps && s.gps !== '-') pros.push(`📍 内置 GPS，独立运动追踪`);
+        if (s.os) {
+          if (String(s.os).includes('Harmony') || String(s.os).includes('鸿蒙')) pros.push(`🔗 鸿蒙生态，华为手机无缝连接`);
+          else if (String(s.os).includes('WatchOS') || String(s.os).includes('Apple')) pros.push(`🍎 Apple Watch 生态，iPhone 用户最佳搭档`);
+          else if (String(s.os).includes('Wear') || String(s.os).includes('Android')) pros.push(`🤖 适配安卓手机，兼容性好`);
+        }
+        if (brand === '小米') pros.push(`🏠 米家控制+健康数据联动`);
+      }
+      else if (cat === 'earphone') {
+        const noise = s.noise, bat = s.battery, drv = s.driver, wt = parseFloat(s.weight||0);
+        if (noise && noise !== '-' && String(noise).includes('主动降噪')) pros.push(`🔇 主动降噪，通勤/出差神器`);
+        else if (noise && noise !== '-' && !String(noise).includes('主动')) cons.push(`🔊 无主动降噪，嘈杂环境表现一般`);
+        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，满足全天使用`);
+        if (drv && drv !== '-') pros.push(`🎵 ${drv} 驱动单元，音质基础有保障`);
+        if (s.waterproof && s.waterproof !== '-') pros.push(`💧 支持${s.waterproof}防水，运动无忧`);
+        if (wt && wt > 0 && wt <= 5) pros.push(`🪶 轻至 ${wt}g，长时间佩戴不累`);
+        if (s.codec && s.codec !== '-' && (String(s.codec).includes('LHDC') || String(s.codec).includes('LDAC'))) pros.push(`🎧 支持 ${s.codec} 高解析音频编码`);
+        if (brand === '苹果') pros.push(`🍎 与 iPhone 深度适配，空间音频体验佳`);
+        if (brand === '索尼' || brand === 'Bose') pros.push(`🏆 音质标杆品牌，降噪算法成熟`);
+      }
+      else if (cat === 'gpu') {
+        const vram = parseInt(s.vram||0), tdp = parseInt(s.tdp||0), boost = s.boostClock;
+        const vrams = phones.map(x=>parseInt(sp(x).vram||0));
+        const maxVram = Math.max(...vrams);
+        if (vram >= 16) pros.push(`🎮 ${vram}GB 大显存，AI/4K/本地大模型轻松跑`);
+        if (vram === maxVram && maxVram >= 12) pros.push(`📦 显存最大（${vram}GB），高分辨率纹理不吃力`);
+        if (vram > 0 && vram < 8 && maxVram >= 12) cons.push(`⚠️ 显存较小（${vram}GB），高画质可能吃紧`);
+        if (tdp > 0 && tdp <= 200) pros.push(`🌿 功耗控制好（${tdp}W），电源要求低`);
+        if (tdp > 300) cons.push(`🔥 功耗较高（${tdp}W），需要靠谱电源和散热`);
+        if (boost) pros.push(`⚡ 加速频率 ${boost}`);
+      }
+      else if (cat === 'laptop') {
+        const wt = parseFloat(s.weight||0), bat = s.battery, scr = s.screen, ram = s.ram;
+        const wts = phones.map(x=>parseFloat(sp(x).weight||0)).filter(Boolean);
+        const minWt = wts.length ? Math.min(...wts) : 999;
+        if (wt > 0 && wt <= minWt) pros.push(`🪶 最轻薄（${wt}kg），通勤便携友好`);
+        if (wt > 2.2) cons.push(`⚖️ 偏重（${wt}kg），移动办公略吃力`);
+        if (bat && bat !== '-') pros.push(`🔋 电池 ${bat}，移动办公有底气`);
+        if (scr && scr !== '-') pros.push(`🖥️ ${scr} 屏幕`);
+        if (ram && parseInt(ram||0) >= 16) pros.push(`🚀 ${ram} 大内存，开发/多任务流畅`);
+        if (s.os) {
+          if (String(s.os).includes('macOS') || String(s.os).includes('Mac')) pros.push(`🍎 macOS 生态，创意工作者首选`);
+          else if (String(s.os).includes('Windows')) pros.push(`🪟 Windows 平台，软件兼容性最好`);
+        }
+      }
+      else if (cat === 'monitor') {
+        const rr = s.refreshRate, res = s.resolution, sz = s.size, pnl = s.panel;
+        const rrs = phones.map(x=>parseInt(sp(x).refreshRate||0));
+        const maxRr = rrs.length ? Math.max(...rrs) : 0;
+        if (rr && parseInt(rr) >= 144) pros.push(`🎯 ${rr} 高刷，游戏/滚动丝滑`);
+        if (rr && parseInt(rr) === maxRr && maxRr >= 120) pros.push(`🏆 刷新率最高（${rr}），电竞利器`);
+        if (res && (String(res).includes('4K') || String(res).includes('3840'))) pros.push(`📺 4K 分辨率，修图/影音细腻`);
+        if (sz) pros.push(`📐 ${sz}${['英寸','"'].some(x=>String(sz).includes(x))?'':''}寸`);
+        if (pnl && pnl !== '-') pros.push(`🎨 ${pnl} 面板`);
+        if (s.hdr && s.hdr !== '-') pros.push(`✨ 支持 ${s.hdr}，HDR 内容完整呈现`);
+      }
+      else if (cat === 'tablet') {
+        const sz = s.size, wt = parseFloat(s.weight||0), bat = s.battery, chip = s.chip;
+        if (sz) pros.push(`📱 ${sz} 大屏，影音/网课沉浸感强`);
+        if (wt > 0 && wt <= 450) pros.push(`🪶 轻薄（${wt}g），手持阅读舒适`);
+        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，外出使用安心`);
+        if (chip && chip !== '-') pros.push(`⚡ ${chip} 芯片，性能充沛`);
+        if (brand === '苹果') pros.push(`🍎 iPad 生态，Apple Pencil + 专业应用`);
+      }
+      else if (cat === 'camera') {
+        const sensor = s.sensor, res = s.resolution, vid = s.video, wt = parseFloat(s.weight||0);
+        if (sensor && sensor !== '-') pros.push(`📷 ${sensor} 画幅，底大噪点少`);
+        if (res && res !== '-') pros.push(`🔢 ${res} 像素，后期裁切空间大`);
+        if (vid && vid !== '-') pros.push(`🎬 支持 ${vid} 视频`);
+        if (s.ibis && s.ibis !== '-') pros.push(`✋ ${s.ibis}，手持拍摄更稳`);
+        if (wt > 0 && wt <= 500) pros.push(`🪶 轻巧（${wt}g），出门携带方便`);
+        if (wt > 800) cons.push(`⚖️ 较重（${wt}g），长时间手持累`);
+      }
+      else if (cat === 'tv') {
+        const sz = s.size, rr = s.refreshRate, pnl = s.panel, br = s.brightness;
+        if (sz) pros.push(`📺 ${sz} 寸${['英寸','"'].some(x=>String(sz).includes(x))?'':''}，家庭影院级观感`);
+        if (rr && parseInt(rr) >= 120) pros.push(`🎮 ${rr} 高刷，游戏/体育画面流畅`);
+        if (pnl && String(pnl).toLowerCase().includes('oled')) pros.push(`🌟 OLED 面板，对比度/色彩出色`);
+        if (pnl && (String(pnl).toLowerCase().includes('mini led') || String(pnl).toLowerCase().includes('miniled'))) pros.push(`✨ Mini LED，分区控光 HDR 效果出众`);
+        if (br && br !== '-') pros.push(`☀️ 峰值亮度 ${br}，HDR 内容通透`);
+      }
+      else if (cat === 'keyboard') {
+        const sw = s.switch, conn = s.connection, wt = parseFloat(s.weight||0);
+        if (sw && sw !== '-') pros.push(`⌨️ ${sw} 轴体`);
+        if (conn && String(conn).includes('三模')) pros.push(`🔌 三模连接，有线/蓝牙/2.4G 自由切换`);
+        if (conn && !String(conn).includes('三模') && String(conn).includes('无线')) pros.push(`📡 无线连接，桌面更整洁`);
+        if (wt > 0 && wt <= 700) pros.push(`🪶 轻量化（${wt}g），携带方便`);
+      }
+      else if (cat === 'ac') {
+        const hp = s.horsepower, nr = s.noise, er = s.energyRating;
+        if (hp) pros.push(`❄️ ${hp}匹`);
+        if (nr && nr !== '-') { const db = parseInt(nr); if (db <= 20) pros.push(`🤫 低噪音（${nr}），睡眠不受扰`); else if (db >= 45) cons.push(`🔊 噪音偏高（${nr}）`); }
+        if (er && er !== '-' && String(er).includes('一级')) pros.push(`🌿 新一级能效，长期使用省电`);
+      }
+      else if (cat === 'robot') {
+        const suc = s.suction, bat = s.battery, bs = s.baseStation;
+        if (bs) pros.push(`🏠 全能基站，自动集尘/洗拖布，解放双手`);
+        else cons.push(`🧹 无基站，需手动清理尘盒/拖布`);
+        if (suc && suc !== '-') pros.push(`💨 吸力强劲（${suc}），宠物毛/颗粒物轻松吸净`);
+        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，大户型的朋友也能扫完全屋`);
+        if (s.hotWaterMop) pros.push(`♨️ 热水洗拖布，拖地更干净`);
+      }
+      else if (cat === 'cpu') {
+        const cores = s.cores, bc = s.boostClock, tdp = s.tdp;
+        if (cores) pros.push(`⚡ ${cores} 核心，多任务/渲染性能强`);
+        if (bc) pros.push(`🚀 加速频率达 ${bc}`);
+        if (tdp) { const t = parseInt(tdp); if (t <= 65) pros.push(`🌿 功耗仅 ${tdp}W，散热压力小`); else if (t > 150) cons.push(`🔥 功耗 ${tdp}W，需要好散热器`); }
       }
 
-      // 存储
-      if (p.phone.ram && parseInt(p.phone.ram) >= 12) suitable.push('多任务重度使用');
+      // ---- 组装结果 ----
+      const proText = pros.slice(0, 3).join('；');
+      const conText = cons.slice(0, 2).join('；');
+      if (proText) items.push({ type: 'suitable', model, text: proText });
+      if (conText) items.push({ type: 'unsuitable', model, text: conText });
 
-      // 功能 (phone only)
-      if (isPhone) {
-        const allNfc = phones.map(x => (x.phone.features||{}).nfc);
-        if (!(p.phone.features||{}).nfc && allNfc.some(x => x)) unsuitable.push('需要NFC（公交/门禁）');
-        if (!(p.phone.features||{}).infrared && phones.some(x => (x.phone.features||{}).infrared)) unsuitable.push('需要用手机遥控家电');
-        if (!(p.phone.features||{}).satellite && phones.some(x => (x.phone.features||{}).satellite)) unsuitable.push('需卫星通信');
-        if ((p.phone.features||{}).satellite && !phones.every(x => (x.phone.features||{}).satellite)) suitable.push('户外爱好者、需卫星通信');
-      }
-
-      // 品牌生态
-      if (p.phone.brand === '苹果') suitable.push('苹果生态用户（Mac/iPad/AirPods 联动）');
-      if (p.phone.brand === '华为') suitable.push('鸿蒙生态用户（平板/手表/车机联动）');
-      if (p.phone.brand === '小米') suitable.push('米家智能家居用户');
-
-      items.push({
-        model,
-        suitable: suitable.slice(0, 3).join('；') || '无明显突出优势',
-        unsuitable: unsuitable.slice(0, 3).join('；') || '无明显短板',
-        typeSuitable: suitable.length > 0,
-        typeUnsuitable: unsuitable.length > 0
-      });
+      // ---- 推荐首选逻辑 ----
+      const score = pros.length * 2 - cons.length * 3 + (price === minP ? 2 : 0) + (price === maxP ? -1 : 0);
+      if (!bestPick || score > bestPick.score) bestPick = { model, score, reason: pros[0] || '综合表现均衡' };
     });
 
-    const resultItems = [];
-    items.forEach(item => {
-      if (item.suitable !== '无明显突出优势') {
-        resultItems.push({ type: 'suitable', model: item.model, text: item.suitable });
-      }
-      if (item.unsuitable !== '无明显短板') {
-        resultItems.push({ type: 'unsuitable', model: item.model, text: item.unsuitable });
-      }
-    });
-
-    return { mainDiff, items: resultItems };
+    return { mainDiff, items, bestPick: bestPick ? { model: bestPick.model, reason: bestPick.reason } : null };
   }
 
   // ==================== 帮我选 ====================
