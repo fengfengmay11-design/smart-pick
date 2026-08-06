@@ -1196,11 +1196,11 @@ function renderHome(page) {
       <div class="asc-title">✨ AI 智能选购 <span class="asc-tag">自然语言</span></div>
       <div class="asc-sub">用一句话描述需求，AI 自动识别品类，从全站 ${totalProductCount()} 款产品里挑出最合适的</div>
       <div class="asc-inputwrap">
-        <input type="text" class="asc-input" id="aiShopInput" placeholder="${GLOBAL_AI_PLACEHOLDER}">
+        <input type="text" class="asc-input" id="aiShopInput" placeholder="${aiPlaceholder()}">
         <button class="asc-btn" id="aiShopBtn">找一找</button>
       </div>
       <div class="asc-chips" id="aiShopChips">
-        ${GLOBAL_AI_EXAMPLES.map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
+        ${aiExamples().map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
       </div>
     </div>
     <div class="cat-tabs" id="catTabs">
@@ -2354,9 +2354,7 @@ function keyboardCompareDims(ph) {
   function aiPlaceholder() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ph; }
   function aiExamples() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ex; }
 
-  // AI 选购是全局入口，文案固定、不跟随下方选中品类变化
-  const GLOBAL_AI_PLACEHOLDER = '例如：5000内影像好的手机 / 4000档2K光追显卡 / 通勤降噪耳机';
-  const GLOBAL_AI_EXAMPLES = ['5000内影像旗舰手机', '4000档2K光追显卡', '通勤深度降噪耳机', '轻薄本全天续航'];
+  // AI 选购 placeholder / 预选标签跟随下方选中品类动态变化（通过 aiPlaceholder / aiExamples 函数读取 state.category）
   function totalProductCount() {
     return Object.keys(CATEGORIES).reduce((sum, k) => { try { return sum + (CATEGORIES[k].data() || []).length; } catch (e) { return sum; } }, 0);
   }
@@ -2900,7 +2898,7 @@ function keyboardCompareDims(ph) {
         const cat = state.category || '';
         const baseSuggestions = [];
         // 续航类——通用
-        baseSuggestions.push(`这款${b.brand}${b.model}续航怎么样？`);
+        baseSuggestions.push(`这款${b.model}续航怎么样？`);
         // 品类专属
         if (['phone','tablet','laptop'].includes(cat)) baseSuggestions.push(`适合打游戏吗？`);
         if (['phone','camera'].includes(cat)) baseSuggestions.push(`拍照实测效果如何？`);
@@ -2909,7 +2907,7 @@ function keyboardCompareDims(ph) {
         if (['watch'].includes(cat)) baseSuggestions.push(`健康监测功能全不全？`);
         if (['keyboard'].includes(cat)) baseSuggestions.push(`打字手感怎么样？轴体是什么？`);
         // 竞品对比
-        if (rival) baseSuggestions.push(`和${rival.brand}${rival.model}比有什么优势？`);
+        if (rival) baseSuggestions.push(`和${rival.model}比有什么优势？`);
         // 预算/平替
         baseSuggestions.push(`预算能再降一点吗？`);
         baseSuggestions.push(`有没有更便宜的平替推荐？`);
