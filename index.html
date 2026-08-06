@@ -2697,7 +2697,7 @@ function keyboardCompareDims(ph) {
       ? '<div class="ai-summary">🎯 ' + aiRec.summary + '</div>'
       : '';
 
-    // 追问区域（仅大模型可用时显示）
+    // 追问区域（始终渲染：大模型可用时交互可用，不可用时展示提示）
     const aiFollowupHtml = aiEngine === 'llm'
       ? '<div class="ai-followup" id="aiFollowupSection">'
         + '<div class="ai-f-label">💬 还有疑问？可以继续追问</div>'
@@ -2705,7 +2705,15 @@ function keyboardCompareDims(ph) {
         + '<div class="ai-f-chips" id="aiFollowChips"></div>'
         + '<div class="ai-f-answer" id="aiFollowAnswer"></div>'
         + '</div>'
-      : '';
+      : '<div class="ai-followup" id="aiFollowupSection">'
+        + '<div class="ai-f-label">💬 追问功能（需启动 AI 后端）</div>'
+        + '<div style="padding:16px 18px;background:#fff;border-radius:12px;font-size:13px;line-height:1.8;color:var(--text-secondary);border:1px solid #eee;">'
+        + '<div style="margin-bottom:8px;">🔌 <b>追问功能需要连接 AI 大模型后端</b>，当前使用的是本地规则引擎模式。</div>'
+        + '<div style="font-size:12.5px;color:var(--text-hint);line-height:2;">'
+        + '要启用追问功能，请确保以下任一方式可用：<br>'
+        + '① 本机运行 <code style="background:var(--bg);padding:1px 5px;border-radius:4px;font-size:12px;">python server/main.py</code>（需配置 LLM_API_KEY）<br>'
+        + '② 或将前端 <code style="background:var(--bg);padding:1px 5px;border-radius:4px;font-size:12px;">AI_BACKEND</code> 指向已部署的云端后端地址<br>'
+        + '</div></div></div>';
 
     // 预算严重不足时：用委婉提示替代推荐结果
     const minPrice = scored.length ? [...scored].sort((a,b) => a.price - b.price)[0].price : 0;
