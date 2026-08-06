@@ -2460,11 +2460,26 @@ function keyboardCompareDims(ph) {
 
   // 品类识别 detectCategory() 与 CAT_KEYWORDS 已抽离至 engine.js（全局），测试覆盖真实代码
 
-  // 阶段二后端地址：优先调用云端大模型解析意图，不可用则自动降级本地规则
-  const AI_BACKEND = 'http://127.0.0.1:8000';
+  // 后端地址：优先同源部署（云端/平台与前端同域），不可用时回退本机 127.0.0.1:8000
+  const BACKEND_CANDIDATES = [window.location.origin, 'http://127.0.0.1:8000'];
+  let AI_BACKEND = 'http://127.0.0.1:8000';
+  let _backendProbed = false;
+  async function detectBackend() {
+    for (const b of BACKEND_CANDIDATES) {
+      try {
+        const ctrl = new AbortController();
+        const t = setTimeout(() => ctrl.abort(), 3000);
+        const r = await fetch(b + '/api/health', { signal: ctrl.signal });
+        clearTimeout(t);
+        if (r.ok) { const j = await r.json().catch(() => null); if (j && j.ok) { AI_BACKEND = b; _backendProbed = true; return; } }
+      } catch (e) { /* 跳过不可达地址 */ }
+    }
+    _backendProbed = true;
+  }
 
   // 意图解析：优先云端大模型，失败/超时/未启动 → 降级本地正则关键词
   async function resolveAiIntent(query) {
+    if (!_backendProbed) await detectBackend();
     try {
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 8000);

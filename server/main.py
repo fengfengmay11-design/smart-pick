@@ -428,6 +428,15 @@ def followup(req: FollowUpRequest):
     }
 
 
+# 同源部署时托管前端静态文件（/ 返回 index.html，/api/* 仍走接口）
+try:
+    from fastapi.staticfiles import StaticFiles
+    _fd = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend")
+    if os.path.isdir(_fd):
+        app.mount("/", StaticFiles(directory=_fd, html=True), name="frontend")
+except Exception as _e:
+    print("static mount skipped:", _e)
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
