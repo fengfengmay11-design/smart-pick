@@ -2409,10 +2409,18 @@ function keyboardCompareDims(ph) {
     // ===== 置信度模型：把原始分归一化，并结合"领先优势"计算置信度 =====
     const rawScores = scores.map(s => s.score);
     const maxScore = Math.max(...rawScores);
-    const minScore = Math.min(...rawScores);
-    const range = maxScore - minScore;
-    // 每款产品的归一化匹配度（0-100）
-    scores.forEach(s => { s.matchPct = range > 0 ? Math.round(((s.score - minScore) / range) * 100) : 50; });
+    // 绝对匹配度：基于“命中用户需求维度 / 总需求维度”计算，而非相对排名归一化
+    // 旧逻辑 (score-min)/(max-min)*100 会把最差候选恒映射为 0 分、最佳恒为 100 分，
+    // 分数只反映排名不反映真实匹配程度，这正是“分数虚”的根源。
+    // 新逻辑：分子=该产品命中的需求理由数，分母=用户明确回答的问题数 + 基础维度(品类/预算)，
+    // 落在 55~98 区间（进了推荐列表必有基本匹配，不会显示失真的 0 分或恒满分的 100）。
+    const demandDims = answeredCount + 2;
+    scores.forEach(s => {
+      const hit = s.reasons.length;
+      let pct = Math.round((hit / demandDims) * 100);
+      pct = Math.max(55, Math.min(98, pct));
+      s.matchPct = pct;
+    });
     // 置信度 = 基础分(领先幅度) + 理由充分度，压到 55-96 区间避免虚高/虚低
     const lead = runnerUp ? best.score - runnerUp.score : best.score;
     const leadNorm = maxScore > 0 ? Math.min(lead / maxScore, 1) : 0;
@@ -2425,7 +2433,7 @@ function keyboardCompareDims(ph) {
     // 1) 需求覆盖度：本轮命中理由的维度 / 用户回答的问题数
     const coverage = answeredCount > 0 ? Math.min(Math.round((best.reasons.length / answeredCount) * 100), 100) : 100;
     // 2) 候选区分度：Top1 与 Top2 的匹配度差，越大说明结论越可靠
-    const separation = runnerUp ? Math.min(best.matchPct - runnerUp.matchPct, 100) : 100;
+    const separation = runnerUp ? Math.min(Math.round((best.score - runnerUp.score) / (maxScore || 1) * 100), 100) : 100;
     // 3) 数据完整度：被推荐产品关键字段的非空比例
     const keyFields = [best.phone.brand, best.phone.model, best.priceSrc && best.priceSrc.price, best.phone.launchDate, JSON.stringify(best.phone.specs || best.phone.screen || {})];
     const completeness = Math.round(keyFields.filter(Boolean).length / keyFields.length * 100);
