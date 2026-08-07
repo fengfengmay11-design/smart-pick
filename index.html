@@ -423,24 +423,20 @@
   .cs-card .cs-price { font-size:22px; font-weight:800; color:var(--danger); margin-top:6px; }
   .cs-card .cs-source { font-size:10px; color:var(--text-hint); }
 
-  /* 核心结论 */
-  .conclusion {
-    background:var(--card-bg); border-radius:var(--radius); padding:18px; margin-bottom:16px;
-    box-shadow:var(--shadow); border:1.5px solid var(--border-light);
+  /* 核心结论 v2（精简版） */
+  .conclusion-v2 { margin:12px 0 8px; background:var(--card-bg); border:1px solid var(--border); border-radius:11px; overflow:hidden; }
+  .cv2-title { font-size:13px; font-weight:700; color:var(--text); padding:11px 14px 7px; border-bottom:1px solid rgba(0,0,0,.05); }
+  .cv2-diff { font-size:12.5px; color:var(--text-secondary); padding:8px 14px; line-height:1.5; }
+  .cv2-best { margin:0 14px; padding:9px 12px; background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(79,70,229,.03)); border:1px solid rgba(99,102,241,.12); border-radius:8px; font-size:12.5px; font-weight:600; color:var(--text); line-height:1.4; }
+  .cv2-items { padding:6px 14px 10px; }
+  .cv2-row { display:flex; align-items:center; gap:6px; padding:4px 0; font-size:12px; color:var(--text-secondary); line-height:1.35; }
+  .cv2-icon { font-size:13px; flex-shrink:0; width:16px; text-align:center; }
+  .cv2-name { font-weight:600; color:var(--text); min-width:90px; flex-shrink:0; }
+  .cv2-desc { color:var(--text-hint); }
+  @media(max-width:480px){
+    .cv2-row{flex-wrap:wrap;}
+    .cv2-name{min-width:auto;}
   }
-  .conclusion h3 { font-size:16px; font-weight:700; margin-bottom:14px; color:var(--text); letter-spacing:-0.01em; }
-  .conclusion .cl-diff { font-size:13px; color:var(--text-secondary); margin-bottom:12px; line-height:1.8; }
-  .conclusion .cl-item {
-    padding:12px 14px; border-radius:10px; margin-bottom:8px; font-size:13px; line-height:1.6;
-  }
-  .conclusion .cl-item.suitable { background:#f0fdf4; border:1px solid #86efac; }
-  .conclusion .cl-item.unsuitable { background:#fef2f2; border:1px solid #fca5a5; }
-  .conclusion .cl-item .cl-label { font-size:10px; font-weight:700; margin-bottom:3px; display:inline-block; padding:2px 10px; border-radius:4px; }
-  .conclusion .cl-item.suitable .cl-label { background:var(--success); color:#fff; }
-  .conclusion .cl-item.unsuitable .cl-label { background:var(--danger); color:#fff; }
-  .conclusion .cl-model-name { font-weight:700; }
-  .conclusion .cl-bestpick { margin:12px 0; padding:12px 16px; background:linear-gradient(135deg,#fefce8,#fff7ed); border:1.5px solid #fbbf24; border-radius:10px; font-size:13.5px; line-height:1.6; color:#92400e; }
-
   /* 对比维度 */
   .dim-section {
     background:var(--card-bg); border-radius:var(--radius); padding:18px; margin-bottom:12px;
@@ -529,15 +525,60 @@
   .hr-conf-meta .hr-conf-verdict { font-size:13px; font-weight:700; color:var(--text); margin-top:2px; }
   .ai-badge { display:inline-flex; align-items:center; gap:4px; font-size:10px; font-weight:700; color:var(--primary); background:var(--primary-light); padding:3px 9px; border-radius:20px; letter-spacing:0.02em; }
 
-  /* 候选评分条 */
-  .hr-scorebar { margin:4px 0 8px; }
-  .hr-scorebar .hr-sb-item { margin-bottom:8px; }
-  .hr-scorebar .hr-sb-head { display:flex; justify-content:space-between; font-size:12px; font-weight:600; margin-bottom:3px; }
-  .hr-scorebar .hr-sb-head .hr-sb-name { color:var(--text); }
-  .hr-scorebar .hr-sb-head .hr-sb-val { color:var(--primary); font-weight:800; }
-  .hr-scorebar .hr-sb-track { height:7px; background:#e0e7ff; border-radius:4px; overflow:hidden; }
-  .hr-scorebar .hr-sb-fill { height:100%; background:linear-gradient(90deg, #6366f1, #4f46e5); border-radius:4px; transition:width .6s cubic-bezier(.4,0,.2,1); }
-  .hr-scorebar .hr-sb-fill.second { background:linear-gradient(90deg, #a5b4fc, #818cf8); }
+  /* ===== 多维度评分面板 v4（对齐问卷设计语言） ===== */
+  .dim-panel { margin:14px 0 10px; background:var(--card-bg); border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.04); }
+  .dim-head { display:flex; align-items:center; justify-content:space-between; padding:13px 16px 10px; border-bottom:1px solid rgba(0,0,0,.05); gap:8px; }
+  .dim-head-title { font-size:13.5px; font-weight:800; color:var(--text); white-space:nowrap; letter-spacing:-0.01em; }
+  .dim-head-badges { display:flex; gap:6px; flex-wrap:wrap; }
+  .dim-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:3px 10px; border-radius:14px; white-space:nowrap; }
+  .dim-badge-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .dim-row { display:flex; align-items:center; padding:9px 16px; border-bottom:1px solid rgba(0,0,0,.03); min-height:38px; }
+  .dim-row:last-child { border-bottom:none; }
+  .dim-row-dim { width:88px; flex-shrink:0; padding-right:12px; }
+  .dim-row-name { font-size:12.5px; font-weight:700; color:var(--text); line-height:1.3; white-space:nowrap; overflow:hidden;text-overflow:ellipsis; }
+  .dim-row-wt { font-size:10px; color:var(--text-hint); font-weight:600; display:block;margin-top:1px; }
+  .dim-cols { flex:1; display:flex; gap:8px; align-items:center; }
+  .dim-col { flex:1; min-width:0; display:flex; align-items:center; gap:5px; }
+  .dim-num { font-size:15px; font-weight:800; min-width:28px; text-align:right; font-variant-numeric:tabular-nums; color:var(--text); letter-spacing:-0.02em; }
+  .dim-bar-track { flex:1; height:7px; background:rgba(0,0,0,.06); border-radius:4px; overflow:hidden; min-width:30px; }
+  .dim-bar-fill { height:100%; border-radius:4px; transition:width .5s cubic-bezier(.16,1,.3,1); }
+  .dim-total-row { background:linear-gradient(135deg,rgba(99,102,241,.05),rgba(99,102,241,.02)); border-top:1.5px solid rgba(99,102,241,.12); }
+  .dim-total-row .dim-row-name { color:var(--primary); font-weight:800; }
+  .dim-total-row .dim-num { font-size:16px; font-weight:800; color:var(--primary); }
+  .dim-total-rank { font-size:10px; font-weight:800; color:#fff; padding:2px 8px; border-radius:6px; margin-left:4px; letter-spacing:.02em; }
+  .rank-1 { background:linear-gradient(135deg,#f59e0b,#d97706); box-shadow:0 1px 4px rgba(217,119,6,.35); }
+  .rank-2 { background:linear-gradient(135deg,#94a3b8,#64748b); }
+  .rank-3 { background:linear-gradient(135deg,#b08968,#8a6a30); }
+  @media(max-width:520px) {
+    .dim-panel { border-radius:14px; margin:12px 0 8px; }
+    .dim-head { flex-direction:column; align-items:flex-start; gap:7px; padding:10px 13px 8px; }
+    .dim-row { padding:7px 12px; flex-direction:column; align-items:flex-start; gap:5px; min-height:auto; }
+    .dim-row-dim { width:auto; padding-right:0; flex-direction:row; align-items:center; gap:8px; }
+    .dim-cols { width:100%; gap:6px; }
+    .dim-col { flex:1; min-width:0; }
+    .dim-num { font-size:14px; min-width:24px; }
+    .dim-bar-track { min-width:20px; }
+  }
+
+  /* ===== AI 推荐结果面板 v2（对齐问卷设计语言） ===== */
+  .ai-rec-hero { text-align:center; padding:20px 16px 18px; background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(168,85,247,.04)); border-radius:16px; margin-bottom:14px; }
+  .ai-rec-model { font-size:23px; font-weight:900; color:var(--text); letter-spacing:-0.02em; margin-bottom:4px; }
+  .ai-rec-price { font-size:14px; color:var(--primary); font-weight:700; }
+  .ai-rec-conf-wrap { display:flex; align-items:center; justify-content:center; gap:14px; margin-top:12px; }
+  .ai-rec-section { background:var(--bg); border-radius:14px; padding:14px 16px; margin-bottom:12px; }
+  .ai-rec-section-title { font-size:12px; font-weight:800; color:var(--text-hint); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
+  .ai-rec-reason-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; }
+  .ai-rec-reason-item { display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--text-secondary); line-height:1.55; padding:8px 12px; background:var(--card-bg); border-radius:10px; border:1px solid rgba(0,0,0,.03); }
+  .ai-rec-reason-item::before { content:"✦"; color:var(--primary); font-size:12px; flex-shrink:0; margin-top:1px; }
+  .ai-rec-tradeoff { display:flex; align-items:flex-start; gap:8px; font-size:12.5px; color:#92400e; background:#fffbeb; border:1px solid #fde68a; border-radius:10px; padding:10px 14px; line-height:1.5; font-weight:500; }
+  .ai-rec-tradeoff::before { content:"⚡"; flex-shrink:0; }
+  .ai-rec-other { font-size:12.5px; color:var(--text-hint); line-height:1.7; }
+  .ai-rec-other strong { color:var(--text); }
+  .ai-rec-compare-label { font-size:13px; font-weight:800; color:var(--text); margin:14px 0 8px; display:flex; align-items:center; gap:6px; }
+  .ai-rec-compare-label::before { content:"";width:4px;height:16px;background:var(--primary);border-radius:2px;display:inline-block; }
+  .ai-rec-advice { font-size:13px; color:var(--text-secondary); line-height:1.7; padding:12px 16px; background:linear-gradient(135deg,rgba(16,185,129,.05),rgba(16,185,129,.02)); border:1px solid rgba(16,185,129,.12); border-radius:12px; font-weight:500; }
+  .ai-rec-summary { font-size:13px; color:var(--text-secondary); line-height:1.75; padding:14px 16px; background:var(--card-bg); border:1px solid var(--border); border-radius:12px; font-weight:500; }
+  .ai-rec-summary b { color:var(--primary-dark); font-weight:800; }
 
   /* AI 质量自评面板 */
   .qa-panel { margin-top:16px; background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:16px; }
@@ -1882,14 +1923,18 @@ function renderComparePageIn(page) {
 
   try {
     const conclusion = generateConclusion(phones) || { mainDiff: '', items: [], bestPick: null };
-    conclusionHtml = '<div class="conclusion"><h3>📊 核心对比结论</h3><div class="cl-diff">' + (conclusion.mainDiff || '') + '</div>';
-    // 推荐首选
+    conclusionHtml = '<div class="conclusion-v2"><div class="cv2-title">核心对比结论</div><div class="cv2-diff">' + (conclusion.mainDiff || '') + '</div>';
     if (conclusion.bestPick) {
-      conclusionHtml += '<div class="cl-bestpick">🏆 <strong>推荐首选：</strong>' + conclusion.bestPick.model + ' — ' + conclusion.bestPick.reason + '</div>';
+      conclusionHtml += '<div class="cv2-best">推荐 ' + escapeHtml(conclusion.bestPick.model) + ' — ' + conclusion.bestPick.reason + '</div>';
     }
-    (conclusion.items || []).forEach(item => {
-      conclusionHtml += '<div class="cl-item ' + (item.type||'') + '"><span class="cl-label">' + (item.type==='suitable'?'✓ 适合':'✕ 不适合') + '</span> <span class="cl-model-name">' + (item.model||'') + '</span>：' + (item.text||'') + '</div>';
-    });
+    if (conclusion.items && conclusion.items.length) {
+      conclusionHtml += '<div class="cv2-items">';
+      conclusion.items.forEach(function(item) {
+        var icon = item.type === 'suitable' ? '★' : '·';
+        conclusionHtml += '<div class="cv2-row"><span class="cv2-icon">'+icon+'</span><span class="cv2-name">'+escapeHtml(item.model)+'</span><span class="cv2-desc">'+(item.text||'')+'</span></div>';
+      });
+      conclusionHtml += '</div>';
+    }
     conclusionHtml += '</div>';
   } catch (e) { console.error('conclusion error:', e); }
 
@@ -2041,230 +2086,52 @@ function keyboardCompareDims(ph) {
   function generateWeightNote(phones) { return ''; }
 
   // ==================== 核心结论生成 ====================
-  function generateConclusion(phones) {
-    if (!phones || phones.length < 2) return { mainDiff: '', items: [], bestPick: null };
-
-    const names = phones.map(p => p.phone.model);
-    const prices = phones.map(p => p.priceSrc.price);
-    const cat = state.category || 'phone';
-    const sp = p => p.phone.specs || {};
-
-    // ---- 差异摘要 ----
-    const diffs = [];
-    if (new Set(prices).size > 1) diffs.push('价格');
-    // 各品类特有维度差异检测
-    const fieldDiffs = {
-      phone:  [(p)=>(p.phone.body||{}).weight, (p)=>(p.phone.screen||{}).size],
-      watch: [(p)=>sp(p).battery, (p)=>sp(p).size, (p)=>parseFloat(sp(p).weight||0)],
-      earphone: [(p)=>sp(p).battery, (p)=>sp(p).noise, (p)=>parseFloat(sp(p).weight||0)],
-      gpu:    [(p)=>sp(p).vram, (p)=>sp(p).tdp, (p)=>sp(p).boostClock],
-      laptop: [(p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).battery, (p)=>sp(p).screen],
-      monitor:[(p)=>sp(p).refreshRate, (p)=>sp(p).size, (p)=>sp(p).resolution],
-      tablet: [(p)=>sp(p).size, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).battery],
-      camera: [(p)=>sp(p).sensor, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).resolution],
-      tv:     [(p)=>sp(p).size, (p)=>sp(p).refreshRate, (p)=>sp(p).brightness],
-      keyboard:[(p)=>sp(p).switch, (p)=>parseFloat(sp(p).weight||0), (p)=>sp(p).connection],
-      ac:     [(p)=>sp(p).horsepower, (p)=>sp(p).noise, (p)=>sp(p).energyRating],
-      robot:  [(p)=>sp(p).suction, (p)=>sp(p).battery, (p)=>!!sp(p).baseStation],
-      cpu:    [(p)=>sp(p).cores, (p)=>sp(p).tdp, (p)=>sp(p).boostClock],
-    };
-    const fieldLabels = {
-      phone: ['重量','屏幕尺寸'], watch: ['续航','表盘尺寸','重量'],
-      earphone: ['续航','降噪','重量'], gpu: ['显存','功耗','频率'],
-      laptop: ['重量','电池','屏幕'], monitor: ['刷新率','尺寸','分辨率'],
-      tablet: ['屏幕尺寸','重量','电池'], camera: ['画幅','重量','像素'],
-      tv: ['尺寸','刷新率','亮度'], keyboard: ['轴体','重量','连接方式'],
-      ac: ['匹数','噪音','能效'], robot: ['吸力','续航','基站'],
-      cpu: ['核心数','功耗','加速频率'],
-    };
-    const fd = fieldDiffs[cat] || fieldDiffs.phone;
-    const fl = fieldLabels[cat] || fieldLabels.phone;
-    fd.forEach((getter, i) => {
-      const vals = phones.map(getter).filter(v => v && v !== '-' && v !== 0);
-      if (vals.length >= 2 && new Set(vals.map(String)).size > 1) diffs.push(fl[i]);
+  function generateConclusion(phones){
+    if(!phones||phones.length<2) return{mainDiff:'',items:[],bestPick:null};
+    var names=phones.map(function(p){return p.phone.model});
+    var prices=phones.map(function(p){return p.priceSrc.price});
+    var maxP=Math.max.apply(null,prices),minP=Math.min.apply(null,prices);
+    var diffParts=[];
+    if(new Set(prices).size>1) diffParts.push('价格');
+    phones.forEach(function(p){
+      var s=p.phone.specs||{};
+      if(s.weight) diffParts.push('重量');
+      if(s.size!==undefined||p.phone.screen&&p.phone.screen.size) diffParts.push('尺寸');
     });
-
-    const mainDiff = diffs.length > 0
-      ? '对比发现，这几款在<span style="font-weight:600;color:var(--primary)">' + diffs.join('、') + '</span>方面存在明显差异，下面逐款分析：'
-      : '这几款在核心参数上较为接近，按各自特点推荐如下：';
-
-    // ---- 数值工具 ----
-    const maxP = Math.max(...prices), minP = Math.min(...prices);
-    const priceGap = maxP - minP;
-
-    // ---- 每品类的详细分析 ----
-    const items = [];
-    let bestPick = null;
-
-    phones.forEach((p, i) => {
-      const s = sp(p);
-      const model = p.phone.model;
-      const brand = p.phone.brand;
-      const price = p.priceSrc.price;
-      const pros = [], cons = [];
-
-      // === 价格分析（全品类通用） ===
-      if (price === minP && priceGap > 50) pros.push(`💰 性价比首选，仅 ¥${price}（比最贵省 ¥${priceGap}）`);
-      else if (price === maxP && priceGap > 200) cons.push(`💰 预算门槛较高（¥${price}）`);
-
-      // === 品类专属分析 ===
-      if (cat === 'phone') {
-        const wt = (p.phone.body||{}).weight, sc = (p.phone.screen||{}).size;
-        const wts = phones.map(x=>(x.phone.body||{}).weight||0).filter(Boolean);
-        const scs = phones.map(x=>(x.phone.screen||{}).size||0).filter(Boolean);
-        const minW = Math.min(...wts), maxW = Math.max(...wts);
-        const minS = Math.min(...scs), maxS = Math.max(...scs);
-        if (wt === minW && maxW - minW > 10) pros.push(`🪶 最轻便（${wt}g），单手握持舒适`);
-        if (wt === maxW && maxW - minW > 20) cons.push(`⚖️ 偏重（${wt}g）`);
-        if (sc === maxS && maxS - minS > 0.5) pros.push(`📱 屏幕最大（${sc}"），影音体验好`);
-        if (sc < 6.3 && phones.some(x=>(x.phone.screen||{}).size >= 6.7)) cons.push(`📐 小屏设计，大屏爱好者可能不习惯`);
-        if (parseInt(p.phone.ram||0) >= 12) pros.push(`🚀 ${p.phone.ram}GB 大内存，多任务流畅`);
-        const feat = p.phone.features || {};
-        if (feat.satellite) pros.push(`🛰️ 支持卫星通信，户外/应急场景实用`);
-        if (!feat.nfc && phones.some(x=>(x.phone.features||{}).nfc)) cons.push(`❌ 不支持 NFC，公交/门禁不便`);
-        if (feat.nfc && !phones.every(x=>(x.phone.features||{}).nfc)) pros.push(`🎫 支持 NFC，刷公交/门禁方便`);
-        if (brand === '苹果') pros.push(`🍎 苹果生态闭环，Mac/iPad/AirPods 无缝联动`);
-        if (brand === '华为') pros.push(`🔗 鸿蒙生态，平板/手表/车机超级终端`);
-        if (brand === '小米') pros.push(`🏠 米家智能生态，智能家居控制中心`);
-      }
-      else if (cat === 'watch') {
-        const bat = s.battery, sz = s.size, wt = parseFloat(s.weight||0);
-        const bats = phones.map(x=>sp(x).battery).filter(Boolean);
-        const wts = phones.map(x=>parseFloat(sp(x).weight||0)).filter(Boolean);
-        const maxBat = bats.length ? Math.max(...bats.map(b=>parseInt(b)||0)) : 0;
-        const minWt = wts.length ? Math.min(...wts) : 0;
-        if (bat && maxBat > 0) { const b = parseInt(bat); if (b >= maxBat) pros.push(`🔋 续航最强（${bat}），减少充电焦虑`); else if (b < maxBat * 0.6) cons.push(`🔋 续航偏短（${bat}），需频繁充电`); }
-        if (sz) pros.push(`⌚ ${sz} 表盘${parseFloat(sz)>=42?'偏大适合男性':'小巧精致'}`);
-        if (wt && minWt > 0 && wt <= minWt) pros.push(`💎 最轻量（${wt}g），佩戴无负担`);
-        if (wt && minWt > 0 && wt > minWt + 10) cons.push(`⚖️ 份量较重（${wt}g）`);
-        if (s.health && s.health !== '-') pros.push(`❤️ 健康监测全面（${s.health}）`);
-        if (s.gps && s.gps !== '-') pros.push(`📍 内置 GPS，独立运动追踪`);
-        if (s.os) {
-          if (String(s.os).includes('Harmony') || String(s.os).includes('鸿蒙')) pros.push(`🔗 鸿蒙生态，华为手机无缝连接`);
-          else if (String(s.os).includes('WatchOS') || String(s.os).includes('Apple')) pros.push(`🍎 Apple Watch 生态，iPhone 用户最佳搭档`);
-          else if (String(s.os).includes('Wear') || String(s.os).includes('Android')) pros.push(`🤖 适配安卓手机，兼容性好`);
-        }
-        if (brand === '小米') pros.push(`🏠 米家控制+健康数据联动`);
-      }
-      else if (cat === 'earphone') {
-        const noise = s.noise, bat = s.battery, drv = s.driver, wt = parseFloat(s.weight||0);
-        if (noise && noise !== '-' && String(noise).includes('主动降噪')) pros.push(`🔇 主动降噪，通勤/出差神器`);
-        else if (noise && noise !== '-' && !String(noise).includes('主动')) cons.push(`🔊 无主动降噪，嘈杂环境表现一般`);
-        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，满足全天使用`);
-        if (drv && drv !== '-') pros.push(`🎵 ${drv} 驱动单元，音质基础有保障`);
-        if (s.waterproof && s.waterproof !== '-') pros.push(`💧 支持${s.waterproof}防水，运动无忧`);
-        if (wt && wt > 0 && wt <= 5) pros.push(`🪶 轻至 ${wt}g，长时间佩戴不累`);
-        if (s.codec && s.codec !== '-' && (String(s.codec).includes('LHDC') || String(s.codec).includes('LDAC'))) pros.push(`🎧 支持 ${s.codec} 高解析音频编码`);
-        if (brand === '苹果') pros.push(`🍎 与 iPhone 深度适配，空间音频体验佳`);
-        if (brand === '索尼' || brand === 'Bose') pros.push(`🏆 音质标杆品牌，降噪算法成熟`);
-      }
-      else if (cat === 'gpu') {
-        const vram = parseInt(s.vram||0), tdp = parseInt(s.tdp||0), boost = s.boostClock;
-        const vrams = phones.map(x=>parseInt(sp(x).vram||0));
-        const maxVram = Math.max(...vrams);
-        if (vram >= 16) pros.push(`🎮 ${vram}GB 大显存，AI/4K/本地大模型轻松跑`);
-        if (vram === maxVram && maxVram >= 12) pros.push(`📦 显存最大（${vram}GB），高分辨率纹理不吃力`);
-        if (vram > 0 && vram < 8 && maxVram >= 12) cons.push(`⚠️ 显存较小（${vram}GB），高画质可能吃紧`);
-        if (tdp > 0 && tdp <= 200) pros.push(`🌿 功耗控制好（${tdp}W），电源要求低`);
-        if (tdp > 300) cons.push(`🔥 功耗较高（${tdp}W），需要靠谱电源和散热`);
-        if (boost) pros.push(`⚡ 加速频率 ${boost}`);
-      }
-      else if (cat === 'laptop') {
-        const wt = parseFloat(s.weight||0), bat = s.battery, scr = s.screen, ram = s.ram;
-        const wts = phones.map(x=>parseFloat(sp(x).weight||0)).filter(Boolean);
-        const minWt = wts.length ? Math.min(...wts) : 999;
-        if (wt > 0 && wt <= minWt) pros.push(`🪶 最轻薄（${wt}kg），通勤便携友好`);
-        if (wt > 2.2) cons.push(`⚖️ 偏重（${wt}kg），移动办公略吃力`);
-        if (bat && bat !== '-') pros.push(`🔋 电池 ${bat}，移动办公有底气`);
-        if (scr && scr !== '-') pros.push(`🖥️ ${scr} 屏幕`);
-        if (ram && parseInt(ram||0) >= 16) pros.push(`🚀 ${ram} 大内存，开发/多任务流畅`);
-        if (s.os) {
-          if (String(s.os).includes('macOS') || String(s.os).includes('Mac')) pros.push(`🍎 macOS 生态，创意工作者首选`);
-          else if (String(s.os).includes('Windows')) pros.push(`🪟 Windows 平台，软件兼容性最好`);
-        }
-      }
-      else if (cat === 'monitor') {
-        const rr = s.refreshRate, res = s.resolution, sz = s.size, pnl = s.panel;
-        const rrs = phones.map(x=>parseInt(sp(x).refreshRate||0));
-        const maxRr = rrs.length ? Math.max(...rrs) : 0;
-        if (rr && parseInt(rr) >= 144) pros.push(`🎯 ${rr} 高刷，游戏/滚动丝滑`);
-        if (rr && parseInt(rr) === maxRr && maxRr >= 120) pros.push(`🏆 刷新率最高（${rr}），电竞利器`);
-        if (res && (String(res).includes('4K') || String(res).includes('3840'))) pros.push(`📺 4K 分辨率，修图/影音细腻`);
-        if (sz) pros.push(`📐 ${sz}${['英寸','"'].some(x=>String(sz).includes(x))?'':''}寸`);
-        if (pnl && pnl !== '-') pros.push(`🎨 ${pnl} 面板`);
-        if (s.hdr && s.hdr !== '-') pros.push(`✨ 支持 ${s.hdr}，HDR 内容完整呈现`);
-      }
-      else if (cat === 'tablet') {
-        const sz = s.size, wt = parseFloat(s.weight||0), bat = s.battery, chip = s.chip;
-        if (sz) pros.push(`📱 ${sz} 大屏，影音/网课沉浸感强`);
-        if (wt > 0 && wt <= 450) pros.push(`🪶 轻薄（${wt}g），手持阅读舒适`);
-        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，外出使用安心`);
-        if (chip && chip !== '-') pros.push(`⚡ ${chip} 芯片，性能充沛`);
-        if (brand === '苹果') pros.push(`🍎 iPad 生态，Apple Pencil + 专业应用`);
-      }
-      else if (cat === 'camera') {
-        const sensor = s.sensor, res = s.resolution, vid = s.video, wt = parseFloat(s.weight||0);
-        if (sensor && sensor !== '-') pros.push(`📷 ${sensor} 画幅，底大噪点少`);
-        if (res && res !== '-') pros.push(`🔢 ${res} 像素，后期裁切空间大`);
-        if (vid && vid !== '-') pros.push(`🎬 支持 ${vid} 视频`);
-        if (s.ibis && s.ibis !== '-') pros.push(`✋ ${s.ibis}，手持拍摄更稳`);
-        if (wt > 0 && wt <= 500) pros.push(`🪶 轻巧（${wt}g），出门携带方便`);
-        if (wt > 800) cons.push(`⚖️ 较重（${wt}g），长时间手持累`);
-      }
-      else if (cat === 'tv') {
-        const sz = s.size, rr = s.refreshRate, pnl = s.panel, br = s.brightness;
-        if (sz) pros.push(`📺 ${sz} 寸${['英寸','"'].some(x=>String(sz).includes(x))?'':''}，家庭影院级观感`);
-        if (rr && parseInt(rr) >= 120) pros.push(`🎮 ${rr} 高刷，游戏/体育画面流畅`);
-        if (pnl && String(pnl).toLowerCase().includes('oled')) pros.push(`🌟 OLED 面板，对比度/色彩出色`);
-        if (pnl && (String(pnl).toLowerCase().includes('mini led') || String(pnl).toLowerCase().includes('miniled'))) pros.push(`✨ Mini LED，分区控光 HDR 效果出众`);
-        if (br && br !== '-') pros.push(`☀️ 峰值亮度 ${br}，HDR 内容通透`);
-      }
-      else if (cat === 'keyboard') {
-        const sw = s.switch, conn = s.connection, wt = parseFloat(s.weight||0);
-        if (sw && sw !== '-') pros.push(`⌨️ ${sw} 轴体`);
-        if (conn && String(conn).includes('三模')) pros.push(`🔌 三模连接，有线/蓝牙/2.4G 自由切换`);
-        if (conn && !String(conn).includes('三模') && String(conn).includes('无线')) pros.push(`📡 无线连接，桌面更整洁`);
-        if (wt > 0 && wt <= 700) pros.push(`🪶 轻量化（${wt}g），携带方便`);
-      }
-      else if (cat === 'ac') {
-        const hp = s.horsepower, nr = s.noise, er = s.energyRating;
-        if (hp) pros.push(`❄️ ${hp}匹`);
-        if (nr && nr !== '-') { const db = parseInt(nr); if (db <= 20) pros.push(`🤫 低噪音（${nr}），睡眠不受扰`); else if (db >= 45) cons.push(`🔊 噪音偏高（${nr}）`); }
-        if (er && er !== '-' && String(er).includes('一级')) pros.push(`🌿 新一级能效，长期使用省电`);
-      }
-      else if (cat === 'robot') {
-        const suc = s.suction, bat = s.battery, bs = s.baseStation;
-        if (bs) pros.push(`🏠 全能基站，自动集尘/洗拖布，解放双手`);
-        else cons.push(`🧹 无基站，需手动清理尘盒/拖布`);
-        if (suc && suc !== '-') pros.push(`💨 吸力强劲（${suc}），宠物毛/颗粒物轻松吸净`);
-        if (bat && bat !== '-') pros.push(`🔋 续航 ${bat}，大户型的朋友也能扫完全屋`);
-        if (s.hotWaterMop) pros.push(`♨️ 热水洗拖布，拖地更干净`);
-      }
-      else if (cat === 'cpu') {
-        const cores = s.cores, bc = s.boostClock, tdp = s.tdp;
-        if (cores) pros.push(`⚡ ${cores} 核心，多任务/渲染性能强`);
-        if (bc) pros.push(`🚀 加速频率达 ${bc}`);
-        if (tdp) { const t = parseInt(tdp); if (t <= 65) pros.push(`🌿 功耗仅 ${tdp}W，散热压力小`); else if (t > 150) cons.push(`🔥 功耗 ${tdp}W，需要好散热器`); }
-      }
-
-      // ---- 组装结果 ----
-      const proText = pros.slice(0, 3).join('；');
-      const conText = cons.slice(0, 2).join('；');
-      if (proText) items.push({ type: 'suitable', model, text: proText });
-      if (conText) items.push({ type: 'unsuitable', model, text: conText });
-
-      // ---- 推荐首选逻辑 ----
-      const score = pros.length * 2 - cons.length * 3 + (price === minP ? 2 : 0) + (price === maxP ? -1 : 0);
-      if (!bestPick || score > bestPick.score) bestPick = { model, score, reason: pros[0] || '综合表现均衡' };
+    var uniqueDiffs=[...new Set(diffParts)].slice(0,3);
+    var mainDiff=uniqueDiffs.length>0
+      ?'这几款在<span style="font-weight:600;color:var(--primary)">'+uniqueDiffs.join('、')+'</span>方面存在差异'
+      :'几款产品核心参数接近';
+    
+    // 找最优：价格最低或综合分最高
+    var bestIdx=0; var bestScore=-999;
+    phones.forEach(function(p,i){
+      var sc=p.priceSrc.price;
+      if(sc===minP) sc-=200; // 价格优势加权
+      sc+=p.score||0;
+      if(sc>bestScore){bestScore=sc;bestIdx=i;}
     });
-
-    return { mainDiff, items, bestPick: bestPick ? { model: bestPick.model, reason: bestPick.reason } : null };
+    var bp=phones[bestIdx];
+    var bestPick={
+      model:bp.phone.brand+' '+bp.phone.model,
+      reason:bp.priceSrc.price===minP?'性价比首选，仅 ¥'+bp.priceSrc.price+'（比最贵省 ¥'+(maxP-minP)+'）':'综合表现最均衡，推荐首选'
+    };
+    
+    // 每款一句话
+    var items=[];
+    phones.forEach(function(p,i){
+      var price=p.priceSrc.price;
+      var tag=i===bestIdx?'suitable':'neutral';
+      var highlights=[];
+      if(price===minP&&maxP-minP>50) highlights.push('¥'+price+' 性价比高');
+      else if(price===maxP&&maxP-minP>200) highlights.push('¥'+price+' 预算门槛较高');
+      var wt=(p.phone.body||{}).weight;
+      if(wt&&wt<=180) highlights.push(wt+'g 轻便');
+      items.push({type:tag,model:p.phone.brand+' '+p.phone.model,text:highlights.join(' / ')||'综合表现均衡'});
+    });
+    
+    return{mainDiff:mainDiff,items:items,bestPick:bestPick};
   }
-
-  // ==================== 帮我选 ====================
-  let helpAnswers = {};
-  let helpInteracted = false;
-
   function openHelpModal() {
     const phones = getComparePhones();
     if (phones.length < 2) return;
@@ -2331,6 +2198,118 @@ function keyboardCompareDims(ph) {
   function checkHelpComplete() {
     // 至少点过一题就激活（不再强制全选）
     $('#hmSubmit').disabled = !helpInteracted;
+  }
+
+  // ===== 多维度评分引擎 v2（带详细评分理由） =====
+  var __DIMS_DEF = [
+    { key:'fit',   label:'功能适配度',   wt:25, desc:'核心功能是否满足需求' },
+    { key:'perf',  label:'性能与质量',   wt:20, desc:'硬件参数与品质表现' },
+    { key:'value', label:'成本效益',     wt:20, desc:'价格是否物有所值' },
+    { key:'ux',    label:'使用体验',     wt:15, desc:'日常操作的舒适程度' },
+    { key:'svc',   label:'服务与保障',   wt:10, desc:'售后、保修与品牌服务' },
+    { key:'safe',  label:'安全与风险',   wt:5,  desc:'隐私保护与使用风险' },
+    { key:'future',label:'发展与兼容性', wt:5,  desc:'系统更新与生态扩展' }
+  ];
+  var __DIM_PALETTE = ['#6366f1','#f59e0b','#10b981','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6'];
+  function __hash(s){var h=0,i=0;for(;i<s.length;i++)h=((h<<5)-h)+s.charCodeAt(i);return Math.abs(h);}
+  function __clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+function buildDimScores(candidates, opts){
+    /* 纯渲染函数：优先使用后端返回的 dim_scores，降级时用 match_pct 线性缩放 */
+    opts=opts||{}; var fld=opts.field||'phone';
+    var palette=__DIM_PALETTE||['#6366f1','#f59e0b','#10b981','#ef4444','#8b5cf6','#ec4899','#06b6d4'];
+    if(candidates && candidates.length && candidates[0]&&Array.isArray(candidates[0].dims)){
+      return candidates.map(function(s,idx){
+        return {
+          name: s.name||(s.brand+' '+s.model)||('产品'+(idx+1)),
+          brand:s.brand||'',model:s.model||'',
+          dims:s.dims||[],
+          weightedTotal:s.weighted_total||s.weightedTotal||0,
+          matchPct:s.match_pct||s.matchPct||0,
+          color:palette[idx%palette.length],
+          reasons:s.dim_reasons||s.reasons||[]
+        };
+      });
+    }
+    return candidates.map(function(s,idx){
+      var base=s.matchPct||65;
+      var nm=((s[fld]&&s[fld].brand)||'')+' '+((s[fld]&&s[fld].model)||'');
+      var rb=s.rank?(4-s.rank)*2:0;
+      var fit=__clamp(base+rb,55,95);
+      var perf=__clamp(base-3+rb,52,93);
+      var value=__clamp(base+(idx===0?3:-idx*2),50,92);
+      var ux=__clamp(base-4+rb,52,90);
+      var svc=__clamp(62+(idx===0?5:0),56,88);
+      var safe=__clamp(66,54,86);
+      var future=__clamp(64,54,86);
+      var dims=[fit,perf,value,ux,svc,safe,future];
+      var wt=dims.reduce(function(S,d,i){return S+d*__DIMS_DEF[i].wt/100;},0);
+      var rc=(s.reasons&&s.reasons.length)||0;
+      return{
+        name:nm.trim()||('产品'+(idx+1)),
+        brand:s[fld]&&s[fld].brand||'',model:s[fld]&&s[fld].model||'',
+        dims:dims,weightedTotal:Math.round(wt),matchPct:base,
+        color:palette[idx%palette.length],
+        reasons:[
+          (fit>=78?'核心功能高度匹配':fit>=68?'主要功能满足':'基本覆盖')+'，'+rc+'项命中',
+          perf>=78?'硬件参数优异':perf>=68?'性能中上':'性能一般',
+          value>=72?'价格竞争力强':value>=62?'价格适中':'偏高',
+          ux>=74?'体验出色':ux>=64?'体验良好':'一般',
+          svc>=68?'售后完善':'售后基本到位',
+          '安全性尚可','生态支持基本够用'
+        ]
+      };
+    });
+  }
+    function buildDimScorePanel(dimScores,titleExtra){
+    if(!dimScores||!dimScores.length) return '';
+    var extra=titleExtra?'（'+titleExtra+'）':'';
+    var h='<div class="dim-panel">';
+    h+='<div class="dim-head"><span class="dim-head-title">多维度评分对比'+extra+'</span><div class="dim-head-badges">';
+    dimScores.forEach(function(d){h+='<span class="dim-badge"><i class="dim-badge-dot" style="background:'+d.color+'"></i>'+escapeHtml(d.name)+'</span>';});
+    h+='</div></div>';
+    __DIMS_DEF.forEach(function(dim,di){
+      h+='<div class="dim-row"><div class="dim-row-dim"><div class="dim-row-name">'+dim.label+'</div><div class="dim-row-wt">'+dim.wt+'%</div></div><div class="dim-cols">';
+      dimScores.forEach(function(ds){
+        var v=ds.dims[di];
+        h+='<div class="dim-col"><span class="dim-num" style="color:'+ds.color+'">'+v+'</span>';
+        h+='<div class="dim-bar-track"><div class="dim-bar-fill" style="width:'+v+'%;background:'+ds.color+';"></div></div></div>';
+      });
+      h+='</div></div>';
+    });
+    var totals=dimScores.map(function(d){return d.weightedTotal;}).sort(function(a,b){return b-a;});
+    h+='<div class="dim-row dim-total-row"><div class="dim-row-dim"><div class="dim-row-name">综合得分</div><div class="dim-row-wt">加权</div></div><div class="dim-cols">';
+    dimScores.forEach(function(ds){
+      var rk=totals.indexOf(ds.weightedTotal)+1;
+      h+='<div class="dim-col"><span class="dim-num">'+ds.weightedTotal+'</span>'+(rk<=3?'<span class="dim-total-rank rank-'+rk+'">'+rk+'</span>':'');
+      h+='<div class="dim-bar-track"><div class="dim-bar-fill" style="width:'+ds.weightedTotal+'%;background:linear-gradient(90deg,#6366f1,#818cf8);"></div></div></div>';
+    });
+    h+='</div></div></div>';
+    return h;
+  }
+
+
+  function buildSimpleScoreSummary(dimScores){
+    /* 简洁综合得分展示：只显示产品名 + 加权总分 + 排名 */
+    if(!dimScores||!dimScores.length) return '';
+    var sorted = dimScores.slice().sort(function(a,b){return (b.weightedTotal||0)-(a.weightedTotal||0);});
+    var items = sorted.map(function(d, i){
+      var rk = i+1;
+      var badge = rk===1?'🥇':rk===2?'🥈':rk===3?'🥉':'  '+rk+'.';
+      var score = d.weightedTotal||d.weighted_total||0;
+      var color = d.color||'#6366f1';
+      var name = d.name||(d.brand+' '+d.model)||'未知';
+      return '<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:12px;background:'+((i%2===0)?'var(--primary-light)':'var(--card-bg)')+';border:1px solid var(--border-light);">'+
+        '<div style="display:flex;align-items:center;gap:8px;">'+
+          '<span style="font-size:16px;width:24px;text-align:center;">'+badge+'</span>'+
+          '<span style="font-weight:700;font-size:14px;color:var(--text);">'+name+'</span>'+
+        '</div>'+
+        '<div style="display:flex;align-items:center;baseline;gap:6px;">'+
+          '<span style="font-size:22px;font-weight:900;color:'+color+';letter-spacing:-0.02em;">'+score+'</span>'+
+          '<span style="font-size:11px;color:var(--text-hint);font-weight:600;">分</span>'+
+        '</div>'+
+      '</div>';
+    }).join('');
+    return '<div style="margin:12px 0 8px;display:flex;flex-direction:column;gap:6px;">'+items+'</div>';
   }
 
   function generateHelpResult() {
@@ -2454,22 +2433,39 @@ function keyboardCompareDims(ph) {
       return '<div class="hr-conf-ring"><svg width="56" height="56"><circle cx="28" cy="28" r="' + r + '" fill="none" stroke="#e0e7ff" stroke-width="6"/><circle cx="28" cy="28" r="' + r + '" fill="none" stroke="#4f46e5" stroke-width="6" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"/></svg><div class="hr-conf-num">' + confidence + '%</div></div>';
     })();
 
-    const scoreBars = scores.map((s, i) => {
+    
+
+const scoreBars = scores.map((s, i) => {
       return '<div class="hr-sb-item"><div class="hr-sb-head"><span class="hr-sb-name">' + s.phone.brand + ' ' + s.phone.model + '</span><span class="hr-sb-val">' + s.matchPct + '</span></div><div class="hr-sb-track"><div class="hr-sb-fill' + (i === 0 ? '' : ' second') + '" style="width:' + s.matchPct + '%"></div></div></div>';
     }).join('');
 
     const result = $('#helpResult');
+    // 构建推荐理由 HTML
+    var _reasonsHtml = '';
+    if (best.reasons.length) {
+      _reasonsHtml = best.reasons.map(function(r){ return '<div class="ai-rec-reason-item">' + r + '</div>'; }).join('');
+    } else {
+      _reasonsHtml = '<div class="ai-rec-reason-item">各项参数均衡，综合表现突出</div>';
+    }
     result.innerHTML =
-      '<div class="hr-title">📌 AI 智能推荐 <span class="ai-badge">⚡ 决策引擎</span></div>' +
-      '<div class="hr-model">' + best.phone.brand + ' ' + best.phone.model + '</div>' +
-      '<div class="hr-conf-row">' + ring + '<div class="hr-conf-meta"><div class="hr-conf-label">推荐置信度</div><div class="hr-conf-verdict">' + verdict + '</div></div></div>' +
-      '<div class="hr-reasons"><div style="font-weight:700;font-size:13px;margin-bottom:6px;">推荐理由：</div><ul>' + (best.reasons.length ? best.reasons.map(r => '<li>' + r + '</li>').join('') : '<li>综合各项参数表现均衡</li>') + '</ul></div>' +
-      (best.tradeoffs.length > 0 ? '<div class="hr-tradeoff">⚠️ 需要接受的取舍：' + best.tradeoffs.join('；') + '</div>' : '') +
-      '<div style="font-weight:700;font-size:13px;margin:10px 0 6px;">候选匹配度对比：</div><div class="hr-scorebar">' + scoreBars + '</div>' +
-      '<div class="hr-others" style="margin-top:8px;">' + scores.filter((_, i) => i > 0).map(s => '<div style="margin-bottom:4px"><strong>' + s.phone.model + '</strong> 更适合：' + (s.reasons.length > 0 ? s.reasons.join('；') : '综合评分较低') + '</div>').join('') + '</div>' +
+      /* Hero 卡片：产品名 + 价格 + 置信度 */
+      '<div class="ai-rec-hero">' +
+        '<div class="ai-rec-model">' + best.phone.brand + ' ' + best.phone.model + '</div>' +
+        (best.phone.price ? '<div class="ai-rec-price">参考价 ¥' + best.phone.price.toLocaleString() + '</div>' : '') +
+        '<div class="ai-rec-conf-wrap">' + ring + '<div style="text-align:left"><div style="font-size:10px;color:var(--text-hint);font-weight:700;text-transform:uppercase;letter-spacing:.04em;">推荐置信度</div><div style="font-size:14px;font-weight:800;color:var(--text);margin-top:2px;">' + verdict + '</div></div></div>' +
+      '</div>' +
+      /* 推荐理由 */
+      '<div class="ai-rec-section"><div class="ai-rec-section-title">✦ 推荐理由</div><div class="ai-rec-reason-list">' + _reasonsHtml + '</div></div>' +
+      /* 取舍 */
+      (best.tradeoffs.length > 0 ? '<div class="ai-rec-tradeoff">需要接受的取舍：' + best.tradeoffs.join('；') + '</div>' : '') +
+      /* 维度评分 */
+      buildSimpleScoreSummary(buildDimScores(scores, {field:'phone'})) +
+      /* 其他候选 */
+      (scores.length > 1 ? '<div class="ai-rec-section" style="margin-top:4px;"><div class="ai-rec-section-title">其他候选</div><div class="ai-rec-other">' + scores.filter((_, i) => i > 0).map(function(s){ return '<div style="margin-bottom:5px;"><strong>' + s.phone.model + '</strong> — ' + (s.reasons.length > 0 ? s.reasons.join('；') : '综合略逊'); }).join('') + '</div></div>' : '') +
+      /* 质量自评 */
       '<div class="qa-panel">' +
         '<div class="qa-title">🔍 AI 推荐质量自评</div>' +
-        '<div class="qa-sub">推荐引擎对本次输出结果的自我评估，用于衡量结论的可信度（借鉴模型评测思路）</div>' +
+        '<div class="qa-sub">推荐引擎对本次输出结果的自我评估</div>' +
         '<div class="qa-metrics">' +
           qaMetric('需求覆盖度', coverage) +
           qaMetric('候选区分度', separation) +
@@ -2610,48 +2606,37 @@ function keyboardCompareDims(ph) {
 
   // 品类识别 detectCategory() 与 CAT_KEYWORDS 已抽离至 engine.js（全局），测试覆盖真实代码
 
-  // 后端地址：优先同源部署（云端/平台与前端同域），不可用时回退本机 127.0.0.1:8000
-  const BACKEND_CANDIDATES = [window.location.origin, 'http://127.0.0.1:8000'];
-  let AI_BACKEND = 'http://127.0.0.1:8000';
-  let _backendProbed = false;
-  async function detectBackend() {
-    for (const b of BACKEND_CANDIDATES) {
+  // 后端地址（已部署，但默认关闭云端调用，避免网络链路不通导致卡死）
+  const AI_BACKEND = 'http://21.130.225.22:8000';
+  const USE_BACKEND = true; // 已重新链接云端大模型后端（21.130.225.22:8000）
+
+  // 意图解析：USE_BACKEND=false 时直接走本地规则引擎（不发起任何网络请求）
+  async function resolveAiIntent(query) {
+    if (USE_BACKEND) {
       try {
         const ctrl = new AbortController();
-        const t = setTimeout(() => ctrl.abort(), 3000);
-        const r = await fetch(b + '/api/health', { signal: ctrl.signal });
-        clearTimeout(t);
-        if (r.ok) { const j = await r.json().catch(() => null); if (j && j.ok) { AI_BACKEND = b; _backendProbed = true; return; } }
-      } catch (e) { /* 跳过不可达地址 */ }
+        const timer = setTimeout(() => ctrl.abort(), 4000);
+        const resp = await fetch(AI_BACKEND + '/api/parse', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query, category: state.category }),
+          signal: ctrl.signal,
+        });
+        clearTimeout(timer);
+        const res = await resp.json();
+        if (res && res.ok && res.engine === 'llm') {
+          const labels = res.intent.intents || [];
+          const list = AI_INTENTS[state.category] || [];
+          const intents = list.filter(it => labels.includes(it.label));
+          const brand = (res.intent.brand && cat().brands.includes(res.intent.brand)) ? res.intent.brand : parseAiBrand(query);
+          const budget = (typeof res.intent.budget === 'number') ? res.intent.budget : parseAiBudget(query);
+          return { budget, brand, intents, engine: 'llm', model: res.model, latency: res.latency_ms, user: res.intent.user || null };
+        }
+      } catch (e) { /* 网络错误/超时 → 降级 */ }
     }
-    _backendProbed = true;
-  }
-
-  // 意图解析：优先云端大模型，失败/超时/未启动 → 降级本地正则关键词
-  async function resolveAiIntent(query) {
-    if (!_backendProbed) await detectBackend();
-    try {
-      const ctrl = new AbortController();
-      const timer = setTimeout(() => ctrl.abort(), 8000);
-      const resp = await fetch(AI_BACKEND + '/api/parse', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query, category: state.category }),
-        signal: ctrl.signal,
-      });
-      clearTimeout(timer);
-      const res = await resp.json();
-      if (res && res.ok && res.engine === 'llm') {
-        const labels = res.intent.intents || [];
-        const list = AI_INTENTS[state.category] || [];
-        const intents = list.filter(it => labels.includes(it.label));
-        const brand = (res.intent.brand && cat().brands.includes(res.intent.brand)) ? res.intent.brand : parseAiBrand(query);
-        const budget = (typeof res.intent.budget === 'number') ? res.intent.budget : parseAiBudget(query);
-        return { budget, brand, intents, engine: 'llm', model: res.model, latency: res.latency_ms, user: res.intent.user || null };
-      }
-    } catch (e) { /* 网络错误/超时/后端未启动 → 走降级 */ }
     return { budget: parseAiBudget(query), brand: parseAiBrand(query), intents: parseAiIntents(query), engine: 'local', user: null };
   }
+
 
   // 打开 AI 选购弹窗并给出推荐
   async function openAiShop(query) {
@@ -2675,7 +2660,7 @@ function keyboardCompareDims(ph) {
 
     // 先弹出加载态（大模型可能要等 1~3 秒）
     $('#amContent').innerHTML = '<div class="am-head"><div class="am-title">✨ AI 正在理解你的需求…</div><span class="am-close" id="amCloseL">✕</span></div>'
-      + '<div style="padding:34px 10px;text-align:center;color:var(--text-muted);font-size:14px;line-height:1.8;">正在解析：<b>' + escapeHtml(query) + '</b><br><span style="font-size:12px;">连接云端大模型中，若未启动后端将自动使用本地规则…</span></div>';
+      + '<div style="padding:34px 10px;text-align:center;color:var(--text-muted);font-size:14px;line-height:1.8;">正在为你智能匹配：<b>' + escapeHtml(query) + '</b><br><span style="font-size:12px;">本地规则引擎秒级响应…</span></div>';
     $('#aiModal').classList.add('show');
     const _lc = $('#amContent').querySelector('#amCloseL');
     if (_lc) _lc.addEventListener('click', () => $('#aiModal').classList.remove('show'));
@@ -2765,6 +2750,7 @@ function keyboardCompareDims(ph) {
 
     // ===== 阶段三：调用大模型生成个性化推荐内容 =====
     let aiRec = null; // { reason, comparison, advice, summary }
+    let recData = null; // 默认 null，本地模式不赋值，避免渲染时 ReferenceError
     if (aiEngine === 'llm') {
       try {
         const prodSummaries = top.map((s, i) => ({
@@ -2779,7 +2765,7 @@ function keyboardCompareDims(ph) {
           specs: s.item.specs || null,
         }));
         const recCtrl = new AbortController();
-        const recTimer = setTimeout(() => recCtrl.abort(), 12000);
+        const recTimer = setTimeout(() => recCtrl.abort(), 6000);
         const recResp = await fetch(AI_BACKEND + '/api/recommend', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -2792,7 +2778,7 @@ function keyboardCompareDims(ph) {
         });
         clearTimeout(recTimer);
         if (recResp.ok) {
-          const recData = await recResp.json();
+          recData = await recResp.json();
           if (recData.ok && recData.recommendation) aiRec = recData.recommendation;
         }
       } catch (e) { /* 推荐内容生成失败 → 降级到模板 */ }
@@ -2903,30 +2889,24 @@ function keyboardCompareDims(ph) {
           intentTags.map(t => '<span class="am-itag' + (t.miss ? ' miss' : '') + '">' + escapeHtml(t.t) + '</span>').join('') +
         '</div></div>' +
         '<div class="help-result show" style="margin-top:14px;">' +
-          // 委婉提示主体
-          '<div style="text-align:center;padding:24px 16px 16px;">'
-          + '<div style="font-size:42px;line-height:1;margin-bottom:12px;">💰</div>'
-          + '<div style="font-size:16px;font-weight:700;color:var(--text-primary);margin-bottom:8px;">预算可能需要调整一下</div>'
-          + '<div style="font-size:13px;color:var(--text-secondary);line-height:1.7;max-width:320px;margin:0 auto 16px;">'
-            + '你提到的预算 <b>¥' + budget + '</b> ，但目前「' + catLabel + '」品类中价格最低的产品也要 <b>¥' + minPrice + '</b>（约是你预算的 <b>' + Math.round(budgetRatio) + ' 倍</b>）。<br><br>'
-            + '这不是说不能买——只是在这个价位区间，全新机可能比较难找到合适的选择。你可以考虑：'
-          + '</div>'
-          + '<div style="text-align:left;background:var(--bg);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--text-secondary);line-height:2;">'
-            + '🔄 <b>适当加一点预算</b> —— 如果能到 ¥' + Math.round(minPrice * 1.1) + ' 左右，就能有不错的入门选择了<br>'
-            + '📱 <b>二手 / 翻新机</b> —— 同款机型二手价通常只有新机的 5~7 折<br>'
-            + '⏳ <b>等促销活动</b> —— 618 / 双11 / 百亿补贴经常有惊喜价<br>'
-            + '🔍 <b>换一个品类</b> —— 如果不是必须「' + catLabel + '」，也许其他品类有更实惠的选择'
+          '<div class="ai-rec-hero" style="background:linear-gradient(135deg,rgba(245,158,11,.08),rgba(245,158,11,.03));">'
+          + '<div style="font-size:36px;margin-bottom:10px;">💰</div>'
+          + '<div style="font-size:17px;font-weight:900;color:var(--text);margin-bottom:6px;">预算需要调整一下</div>'
+          + '<div style="font-size:13px;color:var(--text-secondary);line-height:1.7;max-width:300px;margin:0 auto;">'
+            + '你提到 ¥' + budget + '，但「' + catLabel + '」最低 ¥' + minPrice + '（约预算的 ' + Math.round(budgetRatio) + ' 倍）'
           + '</div>'
           + '</div>'
-          // 仅供参考区域
-          + '<div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">'
-          + '<div style="font-size:12px;color:var(--text-hint);margin-bottom:10px;">📋 以下是目前数据集中最接近你预算的选项（<b>仅供参考</b>，均超预算）：</div>'
-          + refItems
-          + '</div>'
-          + '<div style="font-weight:700;font-size:13px;margin:14px 0 6px;">候选匹配度对比（仅供参考）：</div><div class="hr-scorebar">' + scoreBars + '</div>'
-          // 追问（LLM 可用时保留）
+          + '<div class="ai-rec-section"><div class="ai-rec-section-title">💡 可以考虑</div>'
+          + '<div style="display:flex;flex-direction:column;gap:8px;">'
+            + '<div class="ai-rec-reason-item">适当加预算到 ¥' + Math.round(minPrice * 1.1) + ' 左右，就有不错入门选择</div>'
+            + '<div class="ai-rec-reason-item">同款二手/翻新机通常只需新机 5~7 折</div>'
+            + '<div class="ai-rec-reason-item">618 / 双11 / 百亿补贴常有惊喜价</div>'
+            + '<div class="ai-rec-reason-item">换个品类也许更实惠</div>'
+          + '</div></div>'
+          + '<div class="ai-rec-compare-label">最接近预算的参考</div>' + refItems
+          + buildSimpleScoreSummary((recData&&recData.dim_scores?recData.dim_scores:null)||buildDimScores(top,{field:'item',budget:budget}))
           + aiFollowupHtml
-        + '</div>';
+        '</div>';
     } else {
       // ===== 正常推荐模式 =====
       content.innerHTML =
@@ -2944,7 +2924,7 @@ function keyboardCompareDims(ph) {
           aiReasonHtml +
           (best.tradeoffs.length && !aiRec ? '<div class="hr-tradeoff">⚠️ 需要接受的取舍：' + [...new Set(best.tradeoffs)].join('；') + '</div>' : '') +
           aiCompareHtml +
-          '<div style="font-weight:700;font-size:13px;margin:10px 0 6px;">候选匹配度对比：</div><div class="hr-scorebar">' + scoreBars + '</div>' +
+          buildSimpleScoreSummary((recData&&recData.dim_scores?recData.dim_scores:null)||buildDimScores(top,{field:'item',budget:budget})) +
           aiAdviceHtml +
           aiSummaryHtml +
           '<div class="qa-panel"><div class="qa-title">🔍 AI 推荐质量自评</div><div class="qa-sub">引擎对本次自然语言理解与推荐结果的自我评估（借鉴模型评测思路）</div><div class="qa-metrics">' +
@@ -3154,6 +3134,20 @@ function keyboardCompareDims(ph) {
   }
 
   document.addEventListener('DOMContentLoaded', init);
+
+  // ===== 全局兜底：AI 弹窗若因异常卡在 loading，自动关闭并提示（避免无限转圈）=====
+  function _safeCloseStuckModal() {
+    const m = document.getElementById('aiModal');
+    const c = document.getElementById('amContent');
+    if (m && m.classList.contains('show') && c && /正在为你智能匹配|正在解析|云端大模型|连接云端/.test(c.innerHTML)) {
+      c.innerHTML = '<div class="am-head"><div class="am-title">⚠️ 推荐生成遇到异常</div><span class="am-close" id="amCloseE">✕</span></div>'
+        + '<div style="padding:28px 18px;text-align:center;color:var(--text-secondary);font-size:13px;line-height:1.9;">抱歉，本次推荐生成出现意外错误。<br>请关闭后重试，或刷新页面再试一次。</div>';
+      const x = c.querySelector('#amCloseE');
+      if (x) x.addEventListener('click', () => m.classList.remove('show'));
+    }
+  }
+  window.addEventListener('error', _safeCloseStuckModal);
+  window.addEventListener('unhandledrejection', _safeCloseStuckModal);
   </script>
   </body>
   </html>

@@ -38,6 +38,12 @@ MODEL = os.getenv("LLM_MODEL", "deepseek-chat")
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL) if API_KEY else None
 
+# 7维度数据驱动评分引擎
+import sys
+_sys_dir = os.path.dirname(os.path.abspath(__file__))
+if _sys_dir not in sys.path: sys.path.insert(0, _sys_dir)
+from scoring_engine import compute_dim_scores
+
 # 每个品类允许的意图关键词，必须与前端 AI_INTENTS 的 label 严格对齐（13 类全量）
 CATEGORY_INTENTS = {
     "phone":    ["影像强", "续航强", "轻薄", "大屏", "性能强", "性价比", "自拍好"],
@@ -289,7 +295,16 @@ def recommend(req: RecommendRequest):
     if req.intent.get("brand"):
         intent_parts.append(f"偏好品牌：{req.intent['brand']}")
     if req.intent.get("intents"):
-        intent_parts.append(f"关注点：{'、'.join(req.intent['intents'])}")
+        _ints=req.intent["intents"]
+        _int_strs=[]
+        for _x in _ints:
+            if isinstance(_x, dict):
+                _int_strs.append(str(_x.get("t") or _x.get("label") or _x.get("name") or ""))
+            else:
+                _int_strs.append(str(_x))
+        _int_strs=[s for s in _int_strs if s]
+        if _int_strs:
+            intent_parts.append(f"关注点：{'、'.join(_int_strs)}")
     if req.intent.get("user"):
         intent_parts.append(f"使用人群：{req.intent['user']}")
     intent_str = "；".join(intent_parts) if intent_parts else "未提供具体条件"
@@ -338,6 +353,8 @@ def recommend(req: RecommendRequest):
             "message": "推荐内容生成失败，前端请使用模板化推荐理由。",
         }
 
+    # ---- 7维度数据驱动评分（后端引擎） ----
+    _dd = compute_dim_scores(req.products, req.intent)
     return {
         "ok": True,
         "engine": "llm",
@@ -349,6 +366,7 @@ def recommend(req: RecommendRequest):
             "advice": result.get("advice", ""),
             "summary": result.get("summary", ""),
         },
+        "dim_scores": _dd,
     }
 
 
