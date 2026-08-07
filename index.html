@@ -2606,8 +2606,20 @@ const scoreBars = scores.map((s, i) => {
 
   // 品类识别 detectCategory() 与 CAT_KEYWORDS 已抽离至 engine.js（全局），测试覆盖真实代码
 
-  // 后端地址（已部署，但默认关闭云端调用，避免网络链路不通导致卡死）
-  const AI_BACKEND = 'http://21.130.225.22:8000';
+  // 后端地址：默认指向云端 HTTP 直连（手机/同域可用，无混合内容拦截）。
+  // 若已部署 Cloudflare Worker 反向代理（HTTPS 入口），可在浏览器访问时带参数启用 HTTPS：
+  //   https://fengfengmay11-design.github.io/smart-pick/?backend=https://你的worker.workers.dev
+  // 该参数会被持久化到 localStorage，之后直接打开 Pages 即自动走 HTTPS 后端，无需每次带参。
+  function 解析后端地址() {
+    try {
+      const 来自网址 = new URLSearchParams(location.search).get('backend');
+      if (来自网址) { localStorage.setItem('ai_backend_url', 来自网址); return 来自网址; }
+      const 已保存 = localStorage.getItem('ai_backend_url');
+      if (已保存) return 已保存;
+    } catch (e) {}
+    return 'http://21.130.225.22:8000';
+  }
+  const AI_BACKEND = 解析后端地址();
   const USE_BACKEND = true; // 已重新链接云端大模型后端（21.130.225.22:8000）
 
   // 意图解析：USE_BACKEND=false 时直接走本地规则引擎（不发起任何网络请求）
@@ -2615,7 +2627,7 @@ const scoreBars = scores.map((s, i) => {
     if (USE_BACKEND) {
       try {
         const ctrl = new AbortController();
-        const timer = setTimeout(() => ctrl.abort(), 4000);
+        const timer = setTimeout(() => ctrl.abort(), 15000);
         const resp = await fetch(AI_BACKEND + '/api/parse', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -2765,7 +2777,7 @@ const scoreBars = scores.map((s, i) => {
           specs: s.item.specs || null,
         }));
         const recCtrl = new AbortController();
-        const recTimer = setTimeout(() => recCtrl.abort(), 6000);
+        const recTimer = setTimeout(() => recCtrl.abort(), 15000);
         const recResp = await fetch(AI_BACKEND + '/api/recommend', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
