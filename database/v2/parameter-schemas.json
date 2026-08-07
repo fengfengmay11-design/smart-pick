@@ -1,55 +1,163 @@
 {
-  "_comment": "按品类定义核心参数 Schema，用于计算 data_completeness。key 使用迁移后的 snake_case 规范名。required 缺失会降低完整度；optional 仅参与展示不参与完整度。",
-  "smartphone": {
-    "required": ["screen_size", "ram", "body_weight"],
-    "recommended": ["screen_resolution", "screen_refresh_rate", "features_waterproof", "features_nfc"]
-  },
-  "laptop": {
-    "required": ["cpu", "ram", "storage", "screen"],
-    "recommended": ["weight", "battery", "gpu"]
-  },
-  "cpu": {
-    "required": ["cores", "base_clock", "boost_clock", "tdp"],
-    "recommended": ["process_size", "socket"]
-  },
-  "gpu": {
-    "required": ["vram", "vram_type", "memory_bus", "boost_clock", "tdp"],
-    "recommended": ["shaders", "memory_bandwidth"]
-  },
-  "tablet": {
-    "required": ["size", "chip", "ram", "storage"],
-    "recommended": ["battery", "weight", "refresh_rate"]
-  },
-  "monitor": {
-    "required": ["size", "resolution", "refresh_rate", "panel"],
-    "recommended": ["brightness", "hdr", "color_gamut"]
-  },
-  "keyboard": {
-    "required": ["layout", "switch", "connection"],
-    "recommended": ["weight", "battery"]
-  },
-  "earphone": {
-    "required": ["type", "noise", "codec", "battery"],
-    "recommended": ["bluetooth", "weight", "connection"]
-  },
-  "tv": {
-    "required": ["size", "resolution", "panel", "refresh_rate"],
-    "recommended": ["hdr", "brightness", "ports"]
-  },
-  "smartwatch": {
-    "required": ["size", "screen", "battery", "gps"],
-    "recommended": ["weight", "health", "os"]
-  },
-  "camera": {
-    "required": ["sensor", "resolution", "mount"],
-    "recommended": ["video", "weight", "ibis"]
-  },
-  "cleaning_robot": {
-    "required": ["suction", "battery"],
-    "recommended": ["base_station", "water_tank", "lidar"]
-  },
-  "smart_appliance": {
-    "required": ["type", "horsepower", "energy_rating"],
-    "recommended": ["cooling_capacity", "heating_capacity", "area"]
-  }
+  "_comment": "每个有 spec 的品类对应的标准参数字段集；其他品类通过 category→schema 继承最近祖先的 schema（见 parameter-key-mapping.json 的 schema_family 映射）。",
+  "camera": [
+    "ibis",
+    "mount",
+    "resolution",
+    "screen",
+    "sensor",
+    "video",
+    "weight"
+  ],
+  "cleaning_robot": [
+    "base_station",
+    "battery",
+    "dustbin",
+    "height",
+    "hot_water_mop",
+    "lidar",
+    "obstacle_avoidance",
+    "suction",
+    "water_tank"
+  ],
+  "cpu": [
+    "base_clock",
+    "boost_clock",
+    "cache",
+    "cores",
+    "igpu",
+    "memory",
+    "pcie",
+    "process",
+    "socket",
+    "tdp"
+  ],
+  "earphone": [
+    "battery",
+    "bluetooth",
+    "charging",
+    "codec",
+    "driver",
+    "noise",
+    "type",
+    "waterproof",
+    "weight"
+  ],
+  "gpu": [
+    "base_clock",
+    "boost_clock",
+    "bus_interface",
+    "direct_x",
+    "fp32",
+    "memory_bandwidth",
+    "memory_bus",
+    "process_size",
+    "rops",
+    "rt_cores",
+    "shaders",
+    "tdp",
+    "tensor_cores",
+    "tmus",
+    "vram",
+    "vram_type",
+    "vulkan"
+  ],
+  "keyboard": [
+    "backlight",
+    "battery",
+    "connection",
+    "hotswap",
+    "keycap",
+    "layout",
+    "switch",
+    "weight"
+  ],
+  "laptop": [
+    "battery",
+    "cpu",
+    "os",
+    "ram",
+    "resolution",
+    "screen",
+    "storage",
+    "weight"
+  ],
+  "monitor": [
+    "brightness",
+    "contrast",
+    "hdr",
+    "panel",
+    "ports",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "speakers"
+  ],
+  "smart_appliance": [
+    "area",
+    "cooling_capacity",
+    "energy_rating",
+    "heating_capacity",
+    "horsepower",
+    "noise",
+    "refrigerant",
+    "type",
+    "wifi"
+  ],
+  "smartphone": [
+    "body_height",
+    "body_material",
+    "body_thickness",
+    "body_weight",
+    "body_width",
+    "features_bluetooth",
+    "features_dual_sim",
+    "features_esim",
+    "features_expandable_storage",
+    "features_five_g",
+    "features_infrared",
+    "features_nfc",
+    "features_satellite",
+    "features_usb",
+    "features_waterproof",
+    "features_wifi",
+    "ram",
+    "screen_material",
+    "screen_refresh_rate",
+    "screen_resolution",
+    "screen_size",
+    "screen_type"
+  ],
+  "smartwatch": [
+    "battery",
+    "chip",
+    "gps",
+    "health",
+    "os",
+    "screen",
+    "size",
+    "waterproof",
+    "weight"
+  ],
+  "tablet": [
+    "battery",
+    "chip",
+    "ram",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "storage",
+    "weight"
+  ],
+  "tv": [
+    "brightness",
+    "hdr",
+    "panel",
+    "ports",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "sound",
+    "system"
+  ]
 }

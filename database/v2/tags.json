@@ -2,17 +2,25 @@
   {
     "tag_id": "lightweight",
     "tag_name": "lightweight",
-    "tag_aliases": []
+    "tag_aliases": [
+      "轻薄"
+    ]
   },
   {
     "tag_id": "flagship",
     "tag_name": "flagship",
-    "tag_aliases": []
+    "tag_aliases": [
+      "旗舰",
+      "旗舰机"
+    ]
   },
   {
     "tag_id": "ai",
     "tag_name": "ai",
-    "tag_aliases": []
+    "tag_aliases": [
+      "人工智能",
+      "AI"
+    ]
   },
   {
     "tag_id": "大屏",
@@ -22,7 +30,10 @@
   {
     "tag_id": "长续航",
     "tag_name": "长续航",
-    "tag_aliases": []
+    "tag_aliases": [
+      "超长续航",
+      "续航长"
+    ]
   },
   {
     "tag_id": "专业影像",
@@ -72,7 +83,9 @@
   {
     "tag_id": "卫星通信",
     "tag_name": "卫星通信",
-    "tag_aliases": []
+    "tag_aliases": [
+      "卫星"
+    ]
   },
   {
     "tag_id": "旗舰影像",
@@ -107,7 +120,9 @@
   {
     "tag_id": "影像旗舰",
     "tag_name": "影像旗舰",
-    "tag_aliases": []
+    "tag_aliases": [
+      "拍照旗舰"
+    ]
   },
   {
     "tag_id": "时尚设计",
@@ -137,7 +152,9 @@
   {
     "tag_id": "自拍",
     "tag_name": "自拍",
-    "tag_aliases": []
+    "tag_aliases": [
+      "前置 camera"
+    ]
   },
   {
     "tag_id": "时尚",
@@ -177,7 +194,10 @@
   {
     "tag_id": "大电池",
     "tag_name": "大电池",
-    "tag_aliases": []
+    "tag_aliases": [
+      "大电量",
+      "超大电池"
+    ]
   },
   {
     "tag_id": "水桶机",
@@ -197,7 +217,10 @@
   {
     "tag_id": "快充",
     "tag_name": "快充",
-    "tag_aliases": []
+    "tag_aliases": [
+      "快速充电",
+      "fast_charging"
+    ]
   },
   {
     "tag_id": "护眼屏",
@@ -212,7 +235,10 @@
   {
     "tag_id": "gaming",
     "tag_name": "gaming",
-    "tag_aliases": []
+    "tag_aliases": [
+      "游戏",
+      "电竞"
+    ]
   },
   {
     "tag_id": "a18芯片",
@@ -427,7 +453,10 @@
   {
     "tag_id": "护眼",
     "tag_name": "护眼",
-    "tag_aliases": []
+    "tag_aliases": [
+      "护眼屏",
+      "eye_care"
+    ]
   },
   {
     "tag_id": "雅顾光影",
@@ -1057,7 +1086,9 @@
   {
     "tag_id": "高性价比",
     "tag_name": "高性价比",
-    "tag_aliases": []
+    "tag_aliases": [
+      "性价比"
+    ]
   },
   {
     "tag_id": "无风感",
@@ -1317,7 +1348,9 @@
   {
     "tag_id": "oled",
     "tag_name": "oled",
-    "tag_aliases": []
+    "tag_aliases": [
+      "OLED"
+    ]
   },
   {
     "tag_id": "980g",
@@ -1327,7 +1360,9 @@
   {
     "tag_id": "business",
     "tag_name": "business",
-    "tag_aliases": []
+    "tag_aliases": [
+      "商务"
+    ]
   },
   {
     "tag_id": "2_8k",
@@ -1497,7 +1532,9 @@
   {
     "tag_id": "mini_led",
     "tag_name": "Mini LED",
-    "tag_aliases": []
+    "tag_aliases": [
+      "miniled"
+    ]
   },
   {
     "tag_id": "rtx_4050",
@@ -2162,7 +2199,10 @@
   {
     "tag_id": "高刷",
     "tag_name": "高刷",
-    "tag_aliases": []
+    "tag_aliases": [
+      "高刷新率",
+      "high_refresh_rate"
+    ]
   },
   {
     "tag_id": "3_2k",
@@ -2342,11 +2382,6 @@
   {
     "tag_id": "生态",
     "tag_name": "生态",
-    "tag_aliases": []
-  },
-  {
-    "tag_id": "miniled",
-    "tag_name": "MiniLED",
     "tag_aliases": []
   },
   {
@@ -2567,7 +2602,9 @@
   {
     "tag_id": "无线",
     "tag_name": "无线",
-    "tag_aliases": []
+    "tag_aliases": [
+      "wireless"
+    ]
   },
   {
     "tag_id": "有线",
