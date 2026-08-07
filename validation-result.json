@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-07T09:20:14.743Z",
+  "products": 659,
+  "brands": 67,
+  "categories": 64,
+  "variants": 246,
+  "prices": 1624,
+  "critical_errors": 0,
+  "warnings": 1,
+  "details": {
+    "duplicate_product_id": 0,
+    "invalid_brand_ref": 0,
+    "invalid_category_ref": 0,
+    "zero_value_specs": 366
+  }
+}

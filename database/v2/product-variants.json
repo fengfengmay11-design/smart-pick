@@ -1,0 +1,2462 @@
+[
+  {
+    "variant_id": "iphone_16_128gb",
+    "product_id": "iphone-16",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_256gb",
+    "product_id": "iphone-16",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_512gb",
+    "product_id": "iphone-16",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_plus_128gb",
+    "product_id": "iphone-16-plus",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_plus_256gb",
+    "product_id": "iphone-16-plus",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_plus_512gb",
+    "product_id": "iphone-16-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_128gb",
+    "product_id": "iphone-16-pro",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_256gb",
+    "product_id": "iphone-16-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_512gb",
+    "product_id": "iphone-16-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_1tb",
+    "product_id": "iphone-16-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_max_256gb",
+    "product_id": "iphone-16-pro-max",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_max_512gb",
+    "product_id": "iphone-16-pro-max",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16_pro_max_1tb",
+    "product_id": "iphone-16-pro-max",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_15_128gb",
+    "product_id": "iphone-15",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_15_256gb",
+    "product_id": "iphone-15",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_15_512gb",
+    "product_id": "iphone-15",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_14_128gb",
+    "product_id": "iphone-14",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_14_256gb",
+    "product_id": "iphone-14",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_14_512gb",
+    "product_id": "iphone-14",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "6GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_256gb",
+    "product_id": "mate-70",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_512gb",
+    "product_id": "mate-70",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_1tb",
+    "product_id": "mate-70",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_pro_256gb",
+    "product_id": "mate-70-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_pro_512gb",
+    "product_id": "mate-70-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_pro_1tb",
+    "product_id": "mate-70-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_pro_plus_512gb",
+    "product_id": "mate-70-pro-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_pro_plus_1tb",
+    "product_id": "mate-70-pro-plus",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_60_256gb",
+    "product_id": "mate-60",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_60_512gb",
+    "product_id": "mate-60",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_60_1tb",
+    "product_id": "mate-60",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_256gb",
+    "product_id": "pura-80",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_512gb",
+    "product_id": "pura-80",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_1tb",
+    "product_id": "pura-80",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_pro_256gb",
+    "product_id": "pura-80-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_pro_512gb",
+    "product_id": "pura-80-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_pro_1tb",
+    "product_id": "pura-80-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_ultra_512gb",
+    "product_id": "pura-80-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_80_ultra_1tb",
+    "product_id": "pura-80-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_14_pro_256gb",
+    "product_id": "nova-14-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_14_pro_512gb",
+    "product_id": "nova-14-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_14_256gb",
+    "product_id": "nova-14",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_14_512gb",
+    "product_id": "nova-14",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "enjoy_70x_128gb",
+    "product_id": "enjoy-70x",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "enjoy_70x_256gb",
+    "product_id": "enjoy-70x",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_256gb",
+    "product_id": "xiaomi-16",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_512gb",
+    "product_id": "xiaomi-16",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_1tb",
+    "product_id": "xiaomi-16",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_pro_256gb",
+    "product_id": "xiaomi-16-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_pro_512gb",
+    "product_id": "xiaomi-16-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_16_pro_1tb",
+    "product_id": "xiaomi-16-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_256gb",
+    "product_id": "xiaomi-15",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_512gb",
+    "product_id": "xiaomi-15",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_1tb",
+    "product_id": "xiaomi-15",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_ultra_256gb",
+    "product_id": "xiaomi-15-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_ultra_512gb",
+    "product_id": "xiaomi-15-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_ultra_1tb",
+    "product_id": "xiaomi-15-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_pro_256gb",
+    "product_id": "redmi-k80-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_pro_512gb",
+    "product_id": "redmi-k80-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_pro_1tb",
+    "product_id": "redmi-k80-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_256gb",
+    "product_id": "redmi-k80",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_512gb",
+    "product_id": "redmi-k80",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k80_1tb",
+    "product_id": "redmi-k80",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_pro_plus_256gb",
+    "product_id": "redmi-note-14-pro-plus",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_pro_plus_512gb",
+    "product_id": "redmi-note-14-pro-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_pro_128gb",
+    "product_id": "redmi-note-14-pro",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_pro_256gb",
+    "product_id": "redmi-note-14-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_pro_512gb",
+    "product_id": "redmi-note-14-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_256gb",
+    "product_id": "redmi-turbo-4",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_512gb",
+    "product_id": "redmi-turbo-4",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_1tb",
+    "product_id": "redmi-turbo-4",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16e_128gb",
+    "product_id": "iphone-16e",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16e_256gb",
+    "product_id": "iphone-16e",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_16e_512gb",
+    "product_id": "iphone-16e",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_rs_512gb",
+    "product_id": "mate-70-rs",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "mate_70_rs_1tb",
+    "product_id": "mate-70-rs",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_256gb",
+    "product_id": "pura-70",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_512gb",
+    "product_id": "pura-70",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_1tb",
+    "product_id": "pura-70",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_pro_256gb",
+    "product_id": "pura-70-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_pro_512gb",
+    "product_id": "pura-70-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_pro_1tb",
+    "product_id": "pura-70-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_pro_plus_512gb",
+    "product_id": "pura-70-pro-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_pro_plus_1tb",
+    "product_id": "pura-70-pro-plus",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_ultra_512gb",
+    "product_id": "pura-70-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "pura_70_ultra_1tb",
+    "product_id": "pura-70-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_13_256gb",
+    "product_id": "nova-13",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_13_512gb",
+    "product_id": "nova-13",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_13_pro_256gb",
+    "product_id": "nova-13-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "nova_13_pro_512gb",
+    "product_id": "nova-13-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_pro_256gb",
+    "product_id": "xiaomi-15-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_pro_512gb",
+    "product_id": "xiaomi-15-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_15_pro_1tb",
+    "product_id": "xiaomi-15-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_14_ultra_256gb",
+    "product_id": "xiaomi-14-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_14_ultra_512gb",
+    "product_id": "xiaomi-14-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_14_ultra_1tb",
+    "product_id": "xiaomi-14-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_civi_4_pro_256gb",
+    "product_id": "xiaomi-civi-4-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_civi_4_pro_512gb",
+    "product_id": "xiaomi-civi-4-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_128gb",
+    "product_id": "redmi-note-14",
+    "variant_name": "128GB",
+    "storage": "128GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_256gb",
+    "product_id": "redmi-note-14",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_note_14_512gb",
+    "product_id": "redmi-note-14",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k70_ultra_256gb",
+    "product_id": "redmi-k70-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k70_ultra_512gb",
+    "product_id": "redmi-k70-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_k70_ultra_1tb",
+    "product_id": "redmi-k70-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_3_256gb",
+    "product_id": "redmi-turbo-3",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_3_512gb",
+    "product_id": "redmi-turbo-3",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_3_1tb",
+    "product_id": "redmi-turbo-3",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_mini_256gb",
+    "product_id": "vivo-x200-pro-mini",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_mini_512gb",
+    "product_id": "vivo-x200-pro-mini",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_mini_1tb",
+    "product_id": "vivo-x200-pro-mini",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_256gb",
+    "product_id": "vivo-x200",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_512gb",
+    "product_id": "vivo-x200",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_1tb",
+    "product_id": "vivo-x200",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_256gb",
+    "product_id": "vivo-x200-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_512gb",
+    "product_id": "vivo-x200-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_pro_1tb",
+    "product_id": "vivo-x200-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100_ultra_256gb",
+    "product_id": "vivo-x100-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100_ultra_512gb",
+    "product_id": "vivo-x100-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100_ultra_1tb",
+    "product_id": "vivo-x100-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_s20_pro_256gb",
+    "product_id": "vivo-s20-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_s20_pro_512gb",
+    "product_id": "vivo-s20-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_13_256gb",
+    "product_id": "iqoo-13",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_13_512gb",
+    "product_id": "iqoo-13",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_13_1tb",
+    "product_id": "iqoo-13",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_neo10_pro_256gb",
+    "product_id": "iqoo-neo10-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_neo10_pro_512gb",
+    "product_id": "iqoo-neo10-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_neo10_pro_1tb",
+    "product_id": "iqoo-neo10-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_256gb",
+    "product_id": "oppo-find-x8",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_512gb",
+    "product_id": "oppo-find-x8",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_1tb",
+    "product_id": "oppo-find-x8",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_pro_256gb",
+    "product_id": "oppo-find-x8-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_pro_512gb",
+    "product_id": "oppo-find-x8-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_pro_1tb",
+    "product_id": "oppo-find-x8-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_ultra_256gb",
+    "product_id": "oppo-find-x7-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_ultra_512gb",
+    "product_id": "oppo-find-x7-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_ultra_1tb",
+    "product_id": "oppo-find-x7-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_256gb",
+    "product_id": "oppo-find-x7",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_512gb",
+    "product_id": "oppo-find-x7",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x7_1tb",
+    "product_id": "oppo-find-x7",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno13_pro_256gb",
+    "product_id": "oppo-reno13-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno13_pro_512gb",
+    "product_id": "oppo-reno13-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno13_256gb",
+    "product_id": "oppo-reno13",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno13_512gb",
+    "product_id": "oppo-reno13",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_256gb",
+    "product_id": "honor-magic7",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_512gb",
+    "product_id": "honor-magic7",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_1tb",
+    "product_id": "honor-magic7",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_pro_256gb",
+    "product_id": "honor-magic7-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_pro_512gb",
+    "product_id": "honor-magic7-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic7_pro_1tb",
+    "product_id": "honor-magic7-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic6_pro_256gb",
+    "product_id": "honor-magic6-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic6_pro_512gb",
+    "product_id": "honor-magic6-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic6_pro_1tb",
+    "product_id": "honor-magic6-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_400_pro_256gb",
+    "product_id": "honor-400-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_400_pro_512gb",
+    "product_id": "honor-400-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_300_pro_256gb",
+    "product_id": "honor-300-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_300_pro_512gb",
+    "product_id": "honor-300-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_256gb",
+    "product_id": "samsung-s25",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_512gb",
+    "product_id": "samsung-s25",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_plus_256gb",
+    "product_id": "samsung-s25-plus",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_plus_512gb",
+    "product_id": "samsung-s25-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_ultra_256gb",
+    "product_id": "samsung-s25-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_ultra_512gb",
+    "product_id": "samsung-s25-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s25_ultra_1tb",
+    "product_id": "samsung-s25-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_256gb",
+    "product_id": "samsung-s24",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_512gb",
+    "product_id": "samsung-s24",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_ultra_256gb",
+    "product_id": "samsung-s24-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_ultra_512gb",
+    "product_id": "samsung-s24-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_ultra_1tb",
+    "product_id": "samsung-s24-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_256gb",
+    "product_id": "vivo-x100s",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_512gb",
+    "product_id": "vivo-x100s",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_1tb",
+    "product_id": "vivo-x100s",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_pro_256gb",
+    "product_id": "vivo-x100s-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_pro_512gb",
+    "product_id": "vivo-x100s-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x100s_pro_1tb",
+    "product_id": "vivo-x100s-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_z9_turbo_plus_256gb",
+    "product_id": "iqoo-z9-turbo-plus",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo_z9_turbo_plus_512gb",
+    "product_id": "iqoo-z9-turbo-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno12_pro_256gb",
+    "product_id": "oppo-reno12-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno12_pro_512gb",
+    "product_id": "oppo-reno12-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno12_256gb",
+    "product_id": "oppo-reno12",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_reno12_512gb",
+    "product_id": "oppo-reno12",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic6_256gb",
+    "product_id": "honor-magic6",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_magic6_512gb",
+    "product_id": "honor-magic6",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_400_256gb",
+    "product_id": "honor-400",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_400_512gb",
+    "product_id": "honor-400",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_300_256gb",
+    "product_id": "honor-300",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_300_512gb",
+    "product_id": "honor-300",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_200_pro_256gb",
+    "product_id": "honor-200-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_200_pro_512gb",
+    "product_id": "honor-200-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_plus_256gb",
+    "product_id": "samsung-s24-plus",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s24_plus_512gb",
+    "product_id": "samsung-s24-plus",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_a56_256gb",
+    "product_id": "samsung-a56",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_a55_256gb",
+    "product_id": "samsung-a55",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13_256gb",
+    "product_id": "oneplus-13",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13_512gb",
+    "product_id": "oneplus-13",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13_1tb",
+    "product_id": "oneplus-13",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_256gb",
+    "product_id": "oneplus-ace5",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_512gb",
+    "product_id": "oneplus-ace5",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_1tb",
+    "product_id": "oneplus-ace5",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_pro_256gb",
+    "product_id": "oneplus-ace5-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_pro_512gb",
+    "product_id": "oneplus-ace5-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_ace5_pro_1tb",
+    "product_id": "oneplus-ace5-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13t_256gb",
+    "product_id": "oneplus-13t",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13t_512gb",
+    "product_id": "oneplus-13t",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus_13t_1tb",
+    "product_id": "oneplus-13t",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt7_pro_256gb",
+    "product_id": "realme-gt7-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt7_pro_512gb",
+    "product_id": "realme-gt7-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt7_pro_1tb",
+    "product_id": "realme-gt7-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt6_256gb",
+    "product_id": "realme-gt6",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt6_512gb",
+    "product_id": "realme-gt6",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_gt6_1tb",
+    "product_id": "realme-gt6",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_neo7_256gb",
+    "product_id": "realme-neo7",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_neo7_512gb",
+    "product_id": "realme-neo7",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "realme_neo7_1tb",
+    "product_id": "realme-neo7",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_ultra_256gb",
+    "product_id": "oppo-find-x8-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_ultra_512gb",
+    "product_id": "oppo-find-x8-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8_ultra_1tb",
+    "product_id": "oppo-find-x8-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8s_256gb",
+    "product_id": "oppo-find-x8s",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8s_512gb",
+    "product_id": "oppo-find-x8s",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo_find_x8s_1tb",
+    "product_id": "oppo-find-x8s",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200s_256gb",
+    "product_id": "vivo-x200s",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200s_512gb",
+    "product_id": "vivo-x200s",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200s_1tb",
+    "product_id": "vivo-x200s",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_ultra_256gb",
+    "product_id": "vivo-x200-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_ultra_512gb",
+    "product_id": "vivo-x200-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo_x200_ultra_1tb",
+    "product_id": "vivo-x200-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_gt_pro_256gb",
+    "product_id": "honor-gt-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_gt_pro_512gb",
+    "product_id": "honor-gt-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "honor_gt_pro_1tb",
+    "product_id": "honor-gt-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_pro_256gb",
+    "product_id": "redmi-turbo-4-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_pro_512gb",
+    "product_id": "redmi-turbo-4-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi_turbo_4_pro_1tb",
+    "product_id": "redmi-turbo-4-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_civi_5_pro_256gb",
+    "product_id": "xiaomi-civi-5-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_civi_5_pro_512gb",
+    "product_id": "xiaomi-civi-5-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "xiaomi_civi_5_pro_1tb",
+    "product_id": "xiaomi-civi-5-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_256gb",
+    "product_id": "iphone-17",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_512gb",
+    "product_id": "iphone-17",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "8GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_256gb",
+    "product_id": "iphone-17-pro",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_512gb",
+    "product_id": "iphone-17-pro",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_1tb",
+    "product_id": "iphone-17-pro",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_max_256gb",
+    "product_id": "iphone-17-pro-max",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_max_512gb",
+    "product_id": "iphone-17-pro-max",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "iphone_17_pro_max_1tb",
+    "product_id": "iphone-17-pro-max",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s26_256gb",
+    "product_id": "samsung-s26",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s26_512gb",
+    "product_id": "samsung-s26",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s26_ultra_256gb",
+    "product_id": "samsung-s26-ultra",
+    "variant_name": "256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s26_ultra_512gb",
+    "product_id": "samsung-s26-ultra",
+    "variant_name": "512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung_s26_ultra_1tb",
+    "product_id": "samsung-s26-ultra",
+    "variant_name": "1TB",
+    "storage": "1TB",
+    "memory": "12GB",
+    "color": null,
+    "sku": null,
+    "status": "active"
+  }
+]

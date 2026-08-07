@@ -1,0 +1,2647 @@
+[
+  {
+    "tag_id": "lightweight",
+    "tag_name": "lightweight",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "flagship",
+    "tag_name": "flagship",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ai",
+    "tag_name": "ai",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大屏",
+    "tag_name": "大屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "长续航",
+    "tag_name": "长续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "专业影像",
+    "tag_name": "专业影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超大屏",
+    "tag_name": "超大屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "最强续航",
+    "tag_name": "最强续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "value",
+    "tag_name": "value",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "usb_c",
+    "tag_name": "USB-C",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门",
+    "tag_name": "入门",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "降价",
+    "tag_name": "降价",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "商务旗舰",
+    "tag_name": "商务旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "鸿蒙",
+    "tag_name": "鸿蒙",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "卫星通信",
+    "tag_name": "卫星通信",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旗舰影像",
+    "tag_name": "旗舰影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3d人脸",
+    "tag_name": "3D人脸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超旗舰",
+    "tag_name": "超旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "钛合金",
+    "tag_name": "钛合金",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "最强影像",
+    "tag_name": "最强影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经典旗舰",
+    "tag_name": "经典旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "影像旗舰",
+    "tag_name": "影像旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "时尚设计",
+    "tag_name": "时尚设计",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "长焦微距",
+    "tag_name": "长焦微距",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "影像机皇",
+    "tag_name": "影像机皇",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1英寸大底",
+    "tag_name": "1英寸大底",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "伸缩镜头",
+    "tag_name": "伸缩镜头",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "自拍",
+    "tag_name": "自拍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "时尚",
+    "tag_name": "时尚",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "千元机",
+    "tag_name": "千元机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小屏旗舰",
+    "tag_name": "小屏旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "徕卡影像",
+    "tag_name": "徕卡影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "全能旗舰",
+    "tag_name": "全能旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "徕卡",
+    "tag_name": "徕卡",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高性能",
+    "tag_name": "高性能",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大电池",
+    "tag_name": "大电池",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "水桶机",
+    "tag_name": "水桶机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "千元旗舰",
+    "tag_name": "千元旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大电量",
+    "tag_name": "大电量",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "快充",
+    "tag_name": "快充",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "护眼屏",
+    "tag_name": "护眼屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "性能",
+    "tag_name": "性能",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gaming",
+    "tag_name": "gaming",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "a18芯片",
+    "tag_name": "A18芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "陶瓷机身",
+    "tag_name": "陶瓷机身",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "harmonyos",
+    "tag_name": "HarmonyOS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "玄武钢化",
+    "tag_name": "玄武钢化",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "中端",
+    "tag_name": "中端",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "自拍旗舰",
+    "tag_name": "自拍旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "曲屏",
+    "tag_name": "曲屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k屏",
+    "tag_name": "2K屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "徕卡长焦",
+    "tag_name": "徕卡长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "徕卡全焦段",
+    "tag_name": "徕卡全焦段",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "性能旗舰",
+    "tag_name": "性能旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "144hz",
+    "tag_name": "144Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "天玑9300",
+    "tag_name": "天玑9300+",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "骁龙8s",
+    "tag_name": "骁龙8s",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "蔡司影像",
+    "tag_name": "蔡司影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "天玑9400",
+    "tag_name": "天玑9400",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "蔡司长焦",
+    "tag_name": "蔡司长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "蔡司apo",
+    "tag_name": "蔡司APO",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2亿长焦",
+    "tag_name": "2亿长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2亿apo长焦",
+    "tag_name": "2亿APO长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1英寸",
+    "tag_name": "1英寸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "人像",
+    "tag_name": "人像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "骁龙8elite",
+    "tag_name": "骁龙8Elite",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "120w快充",
+    "tag_name": "120W快充",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "哈苏影像",
+    "tag_name": "哈苏影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双潜望长焦",
+    "tag_name": "双潜望长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "哈苏",
+    "tag_name": "哈苏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双潜望",
+    "tag_name": "双潜望",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "coloros",
+    "tag_name": "ColorOS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ai旗舰",
+    "tag_name": "AI旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "荣耀绿洲护眼",
+    "tag_name": "荣耀绿洲护眼",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1_8亿长焦",
+    "tag_name": "1.8亿长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "中端旗舰",
+    "tag_name": "中端旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "绿洲护眼",
+    "tag_name": "绿洲护眼",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "one_ui",
+    "tag_name": "One UI",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大屏旗舰",
+    "tag_name": "大屏旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "安卓机皇",
+    "tag_name": "安卓机皇",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "s_pen",
+    "tag_name": "S Pen",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2亿像素",
+    "tag_name": "2亿像素",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "直屏旗舰",
+    "tag_name": "直屏旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "蔡司",
+    "tag_name": "蔡司",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "骁龙8gen3",
+    "tag_name": "骁龙8Gen3",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "护眼",
+    "tag_name": "护眼",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "雅顾光影",
+    "tag_name": "雅顾光影",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "amoled",
+    "tag_name": "AMOLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "金属中框",
+    "tag_name": "金属中框",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旗舰芯",
+    "tag_name": "旗舰芯",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "陶瓷",
+    "tag_name": "陶瓷",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "潜望长焦",
+    "tag_name": "潜望长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "电竞屏",
+    "tag_name": "电竞屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超大电池",
+    "tag_name": "超大电池",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "长焦",
+    "tag_name": "长焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "影像",
+    "tag_name": "影像",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "轻薄自拍",
+    "tag_name": "轻薄自拍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "颜值",
+    "tag_name": "颜值",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "a19",
+    "tag_name": "A19",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "promotion",
+    "tag_name": "ProMotion",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "a19_pro",
+    "tag_name": "A19 Pro",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "三摄",
+    "tag_name": "三摄",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "骁龙8_elite_gen2",
+    "tag_name": "骁龙8 Elite Gen2",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小屏",
+    "tag_name": "小屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rdna_3_0",
+    "tag_name": "RDNA 3.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "navi_iii_rx_7000",
+    "tag_name": "Navi III(RX 7000)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "16gb",
+    "tag_name": "16GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "blackwell_2_0",
+    "tag_name": "Blackwell 2.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_50",
+    "tag_name": "GeForce 50",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "24gb",
+    "tag_name": "24GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "8gb",
+    "tag_name": "8GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rdna_4_0",
+    "tag_name": "RDNA 4.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "navi_iv_rx_9000",
+    "tag_name": "Navi IV(RX 9000)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "12gb",
+    "tag_name": "12GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "32gb",
+    "tag_name": "32GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xe2_hpg",
+    "tag_name": "Xe2-HPG",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "battlemage_arc_5",
+    "tag_name": "Battlemage(Arc 5)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "10gb",
+    "tag_name": "10GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xe_lpg",
+    "tag_name": "Xe-LPG+",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "arc_graphics_m_arrow_lake",
+    "tag_name": "Arc Graphics-M(Arrow Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "0gb",
+    "tag_name": "0GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "cdna_4_0",
+    "tag_name": "CDNA 4.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "radeon_instinct_mix",
+    "tag_name": "Radeon Instinct(MIx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "288gb",
+    "tag_name": "288GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_arrow_lake",
+    "tag_name": "HD Graphics(Arrow Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "cdna_3_0",
+    "tag_name": "CDNA 3.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xe2_lpg",
+    "tag_name": "Xe2-LPG",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "arc_graphics_m_lunar_lake",
+    "tag_name": "Arc Graphics-M(Lunar Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ada_lovelace",
+    "tag_name": "Ada Lovelace",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_40",
+    "tag_name": "GeForce 40",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ampere",
+    "tag_name": "Ampere",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4gb",
+    "tag_name": "4GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_30",
+    "tag_name": "GeForce 30",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "6gb",
+    "tag_name": "6GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "arc_graphics_m_meteor_lake",
+    "tag_name": "Arc Graphics-M(Meteor Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rdna_2_0",
+    "tag_name": "RDNA 2.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "navi_ii_rx_6000",
+    "tag_name": "Navi II(RX 6000)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "192gb",
+    "tag_name": "192GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xe_hpg",
+    "tag_name": "Xe-HPG",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "alchemist_arc_5",
+    "tag_name": "Alchemist(Arc 5)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "128gb",
+    "tag_name": "128GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "20gb",
+    "tag_name": "20GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "alchemist_arc_3",
+    "tag_name": "Alchemist(Arc 3)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "alchemist_arc_7",
+    "tag_name": "Alchemist(Arc 7)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "turing",
+    "tag_name": "Turing",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_16",
+    "tag_name": "GeForce 16",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_mx_5xx",
+    "tag_name": "GeForce MX(5xx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2gb",
+    "tag_name": "2GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_20",
+    "tag_name": "GeForce 20",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "cdna_2_0",
+    "tag_name": "CDNA 2.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "64gb",
+    "tag_name": "64GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "generation_12_1",
+    "tag_name": "Generation 12.1",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_rocket_lake",
+    "tag_name": "HD Graphics(Rocket Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "pascal",
+    "tag_name": "Pascal",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_10",
+    "tag_name": "GeForce 10",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_m_tiger_lake",
+    "tag_name": "HD Graphics-M(Tiger Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_w_rocket_lake",
+    "tag_name": "HD Graphics-W(Rocket Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "cdna_1_0",
+    "tag_name": "CDNA 1.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "h3c_graphics",
+    "tag_name": "H3C Graphics",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xe_graphics",
+    "tag_name": "Xe Graphics",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_mx_4xx",
+    "tag_name": "GeForce MX(4xx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rdna_1_0",
+    "tag_name": "RDNA 1.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "navi_rx_5000",
+    "tag_name": "Navi(RX 5000)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3gb",
+    "tag_name": "3GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "generation_11_0",
+    "tag_name": "Generation 11.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_m_lakefield",
+    "tag_name": "HD Graphics-M(Lakefield)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "generation_9_5",
+    "tag_name": "Generation 9.5",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_w_comet_lake",
+    "tag_name": "HD Graphics-W(Comet Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_wm_comet_lake",
+    "tag_name": "HD Graphics-WM(Comet Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_m_ice_lake",
+    "tag_name": "HD Graphics-M(Ice Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_comet_lake",
+    "tag_name": "HD Graphics(Comet Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gcn_4_0",
+    "tag_name": "GCN 4.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "polaris_rx_600",
+    "tag_name": "Polaris(RX 600)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "polaris_rx_500",
+    "tag_name": "Polaris(RX 500)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_mx_3xx",
+    "tag_name": "GeForce MX(3xx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "embedded_9000",
+    "tag_name": "Embedded(9000)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_m_coffee_lake",
+    "tag_name": "HD Graphics-M(Coffee Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gcn_3_0",
+    "tag_name": "GCN 3.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "polaris_rx_500x",
+    "tag_name": "Polaris(RX 500X)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_mx_1xx",
+    "tag_name": "GeForce MX(1xx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "geforce_mx_2xx",
+    "tag_name": "GeForce MX(2xx)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gcn_5_1",
+    "tag_name": "GCN 5.1",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "vega_ii_radeon_vii",
+    "tag_name": "Vega II(Radeon VII)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gcn_1_0",
+    "tag_name": "GCN 1.0",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "pirate_islands_r7_300",
+    "tag_name": "Pirate Islands(R7 300)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_t_amber_lake",
+    "tag_name": "HD Graphics-T(Amber Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "kepler",
+    "tag_name": "Kepler",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "11gb",
+    "tag_name": "11GB",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hd_graphics_m_whiskey_lake",
+    "tag_name": "HD Graphics-M(Whiskey Lake)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "vega_vega_m",
+    "tag_name": "Vega(Vega M)",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "energy_grade1",
+    "tag_name": "energy_grade1",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "inverter",
+    "tag_name": "inverter",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "self_clean",
+    "tag_name": "self_clean",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "柜机",
+    "tag_name": "柜机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "全直流变频",
+    "tag_name": "全直流变频",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小户型",
+    "tag_name": "小户型",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "三级能效",
+    "tag_name": "三级能效",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "省电",
+    "tag_name": "省电",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大风量",
+    "tag_name": "大风量",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "变频冷暖",
+    "tag_name": "变频冷暖",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "智能wifi",
+    "tag_name": "智能WiFi",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "silent",
+    "tag_name": "silent",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "56_自清洁",
+    "tag_name": "56℃自清洁",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经济型",
+    "tag_name": "经济型",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "米家智能",
+    "tag_name": "米家智能",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "柔风",
+    "tag_name": "柔风",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "圆柱柜机",
+    "tag_name": "圆柱柜机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "米家",
+    "tag_name": "米家",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2匹挂机",
+    "tag_name": "2匹挂机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经济",
+    "tag_name": "经济",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "华凌",
+    "tag_name": "华凌",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高性价比",
+    "tag_name": "高性价比",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无风感",
+    "tag_name": "无风感",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "净化",
+    "tag_name": "净化",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "除菌",
+    "tag_name": "除菌",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "新风",
+    "tag_name": "新风",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超静音",
+    "tag_name": "超静音",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "全能基站",
+    "tag_name": "全能基站",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "11000pa",
+    "tag_name": "11000Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双机械臂",
+    "tag_name": "双机械臂",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "12000pa",
+    "tag_name": "12000Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "12800pa",
+    "tag_name": "12800Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超薄9_5cm",
+    "tag_name": "超薄9.5cm",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "动态机械臂",
+    "tag_name": "动态机械臂",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "灵隙贴边",
+    "tag_name": "灵隙贴边",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "热水洗",
+    "tag_name": "热水洗",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "仿生机械臂",
+    "tag_name": "仿生机械臂",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超薄8_2cm",
+    "tag_name": "超薄8.2cm",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门全能",
+    "tag_name": "入门全能",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3000档",
+    "tag_name": "3000档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经典款",
+    "tag_name": "经典款",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "稳定可靠",
+    "tag_name": "稳定可靠",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "海外热门",
+    "tag_name": "海外热门",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "米家生态",
+    "tag_name": "米家生态",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无基站",
+    "tag_name": "无基站",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2000档",
+    "tag_name": "2000档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双臂",
+    "tag_name": "双臂",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双旋伸缩",
+    "tag_name": "双旋伸缩",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "仿生足",
+    "tag_name": "仿生足",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "边刷延伸",
+    "tag_name": "边刷延伸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超薄8_1cm",
+    "tag_name": "超薄8.1cm",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "18000pa",
+    "tag_name": "18000Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "滚筒洗地",
+    "tag_name": "滚筒洗地",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "免洗滚布",
+    "tag_name": "免洗滚布",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经典",
+    "tag_name": "经典",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "自动上下水",
+    "tag_name": "自动上下水",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双水箱",
+    "tag_name": "双水箱",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "进口",
+    "tag_name": "进口",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "自动集尘",
+    "tag_name": "自动集尘",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "纯扫地",
+    "tag_name": "纯扫地",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双热风烘干",
+    "tag_name": "双热风烘干",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "仿生机械足",
+    "tag_name": "仿生机械足",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "20000pa",
+    "tag_name": "20000Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "越障",
+    "tag_name": "越障",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "19000pa",
+    "tag_name": "19000Pa",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无边刷",
+    "tag_name": "无边刷",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "机械臂",
+    "tag_name": "机械臂",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m4",
+    "tag_name": "M4",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "18h续航",
+    "tag_name": "18h续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m4_pro",
+    "tag_name": "M4 Pro",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "生产力",
+    "tag_name": "生产力",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xdr屏",
+    "tag_name": "XDR屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超轻薄",
+    "tag_name": "超轻薄",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "oled",
+    "tag_name": "oled",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "980g",
+    "tag_name": "980g",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "business",
+    "tag_name": "business",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2_8k",
+    "tag_name": "2.8K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "16寸",
+    "tag_name": "16寸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3_1k",
+    "tag_name": "3.1K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3_2k_oled",
+    "tag_name": "3.2K OLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "游戏本",
+    "tag_name": "游戏本",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "240hz",
+    "tag_name": "240Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rtx_4070",
+    "tag_name": "RTX 4070",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "满血显卡",
+    "tag_name": "满血显卡",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m4_max",
+    "tag_name": "M4 Max",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "专业工作站",
+    "tag_name": "专业工作站",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "翻转触控",
+    "tag_name": "翻转触控",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "5000档",
+    "tag_name": "5000档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "oled触控",
+    "tag_name": "OLED触控",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3_2屏",
+    "tag_name": "3:2屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "amd",
+    "tag_name": "AMD",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "触控",
+    "tag_name": "触控",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3_2",
+    "tag_name": "3:2",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2_8k屏",
+    "tag_name": "2.8K屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4000档",
+    "tag_name": "4000档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "120hz",
+    "tag_name": "120Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4500档",
+    "tag_name": "4500档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m3",
+    "tag_name": "M3",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门mac",
+    "tag_name": "入门Mac",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3k屏",
+    "tag_name": "3K屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rtx_4060",
+    "tag_name": "RTX 4060",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "165hz",
+    "tag_name": "165Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大内存",
+    "tag_name": "大内存",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "一体设计",
+    "tag_name": "一体设计",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rtx_4080",
+    "tag_name": "RTX 4080",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "99wh",
+    "tag_name": "99Wh",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "qd_oled",
+    "tag_name": "QD-OLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k",
+    "tag_name": "4K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rtx_4090",
+    "tag_name": "RTX 4090",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "mini_led",
+    "tag_name": "Mini LED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "rtx_4050",
+    "tag_name": "RTX 4050",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大屏轻薄",
+    "tag_name": "大屏轻薄",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "zen_5",
+    "tag_name": "Zen 5",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "16核",
+    "tag_name": "16核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3d_v_cache",
+    "tag_name": "3D V-Cache",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "arrow_lake",
+    "tag_name": "Arrow Lake",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "24核",
+    "tag_name": "24核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "lga1851",
+    "tag_name": "LGA1851",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "8核",
+    "tag_name": "8核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "游戏神u",
+    "tag_name": "游戏神U",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "20核",
+    "tag_name": "20核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "65w",
+    "tag_name": "65W",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "14核",
+    "tag_name": "14核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "6核",
+    "tag_name": "6核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "raptor_lake",
+    "tag_name": "Raptor Lake",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "zen_4",
+    "tag_name": "Zen 4",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "raptor_lake_refresh",
+    "tag_name": "Raptor Lake Refresh",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "12核",
+    "tag_name": "12核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "zen_3",
+    "tag_name": "Zen 3",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门神u",
+    "tag_name": "入门神U",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "alder_lake",
+    "tag_name": "Alder Lake",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4核",
+    "tag_name": "4核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "10核",
+    "tag_name": "10核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "apu",
+    "tag_name": "APU",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "核显",
+    "tag_name": "核显",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "亮机神u",
+    "tag_name": "亮机神U",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "threadripper",
+    "tag_name": "Threadripper",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "64核",
+    "tag_name": "64核",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "工作站",
+    "tag_name": "工作站",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hedt",
+    "tag_name": "HEDT",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无核显",
+    "tag_name": "无核显",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "带核显",
+    "tag_name": "带核显",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "6_2ghz",
+    "tag_name": "6.2GHz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "h2芯片",
+    "tag_name": "H2芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "spatial_audio",
+    "tag_name": "spatial_audio",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "头戴",
+    "tag_name": "头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "h1芯片",
+    "tag_name": "H1芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ldac",
+    "tag_name": "LDAC",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hi_res",
+    "tag_name": "Hi-Res",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旗舰头戴",
+    "tag_name": "旗舰头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "30h续航",
+    "tag_name": "30h续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "沉浸式音频",
+    "tag_name": "沉浸式音频",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "顶级降噪",
+    "tag_name": "顶级降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "bose降噪",
+    "tag_name": "Bose降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "真无线",
+    "tag_name": "真无线",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "星闪连接",
+    "tag_name": "星闪连接",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "半入耳",
+    "tag_name": "半入耳",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "新上市",
+    "tag_name": "新上市",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "双单元",
+    "tag_name": "双单元",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "360音效",
+    "tag_name": "360音效",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "同轴双单元",
+    "tag_name": "同轴双单元",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "hi_fi",
+    "tag_name": "Hi-Fi",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "500档",
+    "tag_name": "500档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "aptx无损",
+    "tag_name": "aptX无损",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "发烧级",
+    "tag_name": "发烧级",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "苹果w1芯片",
+    "tag_name": "苹果W1芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "智能屏充盒",
+    "tag_name": "智能屏充盒",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "开放式",
+    "tag_name": "开放式",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "运动",
+    "tag_name": "运动",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超长续航",
+    "tag_name": "超长续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经典降噪",
+    "tag_name": "经典降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "经典头戴",
+    "tag_name": "经典头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "新一代降噪",
+    "tag_name": "新一代降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "舒适降噪",
+    "tag_name": "舒适降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "耳夹式",
+    "tag_name": "耳夹式",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "沉浸音频",
+    "tag_name": "沉浸音频",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无损",
+    "tag_name": "无损",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "柄式设计",
+    "tag_name": "柄式设计",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "哈曼卡顿",
+    "tag_name": "哈曼卡顿",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "三单元",
+    "tag_name": "三单元",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "60h续航",
+    "tag_name": "60h续航",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "发烧头戴",
+    "tag_name": "发烧头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "圈铁双单元",
+    "tag_name": "圈铁双单元",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高性价比头戴",
+    "tag_name": "高性价比头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "运动鲨鱼鳍",
+    "tag_name": "运动鲨鱼鳍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "usb_c无损",
+    "tag_name": "USB-C无损",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门头戴",
+    "tag_name": "入门头戴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "h3芯片",
+    "tag_name": "H3芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "心率监测",
+    "tag_name": "心率监测",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "入门降噪",
+    "tag_name": "入门降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "半入耳降噪",
+    "tag_name": "半入耳降噪",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "不入耳",
+    "tag_name": "不入耳",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k",
+    "tag_name": "2K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ips_black",
+    "tag_name": "IPS Black",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "type_c",
+    "tag_name": "Type-C",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k_240hz",
+    "tag_name": "4K 240Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k_160hz",
+    "tag_name": "4K 160Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "nano_ips",
+    "tag_name": "Nano IPS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_480hz",
+    "tag_name": "2K 480Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "woled",
+    "tag_name": "WOLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_180hz",
+    "tag_name": "2K 180Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_100hz",
+    "tag_name": "2K 100Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "办公利器",
+    "tag_name": "办公利器",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "游戏入门",
+    "tag_name": "游戏入门",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1080p_180hz",
+    "tag_name": "1080P 180Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "fps神器",
+    "tag_name": "FPS神器",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_170hz",
+    "tag_name": "2K 170Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k曲面",
+    "tag_name": "2K曲面",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "va",
+    "tag_name": "VA",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "32寸_2k",
+    "tag_name": "32寸 2K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ips",
+    "tag_name": "IPS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "设计",
+    "tag_name": "设计",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "usb_c_96w",
+    "tag_name": "USB-C 96W",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "智能显示器",
+    "tag_name": "智能显示器",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "tizen_os",
+    "tag_name": "Tizen OS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "设计专用",
+    "tag_name": "设计专用",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "色准_e_3",
+    "tag_name": "色准ΔE<3",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1000档",
+    "tag_name": "1000档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k入门",
+    "tag_name": "4K入门",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1500档",
+    "tag_name": "1500档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "800档",
+    "tag_name": "800档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "性价比之王",
+    "tag_name": "性价比之王",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "电竞入门",
+    "tag_name": "电竞入门",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "thunderbolt_4",
+    "tag_name": "Thunderbolt 4",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_360hz",
+    "tag_name": "2K 360Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "49寸带鱼屏",
+    "tag_name": "49寸带鱼屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k_144hz",
+    "tag_name": "4K 144Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "45寸带鱼屏",
+    "tag_name": "45寸带鱼屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "量子点",
+    "tag_name": "量子点",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "2k_240hz",
+    "tag_name": "2K 240Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "内置音箱",
+    "tag_name": "内置音箱",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1080p",
+    "tag_name": "1080P",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "1080p_200hz",
+    "tag_name": "1080P 200Hz",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "42寸",
+    "tag_name": "42寸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "4k_oled",
+    "tag_name": "4K OLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "32寸曲面",
+    "tag_name": "32寸曲面",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "人体工学支架",
+    "tag_name": "人体工学支架",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m2",
+    "tag_name": "M2",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "三星",
+    "tag_name": "三星",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小巧",
+    "tag_name": "小巧",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "单手持",
+    "tag_name": "单手持",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "柔光屏",
+    "tag_name": "柔光屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高刷",
+    "tag_name": "高刷",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "3_2k",
+    "tag_name": "3.2K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "千元档",
+    "tag_name": "千元档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "防水",
+    "tag_name": "防水",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "手写笔",
+    "tag_name": "手写笔",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "影音",
+    "tag_name": "影音",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "full_frame",
+    "tag_name": "full_frame",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "stabilization",
+    "tag_name": "stabilization",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "video",
+    "tag_name": "video",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "连拍",
+    "tag_name": "连拍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "6k视频",
+    "tag_name": "6K视频",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "复古",
+    "tag_name": "复古",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高像素",
+    "tag_name": "高像素",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "胶片模拟",
+    "tag_name": "胶片模拟",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "vlog",
+    "tag_name": "Vlog",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "轻量",
+    "tag_name": "轻量",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "轻便",
+    "tag_name": "轻便",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旅拍",
+    "tag_name": "旅拍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "风光",
+    "tag_name": "风光",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "aps_c",
+    "tag_name": "APS-C",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ai对焦",
+    "tag_name": "AI对焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "口袋机",
+    "tag_name": "口袋机",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "广角",
+    "tag_name": "广角",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高速连拍",
+    "tag_name": "高速连拍",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "8k",
+    "tag_name": "8K",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "打鸟",
+    "tag_name": "打鸟",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "学生",
+    "tag_name": "学生",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无黑视",
+    "tag_name": "无黑视",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "手感",
+    "tag_name": "手感",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旁轴",
+    "tag_name": "旁轴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "扫街",
+    "tag_name": "扫街",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "一机一镜",
+    "tag_name": "一机一镜",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "视频旗舰",
+    "tag_name": "视频旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "相位对焦",
+    "tag_name": "相位对焦",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无过热",
+    "tag_name": "无过热",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "m43",
+    "tag_name": "M43",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "生态",
+    "tag_name": "生态",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "miniled",
+    "tag_name": "MiniLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高亮度",
+    "tag_name": "高亮度",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "信芯",
+    "tag_name": "信芯",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高分区",
+    "tag_name": "高分区",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "xr芯片",
+    "tag_name": "XR芯片",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "画质调校",
+    "tag_name": "画质调校",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "鸿鹄",
+    "tag_name": "鸿鹄",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "灵犀遥控",
+    "tag_name": "灵犀遥控",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "智慧屏",
+    "tag_name": "智慧屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "uled",
+    "tag_name": "ULED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "画质",
+    "tag_name": "画质",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "分区背光",
+    "tag_name": "分区背光",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "画质旗舰",
+    "tag_name": "画质旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "索尼画质",
+    "tag_name": "索尼画质",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "互联",
+    "tag_name": "互联",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "大屏低价",
+    "tag_name": "大屏低价",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "neoqled",
+    "tag_name": "NeoQLED",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "苹果",
+    "tag_name": "苹果",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "ecg",
+    "tag_name": "ECG",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "wearos",
+    "tag_name": "WearOS",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "轻商务",
+    "tag_name": "轻商务",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "户外",
+    "tag_name": "户外",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "心电",
+    "tag_name": "心电",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "健康",
+    "tag_name": "健康",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "esim",
+    "tag_name": "eSIM",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "健康旗舰",
+    "tag_name": "健康旗舰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "百元档",
+    "tag_name": "百元档",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "潜水",
+    "tag_name": "潜水",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高端",
+    "tag_name": "高端",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "安卓生态",
+    "tag_name": "安卓生态",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旋转表圈",
+    "tag_name": "旋转表圈",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小尺寸",
+    "tag_name": "小尺寸",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "军规户外",
+    "tag_name": "军规户外",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "越野",
+    "tag_name": "越野",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "体成分",
+    "tag_name": "体成分",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "睡眠",
+    "tag_name": "睡眠",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "专业运动",
+    "tag_name": "专业运动",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "铁三",
+    "tag_name": "铁三",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "multi_device",
+    "tag_name": "multi_device",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "机械",
+    "tag_name": "机械",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "做工",
+    "tag_name": "做工",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "三模",
+    "tag_name": "三模",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "热插拔",
+    "tag_name": "热插拔",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "超薄",
+    "tag_name": "超薄",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "无线",
+    "tag_name": "无线",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "有线",
+    "tag_name": "有线",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "高颜值",
+    "tag_name": "高颜值",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "静电容手感",
+    "tag_name": "静电容手感",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "pbt",
+    "tag_name": "PBT",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "客制化",
+    "tag_name": "客制化",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "tft屏",
+    "tag_name": "TFT屏",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "gasket",
+    "tag_name": "Gasket",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "小配列",
+    "tag_name": "小配列",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "原厂轴",
+    "tag_name": "原厂轴",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "信仰",
+    "tag_name": "信仰",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "mac兼容",
+    "tag_name": "Mac兼容",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "qmk改键",
+    "tag_name": "QMK改键",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "铝坨坨",
+    "tag_name": "铝坨坨",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "多配色",
+    "tag_name": "多配色",
+    "tag_aliases": []
+  },
+  {
+    "tag_id": "旋钮",
+    "tag_name": "旋钮",
+    "tag_aliases": []
+  }
+]

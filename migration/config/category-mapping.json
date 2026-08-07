@@ -1,0 +1,16 @@
+{
+  "_comment": "旧13分类 → 新 category_id 映射。集中维护，迁移脚本读取此表，不在代码中散写 if。",
+  "phone":   { "target": "smartphone",        "primary_only": true },
+  "laptop":  { "target": "laptop",            "primary_only": true },
+  "cpu":     { "target": "cpu",               "primary_only": true },
+  "gpu":     { "target": "gpu",               "primary_only": true },
+  "tablet":  { "target": "tablet",            "primary_only": true },
+  "monitor": { "target": "monitor",           "primary_only": true },
+  "keyboard":{ "target": "keyboard",          "primary_only": true },
+  "earphone":{ "target": "earphone",          "primary_only": true },
+  "tv":      { "target": "tv",                "primary_only": true },
+  "watch":   { "target": "smartwatch",        "primary_only": true },
+  "camera":  { "target": "camera",            "primary_only": true },
+  "robot":   { "target": "cleaning_robot",    "primary_only": true, "priority": "secondary" },
+  "ac":      { "target": "smart_appliance",   "primary_only": true, "priority": "secondary" }
+}

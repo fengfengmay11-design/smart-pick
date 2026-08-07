@@ -1,0 +1,55 @@
+{
+  "_comment": "按品类定义核心参数 Schema，用于计算 data_completeness。key 使用迁移后的 snake_case 规范名。required 缺失会降低完整度；optional 仅参与展示不参与完整度。",
+  "smartphone": {
+    "required": ["screen_size", "ram", "body_weight"],
+    "recommended": ["screen_resolution", "screen_refresh_rate", "features_waterproof", "features_nfc"]
+  },
+  "laptop": {
+    "required": ["cpu", "ram", "storage", "screen"],
+    "recommended": ["weight", "battery", "gpu"]
+  },
+  "cpu": {
+    "required": ["cores", "base_clock", "boost_clock", "tdp"],
+    "recommended": ["process_size", "socket"]
+  },
+  "gpu": {
+    "required": ["vram", "vram_type", "memory_bus", "boost_clock", "tdp"],
+    "recommended": ["shaders", "memory_bandwidth"]
+  },
+  "tablet": {
+    "required": ["size", "chip", "ram", "storage"],
+    "recommended": ["battery", "weight", "refresh_rate"]
+  },
+  "monitor": {
+    "required": ["size", "resolution", "refresh_rate", "panel"],
+    "recommended": ["brightness", "hdr", "color_gamut"]
+  },
+  "keyboard": {
+    "required": ["layout", "switch", "connection"],
+    "recommended": ["weight", "battery"]
+  },
+  "earphone": {
+    "required": ["type", "noise", "codec", "battery"],
+    "recommended": ["bluetooth", "weight", "connection"]
+  },
+  "tv": {
+    "required": ["size", "resolution", "panel", "refresh_rate"],
+    "recommended": ["hdr", "brightness", "ports"]
+  },
+  "smartwatch": {
+    "required": ["size", "screen", "battery", "gps"],
+    "recommended": ["weight", "health", "os"]
+  },
+  "camera": {
+    "required": ["sensor", "resolution", "mount"],
+    "recommended": ["video", "weight", "ibis"]
+  },
+  "cleaning_robot": {
+    "required": ["suction", "battery"],
+    "recommended": ["base_station", "water_tank", "lidar"]
+  },
+  "smart_appliance": {
+    "required": ["type", "horsepower", "energy_rating"],
+    "recommended": ["cooling_capacity", "heating_capacity", "area"]
+  }
+}

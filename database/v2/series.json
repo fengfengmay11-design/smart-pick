@@ -1,0 +1,112 @@
+[
+  {
+    "series_id": "apple_iphone",
+    "brand_id": "apple",
+    "series_name": "iPhone"
+  },
+  {
+    "series_id": "huawei_mate",
+    "brand_id": "huawei",
+    "series_name": "Mate"
+  },
+  {
+    "series_id": "huawei_pura",
+    "brand_id": "huawei",
+    "series_name": "Pura"
+  },
+  {
+    "series_id": "huawei_nova",
+    "brand_id": "huawei",
+    "series_name": "nova"
+  },
+  {
+    "series_id": "huawei_畅享",
+    "brand_id": "huawei",
+    "series_name": "畅享"
+  },
+  {
+    "series_id": "xiaomi_xiaomi",
+    "brand_id": "xiaomi",
+    "series_name": "Xiaomi"
+  },
+  {
+    "series_id": "xiaomi_redmi",
+    "brand_id": "xiaomi",
+    "series_name": "Redmi"
+  },
+  {
+    "series_id": "vivo_x",
+    "brand_id": "vivo",
+    "series_name": "X"
+  },
+  {
+    "series_id": "vivo_s",
+    "brand_id": "vivo",
+    "series_name": "S"
+  },
+  {
+    "series_id": "vivo_iqoo",
+    "brand_id": "vivo",
+    "series_name": "iQOO"
+  },
+  {
+    "series_id": "oppo_find",
+    "brand_id": "oppo",
+    "series_name": "Find"
+  },
+  {
+    "series_id": "oppo_reno",
+    "brand_id": "oppo",
+    "series_name": "Reno"
+  },
+  {
+    "series_id": "honor_magic",
+    "brand_id": "honor",
+    "series_name": "Magic"
+  },
+  {
+    "series_id": "samsung_galaxy",
+    "brand_id": "samsung",
+    "series_name": "Galaxy"
+  },
+  {
+    "series_id": "oneplus_oneplus",
+    "brand_id": "oneplus",
+    "series_name": "OnePlus"
+  },
+  {
+    "series_id": "realme_realme",
+    "brand_id": "realme",
+    "series_name": "realme"
+  },
+  {
+    "series_id": "oppo_oppo",
+    "brand_id": "oppo",
+    "series_name": "OPPO"
+  },
+  {
+    "series_id": "vivo_vivo",
+    "brand_id": "vivo",
+    "series_name": "vivo"
+  },
+  {
+    "series_id": "honor_荣耀",
+    "brand_id": "honor",
+    "series_name": "荣耀"
+  },
+  {
+    "series_id": "xiaomi_红米",
+    "brand_id": "xiaomi",
+    "series_name": "红米"
+  },
+  {
+    "series_id": "xiaomi_小米",
+    "brand_id": "xiaomi",
+    "series_name": "小米"
+  },
+  {
+    "series_id": "samsung_samsung",
+    "brand_id": "samsung",
+    "series_name": "Samsung"
+  }
+]

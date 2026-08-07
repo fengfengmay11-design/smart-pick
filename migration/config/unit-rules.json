@@ -1,0 +1,42 @@
+{
+  "_comment": "单位规范化集中配置。unit_aliases: 各写法→标准单位。key_hints: 已知数值参数键的默认单位（纯数字无单位时套用）。display_unit: 展示用可读单位。",
+  "unit_aliases": {
+    "英寸": "inch", "寸": "inch", "in": "inch", "inch": "inch",
+    "cm": "cm", "厘米": "cm", "毫米": "mm", "mm": "mm", "米": "m", "m": "m",
+    "g": "g", "克": "g", "kg": "kg", "千克": "kg",
+    "mAh": "mAh", "mah": "mAh", "Ah": "Ah",
+    "W": "W", "瓦": "W", "kW": "kW", "千瓦": "kW",
+    "V": "V", "A": "A",
+    "Hz": "Hz", "hz": "Hz", "MHz": "MHz", "GHz": "GHz",
+    "GB": "GB", "TB": "TB", "MB": "MB",
+    "nit": "nit", "nits": "nit", "cd/m²": "nit",
+    "Pa": "Pa", "rpm": "rpm",
+    "ml": "ml", "L": "L", "升": "L",
+    "℃": "C", "°C": "C", "℃": "C",
+    "h": "hour", "小时": "hour",
+    "bit": "bit", "bits": "bit",
+    "GB/s": "GB/s", "TFLOPS": "TFLOPS", "dB": "dB", "nm": "nm",
+    "匹": "匹", "级": "级"
+  },
+  "key_hints": {
+    "screen_size": "inch", "screen_refresh_rate": "Hz", "size": "inch",
+    "body_height": "mm", "body_width": "mm", "body_thickness": "mm",
+    "body_weight": "g", "weight": "g",
+    "ram": "GB", "storage": "GB",
+    "refresh_rate": "Hz", "boost_clock": "MHz", "base_clock": "MHz",
+    "tdp": "W",
+    "vram": "GB", "memory_bus": "bit", "memory_bandwidth": "GB/s", "fp32": "TFLOPS",
+    "process_size": "nm",
+    "brightness": "nit",
+    "capacity": "mAh", "suction": "Pa", "noise": "dB",
+    "horsepower": "匹"
+  },
+  "display_unit": {
+    "inch": "英寸", "mm": "mm", "cm": "cm", "g": "g", "kg": "kg",
+    "mAh": "mAh", "Ah": "Ah", "W": "W", "kW": "kW", "V": "V", "A": "A",
+    "Hz": "Hz", "MHz": "MHz", "GHz": "GHz", "GB": "GB", "TB": "TB", "MB": "MB",
+    "nit": "nit", "Pa": "Pa", "rpm": "rpm", "ml": "ml", "L": "L", "C": "℃",
+    "hour": "h", "bit": "bit", "GB/s": "GB/s", "TFLOPS": "TFLOPS", "dB": "dB",
+    "nm": "nm", "匹": "匹", "级": "级"
+  }
+}
