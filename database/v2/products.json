@@ -20186,5 +20186,227 @@
     "created_at": "2026-08-05",
     "updated_at": "2026-08-05",
     "data_source": "migration_legacy"
+  },
+  {
+    "product_id": "google-pixel-9",
+    "legacy_id": "google-pixel-9",
+    "brand_id": "google",
+    "primary_category_id": "smartphone",
+    "series_id": "pixel",
+    "generation": "9",
+    "model": "Pixel 9",
+    "full_name": "Google Pixel 9",
+    "aliases": [
+      "Pixel9",
+      "Pixel 9",
+      "谷歌9"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "ai",
+      "photography",
+      "clean_android"
+    ],
+    "release_date": "2024-08-13",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://phoneverdict.com/google-pixel-9-full-specs-and-features/",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "google-pixel-9-pro-xl",
+    "legacy_id": "google-pixel-9-pro-xl",
+    "brand_id": "google",
+    "primary_category_id": "smartphone",
+    "series_id": "pixel",
+    "generation": "9 Pro",
+    "model": "Pixel 9 Pro XL",
+    "full_name": "Google Pixel 9 Pro XL",
+    "aliases": [
+      "Pixel9ProXL",
+      "Pixel 9 Pro XL",
+      "谷歌9ProXL"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "ai",
+      "photography",
+      "clean_android"
+    ],
+    "release_date": "2024-08-13",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://phoneaqua.com/google-pixel-9-pro-xl-price-in-china",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "motorola-edge-50-ultra",
+    "legacy_id": "motorola-edge-50-ultra",
+    "brand_id": "motorola",
+    "primary_category_id": "smartphone",
+    "series_id": "edge",
+    "generation": "50",
+    "model": "Edge 50 Ultra",
+    "full_name": "Motorola Edge 50 Ultra",
+    "aliases": [
+      "Edge50Ultra",
+      "Edge 50 Ultra",
+      "摩托罗拉50Ultra"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "fast_charging",
+      "clean_android"
+    ],
+    "release_date": "2024-04-01",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://www.motorola.com/be/nl/p/phones/motorola-edge/50-ultra/pmipmgn36m2",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "redmi-redmi-k80",
+    "legacy_id": "redmi-redmi-k80",
+    "brand_id": "redmi",
+    "primary_category_id": "smartphone",
+    "series_id": "k",
+    "generation": "K80",
+    "model": "Redmi K80",
+    "full_name": "Redmi K80",
+    "aliases": [
+      "RedmiK80",
+      "红米K80",
+      "K80"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship_killer",
+      "value",
+      "gaming",
+      "high_refresh_rate"
+    ],
+    "release_date": "2024-11-27",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://wap.zol.com.cn/2103/2102664/index.html",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "iqoo-iqoo-13",
+    "legacy_id": "iqoo-iqoo-13",
+    "brand_id": "iqoo",
+    "primary_category_id": "smartphone",
+    "series_id": "iqoo_number",
+    "generation": "13",
+    "model": "iQOO 13",
+    "full_name": "iQOO 13",
+    "aliases": [
+      "iQOO13",
+      "IQOO 13",
+      "iQOO13"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "gaming",
+      "fast_charging",
+      "high_refresh_rate"
+    ],
+    "release_date": "2024-10-30",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://www.vivo.com.cn/vivo/param/iqoo13",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "meizu-meizu-21",
+    "legacy_id": "meizu-meizu-21",
+    "brand_id": "meizu",
+    "primary_category_id": "smartphone",
+    "series_id": "meizu_number",
+    "generation": "21",
+    "model": "Meizu 21",
+    "full_name": "Meizu 21",
+    "aliases": [
+      "魅族21",
+      "Meizu21",
+      "魅族 21"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "photography",
+      "narrow_bezel"
+    ],
+    "release_date": "2023-11-30",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://wap.zol.com.cn/1785/1784391/index.html",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "nubia-z70-ultra",
+    "legacy_id": "nubia-z70-ultra",
+    "brand_id": "nubia",
+    "primary_category_id": "smartphone",
+    "series_id": "z_ultra",
+    "generation": "Z70",
+    "model": "Z70 Ultra",
+    "full_name": "Nubia Z70 Ultra",
+    "aliases": [
+      "努比亚Z70Ultra",
+      "NubiaZ70Ultra",
+      "Z70 Ultra"
+    ],
+    "status": "active",
+    "tags": [
+      "flagship",
+      "photography",
+      "under_display_camera",
+      "fast_charging"
+    ],
+    "release_date": "2024-11-21",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 9,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://www.zte.com.cn/china/about/news/20241122c1",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
   }
 ]

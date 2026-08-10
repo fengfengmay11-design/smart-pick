@@ -84,6 +84,7 @@ for (const s of seed) {
     updated_at: now
   };
   newProducts.push(prod);
+  report.inserted++;
   if (s.specs) specs.push({ product_id: pid, specs: s.specs });
   (s.variants || []).forEach((v, i) => variants.push(Object.assign({ variant_id: `${pid}-v${i + 1}`, product_id: pid }, v)));
   (s.prices || []).forEach((pr, i) => prices.push(Object.assign({ price_id: `${pid}-p${i + 1}`, product_id: pid, variant_id: null, currency: 'CNY', price_type: 'current', last_updated_at: now }, pr)));
@@ -95,28 +96,29 @@ if (dryRun) {
   process.exit(0);
 }
 
-// 合并写盘
-save('products.json', products.concat(newProducts));
+// 合并（不依赖 require 缓存，直接用内存中的 merged）
+const merged = products.concat(newProducts);
+
+// 重算 data_completeness（依赖 parameter-schemas；schema 缺失/空则保留初始值）
+try {
+  const schema = load('parameter-schemas.json');
+  const spMap = {}; specs.forEach(x => { spMap[x.product_id] = x.specs || {}; });
+  merged.forEach(p => {
+    const def = schema[p.primary_category_id];
+    const fields = (def && (def.fields || def)) || [];
+    const total = Array.isArray(fields) ? fields.length : 0;
+    if (!total) return;
+    const sp_ = spMap[p.product_id] || {};
+    const filled = fields.filter(f => { const k = typeof f === 'string' ? f : f.key; return sp_[k] !== undefined && sp_[k] !== null; }).length;
+    p.data_completeness = Math.round(filled / total * 100);
+  });
+} catch (e) { console.log('⚠ 完整度重算跳过:', e.message); }
+
+// 写盘（products 最后写入，避免被缓存模块覆盖）
 save('product-specs.json', specs);
 save('product-variants.json', variants);
 save('prices.json', prices);
-
-// 重算 data_completeness（依赖 parameter-schemas，若缺失则用现有值）
-try {
-  const schema = load('parameter-schemas.json');
-  const ps = require(path.join(base, 'products.json'));
-  const sp = require(path.join(base, 'product-specs.json'));
-  const scMap = {}; ps.forEach(p => scMap[p.product_id] = p.primary_category_id);
-  ps.forEach(p => {
-    const cat = scMap[p.product_id];
-    const fields = (schema[cat] && (schema[cat].fields || schema[cat])) || [];
-    const sp_ = (sp.find(x => x.product_id === p.product_id) || {}).specs || {};
-    const total = Array.isArray(fields) ? fields.length : 0;
-    const filled = total ? fields.filter(f => { const k = typeof f === 'string' ? f : f.key; return sp_[k] !== undefined && sp_[k] !== null; }).length : 0;
-    p.data_completeness = total ? Math.round(filled / total * 100) : p.data_completeness;
-  });
-  save('products.json', ps);
-} catch (e) { console.log('⚠ 完整度重算跳过:', e.message); }
+save('products.json', merged);
 
 console.log(JSON.stringify(report, null, 2));
 console.log(`✓ 写入完成：新增 ${newProducts.length} 款。请运行 node migration/validate-db.js 最终校验。`);

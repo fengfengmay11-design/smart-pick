@@ -37778,5 +37778,376 @@
       "hotswap": "支持",
       "backlight": "RGB"
     }
+  },
+  {
+    "product_id": "google-pixel-9",
+    "specs": {
+      "chipset": "Google Tensor G4 (4nm)",
+      "display": "6.3英寸 OLED 120Hz HDR10+ 2700nits峰值",
+      "screen_size": {
+        "value": 6.3,
+        "unit": "inch",
+        "display_value": "6.3英寸",
+        "original_value": "6.3 inch"
+      },
+      "resolution": "1080x2424",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "battery": {
+        "value": 4700,
+        "unit": "mAh",
+        "display_value": "4700mAh",
+        "original_value": "4700mAh"
+      },
+      "charging": {
+        "value": 27,
+        "unit": "W",
+        "display_value": "27W",
+        "original_value": "27W wired"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "50MP 主摄 + 48MP 超广角",
+      "front_camera": "10.5MP",
+      "weight": {
+        "value": 198,
+        "unit": "g",
+        "display_value": "198g",
+        "original_value": "198g"
+      },
+      "os": "Android 14 (可升 Android 15)"
+    }
+  },
+  {
+    "product_id": "google-pixel-9-pro-xl",
+    "specs": {
+      "chipset": "Google Tensor G4 (4nm)",
+      "display": "6.8英寸 LTPO OLED 120Hz HDR10+ 3000nits峰值",
+      "screen_size": {
+        "value": 6.8,
+        "unit": "inch",
+        "display_value": "6.8英寸",
+        "original_value": "6.8 inch"
+      },
+      "resolution": "1344x2992",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "battery": {
+        "value": 5060,
+        "unit": "mAh",
+        "display_value": "5060mAh",
+        "original_value": "5060mAh"
+      },
+      "charging": {
+        "value": 37,
+        "unit": "W",
+        "display_value": "37W",
+        "original_value": "37W wired"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB",
+        "original_value": "16GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "50MP 主摄 + 48MP 超广角 + 48MP 5x长焦",
+      "front_camera": "42MP",
+      "weight": {
+        "value": 221,
+        "unit": "g",
+        "display_value": "221g",
+        "original_value": "221g"
+      },
+      "os": "Android 14 (可升 Android 15)"
+    }
+  },
+  {
+    "product_id": "motorola-edge-50-ultra",
+    "specs": {
+      "chipset": "Snapdragon 8s Gen 3",
+      "display": "6.7英寸 pOLED 144Hz HDR10+ 2800nits峰值",
+      "screen_size": {
+        "value": 6.7,
+        "unit": "inch",
+        "display_value": "6.7英寸",
+        "original_value": "6.7 inch"
+      },
+      "resolution": "2712x1220",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "battery": {
+        "value": 4500,
+        "unit": "mAh",
+        "display_value": "4500mAh",
+        "original_value": "4500mAh"
+      },
+      "charging": {
+        "value": 125,
+        "unit": "W",
+        "display_value": "125W",
+        "original_value": "125W TurboPower"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB",
+        "original_value": "512GB"
+      },
+      "rear_camera": "50MP 主摄 + 50MP 超广角 + 64MP 3x长焦",
+      "front_camera": "50MP",
+      "weight": {
+        "value": 197,
+        "unit": "g",
+        "display_value": "197g",
+        "original_value": "197g"
+      },
+      "os": "Android 14"
+    }
+  },
+  {
+    "product_id": "redmi-redmi-k80",
+    "specs": {
+      "chipset": "Snapdragon 8 Gen 3",
+      "display": "6.67英寸 OLED 2K 120Hz 3200nits峰值",
+      "screen_size": {
+        "value": 6.67,
+        "unit": "inch",
+        "display_value": "6.67英寸",
+        "original_value": "6.67 inch"
+      },
+      "resolution": "3200x1440",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "battery": {
+        "value": 6550,
+        "unit": "mAh",
+        "display_value": "6550mAh",
+        "original_value": "6550mAh"
+      },
+      "charging": {
+        "value": 90,
+        "unit": "W",
+        "display_value": "90W",
+        "original_value": "90W"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "50MP 主摄(OIS) + 8MP 超广角",
+      "front_camera": "20MP",
+      "weight": {
+        "value": 206,
+        "unit": "g",
+        "display_value": "206g",
+        "original_value": "206g"
+      },
+      "os": "HyperOS 2 (Android 15)"
+    }
+  },
+  {
+    "product_id": "iqoo-iqoo-13",
+    "specs": {
+      "chipset": "Snapdragon 8 Elite (3nm)",
+      "display": "6.82英寸 AMOLED 8T LTPO 144Hz 4500nits峰值",
+      "screen_size": {
+        "value": 6.82,
+        "unit": "inch",
+        "display_value": "6.82英寸",
+        "original_value": "6.82 inch"
+      },
+      "resolution": "3168x1440",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "battery": {
+        "value": 6150,
+        "unit": "mAh",
+        "display_value": "6150mAh",
+        "original_value": "6150mAh"
+      },
+      "charging": {
+        "value": 120,
+        "unit": "W",
+        "display_value": "120W",
+        "original_value": "120W"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "50MP 主摄(OIS) + 50MP 长焦 + 50MP 超广角",
+      "front_camera": "32MP",
+      "weight": {
+        "value": 213,
+        "unit": "g",
+        "display_value": "213g",
+        "original_value": "213g"
+      },
+      "os": "OriginOS 5 (Android 15)"
+    }
+  },
+  {
+    "product_id": "meizu-meizu-21",
+    "specs": {
+      "chipset": "Snapdragon 8 Gen 3",
+      "display": "6.55英寸 AMOLED 120Hz 1800nits峰值",
+      "screen_size": {
+        "value": 6.55,
+        "unit": "inch",
+        "display_value": "6.55英寸",
+        "original_value": "6.55 inch"
+      },
+      "resolution": "2340x1080",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "battery": {
+        "value": 4800,
+        "unit": "mAh",
+        "display_value": "4800mAh",
+        "original_value": "4800mAh"
+      },
+      "charging": {
+        "value": 80,
+        "unit": "W",
+        "display_value": "80W",
+        "original_value": "80W"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "200MP 主摄(OIS) + 13MP 超广角 + 5MP 长焦",
+      "front_camera": "32MP",
+      "weight": {
+        "value": 198,
+        "unit": "g",
+        "display_value": "198g",
+        "original_value": "198g"
+      },
+      "os": "Flyme 10.5 (Android 13)"
+    }
+  },
+  {
+    "product_id": "nubia-z70-ultra",
+    "specs": {
+      "chipset": "Snapdragon 8 Elite (3nm)",
+      "display": "6.85英寸 AMOLED 真全面屏 144Hz 2000nits峰值",
+      "screen_size": {
+        "value": 6.85,
+        "unit": "inch",
+        "display_value": "6.85英寸",
+        "original_value": "6.85 inch"
+      },
+      "resolution": "2688x1216",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "battery": {
+        "value": 6150,
+        "unit": "mAh",
+        "display_value": "6150mAh",
+        "original_value": "6150mAh"
+      },
+      "charging": {
+        "value": 80,
+        "unit": "W",
+        "display_value": "80W",
+        "original_value": "80W"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB",
+        "original_value": "12GB"
+      },
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB",
+        "original_value": "256GB"
+      },
+      "rear_camera": "50MP 35mm主摄(OIS可变光圈) + 64MP潜望长焦 + 50MP超广角",
+      "front_camera": "16MP 屏下",
+      "weight": {
+        "value": 228,
+        "unit": "g",
+        "display_value": "228g",
+        "original_value": "228g"
+      },
+      "os": "Nebula AIOS (Android 15)"
+    }
   }
 ]

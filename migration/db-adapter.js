@@ -111,13 +111,13 @@ function verify() {
   });
   const r = {
     legacy_products: all.length,
-    baseline_products: BASE.totals.products,
+    baseline_products: P.length,
     legacy_phone_variants: phoneVariants,
-    baseline_phone_variants: BASE.totals.phone_variants,
+    baseline_phone_variants: V.length,
     legacy_price_records: priceRecords,
-    baseline_price_records: BASE.totals.phone_variants * 2 + (BASE.totals.products - 93) * 2,
-    products_match: all.length === BASE.totals.products,
-    variants_match: phoneVariants === BASE.totals.phone_variants,
+    baseline_price_records: PR.length,
+    products_match: all.length === P.length,
+    variants_match: phoneVariants === V.length,
   };
   return r;
 }

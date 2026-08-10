@@ -27,7 +27,8 @@ P.forEach(p => {
   if (!C.find(c => c.category_id === p.primary_category_id)) crit.push(`无效 category_id: ${p.product_id} -> ${p.primary_category_id}`);
 });
 if (dupPid.length) crit.push(`重复 product_id: ${dupPid.length} -> ${dupPid.slice(0,5).join(',')}`);
-if (P.length !== BASE.totals.products) crit.push(`产品数 ${P.length} ≠ 基线 ${BASE.totals.products}`);
+// Step 6 起允许扩库：基线作为「下限」而非精确值。低于基线=数据丢失（致命）；高于基线=正常扩库。
+if (P.length < BASE.totals.products) crit.push(`产品数 ${P.length} < 基线 ${BASE.totals.products}（疑似数据丢失）`);
 
 // legacy_id 重复检查
 const lid = {};
@@ -79,7 +80,7 @@ V.forEach(v => {
   if (!pidSet.has(v.product_id)) crit.push(`variant 指向不存在 product: ${v.variant_id}`);
 });
 if (dupVid.length) crit.push(`重复 variant_id: ${dupVid.length}`);
-if (V.length !== BASE.totals.phone_variants) crit.push(`手机 variant ${V.length} ≠ 基线 ${BASE.totals.phone_variants}`);
+if (V.length < BASE.totals.phone_variants) crit.push(`手机 variant ${V.length} < 基线 ${BASE.totals.phone_variants}（疑似数据丢失）`);
 
 // ---- Prices ----
 let badPrice = 0, missingCur = 0, orphanPrice = 0;
@@ -121,10 +122,12 @@ const result = {
 fs.writeFileSync(path.join(ROOT, 'validation-result.json'), JSON.stringify(result, null, 2));
 
 console.log('===== VALIDATE-DB 结果 =====');
-console.log('products        :', P.length, P.length===BASE.totals.products ? 'OK' : 'MISMATCH');
+const prodTag = P.length<BASE.totals.products ? 'BELOW BASELINE!' : (P.length===BASE.totals.products?'OK':`OK (扩库 +${P.length-BASE.totals.products})`);
+const varTag  = V.length<BASE.totals.phone_variants ? 'BELOW BASELINE!' : (V.length===BASE.totals.phone_variants?'OK':`OK (扩库 +${V.length-BASE.totals.phone_variants})`);
+console.log('products        :', P.length, prodTag);
 console.log('brands          :', B.length);
 console.log('categories      :', C.length);
-console.log('variants        :', V.length, V.length===BASE.totals.phone_variants ? 'OK' : 'MISMATCH');
+console.log('variants        :', V.length, varTag);
 console.log('prices          :', PR.length);
 console.log('dup product_id  :', dupPid.length);
 console.log('invalid brand   :', result.details.invalid_brand_ref);

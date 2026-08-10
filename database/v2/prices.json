@@ -16238,5 +16238,75 @@
     "currency": "CNY",
     "price_type": "retail",
     "last_updated_at": "2026-08-05"
+  },
+  {
+    "price_id": "google-pixel-9-p1",
+    "product_id": "google-pixel-9",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3650
+  },
+  {
+    "price_id": "google-pixel-9-pro-xl-p1",
+    "product_id": "google-pixel-9-pro-xl",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4878
+  },
+  {
+    "price_id": "motorola-edge-50-ultra-p1",
+    "product_id": "motorola-edge-50-ultra",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4999
+  },
+  {
+    "price_id": "redmi-redmi-k80-p1",
+    "product_id": "redmi-redmi-k80",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2499
+  },
+  {
+    "price_id": "iqoo-iqoo-13-p1",
+    "product_id": "iqoo-iqoo-13",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3999
+  },
+  {
+    "price_id": "meizu-meizu-21-p1",
+    "product_id": "meizu-meizu-21",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3699
+  },
+  {
+    "price_id": "nubia-z70-ultra-p1",
+    "product_id": "nubia-z70-ultra",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4599
   }
 ]

@@ -2458,5 +2458,131 @@
     "color": null,
     "sku": null,
     "status": "active"
+  },
+  {
+    "variant_id": "google-pixel-9-v1",
+    "product_id": "google-pixel-9",
+    "variant_name": "12GB+128GB",
+    "storage": "128GB",
+    "memory": "12GB",
+    "color": "Obsidian",
+    "status": "active"
+  },
+  {
+    "variant_id": "google-pixel-9-v2",
+    "product_id": "google-pixel-9",
+    "variant_name": "12GB+256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Porcelain",
+    "status": "active"
+  },
+  {
+    "variant_id": "google-pixel-9-pro-xl-v1",
+    "product_id": "google-pixel-9-pro-xl",
+    "variant_name": "16GB+256GB",
+    "storage": "256GB",
+    "memory": "16GB",
+    "color": "Porcelain",
+    "status": "active"
+  },
+  {
+    "variant_id": "google-pixel-9-pro-xl-v2",
+    "product_id": "google-pixel-9-pro-xl",
+    "variant_name": "16GB+512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": "Hazel",
+    "status": "active"
+  },
+  {
+    "variant_id": "motorola-edge-50-ultra-v1",
+    "product_id": "motorola-edge-50-ultra",
+    "variant_name": "12GB+512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": "Peach Fuzz",
+    "status": "active"
+  },
+  {
+    "variant_id": "motorola-edge-50-ultra-v2",
+    "product_id": "motorola-edge-50-ultra",
+    "variant_name": "16GB+1TB",
+    "storage": "1TB",
+    "memory": "16GB",
+    "color": "Nordic Wood",
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi-redmi-k80-v1",
+    "product_id": "redmi-redmi-k80",
+    "variant_name": "12GB+256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "玄夜黑",
+    "status": "active"
+  },
+  {
+    "variant_id": "redmi-redmi-k80-v2",
+    "product_id": "redmi-redmi-k80",
+    "variant_name": "16GB+512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": "雪岩白",
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo-iqoo-13-v1",
+    "product_id": "iqoo-iqoo-13",
+    "variant_name": "12GB+256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "传奇版",
+    "status": "active"
+  },
+  {
+    "variant_id": "iqoo-iqoo-13-v2",
+    "product_id": "iqoo-iqoo-13",
+    "variant_name": "16GB+512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": "赛道版",
+    "status": "active"
+  },
+  {
+    "variant_id": "meizu-meizu-21-v1",
+    "product_id": "meizu-meizu-21",
+    "variant_name": "12GB+256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "无界黑",
+    "status": "active"
+  },
+  {
+    "variant_id": "meizu-meizu-21-v2",
+    "product_id": "meizu-meizu-21",
+    "variant_name": "12GB+512GB",
+    "storage": "512GB",
+    "memory": "12GB",
+    "color": "魅族白",
+    "status": "active"
+  },
+  {
+    "variant_id": "nubia-z70-ultra-v1",
+    "product_id": "nubia-z70-ultra",
+    "variant_name": "12GB+256GB",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "黑玺",
+    "status": "active"
+  },
+  {
+    "variant_id": "nubia-z70-ultra-v2",
+    "product_id": "nubia-z70-ultra",
+    "variant_name": "16GB+512GB",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": "香珀",
+    "status": "active"
   }
 ]
