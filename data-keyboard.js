@@ -559,8 +559,7 @@ const KEYBOARD_DATA = [
       "mechanical",
       "hotswap",
       "rgb",
-      "gasket",
-      "75%"
+      "gasket"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -653,8 +652,7 @@ const KEYBOARD_DATA = [
       "compact",
       "wireless",
       "silent",
-      "mac",
-      "60%"
+      "mac"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",

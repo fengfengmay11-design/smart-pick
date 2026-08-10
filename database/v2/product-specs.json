@@ -37829,7 +37829,20 @@
         "display_value": "198g",
         "original_value": "198g"
       },
-      "os": "Android 14 (可升 Android 15)"
+      "os": "Android 14 (可升 Android 15)",
+      "screen_resolution": "1080x2424",
+      "screen_refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "body_weight": {
+        "value": 198,
+        "unit": "g",
+        "display_value": "198g",
+        "original_value": "198g"
+      }
     }
   },
   {
@@ -37882,7 +37895,20 @@
         "display_value": "221g",
         "original_value": "221g"
       },
-      "os": "Android 14 (可升 Android 15)"
+      "os": "Android 14 (可升 Android 15)",
+      "screen_resolution": "1344x2992",
+      "screen_refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "body_weight": {
+        "value": 221,
+        "unit": "g",
+        "display_value": "221g",
+        "original_value": "221g"
+      }
     }
   },
   {
@@ -37935,7 +37961,20 @@
         "display_value": "197g",
         "original_value": "197g"
       },
-      "os": "Android 14"
+      "os": "Android 14",
+      "screen_resolution": "2712x1220",
+      "screen_refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "body_weight": {
+        "value": 197,
+        "unit": "g",
+        "display_value": "197g",
+        "original_value": "197g"
+      }
     }
   },
   {
@@ -37988,7 +38027,20 @@
         "display_value": "206g",
         "original_value": "206g"
       },
-      "os": "HyperOS 2 (Android 15)"
+      "os": "HyperOS 2 (Android 15)",
+      "screen_resolution": "3200x1440",
+      "screen_refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "body_weight": {
+        "value": 206,
+        "unit": "g",
+        "display_value": "206g",
+        "original_value": "206g"
+      }
     }
   },
   {
@@ -38041,7 +38093,20 @@
         "display_value": "213g",
         "original_value": "213g"
       },
-      "os": "OriginOS 5 (Android 15)"
+      "os": "OriginOS 5 (Android 15)",
+      "screen_resolution": "3168x1440",
+      "screen_refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "body_weight": {
+        "value": 213,
+        "unit": "g",
+        "display_value": "213g",
+        "original_value": "213g"
+      }
     }
   },
   {
@@ -38094,7 +38159,20 @@
         "display_value": "198g",
         "original_value": "198g"
       },
-      "os": "Flyme 10.5 (Android 13)"
+      "os": "Flyme 10.5 (Android 13)",
+      "screen_resolution": "2340x1080",
+      "screen_refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz",
+        "original_value": "120Hz"
+      },
+      "body_weight": {
+        "value": 198,
+        "unit": "g",
+        "display_value": "198g",
+        "original_value": "198g"
+      }
     }
   },
   {
@@ -38147,7 +38225,20 @@
         "display_value": "228g",
         "original_value": "228g"
       },
-      "os": "Nebula AIOS (Android 15)"
+      "os": "Nebula AIOS (Android 15)",
+      "screen_resolution": "2688x1216",
+      "screen_refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz",
+        "original_value": "144Hz"
+      },
+      "body_weight": {
+        "value": 228,
+        "unit": "g",
+        "display_value": "228g",
+        "original_value": "228g"
+      }
     }
   },
   {

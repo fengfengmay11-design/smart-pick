@@ -62,7 +62,6 @@ const DOCK_DATA = [
     "tags": [
       "雷电5",
       "办公",
-      "8K",
       "多接口"
     ],
     "officialUrl": null,

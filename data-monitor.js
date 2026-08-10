@@ -7,7 +7,6 @@ const MONITOR_DATA = [
     "image": "",
     "launchDate": "2024-01",
     "tags": [
-      "2k",
       "ips_black",
       "type_c"
     ],
@@ -347,7 +346,6 @@ const MONITOR_DATA = [
     "image": "",
     "launchDate": "2024-01",
     "tags": [
-      "4k",
       "设计"
     ],
     "officialUrl": "",
@@ -377,7 +375,6 @@ const MONITOR_DATA = [
     "launchDate": "2024-04",
     "tags": [
       "智能显示器",
-      "4k",
       "tizen_os"
     ],
     "officialUrl": "",
@@ -579,7 +576,6 @@ const MONITOR_DATA = [
     "image": "",
     "launchDate": "2025-01",
     "tags": [
-      "4k",
       "thunderbolt_4",
       "ips_black"
     ],
@@ -982,7 +978,6 @@ const MONITOR_DATA = [
     "image": "",
     "launchDate": "2024-02",
     "tags": [
-      "2k",
       "business",
       "高性价比"
     ],
@@ -1127,7 +1122,6 @@ const MONITOR_DATA = [
     "image": "",
     "launchDate": "2023-06",
     "tags": [
-      "4k",
       "人体工学支架",
       "usb_c"
     ],

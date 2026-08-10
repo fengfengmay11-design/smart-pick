@@ -46,6 +46,15 @@ function reconstructPhone(p) {
   const sp = specOf(p.product_id);
   const vats = variantsOf(p.product_id);
   const pris = pricesOf(p.product_id);
+  // 别名兼容读取：某些补录来源用了 resolution/refresh_rate/weight 等短键，
+  // 统一按「标准键 -> 别名列表」兜底，避免重建时 body 空掉。
+  const fv = (...ks) => {
+    for (const k of ks) {
+      const v = flatValue(sp[k]);
+      if (v !== null && v !== undefined && v !== '') return v;
+    }
+    return null;
+  };
   const storageOptions = vats.map(v => {
     const jd = pris.find(x => x.variant_id === v.variant_id && x.source === 'jd');
     const pdd = pris.find(x => x.variant_id === v.variant_id && x.source === 'pdd');
@@ -62,14 +71,14 @@ function reconstructPhone(p) {
     tags: p.tags, officialUrl: p.official_url, lastVerified: p.updated_at,
     storageOptions, defaultStorage: storageOptions[0] ? storageOptions[0].storage : null,
     screen: {
-      size: flatValue(sp.screen_size), resolution: flatValue(sp.screen_resolution),
-      refreshRate: flatValue(sp.screen_refresh_rate), material: flatValue(sp.screen_material), type: flatValue(sp.screen_type),
+      size: fv('screen_size', 'display'), resolution: fv('screen_resolution', 'resolution'),
+      refreshRate: fv('screen_refresh_rate', 'refresh_rate'), material: fv('screen_material'), type: fv('screen_type'),
     },
     body: {
-      height: flatValue(sp.body_height), width: flatValue(sp.body_width), thickness: flatValue(sp.body_thickness),
-      weight: flatValue(sp.body_weight), material: flatValue(sp.body_material),
+      height: fv('body_height'), width: fv('body_width'), thickness: fv('body_thickness'),
+      weight: fv('body_weight', 'weight'), material: fv('body_material'),
     },
-    ram: flatValue(sp.ram),
+    ram: fv('ram'),
     features: Object.fromEntries(Object.entries(sp).filter(([k]) => k.startsWith('features_')).map(([k, v]) => [k.replace('features_', ''), flatValue(v)])),
   };
 }

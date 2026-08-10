@@ -911,8 +911,8 @@ const CATEGORIES = {
       { label: "7000元以上", min: 7000, max: Infinity }
     ],
     getPrice: (item) => soMinAll(item),
-    getListLine1: (item) => (item.ram||'')+'+'+item.defaultStorage+' · 默认版本',
-    getListLine2: (item) => item.screen.size+'英寸 · '+item.body.weight+'g · '+item.screen.type,
+    getListLine1: (item) => j(item.ram, item.defaultStorage) + ' · 默认版本',
+    getListLine2: (item) => j(item.screen?.size, item.body?.weight, item.screen?.type),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: (item,storage) => { const o=(item.storageOptions||[]).find(x=>x.storage===storage); return o ? soPrice(o) : soMinAll(item); },
     getPriceSource: (item,storage) => soSource(item, storage),
@@ -933,8 +933,8 @@ const CATEGORIES = {
       { label: "15000元以上", min: 15000, max: Infinity }
     ],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.vram||0)+'GB '+ (item.specs?.vramType||'') +' · '+ (item.specs?.busInterface||''),
-    getListLine2: (item) => 'CUDA:'+(item.specs?.shaders||0)+' · Boost:'+(item.specs?.boostClock||0)+'MHz · TDP:'+(item.specs?.tdp||0)+'W',
+    getListLine1: (item) => j(item.specs?.vram, item.specs?.vram_type, item.specs?.bus_interface),
+    getListLine2: (item) => j('CUDA:' + item.specs?.shaders, 'Boost:' + item.specs?.boost_clock, 'TDP:' + item.specs?.tdp),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: (item) => 0,
     getPriceSource: pickSource,
@@ -948,8 +948,8 @@ const CATEGORIES = {
     brands: ["格力","美的","海尔","小米","TCL","奥克斯"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～5000元",min:3000,max:5000},{label:"5000～7000元",min:5000,max:7000},{label:"7000元以上",min:7000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.type||'')+' · '+(item.specs?.horsepower||'')+' · '+(item.specs?.energyRating||''),
-    getListLine2: (item) => '制冷'+(item.specs?.coolingCapacity||0)+'W · 噪音'+(item.specs?.noise||0)+'dB · '+(item.specs?.area||''),
+    getListLine1: (item) => j(item.specs?.type, item.specs?.horsepower, item.specs?.energy_rating),
+    getListLine2: (item) => j('制冷' + item.specs?.cooling_capacity, '噪音' + item.specs?.noise, item.specs?.area),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -963,8 +963,8 @@ const CATEGORIES = {
     brands: ["石头","追觅","科沃斯","云鲸","小米","360"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～4000元",min:3000,max:4000},{label:"4000～5000元",min:4000,max:5000},{label:"5000元以上",min:5000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.suction||'')+' · 电池'+(item.specs?.battery||'')+' · '+(item.specs?.baseStation?'全能基站':''),
-    getListLine2: (item) => '高度'+(item.specs?.height||'')+' · '+(item.specs?.lidar?'LDS激光导航':'')+' · '+(item.specs?.obstacleAvoidance||''),
+    getListLine1: (item) => j(item.specs?.suction, '电池' + item.specs?.battery, item.specs?.base_station ? '全能基站' : ''),
+    getListLine2: (item) => j('高度' + item.specs?.height, item.specs?.lidar ? 'LDS激光导航' : '', item.specs?.obstacle_avoidance),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -978,8 +978,8 @@ const CATEGORIES = {
     brands: ["苹果","华为","联想","小米","华硕","戴尔","荣耀","惠普","宏碁","微软"],
     priceRanges: [{label:"5000元以下",min:0,max:5000},{label:"5000～7000元",min:5000,max:7000},{label:"7000～10000元",min:7000,max:10000},{label:"10000元以上",min:10000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.cpu||'')+' · '+(item.specs?.ram||'')+' · '+(item.specs?.storage||''),
-    getListLine2: (item) => (item.specs?.screen||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.weight||''),
+    getListLine1: (item) => j(item.specs?.cpu, item.specs?.ram, item.specs?.storage),
+    getListLine2: (item) => j(item.specs?.screen, item.specs?.resolution, item.specs?.weight),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -993,8 +993,8 @@ const CATEGORIES = {
     brands: ["AMD","Intel"],
     priceRanges: [{label:"1500元以下",min:0,max:1500},{label:"1500～2500元",min:1500,max:2500},{label:"2500～4000元",min:2500,max:4000},{label:"4000元以上",min:4000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.cores||'')+' · Base '+(item.specs?.baseClock||'')+' · Boost '+(item.specs?.boostClock||''),
-    getListLine2: (item) => 'TDP '+(item.specs?.tdp||'')+' · '+(item.specs?.cache||'')+' · '+(item.specs?.socket||''),
+    getListLine1: (item) => j(item.specs?.cores, 'Base ' + item.specs?.base_clock, 'Boost ' + item.specs?.boost_clock),
+    getListLine2: (item) => j('TDP ' + item.specs?.tdp, item.specs?.cache, item.specs?.socket),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1008,8 +1008,8 @@ const CATEGORIES = {
     brands: ["苹果","索尼","Bose","华为","小米","三星","OPPO","vivo","一加","森海塞尔","Beats","JBL","Anker","漫步者"],
     priceRanges: [{label:"1000元以下",min:0,max:1000},{label:"1000～2000元",min:1000,max:2000},{label:"2000～3000元",min:2000,max:3000},{label:"3000元以上",min:3000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.type||'')+' · '+(item.specs?.noise||'')+' · '+(item.specs?.driver||''),
-    getListLine2: (item) => '续航 '+(item.specs?.battery||'')+' · '+ (item.specs?.codec||'')+' · '+(item.specs?.weight||''),
+    getListLine1: (item) => j(item.specs?.type, item.specs?.noise, item.specs?.driver),
+    getListLine2: (item) => j('续航 ' + item.specs?.battery, item.specs?.codec, item.specs?.weight),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1023,8 +1023,8 @@ const CATEGORIES = {
     brands: ["戴尔","三星","LG","华硕","AOC","小米","惠普","明基","HKC","科睿"],
     priceRanges: [{label:"2000元以下",min:0,max:2000},{label:"2000～4000元",min:2000,max:4000},{label:"4000～6000元",min:4000,max:6000},{label:"6000元以上",min:6000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.refreshRate||''),
-    getListLine2: (item) => (item.specs?.panel||'')+' · '+(item.specs?.hdr||'')+' · '+(item.specs?.ports||'').substring(0,40),
+    getListLine1: (item) => j(item.specs?.size, item.specs?.resolution, item.specs?.refresh_rate),
+    getListLine2: (item) => j(item.specs?.panel, item.specs?.hdr, item.specs?.ports),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1038,8 +1038,8 @@ const CATEGORIES = {
     brands: ["苹果","华为","小米","三星","荣耀","联想","OPPO","vivo"],
     priceRanges: [{label:"2000元以下",min:0,max:2000},{label:"2000～4000元",min:2000,max:4000},{label:"4000～6000元",min:4000,max:6000},{label:"6000元以上",min:6000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.chip||'')+' · '+(item.specs?.ram||'')+' · '+(item.specs?.storage||''),
-    getListLine2: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.refreshRate||''),
+    getListLine1: (item) => j(item.specs?.chip, item.specs?.ram, item.specs?.storage),
+    getListLine2: (item) => j(item.specs?.size, item.specs?.resolution, item.specs?.refresh_rate),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1053,8 +1053,8 @@ const CATEGORIES = {
     brands: ["索尼","佳能","尼康","富士","松下"],
     priceRanges: [{label:"5000元以下",min:0,max:5000},{label:"5000～10000元",min:5000,max:10000},{label:"10000～15000元",min:10000,max:15000},{label:"15000元以上",min:15000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.sensor||'')+' · '+(item.specs?.resolution||''),
-    getListLine2: (item) => '视频'+(item.specs?.video||'')+' · '+(item.specs?.mount||'')+' · 防抖'+(item.specs?.ibis||''),
+    getListLine1: (item) => j(item.specs?.sensor, item.specs?.resolution),
+    getListLine2: (item) => j('视频' + item.specs?.video, item.specs?.mount, '防抖' + item.specs?.ibis),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1068,8 +1068,8 @@ const CATEGORIES = {
     brands: ["小米","海信","TCL","索尼","雷鸟","华为","创维","长虹","三星","LG"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～5000元",min:3000,max:5000},{label:"5000～8000元",min:5000,max:8000},{label:"8000元以上",min:8000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.panel||''),
-    getListLine2: (item) => '刷新'+(item.specs?.refreshRate||'')+' · '+(item.specs?.hdr||'')+' · '+(item.specs?.brightness||''),
+    getListLine1: (item) => j(item.specs?.size, item.specs?.resolution, item.specs?.panel),
+    getListLine2: (item) => j('刷新' + item.specs?.refresh_rate, item.specs?.hdr, item.specs?.brightness),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1083,8 +1083,8 @@ const CATEGORIES = {
     brands: ["苹果","华为","三星","小米","荣耀","华米","佳明"],
     priceRanges: [{label:"1000元以下",min:0,max:1000},{label:"1000～2000元",min:1000,max:2000},{label:"2000～3000元",min:2000,max:3000},{label:"3000元以上",min:3000,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.screen||''),
-    getListLine2: (item) => '续航'+(item.specs?.battery||'')+' · '+(item.specs?.gps||'')+' · '+(item.specs?.health||''),
+    getListLine1: (item) => j(item.specs?.size, item.specs?.screen),
+    getListLine2: (item) => j('续航' + item.specs?.battery, item.specs?.gps, item.specs?.health),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -1098,8 +1098,8 @@ const CATEGORIES = {
     brands: ["罗技","阿米洛","黑爵","腹灵","杜伽","Keychron","Akko","RK"],
     priceRanges: [{label:"300元以下",min:0,max:300},{label:"300～600元",min:300,max:600},{label:"600元以上",min:600,max:Infinity}],
     getPrice: pickPrice,
-    getListLine1: (item) => (item.specs?.layout||'')+' · '+(item.specs?.switch||''),
-    getListLine2: (item) => '连接'+(item.specs?.connection||'')+' · '+(item.specs?.battery||''),
+    getListLine1: (item) => j(item.specs?.layout, item.specs?.switch),
+    getListLine2: (item) => j('连接' + item.specs?.connection, item.specs?.battery),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
     getPriceSource: pickSource,
@@ -2431,35 +2431,43 @@ function dimBlock(title, rows, phones) {
   t += '</table></div></div>';
   return t;
 }
+// 值已带单位（display_value）则原样返回，纯数字才拼单位；空值显示 '-'
+function withUnit(v, u) {
+  if (v === null || v === undefined || v === '') return '-';
+  if (typeof v === 'number' || /^\d+(\.\d+)?$/.test(String(v))) return v + (u || '');
+  return v;
+}
 function fmtNum(v, all, u) {
-  if (!v&&v!==0) return '-';
-  const nums = all.filter(x=>x>0);
-  if (nums.length<2) return v+u;
-  const max=Math.max(...nums),min=Math.min(...nums);
-  if (v===max&&max>min) return '<span class="highlight">'+v+u+'</span>';
-  if (v===min&&max>min) return '<span class="highlight-low">'+v+u+'</span>';
-  return v+u;
+  if (v === null || v === undefined || v === '') return '-';
+  const num = parseFloat(v);
+  if (isNaN(num)) return v;
+  const nums = all.map(x => parseFloat(x)).filter(x => !isNaN(x));
+  if (nums.length < 2) return withUnit(v, u);
+  const max = Math.max(...nums), min = Math.min(...nums);
+  if (num === max && max > min) return '<span class="highlight">' + withUnit(v, u) + '</span>';
+  if (num === min && max > min) return '<span class="highlight-low">' + withUnit(v, u) + '</span>';
+  return withUnit(v, u);
 }
 function bIcon(v) { return v?'✅ 支持':'<span class="highlight-miss">❌ 不支持</span>'; }
 
 function phoneCompareDims(ph) {
   return [
     dimBlock('💰 价格',[['到手价',p=>'<span class="highlight">¥'+p.priceSrc.price+'</span>'],['来源',p=>p.priceSrc.platform+' '+(p.priceSrc.shopType||'')],['版本',p=>(p.phone.ram||'')+'+'+(p.storage||'')],['更新',p=>p.phone.lastVerified||'']],ph),
-    dimBlock('📱 屏幕手感',[['尺寸',p=>(p.phone.screen||{}).size+'英寸'],['分辨率',p=>(p.phone.screen||{}).resolution||'-'],['刷新率',p=>((p.phone.screen||{}).refreshRate||'')+'Hz'],['类型',p=>(p.phone.screen||{}).type||'-'],['重量',p=>fmtNum((p.phone.body||{}).weight,ph.map(x=>(x.phone.body||{}).weight||0),'g')],['厚度',p=>(p.phone.body||{}).thickness+'mm'],['材质',p=>(p.phone.body||{}).material||'-']],ph),
+    dimBlock('📱 屏幕手感',[['尺寸',p=>withUnit((p.phone.screen||{}).size)],['分辨率',p=>(p.phone.screen||{}).resolution||'-'],['刷新率',p=>withUnit((p.phone.screen||{}).refreshRate)],['类型',p=>(p.phone.screen||{}).type||'-'],['重量',p=>fmtNum((p.phone.body||{}).weight,ph.map(x=>(x.phone.body||{}).weight||0),'g')],['厚度',p=>withUnit((p.phone.body||{}).thickness)],['材质',p=>(p.phone.body||{}).material||'-']],ph),
     dimBlock('🔧 功能',[['5G',p=>bIcon((p.phone.features||{}).fiveG)],['NFC',p=>bIcon((p.phone.features||{}).nfc)],['红外',p=>bIcon((p.phone.features||{}).infrared)],['双卡',p=>bIcon((p.phone.features||{}).dualSim)],['卫星',p=>bIcon((p.phone.features||{}).satellite)],['Wi-Fi',p=>(p.phone.features||{}).wifi||'-'],['蓝牙',p=>(p.phone.features||{}).bluetooth||'-'],['防水',p=>(p.phone.features||{}).waterproof||'-']],ph)
   ];
 }
 function gpuCompareDims(ph) {
   return [
     dimBlock('💰 价格',[['到手价',p=>'<span class="highlight">¥'+p.priceSrc.price+'</span>'],['发布时间',p=>p.phone.launchDate||'-']],ph),
-    dimBlock('🎮 核心规格',[['显存',p=>(p.phone.specs||{}).vram+'GB '+(p.phone.specs||{}).vramType],['位宽',p=>(p.phone.specs||{}).memoryBus+'bit'],['带宽',p=>(p.phone.specs||{}).memoryBandwidth+'GB/s'],['Boost',p=>fmtNum((p.phone.specs||{}).boostClock,ph.map(x=>(x.phone.specs||{}).boostClock||0),'MHz')],['制程',p=>(p.phone.specs||{}).processSize+'nm'],['TDP',p=>fmtNum((p.phone.specs||{}).tdp,ph.map(x=>(x.phone.specs||{}).tdp||0),'W')]],ph),
-    dimBlock('📐 性能',[['CUDA/SP',p=>(p.phone.specs||{}).shaders||'-'],['RT Core',p=>(p.phone.specs||{}).rtCores||'-'],['FP32',p=>((p.phone.specs||{}).fp32||0).toFixed(1)+'TFLOPS'],['API',p=>'DX'+(p.phone.specs||{}).directX+' / VK'+(p.phone.specs||{}).vulkan]],ph)
+    dimBlock('🎮 核心规格',[['显存',p=>j((p.phone.specs||{}).vram,(p.phone.specs||{}).vram_type)],['位宽',p=>withUnit((p.phone.specs||{}).memory_bus)],['带宽',p=>withUnit((p.phone.specs||{}).memory_bandwidth)],['Boost',p=>fmtNum((p.phone.specs||{}).boost_clock,ph.map(x=>(x.phone.specs||{}).boost_clock||0),'MHz')],['制程',p=>withUnit((p.phone.specs||{}).process_size)],['TDP',p=>fmtNum((p.phone.specs||{}).tdp,ph.map(x=>(x.phone.specs||{}).tdp||0),'W')]],ph),
+    dimBlock('📐 性能',[['CUDA/SP',p=>(p.phone.specs||{}).shaders||'-'],['RT Core',p=>(p.phone.specs||{}).rt_cores||'-'],['FP32',p=>withUnit(parseFloat((p.phone.specs||{}).fp32),'TFLOPS')],['API',p=>'DX'+(p.phone.specs||{}).direct_x+' / VK'+(p.phone.specs||{}).vulkan]],ph)
   ];
 }
 function acCompareDims(ph) {
   return [
     dimBlock('💰 价格',[['到手价',p=>'<span class="highlight">¥'+p.priceSrc.price+'</span>'],['品牌',p=>p.phone.brand],['型号',p=>p.phone.model]],ph),
-    dimBlock('❄️ 核心参数',[['类型',p=>(p.phone.specs||{}).type||'-'],['匹数',p=>(p.phone.specs||{}).horsepower||'-'],['能效',p=>(p.phone.specs||{}).energyRating||'-'],['制冷量',p=>fmtNum((p.phone.specs||{}).coolingCapacity,ph.map(x=>(x.phone.specs||{}).coolingCapacity||0),'W')],['制热量',p=>(p.phone.specs||{}).heatingCapacity+'W'],['噪音',p=>fmtNum((p.phone.specs||{}).noise,ph.map(x=>(x.phone.specs||{}).noise||0),'dB')],['适用面积',p=>(p.phone.specs||{}).area||'-'],['冷媒',p=>(p.phone.specs||{}).refrigerant||'-'],['WiFi',p=>bIcon((p.phone.specs||{}).wifi)]],ph)
+    dimBlock('❄️ 核心参数',[['类型',p=>(p.phone.specs||{}).type||'-'],['匹数',p=>(p.phone.specs||{}).horsepower||'-'],['能效',p=>(p.phone.specs||{}).energy_rating||'-'],['制冷量',p=>fmtNum((p.phone.specs||{}).cooling_capacity,ph.map(x=>(x.phone.specs||{}).cooling_capacity||0),'W')],['制热量',p=>withUnit((p.phone.specs||{}).heating_capacity)],['噪音',p=>fmtNum((p.phone.specs||{}).noise,ph.map(x=>(x.phone.specs||{}).noise||0),'dB')],['适用面积',p=>(p.phone.specs||{}).area||'-'],['冷媒',p=>(p.phone.specs||{}).refrigerant||'-'],['WiFi',p=>bIcon((p.phone.specs||{}).wifi)]],ph)
   ];
 }
 function robotCompareDims(ph) {
@@ -2477,7 +2485,7 @@ function laptopCompareDims(ph) {
 function cpuCompareDims(ph) {
   return [
     dimBlock('💰 价格',[['到手价',p=>'<span class="highlight">¥'+p.priceSrc.price+'</span>'],['品牌',p=>p.phone.brand],['型号',p=>p.phone.model]],ph),
-    dimBlock('🔲 核心参数',[['核心/线程',p=>(p.phone.specs||{}).cores||'-'],['基础频率',p=>(p.phone.specs||{}).baseClock||'-'],['加速频率',p=>fmtNum(parseFloat((p.phone.specs||{}).boostClock||''),ph.map(x=>parseFloat((x.phone.specs||{}).boostClock||'')),'GHz')],['TDP',p=>fmtNum(parseInt((p.phone.specs||{}).tdp||'0'),ph.map(x=>parseInt((x.phone.specs||{}).tdp||'0')),'W')],['缓存',p=>(p.phone.specs||{}).cache||'-'],['接口',p=>(p.phone.specs||{}).socket||'-'],['内存支持',p=>(p.phone.specs||{}).memory||'-'],['PCIe',p=>(p.phone.specs||{}).pcie||'-'],['核显',p=>(p.phone.specs||{}).igpu||'-']],ph)
+    dimBlock('🔲 核心参数',[['核心/线程',p=>(p.phone.specs||{}).cores||'-'],['基础频率',p=>(p.phone.specs||{}).base_clock||'-'],['加速频率',p=>fmtNum(parseFloat((p.phone.specs||{}).boost_clock||''),ph.map(x=>parseFloat((x.phone.specs||{}).boost_clock||'')),'GHz')],['TDP',p=>fmtNum(parseFloat((p.phone.specs||{}).tdp||'0'),ph.map(x=>parseFloat((x.phone.specs||{}).tdp||'0')),'W')],['缓存',p=>(p.phone.specs||{}).cache||'-'],['接口',p=>(p.phone.specs||{}).socket||'-'],['内存支持',p=>(p.phone.specs||{}).memory||'-'],['PCIe',p=>(p.phone.specs||{}).pcie||'-'],['核显',p=>(p.phone.specs||{}).igpu||'-']],ph)
   ];
 }
 
@@ -2526,15 +2534,21 @@ function keyboardCompareDims(ph) {
 
   // ==================== 对比逻辑 ====================
   function comparePriceDiff(phones) {
-    const prices = phones.map(p => p.priceSrc.price);
+    const prices = phones.map(p => p.priceSrc.price).filter(v => v > 0);
+    // 少于两个有效报价就没有可比性
+    if (prices.length < 2) {
+      return `<tr><td class="label">价格差异</td>${phones.map(() => '<td class="dim-note">需 ≥2 款有报价</td>').join('')}</tr>`;
+    }
     return `<tr><td class="label">价格差异</td>${phones.map((p, i) => {
-      const others = phones.filter((_, j) => j !== i).map(x => x.priceSrc.price);
+      const v = p.priceSrc.price;
+      if (!(v > 0)) return '<td class="dim-note">暂无报价</td>';
+      const others = phones.filter((_, j) => j !== i).map(x => x.priceSrc.price).filter(x => x > 0);
       const minOther = Math.min(...others);
       const maxOther = Math.max(...others);
-      const diff = p.priceSrc.price - minOther;
+      const diff = v - minOther;
       if (diff === 0) return '<td>最低价</td>';
       const cls = diff > 0 ? 'highlight' : 'highlight-low';
-      return `<td class="${cls}">比最低高 ¥${diff}<br><span class="dim-note">比最高${p.priceSrc.price < maxOther ? '低' : '高'} ¥${Math.abs(p.priceSrc.price - maxOther)}</span></td>`;
+      return `<td class="${cls}">比最低高 ¥${diff}<br><span class="dim-note">比最高${v < maxOther ? '低' : '高'} ¥${Math.abs(v - maxOther)}</span></td>`;
     }).join('')}</tr>`;
   }
 
@@ -2814,17 +2828,23 @@ function buildDimScores(candidates, opts){
         reasons.push(`符合你的${p.phone.brand}品牌偏好`);
       }
 
-      // 价格
-      const prices = phones.map(x => x.priceSrc.price);
+      // 价格（无价商品不参与价格维度评分，避免被当成 ¥0 最低价误导）
+      const pv = p.priceSrc.price || 0;
+      const pricedPhones = phones.filter(x => (x.priceSrc.price || 0) > 0);
+      const prices = pricedPhones.map(x => x.priceSrc.price);
+      if (prices.length === 0) { score += 5; }
+      else if (pv <= 0) { score += 3; reasons.push('暂无国行报价，价格维度略过'); }
+      else {
       const minPrice = Math.min(...prices);
       if (helpAnswers.budget === 'no') {
-        if (p.priceSrc.price === minPrice) { score += 25; reasons.push('价格最低，符合你的预算要求'); }
-        else { tradeoffs.push(`价格比最低的高 ¥${p.priceSrc.price - minPrice}`); }
+        if (pv === minPrice) { score += 25; reasons.push('价格最低，符合你的预算要求'); }
+        else { tradeoffs.push(`价格比最低的高 ¥${pv - minPrice}`); }
       } else if (helpAnswers.budget === 'little') {
-        if (p.priceSrc.price <= minPrice * 1.15) { score += 15; reasons.push('价格在可接受范围内'); }
-        else { tradeoffs.push(`价格超出最低预算约 ${Math.round((p.priceSrc.price - minPrice) / minPrice * 100)}%`); }
+        if (pv <= minPrice * 1.15) { score += 15; reasons.push('价格在可接受范围内'); }
+        else { tradeoffs.push(`价格超出最低预算约 ${Math.round((pv - minPrice) / minPrice * 100)}%`); }
       } else {
         score += 10;
+      }
       }
 
       // 品类特定评分

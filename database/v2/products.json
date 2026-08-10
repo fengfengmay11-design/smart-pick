@@ -1315,8 +1315,7 @@
     "status": "active",
     "tags": [
       "影像机皇",
-      "2亿apo长焦",
-      "1英寸"
+      "2亿apo长焦"
     ],
     "release_date": "2024-05",
     "image": "https://cdn.jsdelivr.net/gh/orcastor/phone_images@master/android/vivo%20X200%20Pro.jpg",
@@ -1499,8 +1498,7 @@
     "status": "active",
     "tags": [
       "影像机皇",
-      "双潜望",
-      "1英寸"
+      "双潜望"
     ],
     "release_date": "2024-01",
     "image": "https://cdn.jsdelivr.net/gh/orcastor/phone_images@master/android/Oppo%20Find%20X7%20Ultra.jpg",
@@ -1962,7 +1960,6 @@
     "status": "active",
     "tags": [
       "影像旗舰",
-      "1英寸",
       "天玑9300"
     ],
     "release_date": "2024-05",
@@ -11445,8 +11442,7 @@
     "status": "active",
     "tags": [
       "超轻薄",
-      "oled",
-      "980g"
+      "oled"
     ],
     "release_date": "2024-11",
     "image": "",
@@ -12436,8 +12432,7 @@
     ],
     "status": "active",
     "tags": [
-      "qd_oled",
-      "4k"
+      "qd_oled"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -12588,7 +12583,6 @@
     ],
     "status": "active",
     "tags": [
-      "16核",
       "3d_v_cache"
     ],
     "release_date": "2025-11",
@@ -12619,7 +12613,6 @@
     "status": "active",
     "tags": [
       "arrow_lake",
-      "24核",
       "lga1851"
     ],
     "release_date": "2024-10",
@@ -12649,7 +12642,6 @@
     ],
     "status": "active",
     "tags": [
-      "8核",
       "游戏神u"
     ],
     "release_date": "2024-11",
@@ -12679,8 +12671,7 @@
     ],
     "status": "active",
     "tags": [
-      "arrow_lake",
-      "20核"
+      "arrow_lake"
     ],
     "release_date": "2024-10",
     "image": "",
@@ -12709,7 +12700,7 @@
     ],
     "status": "active",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "release_date": "2024-08",
     "image": "",
@@ -12738,8 +12729,7 @@
     ],
     "status": "active",
     "tags": [
-      "arrow_lake",
-      "14核"
+      "arrow_lake"
     ],
     "release_date": "2024-10",
     "image": "",
@@ -12768,7 +12758,6 @@
     ],
     "status": "active",
     "tags": [
-      "6核",
       "value"
     ],
     "release_date": "2024-08",
@@ -12799,8 +12788,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake",
-      "20核"
+      "raptor_lake"
     ],
     "release_date": "2023-10",
     "image": "",
@@ -12829,7 +12817,6 @@
     ],
     "status": "active",
     "tags": [
-      "16核",
       "3d_v_cache"
     ],
     "release_date": "2023-02",
@@ -12860,8 +12847,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake",
-      "24核"
+      "raptor_lake"
     ],
     "release_date": "2022-10",
     "image": "",
@@ -12891,8 +12877,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake_refresh",
-      "24核"
+      "raptor_lake_refresh"
     ],
     "release_date": "2023-10",
     "image": "",
@@ -12922,8 +12907,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake",
-      "16核"
+      "raptor_lake"
     ],
     "release_date": "2022-10",
     "image": "",
@@ -12954,7 +12938,6 @@
     "status": "active",
     "tags": [
       "raptor_lake",
-      "14核",
       "value"
     ],
     "release_date": "2022-10",
@@ -12984,7 +12967,7 @@
     ],
     "status": "active",
     "tags": [
-      "6核"
+      "处理器"
     ],
     "release_date": "2022-09",
     "image": "",
@@ -13013,7 +12996,7 @@
     ],
     "status": "active",
     "tags": [
-      "12核"
+      "处理器"
     ],
     "release_date": "2022-09",
     "image": "",
@@ -13042,7 +13025,6 @@
     ],
     "status": "active",
     "tags": [
-      "8核",
       "3d_v_cache"
     ],
     "release_date": "2022-04",
@@ -13072,7 +13054,6 @@
     ],
     "status": "active",
     "tags": [
-      "6核",
       "入门神u"
     ],
     "release_date": "2022-04",
@@ -13104,7 +13085,6 @@
     "status": "active",
     "tags": [
       "alder_lake",
-      "6核",
       "value"
     ],
     "release_date": "2022-01",
@@ -13136,7 +13116,6 @@
     "status": "active",
     "tags": [
       "alder_lake",
-      "4核",
       "入门"
     ],
     "release_date": "2022-01",
@@ -13166,7 +13145,7 @@
     ],
     "status": "active",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "release_date": "2022-04",
     "image": "",
@@ -13196,8 +13175,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake",
-      "10核"
+      "raptor_lake"
     ],
     "release_date": "2023-01",
     "image": "",
@@ -13227,8 +13205,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake_refresh",
-      "4核"
+      "raptor_lake_refresh"
     ],
     "release_date": "2024-01",
     "image": "",
@@ -13257,7 +13234,6 @@
     ],
     "status": "active",
     "tags": [
-      "8核",
       "3d_v_cache"
     ],
     "release_date": "2023-04",
@@ -13287,7 +13263,7 @@
     ],
     "status": "active",
     "tags": [
-      "12核"
+      "处理器"
     ],
     "release_date": "2024-08",
     "image": "",
@@ -13316,7 +13292,6 @@
     ],
     "status": "active",
     "tags": [
-      "16核",
       "flagship"
     ],
     "release_date": "2024-08",
@@ -13346,7 +13321,6 @@
     ],
     "status": "active",
     "tags": [
-      "6核",
       "入门"
     ],
     "release_date": "2025-01",
@@ -13376,7 +13350,6 @@
     ],
     "status": "active",
     "tags": [
-      "6核",
       "value"
     ],
     "release_date": "2023-07",
@@ -13406,7 +13379,7 @@
     ],
     "status": "active",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "release_date": "2022-09",
     "image": "",
@@ -13496,7 +13469,6 @@
     "status": "active",
     "tags": [
       "threadripper",
-      "64核",
       "工作站"
     ],
     "release_date": "2023-11",
@@ -13527,7 +13499,6 @@
     "status": "active",
     "tags": [
       "threadripper",
-      "24核",
       "hedt"
     ],
     "release_date": "2023-11",
@@ -13558,7 +13529,6 @@
     "status": "active",
     "tags": [
       "arrow_lake",
-      "14核",
       "无核显"
     ],
     "release_date": "2024-10",
@@ -13589,8 +13559,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake_refresh",
-      "14核"
+      "raptor_lake_refresh"
     ],
     "release_date": "2023-10",
     "image": "",
@@ -13620,8 +13589,7 @@
     ],
     "status": "active",
     "tags": [
-      "alder_lake",
-      "12核"
+      "alder_lake"
     ],
     "release_date": "2021-11",
     "image": "",
@@ -13651,8 +13619,7 @@
     ],
     "status": "active",
     "tags": [
-      "alder_lake",
-      "16核"
+      "alder_lake"
     ],
     "release_date": "2021-11",
     "image": "",
@@ -13683,7 +13650,6 @@
     "status": "active",
     "tags": [
       "raptor_lake",
-      "10核",
       "带核显"
     ],
     "release_date": "2023-01",
@@ -13714,8 +13680,7 @@
     ],
     "status": "active",
     "tags": [
-      "raptor_lake_refresh",
-      "24核"
+      "raptor_lake_refresh"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -13745,7 +13710,6 @@
     "status": "active",
     "tags": [
       "arrow_lake",
-      "20核",
       "无核显"
     ],
     "release_date": "2024-10",
@@ -13775,7 +13739,7 @@
     ],
     "status": "active",
     "tags": [
-      "16核"
+      "处理器"
     ],
     "release_date": "2022-09",
     "image": "",
@@ -15165,7 +15129,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k",
       "ips_black",
       "type_c"
     ],
@@ -15511,7 +15474,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k",
       "设计"
     ],
     "release_date": "2024-01",
@@ -15542,7 +15504,6 @@
     "status": "active",
     "tags": [
       "智能显示器",
-      "4k",
       "tizen_os"
     ],
     "release_date": "2024-04",
@@ -15745,7 +15706,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k",
       "thunderbolt_4",
       "ips_black"
     ],
@@ -16158,7 +16118,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k",
       "business",
       "高性价比"
     ],
@@ -16303,7 +16262,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k",
       "人体工学支架",
       "usb_c"
     ],
@@ -17178,8 +17136,7 @@
     "status": "active",
     "tags": [
       "vlog",
-      "轻量",
-      "4k"
+      "轻量"
     ],
     "release_date": "2024-07",
     "image": "",
@@ -17365,8 +17322,7 @@
     "status": "active",
     "tags": [
       "flagship",
-      "高速连拍",
-      "8k"
+      "高速连拍"
     ],
     "release_date": "2021-01",
     "image": "",
@@ -17396,7 +17352,6 @@
     "status": "active",
     "tags": [
       "flagship",
-      "8k",
       "高像素"
     ],
     "release_date": "2024-07",
@@ -17519,7 +17474,6 @@
     "status": "active",
     "tags": [
       "flagship",
-      "8k",
       "无黑视"
     ],
     "release_date": "2023-05",
@@ -20171,8 +20125,7 @@
       "mechanical",
       "hotswap",
       "rgb",
-      "gasket",
-      "75%"
+      "gasket"
     ],
     "release_date": "2023-09-01",
     "image": null,
@@ -20271,8 +20224,7 @@
       "compact",
       "wireless",
       "silent",
-      "mac",
-      "60%"
+      "mac"
     ],
     "release_date": "2023-06-01",
     "image": null,
@@ -20604,8 +20556,7 @@
     "tags": [
       "foldable",
       "flagship",
-      "harmonyos",
-      "5g"
+      "harmonyos"
     ],
     "release_date": "2025-12-05",
     "image": null,
@@ -20636,8 +20587,7 @@
     "tags": [
       "foldable",
       "flagship",
-      "magicos",
-      "5g"
+      "magicos"
     ],
     "release_date": "2025-07-02",
     "image": null,
@@ -20669,8 +20619,7 @@
       "foldable",
       "trifold",
       "flagship",
-      "oneui",
-      "5g"
+      "oneui"
     ],
     "release_date": "2025-12-09",
     "image": null,
@@ -20702,8 +20651,7 @@
       "foldable",
       "flagship",
       "zeiss",
-      "originos",
-      "5g"
+      "originos"
     ],
     "release_date": "2025-07-02",
     "image": null,
@@ -20735,7 +20683,6 @@
     "tags": [
       "gaming",
       "flagship",
-      "5g",
       "active-cooling"
     ],
     "release_date": "2025-10-17",
@@ -20768,7 +20715,6 @@
     "tags": [
       "gaming",
       "thin-light",
-      "5g",
       "active-cooling"
     ],
     "release_date": "2026-01-20",
@@ -22358,7 +22304,6 @@
     "aliases": [],
     "status": "active",
     "tags": [
-      "4k",
       "home_cinema",
       "3lcd",
       "bulb"
@@ -22386,7 +22331,6 @@
     "aliases": [],
     "status": "active",
     "tags": [
-      "4k",
       "tri_color_laser",
       "portable",
       "gimbal"
@@ -22414,7 +22358,6 @@
     "aliases": [],
     "status": "active",
     "tags": [
-      "4k",
       "led",
       "google_tv",
       "living_room"
@@ -22442,7 +22385,6 @@
     "aliases": [],
     "status": "active",
     "tags": [
-      "4k",
       "laser",
       "home_cinema",
       "sxrd",
@@ -22528,7 +22470,6 @@
     "tags": [
       "雷电5",
       "办公",
-      "8K",
       "多接口"
     ],
     "release_date": "2025-04-23",
@@ -22555,8 +22496,7 @@
     "status": "active",
     "tags": [
       "直播",
-      "视频会议",
-      "4K"
+      "视频会议"
     ],
     "release_date": "2024-03-01",
     "image": null,
@@ -22583,7 +22523,6 @@
     "tags": [
       "直播",
       "AI追踪",
-      "4K",
       "视频会议"
     ],
     "release_date": "2023-09-14",
@@ -22611,7 +22550,6 @@
     "tags": [
       "直播",
       "AI",
-      "4K",
       "视频会议"
     ],
     "release_date": "2024-09-24",

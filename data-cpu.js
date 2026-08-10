@@ -7,7 +7,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2025-11",
     "tags": [
-      "16核",
       "3d_v_cache"
     ],
     "officialUrl": "",
@@ -38,7 +37,6 @@ const CPU_DATA = [
     "launchDate": "2024-10",
     "tags": [
       "arrow_lake",
-      "24核",
       "lga1851"
     ],
     "officialUrl": "",
@@ -68,7 +66,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-11",
     "tags": [
-      "8核",
       "游戏神u"
     ],
     "officialUrl": "",
@@ -98,8 +95,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-10",
     "tags": [
-      "arrow_lake",
-      "20核"
+      "arrow_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -128,7 +124,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-08",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -157,8 +153,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-10",
     "tags": [
-      "arrow_lake",
-      "14核"
+      "arrow_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -187,7 +182,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-08",
     "tags": [
-      "6核",
       "value"
     ],
     "officialUrl": "",
@@ -217,8 +211,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-10",
     "tags": [
-      "raptor_lake",
-      "20核"
+      "raptor_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -247,7 +240,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-02",
     "tags": [
-      "16核",
       "3d_v_cache"
     ],
     "officialUrl": "",
@@ -277,8 +269,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-10",
     "tags": [
-      "raptor_lake",
-      "24核"
+      "raptor_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -307,8 +298,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-10",
     "tags": [
-      "raptor_lake_refresh",
-      "24核"
+      "raptor_lake_refresh"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -337,8 +327,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-10",
     "tags": [
-      "raptor_lake",
-      "16核"
+      "raptor_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -368,7 +357,6 @@ const CPU_DATA = [
     "launchDate": "2022-10",
     "tags": [
       "raptor_lake",
-      "14核",
       "value"
     ],
     "officialUrl": "",
@@ -398,7 +386,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-09",
     "tags": [
-      "6核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -427,7 +415,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-09",
     "tags": [
-      "12核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -456,7 +444,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-04",
     "tags": [
-      "8核",
       "3d_v_cache"
     ],
     "officialUrl": "",
@@ -486,7 +473,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-04",
     "tags": [
-      "6核",
       "入门神u"
     ],
     "officialUrl": "",
@@ -517,7 +503,6 @@ const CPU_DATA = [
     "launchDate": "2022-01",
     "tags": [
       "alder_lake",
-      "6核",
       "value"
     ],
     "officialUrl": "",
@@ -548,7 +533,6 @@ const CPU_DATA = [
     "launchDate": "2022-01",
     "tags": [
       "alder_lake",
-      "4核",
       "入门"
     ],
     "officialUrl": "",
@@ -578,7 +562,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-04",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -607,8 +591,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-01",
     "tags": [
-      "raptor_lake",
-      "10核"
+      "raptor_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -637,8 +620,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-01",
     "tags": [
-      "raptor_lake_refresh",
-      "4核"
+      "raptor_lake_refresh"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -667,7 +649,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-04",
     "tags": [
-      "8核",
       "3d_v_cache"
     ],
     "officialUrl": "",
@@ -697,7 +678,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-08",
     "tags": [
-      "12核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -726,7 +707,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-08",
     "tags": [
-      "16核",
       "flagship"
     ],
     "officialUrl": "",
@@ -756,7 +736,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2025-01",
     "tags": [
-      "6核",
       "入门"
     ],
     "officialUrl": "",
@@ -786,7 +765,6 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-07",
     "tags": [
-      "6核",
       "value"
     ],
     "officialUrl": "",
@@ -816,7 +794,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-09",
     "tags": [
-      "8核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -906,7 +884,6 @@ const CPU_DATA = [
     "launchDate": "2023-11",
     "tags": [
       "threadripper",
-      "64核",
       "工作站"
     ],
     "officialUrl": "",
@@ -937,7 +914,6 @@ const CPU_DATA = [
     "launchDate": "2023-11",
     "tags": [
       "threadripper",
-      "24核",
       "hedt"
     ],
     "officialUrl": "",
@@ -968,7 +944,6 @@ const CPU_DATA = [
     "launchDate": "2024-10",
     "tags": [
       "arrow_lake",
-      "14核",
       "无核显"
     ],
     "officialUrl": "",
@@ -998,8 +973,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2023-10",
     "tags": [
-      "raptor_lake_refresh",
-      "14核"
+      "raptor_lake_refresh"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -1028,8 +1002,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2021-11",
     "tags": [
-      "alder_lake",
-      "12核"
+      "alder_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -1058,8 +1031,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2021-11",
     "tags": [
-      "alder_lake",
-      "16核"
+      "alder_lake"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -1089,7 +1061,6 @@ const CPU_DATA = [
     "launchDate": "2023-01",
     "tags": [
       "raptor_lake",
-      "10核",
       "带核显"
     ],
     "officialUrl": "",
@@ -1119,8 +1090,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2024-03",
     "tags": [
-      "raptor_lake_refresh",
-      "24核"
+      "raptor_lake_refresh"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -1150,7 +1120,6 @@ const CPU_DATA = [
     "launchDate": "2024-10",
     "tags": [
       "arrow_lake",
-      "20核",
       "无核显"
     ],
     "officialUrl": "",
@@ -1180,7 +1149,7 @@ const CPU_DATA = [
     "image": "",
     "launchDate": "2022-09",
     "tags": [
-      "16核"
+      "处理器"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",

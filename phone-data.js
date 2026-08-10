@@ -2817,8 +2817,7 @@ const PHONE_DATA = [
     "launchDate": "2024-05",
     "tags": [
       "影像机皇",
-      "2亿apo长焦",
-      "1英寸"
+      "2亿apo长焦"
     ],
     "officialUrl": "https://www.vivo.com.cn/x100-ultra",
     "lastVerified": "2026-07-15",
@@ -3221,8 +3220,7 @@ const PHONE_DATA = [
     "launchDate": "2024-01",
     "tags": [
       "影像机皇",
-      "双潜望",
-      "1英寸"
+      "双潜望"
     ],
     "officialUrl": "https://www.oppo.com/cn/find-x7-ultra",
     "lastVerified": "2026-07-15",
@@ -4200,7 +4198,6 @@ const PHONE_DATA = [
     "launchDate": "2024-05",
     "tags": [
       "影像旗舰",
-      "1英寸",
       "天玑9300"
     ],
     "officialUrl": "https://www.vivo.com.cn/x100s-pro",
@@ -6184,9 +6181,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "128GB",
     "screen": {
-      "size": "6.3英寸"
+      "size": "6.3英寸",
+      "resolution": "1080x2424",
+      "refreshRate": "120Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "198g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6224,9 +6231,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "256GB",
     "screen": {
-      "size": "6.8英寸"
+      "size": "6.8英寸",
+      "resolution": "1344x2992",
+      "refreshRate": "120Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "221g",
+      "material": null
+    },
     "ram": "16GB",
     "features": {}
   },
@@ -6263,9 +6280,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "512GB",
     "screen": {
-      "size": "6.7英寸"
+      "size": "6.7英寸",
+      "resolution": "2712x1220",
+      "refreshRate": "144Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "197g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6303,9 +6330,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "256GB",
     "screen": {
-      "size": "6.67英寸"
+      "size": "6.67英寸",
+      "resolution": "3200x1440",
+      "refreshRate": "120Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "206g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6343,9 +6380,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "256GB",
     "screen": {
-      "size": "6.82英寸"
+      "size": "6.82英寸",
+      "resolution": "3168x1440",
+      "refreshRate": "144Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "213g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6382,9 +6429,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "256GB",
     "screen": {
-      "size": "6.55英寸"
+      "size": "6.55英寸",
+      "resolution": "2340x1080",
+      "refreshRate": "120Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "198g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6422,9 +6479,19 @@ const PHONE_DATA = [
     ],
     "defaultStorage": "256GB",
     "screen": {
-      "size": "6.85英寸"
+      "size": "6.85英寸",
+      "resolution": "2688x1216",
+      "refreshRate": "144Hz",
+      "material": null,
+      "type": null
     },
-    "body": {},
+    "body": {
+      "height": null,
+      "width": null,
+      "thickness": null,
+      "weight": "228g",
+      "material": null
+    },
     "ram": "12GB",
     "features": {}
   },
@@ -6437,8 +6504,7 @@ const PHONE_DATA = [
     "tags": [
       "foldable",
       "flagship",
-      "harmonyos",
-      "5g"
+      "harmonyos"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -6491,8 +6557,7 @@ const PHONE_DATA = [
     "tags": [
       "foldable",
       "flagship",
-      "magicos",
-      "5g"
+      "magicos"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -6546,8 +6611,7 @@ const PHONE_DATA = [
       "foldable",
       "trifold",
       "flagship",
-      "oneui",
-      "5g"
+      "oneui"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -6601,8 +6665,7 @@ const PHONE_DATA = [
       "foldable",
       "flagship",
       "zeiss",
-      "originos",
-      "5g"
+      "originos"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -6655,7 +6718,6 @@ const PHONE_DATA = [
     "tags": [
       "gaming",
       "flagship",
-      "5g",
       "active-cooling"
     ],
     "officialUrl": null,
@@ -6709,7 +6771,6 @@ const PHONE_DATA = [
     "tags": [
       "gaming",
       "thin-light",
-      "5g",
       "active-cooling"
     ],
     "officialUrl": null,

@@ -120,8 +120,7 @@ const CAMERA_DATA = [
     "launchDate": "2024-07",
     "tags": [
       "vlog",
-      "轻量",
-      "4k"
+      "轻量"
     ],
     "officialUrl": "",
     "lastVerified": "2026-08-05",
@@ -288,8 +287,7 @@ const CAMERA_DATA = [
     "launchDate": "2021-01",
     "tags": [
       "flagship",
-      "高速连拍",
-      "8k"
+      "高速连拍"
     ],
     "officialUrl": "",
     "lastVerified": "2026-08-05",
@@ -316,7 +314,6 @@ const CAMERA_DATA = [
     "launchDate": "2024-07",
     "tags": [
       "flagship",
-      "8k",
       "高像素"
     ],
     "officialUrl": "",
@@ -428,7 +425,6 @@ const CAMERA_DATA = [
     "launchDate": "2023-05",
     "tags": [
       "flagship",
-      "8k",
       "无黑视"
     ],
     "officialUrl": "",

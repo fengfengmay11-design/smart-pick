@@ -8,8 +8,7 @@ const WEBCAM_DATA = [
     "launchDate": "2024-03-01",
     "tags": [
       "直播",
-      "视频会议",
-      "4K"
+      "视频会议"
     ],
     "officialUrl": null,
     "lastVerified": "2026-08-10",
@@ -37,7 +36,6 @@ const WEBCAM_DATA = [
     "tags": [
       "直播",
       "AI追踪",
-      "4K",
       "视频会议"
     ],
     "officialUrl": null,
@@ -66,7 +64,6 @@ const WEBCAM_DATA = [
     "tags": [
       "直播",
       "AI",
-      "4K",
       "视频会议"
     ],
     "officialUrl": null,

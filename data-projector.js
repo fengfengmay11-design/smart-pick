@@ -37,7 +37,6 @@ const PROJECTOR_DATA = [
     "image": null,
     "launchDate": "2023-01-01",
     "tags": [
-      "4k",
       "home_cinema",
       "3lcd",
       "bulb"
@@ -67,7 +66,6 @@ const PROJECTOR_DATA = [
     "image": null,
     "launchDate": "2023-09-18",
     "tags": [
-      "4k",
       "tri_color_laser",
       "portable",
       "gimbal"
@@ -97,7 +95,6 @@ const PROJECTOR_DATA = [
     "image": null,
     "launchDate": "2024-10-15",
     "tags": [
-      "4k",
       "led",
       "google_tv",
       "living_room"
@@ -127,7 +124,6 @@ const PROJECTOR_DATA = [
     "image": null,
     "launchDate": "2023-02-14",
     "tags": [
-      "4k",
       "laser",
       "home_cinema",
       "sxrd",

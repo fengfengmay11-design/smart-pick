@@ -66,8 +66,7 @@ const LAPTOP_DATA = [
     "launchDate": "2024-11",
     "tags": [
       "超轻薄",
-      "oled",
-      "980g"
+      "oled"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
@@ -994,8 +993,7 @@ const LAPTOP_DATA = [
     "image": "",
     "launchDate": "2024-03",
     "tags": [
-      "qd_oled",
-      "4k"
+      "qd_oled"
     ],
     "officialUrl": "",
     "lastVerified": "2026-07-16",
