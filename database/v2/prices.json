@@ -16428,5 +16428,75 @@
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 218
+  },
+  {
+    "price_id": "razer-deathadder-v3-pro-p1",
+    "product_id": "razer-deathadder-v3-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 829
+  },
+  {
+    "price_id": "razer-viper-v3-pro-p1",
+    "product_id": "razer-viper-v3-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 979
+  },
+  {
+    "price_id": "steelseries-aerox-5-wireless-p1",
+    "product_id": "steelseries-aerox-5-wireless",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 919
+  },
+  {
+    "price_id": "corsair-m75-air-p1",
+    "product_id": "corsair-m75-air",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 635
+  },
+  {
+    "price_id": "corsair-m75-wireless-p1",
+    "product_id": "corsair-m75-wireless",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 769
+  },
+  {
+    "price_id": "zowie-ec2-cw-p1",
+    "product_id": "zowie-ec2-cw",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 929
+  },
+  {
+    "price_id": "roccat-kone-xp-p1",
+    "product_id": "roccat-kone-xp",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 399
   }
 ]

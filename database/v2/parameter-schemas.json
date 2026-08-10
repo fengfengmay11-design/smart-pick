@@ -93,6 +93,17 @@
     "size",
     "speakers"
   ],
+  "mouse": [
+    "battery",
+    "buttons",
+    "connection",
+    "dpi",
+    "polling_rate",
+    "sensor",
+    "shape",
+    "switch",
+    "weight"
+  ],
   "smart_appliance": [
     "area",
     "cooling_capacity",

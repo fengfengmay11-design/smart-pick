@@ -2738,5 +2738,96 @@
     "variant_name": "黑色 红轴",
     "color": "Black/Red",
     "status": "active"
+  },
+  {
+    "variant_id": "razer-deathadder-v3-pro-v1",
+    "product_id": "razer-deathadder-v3-pro",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "razer-deathadder-v3-pro-v2",
+    "product_id": "razer-deathadder-v3-pro",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "razer-viper-v3-pro-v1",
+    "product_id": "razer-viper-v3-pro",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "razer-viper-v3-pro-v2",
+    "product_id": "razer-viper-v3-pro",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "steelseries-aerox-5-wireless-v1",
+    "product_id": "steelseries-aerox-5-wireless",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "steelseries-aerox-5-wireless-v2",
+    "product_id": "steelseries-aerox-5-wireless",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "corsair-m75-air-v1",
+    "product_id": "corsair-m75-air",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "corsair-m75-air-v2",
+    "product_id": "corsair-m75-air",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "corsair-m75-wireless-v1",
+    "product_id": "corsair-m75-wireless",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "corsair-m75-wireless-v2",
+    "product_id": "corsair-m75-wireless",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "zowie-ec2-cw-v1",
+    "product_id": "zowie-ec2-cw",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "roccat-kone-xp-v1",
+    "product_id": "roccat-kone-xp",
+    "variant_name": "极地白",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "roccat-kone-xp-v2",
+    "product_id": "roccat-kone-xp",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
   }
 ]
