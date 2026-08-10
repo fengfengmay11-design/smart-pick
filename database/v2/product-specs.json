@@ -38314,5 +38314,93 @@
       "chip": "BES2700BP + 展锐通信芯片",
       "waterproof": "5ATM"
     }
+  },
+  {
+    "product_id": "razer-blackwidow-v4-75",
+    "specs": {
+      "backlight": "RGB (Razer Chroma)",
+      "battery": null,
+      "connection": "有线 (可拆卸 Type-C)",
+      "hotswap": true,
+      "keycap": "双色注塑键帽",
+      "layout": "75% (81键)",
+      "switch": "Razer 机械轴 (绿轴/黄轴可选, 热插拔)",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "cherry-mx-8-2-xaga",
+    "specs": {
+      "backlight": "RGB",
+      "battery": null,
+      "connection": "三模 (2.4G/蓝牙5.0/有线)",
+      "hotswap": true,
+      "keycap": "三透 PBT 双色注塑键帽",
+      "layout": "87键 (TKL)",
+      "switch": "CHERRY MX2A 机械轴 (红轴等)",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "corsair-k70-max",
+    "specs": {
+      "backlight": "RGB (逐键可编程)",
+      "battery": null,
+      "connection": "有线 USB Type-C (可拆卸)",
+      "hotswap": false,
+      "keycap": "PBT 双色注塑 (1.5mm)",
+      "layout": "全尺寸 (104键)",
+      "switch": "CORSAIR MGX 磁轴 (线性, 45g, 触发点0.4-3.6mm可调)",
+      "weight": {
+        "value": 1390,
+        "unit": "g",
+        "display_value": "1390g",
+        "original_value": "1.39kg"
+      }
+    }
+  },
+  {
+    "product_id": "hhkb-professional-hybrid-type-s",
+    "specs": {
+      "backlight": "无背光",
+      "battery": null,
+      "connection": "双模 (蓝牙4.2 + 有线 Type-C)",
+      "hotswap": false,
+      "keycap": "PBT 热升华键帽",
+      "layout": "60键 (HHKB配列)",
+      "switch": "静电容轴 (Type-S 静音)",
+      "weight": {
+        "value": 540,
+        "unit": "g",
+        "display_value": "540g",
+        "original_value": "540g(不含电池)"
+      }
+    }
+  },
+  {
+    "product_id": "steelseries-apex-pro-tkl-gen3",
+    "specs": {
+      "backlight": "RGB (动态可调)",
+      "battery": null,
+      "connection": "有线 USB Type-C",
+      "hotswap": false,
+      "keycap": "ABS 键帽",
+      "layout": "TKL (84键)",
+      "switch": "OmniPoint 3.0 磁轴 (0.1-4.0mm 可调, Rapid Trigger)",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "ikbc-c87",
+    "specs": {
+      "backlight": "无背光 (预留灯位)",
+      "battery": null,
+      "connection": "有线 USB",
+      "hotswap": false,
+      "keycap": "PBT 双色注塑键帽",
+      "layout": "87键 (TKL)",
+      "switch": "CHERRY MX 原厂轴 (黑/青/茶/红/银)",
+      "weight": null
+    }
   }
 ]

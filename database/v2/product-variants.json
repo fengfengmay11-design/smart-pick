@@ -2668,5 +2668,75 @@
     "variant_name": "月光白",
     "color": "Moonlight White",
     "status": "active"
+  },
+  {
+    "variant_id": "razer-blackwidow-v4-75-v1",
+    "product_id": "razer-blackwidow-v4-75",
+    "variant_name": "白色",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "razer-blackwidow-v4-75-v2",
+    "product_id": "razer-blackwidow-v4-75",
+    "variant_name": "黑色",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "cherry-mx-8-2-xaga-v1",
+    "product_id": "cherry-mx-8-2-xaga",
+    "variant_name": "曜石黑",
+    "color": "Obsidian Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "cherry-mx-8-2-xaga-v2",
+    "product_id": "cherry-mx-8-2-xaga",
+    "variant_name": "宝可梦耿鬼联名",
+    "color": "Gengar",
+    "status": "active"
+  },
+  {
+    "variant_id": "corsair-k70-max-v1",
+    "product_id": "corsair-k70-max",
+    "variant_name": "灰黑",
+    "color": "Space Gray",
+    "status": "active"
+  },
+  {
+    "variant_id": "hhkb-professional-hybrid-type-s-v1",
+    "product_id": "hhkb-professional-hybrid-type-s",
+    "variant_name": "白色有刻",
+    "color": "White Legend",
+    "status": "active"
+  },
+  {
+    "variant_id": "hhkb-professional-hybrid-type-s-v2",
+    "product_id": "hhkb-professional-hybrid-type-s",
+    "variant_name": "黑色无刻",
+    "color": "Black Blank",
+    "status": "active"
+  },
+  {
+    "variant_id": "steelseries-apex-pro-tkl-gen3-v1",
+    "product_id": "steelseries-apex-pro-tkl-gen3",
+    "variant_name": "月曜白 (有线)",
+    "color": "White",
+    "status": "active"
+  },
+  {
+    "variant_id": "ikbc-c87-v1",
+    "product_id": "ikbc-c87",
+    "variant_name": "黑色 青轴",
+    "color": "Black/Blue",
+    "status": "active"
+  },
+  {
+    "variant_id": "ikbc-c87-v2",
+    "product_id": "ikbc-c87",
+    "variant_name": "黑色 红轴",
+    "color": "Black/Red",
+    "status": "active"
   }
 ]

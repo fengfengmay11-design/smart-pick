@@ -16368,5 +16368,65 @@
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 1099
+  },
+  {
+    "price_id": "razer-blackwidow-v4-75-p1",
+    "product_id": "razer-blackwidow-v4-75",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 979
+  },
+  {
+    "price_id": "cherry-mx-8-2-xaga-p1",
+    "product_id": "cherry-mx-8-2-xaga",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1399
+  },
+  {
+    "price_id": "corsair-k70-max-p1",
+    "product_id": "corsair-k70-max",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1899
+  },
+  {
+    "price_id": "hhkb-professional-hybrid-type-s-p1",
+    "product_id": "hhkb-professional-hybrid-type-s",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2399
+  },
+  {
+    "price_id": "steelseries-apex-pro-tkl-gen3-p1",
+    "product_id": "steelseries-apex-pro-tkl-gen3",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1849
+  },
+  {
+    "price_id": "ikbc-c87-p1",
+    "product_id": "ikbc-c87",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 218
   }
 ]
