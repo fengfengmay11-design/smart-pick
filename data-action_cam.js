@@ -16,7 +16,8 @@ const ACTION_CAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2448,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "5.3K（8:7 / 16:9）",
@@ -44,7 +45,8 @@ const ACTION_CAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2098,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "4K（最高 4K120）",
@@ -72,7 +74,8 @@ const ACTION_CAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2618,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "8K（7680×4320）",
@@ -100,7 +103,8 @@ const ACTION_CAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2998,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "8K 360°全景（7680×3840）",

@@ -17,7 +17,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 829,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "最长 90 小时 (1000Hz 无线)",
@@ -49,7 +50,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 979,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "约 95 小时 (1000Hz) / 约 17 小时 (8000Hz)",
@@ -81,7 +83,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 919,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "最长 180 小时",
@@ -113,7 +116,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 635,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "约 34 小时 (2.4GHz) / 约 100 小时 (蓝牙)",
@@ -144,7 +148,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 769,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "最长 105 小时 (2.4GHz 关灯) / 210 小时 (蓝牙关灯)",
@@ -176,7 +181,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 929,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "70 小时 (持续移动)",
@@ -207,7 +213,8 @@ const MOUSE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 399,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": null,

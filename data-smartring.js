@@ -14,8 +14,9 @@ const SMARTRING_DATA = [
     "officialUrl": null,
     "lastVerified": "2026-08-10",
     "prices": {
-      "jd": null,
-      "pdd": null
+      "jd": 3299,
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "5-8天",
@@ -41,7 +42,8 @@ const SMARTRING_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "7天",
@@ -67,7 +69,8 @@ const SMARTRING_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1199,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "battery": "4天",

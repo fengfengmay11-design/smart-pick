@@ -14,7 +14,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4899,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "cores": "16C/32T",
@@ -44,7 +45,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4799,
-      "pdd": 4499
+      "pdd": 4499,
+      "ref": null
     },
     "specs": {
       "cores": "8P+16E/24T",
@@ -73,7 +75,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -102,7 +105,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3199,
-      "pdd": 2899
+      "pdd": 2899,
+      "ref": null
     },
     "specs": {
       "cores": "8P+12E/20T",
@@ -130,7 +134,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2399,
-      "pdd": 2199
+      "pdd": 2199,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -159,7 +164,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "cores": "6P+8E/14T",
@@ -188,7 +194,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1449
+      "pdd": 1449,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -217,7 +224,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2599,
-      "pdd": 2399
+      "pdd": 2399,
+      "ref": null
     },
     "specs": {
       "cores": "8P+12E/28T",
@@ -246,7 +254,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "cores": "16C/32T",
@@ -275,7 +284,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "cores": "8P+16E/32T",
@@ -304,7 +314,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "cores": "8P+16E/32T",
@@ -333,7 +344,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "cores": "8P+8E/24T",
@@ -363,7 +375,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "cores": "6P+8E/20T",
@@ -391,7 +404,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -419,7 +433,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2599,
-      "pdd": 2399
+      "pdd": 2399,
+      "ref": null
     },
     "specs": {
       "cores": "12C/24T",
@@ -448,7 +463,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -477,7 +493,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -507,7 +524,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 799,
-      "pdd": 699
+      "pdd": 699,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -537,7 +555,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 499,
-      "pdd": 429
+      "pdd": 429,
+      "ref": null
     },
     "specs": {
       "cores": "4C/8T",
@@ -565,7 +584,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 879
+      "pdd": 879,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -594,7 +614,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1199,
-      "pdd": 1049
+      "pdd": 1049,
+      "ref": null
     },
     "specs": {
       "cores": "6P+4E/16T",
@@ -623,7 +644,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "cores": "4P+0E/8T",
@@ -652,7 +674,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2499
+      "pdd": 2499,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -680,7 +703,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3199,
-      "pdd": 2899
+      "pdd": 2899,
+      "ref": null
     },
     "specs": {
       "cores": "12C/24T",
@@ -709,7 +733,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "cores": "16C/32T",
@@ -738,7 +763,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1399,
-      "pdd": 1249
+      "pdd": 1249,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -767,7 +793,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1099,
-      "pdd": 979
+      "pdd": 979,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -795,7 +822,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -824,7 +852,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 869
+      "pdd": 869,
+      "ref": null
     },
     "specs": {
       "cores": "8C/16T",
@@ -853,7 +882,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "cores": "6C/12T",
@@ -883,7 +913,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 34999,
-      "pdd": 32999
+      "pdd": 32999,
+      "ref": null
     },
     "specs": {
       "cores": "64C/128T",
@@ -913,7 +944,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 13999,
-      "pdd": 13299
+      "pdd": 13299,
+      "ref": null
     },
     "specs": {
       "cores": "24C/48T",
@@ -943,7 +975,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2099,
-      "pdd": 1899
+      "pdd": 1899,
+      "ref": null
     },
     "specs": {
       "cores": "6P+8E/14T",
@@ -972,7 +1005,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2099,
-      "pdd": 1899
+      "pdd": 1899,
+      "ref": null
     },
     "specs": {
       "cores": "6P+8E/20T",
@@ -1001,7 +1035,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "cores": "8P+4E/20T",
@@ -1030,7 +1065,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "cores": "8P+8E/24T",
@@ -1060,7 +1096,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "cores": "6P+4E/16T",
@@ -1089,7 +1126,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5299,
-      "pdd": 4899
+      "pdd": 4899,
+      "ref": null
     },
     "specs": {
       "cores": "8P+16E/32T",
@@ -1119,7 +1157,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "cores": "8P+12E/20T",
@@ -1147,7 +1186,8 @@ const CPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "cores": "16C/32T",

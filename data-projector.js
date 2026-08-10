@@ -16,7 +16,8 @@ const PROJECTOR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3099,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "brightness": "1100 ANSI 流明",
@@ -45,7 +46,8 @@ const PROJECTOR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 6279,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "brightness": "2800 流明 (ISO)",
@@ -74,7 +76,8 @@ const PROJECTOR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4995,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "brightness": "2000 CVIA 流明",
@@ -103,7 +106,8 @@ const PROJECTOR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "brightness": "2600 ANSI 流明",
@@ -132,8 +136,9 @@ const PROJECTOR_DATA = [
     "officialUrl": null,
     "lastVerified": "2026-08-10",
     "prices": {
-      "jd": null,
-      "pdd": null
+      "jd": 35999,
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "brightness": "2000 流明",

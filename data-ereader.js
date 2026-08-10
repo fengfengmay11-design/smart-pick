@@ -15,7 +15,8 @@ const EREADER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1899,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen_size": "7英寸",
@@ -43,7 +44,8 @@ const EREADER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen_size": "7英寸",
@@ -71,7 +73,8 @@ const EREADER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 989,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen_size": "6英寸",
@@ -99,7 +102,8 @@ const EREADER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen_size": "7英寸",
@@ -127,7 +131,8 @@ const EREADER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen_size": "7英寸",

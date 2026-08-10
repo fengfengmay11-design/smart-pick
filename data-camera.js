@@ -15,7 +15,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 16999,
-      "pdd": 15999
+      "pdd": 15999,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -42,7 +43,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 15999,
-      "pdd": 14999
+      "pdd": 14999,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -69,7 +71,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 13999,
-      "pdd": 13599
+      "pdd": 13599,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -96,7 +99,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 11990,
-      "pdd": 10990
+      "pdd": 10990,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -123,7 +127,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 5999,
-      "pdd": 5699
+      "pdd": 5699,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -150,7 +155,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4599,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -177,7 +183,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 15499,
-      "pdd": 14699
+      "pdd": 14699,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -204,7 +211,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 25999,
-      "pdd": 24999
+      "pdd": 24999,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -231,7 +239,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 10499,
-      "pdd": 9899
+      "pdd": 9899,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -258,7 +267,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 5299,
-      "pdd": 4799
+      "pdd": 4799,
+      "ref": null
     },
     "specs": {
       "sensor": "1英寸",
@@ -285,7 +295,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 42999,
-      "pdd": 41599
+      "pdd": 41599,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -312,7 +323,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 25999,
-      "pdd": 25299
+      "pdd": 25299,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -339,7 +351,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 9999,
-      "pdd": 9399
+      "pdd": 9399,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -366,7 +379,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 8999,
-      "pdd": 8299
+      "pdd": 8299,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -393,7 +407,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -420,7 +435,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 24999,
-      "pdd": 23999
+      "pdd": 23999,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -447,7 +463,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 14999,
-      "pdd": 14299
+      "pdd": 14299,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -474,7 +491,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 6799,
-      "pdd": 6399
+      "pdd": 6399,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -501,7 +519,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 9499,
-      "pdd": 8999
+      "pdd": 8999,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -528,7 +547,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 10499,
-      "pdd": 9899
+      "pdd": 9899,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -555,7 +575,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 13999,
-      "pdd": 13999
+      "pdd": 13999,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -581,7 +602,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 16999,
-      "pdd": 15999
+      "pdd": 15999,
+      "ref": null
     },
     "specs": {
       "sensor": "APS-C",
@@ -608,7 +630,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 12999,
-      "pdd": 12299
+      "pdd": 12299,
+      "ref": null
     },
     "specs": {
       "sensor": "全画幅",
@@ -635,7 +658,8 @@ const CAMERA_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 11499,
-      "pdd": 10999
+      "pdd": 10999,
+      "ref": null
     },
     "specs": {
       "sensor": "M4/3",

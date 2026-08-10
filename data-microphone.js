@@ -16,7 +16,8 @@ const MICROPHONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1899,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "pattern": "心形 (Cardioid)",
@@ -42,7 +43,8 @@ const MICROPHONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1980,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "pattern": "心形 (Cardioid)",
@@ -68,7 +70,8 @@ const MICROPHONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1219,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "pattern": "心形动圈 (Cardioid, Dynamic)",
@@ -94,7 +97,8 @@ const MICROPHONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2295,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "pattern": "全指向 (Omnidirectional)",

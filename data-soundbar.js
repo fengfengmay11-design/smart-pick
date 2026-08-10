@@ -16,7 +16,8 @@ const SOUNDBAR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 6999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "channels": "11.1.4",
@@ -43,7 +44,8 @@ const SOUNDBAR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 7261,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "channels": "7.0.2 (13 单元)",
@@ -69,8 +71,9 @@ const SOUNDBAR_DATA = [
     "officialUrl": null,
     "lastVerified": "2026-08-10",
     "prices": {
-      "jd": null,
-      "pdd": null
+      "jd": 5599,
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "channels": "9.1.5",

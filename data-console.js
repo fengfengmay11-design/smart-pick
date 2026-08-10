@@ -15,7 +15,8 @@ const CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 6299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Zen 2 8核16线程",
@@ -42,7 +43,8 @@ const CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4399,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Zen 2 8核16线程",
@@ -70,7 +72,8 @@ const CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3899,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Zen 2 定制 8核",
@@ -98,7 +101,8 @@ const CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "NVIDIA 定制处理器（含 AI 加速/DLSS）",

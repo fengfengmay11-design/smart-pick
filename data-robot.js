@@ -14,7 +14,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5399,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -42,7 +43,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5699,
-      "pdd": 5299
+      "pdd": 5299,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -70,7 +72,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "suction": "12800Pa",
@@ -98,7 +101,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -126,7 +130,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5399,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -154,7 +159,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -181,7 +187,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3899
+      "pdd": 3899,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -208,7 +215,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4799,
-      "pdd": 4399
+      "pdd": 4399,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -236,7 +244,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "suction": "9000Pa",
@@ -264,7 +273,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "suction": "7800Pa",
@@ -292,7 +302,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3599,
-      "pdd": 3299
+      "pdd": 3299,
+      "ref": null
     },
     "specs": {
       "suction": "10000Pa",
@@ -320,7 +331,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "suction": "5500Pa",
@@ -348,7 +360,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2699,
-      "pdd": 2399
+      "pdd": 2399,
+      "ref": null
     },
     "specs": {
       "suction": "8000Pa",
@@ -376,7 +389,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "suction": "7000Pa",
@@ -404,7 +418,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1799
+      "pdd": 1799,
+      "ref": null
     },
     "specs": {
       "suction": "5000Pa",
@@ -433,7 +448,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -461,7 +477,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4699,
-      "pdd": 4399
+      "pdd": 4399,
+      "ref": null
     },
     "specs": {
       "suction": "10000Pa",
@@ -489,7 +506,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2499
+      "pdd": 2499,
+      "ref": null
     },
     "specs": {
       "suction": "8000Pa",
@@ -518,7 +536,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6699,
-      "pdd": 6299
+      "pdd": 6299,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -546,7 +565,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -574,7 +594,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3699,
-      "pdd": 3399
+      "pdd": 3399,
+      "ref": null
     },
     "specs": {
       "suction": "7000Pa",
@@ -602,7 +623,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "suction": "18000Pa",
@@ -630,7 +652,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4699,
-      "pdd": 4399
+      "pdd": 4399,
+      "ref": null
     },
     "specs": {
       "suction": "18000Pa",
@@ -658,7 +681,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "suction": "6000Pa",
@@ -686,7 +710,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -714,7 +739,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4499,
-      "pdd": 4099
+      "pdd": 4099,
+      "ref": null
     },
     "specs": {
       "suction": "11000Pa",
@@ -742,7 +768,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2499
+      "pdd": 2499,
+      "ref": null
     },
     "specs": {
       "suction": "5800Pa",
@@ -770,7 +797,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "suction": "12000Pa",
@@ -798,7 +826,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "suction": "7000Pa",
@@ -827,7 +856,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1299
+      "pdd": 1299,
+      "ref": null
     },
     "specs": {
       "suction": "5000Pa",
@@ -855,7 +885,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "suction": "7000Pa",
@@ -883,7 +914,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "suction": "5000Pa",
@@ -911,7 +943,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2699,
-      "pdd": 2399
+      "pdd": 2399,
+      "ref": null
     },
     "specs": {
       "suction": "8000Pa",
@@ -939,7 +972,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "suction": "4000Pa",
@@ -967,7 +1001,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2199
+      "pdd": 2199,
+      "ref": null
     },
     "specs": {
       "suction": "7000Pa",
@@ -996,7 +1031,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6799,
-      "pdd": 6399
+      "pdd": 6399,
+      "ref": null
     },
     "specs": {
       "suction": "20000Pa",
@@ -1025,7 +1061,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "suction": "19000Pa",
@@ -1053,7 +1090,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5299,
-      "pdd": 4899
+      "pdd": 4899,
+      "ref": null
     },
     "specs": {
       "suction": "16600Pa",
@@ -1082,7 +1120,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5799,
-      "pdd": 5399
+      "pdd": 5399,
+      "ref": null
     },
     "specs": {
       "suction": "18000Pa",
@@ -1111,7 +1150,8 @@ const ROBOT_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4499,
-      "pdd": 4199
+      "pdd": 4199,
+      "ref": null
     },
     "specs": {
       "suction": "20000Pa",

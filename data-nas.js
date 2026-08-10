@@ -15,7 +15,8 @@ const NAS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2499,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "bays": "2盘位",
@@ -41,7 +42,8 @@ const NAS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4169,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "bays": "4盘位",
@@ -67,7 +69,8 @@ const NAS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2499,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "bays": "4盘位",
@@ -93,7 +96,8 @@ const NAS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2679,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "bays": "2盘位",
@@ -119,7 +123,8 @@ const NAS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 7597,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "bays": "4盘位",

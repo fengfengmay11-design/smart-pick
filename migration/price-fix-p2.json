@@ -1,0 +1,58 @@
+[
+  {
+    "product_id": "boox-boox-go-color-7",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。文石中国官网（zh.boox.com）在售线为 Leaf5/P6/Poke7/NoteX6/T10C 等，无 Go Color 7；仅海外/港澳台渠道在售（全球店 Gen1 原价 $219.99）。无法提供可信国行价。"
+  },
+  {
+    "product_id": "boox-boox-page",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。文石中国官网未上架 Page 系列；仅加拿大/台湾海外店在售（$219.99）。无法提供可信国行价。"
+  },
+  {
+    "product_id": "asus-asus-zenwifi-bq16",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。华硕中国 ZenWiFi 在售为 BT8P/BD4/XD4 Pro/XT9/Pro XT12/XD6/AX Mini/AX XT8，无 BQ16；仅跨境渠道见 BQ16 Pro 单只装（约 ¥7564，登录墙源已排除）。无国内自营价。"
+  },
+  {
+    "product_id": "netgear-netgear-orbi-970-rbe973",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。仅京东全球购跨境在售（标价约 ¥49997.82，实付约 ¥40857.93），美国官价 $1999.99。无中国大陆自营渠道价。"
+  },
+  {
+    "product_id": "benq-gp520",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。明基中国官网（benq.com.cn）在售投影为 X3000/X3100 游戏、W 系列影院、i/TK 系列客厅，无 GP 系列；国际价 $999/£999/€1200。无国行价。"
+  },
+  {
+    "product_id": "sony-vpl-xw5000es",
+    "price": 35999,
+    "source": "ref",
+    "source_url": "https://detail.zol.com.cn/projector/index1424670.shtml",
+    "note": "京东有售。ZOL 参考报价 ￥35999、标京东 ￥35999；京东自营「索尼投影京东自营旗舰店」常卖价约 ￥36999（促销含幕布套装低至 ￥31999）。取裸机主流参考价 ￥35999。"
+  },
+  {
+    "product_id": "anker-anker-675-usb-c-docking-station-a8377",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货。仅 anker.com 美/欧站在售（$249.99），中国官网无此型号在售。无国行价。"
+  },
+  {
+    "product_id": "lg-s95tr",
+    "price": 5599,
+    "source": "jd",
+    "source_url": "https://cu.manmanbuy.com/discuxiao_434786366.aspx",
+    "note": "京东自营「LG音响京东自营旗舰店」商品面价 ￥5599；活动到手价区间约 ￥4740–5959（深圳/国补+PLUS）。取官方面价 ￥5599。"
+  }
+]

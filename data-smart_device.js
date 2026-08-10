@@ -15,7 +15,8 @@ const SMART_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "智能中控屏",
@@ -39,7 +40,8 @@ const SMART_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": 7399
     },
     "specs": {
       "type": "智能中控屏",
@@ -63,7 +65,8 @@ const SMART_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3499,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "智能门锁",

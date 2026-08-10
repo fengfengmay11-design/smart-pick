@@ -58,7 +58,16 @@
   .page.active { display:block; }
 
   /* 品类 Tab */
-  .cat-tabs { display:flex; gap:6px; padding:4px 0 14px; flex-wrap:wrap; }
+  .cat-nav { padding:4px 0 12px; }
+  .cat-group { margin-bottom:6px; }
+  .cat-group-hd { display:flex; align-items:center; gap:6px; cursor:pointer; padding:6px 2px; user-select:none; }
+  .cat-group-name { font-size:13px; font-weight:600; color:var(--text-2, #666); }
+  .cat-group-cnt { font-size:11px; color:#999; background:#f1f1f4; border-radius:8px; padding:0 6px; line-height:16px; }
+  .cat-group-arrow { font-size:11px; color:#999; margin-left:auto; }
+  .cat-group-hd:hover .cat-group-name { color:var(--primary); }
+  .cat-group .cat-tabs { display:none; }
+  .cat-group.open .cat-tabs { display:flex; }
+  .cat-tabs { display:flex; gap:6px; padding:2px 0 8px; flex-wrap:wrap; }
   .cat-tab {
     padding:8px 16px; border-radius:22px; font-size:13px; font-weight:600;
     cursor:pointer; background:var(--card-bg); color:var(--text-secondary);
@@ -781,8 +790,111 @@
 <script src="data-tv.js"></script>
 <script src="data-watch.js"></script>
 <script src="data-keyboard.js"></script>
+<!-- Step 9 新增品类数据（全部由 migration/build-data-js.js 从 database/v2 生成） -->
+<script src="data-mouse.js"></script>
+<script src="data-computer_system.js"></script>
+<script src="data-pc_hardware.js"></script>
+<script src="data-dock.js"></script>
+<script src="data-mobile_storage.js"></script>
+<script src="data-ereader.js"></script>
+<script src="data-projector.js"></script>
+<script src="data-soundbar.js"></script>
+<script src="data-speaker.js"></script>
+<script src="data-microphone.js"></script>
+<script src="data-webcam.js"></script>
+<script src="data-lens.js"></script>
+<script src="data-action_cam.js"></script>
+<script src="data-gimbal.js"></script>
+<script src="data-drone.js"></script>
+<script src="data-console.js"></script>
+<script src="data-handheld_console.js"></script>
+<script src="data-gamepad.js"></script>
+<script src="data-racing_wheel.js"></script>
+<script src="data-smartband.js"></script>
+<script src="data-smartring.js"></script>
+<script src="data-smartglasses.js"></script>
+<script src="data-vr.js"></script>
+<script src="data-ar.js"></script>
+<script src="data-router.js"></script>
+<script src="data-mesh.js"></script>
+<script src="data-switch.js"></script>
+<script src="data-nas.js"></script>
+<script src="data-smart_device.js"></script>
+<script src="data-ai_device.js"></script>
+<script src="data-robot_device.js"></script>
 <script src="engine.js"></script>
 <script>
+// ==================== 品类配置公共工具 ====================
+// 价格通道：jd(京东) / pdd(拼多多) / ref(品牌官网或第三方权威报价，统一显示为「参考价」)
+// 注意：不能用 Math.min(a||0, b||0)——缺失通道会被当成 0，导致整条商品显示 ¥0。
+function pickPrice(item) {
+  const p = item && item.prices;
+  if (!p) return 0;
+  const vals = [p.jd, p.pdd, p.ref].filter(v => typeof v === 'number' && v > 0);
+  return vals.length ? Math.min(...vals) : 0;
+}
+function pickSource(item) {
+  const p = (item && item.prices) || {};
+  const cand = [
+    { platform: '京东',   price: p.jd,  shopType: '自营/POP' },
+    { platform: '拼多多', price: p.pdd, shopType: '百亿补贴' },
+    { platform: '参考价', price: p.ref, shopType: '官网/第三方报价' },
+  ].filter(x => typeof x.price === 'number' && x.price > 0);
+  if (!cand.length) return { platform: '—', price: 0, shopType: '暂无报价' };
+  return cand.reduce((a, b) => (b.price < a.price ? b : a));
+}
+// 由断点生成价格区间：PR(1000,2000) => 1000以下 / 1000～2000 / 2000以上
+function PR(...bps) {
+  const out = []; let prev = 0;
+  for (const b of bps) { out.push({ label: prev === 0 ? `${b}元以下` : `${prev}～${b}元`, min: prev, max: b }); prev = b; }
+  out.push({ label: `${prev}元以上`, min: prev, max: Infinity });
+  return out;
+}
+// 拼接规格行：自动跳过空值，单段过长截断
+const cut = (s, n) => { s = String(s == null ? '' : s); return s.length > n ? s.slice(0, n) + '…' : s; };
+const j = (...xs) => xs.map(x => (x == null ? '' : String(x))).filter(s => s && s !== '0').map(s => cut(s, 24)).join(' · ');
+
+// ---------- 手机的分容量价格（storageOptions 结构）----------
+// 同样禁止 Math.min(priceJd, pricePdd)：任一通道为 null 会被强转成 0。
+function soPrice(o) {
+  if (!o) return 0;
+  const vals = [o.priceJd, o.pricePdd].filter(v => typeof v === 'number' && v > 0);
+  return vals.length ? Math.min(...vals) : 0;
+}
+// 列表卡片的「起」价：全部容量中真实存在的最低价
+function soMinAll(item) {
+  const vals = (item.storageOptions || []).map(soPrice).filter(v => v > 0);
+  return vals.length ? Math.min(...vals) : 0;
+}
+// 最低价对应的容量选项（用于展示来源平台）
+function soBestOpt(item) {
+  let best = null, bp = Infinity;
+  for (const o of (item.storageOptions || [])) {
+    const p = soPrice(o);
+    if (p > 0 && p < bp) { bp = p; best = o; }
+  }
+  return best;
+}
+// storage 传入时只看该容量（该容量无价就如实返回「暂无报价」，不拿别的容量顶包）
+function soSource(item, storage) {
+  const opts = (item && item.storageOptions) || [];
+  const o = (storage != null ? opts.find(x => x.storage === storage) : null) || soBestOpt(item);
+  if (!o) return { platform: '—', price: 0, shopType: '暂无报价' };
+  const cand = [
+    { platform: '京东',   price: o.priceJd,  shopType: o.shopTypeJd  || '' },
+    { platform: '拼多多', price: o.pricePdd, shopType: o.shopTypePdd || '' },
+  ].filter(x => typeof x.price === 'number' && x.price > 0);
+  if (!cand.length) return { platform: '—', price: 0, shopType: '暂无报价' };
+  return cand.reduce((a, b) => (b.price < a.price ? b : a));
+}
+// 单通道展示用：null/0 一律显示 '—'，杜绝「¥null」
+const yuan = (v) => (typeof v === 'number' && v > 0) ? ('¥' + v) : '—';
+// 主价格标签：无价时如实说「暂无报价」，绝不用 ¥0 冒充真实成交价
+const priceLabel = (v) => (typeof v === 'number' && v > 0) ? ('¥' + v) : '暂无报价';
+const sourceLabel = (s) => (s && s.price > 0)
+  ? ((s.platform || '') + (s.shopType ? ' · ' + s.shopType : ''))
+  : '未查到国行在售报价';
+
 // ==================== 品类配置 ====================
 const CATEGORIES = {
   phone: {
@@ -798,12 +910,12 @@ const CATEGORIES = {
       { label: "5000～7000元", min: 5000, max: 7000 },
       { label: "7000元以上", min: 7000, max: Infinity }
     ],
-    getPrice: (item) => { const o=item.storageOptions.find(x=>x.storage===item.defaultStorage)||item.storageOptions[0]; return o?Math.min(o.priceJd,o.pricePdd):0; },
+    getPrice: (item) => soMinAll(item),
     getListLine1: (item) => (item.ram||'')+'+'+item.defaultStorage+' · 默认版本',
     getListLine2: (item) => item.screen.size+'英寸 · '+item.body.weight+'g · '+item.screen.type,
     getTags: (item) => item.tags.slice(0,3),
-    getStorage: (item,storage) => { const o=item.storageOptions.find(x=>x.storage===storage)||item.storageOptions[0]; return o?Math.min(o.priceJd,o.pricePdd):0; },
-    getPriceSource: (item,storage) => { const o=item.storageOptions.find(x=>x.storage===storage)||item.storageOptions[0]; if(!o)return{platform:'',price:0}; const jd=o.priceJd||0,pdd=o.pricePdd||0; return pdd<jd?{platform:'拼多多',price:pdd,shopType:o.shopTypePdd||''}:{platform:'京东',price:jd,shopType:o.shopTypeJd||''}; },
+    getStorage: (item,storage) => { const o=(item.storageOptions||[]).find(x=>x.storage===storage); return o ? soPrice(o) : soMinAll(item); },
+    getPriceSource: (item,storage) => soSource(item, storage),
     storageOptions: (item) => item.storageOptions,
     filters: ['brand','price','screen','5G','nfc','dualSim'],
   },
@@ -820,12 +932,12 @@ const CATEGORIES = {
       { label: "10000～15000元", min: 10000, max: 15000 },
       { label: "15000元以上", min: 15000, max: Infinity }
     ],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.vram||0)+'GB '+ (item.specs?.vramType||'') +' · '+ (item.specs?.busInterface||''),
     getListLine2: (item) => 'CUDA:'+(item.specs?.shaders||0)+' · Boost:'+(item.specs?.boostClock||0)+'MHz · TDP:'+(item.specs?.tdp||0)+'W',
     getTags: (item) => item.tags.slice(0,3),
     getStorage: (item) => 0,
-    getPriceSource: (item) => ({platform: item.prices?.pdd < item.prices?.jd ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: (item) => [],
     filters: ['brand','price'],
   },
@@ -835,12 +947,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["格力","美的","海尔","小米","TCL","奥克斯"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～5000元",min:3000,max:5000},{label:"5000～7000元",min:5000,max:7000},{label:"7000元以上",min:7000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.type||'')+' · '+(item.specs?.horsepower||'')+' · '+(item.specs?.energyRating||''),
     getListLine2: (item) => '制冷'+(item.specs?.coolingCapacity||0)+'W · 噪音'+(item.specs?.noise||0)+'dB · '+(item.specs?.area||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -850,12 +962,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["石头","追觅","科沃斯","云鲸","小米","360"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～4000元",min:3000,max:4000},{label:"4000～5000元",min:4000,max:5000},{label:"5000元以上",min:5000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.suction||'')+' · 电池'+(item.specs?.battery||'')+' · '+(item.specs?.baseStation?'全能基站':''),
     getListLine2: (item) => '高度'+(item.specs?.height||'')+' · '+(item.specs?.lidar?'LDS激光导航':'')+' · '+(item.specs?.obstacleAvoidance||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -865,12 +977,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["苹果","华为","联想","小米","华硕","戴尔","荣耀","惠普","宏碁","微软"],
     priceRanges: [{label:"5000元以下",min:0,max:5000},{label:"5000～7000元",min:5000,max:7000},{label:"7000～10000元",min:7000,max:10000},{label:"10000元以上",min:10000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.cpu||'')+' · '+(item.specs?.ram||'')+' · '+(item.specs?.storage||''),
     getListLine2: (item) => (item.specs?.screen||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.weight||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -880,12 +992,12 @@ const CATEGORIES = {
     defaultSort: 'price-desc',
     brands: ["AMD","Intel"],
     priceRanges: [{label:"1500元以下",min:0,max:1500},{label:"1500～2500元",min:1500,max:2500},{label:"2500～4000元",min:2500,max:4000},{label:"4000元以上",min:4000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.cores||'')+' · Base '+(item.specs?.baseClock||'')+' · Boost '+(item.specs?.boostClock||''),
     getListLine2: (item) => 'TDP '+(item.specs?.tdp||'')+' · '+(item.specs?.cache||'')+' · '+(item.specs?.socket||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -895,12 +1007,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["苹果","索尼","Bose","华为","小米","三星","OPPO","vivo","一加","森海塞尔","Beats","JBL","Anker","漫步者"],
     priceRanges: [{label:"1000元以下",min:0,max:1000},{label:"1000～2000元",min:1000,max:2000},{label:"2000～3000元",min:2000,max:3000},{label:"3000元以上",min:3000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.type||'')+' · '+(item.specs?.noise||'')+' · '+(item.specs?.driver||''),
     getListLine2: (item) => '续航 '+(item.specs?.battery||'')+' · '+ (item.specs?.codec||'')+' · '+(item.specs?.weight||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -910,12 +1022,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["戴尔","三星","LG","华硕","AOC","小米","惠普","明基","HKC","科睿"],
     priceRanges: [{label:"2000元以下",min:0,max:2000},{label:"2000～4000元",min:2000,max:4000},{label:"4000～6000元",min:4000,max:6000},{label:"6000元以上",min:6000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.refreshRate||''),
     getListLine2: (item) => (item.specs?.panel||'')+' · '+(item.specs?.hdr||'')+' · '+(item.specs?.ports||'').substring(0,40),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -925,12 +1037,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["苹果","华为","小米","三星","荣耀","联想","OPPO","vivo"],
     priceRanges: [{label:"2000元以下",min:0,max:2000},{label:"2000～4000元",min:2000,max:4000},{label:"4000～6000元",min:4000,max:6000},{label:"6000元以上",min:6000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.chip||'')+' · '+(item.specs?.ram||'')+' · '+(item.specs?.storage||''),
     getListLine2: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.refreshRate||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -940,12 +1052,12 @@ const CATEGORIES = {
     defaultSort: 'price-desc',
     brands: ["索尼","佳能","尼康","富士","松下"],
     priceRanges: [{label:"5000元以下",min:0,max:5000},{label:"5000～10000元",min:5000,max:10000},{label:"10000～15000元",min:10000,max:15000},{label:"15000元以上",min:15000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.sensor||'')+' · '+(item.specs?.resolution||''),
     getListLine2: (item) => '视频'+(item.specs?.video||'')+' · '+(item.specs?.mount||'')+' · 防抖'+(item.specs?.ibis||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -955,12 +1067,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["小米","海信","TCL","索尼","雷鸟","华为","创维","长虹","三星","LG"],
     priceRanges: [{label:"3000元以下",min:0,max:3000},{label:"3000～5000元",min:3000,max:5000},{label:"5000～8000元",min:5000,max:8000},{label:"8000元以上",min:8000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.resolution||'')+' · '+(item.specs?.panel||''),
     getListLine2: (item) => '刷新'+(item.specs?.refreshRate||'')+' · '+(item.specs?.hdr||'')+' · '+(item.specs?.brightness||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -970,12 +1082,12 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["苹果","华为","三星","小米","荣耀","华米","佳明"],
     priceRanges: [{label:"1000元以下",min:0,max:1000},{label:"1000～2000元",min:1000,max:2000},{label:"2000～3000元",min:2000,max:3000},{label:"3000元以上",min:3000,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.size||'')+' · '+(item.specs?.screen||''),
     getListLine2: (item) => '续航'+(item.specs?.battery||'')+' · '+(item.specs?.gps||'')+' · '+(item.specs?.health||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
   },
@@ -985,21 +1097,356 @@ const CATEGORIES = {
     defaultSort: 'sales',
     brands: ["罗技","阿米洛","黑爵","腹灵","杜伽","Keychron","Akko","RK"],
     priceRanges: [{label:"300元以下",min:0,max:300},{label:"300～600元",min:300,max:600},{label:"600元以上",min:600,max:Infinity}],
-    getPrice: (item) => Math.min(item.prices?.jd||0, item.prices?.pdd||0),
+    getPrice: pickPrice,
     getListLine1: (item) => (item.specs?.layout||'')+' · '+(item.specs?.switch||''),
     getListLine2: (item) => '连接'+(item.specs?.connection||'')+' · '+(item.specs?.battery||''),
     getTags: (item) => item.tags.slice(0,3),
     getStorage: () => 0,
-    getPriceSource: (item) => ({platform: (item.prices?.pdd || 0) < (item.prices?.jd || 0) ? '拼多多' : '京东', price: Math.min(item.prices?.jd||0,item.prices?.pdd||0), shopType:'参考价'}),
+    getPriceSource: pickSource,
     storageOptions: () => [],
     filters: ['brand','price'],
-  }
+  },
+
+  // ============ Step 9 新增品类（均为 database/v2 构建产物，前端只做展示配置） ============
+  mouse: {
+    name: '鼠标', icon: '🖱️', data: () => MOUSE_DATA, defaultSort: 'sales',
+    brands: ["雷蛇","赛睿","海盗船","卓威","巨爪"],
+    priceRanges: PR(400, 600, 800),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.connection, i.specs?.dpi, i.specs?.polling_rate),
+    getListLine2: (i) => j(i.specs?.sensor, i.specs?.weight, i.specs?.shape),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  computer_system: {
+    name: '台式整机', icon: '🗄️', data: () => COMPUTER_SYSTEM_DATA, defaultSort: 'price-desc',
+    brands: ["苹果","联想","机械革命"],
+    priceRanges: PR(6000, 9000, 12000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.cpu, i.specs?.gpu),
+    getListLine2: (i) => j(i.specs?.ram, i.specs?.storage, i.specs?.screen_size),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  pc_hardware: {
+    name: 'DIY配件', icon: '🔧', data: () => PC_HARDWARE_DATA, defaultSort: 'sales',
+    brands: ["猫头鹰","海韵","英睿达","技嘉","金士顿"],
+    priceRanges: PR(1200, 1500, 1900),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.type, i.specs?.interface),
+    getListLine2: (i) => j(i.specs?.form_factor, i.specs?.compatibility),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  dock: {
+    name: '扩展坞', icon: '🔌', data: () => DOCK_DATA, defaultSort: 'sales',
+    brands: ["绿联","Anker"],
+    priceRanges: PR(1000, 1500, 2500),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.ports, i.specs?.interface),
+    getListLine2: (i) => j(i.specs?.power_delivery, i.specs?.compatibility),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  mobile_storage: {
+    name: '移动存储', icon: '💾', data: () => MOBILE_STORAGE_DATA, defaultSort: 'sales',
+    brands: ["三星","英睿达","金士顿"],
+    priceRanges: PR(1000, 1500, 2600),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.capacity, i.specs?.interface),
+    getListLine2: (i) => j('读'+(i.specs?.read_speed||'—'), '写'+(i.specs?.write_speed||'—'), i.specs?.form_factor),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  ereader: {
+    name: '电子书', icon: '📖', data: () => EREADER_DATA, defaultSort: 'sales',
+    brands: ["亚马逊","掌阅","文石"],
+    priceRanges: PR(1000, 1500, 2000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.screen_size, i.specs?.resolution, i.specs?.panel),
+    getListLine2: (i) => j(i.specs?.storage, i.specs?.battery, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  projector: {
+    name: '投影仪', icon: '📽️', data: () => PROJECTOR_DATA, defaultSort: 'sales',
+    brands: ["极米","爱普生","坚果","明基","索尼"],
+    priceRanges: PR(4000, 7000, 20000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.brightness, i.specs?.resolution, i.specs?.tech),
+    getListLine2: (i) => j(i.specs?.throw_ratio, i.specs?.contrast, i.specs?.os),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  soundbar: {
+    name: '回音壁', icon: '🎵', data: () => SOUNDBAR_DATA, defaultSort: 'sales',
+    brands: ["三星","索尼","LG"],
+    priceRanges: PR(6000, 7000, 7500),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.channels, i.specs?.power, i.specs?.dolby),
+    getListLine2: (i) => j(i.specs?.subwoofer, i.specs?.connectivity),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  speaker: {
+    name: '音箱', icon: '🔊', data: () => SPEAKER_DATA, defaultSort: 'sales',
+    brands: ["JBL","Bose","Marshall","索尼"],
+    priceRanges: PR(1500, 2000, 2800),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.driver, i.specs?.power),
+    getListLine2: (i) => j(i.specs?.battery, i.specs?.waterproof, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  microphone: {
+    name: '麦克风', icon: '🎤', data: () => MICROPHONE_DATA, defaultSort: 'sales',
+    brands: ["舒尔","RØDE"],
+    priceRanges: PR(1200, 1800, 2400),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.pattern, i.specs?.connectivity),
+    getListLine2: (i) => j(i.specs?.frequency_response, i.specs?.sample_rate),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  webcam: {
+    name: '摄像头', icon: '📹', data: () => WEBCAM_DATA, defaultSort: 'sales',
+    brands: ["罗技","睿魔","影石","Elgato"],
+    priceRanges: PR(1200, 1400, 1700),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.resolution, i.specs?.fps, i.specs?.fov),
+    getListLine2: (i) => j(i.specs?.autofocus, i.specs?.microphone, i.specs?.connection),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  lens: {
+    name: '镜头', icon: '🔭', data: () => LENS_DATA, defaultSort: 'price-desc',
+    brands: ["索尼","尼康","佳能"],
+    priceRanges: PR(20000, 30000, 40000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.mount, i.specs?.focal_length, i.specs?.aperture),
+    getListLine2: (i) => j(i.specs?.stabilization, i.specs?.weight, i.specs?.filter_thread),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  action_cam: {
+    name: '运动相机', icon: '🎥', data: () => ACTION_CAM_DATA, defaultSort: 'sales',
+    brands: ["GoPro","大疆","影石"],
+    priceRanges: PR(2000, 2500, 3000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.resolution, i.specs?.fps, i.specs?.stabilization),
+    getListLine2: (i) => j(i.specs?.waterproof, i.specs?.battery, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  gimbal: {
+    name: '稳定器', icon: '🎬', data: () => GIMBAL_DATA, defaultSort: 'sales',
+    brands: ["大疆"],
+    priceRanges: PR(1000, 3000, 8000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.axes, i.specs?.payload),
+    getListLine2: (i) => j(i.specs?.battery, i.specs?.weight, i.specs?.compatibility),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  drone: {
+    name: '无人机', icon: '🚁', data: () => DRONE_DATA, defaultSort: 'price-desc',
+    brands: ["大疆"],
+    priceRanges: PR(7000, 10000, 14000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.camera_resolution, i.specs?.gimbal),
+    getListLine2: (i) => j('续航'+(i.specs?.flight_time||'—'), i.specs?.range, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  console: {
+    name: '游戏主机', icon: '🕹️', data: () => CONSOLE_DATA, defaultSort: 'sales',
+    brands: ["索尼","微软","任天堂"],
+    priceRanges: PR(4000, 5000, 6000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.cpu, i.specs?.gpu),
+    getListLine2: (i) => j(i.specs?.storage, i.specs?.resolution, i.specs?.disc_drive),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  handheld_console: {
+    name: '游戏掌机', icon: '👾', data: () => HANDHELD_CONSOLE_DATA, defaultSort: 'sales',
+    brands: ["Valve","华硕","联想","微星"],
+    priceRanges: PR(5000, 7000, 9000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.cpu, i.specs?.gpu),
+    getListLine2: (i) => j(i.specs?.screen_size, i.specs?.refresh_rate, i.specs?.battery),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  gamepad: {
+    name: '游戏手柄', icon: '🎮', data: () => GAMEPAD_DATA, defaultSort: 'sales',
+    brands: ["索尼","雷蛇","八位堂"],
+    priceRanges: PR(300, 800, 1500),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.connectivity, i.specs?.compatibility),
+    getListLine2: (i) => j(i.specs?.features, i.specs?.battery, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  racing_wheel: {
+    name: '赛车方向盘', icon: '🏎️', data: () => RACING_WHEEL_DATA, defaultSort: 'price-desc',
+    brands: ["图马思特","罗技","Fanatec"],
+    priceRanges: PR(4000, 8000, 15000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.force_feedback, i.specs?.rotation),
+    getListLine2: (i) => j(i.specs?.pedals, i.specs?.compatibility),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  smartband: {
+    name: '智能手环', icon: '📿', data: () => SMARTBAND_DATA, defaultSort: 'sales',
+    brands: ["小米","华为","荣耀"],
+    priceRanges: PR(200, 250, 300),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.screen, i.specs?.battery),
+    getListLine2: (i) => j(i.specs?.health, i.specs?.waterproof, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  smartring: {
+    name: '智能戒指', icon: '💍', data: () => SMARTRING_DATA, defaultSort: 'sales',
+    brands: ["Oura","三星","Amazfit"],
+    priceRanges: PR(1500, 2500, 3300),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.battery, i.specs?.sensor),
+    getListLine2: (i) => j(i.specs?.health, i.specs?.waterproof, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  smartglasses: {
+    name: '智能眼镜', icon: '👓', data: () => SMARTGLASSES_DATA, defaultSort: 'sales',
+    brands: ["小米","Rokid","雷鸟"],
+    priceRanges: PR(2000, 2800, 3600),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.camera, i.specs?.battery),
+    getListLine2: (i) => j(i.specs?.microphone, i.specs?.connectivity, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  vr: {
+    name: 'VR头显', icon: '🥽', data: () => VR_DATA, defaultSort: 'sales',
+    brands: ["小鸟看看","Meta","苹果"],
+    priceRanges: PR(5000, 10000, 30000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.resolution, i.specs?.refresh_rate),
+    getListLine2: (i) => j(i.specs?.tracking, i.specs?.platform, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  ar: {
+    name: 'AR眼镜', icon: '🕶️', data: () => AR_DATA, defaultSort: 'sales',
+    brands: ["XREAL","雷鸟"],
+    priceRanges: PR(2000, 3000, 4000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.display, i.specs?.resolution),
+    getListLine2: (i) => j(i.specs?.fov, i.specs?.platform, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  router: {
+    name: '路由器', icon: '📶', data: () => ROUTER_DATA, defaultSort: 'sales',
+    brands: ["小米","华为","普联","华硕"],
+    priceRanges: PR(500, 1000, 2000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.wifi_standard, i.specs?.speed, i.specs?.bands),
+    getListLine2: (i) => j(i.specs?.cpu, i.specs?.ram, i.specs?.ports),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  mesh: {
+    name: 'Mesh组网', icon: '🛜', data: () => MESH_DATA, defaultSort: 'sales',
+    brands: ["华为","华硕","普联","网件"],
+    priceRanges: PR(600, 1000, 2000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.nodes, i.specs?.wifi_standard, i.specs?.speed),
+    getListLine2: (i) => j(i.specs?.coverage, i.specs?.ports),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  switch: {
+    name: '交换机', icon: '🔗', data: () => SWITCH_DATA, defaultSort: 'sales',
+    brands: ["小米","普联","腾达"],
+    priceRanges: PR(300, 500, 800),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.ports, i.specs?.speed),
+    getListLine2: (i) => j(i.specs?.managed, i.specs?.poe, i.specs?.layers),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  nas: {
+    name: 'NAS存储', icon: '🗃️', data: () => NAS_DATA, defaultSort: 'price-desc',
+    brands: ["群晖","绿联","威联通"],
+    priceRanges: PR(3000, 5000, 7500),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.bays, i.specs?.cpu, i.specs?.ram),
+    getListLine2: (i) => j(i.specs?.max_capacity, i.specs?.raid, i.specs?.ports),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  smart_device: {
+    name: '智能家居', icon: '🏠', data: () => SMART_DEVICE_DATA, defaultSort: 'sales',
+    brands: ["小米","华为"],
+    priceRanges: PR(2500, 3500, 7500),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.type, i.specs?.connectivity),
+    getListLine2: (i) => j(i.specs?.power, i.specs?.compatibility),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  ai_device: {
+    name: 'AI硬件', icon: '🧠', data: () => AI_DEVICE_DATA, defaultSort: 'sales',
+    brands: ["小米","科大讯飞"],
+    priceRanges: PR(2000, 4000, 8000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.type, i.specs?.model),
+    getListLine2: (i) => j(i.specs?.display, i.specs?.battery, i.specs?.connectivity),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
+  robot_device: {
+    name: '服务机器人', icon: '🤖', data: () => ROBOT_DEVICE_DATA, defaultSort: 'sales',
+    brands: ["小米","追觅","科沃斯"],
+    priceRanges: PR(5000, 10000, 15000),
+    getPrice: pickPrice,
+    getListLine1: (i) => j(i.specs?.type, i.specs?.navigation),
+    getListLine2: (i) => j(i.specs?.battery, i.specs?.sensors, i.specs?.weight),
+    getTags: (i) => i.tags.slice(0,3), getStorage: () => 0,
+    getPriceSource: pickSource, storageOptions: () => [], filters: ['brand','price'],
+  },
 };
+
+// ==================== 品类分组（导航折叠用） ====================
+// 44 个品类平铺会把首屏挤满，按大类分组、默认只展开前两组。
+const CATEGORY_GROUPS = [
+  { key: 'mobile',  name: '手机平板', cats: ['phone','tablet','ereader'] },
+  { key: 'pc',      name: '电脑硬件', cats: ['laptop','computer_system','cpu','gpu','pc_hardware','monitor','keyboard','mouse','dock','mobile_storage'] },
+  { key: 'av',      name: '影音娱乐', cats: ['tv','projector','soundbar','speaker','earphone','microphone','webcam'] },
+  { key: 'photo',   name: '影像拍摄', cats: ['camera','lens','action_cam','gimbal','drone'] },
+  { key: 'game',    name: '游戏设备', cats: ['console','handheld_console','gamepad','racing_wheel'] },
+  { key: 'wear',    name: '智能穿戴', cats: ['watch','smartband','smartring','smartglasses','vr','ar'] },
+  { key: 'network', name: '网络存储', cats: ['router','mesh','switch','nas'] },
+  { key: 'home',    name: '家居家电', cats: ['ac','robot','smart_device','ai_device','robot_device'] },
+];
+// 自检：确保分组覆盖了全部品类，漏掉的兜底塞进「其他」
+(function () {
+  const grouped = new Set(CATEGORY_GROUPS.flatMap(g => g.cats));
+  const missing = Object.keys(CATEGORIES).filter(k => !grouped.has(k));
+  if (missing.length) CATEGORY_GROUPS.push({ key: 'other', name: '其他', cats: missing });
+  CATEGORY_GROUPS.forEach(g => { g.cats = g.cats.filter(k => CATEGORIES[k]); });
+})();
+function groupOfCat(k) { return (CATEGORY_GROUPS.find(g => g.cats.includes(k)) || CATEGORY_GROUPS[0]).key; }
+
 function cat() { return CATEGORIES[state.category] || CATEGORIES.phone; }
 function d() { return cat().data(); }
 // ==================== 状态管理 ====================
 const state = {
   category: 'phone',
+  openGroups: ['mobile', 'pc'], // 默认展开的品类分组
   page: 'home',
   compareList: [], // [{phoneId, storage}]
   filterBrand: null,
@@ -1245,8 +1692,21 @@ function renderHome(page) {
         ${aiExamples().map(e => `<span class="asc-chip" data-q="${escapeHtml(e)}">${escapeHtml(e)}</span>`).join('')}
       </div>
     </div>
-    <div class="cat-tabs" id="catTabs">
-      ${Object.keys(CATEGORIES).map(k => `<div class="cat-tab${state.category===k?' active':''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
+    <div class="cat-nav" id="catTabs">
+      ${CATEGORY_GROUPS.map(g => {
+        const open = state.openGroups.includes(g.key) || g.cats.includes(state.category);
+        return `
+        <div class="cat-group${open ? ' open' : ''}">
+          <div class="cat-group-hd" data-group="${g.key}">
+            <span class="cat-group-name">${g.name}</span>
+            <span class="cat-group-cnt">${g.cats.length}</span>
+            <span class="cat-group-arrow">${open ? '▾' : '▸'}</span>
+          </div>
+          <div class="cat-tabs">
+            ${g.cats.map(k => `<div class="cat-tab${state.category === k ? ' active' : ''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
+          </div>
+        </div>`;
+      }).join('')}
     </div>
     <div class="search-box">
       <span class="s-icon">🔍</span>
@@ -1259,6 +1719,19 @@ function renderHome(page) {
     <div class="section-title">热门${C.name}</div>
     <div class="hot-list" id="hotList"></div>
   `;
+
+  // 品类分组折叠 / 展开
+  page.querySelectorAll('.cat-group-hd').forEach(hd => {
+    hd.addEventListener('click', function () {
+      const g = this.dataset.group;
+      const i = state.openGroups.indexOf(g);
+      // 当前选中品类所在的分组不允许收起（收起后用户会找不到自己在哪）
+      const cur = groupOfCat(state.category);
+      if (i >= 0) { if (g !== cur) state.openGroups.splice(i, 1); }
+      else state.openGroups.push(g);
+      navigateTo('home');
+    });
+  });
 
   // 品类切换
   page.querySelectorAll('.cat-tab').forEach(tab => {
@@ -1355,8 +1828,8 @@ function renderHome(page) {
       <div class="h-img">${phoneImage(phone)}</div>
       <div class="h-info">
         <div class="h-name">${phone.brand} ${phone.model}</div>
-        <div class="h-price">¥${priceSrc.price}</div>
-        <div class="h-source">${priceSrc.platform} · ${priceSrc.shopType || ''}</div>
+        <div class="h-price">${priceLabel(priceSrc.price)}</div>
+        <div class="h-source">${sourceLabel(priceSrc)}</div>
         <span class="h-tag">${phone.tags[0] || ''}</span>
       </div>
       <div class="h-add ${inList ? 'added' : (!canAddCompare() && !inList ? 'full' : '')}" data-phone="${phone.id}">${inList ? '✓' : '+'}</div>
@@ -1400,9 +1873,11 @@ function getFilteredPhones() {
     phones = phones.filter(p => p.brand === state.filterBrand);
   }
   if (state.filterPriceRange) {
+    const range = C.priceRanges.find(r => r.label === state.filterPriceRange);
     phones = phones.filter(p => {
       const price = C.getPrice(p);
-      const range = C.priceRanges.find(r => r.label === state.filterPriceRange);
+      // 无价商品不参与任何价格区间：否则会被当成 0 元塞进最低档
+      if (!(price > 0)) return false;
       return range && price >= range.min && price < range.max;
     });
   }
@@ -1474,10 +1949,16 @@ function getFilteredPhones() {
     else if (state.filterMonRes === '1080P') phones = phones.filter(p => (p.specs||{}).resolution && p.specs.resolution.includes('1920'));
   }
   // 排序
-  if (state.sortBy === 'price-asc') {
-    phones.sort((a, b) => cat().getPrice(a) - cat().getPrice(b));
-  } else if (state.sortBy === 'price-desc') {
-    phones.sort((a, b) => cat().getPrice(b) - cat().getPrice(a));
+  // 无价商品(getPrice=0)一律沉底：否则「价格↑」会把「暂无报价」排在最便宜的位置，产生误导。
+  if (state.sortBy === 'price-asc' || state.sortBy === 'price-desc') {
+    const asc = state.sortBy === 'price-asc';
+    phones.sort((a, b) => {
+      const pa = cat().getPrice(a) || 0, pb = cat().getPrice(b) || 0;
+      if (pa > 0 && pb <= 0) return -1;
+      if (pb > 0 && pa <= 0) return 1;
+      if (pa <= 0 && pb <= 0) return 0;
+      return asc ? pa - pb : pb - pa;
+    });
   } else if (state.sortBy === 'newest') {
     phones.sort((a, b) => b.launchDate.localeCompare(a.launchDate));
   } else if (state.sortBy === 'sales') {
@@ -1563,8 +2044,8 @@ function renderPhoneList(container) {
         <div class="pc-model">${phone.model}</div>
         <div class="pc-storage">${C.getListLine1(phone)}</div>
         <div class="pc-price-row">
-          <span class="pc-price">¥${priceSrc.price}</span>
-          <span class="pc-source">${priceSrc.platform} ${priceSrc.shopType || ''}</span>
+          <span class="pc-price">${priceLabel(priceSrc.price)}</span>
+          <span class="pc-source">${sourceLabel(priceSrc)}</span>
         </div>
         <div class="pc-specs">${C.getListLine2(phone)}</div>
         <div class="pc-tags">${C.getTags(phone).map(t => `<span class="pc-tag">${t}</span>`).join('')}</div>
@@ -1739,7 +2220,7 @@ function openStorageModal(phoneId, callback) {
     ${phone.storageOptions.map(opt => `
       <div class="sm-option${opt.storage === currentStorage ? ' selected' : ''}" data-storage="${opt.storage}">
         <span class="sm-storage">${phone.ram}+${opt.storage}</span>
-        <span class="sm-price">¥${Math.min(opt.priceJd, opt.pricePdd)}起</span>
+        <span class="sm-price">${soPrice(opt) ? '¥' + soPrice(opt) + '起' : '暂无报价'}</span>
       </div>
     `).join('')}
     <button class="sm-close" id="smClose">取消</button>
@@ -1778,8 +2259,8 @@ function openPhoneDetail(phoneId) {
       <div class="dm-model">${phone.model}</div>
       <div class="dm-colors">${phone.colors.join(' / ')}</div>
       <div class="dm-price-row">
-        <span class="dm-price">¥${priceSrc.price}</span>
-        <span class="dm-source">${priceSrc.platform} ${priceSrc.shopType || ''} · ${phone.lastVerified}</span>
+        <span class="dm-price">${priceLabel(priceSrc.price)}</span>
+        <span class="dm-source">${sourceLabel(priceSrc)} · ${phone.lastVerified}</span>
       </div>
       <div class="dm-tags">${phone.tags.map(t => `<span class="dm-tag">${t}</span>`).join('')}</div>
     </div>
@@ -1791,8 +2272,8 @@ function openPhoneDetail(phoneId) {
             <div class="dm-storage-row">
               <span class="dm-st-name">${phone.ram}+${opt.storage}</span>
               <span class="dm-st-prices">
-                <span class="dm-st-jd">¥${opt.priceJd}</span>
-                <span class="dm-st-pdd">¥${opt.pricePdd}</span>
+                <span class="dm-st-jd">${yuan(opt.priceJd)}</span>
+                <span class="dm-st-pdd">${yuan(opt.pricePdd)}</span>
               </span>
             </div>
           `).join('')}

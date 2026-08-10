@@ -15,7 +15,8 @@ const RACING_WHEEL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3399,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "compatibility": "PlayStation 5、PlayStation 4、PC",
@@ -40,7 +41,8 @@ const RACING_WHEEL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 14865,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "compatibility": "PC（国行版）；另有 PlayStation / Xbox 版本",
@@ -65,7 +67,8 @@ const RACING_WHEEL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "compatibility": "PC、Xbox（需搭配 Xbox 授权方向盘）",
@@ -91,7 +94,8 @@ const RACING_WHEEL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "compatibility": "PlayStation 5、PC、Xbox（需搭配 Xbox 授权方向盘）",

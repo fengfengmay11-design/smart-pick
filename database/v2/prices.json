@@ -17438,5 +17438,113 @@
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 1999
+  },
+  {
+    "price_id": "lenovo-legion-go_ref",
+    "product_id": "lenovo-legion-go",
+    "variant_id": null,
+    "source": "ref",
+    "price": 4899,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://m.lenovo.com.cn/wiki/product-doc-41360.html",
+    "note": "联想官方商城参考价，Z1 Extreme/16GB/512GB 幻影黑"
+  },
+  {
+    "price_id": "razer-wolverine-v3-pro_jd",
+    "product_id": "razer-wolverine-v3-pro",
+    "variant_id": null,
+    "source": "jd",
+    "price": 1399,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://g.pconline.com.cn/product/gameside/razer/2670379_price.html",
+    "note": "PConline 报价页：官方报价¥1479，京东挂牌¥1399"
+  },
+  {
+    "price_id": "8bitdo-ultimate-2-wireless_ref",
+    "product_id": "8bitdo-ultimate-2-wireless",
+    "variant_id": null,
+    "source": "ref",
+    "price": 269,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://finance.sina.com.cn/tech/digi/2026-06-23/doc-iniekeev9831640.shtml",
+    "note": "IT之家/新浪科技 2026-06-23：官方定价 ¥269"
+  },
+  {
+    "price_id": "oura-oura-ring-4_jd",
+    "product_id": "oura-oura-ring-4",
+    "variant_id": null,
+    "source": "jd",
+    "price": 3299,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://m.smzdm.com/p/178895428",
+    "note": "京东全球购（跨境）页面价 ¥3299，五社海外专营店"
+  },
+  {
+    "price_id": "sony-vpl-xw5000es_jd",
+    "product_id": "sony-vpl-xw5000es",
+    "variant_id": null,
+    "source": "jd",
+    "price": 35999,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://detail.zol.com.cn/projector/index1424670.shtml",
+    "note": "ZOL 参考报价 ¥35999，页内京东链接同价"
+  },
+  {
+    "price_id": "lg-s95tr_jd",
+    "product_id": "lg-s95tr",
+    "variant_id": null,
+    "source": "jd",
+    "price": 5599,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://m.smzdm.com/p/134097167/",
+    "note": "京东活动售价 ¥5599（国补后到手更低）"
+  },
+  {
+    "price_id": "huawei-s2_official",
+    "product_id": "huawei-s2",
+    "variant_id": null,
+    "source": "official",
+    "price": 7399,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://consumer.huawei.com/cn/wholehome/business-product/",
+    "note": "华为官网全屋智能商用产品页标价 ¥7399"
+  },
+  {
+    "price_id": "iflytek-ai-t20-pro_ref",
+    "product_id": "iflytek-ai-t20-pro",
+    "variant_id": null,
+    "source": "ref",
+    "price": 8999,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://detail.zol.com.cn/Mills/index1941367.shtml",
+    "note": "ZOL 参考报价 ¥8999（13.3英寸/512GB），天猫同价"
+  },
+  {
+    "price_id": "xiaomi-cyberdog-2-ms2242cn_ref",
+    "product_id": "xiaomi-cyberdog-2-ms2242cn",
+    "variant_id": null,
+    "source": "ref",
+    "price": 12999,
+    "currency": "CNY",
+    "price_type": "retail",
+    "last_updated_at": "2026-08-10",
+    "source_url": "https://news.zol.com.cn/828/8289893.html",
+    "note": "小米官方发布价 ¥12999（限量开发者产品）"
   }
 ]

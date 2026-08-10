@@ -15,7 +15,8 @@ const DOCK_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1239,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "13合1（HDMI 2.1、USB-C、USB-A、2.5G RJ45、SD/microSD、3.5mm音频等）",
@@ -41,7 +42,8 @@ const DOCK_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "12合1（HDMI 2.0、3×USB-A、2×USB-C、SD/microSD、3.5mm、RJ45千兆网口、Qi无线充电板）",
@@ -67,7 +69,8 @@ const DOCK_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2499,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "14合1（雷电5宿主口、DP、HDMI 2.1、多USB-C/A、2.5G网口、SD/microSD、3.5mm等）",

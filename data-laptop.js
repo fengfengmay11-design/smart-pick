@@ -15,7 +15,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "screen": "13.6寸 Liquid Retina",
@@ -43,7 +44,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 12999,
-      "pdd": 12199
+      "pdd": 12199,
+      "ref": null
     },
     "specs": {
       "screen": "14.2寸 Liquid Retina XDR",
@@ -71,7 +73,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 10999,
-      "pdd": 10199
+      "pdd": 10199,
+      "ref": null
     },
     "specs": {
       "screen": "14.2寸 OLED",
@@ -99,7 +102,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 9299
+      "pdd": 9299,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K OLED",
@@ -127,7 +131,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6499,
-      "pdd": 5999
+      "pdd": 5999,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 3.1K LCD",
@@ -155,7 +160,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K OLED",
@@ -181,7 +187,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 10999,
-      "pdd": 9999
+      "pdd": 9999,
+      "ref": null
     },
     "specs": {
       "screen": "14.5寸 3.2K OLED",
@@ -207,7 +214,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 13999,
-      "pdd": 12999
+      "pdd": 12999,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K OLED 240Hz",
@@ -234,7 +242,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 9299
+      "pdd": 9299,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 240Hz",
@@ -261,7 +270,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 19999,
-      "pdd": 18499
+      "pdd": 18499,
+      "ref": null
     },
     "specs": {
       "screen": "16.2寸 Liquid Retina XDR",
@@ -288,7 +298,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 9299
+      "pdd": 9299,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K OLED 触控",
@@ -316,7 +327,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K OLED",
@@ -343,7 +355,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "screen": "14.2寸 2.8K OLED 触控",
@@ -370,7 +383,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7999,
-      "pdd": 7499
+      "pdd": 7499,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 240Hz",
@@ -398,7 +412,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "screen": "15寸 PixelSense",
@@ -425,7 +440,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K IPS",
@@ -452,7 +468,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K IPS",
@@ -479,7 +496,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 1920×1200 IPS",
@@ -505,7 +523,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 120Hz",
@@ -532,7 +551,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4499,
-      "pdd": 4199
+      "pdd": 4199,
+      "ref": null
     },
     "specs": {
       "screen": "15.6寸 2.8K OLED",
@@ -560,7 +580,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7999,
-      "pdd": 7499
+      "pdd": 7499,
+      "ref": null
     },
     "specs": {
       "screen": "13.6寸 Liquid Retina",
@@ -587,7 +608,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4699
+      "pdd": 4699,
+      "ref": null
     },
     "specs": {
       "screen": "14.5寸 3K 120Hz",
@@ -613,7 +635,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7499,
-      "pdd": 6999
+      "pdd": 6999,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2560×1600 240Hz",
@@ -639,7 +662,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7499,
-      "pdd": 6999
+      "pdd": 6999,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 165Hz",
@@ -667,7 +691,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K OLED",
@@ -693,7 +718,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 240Hz",
@@ -721,7 +747,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5499,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "screen": "15.6寸 2.8K OLED 120Hz",
@@ -749,7 +776,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 9299
+      "pdd": 9299,
+      "ref": null
     },
     "specs": {
       "screen": "13.4寸 2.8K OLED",
@@ -775,7 +803,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8499,
-      "pdd": 7999
+      "pdd": 7999,
+      "ref": null
     },
     "specs": {
       "screen": "16.1寸 2.5K 240Hz",
@@ -803,7 +832,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6299,
-      "pdd": 5899
+      "pdd": 5899,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 165Hz",
@@ -831,7 +861,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3899,
-      "pdd": 3599
+      "pdd": 3599,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 2.8K 120Hz",
@@ -858,7 +889,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 11999,
-      "pdd": 11199
+      "pdd": 11199,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 240Hz",
@@ -884,7 +916,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 9399
+      "pdd": 9399,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 2.5K 240Hz",
@@ -911,7 +944,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "screen": "16.1寸 3.1K OLED 165Hz",
@@ -939,7 +973,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 1920×1200 IPS",
@@ -966,7 +1001,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 13999,
-      "pdd": 13199
+      "pdd": 13199,
+      "ref": null
     },
     "specs": {
       "screen": "16寸 4K QD-OLED 120Hz",
@@ -993,7 +1029,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 39999,
-      "pdd": 38499
+      "pdd": 38499,
+      "ref": null
     },
     "specs": {
       "screen": "18寸 4K Mini LED 120Hz",
@@ -1020,7 +1057,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6499,
-      "pdd": 5999
+      "pdd": 5999,
+      "ref": null
     },
     "specs": {
       "screen": "14.5寸 3K 120Hz",
@@ -1048,7 +1086,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 10499,
-      "pdd": 9799
+      "pdd": 9799,
+      "ref": null
     },
     "specs": {
       "screen": "15.3寸 Liquid Retina",
@@ -1076,7 +1115,8 @@ const LAPTOP_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "screen": "14寸 1920×1200 IPS",

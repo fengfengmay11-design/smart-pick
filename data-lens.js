@@ -16,7 +16,8 @@ const LENS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 43999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "mount": "索尼 E 卡口",
@@ -43,7 +44,8 @@ const LENS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 19338,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "mount": "尼康 Z 卡口",
@@ -70,7 +72,8 @@ const LENS_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 20499,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "mount": "佳能 RF 卡口",

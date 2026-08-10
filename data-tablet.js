@@ -14,7 +14,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 8999,
-      "pdd": 8699
+      "pdd": 8699,
+      "ref": null
     },
     "specs": {
       "size": "13英寸",
@@ -41,7 +42,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4799,
-      "pdd": 4499
+      "pdd": 4499,
+      "ref": null
     },
     "specs": {
       "size": "11英寸",
@@ -69,7 +71,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 5199,
-      "pdd": 4699
+      "pdd": 4699,
+      "ref": null
     },
     "specs": {
       "size": "13.2英寸",
@@ -95,7 +98,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2999,
-      "pdd": 2799
+      "pdd": 2799,
+      "ref": null
     },
     "specs": {
       "size": "12.4英寸",
@@ -122,7 +126,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4999,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "size": "11英寸",
@@ -149,7 +154,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1499,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "size": "12.1英寸",
@@ -176,7 +182,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1499,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "size": "12.7英寸",
@@ -204,7 +211,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 7999,
-      "pdd": 7699
+      "pdd": 7699,
+      "ref": null
     },
     "specs": {
       "size": "11英寸",
@@ -231,7 +239,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 6799,
-      "pdd": 6299
+      "pdd": 6299,
+      "ref": null
     },
     "specs": {
       "size": "13英寸",
@@ -258,7 +267,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3999,
-      "pdd": 3799
+      "pdd": 3799,
+      "ref": null
     },
     "specs": {
       "size": "8.3英寸",
@@ -285,7 +295,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2999,
-      "pdd": 2599
+      "pdd": 2599,
+      "ref": null
     },
     "specs": {
       "size": "10.9英寸",
@@ -312,7 +323,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2799,
-      "pdd": 2599
+      "pdd": 2599,
+      "ref": null
     },
     "specs": {
       "size": "11.5英寸",
@@ -339,7 +351,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "size": "11.5英寸",
@@ -366,7 +379,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1199,
-      "pdd": 1099
+      "pdd": 1099,
+      "ref": null
     },
     "specs": {
       "size": "11英寸",
@@ -394,7 +408,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2799,
-      "pdd": 2599
+      "pdd": 2599,
+      "ref": null
     },
     "specs": {
       "size": "11.2英寸",
@@ -421,7 +436,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1999,
-      "pdd": 1899
+      "pdd": 1899,
+      "ref": null
     },
     "specs": {
       "size": "11.2英寸",
@@ -448,7 +464,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1499,
-      "pdd": 1349
+      "pdd": 1349,
+      "ref": null
     },
     "specs": {
       "size": "12.1英寸",
@@ -475,7 +492,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 7199,
-      "pdd": 6699
+      "pdd": 6699,
+      "ref": null
     },
     "specs": {
       "size": "12.4英寸",
@@ -502,7 +520,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "size": "10.9英寸",
@@ -529,7 +548,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "size": "11.5英寸",
@@ -556,7 +576,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1099,
-      "pdd": 999
+      "pdd": 999,
+      "ref": null
     },
     "specs": {
       "size": "11.5英寸",
@@ -584,7 +605,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "14.5英寸",
@@ -611,7 +633,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3699,
-      "pdd": 3399
+      "pdd": 3399,
+      "ref": null
     },
     "specs": {
       "size": "13.2英寸",
@@ -638,7 +661,8 @@ const TABLET_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "13英寸",

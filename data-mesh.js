@@ -15,7 +15,8 @@ const MESH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "nodes": "4（1 母 + 3 子）",
@@ -41,7 +42,8 @@ const MESH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "nodes": "2",
@@ -67,7 +69,8 @@ const MESH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 529,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "nodes": "2",
@@ -93,7 +96,8 @@ const MESH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "nodes": "2 / 3",

@@ -15,7 +15,8 @@ const GAMEPAD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "connectivity": "无线（蓝牙）/ USB-C 有线",
@@ -39,8 +40,9 @@ const GAMEPAD_DATA = [
     "officialUrl": null,
     "lastVerified": "2026-08-10",
     "prices": {
-      "jd": null,
-      "pdd": null
+      "jd": 1399,
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "connectivity": "Razer HyperSpeed 无线 / USB-C 有线",
@@ -65,7 +67,8 @@ const GAMEPAD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": 269
     },
     "specs": {
       "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android、Apple）/ USB-C 有线",
@@ -90,7 +93,8 @@ const GAMEPAD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android）/ USB-C 有线",

@@ -15,7 +15,8 @@ const COMPUTER_SYSTEM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 8199,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "Apple M3 (8核CPU + 10核GPU)",
@@ -45,7 +46,8 @@ const COMPUTER_SYSTEM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 12249,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "Apple M4 (10核CPU + 10核GPU)",
@@ -75,7 +77,8 @@ const COMPUTER_SYSTEM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 5599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "Intel Core Ultra7 155H (16核)",
@@ -104,7 +107,8 @@ const COMPUTER_SYSTEM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 5999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "Intel Core i7-12800HX (16核24线程)",

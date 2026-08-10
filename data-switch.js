@@ -15,7 +15,8 @@ const SWITCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "4×2.5G + 2×10G SFP+",
@@ -40,7 +41,8 @@ const SWITCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 779,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "8×2.5G + 1×10G SFP+",
@@ -65,7 +67,8 @@ const SWITCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 279,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "ports": "8×2.5G + 2×10G SFP+",

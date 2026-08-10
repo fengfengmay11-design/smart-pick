@@ -14,7 +14,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4299,
-      "pdd": 3799
+      "pdd": 3799,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -41,7 +42,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -68,7 +70,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4499,
-      "pdd": 4199
+      "pdd": 4199,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -94,7 +97,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 6999,
-      "pdd": 5999
+      "pdd": 5999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -120,7 +124,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3299,
-      "pdd": 3099
+      "pdd": 3099,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -147,7 +152,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -173,7 +179,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "size": "75英寸",
@@ -200,7 +207,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "size": "55英寸",
@@ -226,7 +234,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -254,7 +263,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -282,7 +292,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 7499,
-      "pdd": 6999
+      "pdd": 6999,
+      "ref": null
     },
     "specs": {
       "size": "75英寸",
@@ -310,7 +321,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 5499,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -338,7 +350,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3799,
-      "pdd": 3499
+      "pdd": 3499,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -366,7 +379,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 8999,
-      "pdd": 8299
+      "pdd": 8299,
+      "ref": null
     },
     "specs": {
       "size": "75英寸",
@@ -393,7 +407,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -421,7 +436,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 12999,
-      "pdd": 11999
+      "pdd": 11999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -448,7 +464,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3799,
-      "pdd": 3499
+      "pdd": 3499,
+      "ref": null
     },
     "specs": {
       "size": "55英寸",
@@ -476,7 +493,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3199,
-      "pdd": 2899
+      "pdd": 2899,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -504,7 +522,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 5299,
-      "pdd": 4899
+      "pdd": 4899,
+      "ref": null
     },
     "specs": {
       "size": "75英寸",
@@ -532,7 +551,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -559,7 +579,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -586,7 +607,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2299,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -614,7 +636,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 11999,
-      "pdd": 10999
+      "pdd": 10999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",
@@ -642,7 +665,8 @@ const TV_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 13999,
-      "pdd": 12999
+      "pdd": 12999,
+      "ref": null
     },
     "specs": {
       "size": "65英寸",

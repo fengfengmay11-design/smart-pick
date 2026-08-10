@@ -1,0 +1,58 @@
+[
+  {
+    "product_id": "oura-oura-ring-4",
+    "price": 3299,
+    "source": "ref",
+    "source_url": "https://m.smzdm.com/p/178895428",
+    "note": "京东全球购现售¥3299，满1888减120后实付低至¥3179（2026-07-19爆料，店铺：五社海外专营店）；无国行，跨境渠道，尺寸需另购Sizing Kit。"
+  },
+  {
+    "product_id": "nintendo-nintendo-switch-2",
+    "price": 3300,
+    "source": "ref",
+    "source_url": "https://finance.sina.com.cn/roll/2026-05-10/doc-inhxktnp7814032.shtml",
+    "note": "中国大陆无国行（水货/平行进口）。2026-05-10报道主机标价普遍维持¥3300，叠加百亿补贴后部分商家成交价低至¥3129；9月起海外多国将涨价但国内暂未同步。"
+  },
+  {
+    "product_id": "valve-steam-deck-oled",
+    "price": 5999,
+    "source": "ref",
+    "source_url": "https://aiqicha.baidu.com/details/rankList?query=702fd3cf6c4cb37a67a890093dafbe36&type=20",
+    "note": "无国行官方渠道；国内第三方/保税仓现货参考价约¥5600-6000（京东保税仓约¥5279-5988），天猫促销到手约¥5999，取¥5999。Valve于2026-05起官方涨价至$789(512GB OLED)。"
+  },
+  {
+    "product_id": "lenovo-legion-go",
+    "price": 4899,
+    "source": "official",
+    "source_url": "https://m.lenovo.com.cn/wiki/product-doc-41360.html",
+    "note": "联想官方商城参考价¥4899（2026-07-08，实际以官网为准）。配置：AMD锐龙Z1 Extreme / 16GB / 512GB / 8.8英寸2560×1600 144Hz，分体式霍尔手柄。"
+  },
+  {
+    "product_id": "razer-wolverine-v3-pro",
+    "price": 1399,
+    "source": "ref",
+    "source_url": "https://g.pconline.com.cn/product/gameside/razer/2670379_price.html",
+    "note": "太平洋产品报价：官方报价¥1479，京东¥1399（历史最低2026-02-09）。对应Xbox/PC版（非仅PC的8K版）。霍尔线性扳机/摇杆，多平台兼容。"
+  },
+  {
+    "product_id": "8bitdo-ultimate-2-wireless",
+    "price": 269,
+    "source": "ref",
+    "source_url": "https://finance.sina.com.cn/tech/digi/2026-06-23/doc-iniekeev9831640.shtml",
+    "note": "IT之家2026-06-23：八位堂猎户座2代(Ultimate 2)真无线PC版“水蓝透”配色定价¥269，京东自营黑色款同价。TMR摇杆+集成充电底座，兼容Win/安卓/SteamOS。"
+  },
+  {
+    "product_id": "8bitdo-ultimate-2c-wireless",
+    "price": 200,
+    "source": "ref",
+    "source_url": "https://www.dazhe.com/article/22122.html",
+    "note": "国内媒体评测称其为“200块的手柄”（百元级）；海外无线版$29.99≈¥218、香港HK$199。京东中国自营到手约¥199，但价史页被反爬拦截未能直读精确值，取整¥200。Windows/安卓，霍尔摇杆+扳机，1000Hz。"
+  },
+  {
+    "product_id": "amazon-kindle-colorsoft",
+    "price": 2600,
+    "source": "ref",
+    "source_url": "https://www.toutiao.com/a7658163841004356139",
+    "note": "亚马逊已退出中国Kindle业务，无国行；国内走海外购/代购。Signature Edition（32GB/IPX8，本库型号）到手约¥2600，基础版16GB约¥2300；海外定价$279.99(签名版)。"
+  }
+]

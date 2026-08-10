@@ -15,7 +15,8 @@ const MOBILE_STORAGE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2589,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "capacity": "1TB / 2TB / 4TB",
@@ -41,7 +42,8 @@ const MOBILE_STORAGE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 839,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "capacity": "1TB / 2TB / 4TB",
@@ -67,7 +69,8 @@ const MOBILE_STORAGE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 879,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "capacity": "1TB / 2TB",

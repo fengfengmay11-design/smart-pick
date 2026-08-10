@@ -16,7 +16,8 @@ const AI_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1699,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "AI 智能眼镜",
@@ -42,7 +43,8 @@ const AI_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": 8999
     },
     "specs": {
       "type": "AI 学习机",
@@ -69,7 +71,8 @@ const AI_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "AI 翻译机",

@@ -16,7 +16,8 @@ const GIMBAL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2981,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "payload": "3千克",
@@ -43,7 +44,8 @@ const GIMBAL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 7878,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "payload": "4.5千克",
@@ -70,7 +72,8 @@ const GIMBAL_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 648,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "payload": "0.3千克（手机，兼容170-300g）",

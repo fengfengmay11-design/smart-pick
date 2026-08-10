@@ -15,7 +15,8 @@ const SMARTBAND_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 269,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen": "1.72英寸 AMOLED",
@@ -42,7 +43,8 @@ const SMARTBAND_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 269,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen": "1.47英寸 AMOLED",
@@ -69,7 +71,8 @@ const SMARTBAND_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 249,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen": "1.57英寸 AMOLED",

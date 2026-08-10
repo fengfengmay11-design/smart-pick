@@ -15,7 +15,8 @@ const WEBCAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1149,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "4K (3840×2160)",
@@ -43,7 +44,8 @@ const WEBCAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1644,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "4K (3840×2160)",
@@ -71,7 +73,8 @@ const WEBCAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1398,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "4K (3840×2160)",
@@ -98,7 +101,8 @@ const WEBCAM_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "1080p (1920×1080)",

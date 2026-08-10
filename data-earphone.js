@@ -14,7 +14,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -43,7 +44,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -72,7 +74,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -100,7 +103,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -128,7 +132,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -156,7 +161,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2499
+      "pdd": 2499,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -184,7 +190,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -212,7 +219,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1199,
-      "pdd": 999
+      "pdd": 999,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -240,7 +248,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -268,7 +277,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1399,
-      "pdd": 1199
+      "pdd": 1199,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -296,7 +306,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -324,7 +335,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -352,7 +364,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 499,
-      "pdd": 449
+      "pdd": 449,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -380,7 +393,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 599,
-      "pdd": 549
+      "pdd": 549,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -408,7 +422,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1799
+      "pdd": 1799,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -436,7 +451,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1199,
-      "pdd": 999
+      "pdd": 999,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -464,7 +480,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1799
+      "pdd": 1799,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -492,7 +509,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -520,7 +538,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 399,
-      "pdd": 349
+      "pdd": 349,
+      "ref": null
     },
     "specs": {
       "type": "开放式",
@@ -548,7 +567,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 499,
-      "pdd": 449
+      "pdd": 449,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -577,7 +597,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -605,7 +626,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1199,
-      "pdd": 999
+      "pdd": 999,
+      "ref": null
     },
     "specs": {
       "type": "半入耳",
@@ -633,7 +655,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 849
+      "pdd": 849,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -661,7 +684,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1699,
-      "pdd": 1499
+      "pdd": 1499,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -689,7 +713,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2799
+      "pdd": 2799,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -717,7 +742,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1699,
-      "pdd": 1499
+      "pdd": 1499,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -746,7 +772,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "type": "开放式",
@@ -775,7 +802,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1349
+      "pdd": 1349,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -803,7 +831,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 299,
-      "pdd": 259
+      "pdd": 259,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -831,7 +860,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "type": "半入耳",
@@ -860,7 +890,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -889,7 +920,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 399,
-      "pdd": 349
+      "pdd": 349,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -917,7 +949,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -945,7 +978,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 799,
-      "pdd": 699
+      "pdd": 699,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -973,7 +1007,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 399,
-      "pdd": 349
+      "pdd": 349,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -1001,7 +1036,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1099
+      "pdd": 1099,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1030,7 +1066,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -1058,7 +1095,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1087,7 +1125,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 299,
-      "pdd": 259
+      "pdd": 259,
+      "ref": null
     },
     "specs": {
       "type": "头戴式",
@@ -1116,7 +1155,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1849
+      "pdd": 1849,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1144,7 +1184,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 499,
-      "pdd": 429
+      "pdd": 429,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1172,7 +1213,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1201,7 +1243,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 499,
-      "pdd": 429
+      "pdd": 429,
+      "ref": null
     },
     "specs": {
       "type": "真无线",
@@ -1229,7 +1272,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 399,
-      "pdd": 349
+      "pdd": 349,
+      "ref": null
     },
     "specs": {
       "type": "半入耳",
@@ -1258,7 +1302,8 @@ const EARPHONE_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "type": "开放式",

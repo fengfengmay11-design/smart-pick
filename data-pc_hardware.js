@@ -15,7 +15,8 @@ const PC_HARDWARE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1199,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "CPU双塔风冷散热器",
@@ -41,7 +42,8 @@ const PC_HARDWARE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "ATX 电源",
@@ -67,7 +69,8 @@ const PC_HARDWARE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1379,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "NVMe M.2 SSD (PCIe 5.0)",
@@ -93,7 +96,8 @@ const PC_HARDWARE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1649,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "ATX 主板",
@@ -119,7 +123,8 @@ const PC_HARDWARE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1849,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "DDR5 台式机内存",

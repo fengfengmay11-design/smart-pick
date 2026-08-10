@@ -13,7 +13,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1600,
-      "pdd": 1400
+      "pdd": 1400,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -48,7 +49,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4600,
-      "pdd": 4025
+      "pdd": 4025,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -83,7 +85,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 344,
-      "pdd": 301
+      "pdd": 301,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -118,7 +121,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1056,
-      "pdd": 924
+      "pdd": 924,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -153,7 +157,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1699,
-      "pdd": 1549
+      "pdd": 1549,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -188,7 +193,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1280,
-      "pdd": 1120
+      "pdd": 1120,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -223,7 +229,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -258,7 +265,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2399,
-      "pdd": 2199
+      "pdd": 2199,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -293,7 +301,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1760,
-      "pdd": 1540
+      "pdd": 1540,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -328,7 +337,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3599,
-      "pdd": 3299
+      "pdd": 3299,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -363,7 +373,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2749
+      "pdd": 2749,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -398,7 +409,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -433,7 +445,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -468,7 +481,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4599,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -503,7 +517,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6299,
-      "pdd": 5899
+      "pdd": 5899,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -538,7 +553,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1320,
-      "pdd": 1155
+      "pdd": 1155,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -573,7 +589,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8299,
-      "pdd": 7799
+      "pdd": 7799,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -608,7 +625,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 16499,
-      "pdd": 15499
+      "pdd": 15499,
+      "ref": null
     },
     "specs": {
       "vram": "32GB",
@@ -643,7 +661,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4600,
-      "pdd": 4025
+      "pdd": 4025,
+      "ref": null
     },
     "specs": {
       "vram": "32GB",
@@ -679,7 +698,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "vram": "10GB",
@@ -715,7 +735,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 280,
-      "pdd": 245
+      "pdd": 245,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -751,7 +772,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 280,
-      "pdd": 245
+      "pdd": 245,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -786,7 +808,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8000,
-      "pdd": 7000
+      "pdd": 7000,
+      "ref": null
     },
     "specs": {
       "vram": "288GB",
@@ -821,7 +844,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 11200,
-      "pdd": 9800
+      "pdd": 9800,
+      "ref": null
     },
     "specs": {
       "vram": "288GB",
@@ -856,7 +880,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1760,
-      "pdd": 1540
+      "pdd": 1540,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -892,7 +917,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -928,7 +954,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -964,7 +991,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1000,7 +1028,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1035,7 +1064,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8000,
-      "pdd": 7000
+      "pdd": 7000,
+      "ref": null
     },
     "specs": {
       "vram": "288GB",
@@ -1071,7 +1101,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 296,
-      "pdd": 259
+      "pdd": 259,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1107,7 +1138,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 296,
-      "pdd": 259
+      "pdd": 259,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1142,7 +1174,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1600,
-      "pdd": 1400
+      "pdd": 1400,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -1177,7 +1210,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2280,
-      "pdd": 1995
+      "pdd": 1995,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -1212,7 +1246,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 400,
-      "pdd": 350
+      "pdd": 350,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -1247,7 +1282,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 920,
-      "pdd": 805
+      "pdd": 805,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -1282,7 +1318,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1280,
-      "pdd": 1120
+      "pdd": 1120,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -1317,7 +1354,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1600,
-      "pdd": 1400
+      "pdd": 1400,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -1352,7 +1390,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 560,
-      "pdd": 490
+      "pdd": 490,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -1387,7 +1426,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4399,
-      "pdd": 4099
+      "pdd": 4099,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -1422,7 +1462,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5599,
-      "pdd": 5199
+      "pdd": 5199,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -1457,7 +1498,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7299,
-      "pdd": 6799
+      "pdd": 6799,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -1492,7 +1534,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -1527,7 +1570,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3400,
-      "pdd": 2975
+      "pdd": 2975,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -1563,7 +1607,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1599,7 +1644,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 224,
-      "pdd": 196
+      "pdd": 196,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1635,7 +1681,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 224,
-      "pdd": 196
+      "pdd": 196,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1671,7 +1718,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -1706,7 +1754,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1056,
-      "pdd": 924
+      "pdd": 924,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -1741,7 +1790,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6000,
-      "pdd": 5250
+      "pdd": 5250,
+      "ref": null
     },
     "specs": {
       "vram": "192GB",
@@ -1776,7 +1826,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6000,
-      "pdd": 5250
+      "pdd": 5250,
+      "ref": null
     },
     "specs": {
       "vram": "192GB",
@@ -1811,7 +1862,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6000,
-      "pdd": 5250
+      "pdd": 5250,
+      "ref": null
     },
     "specs": {
       "vram": "192GB",
@@ -1846,7 +1898,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1360,
-      "pdd": 1190
+      "pdd": 1190,
+      "ref": null
     },
     "specs": {
       "vram": "10GB",
@@ -1881,7 +1934,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2000,
-      "pdd": 1750
+      "pdd": 1750,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -1917,7 +1971,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -1952,7 +2007,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -1987,7 +2043,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3699,
-      "pdd": 3399
+      "pdd": 3399,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2022,7 +2079,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2080,
-      "pdd": 1820
+      "pdd": 1820,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2057,7 +2115,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2092,7 +2151,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2127,7 +2187,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2162,7 +2223,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2549
+      "pdd": 2549,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2197,7 +2259,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3899,
-      "pdd": 3599
+      "pdd": 3599,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -2232,7 +2295,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4800,
-      "pdd": 4200
+      "pdd": 4200,
+      "ref": null
     },
     "specs": {
       "vram": "128GB",
@@ -2267,7 +2331,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5299,
-      "pdd": 4899
+      "pdd": 4899,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -2302,7 +2367,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 920,
-      "pdd": 805
+      "pdd": 805,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2337,7 +2403,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5699,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "vram": "20GB",
@@ -2372,7 +2439,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6299
+      "pdd": 6299,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -2407,7 +2475,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1760,
-      "pdd": 1540
+      "pdd": 1540,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2442,7 +2511,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2320,
-      "pdd": 2030
+      "pdd": 2030,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2477,7 +2547,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1800,
-      "pdd": 1575
+      "pdd": 1575,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2512,7 +2583,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1360,
-      "pdd": 1190
+      "pdd": 1190,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2548,7 +2620,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 240,
-      "pdd": 210
+      "pdd": 210,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -2584,7 +2657,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1699,
-      "pdd": 1499
+      "pdd": 1499,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2620,7 +2694,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1800,
-      "pdd": 1575
+      "pdd": 1575,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2655,7 +2730,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1560,
-      "pdd": 1365
+      "pdd": 1365,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2690,7 +2766,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8299,
-      "pdd": 7799
+      "pdd": 7799,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2725,7 +2802,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 12999,
-      "pdd": 11999
+      "pdd": 11999,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -2760,7 +2838,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -2796,7 +2875,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -2831,7 +2911,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1408,
-      "pdd": 1232
+      "pdd": 1232,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2866,7 +2947,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5499,
-      "pdd": 4799
+      "pdd": 4799,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -2901,7 +2983,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2000,
-      "pdd": 1750
+      "pdd": 1750,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -2936,7 +3019,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1600,
-      "pdd": 1400
+      "pdd": 1400,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -2971,7 +3055,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 720,
-      "pdd": 630
+      "pdd": 630,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -3006,7 +3091,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 9999,
-      "pdd": 8999
+      "pdd": 8999,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -3041,7 +3127,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 424,
-      "pdd": 371
+      "pdd": 371,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -3076,7 +3163,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 856,
-      "pdd": 749
+      "pdd": 749,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -3111,7 +3199,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2800,
-      "pdd": 2450
+      "pdd": 2450,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3146,7 +3235,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1040,
-      "pdd": 910
+      "pdd": 910,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -3181,7 +3271,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1040,
-      "pdd": 910
+      "pdd": 910,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -3216,7 +3307,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2800,
-      "pdd": 2450
+      "pdd": 2450,
+      "ref": null
     },
     "specs": {
       "vram": "20GB",
@@ -3252,7 +3344,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -3287,7 +3380,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -3322,7 +3416,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -3357,7 +3452,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -3392,7 +3488,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1472,
-      "pdd": 1288
+      "pdd": 1288,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3427,7 +3524,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "64GB",
@@ -3462,7 +3560,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "64GB",
@@ -3497,7 +3596,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4000,
-      "pdd": 3500
+      "pdd": 3500,
+      "ref": null
     },
     "specs": {
       "vram": "128GB",
@@ -3532,7 +3632,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4000,
-      "pdd": 3500
+      "pdd": 3500,
+      "ref": null
     },
     "specs": {
       "vram": "128GB",
@@ -3567,7 +3668,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -3602,7 +3704,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1360,
-      "pdd": 1190
+      "pdd": 1190,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3637,7 +3740,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -3672,7 +3776,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1400,
-      "pdd": 1225
+      "pdd": 1225,
+      "ref": null
     },
     "specs": {
       "vram": "10GB",
@@ -3707,7 +3812,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3499
+      "pdd": 3499,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -3742,7 +3848,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3778,7 +3885,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -3813,7 +3921,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3848,7 +3957,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 240,
-      "pdd": 210
+      "pdd": 210,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -3883,7 +3993,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 160,
-      "pdd": 140
+      "pdd": 140,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -3918,7 +4029,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "vram": "12GB",
@@ -3954,7 +4066,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -3989,7 +4102,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1480,
-      "pdd": 1295
+      "pdd": 1295,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -4025,7 +4139,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4061,7 +4176,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4096,7 +4212,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -4131,7 +4248,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "32GB",
@@ -4167,7 +4285,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -4203,7 +4322,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -4238,7 +4358,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2000,
-      "pdd": 1750
+      "pdd": 1750,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -4273,7 +4394,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3499
+      "pdd": 3499,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -4308,7 +4430,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -4344,7 +4467,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4380,7 +4504,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4416,7 +4541,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4451,7 +4577,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -4486,7 +4613,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4499,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "vram": "10GB",
@@ -4521,7 +4649,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8499,
-      "pdd": 7499
+      "pdd": 7499,
+      "ref": null
     },
     "specs": {
       "vram": "24GB",
@@ -4556,7 +4685,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 248,
-      "pdd": 217
+      "pdd": 217,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -4591,7 +4721,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 248,
-      "pdd": 217
+      "pdd": 217,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -4626,7 +4757,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 96,
-      "pdd": 84
+      "pdd": 84,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -4661,7 +4793,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 640,
-      "pdd": 560
+      "pdd": 560,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -4696,7 +4829,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 720,
-      "pdd": 630
+      "pdd": 630,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -4731,7 +4865,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 800,
-      "pdd": 700
+      "pdd": 700,
+      "ref": null
     },
     "specs": {
       "vram": "3GB",
@@ -4767,7 +4902,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4803,7 +4939,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4839,7 +4976,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4875,7 +5013,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4911,7 +5050,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4947,7 +5087,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -4983,7 +5124,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -5018,7 +5160,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 400,
-      "pdd": 350
+      "pdd": 350,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5053,7 +5196,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5088,7 +5232,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1400,
-      "pdd": 1225
+      "pdd": 1225,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5123,7 +5268,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 80,
-      "pdd": 70
+      "pdd": 70,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -5158,7 +5304,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 160,
-      "pdd": 140
+      "pdd": 140,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -5193,7 +5340,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1000,
-      "pdd": 875
+      "pdd": 875,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -5228,7 +5376,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -5263,7 +5412,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1280,
-      "pdd": 1120
+      "pdd": 1120,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -5299,7 +5449,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 240,
-      "pdd": 210
+      "pdd": 210,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5334,7 +5485,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1040,
-      "pdd": 910
+      "pdd": 910,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5369,7 +5521,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 800,
-      "pdd": 700
+      "pdd": 700,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5404,7 +5557,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1399,
-      "pdd": 1199
+      "pdd": 1199,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -5440,7 +5594,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5476,7 +5631,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1040,
-      "pdd": 910
+      "pdd": 910,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5511,7 +5667,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 800,
-      "pdd": 700
+      "pdd": 700,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5546,7 +5703,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 880,
-      "pdd": 770
+      "pdd": 770,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5582,7 +5740,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -5617,7 +5776,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3799,
-      "pdd": 3299
+      "pdd": 3299,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5652,7 +5812,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1400,
-      "pdd": 1225
+      "pdd": 1225,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5687,7 +5848,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2799
+      "pdd": 2799,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5722,7 +5884,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1599,
-      "pdd": 1399
+      "pdd": 1399,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5757,7 +5920,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1899
+      "pdd": 1899,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5792,7 +5956,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1800,
-      "pdd": 1575
+      "pdd": 1575,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -5828,7 +5993,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -5864,7 +6030,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -5899,7 +6066,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 280,
-      "pdd": 245
+      "pdd": 245,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -5934,7 +6102,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 749
+      "pdd": 749,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -5969,7 +6138,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 400,
-      "pdd": 350
+      "pdd": 350,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6004,7 +6174,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1199,
-      "pdd": 999
+      "pdd": 999,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -6039,7 +6210,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -6074,7 +6246,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6109,7 +6282,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 960,
-      "pdd": 840
+      "pdd": 840,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -6144,7 +6318,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 80,
-      "pdd": 70
+      "pdd": 70,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6179,7 +6354,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 200,
-      "pdd": 175
+      "pdd": 175,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6214,7 +6390,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2360,
-      "pdd": 2065
+      "pdd": 2065,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -6249,7 +6426,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1280,
-      "pdd": 1120
+      "pdd": 1120,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -6285,7 +6463,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 440,
-      "pdd": 385
+      "pdd": 385,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6320,7 +6499,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 400,
-      "pdd": 350
+      "pdd": 350,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -6355,7 +6535,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -6390,7 +6571,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "16GB",
@@ -6425,7 +6607,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2400,
-      "pdd": 2100
+      "pdd": 2100,
+      "ref": null
     },
     "specs": {
       "vram": "32GB",
@@ -6460,7 +6643,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1400,
-      "pdd": 1225
+      "pdd": 1225,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -6496,7 +6680,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -6532,7 +6717,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -6567,7 +6753,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 960,
-      "pdd": 840
+      "pdd": 840,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -6602,7 +6789,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1400,
-      "pdd": 1225
+      "pdd": 1225,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -6637,7 +6825,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -6672,7 +6861,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1480,
-      "pdd": 1295
+      "pdd": 1295,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -6707,7 +6897,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6742,7 +6933,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1720,
-      "pdd": 1505
+      "pdd": 1505,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -6777,7 +6969,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "vram": "11GB",
@@ -6813,7 +7006,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -6848,7 +7042,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "3GB",
@@ -6883,7 +7078,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 400,
-      "pdd": 350
+      "pdd": 350,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -6918,7 +7114,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 480,
-      "pdd": 420
+      "pdd": 420,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -6953,7 +7150,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -6988,7 +7186,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 600,
-      "pdd": 525
+      "pdd": 525,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -7023,7 +7222,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1200,
-      "pdd": 1050
+      "pdd": 1050,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -7058,7 +7258,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1480,
-      "pdd": 1295
+      "pdd": 1295,
+      "ref": null
     },
     "specs": {
       "vram": "8GB",
@@ -7094,7 +7295,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -7130,7 +7332,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -7166,7 +7369,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 120,
-      "pdd": 105
+      "pdd": 105,
+      "ref": null
     },
     "specs": {
       "vram": "0GB",
@@ -7201,7 +7405,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 160,
-      "pdd": 140
+      "pdd": 140,
+      "ref": null
     },
     "specs": {
       "vram": "2GB",
@@ -7236,7 +7441,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 960,
-      "pdd": 840
+      "pdd": 840,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",
@@ -7271,7 +7477,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 800,
-      "pdd": 700
+      "pdd": 700,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -7306,7 +7513,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 520,
-      "pdd": 455
+      "pdd": 455,
+      "ref": null
     },
     "specs": {
       "vram": "4GB",
@@ -7341,7 +7549,8 @@ const GPU_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 960,
-      "pdd": 840
+      "pdd": 840,
+      "ref": null
     },
     "specs": {
       "vram": "6GB",

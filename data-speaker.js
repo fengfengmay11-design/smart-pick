@@ -16,7 +16,8 @@ const SPEAKER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2199,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "power": "100W (AC) / 70W (电池)",
@@ -43,7 +44,8 @@ const SPEAKER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2701,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "power": null,
@@ -70,7 +72,8 @@ const SPEAKER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1449,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "power": "20W RMS (2×10W)",
@@ -97,7 +100,8 @@ const SPEAKER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1264,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "power": null,

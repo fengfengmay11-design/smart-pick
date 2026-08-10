@@ -15,7 +15,8 @@ const AR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "1920×1080/眼",
@@ -42,7 +43,8 @@ const AR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "1920×1080",
@@ -69,7 +71,8 @@ const AR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "1920×1080/眼",

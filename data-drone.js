@@ -16,7 +16,8 @@ const DRONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 6539,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "camera_resolution": "4800万像素（1/1.3英寸 CMOS）",
@@ -44,7 +45,8 @@ const DRONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 6988,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "camera_resolution": "主摄5000万 + 中长焦4800万（双摄）",
@@ -72,7 +74,8 @@ const DRONE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 13888,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "camera_resolution": "1亿像素（4/3英寸哈苏主摄）",

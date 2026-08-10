@@ -15,7 +15,8 @@ const ROUTER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 679,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "wifi_standard": "WiFi 7 (802.11be)",
@@ -42,7 +43,8 @@ const ROUTER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 279,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "wifi_standard": "WiFi 7 (802.11be)",
@@ -69,7 +71,8 @@ const ROUTER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 559,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "wifi_standard": "WiFi 7 (802.11be)",
@@ -96,7 +99,8 @@ const ROUTER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4013,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "wifi_standard": "WiFi 7 (802.11be)",
@@ -123,7 +127,8 @@ const ROUTER_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 529,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "wifi_standard": "WiFi 7 (802.11be)",

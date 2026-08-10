@@ -15,7 +15,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -42,7 +43,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "size": "32英寸",
@@ -69,7 +71,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -96,7 +99,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6499
+      "pdd": 6499,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -123,7 +127,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -150,7 +155,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1799
+      "pdd": 1799,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -177,7 +183,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1299
+      "pdd": 1299,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -204,7 +211,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1299
+      "pdd": 1299,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -231,7 +239,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "24英寸",
@@ -258,7 +267,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -286,7 +296,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1299,
-      "pdd": 1199
+      "pdd": 1199,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -314,7 +325,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "size": "32英寸",
@@ -342,7 +354,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2599
+      "pdd": 2599,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -371,7 +384,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "size": "32英寸",
@@ -399,7 +413,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3199,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -427,7 +442,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1099,
-      "pdd": 969
+      "pdd": 969,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -455,7 +471,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1299
+      "pdd": 1299,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -483,7 +500,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 799,
-      "pdd": 729
+      "pdd": 729,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -511,7 +529,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1349
+      "pdd": 1349,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -538,7 +557,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "size": "24英寸",
@@ -567,7 +587,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4499,
-      "pdd": 4199
+      "pdd": 4199,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -595,7 +616,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4699
+      "pdd": 4699,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -622,7 +644,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5299,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -650,7 +673,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "size": "49英寸",
@@ -677,7 +701,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -705,7 +730,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 7499,
-      "pdd": 6999
+      "pdd": 6999,
+      "ref": null
     },
     "specs": {
       "size": "45英寸",
@@ -732,7 +758,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2599
+      "pdd": 2599,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -760,7 +787,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 8999,
-      "pdd": 8499
+      "pdd": 8499,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -787,7 +815,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -814,7 +843,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 6999,
-      "pdd": 6599
+      "pdd": 6599,
+      "ref": null
     },
     "specs": {
       "size": "32英寸",
@@ -842,7 +872,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3499,
-      "pdd": 3199
+      "pdd": 3199,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -870,7 +901,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -899,7 +931,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 649,
-      "pdd": 579
+      "pdd": 579,
+      "ref": null
     },
     "specs": {
       "size": "24英寸",
@@ -927,7 +960,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 699,
-      "pdd": 629
+      "pdd": 629,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -956,7 +990,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -984,7 +1019,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1099,
-      "pdd": 979
+      "pdd": 979,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -1012,7 +1048,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "size": "42英寸",
@@ -1040,7 +1077,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "size": "27英寸",
@@ -1067,7 +1105,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "32英寸",
@@ -1096,7 +1135,8 @@ const MONITOR_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "31.5英寸",

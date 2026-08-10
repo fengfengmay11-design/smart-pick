@@ -79,13 +79,16 @@ function reconstructOther(p, oldCat) {
   const pris = pricesOf(p.product_id);
   const jd = pris.find(x => x.source === 'jd' && !x.variant_id);
   const pdd = pris.find(x => x.source === 'pdd' && !x.variant_id);
+  // official（品牌官网标价）/ ref（第三方权威报价）统一收敛为前端的「参考价」通道，
+  // 不冒充京东价，避免误导。
+  const ref = pris.find(x => (x.source === 'ref' || x.source === 'official') && !x.variant_id);
   const specs = {};
   for (const [k, v] of Object.entries(sp)) specs[k] = flatValue(v);
   return {
     id: p.product_id, brand: brandName(p.brand_id), model: p.model,
     image: p.image, launchDate: p.release_date,
     tags: p.tags, officialUrl: p.official_url, lastVerified: p.updated_at,
-    prices: { jd: jd ? jd.price : null, pdd: pdd ? pdd.price : null },
+    prices: { jd: jd ? jd.price : null, pdd: pdd ? pdd.price : null, ref: ref ? ref.price : null },
     specs,
   };
 }
@@ -111,6 +114,7 @@ function verify() {
     } else {
       if (p.prices && p.prices.jd != null) priceRecords++;
       if (p.prices && p.prices.pdd != null) priceRecords++;
+      if (p.prices && p.prices.ref != null) priceRecords++;
     }
   });
   // 仅以「手机类」variant 作为等价基准（旧前端只有手机有 storageOptions）；

@@ -15,7 +15,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3199,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -42,7 +43,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2488,
-      "pdd": 2288
+      "pdd": 2288,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -68,7 +70,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "size": "44mm",
@@ -94,7 +97,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "47mm",
@@ -120,7 +124,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -147,7 +152,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 6499,
-      "pdd": 5999
+      "pdd": 5999,
+      "ref": null
     },
     "specs": {
       "size": "49mm",
@@ -174,7 +180,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 3199,
-      "pdd": 2799
+      "pdd": 2799,
+      "ref": null
     },
     "specs": {
       "size": "45mm",
@@ -200,7 +207,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "size": "44mm",
@@ -227,7 +235,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1488,
-      "pdd": 1388
+      "pdd": 1388,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -254,7 +263,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "size": "48mm",
@@ -281,7 +291,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 799,
-      "pdd": 729
+      "pdd": 729,
+      "ref": null
     },
     "specs": {
       "size": "方形43mm",
@@ -308,7 +319,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4999,
-      "pdd": 4499
+      "pdd": 4499,
+      "ref": null
     },
     "specs": {
       "size": "48.5mm",
@@ -335,7 +347,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 4699,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "size": "47mm",
@@ -361,7 +374,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 2499,
-      "pdd": 2199
+      "pdd": 2199,
+      "ref": null
     },
     "specs": {
       "size": "47mm",
@@ -388,7 +402,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "41mm",
@@ -415,7 +430,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 399,
-      "pdd": 359
+      "pdd": 359,
+      "ref": null
     },
     "specs": {
       "size": "方形45mm",
@@ -441,7 +457,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 999,
-      "pdd": 899
+      "pdd": 899,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -468,7 +485,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1699,
-      "pdd": 1549
+      "pdd": 1549,
+      "ref": null
     },
     "specs": {
       "size": "48mm",
@@ -495,7 +513,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1499,
-      "pdd": 1299
+      "pdd": 1299,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -522,7 +541,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 8480,
-      "pdd": 7999
+      "pdd": 7999,
+      "ref": null
     },
     "specs": {
       "size": "47mm",
@@ -551,7 +571,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1299,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -580,7 +601,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 957,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "screen": "1.04英寸 AMOLED",
@@ -608,7 +630,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1699,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "size": "42mm",
@@ -637,7 +660,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -667,7 +691,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1799,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "size": "46mm",
@@ -697,7 +722,8 @@ const WATCH_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1099,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "size": "46mm",

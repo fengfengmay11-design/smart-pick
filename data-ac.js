@@ -15,7 +15,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -44,7 +45,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5999,
-      "pdd": 5599
+      "pdd": 5599,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -72,7 +74,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4599,
-      "pdd": 4249
+      "pdd": 4249,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -101,7 +104,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2399,
-      "pdd": 2199
+      "pdd": 2199,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -129,7 +133,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5299,
-      "pdd": 4999
+      "pdd": 4999,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -158,7 +163,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2799,
-      "pdd": 2549
+      "pdd": 2549,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -186,7 +192,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4999,
-      "pdd": 4599
+      "pdd": 4599,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -214,7 +221,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3999,
-      "pdd": 3699
+      "pdd": 3699,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -242,7 +250,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1999,
-      "pdd": 1799
+      "pdd": 1799,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -271,7 +280,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2699,
-      "pdd": 2449
+      "pdd": 2449,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -299,7 +309,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4799,
-      "pdd": 4399
+      "pdd": 4399,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -327,7 +338,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3799,
-      "pdd": 3499
+      "pdd": 3499,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -355,7 +367,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -383,7 +396,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -411,7 +425,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2099,
-      "pdd": 1899
+      "pdd": 1899,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -440,7 +455,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -469,7 +485,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4599,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -498,7 +515,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3299,
-      "pdd": 2999
+      "pdd": 2999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -527,7 +545,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2599,
-      "pdd": 2399
+      "pdd": 2399,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -556,7 +575,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -585,7 +605,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -614,7 +635,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -643,7 +665,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -672,7 +695,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1499,
-      "pdd": 1349
+      "pdd": 1349,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -701,7 +725,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4399,
-      "pdd": 3999
+      "pdd": 3999,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -730,7 +755,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2999,
-      "pdd": 2699
+      "pdd": 2699,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -759,7 +785,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2199,
-      "pdd": 1999
+      "pdd": 1999,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -788,7 +815,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4199,
-      "pdd": 3899
+      "pdd": 3899,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -817,7 +845,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4699,
-      "pdd": 4299
+      "pdd": 4299,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -846,7 +875,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1699,
-      "pdd": 1499
+      "pdd": 1499,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -875,7 +905,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2499,
-      "pdd": 2299
+      "pdd": 2299,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -904,7 +935,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 5199,
-      "pdd": 4799
+      "pdd": 4799,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -933,7 +965,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1899,
-      "pdd": 1699
+      "pdd": 1699,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -962,7 +995,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 2299,
-      "pdd": 2099
+      "pdd": 2099,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -991,7 +1025,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1399,
-      "pdd": 1249
+      "pdd": 1249,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -1020,7 +1055,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3899
+      "pdd": 3899,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -1049,7 +1085,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3699,
-      "pdd": 3399
+      "pdd": 3399,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -1078,7 +1115,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 4299,
-      "pdd": 3899
+      "pdd": 3899,
+      "ref": null
     },
     "specs": {
       "type": "立柜式",
@@ -1107,7 +1145,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 3599,
-      "pdd": 3299
+      "pdd": 3299,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",
@@ -1136,7 +1175,8 @@ const AC_DATA = [
     "lastVerified": "2026-07-16",
     "prices": {
       "jd": 1799,
-      "pdd": 1599
+      "pdd": 1599,
+      "ref": null
     },
     "specs": {
       "type": "壁挂式",

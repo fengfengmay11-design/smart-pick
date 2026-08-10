@@ -15,7 +15,8 @@ const HANDHELD_CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Zen 2 4核8线程",
@@ -43,7 +44,8 @@ const HANDHELD_CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 5449,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
@@ -71,7 +73,8 @@ const HANDHELD_CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": 4899
     },
     "specs": {
       "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
@@ -99,7 +102,8 @@ const HANDHELD_CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 9699,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "AMD Ryzen Z2 Extreme（Zen 5 8核）",
@@ -127,7 +131,8 @@ const HANDHELD_CONSOLE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 7699,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "cpu": "Intel Core Ultra 7 258V（Lunar Lake 8核）",

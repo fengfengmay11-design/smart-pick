@@ -15,7 +15,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "layout": "全尺寸",
@@ -40,7 +41,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 599,
-      "pdd": 549
+      "pdd": 549,
+      "ref": null
     },
     "specs": {
       "layout": "87键",
@@ -65,7 +67,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 299,
-      "pdd": 269
+      "pdd": 269,
+      "ref": null
     },
     "specs": {
       "layout": "98键",
@@ -89,7 +92,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 399,
-      "pdd": 359
+      "pdd": 359,
+      "ref": null
     },
     "specs": {
       "layout": "98键",
@@ -114,7 +118,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 399,
-      "pdd": 369
+      "pdd": 369,
+      "ref": null
     },
     "specs": {
       "layout": "87键",
@@ -139,7 +144,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1299,
-      "pdd": 1099
+      "pdd": 1099,
+      "ref": null
     },
     "specs": {
       "layout": "87键TKL",
@@ -166,7 +172,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 999,
-      "pdd": 869
+      "pdd": 869,
+      "ref": null
     },
     "specs": {
       "layout": "108键全尺寸",
@@ -193,7 +200,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 549,
-      "pdd": 449
+      "pdd": 449,
+      "ref": null
     },
     "specs": {
       "layout": "108键全尺寸",
@@ -220,7 +228,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 799,
-      "pdd": 729
+      "pdd": 729,
+      "ref": null
     },
     "specs": {
       "layout": "108键全尺寸",
@@ -247,7 +256,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 699,
-      "pdd": 599
+      "pdd": 599,
+      "ref": null
     },
     "specs": {
       "layout": "108键全尺寸",
@@ -274,7 +284,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 329,
-      "pdd": 289
+      "pdd": 289,
+      "ref": null
     },
     "specs": {
       "layout": "75键紧凑",
@@ -301,7 +312,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 199,
-      "pdd": 169
+      "pdd": 169,
+      "ref": null
     },
     "specs": {
       "layout": "68键紧凑",
@@ -328,7 +340,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 429,
-      "pdd": 379
+      "pdd": 379,
+      "ref": null
     },
     "specs": {
       "layout": "87键TKL",
@@ -354,7 +367,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 359,
-      "pdd": 319
+      "pdd": 319,
+      "ref": null
     },
     "specs": {
       "layout": "68键紧凑",
@@ -381,7 +395,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 899,
-      "pdd": 799
+      "pdd": 799,
+      "ref": null
     },
     "specs": {
       "layout": "87键TKL",
@@ -408,7 +423,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 699,
-      "pdd": 629
+      "pdd": 629,
+      "ref": null
     },
     "specs": {
       "layout": "87键TKL",
@@ -435,7 +451,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 1299,
-      "pdd": 1149
+      "pdd": 1149,
+      "ref": null
     },
     "specs": {
       "layout": "75键紧凑",
@@ -462,7 +479,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 399,
-      "pdd": 349
+      "pdd": 349,
+      "ref": null
     },
     "specs": {
       "layout": "98键紧凑",
@@ -489,7 +507,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 459,
-      "pdd": 419
+      "pdd": 419,
+      "ref": null
     },
     "specs": {
       "layout": "75键紧凑",
@@ -516,7 +535,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-05",
     "prices": {
       "jd": 269,
-      "pdd": 239
+      "pdd": 239,
+      "ref": null
     },
     "specs": {
       "layout": "81键紧凑",
@@ -546,7 +566,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 979,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "RGB (Razer Chroma)",
@@ -576,7 +597,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1399,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "RGB",
@@ -606,7 +628,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1899,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "RGB (逐键可编程)",
@@ -637,7 +660,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 2399,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "无背光",
@@ -667,7 +691,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1849,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "RGB (动态可调)",
@@ -697,7 +722,8 @@ const KEYBOARD_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 218,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "backlight": "无背光 (预留灯位)",

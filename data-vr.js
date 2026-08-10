@@ -15,7 +15,8 @@ const VR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 5599,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "2160×2160/眼",
@@ -42,7 +43,8 @@ const VR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 4498,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "2064×2208/眼",
@@ -69,7 +71,8 @@ const VR_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 29999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "resolution": "2300万像素（双眼）",

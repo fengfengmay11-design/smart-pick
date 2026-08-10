@@ -15,7 +15,8 @@ const SMARTGLASSES_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1999,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "weight": "40g",
@@ -41,7 +42,8 @@ const SMARTGLASSES_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 3558,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "weight": "49g",
@@ -67,7 +69,8 @@ const SMARTGLASSES_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": 1799,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "weight": "39g",

@@ -16,7 +16,8 @@ const ROBOT_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": 12999
     },
     "specs": {
       "type": "四足机器人 / 机器狗",
@@ -43,7 +44,8 @@ const ROBOT_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "割草机器人",
@@ -70,7 +72,8 @@ const ROBOT_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "割草机器人",
@@ -97,7 +100,8 @@ const ROBOT_DEVICE_DATA = [
     "lastVerified": "2026-08-10",
     "prices": {
       "jd": null,
-      "pdd": null
+      "pdd": null,
+      "ref": null
     },
     "specs": {
       "type": "擦窗机器人",
