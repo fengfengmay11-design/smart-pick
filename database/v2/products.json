@@ -1162,7 +1162,6 @@
     "status": "active",
     "tags": [
       "性能旗舰",
-      "144hz",
       "天玑9300"
     ],
     "release_date": "2024-07",
@@ -1378,8 +1377,7 @@
     "status": "active",
     "tags": [
       "gaming",
-      "骁龙8elite",
-      "144hz"
+      "骁龙8elite"
     ],
     "release_date": "2024-11",
     "image": "https://cdn.jsdelivr.net/gh/orcastor/phone_images@master/android/vivo%20iQOO%2013.jpg",
@@ -1409,8 +1407,7 @@
     "status": "active",
     "tags": [
       "gaming",
-      "天玑9400",
-      "120w快充"
+      "天玑9400"
     ],
     "release_date": "2024-12",
     "image": "https://cdn.jsdelivr.net/gh/orcastor/phone_images@master/android/vivo%20iQOO%20Neo%2010%20Pro.jpg",
@@ -2889,9 +2886,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "16gb"
+      "rdna_3_0"
     ],
     "release_date": "2025-09-18",
     "image": "",
@@ -2920,9 +2915,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "24gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-08-15",
     "image": "",
@@ -2951,9 +2944,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "8gb"
+      "rdna_3_0"
     ],
     "release_date": "2025-08-08",
     "image": "",
@@ -2982,9 +2973,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "8gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-08-05",
     "image": "",
@@ -3013,9 +3002,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "8gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-07-01",
     "image": "",
@@ -3044,9 +3031,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "16gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-06-04",
     "image": "",
@@ -3075,9 +3060,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "8gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-06-04",
     "image": "",
@@ -3106,9 +3089,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "8gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-05-19",
     "image": "",
@@ -3137,9 +3118,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "12gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-05-08",
     "image": "",
@@ -3168,9 +3147,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "16gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-04-16",
     "image": "",
@@ -3199,9 +3176,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "8gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-04-16",
     "image": "",
@@ -3230,9 +3205,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "16gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-03-06",
     "image": "",
@@ -3261,9 +3234,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "16gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-03-06",
     "image": "",
@@ -3292,9 +3263,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "12gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-03-04",
     "image": "",
@@ -3323,9 +3292,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "16gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-02-20",
     "image": "",
@@ -3354,9 +3321,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "8gb"
+      "rdna_3_0"
     ],
     "release_date": "2025-02-01",
     "image": "",
@@ -3385,9 +3350,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "16gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-01-30",
     "image": "",
@@ -3416,9 +3379,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "32gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-01-30",
     "image": "",
@@ -3447,9 +3408,7 @@
     ],
     "status": "active",
     "tags": [
-      "blackwell_2_0",
-      "geforce_50",
-      "32gb"
+      "blackwell_2_0"
     ],
     "release_date": "2025-01-30",
     "image": "",
@@ -3479,8 +3438,7 @@
     "status": "active",
     "tags": [
       "xe2_hpg",
-      "battlemage_arc_5",
-      "10gb"
+      "battlemage_arc_5"
     ],
     "release_date": "2025-01-16",
     "image": "",
@@ -3510,8 +3468,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_arrow_lake",
-      "0gb"
+      "arc_graphics_m_arrow_lake"
     ],
     "release_date": "2025-01-13",
     "image": "",
@@ -3541,8 +3498,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_arrow_lake",
-      "0gb"
+      "arc_graphics_m_arrow_lake"
     ],
     "release_date": "2025-01-13",
     "image": "",
@@ -3571,9 +3527,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_4_0",
-      "radeon_instinct_mix",
-      "288gb"
+      "cdna_4_0"
     ],
     "release_date": "2025-01-01",
     "image": "",
@@ -3602,9 +3556,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_4_0",
-      "radeon_instinct_mix",
-      "288gb"
+      "cdna_4_0"
     ],
     "release_date": "2025-01-01",
     "image": "",
@@ -3633,9 +3585,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_4_0",
-      "navi_iv_rx_9000",
-      "16gb"
+      "rdna_4_0"
     ],
     "release_date": "2025-01-01",
     "image": "",
@@ -3665,8 +3615,7 @@
     "status": "active",
     "tags": [
       "xe2_hpg",
-      "battlemage_arc_5",
-      "12gb"
+      "battlemage_arc_5"
     ],
     "release_date": "2024-12-13",
     "image": "",
@@ -3696,8 +3645,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "hd_graphics_arrow_lake",
-      "0gb"
+      "hd_graphics_arrow_lake"
     ],
     "release_date": "2024-10-24",
     "image": "",
@@ -3727,8 +3675,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "hd_graphics_arrow_lake",
-      "0gb"
+      "hd_graphics_arrow_lake"
     ],
     "release_date": "2024-10-24",
     "image": "",
@@ -3758,8 +3705,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "hd_graphics_arrow_lake",
-      "0gb"
+      "hd_graphics_arrow_lake"
     ],
     "release_date": "2024-10-24",
     "image": "",
@@ -3788,9 +3734,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_3_0",
-      "radeon_instinct_mix",
-      "288gb"
+      "cdna_3_0"
     ],
     "release_date": "2024-10-01",
     "image": "",
@@ -3820,8 +3764,7 @@
     "status": "active",
     "tags": [
       "xe2_lpg",
-      "arc_graphics_m_lunar_lake",
-      "0gb"
+      "arc_graphics_m_lunar_lake"
     ],
     "release_date": "2024-09-24",
     "image": "",
@@ -3851,8 +3794,7 @@
     "status": "active",
     "tags": [
       "xe2_lpg",
-      "arc_graphics_m_lunar_lake",
-      "0gb"
+      "arc_graphics_m_lunar_lake"
     ],
     "release_date": "2024-09-24",
     "image": "",
@@ -3881,9 +3823,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "12gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-08-20",
     "image": "",
@@ -3912,9 +3852,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "16gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-06-10",
     "image": "",
@@ -3943,9 +3881,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_40",
-      "4gb"
+      "ampere"
     ],
     "release_date": "2024-04-16",
     "image": "",
@@ -3974,9 +3910,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "8gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-04-01",
     "image": "",
@@ -4005,9 +3939,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "8gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-04-01",
     "image": "",
@@ -4036,9 +3968,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "12gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-03-01",
     "image": "",
@@ -4067,9 +3997,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "6gb"
+      "ampere"
     ],
     "release_date": "2024-02-02",
     "image": "",
@@ -4098,9 +4026,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "12gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-01-08",
     "image": "",
@@ -4129,9 +4055,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "16gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-01-08",
     "image": "",
@@ -4160,9 +4084,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "16gb"
+      "ada_lovelace"
     ],
     "release_date": "2024-01-08",
     "image": "",
@@ -4191,9 +4113,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "16gb"
+      "rdna_3_0"
     ],
     "release_date": "2024-01-08",
     "image": "",
@@ -4222,9 +4142,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "24gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-12-28",
     "image": "",
@@ -4254,8 +4172,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_meteor_lake",
-      "0gb"
+      "arc_graphics_m_meteor_lake"
     ],
     "release_date": "2023-12-14",
     "image": "",
@@ -4285,8 +4202,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_meteor_lake",
-      "0gb"
+      "arc_graphics_m_meteor_lake"
     ],
     "release_date": "2023-12-14",
     "image": "",
@@ -4316,8 +4232,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_meteor_lake",
-      "0gb"
+      "arc_graphics_m_meteor_lake"
     ],
     "release_date": "2023-12-14",
     "image": "",
@@ -4347,8 +4262,7 @@
     "status": "active",
     "tags": [
       "xe_lpg",
-      "arc_graphics_m_meteor_lake",
-      "0gb"
+      "arc_graphics_m_meteor_lake"
     ],
     "release_date": "2023-12-14",
     "image": "",
@@ -4377,9 +4291,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "8gb"
+      "rdna_2_0"
     ],
     "release_date": "2023-12-08",
     "image": "",
@@ -4408,9 +4320,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_3_0",
-      "radeon_instinct_mix",
-      "192gb"
+      "cdna_3_0"
     ],
     "release_date": "2023-12-06",
     "image": "",
@@ -4439,9 +4349,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_3_0",
-      "radeon_instinct_mix",
-      "192gb"
+      "cdna_3_0"
     ],
     "release_date": "2023-12-06",
     "image": "",
@@ -4470,9 +4378,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_3_0",
-      "radeon_instinct_mix",
-      "192gb"
+      "cdna_3_0"
     ],
     "release_date": "2023-12-06",
     "image": "",
@@ -4501,9 +4407,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "10gb"
+      "rdna_2_0"
     ],
     "release_date": "2023-10-17",
     "image": "",
@@ -4532,9 +4436,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "12gb"
+      "rdna_2_0"
     ],
     "release_date": "2023-10-17",
     "image": "",
@@ -4564,8 +4466,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_5",
-      "8gb"
+      "alchemist_arc_5"
     ],
     "release_date": "2023-10-10",
     "image": "",
@@ -4594,9 +4495,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "12gb"
+      "rdna_3_0"
     ],
     "release_date": "2023-08-25",
     "image": "",
@@ -4625,9 +4524,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "16gb"
+      "rdna_3_0"
     ],
     "release_date": "2023-08-25",
     "image": "",
@@ -4656,9 +4553,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "16gb"
+      "rdna_3_0"
     ],
     "release_date": "2023-07-27",
     "image": "",
@@ -4687,9 +4582,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "8gb"
+      "rdna_3_0"
     ],
     "release_date": "2023-05-24",
     "image": "",
@@ -4718,9 +4611,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "8gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-05-18",
     "image": "",
@@ -4749,9 +4640,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "16gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-05-18",
     "image": "",
@@ -4780,9 +4669,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "8gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-05-18",
     "image": "",
@@ -4811,9 +4698,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "12gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-04-12",
     "image": "",
@@ -4842,9 +4727,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_3_0",
-      "radeon_instinct_mix",
-      "128gb"
+      "cdna_3_0"
     ],
     "release_date": "2023-01-04",
     "image": "",
@@ -4873,9 +4756,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "12gb"
+      "ada_lovelace"
     ],
     "release_date": "2023-01-03",
     "image": "",
@@ -4904,9 +4785,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-12-16",
     "image": "",
@@ -4935,9 +4814,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "20gb"
+      "rdna_3_0"
     ],
     "release_date": "2022-11-03",
     "image": "",
@@ -4966,9 +4843,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_3_0",
-      "navi_iii_rx_7000",
-      "24gb"
+      "rdna_3_0"
     ],
     "release_date": "2022-11-03",
     "image": "",
@@ -4997,9 +4872,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-11-01",
     "image": "",
@@ -5028,9 +4901,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-10-21",
     "image": "",
@@ -5059,9 +4930,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-10-19",
     "image": "",
@@ -5090,9 +4959,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-10-12",
     "image": "",
@@ -5122,8 +4989,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_3",
-      "4gb"
+      "alchemist_arc_3"
     ],
     "release_date": "2022-10-12",
     "image": "",
@@ -5153,8 +5019,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_7",
-      "8gb"
+      "alchemist_arc_7"
     ],
     "release_date": "2022-10-12",
     "image": "",
@@ -5184,8 +5049,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_7",
-      "16gb"
+      "alchemist_arc_7"
     ],
     "release_date": "2022-10-12",
     "image": "",
@@ -5214,9 +5078,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-10-01",
     "image": "",
@@ -5245,9 +5107,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "16gb"
+      "ada_lovelace"
     ],
     "release_date": "2022-09-20",
     "image": "",
@@ -5276,9 +5136,7 @@
     ],
     "status": "active",
     "tags": [
-      "ada_lovelace",
-      "geforce_40",
-      "24gb"
+      "ada_lovelace"
     ],
     "release_date": "2022-09-20",
     "image": "",
@@ -5307,9 +5165,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2022-06-28",
     "image": "",
@@ -5339,8 +5195,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_3",
-      "6gb"
+      "alchemist_arc_3"
     ],
     "release_date": "2022-06-14",
     "image": "",
@@ -5369,9 +5224,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "8gb"
+      "rdna_2_0"
     ],
     "release_date": "2022-05-10",
     "image": "",
@@ -5400,9 +5253,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "16gb"
+      "rdna_2_0"
     ],
     "release_date": "2022-05-10",
     "image": "",
@@ -5431,9 +5282,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "12gb"
+      "rdna_2_0"
     ],
     "release_date": "2022-03-03",
     "image": "",
@@ -5462,9 +5311,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-02-23",
     "image": "",
@@ -5493,9 +5340,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "4gb"
+      "ampere"
     ],
     "release_date": "2022-01-27",
     "image": "",
@@ -5524,9 +5369,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "24gb"
+      "ampere"
     ],
     "release_date": "2022-01-27",
     "image": "",
@@ -5555,9 +5398,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "4gb"
+      "rdna_2_0"
     ],
     "release_date": "2022-01-19",
     "image": "",
@@ -5586,9 +5427,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "4gb"
+      "rdna_2_0"
     ],
     "release_date": "2022-01-19",
     "image": "",
@@ -5617,9 +5456,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "12gb"
+      "ampere"
     ],
     "release_date": "2022-01-11",
     "image": "",
@@ -5648,9 +5485,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-01-04",
     "image": "",
@@ -5679,9 +5514,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2022-01-04",
     "image": "",
@@ -5710,9 +5543,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "20gb"
+      "ampere"
     ],
     "release_date": "2022-01-01",
     "image": "",
@@ -5742,8 +5573,7 @@
     "status": "active",
     "tags": [
       "xe_hpg",
-      "alchemist_arc_3",
-      "4gb"
+      "alchemist_arc_3"
     ],
     "release_date": "2022-01-01",
     "image": "",
@@ -5772,9 +5602,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_mx_5xx",
-      "2gb"
+      "turing"
     ],
     "release_date": "2021-12-17",
     "image": "",
@@ -5803,9 +5631,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_mx_5xx",
-      "2gb"
+      "ampere"
     ],
     "release_date": "2021-12-17",
     "image": "",
@@ -5834,9 +5660,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_mx_5xx",
-      "2gb"
+      "ampere"
     ],
     "release_date": "2021-12-17",
     "image": "",
@@ -5865,9 +5689,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "12gb"
+      "turing"
     ],
     "release_date": "2021-12-07",
     "image": "",
@@ -5896,9 +5718,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_2_0",
-      "radeon_instinct_mix",
-      "64gb"
+      "cdna_2_0"
     ],
     "release_date": "2021-12-01",
     "image": "",
@@ -5927,9 +5747,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_2_0",
-      "radeon_instinct_mix",
-      "64gb"
+      "cdna_2_0"
     ],
     "release_date": "2021-12-01",
     "image": "",
@@ -5958,9 +5776,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_2_0",
-      "radeon_instinct_mix",
-      "128gb"
+      "cdna_2_0"
     ],
     "release_date": "2021-11-08",
     "image": "",
@@ -5989,9 +5805,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_2_0",
-      "radeon_instinct_mix",
-      "128gb"
+      "cdna_2_0"
     ],
     "release_date": "2021-11-08",
     "image": "",
@@ -6020,9 +5834,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "8gb"
+      "rdna_2_0"
     ],
     "release_date": "2021-10-13",
     "image": "",
@@ -6051,9 +5863,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "12gb"
+      "ampere"
     ],
     "release_date": "2021-09-01",
     "image": "",
@@ -6082,9 +5892,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "8gb"
+      "rdna_2_0"
     ],
     "release_date": "2021-07-30",
     "image": "",
@@ -6113,9 +5921,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "10gb"
+      "rdna_2_0"
     ],
     "release_date": "2021-06-09",
     "image": "",
@@ -6144,9 +5950,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2021-05-31",
     "image": "",
@@ -6175,9 +5979,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "12gb"
+      "ampere"
     ],
     "release_date": "2021-05-31",
     "image": "",
@@ -6207,8 +6009,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_rocket_lake",
-      "0gb"
+      "hd_graphics_rocket_lake"
     ],
     "release_date": "2021-03-30",
     "image": "",
@@ -6237,9 +6038,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "12gb"
+      "rdna_2_0"
     ],
     "release_date": "2021-03-03",
     "image": "",
@@ -6268,9 +6067,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2021-01-13",
     "image": "",
@@ -6299,9 +6096,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2021-01-13",
     "image": "",
@@ -6330,9 +6125,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "12gb"
+      "ampere"
     ],
     "release_date": "2021-01-12",
     "image": "",
@@ -6362,8 +6155,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_m_tiger_lake",
-      "0gb"
+      "hd_graphics_m_tiger_lake"
     ],
     "release_date": "2021-01-01",
     "image": "",
@@ -6392,9 +6184,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "6gb"
+      "ampere"
     ],
     "release_date": "2021-01-01",
     "image": "",
@@ -6424,8 +6214,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_rocket_lake",
-      "0gb"
+      "hd_graphics_rocket_lake"
     ],
     "release_date": "2021-01-01",
     "image": "",
@@ -6455,8 +6244,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_w_rocket_lake",
-      "0gb"
+      "hd_graphics_w_rocket_lake"
     ],
     "release_date": "2021-01-01",
     "image": "",
@@ -6485,9 +6273,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2020-12-01",
     "image": "",
@@ -6516,9 +6302,7 @@
     ],
     "status": "active",
     "tags": [
-      "cdna_1_0",
-      "radeon_instinct_mix",
-      "32gb"
+      "cdna_1_0"
     ],
     "release_date": "2020-11-16",
     "image": "",
@@ -6548,8 +6332,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "h3c_graphics",
-      "8gb"
+      "h3c_graphics"
     ],
     "release_date": "2020-11-11",
     "image": "",
@@ -6579,8 +6362,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "xe_graphics",
-      "4gb"
+      "xe_graphics"
     ],
     "release_date": "2020-10-31",
     "image": "",
@@ -6609,9 +6391,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "16gb"
+      "rdna_2_0"
     ],
     "release_date": "2020-10-28",
     "image": "",
@@ -6640,9 +6420,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "16gb"
+      "rdna_2_0"
     ],
     "release_date": "2020-10-28",
     "image": "",
@@ -6671,9 +6449,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_2_0",
-      "navi_ii_rx_6000",
-      "16gb"
+      "rdna_2_0"
     ],
     "release_date": "2020-10-28",
     "image": "",
@@ -6703,8 +6479,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_m_tiger_lake",
-      "0gb"
+      "hd_graphics_m_tiger_lake"
     ],
     "release_date": "2020-09-02",
     "image": "",
@@ -6734,8 +6509,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_m_tiger_lake",
-      "0gb"
+      "hd_graphics_m_tiger_lake"
     ],
     "release_date": "2020-09-02",
     "image": "",
@@ -6765,8 +6539,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "hd_graphics_m_tiger_lake",
-      "0gb"
+      "hd_graphics_m_tiger_lake"
     ],
     "release_date": "2020-09-02",
     "image": "",
@@ -6795,9 +6568,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "8gb"
+      "ampere"
     ],
     "release_date": "2020-09-01",
     "image": "",
@@ -6826,9 +6597,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "10gb"
+      "ampere"
     ],
     "release_date": "2020-09-01",
     "image": "",
@@ -6857,9 +6626,7 @@
     ],
     "status": "active",
     "tags": [
-      "ampere",
-      "geforce_30",
-      "24gb"
+      "ampere"
     ],
     "release_date": "2020-09-01",
     "image": "",
@@ -6888,9 +6655,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_mx_4xx",
-      "2gb"
+      "turing"
     ],
     "release_date": "2020-08-25",
     "image": "",
@@ -6919,9 +6684,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_mx_4xx",
-      "2gb"
+      "turing"
     ],
     "release_date": "2020-08-25",
     "image": "",
@@ -6950,9 +6713,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_mx_4xx",
-      "2gb"
+      "turing"
     ],
     "release_date": "2020-08-15",
     "image": "",
@@ -6981,9 +6742,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2020-07-07",
     "image": "",
@@ -7012,9 +6771,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2020-06-18",
     "image": "",
@@ -7043,9 +6800,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "3gb"
+      "rdna_1_0"
     ],
     "release_date": "2020-05-28",
     "image": "",
@@ -7075,8 +6830,7 @@
     "status": "active",
     "tags": [
       "generation_11_0",
-      "hd_graphics_m_lakefield",
-      "0gb"
+      "hd_graphics_m_lakefield"
     ],
     "release_date": "2020-05-28",
     "image": "",
@@ -7106,8 +6860,7 @@
     "status": "active",
     "tags": [
       "generation_11_0",
-      "hd_graphics_m_lakefield",
-      "0gb"
+      "hd_graphics_m_lakefield"
     ],
     "release_date": "2020-05-28",
     "image": "",
@@ -7137,8 +6890,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_w_comet_lake",
-      "0gb"
+      "hd_graphics_w_comet_lake"
     ],
     "release_date": "2020-05-13",
     "image": "",
@@ -7168,8 +6920,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_wm_comet_lake",
-      "0gb"
+      "hd_graphics_wm_comet_lake"
     ],
     "release_date": "2020-05-13",
     "image": "",
@@ -7199,8 +6950,7 @@
     "status": "active",
     "tags": [
       "generation_11_0",
-      "hd_graphics_m_ice_lake",
-      "0gb"
+      "hd_graphics_m_ice_lake"
     ],
     "release_date": "2020-05-04",
     "image": "",
@@ -7230,8 +6980,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_comet_lake",
-      "0gb"
+      "hd_graphics_comet_lake"
     ],
     "release_date": "2020-04-30",
     "image": "",
@@ -7261,8 +7010,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_comet_lake",
-      "0gb"
+      "hd_graphics_comet_lake"
     ],
     "release_date": "2020-04-30",
     "image": "",
@@ -7291,9 +7039,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_600",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2020-04-09",
     "image": "",
@@ -7322,9 +7068,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2020-04-01",
     "image": "",
@@ -7353,9 +7097,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500",
-      "8gb"
+      "gcn_4_0"
     ],
     "release_date": "2020-03-09",
     "image": "",
@@ -7384,9 +7126,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_mx_3xx",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2020-02-10",
     "image": "",
@@ -7415,9 +7155,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_mx_3xx",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2020-02-10",
     "image": "",
@@ -7446,9 +7184,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "6gb"
+      "rdna_1_0"
     ],
     "release_date": "2020-01-21",
     "image": "",
@@ -7477,9 +7213,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "6gb"
+      "rdna_1_0"
     ],
     "release_date": "2020-01-21",
     "image": "",
@@ -7508,9 +7242,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "6gb"
+      "turing"
     ],
     "release_date": "2020-01-10",
     "image": "",
@@ -7540,8 +7272,7 @@
     "status": "active",
     "tags": [
       "generation_12_1",
-      "xe_graphics",
-      "4gb"
+      "xe_graphics"
     ],
     "release_date": "2020-01-01",
     "image": "",
@@ -7570,9 +7301,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "4gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-12-12",
     "image": "",
@@ -7601,9 +7330,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2019-11-22",
     "image": "",
@@ -7632,9 +7359,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "6gb"
+      "turing"
     ],
     "release_date": "2019-10-29",
     "image": "",
@@ -7664,8 +7389,7 @@
     "status": "active",
     "tags": [
       "gcn_4_0",
-      "embedded_9000",
-      "8gb"
+      "embedded_9000"
     ],
     "release_date": "2019-10-15",
     "image": "",
@@ -7695,8 +7419,7 @@
     "status": "active",
     "tags": [
       "gcn_4_0",
-      "embedded_9000",
-      "8gb"
+      "embedded_9000"
     ],
     "release_date": "2019-10-15",
     "image": "",
@@ -7725,9 +7448,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "4gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-10-07",
     "image": "",
@@ -7756,9 +7477,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "4gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-10-07",
     "image": "",
@@ -7788,8 +7507,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_m_coffee_lake",
-      "0gb"
+      "hd_graphics_m_coffee_lake"
     ],
     "release_date": "2019-10-07",
     "image": "",
@@ -7818,9 +7536,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "8gb"
+      "turing"
     ],
     "release_date": "2019-07-23",
     "image": "",
@@ -7849,9 +7565,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "8gb"
+      "turing"
     ],
     "release_date": "2019-07-09",
     "image": "",
@@ -7880,9 +7594,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "8gb"
+      "turing"
     ],
     "release_date": "2019-07-09",
     "image": "",
@@ -7911,9 +7623,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "8gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-07-07",
     "image": "",
@@ -7942,9 +7652,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "8gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-07-07",
     "image": "",
@@ -7973,9 +7681,7 @@
     ],
     "status": "active",
     "tags": [
-      "rdna_1_0",
-      "navi_rx_5000",
-      "8gb"
+      "rdna_1_0"
     ],
     "release_date": "2019-07-07",
     "image": "",
@@ -8005,8 +7711,7 @@
     "status": "active",
     "tags": [
       "generation_11_0",
-      "hd_graphics_m_ice_lake",
-      "0gb"
+      "hd_graphics_m_ice_lake"
     ],
     "release_date": "2019-05-29",
     "image": "",
@@ -8036,8 +7741,7 @@
     "status": "active",
     "tags": [
       "generation_11_0",
-      "hd_graphics_m_ice_lake",
-      "0gb"
+      "hd_graphics_m_ice_lake"
     ],
     "release_date": "2019-05-29",
     "image": "",
@@ -8066,9 +7770,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_3_0",
-      "polaris_rx_600",
-      "2gb"
+      "gcn_3_0"
     ],
     "release_date": "2019-05-13",
     "image": "",
@@ -8097,9 +7799,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "4gb"
+      "turing"
     ],
     "release_date": "2019-04-23",
     "image": "",
@@ -8128,9 +7828,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "2gb"
+      "gcn_4_0"
     ],
     "release_date": "2019-03-27",
     "image": "",
@@ -8159,9 +7857,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "6gb"
+      "turing"
     ],
     "release_date": "2019-03-14",
     "image": "",
@@ -8190,9 +7886,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2019-03-13",
     "image": "",
@@ -8221,9 +7915,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_mx_1xx",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2019-02-23",
     "image": "",
@@ -8252,9 +7944,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_16",
-      "6gb"
+      "turing"
     ],
     "release_date": "2019-02-22",
     "image": "",
@@ -8283,9 +7973,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_mx_2xx",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2019-02-21",
     "image": "",
@@ -8314,9 +8002,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_mx_2xx",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2019-02-21",
     "image": "",
@@ -8345,9 +8031,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_5_1",
-      "vega_ii_radeon_vii",
-      "16gb"
+      "gcn_5_1"
     ],
     "release_date": "2019-02-07",
     "image": "",
@@ -8376,9 +8060,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "6gb"
+      "turing"
     ],
     "release_date": "2019-01-07",
     "image": "",
@@ -8408,8 +8090,7 @@
     "status": "active",
     "tags": [
       "gcn_1_0",
-      "pirate_islands_r7_300",
-      "2gb"
+      "pirate_islands_r7_300"
     ],
     "release_date": "2019-01-07",
     "image": "",
@@ -8438,9 +8119,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-12-16",
     "image": "",
@@ -8469,9 +8148,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "8gb"
+      "pascal"
     ],
     "release_date": "2018-12-04",
     "image": "",
@@ -8500,9 +8177,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_5_1",
-      "radeon_instinct_mix",
-      "16gb"
+      "gcn_5_1"
     ],
     "release_date": "2018-11-18",
     "image": "",
@@ -8531,9 +8206,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_5_1",
-      "radeon_instinct_mix",
-      "32gb"
+      "gcn_5_1"
     ],
     "release_date": "2018-11-18",
     "image": "",
@@ -8562,9 +8235,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500",
-      "8gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-11-15",
     "image": "",
@@ -8594,8 +8265,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_t_amber_lake",
-      "0gb"
+      "hd_graphics_t_amber_lake"
     ],
     "release_date": "2018-11-07",
     "image": "",
@@ -8625,8 +8295,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_t_amber_lake",
-      "0gb"
+      "hd_graphics_t_amber_lake"
     ],
     "release_date": "2018-11-07",
     "image": "",
@@ -8655,9 +8324,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "6gb"
+      "pascal"
     ],
     "release_date": "2018-10-18",
     "image": "",
@@ -8686,9 +8353,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "8gb"
+      "turing"
     ],
     "release_date": "2018-10-17",
     "image": "",
@@ -8717,9 +8382,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-10-15",
     "image": "",
@@ -8748,9 +8411,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500",
-      "8gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-10-15",
     "image": "",
@@ -8779,9 +8440,7 @@
     ],
     "status": "active",
     "tags": [
-      "kepler",
-      "geforce_10",
-      "2gb"
+      "kepler"
     ],
     "release_date": "2018-09-30",
     "image": "",
@@ -8810,9 +8469,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "8gb"
+      "turing"
     ],
     "release_date": "2018-09-20",
     "image": "",
@@ -8841,9 +8498,7 @@
     ],
     "status": "active",
     "tags": [
-      "turing",
-      "geforce_20",
-      "11gb"
+      "turing"
     ],
     "release_date": "2018-09-20",
     "image": "",
@@ -8873,8 +8528,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_m_whiskey_lake",
-      "0gb"
+      "hd_graphics_m_whiskey_lake"
     ],
     "release_date": "2018-08-28",
     "image": "",
@@ -8903,9 +8557,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "3gb"
+      "pascal"
     ],
     "release_date": "2018-05-21",
     "image": "",
@@ -8934,9 +8586,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -8965,9 +8615,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "2gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -8996,9 +8644,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -9027,9 +8673,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -9058,9 +8702,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "8gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -9089,9 +8731,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "polaris_rx_500x",
-      "8gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-04-11",
     "image": "",
@@ -9121,8 +8761,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_m_coffee_lake",
-      "0gb"
+      "hd_graphics_m_coffee_lake"
     ],
     "release_date": "2018-04-03",
     "image": "",
@@ -9152,8 +8791,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_m_coffee_lake",
-      "0gb"
+      "hd_graphics_m_coffee_lake"
     ],
     "release_date": "2018-04-03",
     "image": "",
@@ -9183,8 +8821,7 @@
     "status": "active",
     "tags": [
       "generation_9_5",
-      "hd_graphics_m_coffee_lake",
-      "0gb"
+      "hd_graphics_m_coffee_lake"
     ],
     "release_date": "2018-04-03",
     "image": "",
@@ -9213,9 +8850,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "2gb"
+      "pascal"
     ],
     "release_date": "2018-03-12",
     "image": "",
@@ -9244,9 +8879,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "6gb"
+      "pascal"
     ],
     "release_date": "2018-03-08",
     "image": "",
@@ -9275,9 +8908,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "vega_vega_m",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-02-01",
     "image": "",
@@ -9306,9 +8937,7 @@
     ],
     "status": "active",
     "tags": [
-      "gcn_4_0",
-      "vega_vega_m",
-      "4gb"
+      "gcn_4_0"
     ],
     "release_date": "2018-02-01",
     "image": "",
@@ -9337,9 +8966,7 @@
     ],
     "status": "active",
     "tags": [
-      "pascal",
-      "geforce_10",
-      "6gb"
+      "pascal"
     ],
     "release_date": "2018-01-05",
     "image": "",
@@ -11940,8 +11567,7 @@
     ],
     "status": "active",
     "tags": [
-      "flagship",
-      "3_2k_oled"
+      "flagship"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -11970,9 +11596,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "240hz",
-      "rtx_4070"
+      "游戏本"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -12002,7 +11626,6 @@
     "status": "active",
     "tags": [
       "游戏本",
-      "240hz",
       "满血显卡"
     ],
     "release_date": "2024-02",
@@ -12154,8 +11777,7 @@
     "status": "active",
     "tags": [
       "游戏本",
-      "amd",
-      "240hz"
+      "amd"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -12305,7 +11927,6 @@
     ],
     "status": "active",
     "tags": [
-      "120hz",
       "大电池"
     ],
     "release_date": "2024-03",
@@ -12397,7 +12018,6 @@
     "status": "active",
     "tags": [
       "3k屏",
-      "120hz",
       "大电池"
     ],
     "release_date": "2024-01",
@@ -12427,8 +12047,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "rtx_4060"
+      "游戏本"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -12457,9 +12076,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "rtx_4060",
-      "165hz"
+      "游戏本"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -12519,9 +12136,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "rtx_4070",
-      "240hz"
+      "游戏本"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -12611,9 +12226,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "rtx_4070",
-      "240hz"
+      "游戏本"
     ],
     "release_date": "2024-04",
     "image": "",
@@ -12704,7 +12317,6 @@
     "status": "active",
     "tags": [
       "游戏本",
-      "rtx_4070",
       "amd"
     ],
     "release_date": "2024-03",
@@ -12734,9 +12346,7 @@
     ],
     "status": "active",
     "tags": [
-      "游戏本",
-      "rtx_4080",
-      "99wh"
+      "游戏本"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -12766,8 +12376,7 @@
     "status": "active",
     "tags": [
       "oled",
-      "3_1k",
-      "rtx_4060"
+      "3_1k"
     ],
     "release_date": "2024-05",
     "image": "",
@@ -12828,8 +12437,7 @@
     "status": "active",
     "tags": [
       "qd_oled",
-      "4k",
-      "rtx_4070"
+      "4k"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -12859,7 +12467,6 @@
     "status": "active",
     "tags": [
       "flagship",
-      "rtx_4090",
       "mini_led"
     ],
     "release_date": "2024-01",
@@ -12890,8 +12497,7 @@
     "status": "active",
     "tags": [
       "3k屏",
-      "lightweight",
-      "rtx_4050"
+      "lightweight"
     ],
     "release_date": "2024-04",
     "image": "",
@@ -12982,7 +12588,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "16核",
       "3d_v_cache"
     ],
@@ -13044,7 +12649,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "8核",
       "游戏神u"
     ],
@@ -13105,9 +12709,7 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
-      "8核",
-      "65w"
+      "8核"
     ],
     "release_date": "2024-08",
     "image": "",
@@ -13166,7 +12768,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "6核",
       "value"
     ],
@@ -13228,7 +12829,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "16核",
       "3d_v_cache"
     ],
@@ -13384,7 +12984,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "6核"
     ],
     "release_date": "2022-09",
@@ -13414,7 +13013,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "12核"
     ],
     "release_date": "2022-09",
@@ -13444,7 +13042,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_3",
       "8核",
       "3d_v_cache"
     ],
@@ -13475,7 +13072,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_3",
       "6核",
       "入门神u"
     ],
@@ -13570,7 +13166,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_3",
       "8核"
     ],
     "release_date": "2022-04",
@@ -13662,7 +13257,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "8核",
       "3d_v_cache"
     ],
@@ -13693,7 +13287,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "12核"
     ],
     "release_date": "2024-08",
@@ -13723,7 +13316,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "16核",
       "flagship"
     ],
@@ -13754,7 +13346,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_5",
       "6核",
       "入门"
     ],
@@ -13785,7 +13376,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "6核",
       "value"
     ],
@@ -13816,7 +13406,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "8核"
     ],
     "release_date": "2022-09",
@@ -13846,7 +13435,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_3",
       "apu",
       "核显"
     ],
@@ -13877,7 +13465,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_3",
       "apu",
       "亮机神u"
     ],
@@ -14128,8 +13715,7 @@
     "status": "active",
     "tags": [
       "raptor_lake_refresh",
-      "24核",
-      "6_2ghz"
+      "24核"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -14189,7 +13775,6 @@
     ],
     "status": "active",
     "tags": [
-      "zen_4",
       "16核"
     ],
     "release_date": "2022-09",
@@ -15611,7 +15196,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_240hz",
       "qd_oled"
     ],
     "release_date": "2024-06",
@@ -15640,7 +15224,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_160hz",
       "nano_ips"
     ],
     "release_date": "2024-03",
@@ -15670,7 +15253,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_480hz",
       "woled"
     ],
     "release_date": "2024-08",
@@ -15699,7 +15281,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_160hz",
       "value"
     ],
     "release_date": "2024-05",
@@ -15729,7 +15310,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "mini_led"
     ],
     "release_date": "2024-04",
@@ -15758,7 +15338,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_100hz",
       "办公利器"
     ],
     "release_date": "2024-09",
@@ -15788,7 +15367,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "游戏入门"
     ],
     "release_date": "2024-02",
@@ -15817,7 +15395,6 @@
     ],
     "status": "active",
     "tags": [
-      "1080p_180hz",
       "fps神器"
     ],
     "release_date": "2024-03",
@@ -15847,7 +15424,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_170hz",
       "gaming"
     ],
     "release_date": "2024-01",
@@ -15936,8 +15512,7 @@
     "status": "active",
     "tags": [
       "4k",
-      "设计",
-      "usb_c_96w"
+      "设计"
     ],
     "release_date": "2024-01",
     "image": "",
@@ -16025,7 +15600,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "nano_ips",
       "1000档"
     ],
@@ -16085,7 +15659,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_170hz",
       "800档",
       "性价比之王"
     ],
@@ -16115,7 +15688,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "mini_led",
       "高性价比"
     ],
@@ -16145,7 +15717,6 @@
     ],
     "status": "active",
     "tags": [
-      "1080p_180hz",
       "电竞入门"
     ],
     "release_date": "2024-02",
@@ -16204,7 +15775,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_360hz",
       "qd_oled",
       "gaming"
     ],
@@ -16235,7 +15805,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_360hz",
       "qd_oled"
     ],
     "release_date": "2025-01",
@@ -16266,8 +15835,7 @@
     "status": "active",
     "tags": [
       "49寸带鱼屏",
-      "qd_oled",
-      "240hz"
+      "qd_oled"
     ],
     "release_date": "2023-09",
     "image": "",
@@ -16295,7 +15863,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_144hz",
       "nano_ips"
     ],
     "release_date": "2023-05",
@@ -16325,8 +15892,7 @@
     "status": "active",
     "tags": [
       "45寸带鱼屏",
-      "woled",
-      "240hz"
+      "woled"
     ],
     "release_date": "2023-03",
     "image": "",
@@ -16355,7 +15921,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_160hz",
       "gaming"
     ],
     "release_date": "2024-06",
@@ -16385,7 +15950,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_240hz",
       "qd_oled",
       "flagship"
     ],
@@ -16416,7 +15980,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "量子点"
     ],
     "release_date": "2024-03",
@@ -16447,7 +16010,6 @@
     ],
     "status": "active",
     "tags": [
-      "4k_240hz",
       "qd_oled"
     ],
     "release_date": "2024-02",
@@ -16476,7 +16038,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_240hz",
       "mini_led",
       "内置音箱"
     ],
@@ -16507,7 +16068,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_240hz",
       "woled",
       "gaming"
     ],
@@ -16568,7 +16128,6 @@
     ],
     "status": "active",
     "tags": [
-      "1080p_200hz",
       "gaming",
       "高性价比"
     ],
@@ -16629,7 +16188,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "type_c",
       "高性价比"
     ],
@@ -16660,7 +16218,6 @@
     "status": "active",
     "tags": [
       "42寸",
-      "4k_oled",
       "大屏"
     ],
     "release_date": "2024-01",
@@ -16689,7 +16246,6 @@
     ],
     "status": "active",
     "tags": [
-      "2k_180hz",
       "gaming",
       "高性价比"
     ],
@@ -16719,8 +16275,7 @@
     ],
     "status": "active",
     "tags": [
-      "32寸曲面",
-      "2k_170hz"
+      "32寸曲面"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -16780,8 +16335,7 @@
     "status": "active",
     "tags": [
       "m4",
-      "oled",
-      "120hz"
+      "oled"
     ],
     "release_date": "2024-05",
     "image": "",
@@ -16871,8 +16425,7 @@
     ],
     "status": "active",
     "tags": [
-      "value",
-      "144hz"
+      "value"
     ],
     "release_date": "2024-02",
     "image": "",
@@ -17112,8 +16665,7 @@
     "status": "active",
     "tags": [
       "鸿蒙",
-      "柔光屏",
-      "144hz"
+      "柔光屏"
     ],
     "release_date": "2024-05",
     "image": "",
@@ -18243,7 +17795,6 @@
     "status": "active",
     "tags": [
       "mini_led",
-      "144hz",
       "value"
     ],
     "release_date": "2024-01",
@@ -18427,8 +17978,7 @@
     "status": "active",
     "tags": [
       "大屏",
-      "value",
-      "120hz"
+      "value"
     ],
     "release_date": "2024-03",
     "image": "",
@@ -18487,8 +18037,7 @@
     ],
     "status": "active",
     "tags": [
-      "value",
-      "120hz"
+      "value"
     ],
     "release_date": "2024-01",
     "image": "",
@@ -20689,8 +20238,7 @@
       "magnetic",
       "rgb",
       "full_size",
-      "aluminum",
-      "8000hz"
+      "aluminum"
     ],
     "release_date": "2023-09-01",
     "image": null,
@@ -21057,7 +20605,6 @@
       "foldable",
       "flagship",
       "harmonyos",
-      "kirin",
       "5g"
     ],
     "release_date": "2025-12-05",
@@ -21090,7 +20637,6 @@
       "foldable",
       "flagship",
       "magicos",
-      "snapdragon",
       "5g"
     ],
     "release_date": "2025-07-02",
@@ -21189,8 +20735,6 @@
     "tags": [
       "gaming",
       "flagship",
-      "snapdragon",
-      "144hz",
       "5g",
       "active-cooling"
     ],
@@ -21224,8 +20768,6 @@
     "tags": [
       "gaming",
       "thin-light",
-      "snapdragon",
-      "144hz",
       "5g",
       "active-cooling"
     ],
