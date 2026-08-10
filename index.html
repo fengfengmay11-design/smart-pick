@@ -1702,15 +1702,12 @@ function renderHome(page) {
     </div>
     <div class="cat-nav" id="catTabs">
       <div class="cat-l1" id="catL1">
-        <div class="cat-l1-tab${state.navGroup === 'all' ? ' active' : ''}" data-group="all">全部</div>
         ${CATEGORY_GROUPS.map(g => `<div class="cat-l1-tab${state.navGroup === g.key ? ' active' : ''}" data-group="${g.key}">${g.name}</div>`).join('')}
       </div>
-      ${state.navGroup === 'all'
-        ? '<div class="cat-l2-hint">从下方选择具体分类缩小范围，或直接描述需求，让 AI 全站寻找</div>'
-        : `<div class="cat-l2" id="catL2">
-            ${(CATEGORY_GROUPS.find(g => g.key === state.navGroup) || {}).cats
-              .map(k => `<div class="cat-chip${state.category === k ? ' active' : ''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
-           </div>`}
+      <div class="cat-l2" id="catL2">
+        ${(CATEGORY_GROUPS.find(g => g.key === state.navGroup) || { cats: [] }).cats
+          .map(k => `<div class="cat-chip${state.category === k ? ' active' : ''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
+      </div>
     </div>
     <div class="search-box">
       <span class="s-icon">🔍</span>
@@ -1730,16 +1727,14 @@ function renderHome(page) {
       const g = this.dataset.group;
       if (g === state.navGroup) return;
       state.navGroup = g;
-      if (g !== 'all') {
-        const cats = (CATEGORY_GROUPS.find(x => x.key === g) || { cats: [] }).cats;
-        if (cats.length && !cats.includes(state.category)) {
-          state.category = cats[0];
-          state.filterBrand = null;
-          state.filterPriceRange = null;
-          state.sortBy = cat().defaultSort;
-          state.compareList = [];
-          state.searchQuery = '';
-        }
+      const cats = (CATEGORY_GROUPS.find(x => x.key === g) || { cats: [] }).cats;
+      if (cats.length && !cats.includes(state.category)) {
+        state.category = cats[0];
+        state.filterBrand = null;
+        state.filterPriceRange = null;
+        state.sortBy = cat().defaultSort;
+        state.compareList = [];
+        state.searchQuery = '';
       }
       navigateTo('home');
     });
@@ -1749,7 +1744,7 @@ function renderHome(page) {
   page.querySelectorAll('.cat-chip').forEach(chip => {
     chip.addEventListener('click', function() {
       const newCat = this.dataset.cat;
-      const changed = newCat !== state.category || state.navGroup === 'all';
+      const changed = newCat !== state.category;
       state.category = newCat;
       state.navGroup = groupOfCat(newCat);
       if (changed) {
@@ -2602,42 +2597,88 @@ function keyboardCompareDims(ph) {
     var names=phones.map(function(p){return p.phone.model});
     var prices=phones.map(function(p){return p.priceSrc.price});
     var maxP=Math.max.apply(null,prices),minP=Math.min.apply(null,prices);
+    // 价差占比：≥15% 才算「显著价差」，否则不要主推性价比（用户视角：差距不大时更关心质量/系统/售后）
+    var avgP=prices.reduce(function(a,b){return a+b;},0)/prices.length;
+    var priceRatio=avgP>0?(maxP-minP)/avgP:0;
+    var priceUnique=new Set(prices).size;
     var diffParts=[];
-    if(new Set(prices).size>1) diffParts.push('价格');
-    phones.forEach(function(p){
-      var s=p.phone.specs||{};
-      if(s.weight) diffParts.push('重量');
-      if(s.size!==undefined||p.phone.screen&&p.phone.screen.size) diffParts.push('尺寸');
+    if(priceUnique>1&&priceRatio>0.15) diffParts.push('价格');
+    // 自动扫描常见「质量/系统/售后」维度（specs 字段，待 flatValue 字符串）
+    var fields=[
+      {key:'os',label:'系统'},
+      {key:'features_waterproof',label:'防水'},
+      {key:'screen_material',label:'屏幕材质'},
+      {key:'chipset',label:'芯片'},
+      {key:'features_bluetooth',label:'蓝牙'},
+      {key:'screen_refresh_rate',label:'刷新率'},
+      {key:'rear_camera',label:'影像'},
+      {key:'battery',label:'电池'}
+    ];
+    fields.forEach(function(f){
+      if(diffParts.length>=3) return;
+      var vals=phones.map(function(p){return (p.phone.specs||{})[f.key];});
+      if(vals.some(function(v){return v!=null&&v!=='';})&&vals.some(function(v,i){return i>0&&vals[i-1]!==v;})){
+        diffParts.push(f.label);
+      }
     });
-    var uniqueDiffs=[...new Set(diffParts)].slice(0,3);
+    var uniqueDiffs=diffParts.slice(0,3);
     var mainDiff=uniqueDiffs.length>0
       ?'这几款在<span style="font-weight:600;color:var(--primary)">'+uniqueDiffs.join('、')+'</span>方面存在差异'
       :'几款产品核心参数接近';
     
-    // 找最优：价格最低或综合分最高
-    var bestIdx=0; var bestScore=-999;
+    // 找最优：基于 specs 实际优势（质量/系统/防水/芯片）加权，价格仅在显著价差时轻微加分
+    var bestIdx=0,bestScore=-999;
     phones.forEach(function(p,i){
-      var sc=p.priceSrc.price;
-      if(sc===minP) sc-=200; // 价格优势加权
-      sc+=p.score||0;
+      var sc=0;
+      var sp=p.phone.specs||{};
+      if(sp.features_waterproof&&/IP68|IP69/.test(sp.features_waterproof)) sc+=15;
+      if(sp.os&&/iOS\s?17|iOS\s?18|iOS\s?26|Android 1[234567]|Android\s?26/.test(sp.os)) sc+=10;
+      if(sp.screen_material&&/AMOLED/i.test(sp.screen_material)) sc+=5;
+      if(sp.chipset&&/Snapdragon 8|Tensor G|M\d|Ultra|Apple M/i.test(sp.chipset)) sc+=8;
+      if(sp.features_bluetooth&&/5\.[2-9]/.test(sp.features_bluetooth)) sc+=3;
+      // 价格优势仅在显著价差时加分（避免价差不大时推「性价比」）
+      if(prices[i]===minP&&priceRatio>0.15) sc+=10;
       if(sc>bestScore){bestScore=sc;bestIdx=i;}
     });
     var bp=phones[bestIdx];
+    var bpSp=bp.phone.specs||{};
+    var bpReasons=[];
+    if(bpSp.os&&/iOS/.test(bpSp.os)) bpReasons.push('iOS 生态');
+    else if(bpSp.os&&/Android 1[2-9]/.test(bpSp.os)) bpReasons.push('新版安卓系统');
+    if(bpSp.features_waterproof&&/IP68|IP69/.test(bpSp.features_waterproof)) bpReasons.push('防水能力强');
+    if(bpSp.screen_material&&/AMOLED/i.test(bpSp.screen_material)) bpReasons.push('AMOLED 屏幕');
+    if(bpSp.chipset&&/Snapdragon 8|Tensor G|M\d|Ultra|Apple M/i.test(bpSp.chipset)) bpReasons.push('旗舰芯片');
     var bestPick={
       model:bp.phone.brand+' '+bp.phone.model,
-      reason:bp.priceSrc.price===minP?'性价比首选，仅 ¥'+bp.priceSrc.price+'（比最贵省 ¥'+(maxP-minP)+'）':'综合表现最均衡，推荐首选'
+      reason:bpReasons.length?bpReasons.join(' / '):'综合表现均衡'
     };
     
-    // 每款一句话
+    // 每款一句话：从 specs 提取真实维度亮点，不再主推性价比
     var items=[];
+    var cheapestMarked=false; // 同一价格或价差不显著时，多款里最多 1 款标价格优势
     phones.forEach(function(p,i){
       var price=p.priceSrc.price;
       var tag=i===bestIdx?'suitable':'neutral';
       var highlights=[];
-      if(price===minP&&maxP-minP>50) highlights.push('¥'+price+' 性价比高');
-      else if(price===maxP&&maxP-minP>200) highlights.push('¥'+price+' 预算门槛较高');
-      var wt=(p.phone.body||{}).weight;
-      if(wt&&wt<=180) highlights.push(wt+'g 轻便');
+      // 价格维度：仅在显著价差且尚未标过时打分；否则直接跳过
+      if(price===minP&&priceRatio>0.15&&!cheapestMarked){
+        highlights.push('¥'+price+' 入手门槛更低');
+        cheapestMarked=true;
+      }else if(price===maxP&&priceRatio>0.15&&priceUnique>1){
+        highlights.push('¥'+price+' 预算门槛较高');
+      }
+      var sp=p.phone.specs||{};
+      if(sp.features_waterproof&&/IP68|IP69/.test(sp.features_waterproof)){
+        var m=sp.features_waterproof.match(/IP(\d+)/);
+        highlights.push('IP'+(m?m[1]:'68')+' 防水');
+      }
+      if(sp.os){
+        if(/iOS/.test(sp.os)) highlights.push('iOS 生态');
+        else if(/Android 1[2-9]/.test(sp.os)) highlights.push('新版安卓');
+      }
+      if(sp.screen_material&&/AMOLED/.test(sp.screen_material)) highlights.push('AMOLED 屏');
+      if(sp.chipset&&/Snapdragon 8|Tensor G|M\d|Ultra|Apple M/i.test(sp.chipset)) highlights.push('旗舰芯片');
+      if(sp.features_bluetooth&&/5\.[2-9]/.test(sp.features_bluetooth)) highlights.push('蓝牙'+sp.features_bluetooth);
       items.push({type:tag,model:p.phone.brand+' '+p.phone.model,text:highlights.join(' / ')||'综合表现均衡'});
     });
     
@@ -3071,14 +3112,11 @@ const scoreBars = scores.map((s, i) => {
     if (AI_PRESETS[key]) return AI_PRESETS[key];
     return AI_PRESETS['_group_' + groupOfCat(key)] || AI_PRESETS._all;
   }
-  // 用户停留在「全部」时用通用预设；否则用当前选中品类（含分组/通用兜底）
-  function aiPlaceholder() { return (state.navGroup === 'all' ? AI_PRESETS._all : aiPreset(state.category)).ph; }
-  function aiExamples() { return (state.navGroup === 'all' ? AI_PRESETS._all : aiPreset(state.category)).ex; }
-  // AI 说明文字：未锁定品类（全部）→ 全站自动识别；已锁定 → 插入当前品类名
+  // AI 区域文案始终根据当前选中品类（fallback 链覆盖未知品类）
+  function aiPlaceholder() { return aiPreset(state.category).ph; }
+  function aiExamples() { return aiPreset(state.category).ex; }
+  // AI 说明文字：动态插入当前品类名
   function aiSubText() {
-    if (state.navGroup === 'all') {
-      return '用一句话描述需求，AI帮你从全站 ' + totalProductCount() + ' 款产品中找到更适合的选择';
-    }
     return '描述你的预算和使用需求，AI帮你从' + cat().name + '中挑选更合适的产品';
   }
 
