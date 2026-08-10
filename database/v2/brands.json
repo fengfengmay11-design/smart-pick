@@ -928,5 +928,292 @@
     "official_url": "",
     "logo": "",
     "status": "active"
+  },
+  {
+    "brand_id": "google",
+    "brand_name": "谷歌",
+    "brand_name_cn": "谷歌",
+    "brand_name_en": "Google",
+    "aliases": [
+      "谷歌",
+      "google",
+      "Google",
+      "GOOGLE",
+      "Google Pixel",
+      "Pixel"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "motorola",
+    "brand_name": "摩托罗拉",
+    "brand_name_cn": "摩托罗拉",
+    "brand_name_en": "Motorola",
+    "aliases": [
+      "摩托罗拉",
+      "motorola",
+      "Motorola",
+      "Moto",
+      "moto"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "meizu",
+    "brand_name": "魅族",
+    "brand_name_cn": "魅族",
+    "brand_name_en": "Meizu",
+    "aliases": [
+      "魅族",
+      "meizu",
+      "Meizu",
+      "MEIZU"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "nubia",
+    "brand_name": "努比亚",
+    "brand_name_cn": "努比亚",
+    "brand_name_en": "nubia",
+    "aliases": [
+      "努比亚",
+      "nubia",
+      "Nubia",
+      "红魔",
+      "Red Magic",
+      "redmagic"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "iqoo",
+    "brand_name": "iQOO",
+    "brand_name_cn": "iQOO",
+    "brand_name_en": "iQOO",
+    "aliases": [
+      "iQOO",
+      "iqoo",
+      "IQOO",
+      "爱酷"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "redmi",
+    "brand_name": "红米",
+    "brand_name_cn": "红米",
+    "brand_name_en": "Redmi",
+    "aliases": [
+      "红米",
+      "redmi",
+      "Redmi",
+      "REDMINote",
+      "Note"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "amazfit",
+    "brand_name": "Amazfit",
+    "brand_name_cn": "Amazfit",
+    "brand_name_en": "Amazfit",
+    "aliases": [
+      "Amazfit",
+      "amazfit",
+      "Zepp"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "fitbit",
+    "brand_name": "Fitbit",
+    "brand_name_cn": "Fitbit",
+    "brand_name_en": "Fitbit",
+    "aliases": [
+      "Fitbit",
+      "fitbit",
+      "FITBIT"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "coros",
+    "brand_name": "COROS",
+    "brand_name_cn": "高驰",
+    "brand_name_en": "COROS",
+    "aliases": [
+      "高驰",
+      "COROS",
+      "coros",
+      "Coros"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "razer",
+    "brand_name": "雷蛇",
+    "brand_name_cn": "雷蛇",
+    "brand_name_en": "Razer",
+    "aliases": [
+      "雷蛇",
+      "razer",
+      "Razer",
+      "RAZER"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "cherry",
+    "brand_name": "CHERRY",
+    "brand_name_cn": "樱桃",
+    "brand_name_en": "CHERRY",
+    "aliases": [
+      "樱桃",
+      "CHERRY",
+      "cherry",
+      "Cherry"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "corsair",
+    "brand_name": "海盗船",
+    "brand_name_cn": "海盗船",
+    "brand_name_en": "Corsair",
+    "aliases": [
+      "海盗船",
+      "corsair",
+      "Corsair",
+      "CORSAIR"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "hhkb",
+    "brand_name": "HHKB",
+    "brand_name_cn": "HHKB",
+    "brand_name_en": "HHKB",
+    "aliases": [
+      "HHKB",
+      "hhkb",
+      "Happy Hacking Keyboard",
+      "PFU"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ducky",
+    "brand_name": "Ducky",
+    "brand_name_cn": "鸭子",
+    "brand_name_en": "Ducky",
+    "aliases": [
+      "鸭子",
+      "Ducky",
+      "ducky",
+      "DUCKY"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "steelseries",
+    "brand_name": "赛睿",
+    "brand_name_cn": "赛睿",
+    "brand_name_en": "SteelSeries",
+    "aliases": [
+      "赛睿",
+      "steelseries",
+      "SteelSeries",
+      "STEELSERIES"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ikbc",
+    "brand_name": "iKBC",
+    "brand_name_cn": "iKBC",
+    "brand_name_en": "iKBC",
+    "aliases": [
+      "iKBC",
+      "ikbc",
+      "IKBC"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "zowie",
+    "brand_name": "卓威",
+    "brand_name_cn": "卓威",
+    "brand_name_en": "ZOWIE",
+    "aliases": [
+      "卓威",
+      "ZOWIE",
+      "zowie",
+      "BenQ ZOWIE"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "glorious",
+    "brand_name": "Glorious",
+    "brand_name_cn": "Glorious",
+    "brand_name_en": "Glorious",
+    "aliases": [
+      "Glorious",
+      "glorious",
+      "GLORIOUS"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "roccat",
+    "brand_name": "ROCCAT",
+    "brand_name_cn": "巨爪",
+    "brand_name_en": "ROCCAT",
+    "aliases": [
+      "巨爪",
+      "ROCCAT",
+      "roccat",
+      "Roccat"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
   }
 ]
