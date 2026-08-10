@@ -2584,5 +2584,89 @@
     "memory": "16GB",
     "color": "香珀",
     "status": "active"
+  },
+  {
+    "variant_id": "amazfit-balance-2-v1",
+    "product_id": "amazfit-balance-2",
+    "variant_name": "午夜印象",
+    "color": "Midnight",
+    "status": "active"
+  },
+  {
+    "variant_id": "amazfit-balance-2-v2",
+    "product_id": "amazfit-balance-2",
+    "variant_name": "沙石黑",
+    "color": "Sandstone",
+    "status": "active"
+  },
+  {
+    "variant_id": "fitbit-charge-6-v1",
+    "product_id": "fitbit-charge-6",
+    "variant_name": "黑曜石",
+    "color": "Obsidian",
+    "status": "active"
+  },
+  {
+    "variant_id": "fitbit-charge-6-v2",
+    "product_id": "fitbit-charge-6",
+    "variant_name": "珊瑚色",
+    "color": "Coral",
+    "status": "active"
+  },
+  {
+    "variant_id": "coros-pace-3-v1",
+    "product_id": "coros-pace-3",
+    "variant_name": "黑色硅胶",
+    "color": "Black Silicone",
+    "status": "active"
+  },
+  {
+    "variant_id": "coros-pace-3-v2",
+    "product_id": "coros-pace-3",
+    "variant_name": "白色织物",
+    "color": "White Fabric",
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus-watch-2-v1",
+    "product_id": "oneplus-watch-2",
+    "variant_name": "陨石黑",
+    "color": "Obsidian Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "oneplus-watch-2-v2",
+    "product_id": "oneplus-watch-2",
+    "variant_name": "星云绿",
+    "color": "Stellar Green",
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo-watch-x-v1",
+    "product_id": "oppo-watch-x",
+    "variant_name": "星夜飞行",
+    "color": "Mars Brown",
+    "status": "active"
+  },
+  {
+    "variant_id": "oppo-watch-x-v2",
+    "product_id": "oppo-watch-x",
+    "variant_name": "冰川岩灰",
+    "color": "Glacier Grey",
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo-watch-3-v1",
+    "product_id": "vivo-watch-3",
+    "variant_name": "辰夜黑 软胶",
+    "color": "Midnight Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo-watch-3-v2",
+    "product_id": "vivo-watch-3",
+    "variant_name": "月光白",
+    "color": "Moonlight White",
+    "status": "active"
   }
 ]

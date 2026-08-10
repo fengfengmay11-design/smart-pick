@@ -16242,7 +16242,7 @@
   {
     "price_id": "google-pixel-9-p1",
     "product_id": "google-pixel-9",
-    "variant_id": null,
+    "variant_id": "google-pixel-9-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16252,7 +16252,7 @@
   {
     "price_id": "google-pixel-9-pro-xl-p1",
     "product_id": "google-pixel-9-pro-xl",
-    "variant_id": null,
+    "variant_id": "google-pixel-9-pro-xl-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16262,7 +16262,7 @@
   {
     "price_id": "motorola-edge-50-ultra-p1",
     "product_id": "motorola-edge-50-ultra",
-    "variant_id": null,
+    "variant_id": "motorola-edge-50-ultra-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16272,7 +16272,7 @@
   {
     "price_id": "redmi-redmi-k80-p1",
     "product_id": "redmi-redmi-k80",
-    "variant_id": null,
+    "variant_id": "redmi-redmi-k80-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16282,7 +16282,7 @@
   {
     "price_id": "iqoo-iqoo-13-p1",
     "product_id": "iqoo-iqoo-13",
-    "variant_id": null,
+    "variant_id": "iqoo-iqoo-13-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16292,7 +16292,7 @@
   {
     "price_id": "meizu-meizu-21-p1",
     "product_id": "meizu-meizu-21",
-    "variant_id": null,
+    "variant_id": "meizu-meizu-21-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
@@ -16302,11 +16302,71 @@
   {
     "price_id": "nubia-z70-ultra-p1",
     "product_id": "nubia-z70-ultra",
-    "variant_id": null,
+    "variant_id": "nubia-z70-ultra-v1",
     "currency": "CNY",
     "price_type": "current",
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 4599
+  },
+  {
+    "price_id": "amazfit-balance-2-p1",
+    "product_id": "amazfit-balance-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1299
+  },
+  {
+    "price_id": "fitbit-charge-6-p1",
+    "product_id": "fitbit-charge-6",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 957
+  },
+  {
+    "price_id": "coros-pace-3-p1",
+    "product_id": "coros-pace-3",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1699
+  },
+  {
+    "price_id": "oneplus-watch-2-p1",
+    "product_id": "oneplus-watch-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1599
+  },
+  {
+    "price_id": "oppo-watch-x-p1",
+    "product_id": "oppo-watch-x",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1799
+  },
+  {
+    "price_id": "vivo-watch-3-p1",
+    "product_id": "vivo-watch-3",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1099
   }
 ]

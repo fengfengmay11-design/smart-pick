@@ -20408,5 +20408,198 @@
     "source_url": "https://www.zte.com.cn/china/about/news/20241122c1",
     "created_at": "2026-08-10",
     "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "amazfit-balance-2",
+    "legacy_id": "amazfit-balance-2",
+    "brand_id": "amazfit",
+    "primary_category_id": "smartwatch",
+    "series_id": "balance",
+    "generation": "1",
+    "model": "Balance",
+    "full_name": "Amazfit Balance",
+    "aliases": [
+      "Amazfit Balance",
+      "华米 Balance",
+      "Balance"
+    ],
+    "status": "active",
+    "tags": [
+      "sports",
+      "health",
+      "long_battery",
+      "amoled",
+      "dual_band_gps"
+    ],
+    "release_date": "2023-09-01",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 89,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "web",
+    "source_url": "https://m.smzdm.com/p/129031499/",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "fitbit-charge-6",
+    "legacy_id": "fitbit-charge-6",
+    "brand_id": "fitbit",
+    "primary_category_id": "smartwatch",
+    "series_id": "charge",
+    "generation": "6",
+    "model": "Charge 6",
+    "full_name": "Fitbit Charge 6",
+    "aliases": [
+      "Fitbit Charge 6",
+      "Charge 6",
+      "Fitbit 充电手环6"
+    ],
+    "status": "active",
+    "tags": [
+      "fitness_band",
+      "health",
+      "gps",
+      "ecg"
+    ],
+    "release_date": "2023-09-28",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 78,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/1Z44nJW5pEKdJo0ayU5FdJhj1BtS24_3fgGnd48MW3ScNgPwN.html",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "coros-pace-3",
+    "legacy_id": "coros-pace-3",
+    "brand_id": "coros",
+    "primary_category_id": "smartwatch",
+    "series_id": "pace",
+    "generation": "3",
+    "model": "Pace 3",
+    "full_name": "COROS Pace 3",
+    "aliases": [
+      "COROS Pace 3",
+      "高驰 Pace 3",
+      "Pace3"
+    ],
+    "status": "active",
+    "tags": [
+      "sports",
+      "running",
+      "dual_band_gps",
+      "long_battery"
+    ],
+    "release_date": "2023-08-01",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 89,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/Z5JIYS9QGTfNC6NrCoHBux4W_3NM15bg0mG7Zem8bim.html",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "oneplus-watch-2",
+    "legacy_id": "oneplus-watch-2",
+    "brand_id": "oneplus",
+    "primary_category_id": "smartwatch",
+    "series_id": "watch",
+    "generation": "2",
+    "model": "Watch 2",
+    "full_name": "OnePlus Watch 2",
+    "aliases": [
+      "OnePlus Watch 2",
+      "一加手表2",
+      "Watch 2"
+    ],
+    "status": "active",
+    "tags": [
+      "smartwatch",
+      "esim",
+      "wear_os",
+      "flagship"
+    ],
+    "release_date": "2024-02-26",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 100,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "web",
+    "source_url": "https://www.smzdm.com/p/148842934/",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "oppo-watch-x",
+    "legacy_id": "oppo-watch-x",
+    "brand_id": "oppo",
+    "primary_category_id": "smartwatch",
+    "series_id": "watch_x",
+    "generation": "X",
+    "model": "Watch X",
+    "full_name": "OPPO Watch X",
+    "aliases": [
+      "OPPO Watch X",
+      "OPPO手表X",
+      "Watch X"
+    ],
+    "status": "active",
+    "tags": [
+      "smartwatch",
+      "esim",
+      "wear_os",
+      "flagship"
+    ],
+    "release_date": "2024-05-01",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 100,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "web",
+    "source_url": "https://detail.zol.com.cn/series/827/10856653_1.html",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
+  },
+  {
+    "product_id": "vivo-watch-3",
+    "legacy_id": "vivo-watch-3",
+    "brand_id": "vivo",
+    "primary_category_id": "smartwatch",
+    "series_id": "watch_3",
+    "generation": "3",
+    "model": "Watch 3",
+    "full_name": "vivo Watch 3",
+    "aliases": [
+      "vivo Watch 3",
+      "vivo手表3",
+      "Watch 3"
+    ],
+    "status": "active",
+    "tags": [
+      "smartwatch",
+      "esim",
+      "bluetooth",
+      "blueos"
+    ],
+    "release_date": "2023-11-13",
+    "image": null,
+    "official_url": null,
+    "data_completeness": 100,
+    "data_confidence": "medium",
+    "needs_review": false,
+    "data_source": "manufacturer",
+    "source_url": "https://m.vivo.com.cn/vivo/param/vivowatch3",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-10"
   }
 ]

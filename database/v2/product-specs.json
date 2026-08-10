@@ -38149,5 +38149,170 @@
       },
       "os": "Nebula AIOS (Android 15)"
     }
+  },
+  {
+    "product_id": "amazfit-balance-2",
+    "specs": {
+      "size": {
+        "value": 46,
+        "unit": "mm",
+        "display_value": "46mm",
+        "original_value": "46mm"
+      },
+      "screen": "1.5英寸 AMOLED 480×480",
+      "battery": {
+        "value": 14,
+        "unit": "天",
+        "display_value": "14天",
+        "original_value": "14天"
+      },
+      "gps": "双频 GPS (GPS/GLONASS/Galileo/QZSS)",
+      "health": "心率/血氧/睡眠/压力/身体成分",
+      "weight": {
+        "value": 35,
+        "unit": "g",
+        "display_value": "35g",
+        "original_value": "35g"
+      },
+      "os": "Zepp OS 3.0",
+      "waterproof": "5ATM"
+    }
+  },
+  {
+    "product_id": "fitbit-charge-6",
+    "specs": {
+      "screen": "1.04英寸 AMOLED",
+      "battery": {
+        "value": 7,
+        "unit": "天",
+        "display_value": "7天",
+        "original_value": "7天"
+      },
+      "gps": "内置 GPS (GPS/GLONASS/Galileo)",
+      "health": "心率/血氧/ECG/压力/皮肤温度",
+      "weight": {
+        "value": 37,
+        "unit": "g",
+        "display_value": "37g",
+        "original_value": "37g(含表带)"
+      },
+      "os": "Fitbit OS",
+      "waterproof": "5ATM"
+    }
+  },
+  {
+    "product_id": "coros-pace-3",
+    "specs": {
+      "size": {
+        "value": 42,
+        "unit": "mm",
+        "display_value": "42mm",
+        "original_value": "42mm"
+      },
+      "screen": "1.2英寸 MIP 半透反射 LCD 触控",
+      "battery": {
+        "value": 24,
+        "unit": "天",
+        "display_value": "24天",
+        "original_value": "24天(日常)/38h(GPS)"
+      },
+      "gps": "双频 GPS (GPS/北斗/Galileo/QZSS)",
+      "health": "心率/血氧/训练负荷/睡眠",
+      "weight": {
+        "value": 30,
+        "unit": "g",
+        "display_value": "30g",
+        "original_value": "30g(含织物表带)"
+      },
+      "os": "COROS OS",
+      "waterproof": "5ATM"
+    }
+  },
+  {
+    "product_id": "oneplus-watch-2",
+    "specs": {
+      "size": {
+        "value": 46,
+        "unit": "mm",
+        "display_value": "46mm",
+        "original_value": "46mm"
+      },
+      "screen": "1.43英寸 AMOLED 466×466",
+      "battery": {
+        "value": 100,
+        "unit": "hour",
+        "display_value": "100h",
+        "original_value": "100小时(全智能)/12天(省电)"
+      },
+      "gps": "双频 GPS",
+      "health": "心率/血氧/睡眠/压力/体温",
+      "weight": {
+        "value": 49,
+        "unit": "g",
+        "display_value": "49g",
+        "original_value": "49g"
+      },
+      "os": "ColorOS Watch 6.0 (Wear OS 4 内核)",
+      "chip": "Snapdragon W5 Gen1 + BES2700",
+      "waterproof": "5ATM + IP68"
+    }
+  },
+  {
+    "product_id": "oppo-watch-x",
+    "specs": {
+      "size": {
+        "value": 46,
+        "unit": "mm",
+        "display_value": "46mm",
+        "original_value": "46mm"
+      },
+      "screen": "1.43英寸 LTPO AMOLED 466×466",
+      "battery": {
+        "value": 100,
+        "unit": "hour",
+        "display_value": "100h",
+        "original_value": "100小时(全智能)/12天(省电)"
+      },
+      "gps": "双频 GPS",
+      "health": "心率/血氧/睡眠/鼾症评估",
+      "weight": {
+        "value": 49,
+        "unit": "g",
+        "display_value": "49g",
+        "original_value": "49g"
+      },
+      "os": "ColorOS Watch (Wear OS 4 内核)",
+      "chip": "Snapdragon W5 + BES2700",
+      "waterproof": "5ATM + IP68"
+    }
+  },
+  {
+    "product_id": "vivo-watch-3",
+    "specs": {
+      "size": {
+        "value": 46,
+        "unit": "mm",
+        "display_value": "46mm",
+        "original_value": "46mm"
+      },
+      "screen": "1.43英寸 AMOLED 466×466",
+      "battery": {
+        "value": 16,
+        "unit": "天",
+        "display_value": "16天",
+        "original_value": "16天(蓝牙)/8天(eSIM)"
+      },
+      "gps": "GPS (GPS/北斗/GLONASS/Galileo/QZSS)",
+      "health": "心率/血氧/睡眠/压力",
+      "weight": {
+        "value": 36,
+        "unit": "g",
+        "display_value": "36g",
+        "original_value": "36g(不含表带)"
+      },
+      "os": "BlueOS (蓝河)",
+      "chip": "BES2700BP + 展锐通信芯片",
+      "waterproof": "5ATM"
+    }
   }
 ]
