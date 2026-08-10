@@ -2829,5 +2829,59 @@
     "variant_name": "黑色",
     "color": "Black",
     "status": "active"
+  },
+  {
+    "variant_id": "huawei-mate-x7-v1",
+    "product_id": "huawei-mate-x7",
+    "variant_name": "12GB+256GB 曜石黑",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "honor-magic-v5-v1",
+    "product_id": "honor-magic-v5",
+    "variant_name": "12GB+256GB 绒黑色",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "samsung-galaxy-z-trifold-v1",
+    "product_id": "samsung-galaxy-z-trifold",
+    "variant_name": "16GB+512GB 时空黑",
+    "storage": "512GB",
+    "memory": "16GB",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "vivo-x-fold5-v1",
+    "product_id": "vivo-x-fold5",
+    "variant_name": "12GB+256GB 钛度",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Titanium",
+    "status": "active"
+  },
+  {
+    "variant_id": "nubia-11-pro-v1",
+    "product_id": "nubia-11-pro",
+    "variant_name": "12GB+256GB 暗夜骑士",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Black",
+    "status": "active"
+  },
+  {
+    "variant_id": "nubia-11-air-v1",
+    "product_id": "nubia-11-air",
+    "variant_name": "12GB+256GB 量子黑",
+    "storage": "256GB",
+    "memory": "12GB",
+    "color": "Black",
+    "status": "active"
   }
 ]

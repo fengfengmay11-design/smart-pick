@@ -31,9 +31,13 @@ function flatValue(v) {
   return v;
 }
 
+// 手机族：旧前端统一以 phone 形态（storageOptions）呈现
+const PHONE_FAMILY = new Set(['smartphone', 'foldable_phone', 'gaming_phone']);
+
 // 旧分类反查（V2 category_id → 旧 file key）
 const OLD_CAT = {
-  smartphone: 'phone', laptop: 'laptop', cpu: 'cpu', gpu: 'gpu', tablet: 'tablet',
+  smartphone: 'phone', foldable_phone: 'phone', gaming_phone: 'phone',
+  laptop: 'laptop', cpu: 'cpu', gpu: 'gpu', tablet: 'tablet',
   monitor: 'monitor', keyboard: 'keyboard', earphone: 'earphone', tv: 'tv',
   smartwatch: 'watch', camera: 'camera', cleaning_robot: 'robot', smart_appliance: 'ac',
 };
@@ -99,7 +103,7 @@ function getAllLegacy() {
 function verify() {
   const all = getAllLegacy();
   let priceRecords = 0, phoneVariants = 0;
-  const phoneIds = new Set(P.filter(p => p.primary_category_id === 'smartphone').map(p => p.product_id));
+  const phoneIds = new Set(P.filter(p => PHONE_FAMILY.has(p.primary_category_id)).map(p => p.product_id));
   all.forEach(p => {
     if (p.storageOptions) {
       phoneVariants += p.storageOptions.length;

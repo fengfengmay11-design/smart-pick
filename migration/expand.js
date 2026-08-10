@@ -34,6 +34,9 @@ const cats = load('categories.json');
 
 const brandIds = new Set(brands.map(b => b.brand_id));
 const catIds = new Set(cats.map(c => c.category_id));
+// 手机族：旧前端用 storageOptions（variant 级）承载价格，价格必须挂到 variant，
+// 否则旧前端无法重建（A-1 曾因此产生 7 条断链价格）。其余品类为 product 级单价格模型。
+const PHONE_FAMILY = new Set(['smartphone', 'foldable_phone', 'gaming_phone']);
 const existingKeys = new Set(products.map(p => (p.brand_id + '|' + (p.model || '').toLowerCase())));
 
 // 生成稳定 product_id：优先 brand + model slug，冲突则加序号
@@ -86,8 +89,23 @@ for (const s of seed) {
   newProducts.push(prod);
   report.inserted++;
   if (s.specs) specs.push({ product_id: pid, specs: s.specs });
-  (s.variants || []).forEach((v, i) => variants.push(Object.assign({ variant_id: `${pid}-v${i + 1}`, product_id: pid }, v)));
-  (s.prices || []).forEach((pr, i) => prices.push(Object.assign({ price_id: `${pid}-p${i + 1}`, product_id: pid, variant_id: null, currency: 'CNY', price_type: 'current', last_updated_at: now }, pr)));
+  const newVats = (s.variants || []).map((v, i) => Object.assign({ variant_id: `${pid}-v${i + 1}`, product_id: pid }, v));
+  newVats.forEach(v => variants.push(v));
+  const isPhoneFamily = PHONE_FAMILY.has(s.primary_category_id) && newVats.length > 0;
+  (s.prices || []).forEach((pr, i) => {
+    // 手机族价格挂到 variant（可在 seed 用 variant_index 指定，默认首个）；其余品类挂 product 级
+    let vid = null;
+    if (isPhoneFamily) {
+      const idx = Number.isInteger(pr.variant_index) ? pr.variant_index : 0;
+      vid = (newVats[idx] || newVats[0]).variant_id;
+    }
+    const rec = Object.assign(
+      { price_id: `${pid}-p${i + 1}`, product_id: pid, variant_id: vid, currency: 'CNY', price_type: 'current', last_updated_at: now },
+      pr
+    );
+    delete rec.variant_index;
+    prices.push(rec);
+  });
 }
 
 if (dryRun) {

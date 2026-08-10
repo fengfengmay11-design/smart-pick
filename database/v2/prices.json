@@ -16498,5 +16498,65 @@
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 399
+  },
+  {
+    "price_id": "huawei-mate-x7-p1",
+    "product_id": "huawei-mate-x7",
+    "variant_id": "huawei-mate-x7-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 12999
+  },
+  {
+    "price_id": "honor-magic-v5-p1",
+    "product_id": "honor-magic-v5",
+    "variant_id": "honor-magic-v5-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 8999
+  },
+  {
+    "price_id": "samsung-galaxy-z-trifold-p1",
+    "product_id": "samsung-galaxy-z-trifold",
+    "variant_id": "samsung-galaxy-z-trifold-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 19999
+  },
+  {
+    "price_id": "vivo-x-fold5-p1",
+    "product_id": "vivo-x-fold5",
+    "variant_id": "vivo-x-fold5-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6999
+  },
+  {
+    "price_id": "nubia-11-pro-p1",
+    "product_id": "nubia-11-pro",
+    "variant_id": "nubia-11-pro-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4999
+  },
+  {
+    "price_id": "nubia-11-air-p1",
+    "product_id": "nubia-11-air",
+    "variant_id": "nubia-11-air-v1",
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3499
   }
 ]
