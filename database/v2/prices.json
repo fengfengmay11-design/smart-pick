@@ -16558,5 +16558,885 @@
     "last_updated_at": "2026-08-10",
     "source": "jd",
     "price": 3499
+  },
+  {
+    "price_id": "dji-mini-4-pro-p1",
+    "product_id": "dji-mini-4-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6539
+  },
+  {
+    "price_id": "dji-air-3s-p1",
+    "product_id": "dji-air-3s",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6988
+  },
+  {
+    "price_id": "dji-mavic-4-pro-p1",
+    "product_id": "dji-mavic-4-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 13888
+  },
+  {
+    "price_id": "gopro-hero13-black-p1",
+    "product_id": "gopro-hero13-black",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2448
+  },
+  {
+    "price_id": "dji-osmo-action-5-pro-p1",
+    "product_id": "dji-osmo-action-5-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2098
+  },
+  {
+    "price_id": "insta360-ace-pro-2-p1",
+    "product_id": "insta360-ace-pro-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2618
+  },
+  {
+    "price_id": "insta360-x5-p1",
+    "product_id": "insta360-x5",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2998
+  },
+  {
+    "price_id": "dji-rs-4-p1",
+    "product_id": "dji-rs-4",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2981
+  },
+  {
+    "price_id": "dji-rs-4-pro-p1",
+    "product_id": "dji-rs-4-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 7878
+  },
+  {
+    "price_id": "dji-osmo-mobile-7p-p1",
+    "product_id": "dji-osmo-mobile-7p",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 648
+  },
+  {
+    "price_id": "sony-fe-300mm-f2-8-gm-oss-p1",
+    "product_id": "sony-fe-300mm-f2-8-gm-oss",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 43999
+  },
+  {
+    "price_id": "nikon-nikkor-z-135mm-f-1-8-s-plena-p1",
+    "product_id": "nikon-nikkor-z-135mm-f-1-8-s-plena",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 19338
+  },
+  {
+    "price_id": "canon-rf-24-105mm-f2-8-l-is-usm-z-p1",
+    "product_id": "canon-rf-24-105mm-f2-8-l-is-usm-z",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 20499
+  },
+  {
+    "price_id": "xiaomi-10-p1",
+    "product_id": "xiaomi-10",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 269
+  },
+  {
+    "price_id": "huawei-10-p1",
+    "product_id": "huawei-10",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 269
+  },
+  {
+    "price_id": "honor-10-p1",
+    "product_id": "honor-10",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 249
+  },
+  {
+    "price_id": "samsung-samsung-galaxy-ring-p1",
+    "product_id": "samsung-samsung-galaxy-ring",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2999
+  },
+  {
+    "price_id": "amazfit-amazfit-helio-ring-p1",
+    "product_id": "amazfit-amazfit-helio-ring",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1199
+  },
+  {
+    "price_id": "xiaomi-ai-p1",
+    "product_id": "xiaomi-ai",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1999
+  },
+  {
+    "price_id": "rokid-rokid-glasses-p1",
+    "product_id": "rokid-rokid-glasses",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3558
+  },
+  {
+    "price_id": "thunderbird-v3-ai-p1",
+    "product_id": "thunderbird-v3-ai",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1799
+  },
+  {
+    "price_id": "pico-pico-4-ultra-p1",
+    "product_id": "pico-pico-4-ultra",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 5599
+  },
+  {
+    "price_id": "meta-meta-quest-3-p1",
+    "product_id": "meta-meta-quest-3",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4498
+  },
+  {
+    "price_id": "apple-apple-vision-pro-p1",
+    "product_id": "apple-apple-vision-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 29999
+  },
+  {
+    "price_id": "xreal-xreal-one-pro-p1",
+    "product_id": "xreal-xreal-one-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4299
+  },
+  {
+    "price_id": "thunderbird-air-3s-p1",
+    "product_id": "thunderbird-air-3s",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1599
+  },
+  {
+    "price_id": "xreal-xreal-one-p1",
+    "product_id": "xreal-xreal-one",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3299
+  },
+  {
+    "price_id": "sony-playstation-5-pro-p1",
+    "product_id": "sony-playstation-5-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6299
+  },
+  {
+    "price_id": "sony-playstation-5-slim-disc-edition-p1",
+    "product_id": "sony-playstation-5-slim-disc-edition",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4399
+  },
+  {
+    "price_id": "microsoft-xbox-series-x-digital-edition-p1",
+    "product_id": "microsoft-xbox-series-x-digital-edition",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3899
+  },
+  {
+    "price_id": "asus-rog-ally-x-p1",
+    "product_id": "asus-rog-ally-x",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 5449
+  },
+  {
+    "price_id": "lenovo-legion-go-2-p1",
+    "product_id": "lenovo-legion-go-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 9699
+  },
+  {
+    "price_id": "msi-claw-8-ai-p1",
+    "product_id": "msi-claw-8-ai",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 7699
+  },
+  {
+    "price_id": "sony-dualsense-edge-p1",
+    "product_id": "sony-dualsense-edge",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1599
+  },
+  {
+    "price_id": "thrustmaster-t598p-p1",
+    "product_id": "thrustmaster-t598p",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3399
+  },
+  {
+    "price_id": "logitech-g-pro-racing-wheel-p1",
+    "product_id": "logitech-g-pro-racing-wheel",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 14865
+  },
+  {
+    "price_id": "jbl-xtreme-4-p1",
+    "product_id": "jbl-xtreme-4",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2199
+  },
+  {
+    "price_id": "bose-soundlink-max-p1",
+    "product_id": "bose-soundlink-max",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2701
+  },
+  {
+    "price_id": "marshall-emberton-iii-p1",
+    "product_id": "marshall-emberton-iii",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1449
+  },
+  {
+    "price_id": "sony-ult-field-3-srs-ult30-p1",
+    "product_id": "sony-ult-field-3-srs-ult30",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1264
+  },
+  {
+    "price_id": "shure-mv7-p1",
+    "product_id": "shure-mv7",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1899
+  },
+  {
+    "price_id": "rode-nt1-5th-generation-p1",
+    "product_id": "rode-nt1-5th-generation",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1980
+  },
+  {
+    "price_id": "shure-mv6-p1",
+    "product_id": "shure-mv6",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1219
+  },
+  {
+    "price_id": "rode-wireless-pro-p1",
+    "product_id": "rode-wireless-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2295
+  },
+  {
+    "price_id": "samsung-hw-q990d-p1",
+    "product_id": "samsung-hw-q990d",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6999
+  },
+  {
+    "price_id": "sony-bravia-theater-bar-9-ht-a9000-p1",
+    "product_id": "sony-bravia-theater-bar-9-ht-a9000",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 7261
+  },
+  {
+    "price_id": "xgimi-z7x-p1",
+    "product_id": "xgimi-z7x",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3099
+  },
+  {
+    "price_id": "epson-ch-tw6280t-p1",
+    "product_id": "epson-ch-tw6280t",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 6279
+  },
+  {
+    "price_id": "jmgo-n1s-pro-p1",
+    "product_id": "jmgo-n1s-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4995
+  },
+  {
+    "price_id": "ugreen-revodok-max-213-u710-p1",
+    "product_id": "ugreen-revodok-max-213-u710",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1239
+  },
+  {
+    "price_id": "anker-anker-prime-tb5-docking-station-a83b5-p1",
+    "product_id": "anker-anker-prime-tb5-docking-station-a83b5",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2499
+  },
+  {
+    "price_id": "logitech-mx-brio-p1",
+    "product_id": "logitech-mx-brio",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1149
+  },
+  {
+    "price_id": "obsbot-obsbot-tiny-2-p1",
+    "product_id": "obsbot-obsbot-tiny-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1644
+  },
+  {
+    "price_id": "insta360-insta360-link-2-p1",
+    "product_id": "insta360-insta360-link-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1398
+  },
+  {
+    "price_id": "elgato-elgato-facecam-mk-2-p1",
+    "product_id": "elgato-elgato-facecam-mk-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1299
+  },
+  {
+    "price_id": "samsung-t9-p1",
+    "product_id": "samsung-t9",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2589
+  },
+  {
+    "price_id": "crucial-x10-pro-p1",
+    "product_id": "crucial-x10-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 839
+  },
+  {
+    "price_id": "kingston-xs1000-p1",
+    "product_id": "kingston-xs1000",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 879
+  },
+  {
+    "price_id": "xiaomi-xiaomi-be7000-p1",
+    "product_id": "xiaomi-xiaomi-be7000",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 679
+  },
+  {
+    "price_id": "huawei-huawei-be3-pro-p1",
+    "product_id": "huawei-huawei-be3-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 279
+  },
+  {
+    "price_id": "tplink-tp-link-be6500-p1",
+    "product_id": "tplink-tp-link-be6500",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 559
+  },
+  {
+    "price_id": "asus-asus-rog-gt-be98-pro-p1",
+    "product_id": "asus-asus-rog-gt-be98-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4013
+  },
+  {
+    "price_id": "xiaomi-xiaomi-be6500-pro-p1",
+    "product_id": "xiaomi-xiaomi-be6500-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 529
+  },
+  {
+    "price_id": "huawei-huawei-q7-p1",
+    "product_id": "huawei-huawei-q7",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1999
+  },
+  {
+    "price_id": "tplink-tp-link-k72-be3600-p1",
+    "product_id": "tplink-tp-link-k72-be3600",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 529
+  },
+  {
+    "price_id": "xiaomi-xiaomi-sw-106t-a-p1",
+    "product_id": "xiaomi-xiaomi-sw-106t-a",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 299
+  },
+  {
+    "price_id": "tplink-tp-link-tl-se2109p-p1",
+    "product_id": "tplink-tp-link-tl-se2109p",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 779
+  },
+  {
+    "price_id": "tenda-tenda-se2010x-p1",
+    "product_id": "tenda-tenda-se2010x",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 279
+  },
+  {
+    "price_id": "synology-synology-ds224-p1",
+    "product_id": "synology-synology-ds224",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2499
+  },
+  {
+    "price_id": "ugreen-ugreen-dxp4800-plus-p1",
+    "product_id": "ugreen-ugreen-dxp4800-plus",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 4169
+  },
+  {
+    "price_id": "qnap-qnap-ts-464c2-p1",
+    "product_id": "qnap-qnap-ts-464c2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2499
+  },
+  {
+    "price_id": "ugreen-ugreen-dxp2800-p1",
+    "product_id": "ugreen-ugreen-dxp2800",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2679
+  },
+  {
+    "price_id": "synology-synology-ds925-p1",
+    "product_id": "synology-synology-ds925",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 7597
+  },
+  {
+    "price_id": "amazon-kindle-paperwhite-2024-p1",
+    "product_id": "amazon-kindle-paperwhite-2024",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1899
+  },
+  {
+    "price_id": "ireader-ireader-neo-2-p1",
+    "product_id": "ireader-ireader-neo-2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 989
+  },
+  {
+    "price_id": "apple-macbook-air-13-m3-2024-p1",
+    "product_id": "apple-macbook-air-13-m3-2024",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 8199
+  },
+  {
+    "price_id": "apple-macbook-pro-14-m4-2024-p1",
+    "product_id": "apple-macbook-pro-14-m4-2024",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 12249
+  },
+  {
+    "price_id": "lenovo-thinkbook-14-2024-ultra-p1",
+    "product_id": "lenovo-thinkbook-14-2024-ultra",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 5599
+  },
+  {
+    "price_id": "mechrevo-x-p1",
+    "product_id": "mechrevo-x",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 5999
+  },
+  {
+    "price_id": "noctua-nh-d15-g2-p1",
+    "product_id": "noctua-nh-d15-g2",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1199
+  },
+  {
+    "price_id": "seasonic-vertex-gx-1000-p1",
+    "product_id": "seasonic-vertex-gx-1000",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1599
+  },
+  {
+    "price_id": "crucial-crucial-t705-p1",
+    "product_id": "crucial-crucial-t705",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1379
+  },
+  {
+    "price_id": "gigabyte-b850-aorus-elite-wifi7-p1",
+    "product_id": "gigabyte-b850-aorus-elite-wifi7",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1649
+  },
+  {
+    "price_id": "kingston-fury-beast-ddr5-6000-p1",
+    "product_id": "kingston-fury-beast-ddr5-6000",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1849
+  },
+  {
+    "price_id": "xiaomi-max-p1",
+    "product_id": "xiaomi-max",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 2299
+  },
+  {
+    "price_id": "xiaomi-m30-pro-p1",
+    "product_id": "xiaomi-m30-pro",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 3499
+  },
+  {
+    "price_id": "xiaomi-xiaomi-ai-glasses-m2442g1-p1",
+    "product_id": "xiaomi-xiaomi-ai-glasses-m2442g1",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1699
+  },
+  {
+    "price_id": "iflytek-4-0-p1",
+    "product_id": "iflytek-4-0",
+    "variant_id": null,
+    "currency": "CNY",
+    "price_type": "current",
+    "last_updated_at": "2026-08-10",
+    "source": "jd",
+    "price": 1999
   }
 ]

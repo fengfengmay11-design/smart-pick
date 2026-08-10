@@ -38,13 +38,15 @@ const catIds = new Set(cats.map(c => c.category_id));
 // 否则旧前端无法重建（A-1 曾因此产生 7 条断链价格）。其余品类为 product 级单价格模型。
 const PHONE_FAMILY = new Set(['smartphone', 'foldable_phone', 'gaming_phone']);
 const existingKeys = new Set(products.map(p => (p.brand_id + '|' + (p.model || '').toLowerCase())));
+// 已分配 id 集合（含已有 + 本批新分配），防止同一批次内多个产品 slug 撞 id
+const assignedIds = new Set(products.map(p => p.product_id));
 
 // 生成稳定 product_id：优先 brand + model slug，冲突则加序号
 function slug(s) { return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 function genId(brand, model) {
   let id = `${brand}-${slug(model)}`;
   let n = 2;
-  while (products.some(p => p.product_id === id) || existingKeys.has(id)) { id = `${brand}-${slug(model)}-${n++}`; }
+  while (assignedIds.has(id)) { id = `${brand}-${slug(model)}-${n++}`; }
   return id;
 }
 
@@ -61,6 +63,7 @@ for (const s of seed) {
   if (existingKeys.has(key)) { report.skipped_dup++; report.errors.push(`重复跳过: ${key}`); continue; }
 
   const pid = genId(s.brand_id, s.model);
+  assignedIds.add(pid);
   existingKeys.add(key);
   const now = new Date().toISOString().slice(0, 10);
   const prod = {

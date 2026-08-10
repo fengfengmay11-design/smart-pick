@@ -1,0 +1,332 @@
+{
+  "products": [
+    {
+      "brand_id": "xiaomi",
+      "primary_category_id": "router",
+      "model": "Xiaomi BE7000",
+      "full_name": "小米 BE7000 WiFi 7 路由",
+      "status": "active",
+      "release_date": "2023-05-01",
+      "source_url": "https://www.mi.com/xiaomi-routers/be-7000",
+      "tags": ["WiFi7", "三频", "旗舰路由"],
+      "specs": {
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":7000, "unit":"Mbps", "display_value":"7000Mbps"},
+        "bands": "三频",
+        "ports": "4×2.5G + 1×USB 3.0",
+        "cpu": "高通四核 A73 1.5GHz",
+        "ram": {"value":1024, "unit":"MB", "display_value":"1GB"},
+        "coverage": {"value":150, "unit":"sqm", "display_value":"150㎡"}
+      },
+      "prices": [{"source":"jd","price":679}]
+    },
+    {
+      "brand_id": "huawei",
+      "primary_category_id": "router",
+      "model": "HUAWEI BE3 Pro",
+      "full_name": "华为路由 BE3 Pro WiFi 7",
+      "status": "active",
+      "release_date": "2023-09-01",
+      "source_url": "https://consumer.huawei.com/content/huawei-cbg-site/en/routers/wifi-be3-pro",
+      "tags": ["WiFi7", "入门", "双频"],
+      "specs": {
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":3600, "unit":"Mbps", "display_value":"3600Mbps"},
+        "bands": "双频",
+        "ports": "1×2.5G + 3×千兆（网口盲插）",
+        "cpu": "凌霄四核",
+        "ram": {"value":256, "unit":"MB", "display_value":"256MB"},
+        "coverage": {"value":90, "unit":"sqm", "display_value":"90㎡"}
+      },
+      "prices": [{"source":"jd","price":279}]
+    },
+    {
+      "brand_id": "tplink",
+      "primary_category_id": "router",
+      "model": "TP-Link BE6500",
+      "full_name": "TP-Link BE6500 WiFi 7 路由",
+      "status": "active",
+      "release_date": "2023-11-15",
+      "source_url": "https://news.zol.com.cn/856/8561416.html",
+      "tags": ["WiFi7", "双频", "性价比"],
+      "specs": {
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":6500, "unit":"Mbps", "display_value":"6500Mbps"},
+        "bands": "双频",
+        "ports": "4×2.5G（WAN/LAN 自适应）",
+        "cpu": "四核 A53 1.5GHz",
+        "ram": null,
+        "coverage": null
+      },
+      "prices": [{"source":"jd","price":559}]
+    },
+    {
+      "brand_id": "asus",
+      "primary_category_id": "router",
+      "model": "ASUS ROG GT-BE98 Pro",
+      "full_name": "华硕 ROG GT-BE98 Pro 四频 WiFi 7 游戏路由",
+      "status": "active",
+      "release_date": "2024-01-01",
+      "source_url": "https://rog.asus.com/networking/rog-rapture-gt-be98-pro/spec",
+      "tags": ["WiFi7", "四频", "电竞旗舰"],
+      "specs": {
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":30000, "unit":"Mbps", "display_value":"BE30000 (30Gbps)"},
+        "bands": "四频",
+        "ports": "2×10G + 4×2.5G + 1×千兆 + 2×USB",
+        "cpu": "2.6GHz 四核 Broadcom BCM4916",
+        "ram": {"value":2048, "unit":"MB", "display_value":"2GB"},
+        "coverage": null
+      },
+      "prices": [{"source":"jd","price":4013}]
+    },
+    {
+      "brand_id": "xiaomi",
+      "primary_category_id": "router",
+      "model": "Xiaomi BE6500 Pro",
+      "full_name": "小米 BE6500 Pro WiFi 7 路由（内置中枢网关）",
+      "status": "active",
+      "release_date": "2023-10-01",
+      "source_url": "https://www.mi.com/xiaomi-routers/6500pro/",
+      "tags": ["WiFi7", "双频", "智能家居中枢"],
+      "specs": {
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":6500, "unit":"Mbps", "display_value":"6500Mbps"},
+        "bands": "双频",
+        "ports": "4×2.5G",
+        "cpu": "高通四核 A53 1.5GHz",
+        "ram": {"value":1024, "unit":"MB", "display_value":"1GB"},
+        "coverage": {"value":150, "unit":"sqm", "display_value":"150㎡"}
+      },
+      "prices": [{"source":"jd","price":529}]
+    },
+
+    {
+      "brand_id": "huawei",
+      "primary_category_id": "mesh",
+      "model": "HUAWEI Q7 网线版",
+      "full_name": "华为凌霄子母路由 Q7 网线版（1母3子）",
+      "status": "active",
+      "release_date": "2024-11-26",
+      "source_url": "https://consumer.huawei.com/cn/routers/q7-ethernet-cable/specs",
+      "tags": ["WiFi7", "子母路由", "全屋覆盖"],
+      "specs": {
+        "nodes": "4（1 母 + 3 子）",
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":3570, "unit":"Mbps", "display_value":"3570Mbps"},
+        "coverage": {"value":150, "unit":"sqm", "display_value":"150㎡"},
+        "ports": "母路由: 6×2.5G + 1×2.5G WAN + 1×千兆; 子路由: 1×2.5G WAN + 1×2.5G LAN",
+        "cpu": "自研凌霄 AI 芯片"
+      },
+      "prices": [{"source":"jd","price":1999}]
+    },
+    {
+      "brand_id": "asus",
+      "primary_category_id": "mesh",
+      "model": "ASUS ZenWiFi BQ16",
+      "full_name": "华硕 ZenWiFi BQ16 四频 WiFi 7 Mesh（2节点）",
+      "status": "active",
+      "release_date": "2024-01-10",
+      "source_url": "https://www.asus.com/be-nl/networking-iot-servers/whole-home-mesh-systems/asus-zenwifi/asus-zenwifi-bq16/",
+      "tags": ["WiFi7", "四频", "大户型"],
+      "specs": {
+        "nodes": "2",
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":25000, "unit":"Mbps", "display_value":"BE25000 (25Gbps)"},
+        "coverage": {"value":740, "unit":"sqm", "display_value":"740㎡"},
+        "ports": "每节点: 2×10G + 1×千兆 + USB 3.0",
+        "cpu": null
+      },
+      "prices": []
+    },
+    {
+      "brand_id": "tplink",
+      "primary_category_id": "mesh",
+      "model": "TP-Link K72 (BE3600 易展)",
+      "full_name": "TP-Link K72 双频 WiFi 7 易展路由套装（2只装）",
+      "status": "active",
+      "release_date": "2024-03-01",
+      "source_url": "https://m.tp-link.com.cn/product_3459.html",
+      "tags": ["WiFi7", "易展", "双节点"],
+      "specs": {
+        "nodes": "2",
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":3600, "unit":"Mbps", "display_value":"3600Mbps"},
+        "coverage": null,
+        "ports": "每机: 1×2.5G + 2×千兆",
+        "cpu": null
+      },
+      "prices": [{"source":"jd","price":529}]
+    },
+    {
+      "brand_id": "netgear",
+      "primary_category_id": "mesh",
+      "model": "NETGEAR Orbi 970 (RBE973)",
+      "full_name": "网件 Orbi 970 四频 WiFi 7 Mesh（2/3节点）",
+      "status": "active",
+      "release_date": "2023-09-19",
+      "source_url": "https://www.netgear.com/cn/home/wifi/mesh/rbe973s/",
+      "tags": ["WiFi7", "四频", "旗舰Mesh"],
+      "specs": {
+        "nodes": "2 / 3",
+        "wifi_standard": "WiFi 7 (802.11be)",
+        "speed": {"value":27000, "unit":"Mbps", "display_value":"BE27000 (27Gbps)"},
+        "coverage": {"value":660, "unit":"sqm", "display_value":"660㎡ (3-pack)"},
+        "ports": "路由: 1×10G WAN + 1×10G LAN + 4×2.5G; 节点: 1×10G LAN + 2×2.5G",
+        "cpu": "四核 2.2GHz"
+      },
+      "prices": []
+    },
+
+    {
+      "brand_id": "xiaomi",
+      "primary_category_id": "switch",
+      "model": "Xiaomi SW-106T-A",
+      "full_name": "小米万兆交换机 SW-106T-A（4×2.5G + 2×10G）",
+      "status": "active",
+      "release_date": "2024-07-16",
+      "source_url": "https://wiki.smzdm.com/p/9897voy/canshu/",
+      "tags": ["非网管", "万兆上联", "桌面交换机"],
+      "specs": {
+        "ports": "4×2.5G + 2×10G SFP+",
+        "speed": "2.5Gbps（上行 10Gbps）",
+        "managed": false,
+        "poe": false,
+        "layers": "二层"
+      },
+      "prices": [{"source":"jd","price":299}]
+    },
+    {
+      "brand_id": "tplink",
+      "primary_category_id": "switch",
+      "model": "TP-Link TL-SE2109P",
+      "full_name": "TP-Link TL-SE2109P 2.5G 云管理 PoE 交换机",
+      "status": "active",
+      "release_date": "2024-03-07",
+      "source_url": "https://www.tp-link.com.cn/product_2842.html",
+      "tags": ["PoE供电", "云管理", "企业"],
+      "specs": {
+        "ports": "8×2.5G + 1×10G SFP+",
+        "speed": "2.5Gbps（上行 10Gbps）",
+        "managed": true,
+        "poe": true,
+        "layers": "二层"
+      },
+      "prices": [{"source":"jd","price":779}]
+    },
+    {
+      "brand_id": "tenda",
+      "primary_category_id": "switch",
+      "model": "Tenda SE2010X",
+      "full_name": "腾达 SE2010X 8口2.5G + 2口10G 上联交换机",
+      "status": "active",
+      "release_date": "2024-11-14",
+      "source_url": "https://www.tenda.com.cn/product/SE2010X",
+      "tags": ["非网管", "万兆上联", "桌面"],
+      "specs": {
+        "ports": "8×2.5G + 2×10G SFP+",
+        "speed": "2.5Gbps（上行 10Gbps）",
+        "managed": false,
+        "poe": false,
+        "layers": "二层"
+      },
+      "prices": [{"source":"jd","price":279}]
+    },
+
+    {
+      "brand_id": "synology",
+      "primary_category_id": "nas",
+      "model": "Synology DS224+",
+      "full_name": "群晖 DS224+ 双盘位 NAS",
+      "status": "active",
+      "release_date": "2023-08-01",
+      "source_url": "https://www.synology.com/zh-cn/products/DS224+",
+      "tags": ["双盘位", "家用", "轻NAS"],
+      "specs": {
+        "bays": {"value":2, "unit":"bay", "display_value":"2盘位"},
+        "cpu": "Intel Celeron J4125 四核",
+        "ram": {"value":2048, "unit":"MB", "display_value":"2GB（可扩展至6GB）"},
+        "max_capacity": {"value":36, "unit":"TB", "display_value":"36TB"},
+        "ports": "2×1GbE + 2×USB 3.2",
+        "raid": "SHR / Basic / JBOD / RAID 0 / RAID 1"
+      },
+      "prices": [{"source":"jd","price":2499}]
+    },
+    {
+      "brand_id": "ugreen",
+      "primary_category_id": "nas",
+      "model": "UGREEN DXP4800 Plus",
+      "full_name": "绿联 NASync DXP4800 Plus 四盘位 NAS",
+      "status": "active",
+      "release_date": "2024-05-24",
+      "source_url": "https://nas.ugreen.com/products/ugreen-nasync-dxp4800-plus-nas-storage",
+      "tags": ["四盘位", "万兆", "影音"],
+      "specs": {
+        "bays": {"value":4, "unit":"bay", "display_value":"4盘位"},
+        "cpu": "Intel Pentium Gold 8505 5核",
+        "ram": {"value":8192, "unit":"MB", "display_value":"8GB（可扩展至64GB）"},
+        "max_capacity": {"value":136, "unit":"TB", "display_value":"136TB"},
+        "ports": "1×2.5GbE + 1×10GbE + USB/HDMI",
+        "raid": "JBOD / Basic / 0 / 1 / 5 / 6 / 10"
+      },
+      "prices": [{"source":"jd","price":4169}]
+    },
+    {
+      "brand_id": "qnap",
+      "primary_category_id": "nas",
+      "model": "QNAP TS-464C2",
+      "full_name": "威联通 TS-464C2 四盘位 NAS",
+      "status": "active",
+      "release_date": "2023-05-03",
+      "source_url": "https://www.qnap.com.cn/zh-cn/product/ts-464c2",
+      "tags": ["四盘位", "家用", "高性能"],
+      "specs": {
+        "bays": {"value":4, "unit":"bay", "display_value":"4盘位"},
+        "cpu": "Intel Celeron N5095 四核",
+        "ram": {"value":8192, "unit":"MB", "display_value":"8GB（可扩展至16GB）"},
+        "max_capacity": {"value":96, "unit":"TB", "display_value":"96TB"},
+        "ports": "2×2.5GbE + HDMI + USB",
+        "raid": "JBOD / 单盘 / 0 / 1 / 5 / 6 / 10"
+      },
+      "prices": [{"source":"jd","price":2499}]
+    },
+    {
+      "brand_id": "ugreen",
+      "primary_category_id": "nas",
+      "model": "UGREEN DXP2800",
+      "full_name": "绿联 NASync DXP2800 双盘位 NAS",
+      "status": "active",
+      "release_date": "2024-05-24",
+      "source_url": "https://nas.ugreen.com/products/ugreen-nasync-dxp2800-nas-storage",
+      "tags": ["双盘位", "入门", "AI相册"],
+      "specs": {
+        "bays": {"value":2, "unit":"bay", "display_value":"2盘位"},
+        "cpu": "Intel N100 四核",
+        "ram": {"value":8192, "unit":"MB", "display_value":"8GB（可扩展至16GB）"},
+        "max_capacity": {"value":80, "unit":"TB", "display_value":"80TB"},
+        "ports": "1×2.5GbE + USB/HDMI",
+        "raid": "JBOD / Basic / 0 / 1"
+      },
+      "prices": [{"source":"jd","price":2679}]
+    },
+    {
+      "brand_id": "synology",
+      "primary_category_id": "nas",
+      "model": "Synology DS925+",
+      "full_name": "群晖 DS925+ 四盘位 NAS",
+      "status": "active",
+      "release_date": "2025-04-23",
+      "source_url": "https://www.synology.com/zh-cn/products/DS925+",
+      "tags": ["四盘位", "企业级", "扩展"],
+      "specs": {
+        "bays": {"value":4, "unit":"bay", "display_value":"4盘位"},
+        "cpu": "AMD Ryzen V1500B 四核",
+        "ram": {"value":4096, "unit":"MB", "display_value":"4GB ECC（可扩展至32GB）"},
+        "max_capacity": {"value":96, "unit":"TB", "display_value":"96TB"},
+        "ports": "2×2.5GbE + USB/HDMI",
+        "raid": "SHR / Basic / JBOD / 0 / 1 / 5 / 6 / 10"
+      },
+      "prices": [{"source":"jd","price":7597}]
+    }
+  ]
+}

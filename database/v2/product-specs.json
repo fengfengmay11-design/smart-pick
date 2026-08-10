@@ -38662,5 +38662,2406 @@
       "features_esim": null,
       "features_expandable_storage": null
     }
+  },
+  {
+    "product_id": "dji-mini-4-pro",
+    "specs": {
+      "camera_resolution": {
+        "value": 48,
+        "unit": "MP",
+        "display_value": "4800万像素（1/1.3英寸 CMOS）"
+      },
+      "flight_time": {
+        "value": 34,
+        "unit": "min",
+        "display_value": "34分钟（标准智能飞行电池）"
+      },
+      "range": {
+        "value": 20,
+        "unit": "km",
+        "display_value": "20公里（DJI O4 图传）"
+      },
+      "weight": {
+        "value": 248,
+        "unit": "g",
+        "display_value": "248克（含标准电池，<249克）"
+      },
+      "gimbal": "三轴机械云台",
+      "sensors": "全向主动避障（4广角视觉 + 下视双目）",
+      "max_speed": {
+        "value": 16,
+        "unit": "m/s",
+        "display_value": "16米/秒（运动档）"
+      }
+    }
+  },
+  {
+    "product_id": "dji-air-3s",
+    "specs": {
+      "camera_resolution": {
+        "value": 50,
+        "unit": "MP",
+        "display_value": "主摄5000万 + 中长焦4800万（双摄）"
+      },
+      "flight_time": {
+        "value": 45,
+        "unit": "min",
+        "display_value": "45分钟"
+      },
+      "range": {
+        "value": 20,
+        "unit": "km",
+        "display_value": "20公里（DJI O4 图传）"
+      },
+      "weight": {
+        "value": 724,
+        "unit": "g",
+        "display_value": "724克"
+      },
+      "gimbal": "三轴机械云台",
+      "sensors": "全向主动避障（前视激光雷达 + 下视ToF + 三对视觉传感器）",
+      "max_speed": {
+        "value": 21,
+        "unit": "m/s",
+        "display_value": "21米/秒（运动档）"
+      }
+    }
+  },
+  {
+    "product_id": "dji-mavic-4-pro",
+    "specs": {
+      "camera_resolution": {
+        "value": 100,
+        "unit": "MP",
+        "display_value": "1亿像素（4/3英寸哈苏主摄）"
+      },
+      "flight_time": {
+        "value": 51,
+        "unit": "min",
+        "display_value": "51分钟"
+      },
+      "range": {
+        "value": 30,
+        "unit": "km",
+        "display_value": "30公里（DJI O4+ 图传）"
+      },
+      "weight": {
+        "value": 1063,
+        "unit": "g",
+        "display_value": "1063克"
+      },
+      "gimbal": "360°旋转万象云台",
+      "sensors": "0.1 Lux 夜景级全向主动避障（前视激光雷达）",
+      "max_speed": {
+        "value": 25,
+        "unit": "m/s",
+        "display_value": "25米/秒（运动档，90km/h）"
+      }
+    }
+  },
+  {
+    "product_id": "gopro-hero13-black",
+    "specs": {
+      "resolution": {
+        "value": 5.3,
+        "unit": "K",
+        "display_value": "5.3K（8:7 / 16:9）"
+      },
+      "fps": {
+        "value": 60,
+        "unit": "fps",
+        "display_value": "60fps（5.3K）/ 120fps（4K）"
+      },
+      "stabilization": "HyperSmooth 6.0 电子防抖",
+      "waterproof": {
+        "value": 10,
+        "unit": "m",
+        "display_value": "10米（裸机）"
+      },
+      "weight": {
+        "value": 159,
+        "unit": "g",
+        "display_value": "159克（含电池与固定手指）"
+      },
+      "battery": {
+        "value": 1900,
+        "unit": "mAh",
+        "display_value": "1900mAh Enduro"
+      },
+      "connectivity": "Wi-Fi 6 / Bluetooth 5.0 / USB-C"
+    }
+  },
+  {
+    "product_id": "dji-osmo-action-5-pro",
+    "specs": {
+      "resolution": {
+        "value": 4,
+        "unit": "K",
+        "display_value": "4K（最高 4K120）"
+      },
+      "fps": {
+        "value": 120,
+        "unit": "fps",
+        "display_value": "120fps（4K）"
+      },
+      "stabilization": "RockSteady 3.0+ / HorizonSteady 360°地平线增稳",
+      "waterproof": {
+        "value": 20,
+        "unit": "m",
+        "display_value": "20米（裸机）"
+      },
+      "weight": {
+        "value": 146,
+        "unit": "g",
+        "display_value": "146克"
+      },
+      "battery": {
+        "value": 1950,
+        "unit": "mAh",
+        "display_value": "1950mAh"
+      },
+      "connectivity": "Wi-Fi 6 / 蓝牙 5.1 / USB-C"
+    }
+  },
+  {
+    "product_id": "insta360-ace-pro-2",
+    "specs": {
+      "resolution": {
+        "value": 8,
+        "unit": "K",
+        "display_value": "8K（7680×4320）"
+      },
+      "fps": {
+        "value": 30,
+        "unit": "fps",
+        "display_value": "30fps（8K）/ 60fps（4K）"
+      },
+      "stabilization": "FlowState 防抖 + 360°水平校正",
+      "waterproof": {
+        "value": 12,
+        "unit": "m",
+        "display_value": "12米（裸机）"
+      },
+      "weight": null,
+      "battery": {
+        "value": 1800,
+        "unit": "mAh",
+        "display_value": "1800mAh（可拆）"
+      },
+      "connectivity": "Wi-Fi / 蓝牙 / USB-C"
+    }
+  },
+  {
+    "product_id": "insta360-x5",
+    "specs": {
+      "resolution": {
+        "value": 8,
+        "unit": "K",
+        "display_value": "8K 360°全景（7680×3840）"
+      },
+      "fps": {
+        "value": 30,
+        "unit": "fps",
+        "display_value": "30fps（8K 360°）"
+      },
+      "stabilization": "FlowState 防抖 + 360°水平锁定",
+      "waterproof": {
+        "value": 15,
+        "unit": "m",
+        "display_value": "15米（裸机）"
+      },
+      "weight": {
+        "value": 200,
+        "unit": "g",
+        "display_value": "200克"
+      },
+      "battery": {
+        "value": 2400,
+        "unit": "mAh",
+        "display_value": "2400mAh（可拆，支持快充）"
+      },
+      "connectivity": "Wi-Fi / 蓝牙 / USB-C"
+    }
+  },
+  {
+    "product_id": "dji-rs-4",
+    "specs": {
+      "payload": {
+        "value": 3,
+        "unit": "kg",
+        "display_value": "3千克"
+      },
+      "weight": {
+        "value": 1066,
+        "unit": "g",
+        "display_value": "1066克（云台）"
+      },
+      "battery": {
+        "value": 3000,
+        "unit": "mAh",
+        "display_value": "3000mAh（约12小时）"
+      },
+      "axes": "三轴",
+      "connectivity": "蓝牙 5.1 / USB-C",
+      "compatibility": "索尼/佳能/尼康/松下等微单（Ronin 兼容列表）"
+    }
+  },
+  {
+    "product_id": "dji-rs-4-pro",
+    "specs": {
+      "payload": {
+        "value": 4.5,
+        "unit": "kg",
+        "display_value": "4.5千克"
+      },
+      "weight": {
+        "value": 1242,
+        "unit": "g",
+        "display_value": "1242克（云台）"
+      },
+      "battery": {
+        "value": 1950,
+        "unit": "mAh",
+        "display_value": "1950mAh（约13小时，BG30）"
+      },
+      "axes": "三轴",
+      "connectivity": "蓝牙 / RSA+NATO 接口 / USB-C",
+      "compatibility": "主流微单/电影机（含 LiDAR 与图传生态）"
+    }
+  },
+  {
+    "product_id": "dji-osmo-mobile-7p",
+    "specs": {
+      "payload": {
+        "value": 0.3,
+        "unit": "kg",
+        "display_value": "0.3千克（手机，兼容170-300g）"
+      },
+      "weight": {
+        "value": 368,
+        "unit": "g",
+        "display_value": "368克（含三脚架/磁吸夹/多功能模块）"
+      },
+      "battery": {
+        "value": 3350,
+        "unit": "mAh",
+        "display_value": "3350mAh（约10小时）"
+      },
+      "axes": "三轴",
+      "connectivity": "蓝牙 5.3 / USB-C",
+      "compatibility": "智能手机（iOS 15+ / Android 9+，宽度67-84mm）"
+    }
+  },
+  {
+    "product_id": "sony-fe-300mm-f2-8-gm-oss",
+    "specs": {
+      "mount": "索尼 E 卡口",
+      "focal_length": {
+        "value": 300,
+        "unit": "mm",
+        "display_value": "300mm（定焦）"
+      },
+      "aperture": {
+        "value": 2.8,
+        "unit": "f",
+        "display_value": "F2.8"
+      },
+      "stabilization": "OSS 光学防抖",
+      "weight": {
+        "value": 1470,
+        "unit": "g",
+        "display_value": "1470克（不含三脚架卡口）"
+      },
+      "filter_thread": {
+        "value": 40.5,
+        "unit": "mm",
+        "display_value": "40.5mm"
+      }
+    }
+  },
+  {
+    "product_id": "nikon-nikkor-z-135mm-f-1-8-s-plena",
+    "specs": {
+      "mount": "尼康 Z 卡口",
+      "focal_length": {
+        "value": 135,
+        "unit": "mm",
+        "display_value": "135mm（定焦）"
+      },
+      "aperture": {
+        "value": 1.8,
+        "unit": "f",
+        "display_value": "F1.8"
+      },
+      "stabilization": "无光学防抖（机身防抖协同）",
+      "weight": {
+        "value": 995,
+        "unit": "g",
+        "display_value": "995克"
+      },
+      "filter_thread": {
+        "value": 82,
+        "unit": "mm",
+        "display_value": "82mm"
+      }
+    }
+  },
+  {
+    "product_id": "canon-rf-24-105mm-f2-8-l-is-usm-z",
+    "specs": {
+      "mount": "佳能 RF 卡口",
+      "focal_length": {
+        "value": 24,
+        "unit": "mm",
+        "display_value": "24-105mm（变焦）"
+      },
+      "aperture": {
+        "value": 2.8,
+        "unit": "f",
+        "display_value": "F2.8 恒定"
+      },
+      "stabilization": "5.5级 IS 光学防抖",
+      "weight": {
+        "value": 1330,
+        "unit": "g",
+        "display_value": "1330克"
+      },
+      "filter_thread": {
+        "value": 82,
+        "unit": "mm",
+        "display_value": "82mm"
+      }
+    }
+  },
+  {
+    "product_id": "xiaomi-10",
+    "specs": {
+      "screen": "1.72英寸 AMOLED",
+      "battery": {
+        "value": 21,
+        "unit": "day",
+        "display_value": "21天"
+      },
+      "health": "心率/血氧/睡眠监测",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 15.95,
+        "unit": "g",
+        "display_value": "15.95g"
+      },
+      "os": "HyperOS 2.0"
+    }
+  },
+  {
+    "product_id": "huawei-10",
+    "specs": {
+      "screen": "1.47英寸 AMOLED",
+      "battery": {
+        "value": 14,
+        "unit": "day",
+        "display_value": "14天"
+      },
+      "health": "心率/血氧/睡眠监测",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 15,
+        "unit": "g",
+        "display_value": "15g"
+      },
+      "os": "HarmonyOS"
+    }
+  },
+  {
+    "product_id": "honor-10",
+    "specs": {
+      "screen": "1.57英寸 AMOLED",
+      "battery": {
+        "value": 14,
+        "unit": "day",
+        "display_value": "14天"
+      },
+      "health": "心率/血氧/睡眠/心脏健康",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 14.7,
+        "unit": "g",
+        "display_value": "14.7g"
+      },
+      "os": "RTOS"
+    }
+  },
+  {
+    "product_id": "oura-oura-ring-4",
+    "specs": {
+      "battery": {
+        "value": 8,
+        "unit": "day",
+        "display_value": "5-8天"
+      },
+      "health": "心率/血氧/睡眠/体温/压力",
+      "waterproof": "100m",
+      "weight": {
+        "value": 5.2,
+        "unit": "g",
+        "display_value": "3.3-5.2g"
+      },
+      "sensor": "Smart Sensing（红光/红外血氧、绿光/红外PPG心率、体温、加速度）",
+      "compatibility": "iOS/Android"
+    }
+  },
+  {
+    "product_id": "samsung-samsung-galaxy-ring",
+    "specs": {
+      "battery": {
+        "value": 7,
+        "unit": "day",
+        "display_value": "7天"
+      },
+      "health": "心率/血氧/睡眠/体温",
+      "waterproof": "10ATM",
+      "weight": {
+        "value": 3,
+        "unit": "g",
+        "display_value": "2.3-3.0g"
+      },
+      "sensor": "皮肤温度/加速度/BioActive生物传感器",
+      "compatibility": "Android/Samsung Health"
+    }
+  },
+  {
+    "product_id": "amazfit-amazfit-helio-ring",
+    "specs": {
+      "battery": {
+        "value": 4,
+        "unit": "day",
+        "display_value": "4天"
+      },
+      "health": "心率/血氧/压力/皮肤温度",
+      "waterproof": "10ATM",
+      "weight": {
+        "value": 3.75,
+        "unit": "g",
+        "display_value": "3.65-3.82g"
+      },
+      "sensor": "BioTracker PPG心率/温度/EDA/加速度",
+      "compatibility": "Android 7.0+/iOS 14.0+"
+    }
+  },
+  {
+    "product_id": "xiaomi-ai",
+    "specs": {
+      "weight": {
+        "value": 40,
+        "unit": "g",
+        "display_value": "40g"
+      },
+      "battery": {
+        "value": 8.6,
+        "unit": "h",
+        "display_value": "8.6小时"
+      },
+      "display": null,
+      "camera": "1200万像素 / 2K@30fps",
+      "microphone": "5麦克风阵列（含骨传导）",
+      "connectivity": "Wi-Fi 6 / 蓝牙5.4"
+    }
+  },
+  {
+    "product_id": "rokid-rokid-glasses",
+    "specs": {
+      "weight": {
+        "value": 49,
+        "unit": "g",
+        "display_value": "49g"
+      },
+      "battery": {
+        "value": 12,
+        "unit": "h",
+        "display_value": "12小时"
+      },
+      "display": null,
+      "camera": "1200万像素（索尼IMX681）",
+      "microphone": "4麦克风阵列",
+      "connectivity": "Wi-Fi 6 / 蓝牙5.3"
+    }
+  },
+  {
+    "product_id": "thunderbird-v3-ai",
+    "specs": {
+      "weight": {
+        "value": 39,
+        "unit": "g",
+        "display_value": "39g"
+      },
+      "battery": {
+        "value": 30,
+        "unit": "h",
+        "display_value": "30小时(含充电盒)"
+      },
+      "display": null,
+      "camera": "索尼IMX681 / 4K照片",
+      "microphone": "3麦克风阵列",
+      "connectivity": "Wi-Fi / 蓝牙5.x"
+    }
+  },
+  {
+    "product_id": "pico-pico-4-ultra",
+    "specs": {
+      "resolution": "2160×2160/眼",
+      "refresh_rate": {
+        "value": 90,
+        "unit": "Hz",
+        "display_value": "90Hz"
+      },
+      "fov": {
+        "value": 105,
+        "unit": "°",
+        "display_value": "105°"
+      },
+      "tracking": "6DoF 内向外",
+      "weight": {
+        "value": 580,
+        "unit": "g",
+        "display_value": "580g"
+      },
+      "connectivity": "Wi-Fi 7 / 蓝牙5.x / USB-C",
+      "platform": "PICO OS"
+    }
+  },
+  {
+    "product_id": "meta-meta-quest-3",
+    "specs": {
+      "resolution": "2064×2208/眼",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "fov": {
+        "value": 110,
+        "unit": "°",
+        "display_value": "110°(水平)"
+      },
+      "tracking": "6DoF 内向外",
+      "weight": {
+        "value": 515,
+        "unit": "g",
+        "display_value": "515g"
+      },
+      "connectivity": "Wi-Fi 6E / 蓝牙5.2 / USB-C",
+      "platform": "Meta Horizon OS"
+    }
+  },
+  {
+    "product_id": "apple-apple-vision-pro",
+    "specs": {
+      "resolution": "2300万像素（双眼）",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "90-120Hz"
+      },
+      "fov": null,
+      "tracking": "6DoF 眼动+手部追踪",
+      "weight": {
+        "value": 750,
+        "unit": "g",
+        "display_value": "750-800g"
+      },
+      "connectivity": "Wi-Fi / 蓝牙5.3",
+      "platform": "visionOS"
+    }
+  },
+  {
+    "product_id": "xreal-xreal-one-pro",
+    "specs": {
+      "resolution": "1920×1080/眼",
+      "fov": {
+        "value": 57,
+        "unit": "°",
+        "display_value": "57°"
+      },
+      "weight": {
+        "value": 80,
+        "unit": "g",
+        "display_value": "约80g"
+      },
+      "battery": null,
+      "display": "Sony Micro-OLED 0.55″",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "XREAL / Nebula"
+    }
+  },
+  {
+    "product_id": "thunderbird-air-3s",
+    "specs": {
+      "resolution": "1920×1080",
+      "fov": {
+        "value": 46,
+        "unit": "°",
+        "display_value": "46°"
+      },
+      "weight": {
+        "value": 76,
+        "unit": "g",
+        "display_value": "76g"
+      },
+      "battery": null,
+      "display": "Micro-OLED（第5.5代）",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "雷鸟OS / RayNeo"
+    }
+  },
+  {
+    "product_id": "xreal-xreal-one",
+    "specs": {
+      "resolution": "1920×1080/眼",
+      "fov": {
+        "value": 50,
+        "unit": "°",
+        "display_value": "50°"
+      },
+      "weight": {
+        "value": 84,
+        "unit": "g",
+        "display_value": "84g"
+      },
+      "battery": null,
+      "display": "Sony Micro-OLED 0.68″",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "XREAL / Nebula"
+    }
+  },
+  {
+    "product_id": "sony-playstation-5-pro",
+    "specs": {
+      "cpu": "AMD Zen 2 8核16线程",
+      "gpu": "AMD RDNA 3（约16.7 TFLOPS）",
+      "storage": {
+        "value": 2,
+        "unit": "TB",
+        "display_value": "2TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "无标配（可外接 Disc Drive 光驱）",
+      "weight": {
+        "value": 3100,
+        "unit": "g",
+        "display_value": "3.1kg"
+      }
+    }
+  },
+  {
+    "product_id": "sony-playstation-5-slim-disc-edition",
+    "specs": {
+      "cpu": "AMD Zen 2 8核16线程",
+      "gpu": "AMD RDNA 2（9.2–10.3 TFLOPS）",
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "有（4K UHD 蓝光）",
+      "weight": {
+        "value": 3200,
+        "unit": "g",
+        "display_value": "3.2kg"
+      }
+    }
+  },
+  {
+    "product_id": "microsoft-xbox-series-x-digital-edition",
+    "specs": {
+      "cpu": "AMD Zen 2 定制 8核",
+      "gpu": "AMD RDNA 2（12 TFLOPS）",
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "无（纯数字版）",
+      "weight": {
+        "value": 4450,
+        "unit": "g",
+        "display_value": "4.45kg"
+      }
+    }
+  },
+  {
+    "product_id": "nintendo-nintendo-switch-2",
+    "specs": {
+      "cpu": "NVIDIA 定制处理器（含 AI 加速/DLSS）",
+      "gpu": "NVIDIA 定制（基于 Ampere 架构）",
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB UFS"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB LPDDR5"
+      },
+      "resolution": "1080p（掌机）/4K（底座）",
+      "fps": "120（掌机）/60（4K底座）",
+      "disc_drive": "无（游戏卡带）",
+      "weight": {
+        "value": 401,
+        "unit": "g",
+        "display_value": "401g（含 Joy-Con）"
+      }
+    }
+  },
+  {
+    "product_id": "valve-steam-deck-oled",
+    "specs": {
+      "cpu": "AMD Zen 2 4核8线程",
+      "gpu": "AMD RDNA 2（8 CU）",
+      "screen_size": {
+        "value": 7.4,
+        "unit": "inch",
+        "display_value": "7.4英寸"
+      },
+      "resolution": "1280×800",
+      "refresh_rate": {
+        "value": 90,
+        "unit": "Hz",
+        "display_value": "90Hz"
+      },
+      "battery": {
+        "value": 50,
+        "unit": "Wh",
+        "display_value": "50Wh"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB SSD"
+      },
+      "weight": {
+        "value": 640,
+        "unit": "g",
+        "display_value": "640g"
+      }
+    }
+  },
+  {
+    "product_id": "asus-rog-ally-x",
+    "specs": {
+      "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
+      "gpu": "AMD RDNA 3（12 CU）",
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "1920×1080",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "battery": {
+        "value": 80,
+        "unit": "Wh",
+        "display_value": "80Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 678,
+        "unit": "g",
+        "display_value": "678g"
+      }
+    }
+  },
+  {
+    "product_id": "lenovo-legion-go",
+    "specs": {
+      "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
+      "gpu": "AMD RDNA 3（12 CU）",
+      "screen_size": {
+        "value": 8.8,
+        "unit": "inch",
+        "display_value": "8.8英寸"
+      },
+      "resolution": "2560×1600",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz"
+      },
+      "battery": {
+        "value": 49.2,
+        "unit": "Wh",
+        "display_value": "49.2Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 854,
+        "unit": "g",
+        "display_value": "854g"
+      }
+    }
+  },
+  {
+    "product_id": "lenovo-legion-go-2",
+    "specs": {
+      "cpu": "AMD Ryzen Z2 Extreme（Zen 5 8核）",
+      "gpu": "AMD RDNA 3.5（12 CU）",
+      "screen_size": {
+        "value": 8.8,
+        "unit": "inch",
+        "display_value": "8.8英寸"
+      },
+      "resolution": "2560×1600",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz"
+      },
+      "battery": {
+        "value": 74,
+        "unit": "Wh",
+        "display_value": "74Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 920,
+        "unit": "g",
+        "display_value": "920g"
+      }
+    }
+  },
+  {
+    "product_id": "msi-claw-8-ai",
+    "specs": {
+      "cpu": "Intel Core Ultra 7 258V（Lunar Lake 8核）",
+      "gpu": "Intel Arc 140V（Xe2 8核）",
+      "screen_size": {
+        "value": 8,
+        "unit": "inch",
+        "display_value": "8英寸"
+      },
+      "resolution": "1920×1200",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "battery": {
+        "value": 80,
+        "unit": "Wh",
+        "display_value": "80Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 795,
+        "unit": "g",
+        "display_value": "795g"
+      }
+    }
+  },
+  {
+    "product_id": "sony-dualsense-edge",
+    "specs": {
+      "connectivity": "无线（蓝牙）/ USB-C 有线",
+      "compatibility": "PlayStation 5、PC",
+      "battery": {
+        "value": 1050,
+        "unit": "mAh",
+        "display_value": "约1050mAh（续航约5-6h）"
+      },
+      "weight": {
+        "value": 322,
+        "unit": "g",
+        "display_value": "322g"
+      },
+      "features": "可更换摇杆模块、背键、摇杆死区/按键映射自定义、自适应扳机、触觉反馈"
+    }
+  },
+  {
+    "product_id": "razer-wolverine-v3-pro",
+    "specs": {
+      "connectivity": "Razer HyperSpeed 无线 / USB-C 有线",
+      "compatibility": "Xbox Series X|S、PC",
+      "battery": null,
+      "weight": {
+        "value": 304,
+        "unit": "g",
+        "display_value": "304g"
+      },
+      "features": "霍尔效应摇杆与扳机、4个背后鼠标点击背键+2个爪握肩键、Razer Sensa HD 触觉反馈、可更换摇杆帽"
+    }
+  },
+  {
+    "product_id": "8bitdo-ultimate-2-wireless",
+    "specs": {
+      "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android、Apple）/ USB-C 有线",
+      "compatibility": "Windows、Android、Apple（iOS/iPadOS/macOS/visionOS）、SteamOS",
+      "battery": null,
+      "weight": {
+        "value": 246,
+        "unit": "g",
+        "display_value": "246g"
+      },
+      "features": "TMR 霍尔摇杆、霍尔效应扳机（线性/触觉可切换）、RGB Fire Ring、L4/R4 快拨键、2个背键、6轴体感、Turbo"
+    }
+  },
+  {
+    "product_id": "8bitdo-ultimate-2c-wireless",
+    "specs": {
+      "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android）/ USB-C 有线",
+      "compatibility": "Windows、Android",
+      "battery": {
+        "value": 480,
+        "unit": "mAh",
+        "display_value": "480mAh（2.4G约19h/蓝牙约32h）"
+      },
+      "weight": {
+        "value": 217.5,
+        "unit": "g",
+        "display_value": "217.5g"
+      },
+      "features": "霍尔效应摇杆与扳机、L4/R4 快拨键、1000Hz 轮询率、Turbo、自定义按键映射"
+    }
+  },
+  {
+    "product_id": "thrustmaster-t598p",
+    "specs": {
+      "compatibility": "PlayStation 5、PlayStation 4、PC",
+      "rotation": {
+        "value": 1080,
+        "unit": "°",
+        "display_value": "1080°"
+      },
+      "force_feedback": "Direct Axial Drive 直驱，5 Nm 恒定扭矩（带超调，峰值更高）",
+      "pedals": "H.E.A.R.T. 磁性双踏板（可升级为三踏板）",
+      "connectivity": "USB"
+    }
+  },
+  {
+    "product_id": "logitech-g-pro-racing-wheel",
+    "specs": {
+      "compatibility": "PC（国行版）；另有 PlayStation / Xbox 版本",
+      "rotation": {
+        "value": 900,
+        "unit": "°",
+        "display_value": "900°（可调节）"
+      },
+      "force_feedback": "11 Nm 直驱 TRUEFORCE 力反馈",
+      "pedals": "需另购 PRO Racing Pedals（单独销售）",
+      "connectivity": "USB + 电源"
+    }
+  },
+  {
+    "product_id": "fanatec-clubsport-dd",
+    "specs": {
+      "compatibility": "PC、Xbox（需搭配 Xbox 授权方向盘）",
+      "rotation": {
+        "value": 2520,
+        "unit": "°",
+        "display_value": "最高2520°（可调）"
+      },
+      "force_feedback": "直驱，15 Nm 扭矩（FullForce 力反馈协议）",
+      "pedals": "需另购（兼容 ClubSport / CSL Pedals）",
+      "connectivity": "USB + 电源"
+    }
+  },
+  {
+    "product_id": "fanatec-clubsport-dd-2",
+    "specs": {
+      "compatibility": "PlayStation 5、PC、Xbox（需搭配 Xbox 授权方向盘）",
+      "rotation": {
+        "value": 2520,
+        "unit": "°",
+        "display_value": "最高2520°（可调）"
+      },
+      "force_feedback": "直驱，18 Nm 扭矩（FullForce 力反馈协议）",
+      "pedals": "需另购（兼容 ClubSport / CSL Pedals）",
+      "connectivity": "USB + 电源"
+    }
+  },
+  {
+    "product_id": "jbl-xtreme-4",
+    "specs": {
+      "power": {
+        "value": 100,
+        "unit": "W",
+        "display_value": "100W (AC) / 70W (电池)",
+        "original_value": "100W"
+      },
+      "driver": "2×70mm 低音单元 + 2×20mm 高音单元",
+      "connectivity": "蓝牙 5.3",
+      "battery": {
+        "value": 24,
+        "unit": "h",
+        "display_value": "24 小时",
+        "original_value": "24h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 2110,
+        "unit": "g",
+        "display_value": "2.11kg",
+        "original_value": "2110g"
+      }
+    }
+  },
+  {
+    "product_id": "bose-soundlink-max",
+    "specs": {
+      "power": null,
+      "driver": "Full Range 全频扬声器",
+      "connectivity": "蓝牙 5.4",
+      "battery": {
+        "value": 20,
+        "unit": "h",
+        "display_value": "20 小时",
+        "original_value": "20h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 2220,
+        "unit": "g",
+        "display_value": "2.22kg",
+        "original_value": "4.9lb"
+      }
+    }
+  },
+  {
+    "product_id": "marshall-emberton-iii",
+    "specs": {
+      "power": {
+        "value": 20,
+        "unit": "W",
+        "display_value": "20W RMS (2×10W)",
+        "original_value": "2×10W RMS"
+      },
+      "driver": "2×2英寸全频 + 2 被动辐射器",
+      "connectivity": "蓝牙 5.3 LE",
+      "battery": {
+        "value": 32,
+        "unit": "h",
+        "display_value": "32+ 小时",
+        "original_value": "32+ h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 670,
+        "unit": "g",
+        "display_value": "670g",
+        "original_value": "670g"
+      }
+    }
+  },
+  {
+    "product_id": "sony-ult-field-3-srs-ult30",
+    "specs": {
+      "power": null,
+      "driver": "1×86×46mm 低音单元 + 1×20mm 高音单元",
+      "connectivity": "蓝牙 5.2",
+      "battery": {
+        "value": 24,
+        "unit": "h",
+        "display_value": "24 小时",
+        "original_value": "24h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 1200,
+        "unit": "g",
+        "display_value": "1.2kg",
+        "original_value": "1200g"
+      }
+    }
+  },
+  {
+    "product_id": "shure-mv7",
+    "specs": {
+      "pattern": "心形 (Cardioid)",
+      "connectivity": "USB-C / XLR",
+      "frequency_response": "50Hz–16kHz",
+      "sample_rate": "48kHz / 24-bit",
+      "interface": "USB-C + XLR"
+    }
+  },
+  {
+    "product_id": "rode-nt1-5th-generation",
+    "specs": {
+      "pattern": "心形 (Cardioid)",
+      "connectivity": "XLR / USB",
+      "frequency_response": "20Hz–20kHz",
+      "sample_rate": "48/96/192kHz (24/32-bit float)",
+      "interface": "XLR + USB-C"
+    }
+  },
+  {
+    "product_id": "shure-mv6",
+    "specs": {
+      "pattern": "心形动圈 (Cardioid, Dynamic)",
+      "connectivity": "USB-C",
+      "frequency_response": "50Hz–15kHz",
+      "sample_rate": "44.1/48kHz (16/24-bit)",
+      "interface": "USB-C"
+    }
+  },
+  {
+    "product_id": "rode-wireless-pro",
+    "specs": {
+      "pattern": "全指向 (Omnidirectional)",
+      "connectivity": "2.4GHz 无线 (Series IV)",
+      "frequency_response": "20Hz–20kHz",
+      "sample_rate": "48kHz / 32-bit float WAV",
+      "interface": "USB-C + 3.5mm TRS/TRRS"
+    }
+  },
+  {
+    "product_id": "samsung-hw-q990d",
+    "specs": {
+      "channels": "11.1.4",
+      "power": {
+        "value": 656,
+        "unit": "W",
+        "display_value": "656W",
+        "original_value": "656W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.2 / Wi-Fi",
+      "dolby": "Dolby Atmos (无线)",
+      "ports": "HDMI In ×2, HDMI Out ×1 (eARC), Optical ×1",
+      "subwoofer": "无线低音炮 (含)"
+    }
+  },
+  {
+    "product_id": "sony-bravia-theater-bar-9-ht-a9000",
+    "specs": {
+      "channels": "7.0.2 (13 单元)",
+      "power": {
+        "value": 585,
+        "unit": "W",
+        "display_value": "585W",
+        "original_value": "585W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.2 / Wi-Fi",
+      "dolby": "Dolby Atmos, DTS:X",
+      "ports": "HDMI In ×1, HDMI Out ×1 (eARC)",
+      "subwoofer": "可选 (另购 SA-SW3 / SA-SW5)"
+    }
+  },
+  {
+    "product_id": "lg-s95tr",
+    "specs": {
+      "channels": "9.1.5",
+      "power": {
+        "value": 810,
+        "unit": "W",
+        "display_value": "810W",
+        "original_value": "810W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.1 / Wi-Fi",
+      "dolby": "Dolby Atmos, DTS:X",
+      "ports": "HDMI In ×1, HDMI Out ×1 (eARC), Optical ×1, USB ×1",
+      "subwoofer": "无线低音炮 + 无线后置环绕 (含)"
+    }
+  },
+  {
+    "product_id": "xgimi-z7x",
+    "specs": {
+      "brightness": {
+        "value": 1100,
+        "unit": "ANSI lm",
+        "display_value": "1100 ANSI 流明",
+        "original_value": "1100 ANSI lm"
+      },
+      "resolution": "1080P (1920×1080)",
+      "contrast": null,
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP (0.33\" DMD), LED",
+      "os": "GMUI",
+      "speakers": {
+        "value": 6,
+        "unit": "W",
+        "display_value": "6W 哈曼卡顿",
+        "original_value": "6W Harman Kardon"
+      },
+      "ports": "HDMI 2.0 ×1, USB ×1, 3.5mm Audio ×1, DC"
+    }
+  },
+  {
+    "product_id": "epson-ch-tw6280t",
+    "specs": {
+      "brightness": {
+        "value": 2800,
+        "unit": "lm",
+        "display_value": "2800 流明 (ISO)",
+        "original_value": "2800 lm (ISO)"
+      },
+      "resolution": "4K Pro UHD (3840×2160)",
+      "contrast": {
+        "value": 35000,
+        "unit": ":1",
+        "display_value": "35000:1",
+        "original_value": "35000:1"
+      },
+      "throw_ratio": {
+        "value": 1.32,
+        "unit": ":1",
+        "display_value": "1.32–2.15:1",
+        "original_value": "1.32-2.15"
+      },
+      "tech": "3LCD",
+      "os": "Android 11 (腾讯视频·极光TV)",
+      "speakers": {
+        "value": 10,
+        "unit": "W",
+        "display_value": "10W",
+        "original_value": "10W"
+      },
+      "ports": "HDMI (ARC) ×1, 3.5mm Audio Out ×1, USB, USB Type-B mini"
+    }
+  },
+  {
+    "product_id": "jmgo-n1s-pro",
+    "specs": {
+      "brightness": {
+        "value": 2000,
+        "unit": "CVIA lm",
+        "display_value": "2000 CVIA 流明",
+        "original_value": "2000 CVIA lm"
+      },
+      "resolution": "4K (3840×2160)",
+      "contrast": {
+        "value": 1600,
+        "unit": ":1",
+        "display_value": "1600:1",
+        "original_value": "1600:1"
+      },
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP, 三色激光 (Tri-color Laser)",
+      "os": "Bonfire OS (Android)",
+      "speakers": {
+        "value": 20,
+        "unit": "W",
+        "display_value": "20W 丹拿 (2×10W)",
+        "original_value": "20W Dynaudio"
+      },
+      "ports": "HDMI 2.1 ×2 (1×eARC), USB 2.0 ×1"
+    }
+  },
+  {
+    "product_id": "benq-gp520",
+    "specs": {
+      "brightness": {
+        "value": 2600,
+        "unit": "ANSI lm",
+        "display_value": "2600 ANSI 流明",
+        "original_value": "2600 ANSI lm"
+      },
+      "resolution": "4K UHD (3840×2160)",
+      "contrast": {
+        "value": 200000,
+        "unit": ":1",
+        "display_value": "200,000:1",
+        "original_value": "200000:1"
+      },
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP (4LED)",
+      "os": "Google TV (Android 11)",
+      "speakers": {
+        "value": 24,
+        "unit": "W",
+        "display_value": "2×12W (24W)",
+        "original_value": "2×12W"
+      },
+      "ports": "HDMI 2.1 ×2 (1×eARC), USB-A ×2, USB-C ×1, 3.5mm Audio Out ×1"
+    }
+  },
+  {
+    "product_id": "sony-vpl-xw5000es",
+    "specs": {
+      "brightness": {
+        "value": 2000,
+        "unit": "lm",
+        "display_value": "2000 流明",
+        "original_value": "2000 lm"
+      },
+      "resolution": "4K (3840×2160) 原生 SXRD",
+      "contrast": "∞:1 (动态对比度)",
+      "throw_ratio": {
+        "value": 1.38,
+        "unit": ":1",
+        "display_value": "1.38–2.21:1",
+        "original_value": "1.38-2.21:1"
+      },
+      "tech": "SXRD (3×0.61\" 4K 面板), 激光",
+      "os": null,
+      "speakers": null,
+      "ports": "HDMI ×2, LAN (RJ45), RS-232C, Trigger, USB-A ×1"
+    }
+  },
+  {
+    "product_id": "ugreen-revodok-max-213-u710",
+    "specs": {
+      "ports": "13合1（HDMI 2.1、USB-C、USB-A、2.5G RJ45、SD/microSD、3.5mm音频等）",
+      "interface": "雷电4 (Thunderbolt 4)",
+      "power_delivery": {
+        "value": 90,
+        "unit": "W",
+        "display_value": "90W"
+      },
+      "compatibility": "雷电4 / 雷电3 / USB4 / USB-C 设备（Mac / Windows）",
+      "weight": {
+        "value": 805,
+        "unit": "g",
+        "display_value": "805g"
+      }
+    }
+  },
+  {
+    "product_id": "anker-anker-675-usb-c-docking-station-a8377",
+    "specs": {
+      "ports": "12合1（HDMI 2.0、3×USB-A、2×USB-C、SD/microSD、3.5mm、RJ45千兆网口、Qi无线充电板）",
+      "interface": "USB-C",
+      "power_delivery": {
+        "value": 100,
+        "unit": "W",
+        "display_value": "100W"
+      },
+      "compatibility": "Windows 10/11、macOS 10.14+、Chrome OS",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "anker-anker-prime-tb5-docking-station-a83b5",
+    "specs": {
+      "ports": "14合1（雷电5宿主口、DP、HDMI 2.1、多USB-C/A、2.5G网口、SD/microSD、3.5mm等）",
+      "interface": "雷电5 (Thunderbolt 5)",
+      "power_delivery": {
+        "value": 140,
+        "unit": "W",
+        "display_value": "140W"
+      },
+      "compatibility": "雷电5 / 雷电4 / USB4 / USB-C 设备（Mac / Windows）",
+      "weight": {
+        "value": 1086,
+        "unit": "g",
+        "display_value": "1086g"
+      }
+    }
+  },
+  {
+    "product_id": "logitech-mx-brio",
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 90,
+        "unit": "°",
+        "display_value": "90°"
+      },
+      "autofocus": true,
+      "microphone": "双波束成形降噪麦克风",
+      "interface": "USB-C",
+      "connection": "USB-C 有线"
+    }
+  },
+  {
+    "product_id": "obsbot-obsbot-tiny-2",
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 85.5,
+        "unit": "°",
+        "display_value": "85.5°"
+      },
+      "autofocus": true,
+      "microphone": "双全向降噪麦克风",
+      "interface": "USB-C 3.0",
+      "connection": "USB-C 有线"
+    }
+  },
+  {
+    "product_id": "insta360-insta360-link-2",
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 79.5,
+        "unit": "°",
+        "display_value": "79.5°"
+      },
+      "autofocus": true,
+      "microphone": "AI 降噪麦克风",
+      "interface": "USB-C",
+      "connection": "USB-C 有线"
+    }
+  },
+  {
+    "product_id": "elgato-elgato-facecam-mk-2",
+    "specs": {
+      "resolution": "1080p (1920×1080)",
+      "fps": "1080p@60fps / 720p@120fps",
+      "fov": {
+        "value": 84,
+        "unit": "°",
+        "display_value": "84°"
+      },
+      "autofocus": false,
+      "microphone": "无（无内置麦克风）",
+      "interface": "USB-C (USB 3.0)",
+      "connection": "USB-C 有线"
+    }
+  },
+  {
+    "product_id": "samsung-t9",
+    "specs": {
+      "capacity": "1TB / 2TB / 4TB",
+      "interface": "USB 3.2 Gen 2x2 (20Gbps)",
+      "read_speed": {
+        "value": 2000,
+        "unit": "MB/s",
+        "display_value": "2000MB/s"
+      },
+      "write_speed": {
+        "value": 1950,
+        "unit": "MB/s",
+        "display_value": "1950MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 122,
+        "unit": "g",
+        "display_value": "122g"
+      }
+    }
+  },
+  {
+    "product_id": "crucial-x10-pro",
+    "specs": {
+      "capacity": "1TB / 2TB / 4TB",
+      "interface": "USB 3.2 Gen 2x2 (20Gbps)",
+      "read_speed": {
+        "value": 2100,
+        "unit": "MB/s",
+        "display_value": "2100MB/s"
+      },
+      "write_speed": {
+        "value": 2000,
+        "unit": "MB/s",
+        "display_value": "2000MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 42,
+        "unit": "g",
+        "display_value": "42g"
+      }
+    }
+  },
+  {
+    "product_id": "kingston-xs1000",
+    "specs": {
+      "capacity": "1TB / 2TB",
+      "interface": "USB 3.2 Gen 2 (10Gbps)",
+      "read_speed": {
+        "value": 1050,
+        "unit": "MB/s",
+        "display_value": "1050MB/s"
+      },
+      "write_speed": {
+        "value": 1000,
+        "unit": "MB/s",
+        "display_value": "1000MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 28.7,
+        "unit": "g",
+        "display_value": "28.7g"
+      }
+    }
+  },
+  {
+    "product_id": "xiaomi-xiaomi-be7000",
+    "specs": {
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 7000,
+        "unit": "Mbps",
+        "display_value": "7000Mbps"
+      },
+      "bands": "三频",
+      "ports": "4×2.5G + 1×USB 3.0",
+      "cpu": "高通四核 A73 1.5GHz",
+      "ram": {
+        "value": 1024,
+        "unit": "MB",
+        "display_value": "1GB"
+      },
+      "coverage": {
+        "value": 150,
+        "unit": "sqm",
+        "display_value": "150㎡"
+      }
+    }
+  },
+  {
+    "product_id": "huawei-huawei-be3-pro",
+    "specs": {
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 3600,
+        "unit": "Mbps",
+        "display_value": "3600Mbps"
+      },
+      "bands": "双频",
+      "ports": "1×2.5G + 3×千兆（网口盲插）",
+      "cpu": "凌霄四核",
+      "ram": {
+        "value": 256,
+        "unit": "MB",
+        "display_value": "256MB"
+      },
+      "coverage": {
+        "value": 90,
+        "unit": "sqm",
+        "display_value": "90㎡"
+      }
+    }
+  },
+  {
+    "product_id": "tplink-tp-link-be6500",
+    "specs": {
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 6500,
+        "unit": "Mbps",
+        "display_value": "6500Mbps"
+      },
+      "bands": "双频",
+      "ports": "4×2.5G（WAN/LAN 自适应）",
+      "cpu": "四核 A53 1.5GHz",
+      "ram": null,
+      "coverage": null
+    }
+  },
+  {
+    "product_id": "asus-asus-rog-gt-be98-pro",
+    "specs": {
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 30000,
+        "unit": "Mbps",
+        "display_value": "BE30000 (30Gbps)"
+      },
+      "bands": "四频",
+      "ports": "2×10G + 4×2.5G + 1×千兆 + 2×USB",
+      "cpu": "2.6GHz 四核 Broadcom BCM4916",
+      "ram": {
+        "value": 2048,
+        "unit": "MB",
+        "display_value": "2GB"
+      },
+      "coverage": null
+    }
+  },
+  {
+    "product_id": "xiaomi-xiaomi-be6500-pro",
+    "specs": {
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 6500,
+        "unit": "Mbps",
+        "display_value": "6500Mbps"
+      },
+      "bands": "双频",
+      "ports": "4×2.5G",
+      "cpu": "高通四核 A53 1.5GHz",
+      "ram": {
+        "value": 1024,
+        "unit": "MB",
+        "display_value": "1GB"
+      },
+      "coverage": {
+        "value": 150,
+        "unit": "sqm",
+        "display_value": "150㎡"
+      }
+    }
+  },
+  {
+    "product_id": "huawei-huawei-q7",
+    "specs": {
+      "nodes": "4（1 母 + 3 子）",
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 3570,
+        "unit": "Mbps",
+        "display_value": "3570Mbps"
+      },
+      "coverage": {
+        "value": 150,
+        "unit": "sqm",
+        "display_value": "150㎡"
+      },
+      "ports": "母路由: 6×2.5G + 1×2.5G WAN + 1×千兆; 子路由: 1×2.5G WAN + 1×2.5G LAN",
+      "cpu": "自研凌霄 AI 芯片"
+    }
+  },
+  {
+    "product_id": "asus-asus-zenwifi-bq16",
+    "specs": {
+      "nodes": "2",
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 25000,
+        "unit": "Mbps",
+        "display_value": "BE25000 (25Gbps)"
+      },
+      "coverage": {
+        "value": 740,
+        "unit": "sqm",
+        "display_value": "740㎡"
+      },
+      "ports": "每节点: 2×10G + 1×千兆 + USB 3.0",
+      "cpu": null
+    }
+  },
+  {
+    "product_id": "tplink-tp-link-k72-be3600",
+    "specs": {
+      "nodes": "2",
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 3600,
+        "unit": "Mbps",
+        "display_value": "3600Mbps"
+      },
+      "coverage": null,
+      "ports": "每机: 1×2.5G + 2×千兆",
+      "cpu": null
+    }
+  },
+  {
+    "product_id": "netgear-netgear-orbi-970-rbe973",
+    "specs": {
+      "nodes": "2 / 3",
+      "wifi_standard": "WiFi 7 (802.11be)",
+      "speed": {
+        "value": 27000,
+        "unit": "Mbps",
+        "display_value": "BE27000 (27Gbps)"
+      },
+      "coverage": {
+        "value": 660,
+        "unit": "sqm",
+        "display_value": "660㎡ (3-pack)"
+      },
+      "ports": "路由: 1×10G WAN + 1×10G LAN + 4×2.5G; 节点: 1×10G LAN + 2×2.5G",
+      "cpu": "四核 2.2GHz"
+    }
+  },
+  {
+    "product_id": "xiaomi-xiaomi-sw-106t-a",
+    "specs": {
+      "ports": "4×2.5G + 2×10G SFP+",
+      "speed": "2.5Gbps（上行 10Gbps）",
+      "managed": false,
+      "poe": false,
+      "layers": "二层"
+    }
+  },
+  {
+    "product_id": "tplink-tp-link-tl-se2109p",
+    "specs": {
+      "ports": "8×2.5G + 1×10G SFP+",
+      "speed": "2.5Gbps（上行 10Gbps）",
+      "managed": true,
+      "poe": true,
+      "layers": "二层"
+    }
+  },
+  {
+    "product_id": "tenda-tenda-se2010x",
+    "specs": {
+      "ports": "8×2.5G + 2×10G SFP+",
+      "speed": "2.5Gbps（上行 10Gbps）",
+      "managed": false,
+      "poe": false,
+      "layers": "二层"
+    }
+  },
+  {
+    "product_id": "synology-synology-ds224",
+    "specs": {
+      "bays": {
+        "value": 2,
+        "unit": "bay",
+        "display_value": "2盘位"
+      },
+      "cpu": "Intel Celeron J4125 四核",
+      "ram": {
+        "value": 2048,
+        "unit": "MB",
+        "display_value": "2GB（可扩展至6GB）"
+      },
+      "max_capacity": {
+        "value": 36,
+        "unit": "TB",
+        "display_value": "36TB"
+      },
+      "ports": "2×1GbE + 2×USB 3.2",
+      "raid": "SHR / Basic / JBOD / RAID 0 / RAID 1"
+    }
+  },
+  {
+    "product_id": "ugreen-ugreen-dxp4800-plus",
+    "specs": {
+      "bays": {
+        "value": 4,
+        "unit": "bay",
+        "display_value": "4盘位"
+      },
+      "cpu": "Intel Pentium Gold 8505 5核",
+      "ram": {
+        "value": 8192,
+        "unit": "MB",
+        "display_value": "8GB（可扩展至64GB）"
+      },
+      "max_capacity": {
+        "value": 136,
+        "unit": "TB",
+        "display_value": "136TB"
+      },
+      "ports": "1×2.5GbE + 1×10GbE + USB/HDMI",
+      "raid": "JBOD / Basic / 0 / 1 / 5 / 6 / 10"
+    }
+  },
+  {
+    "product_id": "qnap-qnap-ts-464c2",
+    "specs": {
+      "bays": {
+        "value": 4,
+        "unit": "bay",
+        "display_value": "4盘位"
+      },
+      "cpu": "Intel Celeron N5095 四核",
+      "ram": {
+        "value": 8192,
+        "unit": "MB",
+        "display_value": "8GB（可扩展至16GB）"
+      },
+      "max_capacity": {
+        "value": 96,
+        "unit": "TB",
+        "display_value": "96TB"
+      },
+      "ports": "2×2.5GbE + HDMI + USB",
+      "raid": "JBOD / 单盘 / 0 / 1 / 5 / 6 / 10"
+    }
+  },
+  {
+    "product_id": "ugreen-ugreen-dxp2800",
+    "specs": {
+      "bays": {
+        "value": 2,
+        "unit": "bay",
+        "display_value": "2盘位"
+      },
+      "cpu": "Intel N100 四核",
+      "ram": {
+        "value": 8192,
+        "unit": "MB",
+        "display_value": "8GB（可扩展至16GB）"
+      },
+      "max_capacity": {
+        "value": 80,
+        "unit": "TB",
+        "display_value": "80TB"
+      },
+      "ports": "1×2.5GbE + USB/HDMI",
+      "raid": "JBOD / Basic / 0 / 1"
+    }
+  },
+  {
+    "product_id": "synology-synology-ds925",
+    "specs": {
+      "bays": {
+        "value": 4,
+        "unit": "bay",
+        "display_value": "4盘位"
+      },
+      "cpu": "AMD Ryzen V1500B 四核",
+      "ram": {
+        "value": 4096,
+        "unit": "MB",
+        "display_value": "4GB ECC（可扩展至32GB）"
+      },
+      "max_capacity": {
+        "value": 96,
+        "unit": "TB",
+        "display_value": "96TB"
+      },
+      "ports": "2×2.5GbE + USB/HDMI",
+      "raid": "SHR / Basic / JBOD / 0 / 1 / 5 / 6 / 10"
+    }
+  },
+  {
+    "product_id": "amazon-kindle-paperwhite-2024",
+    "specs": {
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "300ppi (1264×1680)",
+      "panel": "电子墨水 Carta 1300",
+      "storage": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB"
+      },
+      "battery": {
+        "value": 12,
+        "unit": "week",
+        "display_value": "12周"
+      },
+      "weight": {
+        "value": 211,
+        "unit": "g",
+        "display_value": "211g"
+      },
+      "waterproof": "IPX8",
+      "os": "封闭阅读系统"
+    }
+  },
+  {
+    "product_id": "amazon-kindle-colorsoft",
+    "specs": {
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "300ppi (黑白) / 150ppi (彩色)",
+      "panel": "E Ink Kaleido 3 彩色墨水屏",
+      "storage": {
+        "value": 32,
+        "unit": "GB",
+        "display_value": "32GB"
+      },
+      "battery": {
+        "value": 8,
+        "unit": "week",
+        "display_value": "8周"
+      },
+      "weight": {
+        "value": 219,
+        "unit": "g",
+        "display_value": "219g"
+      },
+      "waterproof": "IPX8",
+      "os": "封闭阅读系统"
+    }
+  },
+  {
+    "product_id": "ireader-ireader-neo-2",
+    "specs": {
+      "screen_size": {
+        "value": 6,
+        "unit": "inch",
+        "display_value": "6英寸"
+      },
+      "resolution": "1072×1448 (300ppi)",
+      "panel": "电子墨水 Carta 1300",
+      "storage": {
+        "value": 32,
+        "unit": "GB",
+        "display_value": "32GB"
+      },
+      "battery": {
+        "value": 44,
+        "unit": "hour",
+        "display_value": "44小时"
+      },
+      "weight": {
+        "value": 149,
+        "unit": "g",
+        "display_value": "149g"
+      },
+      "waterproof": null,
+      "os": "封闭阅读系统"
+    }
+  },
+  {
+    "product_id": "boox-boox-go-color-7",
+    "specs": {
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "1680×1264 (黑白300ppi / 彩色150ppi)",
+      "panel": "E Ink Kaleido 3 彩色墨水屏",
+      "storage": {
+        "value": 64,
+        "unit": "GB",
+        "display_value": "64GB"
+      },
+      "battery": {
+        "value": 2300,
+        "unit": "mAh",
+        "display_value": "2300mAh"
+      },
+      "weight": {
+        "value": 195,
+        "unit": "g",
+        "display_value": "195g"
+      },
+      "waterproof": "防泼水（非完全防水）",
+      "os": "Android 12"
+    }
+  },
+  {
+    "product_id": "boox-boox-page",
+    "specs": {
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "1680×1264 (300ppi)",
+      "panel": "电子墨水 Carta 1200",
+      "storage": {
+        "value": 32,
+        "unit": "GB",
+        "display_value": "32GB"
+      },
+      "battery": {
+        "value": 2300,
+        "unit": "mAh",
+        "display_value": "2300mAh"
+      },
+      "weight": {
+        "value": 195,
+        "unit": "g",
+        "display_value": "195g"
+      },
+      "waterproof": null,
+      "os": "Android 11"
+    }
+  },
+  {
+    "product_id": "apple-macbook-air-13-m3-2024",
+    "specs": {
+      "cpu": "Apple M3 (8核CPU + 10核GPU)",
+      "gpu": "Apple M3 集成GPU (10核)",
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB"
+      },
+      "screen_size": {
+        "value": 13.6,
+        "unit": "inch",
+        "display_value": "13.6英寸"
+      },
+      "screen_resolution": "2560×1664",
+      "refresh_rate": {
+        "value": 60,
+        "unit": "Hz",
+        "display_value": "60Hz"
+      },
+      "weight": {
+        "value": 1.24,
+        "unit": "kg",
+        "display_value": "1.24kg"
+      },
+      "os": "macOS",
+      "ports": "MagSafe 3, 2×雷雳/USB4, 3.5mm耳机孔"
+    }
+  },
+  {
+    "product_id": "apple-macbook-pro-14-m4-2024",
+    "specs": {
+      "cpu": "Apple M4 (10核CPU + 10核GPU)",
+      "gpu": "Apple M4 集成GPU (10核)",
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB"
+      },
+      "screen_size": {
+        "value": 14.2,
+        "unit": "inch",
+        "display_value": "14.2英寸"
+      },
+      "screen_resolution": "3024×1964",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz (ProMotion)"
+      },
+      "weight": {
+        "value": 1.55,
+        "unit": "kg",
+        "display_value": "1.55kg"
+      },
+      "os": "macOS",
+      "ports": "MagSafe 3, 3×雷雳4/USB4, HDMI, SDXC, 3.5mm耳机孔"
+    }
+  },
+  {
+    "product_id": "lenovo-thinkbook-14-2024-ultra",
+    "specs": {
+      "cpu": "Intel Core Ultra7 155H (16核)",
+      "gpu": "NVIDIA GeForce RTX 4060 (可选)",
+      "ram": {
+        "value": 32,
+        "unit": "GB",
+        "display_value": "32GB"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB"
+      },
+      "screen_size": {
+        "value": 14.5,
+        "unit": "inch",
+        "display_value": "14.5英寸"
+      },
+      "screen_resolution": "3072×1920",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "weight": {
+        "value": 1.5,
+        "unit": "kg",
+        "display_value": "1.5kg"
+      },
+      "os": "Windows 11",
+      "ports": "雷电4, 全功能USB-C, 2×USB3.2, HDMI2.1, MicroSD, RJ45, TGX扩展坞"
+    }
+  },
+  {
+    "product_id": "mechrevo-x",
+    "specs": {
+      "cpu": "Intel Core i7-12800HX (16核24线程)",
+      "gpu": "NVIDIA GeForce RTX 4060 (140W)",
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB"
+      },
+      "screen_size": {
+        "value": 16,
+        "unit": "inch",
+        "display_value": "16英寸"
+      },
+      "screen_resolution": "2560×1600",
+      "refresh_rate": {
+        "value": 165,
+        "unit": "Hz",
+        "display_value": "165Hz"
+      },
+      "weight": {
+        "value": 2.2,
+        "unit": "kg",
+        "display_value": "2.2kg"
+      },
+      "os": "Windows 11",
+      "ports": "3×USB3.2 Gen1, 2×USB-C, Mini-DP, HDMI2.1, RJ45"
+    }
+  },
+  {
+    "product_id": "noctua-nh-d15-g2",
+    "specs": {
+      "type": "CPU双塔风冷散热器",
+      "interface": "LGA1851/1700/1200/115x, AM5/AM4",
+      "power": {
+        "value": 300,
+        "unit": "W",
+        "display_value": "300W (解热能力)"
+      },
+      "compatibility": "Intel LGA1851/1700/1200/115x, AMD AM5/AM4",
+      "form_factor": "150×152×168mm",
+      "weight": {
+        "value": 1520,
+        "unit": "g",
+        "display_value": "1520g"
+      }
+    }
+  },
+  {
+    "product_id": "seasonic-vertex-gx-1000",
+    "specs": {
+      "type": "ATX 电源",
+      "interface": "ATX 3.0/3.1, 24pin, 12V-2×6 (12VHPWR)",
+      "power": {
+        "value": 1000,
+        "unit": "W",
+        "display_value": "1000W"
+      },
+      "compatibility": "ATX",
+      "form_factor": "160×150×86mm",
+      "weight": {
+        "value": 1850,
+        "unit": "g",
+        "display_value": "1850g"
+      }
+    }
+  },
+  {
+    "product_id": "crucial-crucial-t705",
+    "specs": {
+      "type": "NVMe M.2 SSD (PCIe 5.0)",
+      "interface": "M.2 PCIe 5.0 x4 (NVMe)",
+      "power": null,
+      "compatibility": "台式机/笔记本, 兼容 PCIe 5.0/4.0/3.0",
+      "form_factor": "M.2 2280",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "gigabyte-b850-aorus-elite-wifi7",
+    "specs": {
+      "type": "ATX 主板",
+      "interface": "AM5, DDR5, PCIe 5.0",
+      "power": null,
+      "compatibility": "AMD AM5 (Ryzen 7000/8000/9000)",
+      "form_factor": "ATX",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "kingston-fury-beast-ddr5-6000",
+    "specs": {
+      "type": "DDR5 台式机内存",
+      "interface": "288-Pin DIMM, DDR5",
+      "power": null,
+      "compatibility": "Intel XMP 3.0 / AMD EXPO",
+      "form_factor": "UDIMM",
+      "weight": null
+    }
+  },
+  {
+    "product_id": "xiaomi-max",
+    "specs": {
+      "type": "智能中控屏",
+      "connectivity": "Wi-Fi 双频(2.4G/5G) + 蓝牙 5.3 + 有线以太网",
+      "power": "电源底盒供电 (DC)",
+      "compatibility": "米家 / 内置 Mesh 2.0 网关"
+    }
+  },
+  {
+    "product_id": "huawei-s2",
+    "specs": {
+      "type": "智能中控屏",
+      "connectivity": "Wi-Fi + 蓝牙",
+      "power": "磁吸 Dock 充电",
+      "compatibility": "HarmonyOS 全屋智能生态"
+    }
+  },
+  {
+    "product_id": "xiaomi-m30-pro",
+    "specs": {
+      "type": "智能门锁",
+      "connectivity": "Wi-Fi 2.4GHz + 蓝牙 5.3 + NFC",
+      "power": "5000mAh 可充电锂电池 + Type-C 应急供电",
+      "compatibility": "米家"
+    }
+  },
+  {
+    "product_id": "xiaomi-xiaomi-ai-glasses-m2442g1",
+    "specs": {
+      "type": "AI 智能眼镜",
+      "model": "XIAOMI AI Glasses",
+      "connectivity": "Wi-Fi 6 + 蓝牙 5.4",
+      "battery": {
+        "value": 263,
+        "unit": "mAh",
+        "display_value": "263mAh"
+      },
+      "display": "无内嵌屏幕（可选单色电致变色镜片）",
+      "compatibility": "Android 10+ / iOS 15+"
+    }
+  },
+  {
+    "product_id": "iflytek-ai-t20-pro",
+    "specs": {
+      "type": "AI 学习机",
+      "model": "T20 Pro",
+      "connectivity": "Wi-Fi + 蓝牙",
+      "battery": {
+        "value": 12000,
+        "unit": "mAh",
+        "display_value": "12000mAh"
+      },
+      "display": "13.3 英寸 2.5K(2560×1600) 90Hz 护眼屏",
+      "compatibility": "讯飞 AI 学习系统 / Android"
+    }
+  },
+  {
+    "product_id": "iflytek-4-0",
+    "specs": {
+      "type": "AI 翻译机",
+      "model": "翻译机 4.0 星火版",
+      "connectivity": "Wi-Fi + 蓝牙 + 蜂窝网络(SIM)",
+      "battery": {
+        "value": 2000,
+        "unit": "mAh",
+        "display_value": "2000mAh"
+      },
+      "display": "5.05 英寸高清翻译屏",
+      "compatibility": "Android / iOS"
+    }
+  },
+  {
+    "product_id": "xiaomi-cyberdog-2-ms2242cn",
+    "specs": {
+      "type": "四足机器人 / 机器狗",
+      "battery": {
+        "value": 4500,
+        "unit": "mAh",
+        "display_value": "4500mAh"
+      },
+      "connectivity": "Wi-Fi + 蓝牙 5.0",
+      "weight": {
+        "value": 8.9,
+        "unit": "kg",
+        "display_value": "8.9kg"
+      },
+      "sensors": "19 组传感器（激光雷达、ToF、触摸、摄像头、超声波等）",
+      "navigation": "AI 多模态融合感知 + 自研动态平衡算法 + SLAM"
+    }
+  },
+  {
+    "product_id": "dreame-roboticmower-a1",
+    "specs": {
+      "type": "割草机器人",
+      "battery": {
+        "value": 5,
+        "unit": "Ah",
+        "display_value": "5Ah"
+      },
+      "connectivity": "Wi-Fi + 蓝牙 + App",
+      "weight": {
+        "value": 12,
+        "unit": "kg",
+        "display_value": "12kg"
+      },
+      "sensors": "LiDAR（OmniSense 3D 超感系统）",
+      "navigation": "LiDAR 无边界导航 + 弓字形路径规划"
+    }
+  },
+  {
+    "product_id": "ecovacs-goat-g1",
+    "specs": {
+      "type": "割草机器人",
+      "battery": {
+        "value": 5200,
+        "unit": "mAh",
+        "display_value": "5200mAh"
+      },
+      "connectivity": "Wi-Fi + 蓝牙",
+      "weight": {
+        "value": 23.4,
+        "unit": "kg",
+        "display_value": "23.4kg"
+      },
+      "sensors": "RGBD 全景摄像头 + 鱼眼摄像头 + ToF 传感器",
+      "navigation": "TrueMapping 多融合定位(RTK+UWB+视觉) + AIVI 3D 避障"
+    }
+  },
+  {
+    "product_id": "ecovacs-winbot-w2-omni",
+    "specs": {
+      "type": "擦窗机器人",
+      "battery": {
+        "value": 5200,
+        "unit": "mAh",
+        "display_value": "5200mAh"
+      },
+      "connectivity": "Wi-Fi + App",
+      "weight": {
+        "value": 1.6,
+        "unit": "kg",
+        "display_value": "1.6kg"
+      },
+      "sensors": "光耦边缘检测传感器 + 重力加速传感器",
+      "navigation": "WIN-SLAM 4.0 智能路径规划"
+    }
   }
 ]
