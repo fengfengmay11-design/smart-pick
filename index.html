@@ -57,25 +57,31 @@
   .page { display:none; padding:16px 16px 0; }
   .page.active { display:block; }
 
-  /* 品类 Tab */
-  .cat-nav { padding:4px 0 12px; }
-  .cat-group { margin-bottom:6px; }
-  .cat-group-hd { display:flex; align-items:center; gap:6px; cursor:pointer; padding:6px 2px; user-select:none; }
-  .cat-group-name { font-size:13px; font-weight:600; color:var(--text-2, #666); }
-  .cat-group-cnt { font-size:11px; color:#999; background:#f1f1f4; border-radius:8px; padding:0 6px; line-height:16px; }
-  .cat-group-arrow { font-size:11px; color:#999; margin-left:auto; }
-  .cat-group-hd:hover .cat-group-name { color:var(--primary); }
-  .cat-group .cat-tabs { display:none; }
-  .cat-group.open .cat-tabs { display:flex; }
-  .cat-tabs { display:flex; gap:6px; padding:2px 0 8px; flex-wrap:wrap; }
-  .cat-tab {
-    padding:8px 16px; border-radius:22px; font-size:13px; font-weight:600;
-    cursor:pointer; background:var(--card-bg); color:var(--text-secondary);
-    border:1.5px solid var(--border); white-space:nowrap;
-    transition:all .2s; box-shadow: var(--shadow-sm);
+  /* 品类导航：一级横向 Tab + 二级小 Chip（两级轻量导航） */
+  .cat-nav { padding:2px 0 14px; }
+  .cat-l1 { display:flex; gap:2px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding:2px 0 6px; }
+  .cat-l1::-webkit-scrollbar { display:none; }
+  .cat-l1-tab {
+    flex:0 0 auto; padding:7px 12px; font-size:14px; font-weight:600; cursor:pointer;
+    color:var(--text-secondary); border-radius:10px; white-space:nowrap;
+    transition:all .18s; position:relative; letter-spacing:0;
   }
-  .cat-tab:hover { border-color: var(--primary); color: var(--primary); }
-  .cat-tab.active { background:var(--primary); color:#fff; border-color:var(--primary); box-shadow:0 2px 8px rgba(79,70,229,.3); }
+  .cat-l1-tab:hover { color:var(--primary); background:rgba(79,70,229,.06); }
+  .cat-l1-tab.active { color:var(--primary); font-weight:700; }
+  .cat-l1-tab.active::after {
+    content:""; position:absolute; left:50%; bottom:2px; transform:translateX(-50%);
+    width:18px; height:3px; border-radius:3px; background:var(--primary);
+  }
+  .cat-l2 { display:flex; gap:6px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding:2px 0 6px; }
+  .cat-l2::-webkit-scrollbar { display:none; }
+  .cat-chip {
+    flex:0 0 auto; padding:4px 11px; border-radius:14px; font-size:12.5px; font-weight:500;
+    cursor:pointer; background:var(--card-bg); color:var(--text-secondary);
+    border:1px solid var(--border); white-space:nowrap; transition:all .18s;
+  }
+  .cat-chip:hover { border-color:var(--primary); color:var(--primary); }
+  .cat-chip.active { background:var(--primary); color:#fff; border-color:var(--primary); font-weight:600; }
+  .cat-l2-hint { font-size:12px; color:var(--text-hint); padding:6px 2px 8px; }
 
   /* 搜索 */
   .search-box {
@@ -1420,8 +1426,9 @@ const CATEGORIES = {
   },
 };
 
-// ==================== 品类分组（导航折叠用） ====================
-// 44 个品类平铺会把首屏挤满，按大类分组、默认只展开前两组。
+// ==================== 品类分组（导航用） ====================
+// 44 个品类按大类分组：一级横向 Tab 显示分组，二级显示当前组的具体品类 Chip。
+// AI 预设 fallback 也复用该分组（_group_*）。
 const CATEGORY_GROUPS = [
   { key: 'mobile',  name: '手机平板', cats: ['phone','tablet','ereader'] },
   { key: 'pc',      name: '电脑硬件', cats: ['laptop','computer_system','cpu','gpu','pc_hardware','monitor','keyboard','mouse','dock','mobile_storage'] },
@@ -1446,7 +1453,8 @@ function d() { return cat().data(); }
 // ==================== 状态管理 ====================
 const state = {
   category: 'phone',
-  openGroups: ['mobile', 'pc'], // 默认展开的品类分组
+  navGroup: 'mobile', // 一级横向 Tab 选中分组；'all' = 全部（AI 不限品类自动识别）
+  aiInputValue: '',   // AI 输入框内容（切品类重渲染时保留，不丢用户输入）
   page: 'home',
   compareList: [], // [{phoneId, storage}]
   filterBrand: null,
@@ -1683,9 +1691,9 @@ function renderHome(page) {
   page.innerHTML = `
     <div class="ai-shop-card">
       <div class="asc-title">✨ AI 智能选购 <span class="asc-tag">自然语言</span></div>
-      <div class="asc-sub">用一句话描述需求，AI 自动识别品类，从全站 ${totalProductCount()} 款产品里挑出最合适的</div>
+      <div class="asc-sub" id="aiShopSub">${aiSubText()}</div>
       <div class="asc-inputwrap">
-        <input type="text" class="asc-input" id="aiShopInput" placeholder="${aiPlaceholder()}">
+        <input type="text" class="asc-input" id="aiShopInput" placeholder="${aiPlaceholder()}" value="${escapeHtml(state.aiInputValue || '')}">
         <button class="asc-btn" id="aiShopBtn">找一找</button>
       </div>
       <div class="asc-chips" id="aiShopChips">
@@ -1693,20 +1701,16 @@ function renderHome(page) {
       </div>
     </div>
     <div class="cat-nav" id="catTabs">
-      ${CATEGORY_GROUPS.map(g => {
-        const open = state.openGroups.includes(g.key) || g.cats.includes(state.category);
-        return `
-        <div class="cat-group${open ? ' open' : ''}">
-          <div class="cat-group-hd" data-group="${g.key}">
-            <span class="cat-group-name">${g.name}</span>
-            <span class="cat-group-cnt">${g.cats.length}</span>
-            <span class="cat-group-arrow">${open ? '▾' : '▸'}</span>
-          </div>
-          <div class="cat-tabs">
-            ${g.cats.map(k => `<div class="cat-tab${state.category === k ? ' active' : ''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
-          </div>
-        </div>`;
-      }).join('')}
+      <div class="cat-l1" id="catL1">
+        <div class="cat-l1-tab${state.navGroup === 'all' ? ' active' : ''}" data-group="all">全部</div>
+        ${CATEGORY_GROUPS.map(g => `<div class="cat-l1-tab${state.navGroup === g.key ? ' active' : ''}" data-group="${g.key}">${g.name}</div>`).join('')}
+      </div>
+      ${state.navGroup === 'all'
+        ? '<div class="cat-l2-hint">从下方选择具体分类缩小范围，或直接描述需求，让 AI 全站寻找</div>'
+        : `<div class="cat-l2" id="catL2">
+            ${(CATEGORY_GROUPS.find(g => g.key === state.navGroup) || {}).cats
+              .map(k => `<div class="cat-chip${state.category === k ? ' active' : ''}" data-cat="${k}">${CATEGORIES[k].icon} ${CATEGORIES[k].name}</div>`).join('')}
+           </div>`}
     </div>
     <div class="search-box">
       <span class="s-icon">🔍</span>
@@ -1720,42 +1724,54 @@ function renderHome(page) {
     <div class="hot-list" id="hotList"></div>
   `;
 
-  // 品类分组折叠 / 展开
-  page.querySelectorAll('.cat-group-hd').forEach(hd => {
-    hd.addEventListener('click', function () {
+  // 一级分类横向 Tab：切组；若当前选中品类不属于该组则自动选中组内第一个品类，保持状态一致
+  page.querySelectorAll('.cat-l1-tab').forEach(tab => {
+    tab.addEventListener('click', function () {
       const g = this.dataset.group;
-      const i = state.openGroups.indexOf(g);
-      // 当前选中品类所在的分组不允许收起（收起后用户会找不到自己在哪）
-      const cur = groupOfCat(state.category);
-      if (i >= 0) { if (g !== cur) state.openGroups.splice(i, 1); }
-      else state.openGroups.push(g);
+      if (g === state.navGroup) return;
+      state.navGroup = g;
+      if (g !== 'all') {
+        const cats = (CATEGORY_GROUPS.find(x => x.key === g) || { cats: [] }).cats;
+        if (cats.length && !cats.includes(state.category)) {
+          state.category = cats[0];
+          state.filterBrand = null;
+          state.filterPriceRange = null;
+          state.sortBy = cat().defaultSort;
+          state.compareList = [];
+          state.searchQuery = '';
+        }
+      }
       navigateTo('home');
     });
   });
 
-  // 品类切换
-  page.querySelectorAll('.cat-tab').forEach(tab => {
-    tab.addEventListener('click', function() {
+  // 二级品类 Chip：选中即切换品类，并联动导航分组与 AI 区
+  page.querySelectorAll('.cat-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
       const newCat = this.dataset.cat;
-      if (newCat !== state.category) {
-        state.category = newCat;
+      const changed = newCat !== state.category || state.navGroup === 'all';
+      state.category = newCat;
+      state.navGroup = groupOfCat(newCat);
+      if (changed) {
         state.filterBrand = null;
         state.filterPriceRange = null;
         state.sortBy = cat().defaultSort;
         state.compareList = [];
         state.searchQuery = '';
-        navigateTo('home');
       }
+      navigateTo('home');
     });
   });
 
   // AI 智能选购
   const aiInput = page.querySelector('#aiShopInput');
+  // 用户输入持久化到 state：切品类重渲染后不丢内容（placeholder 只在输入为空时自然显示）
+  aiInput.addEventListener('input', function() { state.aiInputValue = this.value; });
   const runAi = () => { const q = aiInput.value.trim(); if (q.length >= 2) openAiShop(q); else toast('多描述一点你的需求'); };
   page.querySelector('#aiShopBtn').addEventListener('click', runAi);
   aiInput.addEventListener('keydown', e => { if (e.key === 'Enter') runAi(); });
   page.querySelectorAll('.asc-chip').forEach(chip => {
-    chip.addEventListener('click', function() { aiInput.value = this.dataset.q; openAiShop(this.dataset.q); });
+    chip.addEventListener('click', function() { state.aiInputValue = this.dataset.q; aiInput.value = this.dataset.q; openAiShop(this.dataset.q); });
   });
 
   // 搜索
@@ -2984,24 +3000,87 @@ const scoreBars = scores.map((s, i) => {
   });
 
   // ==================== AI 自然语言选购 ====================
-  // 各品类的输入占位与示例
+  // 品类驱动预设：key 复用前端 CATEGORIES 的品类 key（与数据库 primary_category 聚合一致），
+  // 只保存「placeholder + 快捷需求」文案，不复制分类树。
+  // fallback 链：具体品类 → 所属分组(_group_*) → 通用(_all)，新增品类未配文案时自动继承分组预设。
   const AI_PRESETS = {
-    phone:    { ph: '例如：5000内旗舰影像，长焦拍娃，续航一天不焦虑', ex: ['5000内影像旗舰', '3000档性价比之王', '轻薄小屏单手握持', '游戏满帧不烫手'] },
-    gpu:      { ph: '例如：4000档2K高刷电竞，光追全开，功耗压得住', ex: ['2K高刷光追全开', '大显存本地跑大模型', '1080P甜品卡首选', '3000内质价比之选'] },
-    cpu:      { ph: '例如：3A游戏不瓶颈，兼顾多核剪辑渲染', ex: ['游戏高帧不瓶颈', '多核生产力渲染', '核显办公免独显', '低功耗静音小主机'] },
-    laptop:   { ph: '例如：8000内轻薄本，全天续航，高色域办公', ex: ['轻薄本全天续航', '游戏本剪辑渲染', '学生本高性价比', 'Mac生态创意设计'] },
-    ac:       { ph: '例如：卧室新一级变频，静音助眠不直吹', ex: ['卧室静音助眠', '客厅大匹数速冷', '新一级能效省电', '自清洁健康风'] },
-    robot:    { ph: '例如：全能基站自清洁，大吸力扫宠物毛发', ex: ['全能基站免手洗', '大吸力扫宠物毛', '激光导航精准避障', '超薄机身钻沙发'] },
-    earphone: { ph: '例如：通勤深度降噪，Hi-Res音质，单次续航久', ex: ['深度降噪通勤神器', 'Hi-Res发烧音质', '运动防水佩戴稳', '千元内质价比'] },
-    monitor:  { ph: '例如：2K高刷电竞屏，低延迟，出厂校色准', ex: ['2K高刷竞技电竞', '4K专业修图校色', '带鱼屏沉浸办公', '1500内高刷入门'] },
-    tablet:   { ph: '例如：影音娱乐大屏，长续航，轻办公', ex: ['大屏影音娱乐', '轻办公记笔记', '学生网课学习', '苹果生态联动'] },
-    camera:   { ph: '例如：全画幅拍照视频兼顾，防抖好，预算1.5万', ex: ['全画幅拍照旗舰', 'Vlog视频利器', '入门练手机型', '高像素风光摄影'] },
-    tv:       { ph: '例如：65寸Mini LED，高刷游戏，亮度高', ex: ['65寸MiniLED游戏', '大屏家庭影院', '高性价比入门', '高亮度抗光'] },
-    watch:    { ph: '例如：长续航运动健康，支持血氧心率', ex: ['长续航运动款', '苹果/鸿蒙生态', '健康监测全面', '千元入门智能'] },
-    keyboard: { ph: '例如：三模热插拔，手感好，静音办公', ex: ['三模热插拔客制化', '办公静音薄膜', '性价比入门', '小配列便携'] }
+    _all: { ph: '例如：预算3000，想买一个适合看电影的大屏设备', ex: ['通勤降噪耳机', '5000内影像手机', '大屏观影设备', '全屋Wi-Fi覆盖'] },
+    _group_mobile:  { ph: '例如：3000以内，日常使用，体验均衡', ex: ['影音娱乐', '轻办公学习', '高性价比', '旗舰体验'] },
+    _group_pc:      { ph: '例如：8000以内，游戏办公两用，性能均衡', ex: ['游戏生产力', '高性价比装机', '外设升级', '办公便携'] },
+    _group_av:      { ph: '例如：3000以内，看电影听歌，沉浸感强', ex: ['家庭影院', '音乐发烧', '通勤随身', '直播创作'] },
+    _group_photo:   { ph: '例如：预算1万左右，拍照视频兼顾', ex: ['人像/视频', '旅行轻便', '运动防抖', '专业创作'] },
+    _group_game:    { ph: '例如：4000以内，玩3A大作', ex: ['4K次世代', '掌上游戏', '竞技外设', '体感全家'] },
+    _group_wear:    { ph: '例如：1500以内，健康运动监测', ex: ['长续航', '健康监测', '运动记录', '苹果生态'] },
+    _group_network: { ph: '例如：全屋覆盖，高速稳定，多设备', ex: ['全屋Mesh', 'Wi-Fi 7', '大户型覆盖', '家庭存储'] },
+    _group_home:    { ph: '例如：5000以内，提升居家体验', ex: ['智能清洁', '舒适家居', '全屋智能', 'AI新硬件'] },
+    // —— 手机平板 ——
+    phone:    { ph: '例如：5000以内，拍照好，续航长，不玩大型游戏', ex: ['5000内影像旗舰', '3000档性价比', '轻薄小屏', '游戏性能优先'] },
+    tablet:   { ph: '例如：3000以内，影音娱乐为主，兼顾记笔记', ex: ['大屏影音追剧', '轻办公记笔记', '学生网课', '苹果生态联动'] },
+    ereader:  { ph: '例如：2000以内，主要看PDF和漫画，屏幕清晰，续航长', ex: ['PDF阅读体验好', '彩色墨水屏', '适合做笔记', '千元高性价比'] },
+    // —— 电脑硬件 ——
+    laptop:         { ph: '例如：8000以内，主要玩3A游戏，希望性能强、散热好', ex: ['8000档游戏性能', '高刷电竞', '轻薄性能本', '性价比RTX游戏本'] },
+    computer_system:{ ph: '例如：6000以内整机，玩3A大作，安静好维护', ex: ['3A游戏整机', '设计渲染工作站', '家用影音小主机', '6000内性价比'] },
+    cpu:      { ph: '例如：3A游戏不瓶颈，兼顾多核剪辑渲染', ex: ['游戏高帧不瓶颈', '多核剪辑渲染', '核显办公免独显', '低功耗静音'] },
+    gpu:      { ph: '例如：4000档2K高刷电竞，光追全开，功耗压得住', ex: ['2K高刷光追', '大显存跑AI模型', '1080P甜品卡', '3000内质价比'] },
+    pc_hardware:    { ph: '例如：装机配件，预算5000，白色主题', ex: ['白色主题装机', '风冷静音', '全模组电源', 'DDR5高频内存'] },
+    monitor:  { ph: '例如：2000以内，27英寸，主要打游戏，希望2K高刷', ex: ['2K高刷电竞', '4K专业设计', '千元高刷入门', '带鱼屏办公'] },
+    keyboard: { ph: '例如：三模热插拔，手感好，办公静音', ex: ['三模热插拔', '静音办公', '小配列便携', 'RGB电竞'] },
+    mouse:    { ph: '例如：FPS游戏，轻量化，无线低延迟', ex: ['轻量电竞鼠', '右手人体工学', '办公静音无线', '小手抓握'] },
+    dock:     { ph: '例如：笔记本外接双屏，需要PD供电', ex: ['双屏扩展坞', '雷电4高速', 'PD快充供电', '多接口便携'] },
+    mobile_storage: { ph: '例如：1TB移动固态，传输快，小巧便携', ex: ['高速移动固态', '大容量备份', 'Type-C直连', '小巧便携'] },
+    // —— 影音娱乐 ——
+    tv:       { ph: '例如：65寸Mini LED，高刷游戏，亮度高', ex: ['MiniLED游戏', '大屏家庭影院', '高性价比入门', '高亮度抗光'] },
+    projector:{ ph: '例如：5000以内，客厅用，亮度高，白天看得清', ex: ['白天高亮观影', '4K激光投影', '便携露营', '卧室千元款'] },
+    soundbar: { ph: '例如：3000以内，看电影，杜比全景声', ex: ['杜比全景声', '无线后环绕', '客厅电视搭档', '小户型条形'] },
+    speaker:  { ph: '例如：千元内，听人声和古典，桌面摆放', ex: ['Hi-Fi人声', '低音震撼', '桌面小巧', '户外便携'] },
+    earphone: { ph: '例如：1000以内，通勤使用，希望降噪强、佩戴舒服', ex: ['通勤深度降噪', 'Hi-Res音质', '运动不易掉', '游戏低延迟'] },
+    microphone:{ ph: '例如：直播录歌，USB直连，防喷防噪', ex: ['直播电容麦', 'USB即插即用', '播客采访', '心形指向'] },
+    webcam:   { ph: '例如：视频会议，1080P，自动对焦美颜', ex: ['会议自动取景', '直播高清', '4K创作', '千元内入门'] },
+    // —— 影像拍摄 ——
+    camera:   { ph: '例如：人像为主，兼顾视频，预算1.5万', ex: ['人像摄影', 'Vlog视频机', '旅行轻便', '高像素风光'] },
+    lens:     { ph: '例如：拍体育野生动物，长焦大光圈', ex: ['长焦拍体育', '大光圈人像', '风光广角', '轻便挂机头'] },
+    action_cam:{ ph: '例如：骑行潜水，4K防抖，配件多', ex: ['骑行第一视角', '水下拍摄', '防抖稳定', 'Vlog随身'] },
+    gimbal:   { ph: '例如：手机拍Vlog，轻便，智能跟随', ex: ['手机Vlog云台', '相机承重', '智能跟随', '折叠便携'] },
+    drone:    { ph: '例如：旅行航拍，4K，续航30分钟以上', ex: ['入门航拍', '一英寸大底', '长续航', '便携折叠'] },
+    // —— 游戏设备 ——
+    console:  { ph: '例如：客厅玩3A，4K120帧，预算5000', ex: ['4K次世代', '国行保修', '数字版省钱', '体感全家乐'] },
+    handheld_console: { ph: '例如：掌上玩Steam库，OLED屏，续航长', ex: ['Steam掌机', 'OLED掌机', '长续航', '云游戏'] },
+    gamepad:  { ph: '例如：PC和主机通用，霍尔摇杆不漂移', ex: ['霍尔摇杆', '三平台通用', '背键竞技', '百元入门'] },
+    racing_wheel:{ ph: '例如：模拟赛车，力反馈，兼容PS5', ex: ['直驱力反馈', 'GT赛车入门', '全踏板套装', 'PC/Xbox兼容'] },
+    // —— 智能穿戴 ——
+    watch:    { ph: '例如：1500以内，续航长，运动监测全面，安卓手机使用', ex: ['长续航运动款', '苹果生态', '健康监测全面', '千元入门智能'] },
+    smartband:{ ph: '例如：200以内，看消息，睡眠监测', ex: ['长续航消息提醒', '睡眠心率监测', '50米防水', '百元性价比'] },
+    smartring:{ ph: '例如：睡眠健康监测，小巧无感佩戴', ex: ['睡眠监测', '钛金属轻量', '心率血氧', '无感佩戴'] },
+    smartglasses:{ ph: '例如：AI问答翻译，拍照第一视角', ex: ['AI助手翻译', '第一视角拍摄', '智能音频', '时尚轻量'] },
+    vr:       { ph: '例如：玩Steam VR游戏，追踪精准', ex: ['PC VR串流', '一体机免PC', '高分辨率观影', '体感游戏'] },
+    ar:       { ph: '例如：巨幕观影，轻量佩戴，Type-C直连', ex: ['巨幕观影', '轻量随身', '空间计算', '办公多屏'] },
+    // —— 网络存储 ——
+    router:   { ph: '例如：120平全屋覆盖，Wi-Fi 7，多设备', ex: ['Wi-Fi 7旗舰', '全屋Mesh覆盖', '电竞低延迟', '千元内入门'] },
+    mesh:     { ph: '例如：大平层/复式，全屋信号满格', ex: ['全屋无死角', '三频旗舰Mesh', '子母路由', '高性价比双只装'] },
+    switch:   { ph: '例如：家庭组网8口千兆，即插即用', ex: ['8口千兆', 'PoE供电', '网管功能', '桌面小巧'] },
+    nas:      { ph: '例如：家庭影音备份，双盘位，支持手机相册', ex: ['双盘位家用', '影音库管理', '手机相册备份', '万兆工作站'] },
+    // —— 家居家电 ——
+    ac:       { ph: '例如：卧室新一级变频，静音助眠不直吹', ex: ['卧室静音助眠', '客厅大匹数', '新一级能效', '自清洁健康风'] },
+    robot:    { ph: '例如：全能基站自清洁，大吸力扫宠物毛发', ex: ['全能基站免手洗', '大吸力扫宠物毛', '激光导航避障', '超薄钻沙发'] },
+    smart_device:{ ph: '例如：全屋智能联动，支持米家/苹果HomeKit', ex: ['全屋智能中枢', '智能门锁安防', '中控屏管理', '多生态兼容'] },
+    ai_device:{ ph: '例如：AI学习助手，护眼屏，家长管控', ex: ['AI学习机', '翻译机出国', 'AI录音降噪', '护眼大屏'] },
+    robot_device:{ ph: '例如：庭院割草/擦窗，全自动，安全避障', ex: ['庭院割草机', '智能擦窗', '全自动避障', '远程遥控'] }
   };
-  function aiPlaceholder() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ph; }
-  function aiExamples() { return (AI_PRESETS[state.category] || AI_PRESETS.phone).ex; }
+  // fallback：品类 → 分组(_group_*) → 通用(_all)
+  function aiPreset(key) {
+    if (AI_PRESETS[key]) return AI_PRESETS[key];
+    return AI_PRESETS['_group_' + groupOfCat(key)] || AI_PRESETS._all;
+  }
+  // 用户停留在「全部」时用通用预设；否则用当前选中品类（含分组/通用兜底）
+  function aiPlaceholder() { return (state.navGroup === 'all' ? AI_PRESETS._all : aiPreset(state.category)).ph; }
+  function aiExamples() { return (state.navGroup === 'all' ? AI_PRESETS._all : aiPreset(state.category)).ex; }
+  // AI 说明文字：未锁定品类（全部）→ 全站自动识别；已锁定 → 插入当前品类名
+  function aiSubText() {
+    if (state.navGroup === 'all') {
+      return '用一句话描述需求，AI帮你从全站 ' + totalProductCount() + ' 款产品中找到更适合的选择';
+    }
+    return '描述你的预算和使用需求，AI帮你从' + cat().name + '中挑选更合适的产品';
+  }
 
   // AI 选购 placeholder / 预选标签跟随下方选中品类动态变化（通过 aiPlaceholder / aiExamples 函数读取 state.category）
   function totalProductCount() {
@@ -3157,8 +3236,10 @@ const scoreBars = scores.map((s, i) => {
     const detected = detectCategory(query);
     let switchedNote = '';
     if (detected && detected !== state.category) {
-      // 自动切到识别出的品类，保证数据源、"加入对比"等后续操作与推荐结果一致
+      // 自动切到识别出的品类，保证数据源、"加入对比"等后续操作与推荐结果一致；
+      // 同步一级导航分组，避免 Tab 高亮与品类错位
       state.category = detected;
+      state.navGroup = groupOfCat(detected);
       state.filterBrand = null;
       state.filterPriceRange = null;
       state.sortBy = cat().defaultSort;
