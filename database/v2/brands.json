@@ -1215,5 +1215,765 @@
     "official_url": "",
     "logo": "",
     "status": "active"
+  },
+  {
+    "brand_id": "dji",
+    "brand_name": "大疆",
+    "brand_name_cn": "大疆",
+    "brand_name_en": "DJI",
+    "aliases": [
+      "大疆",
+      "DJI",
+      "dji"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "nintendo",
+    "brand_name": "任天堂",
+    "brand_name_cn": "任天堂",
+    "brand_name_en": "Nintendo",
+    "aliases": [
+      "任天堂",
+      "Nintendo",
+      "nintendo"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "valve",
+    "brand_name": "Valve",
+    "brand_name_cn": "Valve",
+    "brand_name_en": "Valve",
+    "aliases": [
+      "Valve",
+      "valve"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "gopro",
+    "brand_name": "GoPro",
+    "brand_name_cn": "GoPro",
+    "brand_name_en": "GoPro",
+    "aliases": [
+      "GoPro",
+      "gopro"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "insta360",
+    "brand_name": "影石",
+    "brand_name_cn": "影石",
+    "brand_name_en": "Insta360",
+    "aliases": [
+      "影石",
+      "Insta360",
+      "insta360"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "zhiyun",
+    "brand_name": "智云",
+    "brand_name_cn": "智云",
+    "brand_name_en": "Zhiyun",
+    "aliases": [
+      "智云",
+      "Zhiyun",
+      "zhiyun"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "xreal",
+    "brand_name": "XREAL",
+    "brand_name_cn": "XREAL",
+    "brand_name_en": "XREAL",
+    "aliases": [
+      "XREAL",
+      "xreal"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "rokid",
+    "brand_name": "Rokid",
+    "brand_name_cn": "Rokid",
+    "brand_name_en": "Rokid",
+    "aliases": [
+      "Rokid",
+      "rokid"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "oura",
+    "brand_name": "Oura",
+    "brand_name_cn": "Oura",
+    "brand_name_en": "Oura",
+    "aliases": [
+      "Oura",
+      "oura"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "meta",
+    "brand_name": "Meta",
+    "brand_name_cn": "Meta",
+    "brand_name_en": "Meta",
+    "aliases": [
+      "Meta",
+      "meta"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "pico",
+    "brand_name": "小鸟看看",
+    "brand_name_cn": "小鸟看看",
+    "brand_name_en": "PICO",
+    "aliases": [
+      "小鸟看看",
+      "PICO",
+      "pico"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "htc",
+    "brand_name": "宏达电",
+    "brand_name_cn": "宏达电",
+    "brand_name_en": "HTC",
+    "aliases": [
+      "宏达电",
+      "HTC",
+      "htc"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "amazon",
+    "brand_name": "亚马逊",
+    "brand_name_cn": "亚马逊",
+    "brand_name_en": "Amazon",
+    "aliases": [
+      "亚马逊",
+      "Amazon",
+      "amazon",
+      "kindle",
+      "Kindle"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "boox",
+    "brand_name": "文石",
+    "brand_name_cn": "文石",
+    "brand_name_en": "BOOX",
+    "aliases": [
+      "文石",
+      "BOOX",
+      "boox"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ireader",
+    "brand_name": "掌阅",
+    "brand_name_cn": "掌阅",
+    "brand_name_en": "iReader",
+    "aliases": [
+      "掌阅",
+      "iReader",
+      "ireader"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ugreen",
+    "brand_name": "绿联",
+    "brand_name_cn": "绿联",
+    "brand_name_en": "UGREEN",
+    "aliases": [
+      "绿联",
+      "UGREEN",
+      "ugreen"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "baseus",
+    "brand_name": "倍思",
+    "brand_name_cn": "倍思",
+    "brand_name_en": "Baseus",
+    "aliases": [
+      "倍思",
+      "Baseus",
+      "baseus"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "elgato",
+    "brand_name": "Elgato",
+    "brand_name_cn": "Elgato",
+    "brand_name_en": "Elgato",
+    "aliases": [
+      "Elgato",
+      "elgato"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "obsbot",
+    "brand_name": "睿魔",
+    "brand_name_cn": "睿魔",
+    "brand_name_en": "OBSBOT",
+    "aliases": [
+      "睿魔",
+      "OBSBOT",
+      "obsbot"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "sandisk",
+    "brand_name": "闪迪",
+    "brand_name_cn": "闪迪",
+    "brand_name_en": "SanDisk",
+    "aliases": [
+      "闪迪",
+      "SanDisk",
+      "sandisk"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "wd",
+    "brand_name": "西部数据",
+    "brand_name_cn": "西部数据",
+    "brand_name_en": "Western Digital",
+    "aliases": [
+      "西部数据",
+      "Western Digital",
+      "wd"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "seagate",
+    "brand_name": "希捷",
+    "brand_name_cn": "希捷",
+    "brand_name_en": "Seagate",
+    "aliases": [
+      "希捷",
+      "Seagate",
+      "seagate"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "crucial",
+    "brand_name": "英睿达",
+    "brand_name_cn": "英睿达",
+    "brand_name_en": "Crucial",
+    "aliases": [
+      "英睿达",
+      "Crucial",
+      "crucial"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "kingston",
+    "brand_name": "金士顿",
+    "brand_name_cn": "金士顿",
+    "brand_name_en": "Kingston",
+    "aliases": [
+      "金士顿",
+      "Kingston",
+      "kingston"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "blue",
+    "brand_name": "Blue",
+    "brand_name_cn": "Blue",
+    "brand_name_en": "Blue Microphones",
+    "aliases": [
+      "Blue",
+      "Blue Microphones",
+      "blue"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "shure",
+    "brand_name": "舒尔",
+    "brand_name_cn": "舒尔",
+    "brand_name_en": "Shure",
+    "aliases": [
+      "舒尔",
+      "Shure",
+      "shure"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "rode",
+    "brand_name": "RØDE",
+    "brand_name_cn": "RØDE",
+    "brand_name_en": "RØDE",
+    "aliases": [
+      "RØDE",
+      "rode"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "audio_technica",
+    "brand_name": "铁三角",
+    "brand_name_cn": "铁三角",
+    "brand_name_en": "Audio-Technica",
+    "aliases": [
+      "铁三角",
+      "Audio-Technica",
+      "audio_technica"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "marshall",
+    "brand_name": "Marshall",
+    "brand_name_cn": "Marshall",
+    "brand_name_en": "Marshall",
+    "aliases": [
+      "Marshall",
+      "marshall"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "harman",
+    "brand_name": "哈曼",
+    "brand_name_cn": "哈曼",
+    "brand_name_en": "Harman",
+    "aliases": [
+      "哈曼",
+      "Harman",
+      "harman"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "xgimi",
+    "brand_name": "极米",
+    "brand_name_cn": "极米",
+    "brand_name_en": "XGIMI",
+    "aliases": [
+      "极米",
+      "XGIMI",
+      "xgimi"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "epson",
+    "brand_name": "爱普生",
+    "brand_name_cn": "爱普生",
+    "brand_name_en": "Epson",
+    "aliases": [
+      "爱普生",
+      "Epson",
+      "epson"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "jmgo",
+    "brand_name": "坚果",
+    "brand_name_cn": "坚果",
+    "brand_name_en": "JMGO",
+    "aliases": [
+      "坚果",
+      "JMGO",
+      "jmgo"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "tplink",
+    "brand_name": "普联",
+    "brand_name_cn": "普联",
+    "brand_name_en": "TP-Link",
+    "aliases": [
+      "普联",
+      "TP-Link",
+      "tplink"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "netgear",
+    "brand_name": "网件",
+    "brand_name_cn": "网件",
+    "brand_name_en": "NETGEAR",
+    "aliases": [
+      "网件",
+      "NETGEAR",
+      "netgear"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "tenda",
+    "brand_name": "腾达",
+    "brand_name_cn": "腾达",
+    "brand_name_en": "Tenda",
+    "aliases": [
+      "腾达",
+      "Tenda",
+      "tenda"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "cisco",
+    "brand_name": "思科",
+    "brand_name_cn": "思科",
+    "brand_name_en": "Cisco",
+    "aliases": [
+      "思科",
+      "Cisco",
+      "cisco"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "h3c",
+    "brand_name": "新华三",
+    "brand_name_cn": "新华三",
+    "brand_name_en": "H3C",
+    "aliases": [
+      "新华三",
+      "H3C",
+      "h3c"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ubiquiti",
+    "brand_name": "Ubiquiti",
+    "brand_name_cn": "Ubiquiti",
+    "brand_name_en": "Ubiquiti",
+    "aliases": [
+      "Ubiquiti",
+      "ubiquiti"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "synology",
+    "brand_name": "群晖",
+    "brand_name_cn": "群晖",
+    "brand_name_en": "Synology",
+    "aliases": [
+      "群晖",
+      "Synology",
+      "synology"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "qnap",
+    "brand_name": "威联通",
+    "brand_name_cn": "威联通",
+    "brand_name_en": "QNAP",
+    "aliases": [
+      "威联通",
+      "QNAP",
+      "qnap"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "asustor",
+    "brand_name": "华芸",
+    "brand_name_cn": "华芸",
+    "brand_name_en": "Asustor",
+    "aliases": [
+      "华芸",
+      "Asustor",
+      "asustor"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "8bitdo",
+    "brand_name": "八位堂",
+    "brand_name_cn": "八位堂",
+    "brand_name_en": "8BitDo",
+    "aliases": [
+      "八位堂",
+      "8BitDo",
+      "8bitdo"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "thrustmaster",
+    "brand_name": "图马思特",
+    "brand_name_cn": "图马思特",
+    "brand_name_en": "Thrustmaster",
+    "aliases": [
+      "图马思特",
+      "Thrustmaster",
+      "thrustmaster"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "fanatec",
+    "brand_name": "Fanatec",
+    "brand_name_cn": "Fanatec",
+    "brand_name_en": "Fanatec",
+    "aliases": [
+      "Fanatec",
+      "fanatec"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "sigma",
+    "brand_name": "适马",
+    "brand_name_cn": "适马",
+    "brand_name_en": "Sigma",
+    "aliases": [
+      "适马",
+      "Sigma",
+      "sigma"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "tamron",
+    "brand_name": "腾龙",
+    "brand_name_cn": "腾龙",
+    "brand_name_en": "Tamron",
+    "aliases": [
+      "腾龙",
+      "Tamron",
+      "tamron"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "tuya",
+    "brand_name": "涂鸦智能",
+    "brand_name_cn": "涂鸦智能",
+    "brand_name_en": "Tuya",
+    "aliases": [
+      "涂鸦智能",
+      "Tuya",
+      "tuya"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "broadlink",
+    "brand_name": "博联",
+    "brand_name_cn": "博联",
+    "brand_name_en": "Broadlink",
+    "aliases": [
+      "博联",
+      "Broadlink",
+      "broadlink"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "iflytek",
+    "brand_name": "科大讯飞",
+    "brand_name_cn": "科大讯飞",
+    "brand_name_en": "iFlytek",
+    "aliases": [
+      "科大讯飞",
+      "iFlytek",
+      "iflytek"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "gigabyte",
+    "brand_name": "技嘉",
+    "brand_name_cn": "技嘉",
+    "brand_name_en": "Gigabyte",
+    "aliases": [
+      "技嘉",
+      "Gigabyte",
+      "gigabyte"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "seasonic",
+    "brand_name": "海韵",
+    "brand_name_cn": "海韵",
+    "brand_name_en": "Seasonic",
+    "aliases": [
+      "海韵",
+      "Seasonic",
+      "seasonic"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "noctua",
+    "brand_name": "猫头鹰",
+    "brand_name_cn": "猫头鹰",
+    "brand_name_en": "Noctua",
+    "aliases": [
+      "猫头鹰",
+      "Noctua",
+      "noctua"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "ayaneo",
+    "brand_name": "AYANEO",
+    "brand_name_cn": "AYANEO",
+    "brand_name_en": "AYANEO",
+    "aliases": [
+      "AYANEO",
+      "ayaneo"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
+  },
+  {
+    "brand_id": "alienware",
+    "brand_name": "外星人",
+    "brand_name_cn": "外星人",
+    "brand_name_en": "Alienware",
+    "aliases": [
+      "外星人",
+      "Alienware",
+      "alienware"
+    ],
+    "official_url": "",
+    "logo": "",
+    "status": "active"
   }
 ]
