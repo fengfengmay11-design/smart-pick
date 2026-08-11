@@ -1,0 +1,258 @@
+{
+  "products": [
+    {
+      "brand_id": "dji",
+      "primary_category_id": "drone",
+      "model": "Mini 4 Pro",
+      "full_name": "DJI Mini 4 Pro",
+      "status": "active",
+      "release_date": "2023-09-25",
+      "source_url": "https://www.dji.com/mo/mobile/mini-4-pro/specs",
+      "tags": ["便携", "轻量化", "全向避障", "旅拍"],
+      "specs": {
+        "camera_resolution": {"value": 48, "unit": "MP", "display_value": "4800万像素（1/1.3英寸 CMOS）"},
+        "flight_time": {"value": 34, "unit": "min", "display_value": "34分钟（标准智能飞行电池）"},
+        "range": {"value": 20, "unit": "km", "display_value": "20公里（DJI O4 图传）"},
+        "weight": {"value": 248, "unit": "g", "display_value": "248克（含标准电池，<249克）"},
+        "gimbal": "三轴机械云台",
+        "sensors": "全向主动避障（4广角视觉 + 下视双目）",
+        "max_speed": {"value": 16, "unit": "m/s", "display_value": "16米/秒（运动档）"}
+      },
+      "prices": [{"source": "jd", "price": 6539}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "drone",
+      "model": "Air 3S",
+      "full_name": "DJI Air 3S",
+      "status": "active",
+      "release_date": "2024-10-15",
+      "source_url": "https://www.dji.com/ch/support/product/air-3s",
+      "tags": ["双摄", "旅拍", "全向避障", "旗舰"],
+      "specs": {
+        "camera_resolution": {"value": 50, "unit": "MP", "display_value": "主摄5000万 + 中长焦4800万（双摄）"},
+        "flight_time": {"value": 45, "unit": "min", "display_value": "45分钟"},
+        "range": {"value": 20, "unit": "km", "display_value": "20公里（DJI O4 图传）"},
+        "weight": {"value": 724, "unit": "g", "display_value": "724克"},
+        "gimbal": "三轴机械云台",
+        "sensors": "全向主动避障（前视激光雷达 + 下视ToF + 三对视觉传感器）",
+        "max_speed": {"value": 21, "unit": "m/s", "display_value": "21米/秒（运动档）"}
+      },
+      "prices": [{"source": "jd", "price": 6988}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "drone",
+      "model": "Mavic 4 Pro",
+      "full_name": "DJI Mavic 4 Pro",
+      "status": "active",
+      "release_date": "2025-05-13",
+      "source_url": "https://www.dji.com/tw/support/product/mavic-4-pro",
+      "tags": ["旗舰", "专业", "三摄", "长续航"],
+      "specs": {
+        "camera_resolution": {"value": 100, "unit": "MP", "display_value": "1亿像素（4/3英寸哈苏主摄）"},
+        "flight_time": {"value": 51, "unit": "min", "display_value": "51分钟"},
+        "range": {"value": 30, "unit": "km", "display_value": "30公里（DJI O4+ 图传）"},
+        "weight": {"value": 1063, "unit": "g", "display_value": "1063克"},
+        "gimbal": "360°旋转万象云台",
+        "sensors": "0.1 Lux 夜景级全向主动避障（前视激光雷达）",
+        "max_speed": {"value": 25, "unit": "m/s", "display_value": "25米/秒（运动档，90km/h）"}
+      },
+      "prices": [{"source": "jd", "price": 13888}]
+    },
+    {
+      "brand_id": "gopro",
+      "primary_category_id": "action_cam",
+      "model": "HERO13 Black",
+      "full_name": "GoPro HERO13 Black",
+      "status": "active",
+      "release_date": "2024-09-04",
+      "source_url": "https://gopro.com/en/gg/shop/cameras/learn/hero13black/CHDHX-131-master.html?tab=tech-specs",
+      "tags": ["运动", "旗舰", "防水", "Vlog"],
+      "specs": {
+        "resolution": {"value": 5.3, "unit": "K", "display_value": "5.3K（8:7 / 16:9）"},
+        "fps": {"value": 60, "unit": "fps", "display_value": "60fps（5.3K）/ 120fps（4K）"},
+        "stabilization": "HyperSmooth 6.0 电子防抖",
+        "waterproof": {"value": 10, "unit": "m", "display_value": "10米（裸机）"},
+        "weight": {"value": 159, "unit": "g", "display_value": "159克（含电池与固定手指）"},
+        "battery": {"value": 1900, "unit": "mAh", "display_value": "1900mAh Enduro"},
+        "connectivity": "Wi-Fi 6 / Bluetooth 5.0 / USB-C"
+      },
+      "prices": [{"source": "jd", "price": 2448}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "action_cam",
+      "model": "Osmo Action 5 Pro",
+      "full_name": "DJI Osmo Action 5 Pro",
+      "status": "active",
+      "release_date": "2024-09-19",
+      "source_url": "https://www.dji.com/cn/osmo-action-5-pro/specs",
+      "tags": ["运动", "防水", "双屏", "Vlog"],
+      "specs": {
+        "resolution": {"value": 4, "unit": "K", "display_value": "4K（最高 4K120）"},
+        "fps": {"value": 120, "unit": "fps", "display_value": "120fps（4K）"},
+        "stabilization": "RockSteady 3.0+ / HorizonSteady 360°地平线增稳",
+        "waterproof": {"value": 20, "unit": "m", "display_value": "20米（裸机）"},
+        "weight": {"value": 146, "unit": "g", "display_value": "146克"},
+        "battery": {"value": 1950, "unit": "mAh", "display_value": "1950mAh"},
+        "connectivity": "Wi-Fi 6 / 蓝牙 5.1 / USB-C"
+      },
+      "prices": [{"source": "jd", "price": 2098}]
+    },
+    {
+      "brand_id": "insta360",
+      "primary_category_id": "action_cam",
+      "model": "Ace Pro 2",
+      "full_name": "Insta360 Ace Pro 2",
+      "status": "active",
+      "release_date": "2024-10-01",
+      "source_url": "https://www.insta360.com/sal/ace-pro-2?utm",
+      "tags": ["运动", "AI", "防水", "Vlog"],
+      "specs": {
+        "resolution": {"value": 8, "unit": "K", "display_value": "8K（7680×4320）"},
+        "fps": {"value": 30, "unit": "fps", "display_value": "30fps（8K）/ 60fps（4K）"},
+        "stabilization": "FlowState 防抖 + 360°水平校正",
+        "waterproof": {"value": 12, "unit": "m", "display_value": "12米（裸机）"},
+        "weight": null,
+        "battery": {"value": 1800, "unit": "mAh", "display_value": "1800mAh（可拆）"},
+        "connectivity": "Wi-Fi / 蓝牙 / USB-C"
+      },
+      "prices": [{"source": "jd", "price": 2618}]
+    },
+    {
+      "brand_id": "insta360",
+      "primary_category_id": "action_cam",
+      "model": "X5",
+      "full_name": "Insta360 X5",
+      "status": "active",
+      "release_date": "2025-04-22",
+      "source_url": "https://www.insta360.com/sal/x5?c=6116",
+      "tags": ["全景", "运动", "防水", "Vlog"],
+      "specs": {
+        "resolution": {"value": 8, "unit": "K", "display_value": "8K 360°全景（7680×3840）"},
+        "fps": {"value": 30, "unit": "fps", "display_value": "30fps（8K 360°）"},
+        "stabilization": "FlowState 防抖 + 360°水平锁定",
+        "waterproof": {"value": 15, "unit": "m", "display_value": "15米（裸机）"},
+        "weight": {"value": 200, "unit": "g", "display_value": "200克"},
+        "battery": {"value": 2400, "unit": "mAh", "display_value": "2400mAh（可拆，支持快充）"},
+        "connectivity": "Wi-Fi / 蓝牙 / USB-C"
+      },
+      "prices": [{"source": "jd", "price": 2998}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "gimbal",
+      "model": "RS 4",
+      "full_name": "DJI RS 4",
+      "status": "active",
+      "release_date": "2024-04-09",
+      "source_url": "https://www.dji.com/it/support/product/rs-4",
+      "tags": ["专业", "微单", "三轴", "横直拍"],
+      "specs": {
+        "payload": {"value": 3, "unit": "kg", "display_value": "3千克"},
+        "weight": {"value": 1066, "unit": "g", "display_value": "1066克（云台）"},
+        "battery": {"value": 3000, "unit": "mAh", "display_value": "3000mAh（约12小时）"},
+        "axes": "三轴",
+        "connectivity": "蓝牙 5.1 / USB-C",
+        "compatibility": "索尼/佳能/尼康/松下等微单（Ronin 兼容列表）"
+      },
+      "prices": [{"source": "jd", "price": 2981}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "gimbal",
+      "model": "RS 4 Pro",
+      "full_name": "DJI RS 4 Pro",
+      "status": "active",
+      "release_date": "2024-04-09",
+      "source_url": "https://store.dji.com/hk/product/dji-rs-4-pro",
+      "tags": ["专业", "电影机", "三轴", "旗舰"],
+      "specs": {
+        "payload": {"value": 4.5, "unit": "kg", "display_value": "4.5千克"},
+        "weight": {"value": 1242, "unit": "g", "display_value": "1242克（云台）"},
+        "battery": {"value": 1950, "unit": "mAh", "display_value": "1950mAh（约13小时，BG30）"},
+        "axes": "三轴",
+        "connectivity": "蓝牙 / RSA+NATO 接口 / USB-C",
+        "compatibility": "主流微单/电影机（含 LiDAR 与图传生态）"
+      },
+      "prices": [{"source": "jd", "price": 7878}]
+    },
+    {
+      "brand_id": "dji",
+      "primary_category_id": "gimbal",
+      "model": "Osmo Mobile 7P",
+      "full_name": "DJI Osmo Mobile 7P",
+      "status": "active",
+      "release_date": "2025-02-18",
+      "source_url": "https://www.dji.com/mo/support/product/osmo-mobile-7",
+      "tags": ["手机", "便携", "三轴", "直播"],
+      "specs": {
+        "payload": {"value": 0.3, "unit": "kg", "display_value": "0.3千克（手机，兼容170-300g）"},
+        "weight": {"value": 368, "unit": "g", "display_value": "368克（含三脚架/磁吸夹/多功能模块）"},
+        "battery": {"value": 3350, "unit": "mAh", "display_value": "3350mAh（约10小时）"},
+        "axes": "三轴",
+        "connectivity": "蓝牙 5.3 / USB-C",
+        "compatibility": "智能手机（iOS 15+ / Android 9+，宽度67-84mm）"
+      },
+      "prices": [{"source": "jd", "price": 648}]
+    },
+    {
+      "brand_id": "sony",
+      "primary_category_id": "lens",
+      "model": "FE 300mm F2.8 GM OSS",
+      "full_name": "Sony FE 300mm F2.8 GM OSS",
+      "status": "active",
+      "release_date": "2024-01-25",
+      "source_url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20231107-3.html",
+      "tags": ["专业", "远摄", "体育", "野生动物"],
+      "specs": {
+        "mount": "索尼 E 卡口",
+        "focal_length": {"value": 300, "unit": "mm", "display_value": "300mm（定焦）"},
+        "aperture": {"value": 2.8, "unit": "f", "display_value": "F2.8"},
+        "stabilization": "OSS 光学防抖",
+        "weight": {"value": 1470, "unit": "g", "display_value": "1470克（不含三脚架卡口）"},
+        "filter_thread": {"value": 40.5, "unit": "mm", "display_value": "40.5mm"}
+      },
+      "prices": [{"source": "jd", "price": 43999}]
+    },
+    {
+      "brand_id": "nikon",
+      "primary_category_id": "lens",
+      "model": "NIKKOR Z 135mm f/1.8 S Plena",
+      "full_name": "Nikon NIKKOR Z 135mm f/1.8 S Plena",
+      "status": "active",
+      "release_date": "2023-09-27",
+      "source_url": "https://www.nikon.com.cn/sc_CN/product/nikkor-lenses/z-mount/single-focal-lengh/telephoto/z-135mm-f-1-8-s-plena",
+      "tags": ["人像", "专业", "大光圈", "虚化"],
+      "specs": {
+        "mount": "尼康 Z 卡口",
+        "focal_length": {"value": 135, "unit": "mm", "display_value": "135mm（定焦）"},
+        "aperture": {"value": 1.8, "unit": "f", "display_value": "F1.8"},
+        "stabilization": "无光学防抖（机身防抖协同）",
+        "weight": {"value": 995, "unit": "g", "display_value": "995克"},
+        "filter_thread": {"value": 82, "unit": "mm", "display_value": "82mm"}
+      },
+      "prices": [{"source": "jd", "price": 19338}]
+    },
+    {
+      "brand_id": "canon",
+      "primary_category_id": "lens",
+      "model": "RF 24-105mm F2.8 L IS USM Z",
+      "full_name": "Canon RF 24-105mm F2.8 L IS USM Z",
+      "status": "active",
+      "release_date": "2023-11-01",
+      "source_url": "https://m.canon.com.cn/product/rf24105f28lusmz/spec.html",
+      "tags": ["标准变焦", "专业", "视频", "恒定光圈"],
+      "specs": {
+        "mount": "佳能 RF 卡口",
+        "focal_length": {"value": 24, "unit": "mm", "display_value": "24-105mm（变焦）"},
+        "aperture": {"value": 2.8, "unit": "f", "display_value": "F2.8 恒定"},
+        "stabilization": "5.5级 IS 光学防抖",
+        "weight": {"value": 1330, "unit": "g", "display_value": "1330克"},
+        "filter_thread": {"value": 82, "unit": "mm", "display_value": "82mm"}
+      },
+      "prices": [{"source": "jd", "price": 20499}]
+    }
+  ]
+}

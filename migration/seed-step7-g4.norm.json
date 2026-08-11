@@ -1,0 +1,637 @@
+[
+  {
+    "brand_id": "jbl",
+    "primary_category_id": "speaker",
+    "model": "Xtreme 4",
+    "full_name": "JBL Xtreme 4",
+    "status": "active",
+    "release_date": "2024-05-01",
+    "tags": [
+      "portable",
+      "bluetooth",
+      "waterproof",
+      "outdoor"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://support.jbl.com/no/no/product-registration/XTREME-4.html",
+    "specs": {
+      "power": {
+        "value": 100,
+        "unit": "W",
+        "display_value": "100W (AC) / 70W (电池)",
+        "original_value": "100W"
+      },
+      "driver": "2×70mm 低音单元 + 2×20mm 高音单元",
+      "connectivity": "蓝牙 5.3",
+      "battery": {
+        "value": 24,
+        "unit": "h",
+        "display_value": "24 小时",
+        "original_value": "24h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 2110,
+        "unit": "g",
+        "display_value": "2.11kg",
+        "original_value": "2110g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2199,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "bose",
+    "primary_category_id": "speaker",
+    "model": "SoundLink Max",
+    "full_name": "Bose SoundLink Max",
+    "status": "active",
+    "release_date": "2024-05-01",
+    "tags": [
+      "portable",
+      "bluetooth",
+      "waterproof",
+      "premium"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.bose.com/p/speakers/bose-soundlink-max-portable-speaker/SLMAX-SPEAKERWIRELESS.html",
+    "specs": {
+      "power": null,
+      "driver": "Full Range 全频扬声器",
+      "connectivity": "蓝牙 5.4",
+      "battery": {
+        "value": 20,
+        "unit": "h",
+        "display_value": "20 小时",
+        "original_value": "20h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 2220,
+        "unit": "g",
+        "display_value": "2.22kg",
+        "original_value": "4.9lb"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2701,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "marshall",
+    "primary_category_id": "speaker",
+    "model": "Emberton III",
+    "full_name": "Marshall Emberton III",
+    "status": "active",
+    "release_date": "2024-09-01",
+    "tags": [
+      "portable",
+      "bluetooth",
+      "waterproof",
+      "retro"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.marshallheadphones.com/gb/en/product/emberton-iii",
+    "specs": {
+      "power": {
+        "value": 20,
+        "unit": "W",
+        "display_value": "20W RMS (2×10W)",
+        "original_value": "2×10W RMS"
+      },
+      "driver": "2×2英寸全频 + 2 被动辐射器",
+      "connectivity": "蓝牙 5.3 LE",
+      "battery": {
+        "value": 32,
+        "unit": "h",
+        "display_value": "32+ 小时",
+        "original_value": "32+ h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 670,
+        "unit": "g",
+        "display_value": "670g",
+        "original_value": "670g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1449,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "sony",
+    "primary_category_id": "speaker",
+    "model": "ULT FIELD 3 / SRS-ULT30",
+    "full_name": "Sony ULT FIELD 3",
+    "status": "active",
+    "release_date": "2025-04-01",
+    "tags": [
+      "portable",
+      "bluetooth",
+      "waterproof",
+      "bass"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.sony.com.hk/en/wireless-speakers/products/ult-field-3/spec",
+    "specs": {
+      "power": null,
+      "driver": "1×86×46mm 低音单元 + 1×20mm 高音单元",
+      "connectivity": "蓝牙 5.2",
+      "battery": {
+        "value": 24,
+        "unit": "h",
+        "display_value": "24 小时",
+        "original_value": "24h"
+      },
+      "waterproof": "IP67",
+      "weight": {
+        "value": 1200,
+        "unit": "g",
+        "display_value": "1.2kg",
+        "original_value": "1200g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1264,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "shure",
+    "primary_category_id": "microphone",
+    "model": "MV7+",
+    "full_name": "Shure MV7+",
+    "status": "active",
+    "release_date": "2024-09-01",
+    "tags": [
+      "podcast",
+      "streaming",
+      "usb",
+      "xlr"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.shure.com/pl-PL/produkty/mikrofony/mv7",
+    "specs": {
+      "pattern": "心形 (Cardioid)",
+      "connectivity": "USB-C / XLR",
+      "frequency_response": "50Hz–16kHz",
+      "sample_rate": "48kHz / 24-bit",
+      "interface": "USB-C + XLR"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1899,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "rode",
+    "primary_category_id": "microphone",
+    "model": "NT1 5th Generation",
+    "full_name": "RODE NT1 5th Gen",
+    "status": "active",
+    "release_date": "2023-02-01",
+    "tags": [
+      "studio",
+      "condenser",
+      "xlr",
+      "usb"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://rode.com/en-int/products/nt1-5th-generation",
+    "specs": {
+      "pattern": "心形 (Cardioid)",
+      "connectivity": "XLR / USB",
+      "frequency_response": "20Hz–20kHz",
+      "sample_rate": "48/96/192kHz (24/32-bit float)",
+      "interface": "XLR + USB-C"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1980,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "shure",
+    "primary_category_id": "microphone",
+    "model": "MV6",
+    "full_name": "Shure MV6",
+    "status": "active",
+    "release_date": "2024-09-05",
+    "tags": [
+      "podcast",
+      "streaming",
+      "usb",
+      "dynamic"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.shure.com/en-US/docs/guide/MV6",
+    "specs": {
+      "pattern": "心形动圈 (Cardioid, Dynamic)",
+      "connectivity": "USB-C",
+      "frequency_response": "50Hz–15kHz",
+      "sample_rate": "44.1/48kHz (16/24-bit)",
+      "interface": "USB-C"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1219,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "rode",
+    "primary_category_id": "microphone",
+    "model": "Wireless PRO",
+    "full_name": "RODE Wireless PRO",
+    "status": "active",
+    "release_date": "2023-08-22",
+    "tags": [
+      "wireless",
+      "interview",
+      "on_camera",
+      "32bit_float"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://rode.com/en-gb/products/wireless-pro",
+    "specs": {
+      "pattern": "全指向 (Omnidirectional)",
+      "connectivity": "2.4GHz 无线 (Series IV)",
+      "frequency_response": "20Hz–20kHz",
+      "sample_rate": "48kHz / 32-bit float WAV",
+      "interface": "USB-C + 3.5mm TRS/TRRS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2295,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "samsung",
+    "primary_category_id": "soundbar",
+    "model": "HW-Q990D",
+    "full_name": "Samsung HW-Q990D",
+    "status": "active",
+    "release_date": "2024-04-01",
+    "tags": [
+      "home_theater",
+      "dolby_atmos",
+      "wireless",
+      "flagship"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.samsung.com/us/business/televisions-home-theater/home-theater/sound-bars/q-series-11-1-4-ch-wireless-dolby-atmos-soundbar-rear-speakers-w-q-symphony-hw-q990d-hw-q990d-za",
+    "specs": {
+      "channels": "11.1.4",
+      "power": {
+        "value": 656,
+        "unit": "W",
+        "display_value": "656W",
+        "original_value": "656W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.2 / Wi-Fi",
+      "dolby": "Dolby Atmos (无线)",
+      "ports": "HDMI In ×2, HDMI Out ×1 (eARC), Optical ×1",
+      "subwoofer": "无线低音炮 (含)"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 6999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "sony",
+    "primary_category_id": "soundbar",
+    "model": "BRAVIA Theater Bar 9 (HT-A9000)",
+    "full_name": "Sony BRAVIA Theater Bar 9 HT-A9000",
+    "status": "active",
+    "release_date": "2024-04-01",
+    "tags": [
+      "home_theater",
+      "dolby_atmos",
+      "dts_x",
+      "flagship"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://electronics.sony.com/audio/soundbars/all-soundbars/p/hta9000",
+    "specs": {
+      "channels": "7.0.2 (13 单元)",
+      "power": {
+        "value": 585,
+        "unit": "W",
+        "display_value": "585W",
+        "original_value": "585W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.2 / Wi-Fi",
+      "dolby": "Dolby Atmos, DTS:X",
+      "ports": "HDMI In ×1, HDMI Out ×1 (eARC)",
+      "subwoofer": "可选 (另购 SA-SW3 / SA-SW5)"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 7261,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "lg",
+    "primary_category_id": "soundbar",
+    "model": "S95TR",
+    "full_name": "LG S95TR",
+    "status": "active",
+    "release_date": "2024-03-01",
+    "tags": [
+      "home_theater",
+      "dolby_atmos",
+      "dts_x",
+      "rear_speakers"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://www.lg.com/za/speakers/soundbars/s95tr/",
+    "specs": {
+      "channels": "9.1.5",
+      "power": {
+        "value": 810,
+        "unit": "W",
+        "display_value": "810W",
+        "original_value": "810W"
+      },
+      "connectivity": "HDMI / 蓝牙 5.1 / Wi-Fi",
+      "dolby": "Dolby Atmos, DTS:X",
+      "ports": "HDMI In ×1, HDMI Out ×1 (eARC), Optical ×1, USB ×1",
+      "subwoofer": "无线低音炮 + 无线后置环绕 (含)"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "xgimi",
+    "primary_category_id": "projector",
+    "model": "Z7X",
+    "full_name": "XGIMI Z7X",
+    "status": "active",
+    "release_date": "2023-03-01",
+    "tags": [
+      "1080p",
+      "portable",
+      "led",
+      "home_cinema"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.ithome.com/0/727/688.htm",
+    "specs": {
+      "brightness": {
+        "value": 1100,
+        "unit": "ANSI lm",
+        "display_value": "1100 ANSI 流明",
+        "original_value": "1100 ANSI lm"
+      },
+      "resolution": "1080P (1920×1080)",
+      "contrast": null,
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP (0.33\" DMD), LED",
+      "os": "GMUI",
+      "speakers": {
+        "value": 6,
+        "unit": "W",
+        "display_value": "6W 哈曼卡顿",
+        "original_value": "6W Harman Kardon"
+      },
+      "ports": "HDMI 2.0 ×1, USB ×1, 3.5mm Audio ×1, DC"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3099,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "epson",
+    "primary_category_id": "projector",
+    "model": "CH-TW6280T",
+    "full_name": "Epson CH-TW6280T",
+    "status": "active",
+    "release_date": "2023-01-01",
+    "tags": [
+      "4k",
+      "home_cinema",
+      "3lcd",
+      "bulb"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://epson.com.cn/products/projectors/30494/CH-TW6280T",
+    "specs": {
+      "brightness": {
+        "value": 2800,
+        "unit": "lm",
+        "display_value": "2800 流明 (ISO)",
+        "original_value": "2800 lm (ISO)"
+      },
+      "resolution": "4K Pro UHD (3840×2160)",
+      "contrast": {
+        "value": 35000,
+        "unit": ":1",
+        "display_value": "35000:1",
+        "original_value": "35000:1"
+      },
+      "throw_ratio": {
+        "value": 1.32,
+        "unit": ":1",
+        "display_value": "1.32–2.15:1",
+        "original_value": "1.32-2.15"
+      },
+      "tech": "3LCD",
+      "os": "Android 11 (腾讯视频·极光TV)",
+      "speakers": {
+        "value": 10,
+        "unit": "W",
+        "display_value": "10W",
+        "original_value": "10W"
+      },
+      "ports": "HDMI (ARC) ×1, 3.5mm Audio Out ×1, USB, USB Type-B mini"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 6279,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "jmgo",
+    "primary_category_id": "projector",
+    "model": "N1S Pro",
+    "full_name": "JMGO N1S Pro",
+    "status": "active",
+    "release_date": "2023-09-18",
+    "tags": [
+      "4k",
+      "tri_color_laser",
+      "portable",
+      "gimbal"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.ithome.com/0/719/955.htm",
+    "specs": {
+      "brightness": {
+        "value": 2000,
+        "unit": "CVIA lm",
+        "display_value": "2000 CVIA 流明",
+        "original_value": "2000 CVIA lm"
+      },
+      "resolution": "4K (3840×2160)",
+      "contrast": {
+        "value": 1600,
+        "unit": ":1",
+        "display_value": "1600:1",
+        "original_value": "1600:1"
+      },
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP, 三色激光 (Tri-color Laser)",
+      "os": "Bonfire OS (Android)",
+      "speakers": {
+        "value": 20,
+        "unit": "W",
+        "display_value": "20W 丹拿 (2×10W)",
+        "original_value": "20W Dynaudio"
+      },
+      "ports": "HDMI 2.1 ×2 (1×eARC), USB 2.0 ×1"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 4995,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "benq",
+    "primary_category_id": "projector",
+    "model": "GP520",
+    "full_name": "BenQ GP520",
+    "status": "active",
+    "release_date": "2024-10-15",
+    "tags": [
+      "4k",
+      "led",
+      "google_tv",
+      "living_room"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://g5-prod.benq.com/en-us/projector/cinema/gp520/spec.html",
+    "specs": {
+      "brightness": {
+        "value": 2600,
+        "unit": "ANSI lm",
+        "display_value": "2600 ANSI 流明",
+        "original_value": "2600 ANSI lm"
+      },
+      "resolution": "4K UHD (3840×2160)",
+      "contrast": {
+        "value": 200000,
+        "unit": ":1",
+        "display_value": "200,000:1",
+        "original_value": "200000:1"
+      },
+      "throw_ratio": {
+        "value": 1.2,
+        "unit": ":1",
+        "display_value": "1.2:1",
+        "original_value": "1.2:1"
+      },
+      "tech": "DLP (4LED)",
+      "os": "Google TV (Android 11)",
+      "speakers": {
+        "value": 24,
+        "unit": "W",
+        "display_value": "2×12W (24W)",
+        "original_value": "2×12W"
+      },
+      "ports": "HDMI 2.1 ×2 (1×eARC), USB-A ×2, USB-C ×1, 3.5mm Audio Out ×1"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "sony",
+    "primary_category_id": "projector",
+    "model": "VPL-XW5000ES",
+    "full_name": "Sony VPL-XW5000ES",
+    "status": "active",
+    "release_date": "2023-02-14",
+    "tags": [
+      "4k",
+      "laser",
+      "home_cinema",
+      "sxrd",
+      "native_4k"
+    ],
+    "data_source": "manufacturer",
+    "source_url": "https://electronics.sony.com/tv-video/projectors/all-projectors/p/vplxw5000es-w",
+    "specs": {
+      "brightness": {
+        "value": 2000,
+        "unit": "lm",
+        "display_value": "2000 流明",
+        "original_value": "2000 lm"
+      },
+      "resolution": "4K (3840×2160) 原生 SXRD",
+      "contrast": "∞:1 (动态对比度)",
+      "throw_ratio": {
+        "value": 1.38,
+        "unit": ":1",
+        "display_value": "1.38–2.21:1",
+        "original_value": "1.38-2.21:1"
+      },
+      "tech": "SXRD (3×0.61\" 4K 面板), 激光",
+      "os": null,
+      "speakers": null,
+      "ports": "HDMI ×2, LAN (RJ45), RS-232C, Trigger, USB-A ×1"
+    },
+    "prices": []
+  }
+]

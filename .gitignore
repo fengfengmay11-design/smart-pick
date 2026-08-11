@@ -21,3 +21,6 @@ server/.env
 server/__pycache__/
 server/venv/
 *.pyc
+
+# 本地迁移安全备份（非 V2 正式数据，回滚用 git 分支即可）
+database/v2.step4.bak/

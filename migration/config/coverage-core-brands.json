@@ -1,0 +1,207 @@
+{
+  "_comment": "各品类核心品牌期望清单（覆盖率分母）。基于消费电子常识定义，可由用户编辑。覆盖判定：brand_id 存在于 brands.json 且在该品类至少有 1 款产品 => covered。",
+  "smartphone": {
+    "priority": "S",
+    "core_brands": ["apple","samsung","huawei","xiaomi","honor","oppo","vivo","oneplus","realme","google","motorola","sony","asus","redmi","meizu","nubia","iqoo"]
+  },
+  "foldable_phone": {
+    "priority": "S",
+    "core_brands": ["samsung","huawei","honor","oppo","vivo","xiaomi","google","motorola","apple"]
+  },
+  "gaming_phone": {
+    "priority": "A",
+    "core_brands": ["asus","nubia","lenovo","xiaomi","iqoo","oneplus"]
+  },
+  "laptop": {
+    "priority": "S",
+    "core_brands": ["apple","lenovo","hp","dell","asus","acer","msi","huawei","xiaomi","honor","microsoft","razer","lg","samsung","gigabyte","mechrevo","thunderobot"]
+  },
+  "desktop": {
+    "priority": "A",
+    "core_brands": ["apple","lenovo","hp","dell","asus","acer","msi","huawei","xiaomi","microsoft","razer"]
+  },
+  "mini_pc": {
+    "priority": "A",
+    "core_brands": ["apple","intel","asus","lenovo","hp","dell","minisforum","beelink","geekom"]
+  },
+  "pc_handheld": {
+    "priority": "A",
+    "core_brands": ["valve","asus","lenovo","gpd","aya","onexplayer","msi"]
+  },
+  "cpu": {
+    "priority": "A",
+    "core_brands": ["intel","amd"]
+  },
+  "gpu": {
+    "priority": "A",
+    "core_brands": ["nvidia","amd","intel"]
+  },
+  "motherboard": {
+    "priority": "A",
+    "core_brands": ["asus","msi","gigabyte","asrock","biostar","evga","nzxt"]
+  },
+  "memory": {
+    "priority": "A",
+    "core_brands": ["kingston","corsair","gskill","samsung","skhynix","crucial","teamgroup","adata"]
+  },
+  "ssd": {
+    "priority": "A",
+    "core_brands": ["samsung","wd","kingston","crucial","seagate","skhynix","sandisk","adata","lexar","kioxia"]
+  },
+  "psu": {
+    "priority": "B",
+    "core_brands": ["corsair","seasonic","evga","fsp","coolermaster","bequiet","superflower","thermaltake","greatwall"]
+  },
+  "cooler": {
+    "priority": "B",
+    "core_brands": ["noctua","coolermaster","deepcool","nzxt","bequiet","arctic","corsair","thermalright","idcooling"]
+  },
+  "tablet": {
+    "priority": "S",
+    "core_brands": ["apple","samsung","huawei","xiaomi","lenovo","microsoft","oppo","vivo","realme","oneplus","google","redmi"]
+  },
+  "ereader": {
+    "priority": "B",
+    "core_brands": ["amazon","kobo","boox","xiaomi","pocketbook","ireader"]
+  },
+  "monitor": {
+    "priority": "S",
+    "core_brands": ["dell","lg","samsung","asus","aoc","msi","benq","xiaomi","huawei","redmi","gigabyte","viewsonic","hp","acer","tcl","ktc","hkc","koorui","titanarmy","sanc","skyworth"]
+  },
+  "keyboard": {
+    "priority": "S",
+    "core_brands": ["logitech","razer","cherry","corsair","keychron","hhkb","ducky","rk","a4tech","rog","steelseries","ikbc","akko","varmilo","ajazz","fl_esports","durgod"]
+  },
+  "mouse": {
+    "priority": "S",
+    "core_brands": ["logitech","razer","steelseries","corsair","zowie","glorious","roccat","asus","dell"]
+  },
+  "dock": {
+    "priority": "B",
+    "core_brands": ["caldigit","belkin","anker","satechi","owc","baseus","ugreen","hp","dell"]
+  },
+  "webcam": {
+    "priority": "B",
+    "core_brands": ["logitech","razer","elgato","obsbot","anker","microsoft","dell"]
+  },
+  "mobile_storage": {
+    "priority": "B",
+    "core_brands": ["samsung","wd","sandisk","seagate","toshiba","kingston","crucial","adata","lacie"]
+  },
+  "earphone": {
+    "priority": "S",
+    "core_brands": ["apple","sony","bose","sennheiser","jabra","samsung","xiaomi","huawei","soundcore","edifier","jbl","beats","1more","honor","oppo","vivo","oneplus","shokz"]
+  },
+  "speaker": {
+    "priority": "A",
+    "core_brands": ["bose","jbl","sony","harmankardon","edifier","apple","sonos","marshall","bangolufsen","xiaomi","amazon","googlenest"]
+  },
+  "microphone": {
+    "priority": "B",
+    "core_brands": ["shure","rode","blue","audiotechnica","samson","hyperx","fifine","elgato","sennheiser"]
+  },
+  "tv": {
+    "priority": "A",
+    "core_brands": ["sony","samsung","lg","tcl","xiaomi","hisense","huawei","vizio","skyworth","konka","changhong","thunderbird","haier","sharp","panasonic"]
+  },
+  "projector": {
+    "priority": "A",
+    "core_brands": ["epson","benq","xgimi","jmgo","ankern","lg","sony","hisense","dangbei","xiaomi"]
+  },
+  "soundbar": {
+    "priority": "B",
+    "core_brands": ["samsung","sony","bose","jbl","lg","yamaha","sonos","vizio","xiaomi","sennheiser"]
+  },
+  "smartwatch": {
+    "priority": "S",
+    "core_brands": ["apple","samsung","huawei","xiaomi","garmin","amazfit","fitbit","oppo","vivo","honor","google","oneplus","coros"]
+  },
+  "smartband": {
+    "priority": "A",
+    "core_brands": ["xiaomi","huawei","honor","fitbit","samsung","garmin","amazfit"]
+  },
+  "smartring": {
+    "priority": "B",
+    "core_brands": ["oura","samsung","amazfit","ringconn","circular","ultrahuman"]
+  },
+  "smartglasses": {
+    "priority": "B",
+    "core_brands": ["meta","xreal","rokid","huawei","xiaomi","inmo","tclrayneo"]
+  },
+  "vr": {
+    "priority": "A",
+    "core_brands": ["meta","pico","htc","sony","valve","bigscreen"]
+  },
+  "ar": {
+    "priority": "A",
+    "core_brands": ["apple","microsoft","rokid","xreal","magicleap"]
+  },
+  "camera": {
+    "priority": "A",
+    "core_brands": ["sony","canon","nikon","fujifilm","panasonic","olympus","gopro","dji","leica","hasselblad","insta360","ricoh","zhiyun"]
+  },
+  "lens": {
+    "priority": "A",
+    "core_brands": ["canon","nikon","sony","sigma","tamron","fujifilm","panasonic","zeiss","leica","tokina","samyang"]
+  },
+  "action_cam": {
+    "priority": "A",
+    "core_brands": ["gopro","dji","insta360","sony","akaso","sjcam"]
+  },
+  "gimbal": {
+    "priority": "A",
+    "core_brands": ["dji","zhiyun","feiyutech","moza","hohem"]
+  },
+  "drone": {
+    "priority": "A",
+    "core_brands": ["dji","autel","hubsan","parrot","skydio","xiaomi"]
+  },
+  "console": {
+    "priority": "A",
+    "core_brands": ["sony","microsoft","nintendo","valve"]
+  },
+  "handheld_console": {
+    "priority": "A",
+    "core_brands": ["nintendo","valve","asus","lenovo","gpd","aya"]
+  },
+  "gamepad": {
+    "priority": "B",
+    "core_brands": ["microsoft","sony","nintendo","logitech","razer","8bitdo","scuf"]
+  },
+  "racing_wheel": {
+    "priority": "B",
+    "core_brands": ["logitech","thrustmaster","fanatec","moza","simucube"]
+  },
+  "router": {
+    "priority": "A",
+    "core_brands": ["tplink","asus","netgear","huawei","xiaomi","linksys","mikrotik","ubiquiti","dlink","mercusys","h3c","tenda","googlenest"]
+  },
+  "mesh": {
+    "priority": "A",
+    "core_brands": ["tplink","asus","netgear","huawei","xiaomi","eero","linksys","tenda"]
+  },
+  "switch": {
+    "priority": "B",
+    "core_brands": ["cisco","tplink","netgear","h3c","huawei","ubiquiti","dlink","mikrotik","ruijie"]
+  },
+  "nas": {
+    "priority": "A",
+    "core_brands": ["synology","qnap","asustor","terramaster","ugreen","wd","seagate"]
+  },
+  "cleaning_robot": {
+    "priority": "secondary",
+    "core_brands": ["roborock","dreame","ecovacs","narwal","xiaomi","irobot","midea","haier","qihoo360"]
+  },
+  "smart_appliance": {
+    "priority": "secondary",
+    "core_brands": ["gree","midea","haier","tcl","aux","hisense","kelon"]
+  },
+  "ai_device": {
+    "priority": "B",
+    "core_brands": ["plaud","rabbit","humane","meta","google","xreal","rime","fil"]
+  },
+  "robot_device": {
+    "priority": "B",
+    "core_brands": ["unitree","figure","ti5","ufes"]
+  }
+}

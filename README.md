@@ -93,7 +93,7 @@
 ## 五、技术栈与架构
 
 - **纯前端单页应用**：原生 HTML/CSS/JavaScript，零框架、零依赖，开箱即用
-- **数据分层**：`index.html`（视图 + 逻辑）+ 44 个品类数据文件（`phone-data.js` + 43 个 `data-*.js`，由 `migration/build-data-js.js` 从 V2 规范化数据库自动生成）
+- **数据分层**：`index.html`（视图 + 逻辑）+ 44 个品类数据文件（`data/` 下的 `phone-data.js` + 43 个 `data-*.js`，由 `migration/build-data-js.js` 从 V2 规范化数据库自动生成）
 - **V2 规范化数据库**（`database/v2/`）：products / brands / categories / specs / variants / prices / tags 分层 JSON，配 `validate-db.js` 全库校验（0 致命错误）+ `db-adapter.js` 等价性验证
 - **品类抽象层**：`CATEGORIES` 配置对象 + `cat()` 统一数据访问入口，解耦渲染与数据；44 品类零硬编码分支
 - **AI 品类预设体系**：`AI_PRESETS` 44 品类专属文案 + 8 分组 fallback + 通用兜底，新增品类零成本接入
@@ -136,19 +136,21 @@ phone-compare/
 ├── index.html          # 主应用（视图 + AI 推荐引擎 + 品类配置 + 后端调用/降级）
 ├── engine.js           # 推荐引擎纯逻辑层（品类识别/预算解析），被前端与测试共用
 ├── favicon.svg         # 站点图标
-├── phone-data.js       # 手机数据（93 款，含真实产品图 CDN）
-├── data-gpu.js         # 显卡（209 款）
-├── data-cpu.js         # CPU（40 款）
-├── data-laptop.js      # 笔记本（40 款）
-├── data-ac.js          # 空调（40 款）
-├── data-robot.js       # 扫地机器人（40 款）
-├── data-earphone.js    # 耳机（45 款）
-├── data-monitor.js     # 显示器（40 款）
-├── data-tablet.js      # 平板（24 款）
-├── data-camera.js      # 相机（24 款）
-├── data-tv.js          # 电视（24 款）
-├── data-watch.js       # 智能手表（20 款）
-├── data-keyboard.js    # 机械键盘（20 款）
+├── data/               # 44 个品类数据文件（由 migration/build-data-js.js 从 V2 库生成）
+│   ├── phone-data.js   #   手机数据（93 款，含真实产品图 CDN）
+│   ├── data-gpu.js     #   显卡（209 款）
+│   ├── data-cpu.js     #   CPU（40 款）
+│   ├── data-laptop.js  #   笔记本（40 款）
+│   ├── data-ac.js      #   空调（40 款）
+│   ├── data-robot.js   #   扫地机器人（40 款）
+│   ├── data-earphone.js#   耳机（45 款）
+│   ├── data-monitor.js #   显示器（40 款）
+│   ├── data-tablet.js  #   平板（24 款）
+│   ├── data-camera.js  #   相机（24 款）
+│   ├── data-tv.js      #   电视（24 款）
+│   ├── data-watch.js   #   智能手表（20 款）
+│   ├── data-keyboard.js#   机械键盘（20 款）
+│   └── …（其余 30 个品类）
 ├── tests/
 │   └── run.js          # 零依赖单元测试（node tests/run.js）
 └── server/             # 阶段二 AI 后端（Python FastAPI + 大模型意图理解）

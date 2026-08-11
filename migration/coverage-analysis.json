@@ -1,0 +1,1701 @@
+{
+  "generated_at": "2026-08-10T02:45:06.765Z",
+  "total_products": 659,
+  "total_brands": 67,
+  "total_leaf_categories": 51,
+  "categories_with_products": 13,
+  "empty_categories": [
+    "foldable_phone",
+    "gaming_phone",
+    "desktop",
+    "mini_pc",
+    "pc_handheld",
+    "motherboard",
+    "memory",
+    "ssd",
+    "psu",
+    "cooler",
+    "ereader",
+    "mouse",
+    "dock",
+    "webcam",
+    "mobile_storage",
+    "speaker",
+    "microphone",
+    "projector",
+    "soundbar",
+    "smartband",
+    "smartring",
+    "smartglasses",
+    "vr",
+    "ar",
+    "lens",
+    "action_cam",
+    "gimbal",
+    "drone",
+    "console",
+    "handheld_console",
+    "gamepad",
+    "racing_wheel",
+    "router",
+    "mesh",
+    "switch",
+    "nas",
+    "ai_device",
+    "robot_device"
+  ],
+  "results": [
+    {
+      "category_id": "camera",
+      "category_name": "相机",
+      "level": 2,
+      "parent": "imaging_drone",
+      "priority": "core",
+      "product_count": 24,
+      "brand_count": 5,
+      "core_brand_total": 13,
+      "core_brand_covered": 5,
+      "core_brand_coverage_pct": 38,
+      "missing_core_brands": [
+        "olympus",
+        "gopro",
+        "dji",
+        "leica",
+        "hasselblad",
+        "insta360",
+        "ricoh",
+        "zhiyun"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "olympus",
+        "gopro",
+        "dji",
+        "leica",
+        "hasselblad",
+        "insta360",
+        "ricoh",
+        "zhiyun"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "smartwatch",
+      "category_name": "智能手表",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 20,
+      "brand_count": 7,
+      "core_brand_total": 13,
+      "core_brand_covered": 6,
+      "core_brand_coverage_pct": 46,
+      "missing_core_brands": [
+        "amazfit",
+        "fitbit",
+        "oppo",
+        "vivo",
+        "google",
+        "oneplus",
+        "coros"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "oppo",
+        "vivo",
+        "oneplus"
+      ],
+      "missing_brand_too": [
+        "amazfit",
+        "fitbit",
+        "google",
+        "coros"
+      ],
+      "avg_completeness": 78
+    },
+    {
+      "category_id": "keyboard",
+      "category_name": "键盘",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 20,
+      "brand_count": 8,
+      "core_brand_total": 17,
+      "core_brand_covered": 8,
+      "core_brand_coverage_pct": 47,
+      "missing_core_brands": [
+        "razer",
+        "cherry",
+        "corsair",
+        "hhkb",
+        "ducky",
+        "a4tech",
+        "rog",
+        "steelseries",
+        "ikbc"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "razer",
+        "cherry",
+        "corsair",
+        "hhkb",
+        "ducky",
+        "a4tech",
+        "rog",
+        "steelseries",
+        "ikbc"
+      ],
+      "avg_completeness": 82
+    },
+    {
+      "category_id": "smartphone",
+      "category_name": "智能手机",
+      "level": 2,
+      "parent": "mobile",
+      "priority": "core",
+      "product_count": 93,
+      "brand_count": 9,
+      "core_brand_total": 17,
+      "core_brand_covered": 9,
+      "core_brand_coverage_pct": 53,
+      "missing_core_brands": [
+        "google",
+        "motorola",
+        "sony",
+        "asus",
+        "redmi",
+        "meizu",
+        "nubia",
+        "iqoo"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "sony",
+        "asus"
+      ],
+      "missing_brand_too": [
+        "google",
+        "motorola",
+        "redmi",
+        "meizu",
+        "nubia",
+        "iqoo"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "tablet",
+      "category_name": "平板电脑",
+      "level": 2,
+      "parent": "tablet_reading",
+      "priority": "core",
+      "product_count": 24,
+      "brand_count": 8,
+      "core_brand_total": 12,
+      "core_brand_covered": 7,
+      "core_brand_coverage_pct": 58,
+      "missing_core_brands": [
+        "microsoft",
+        "realme",
+        "oneplus",
+        "google",
+        "redmi"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "microsoft",
+        "realme",
+        "oneplus"
+      ],
+      "missing_brand_too": [
+        "google",
+        "redmi"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "monitor",
+      "category_name": "显示器",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 40,
+      "brand_count": 14,
+      "core_brand_total": 21,
+      "core_brand_covered": 14,
+      "core_brand_coverage_pct": 67,
+      "missing_core_brands": [
+        "huawei",
+        "redmi",
+        "gigabyte",
+        "acer",
+        "tcl",
+        "sanc",
+        "skyworth"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "huawei",
+        "acer",
+        "tcl",
+        "skyworth"
+      ],
+      "missing_brand_too": [
+        "redmi",
+        "gigabyte",
+        "sanc"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "tv",
+      "category_name": "电视",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 24,
+      "brand_count": 10,
+      "core_brand_total": 15,
+      "core_brand_covered": 10,
+      "core_brand_coverage_pct": 67,
+      "missing_core_brands": [
+        "vizio",
+        "konka",
+        "haier",
+        "sharp",
+        "panasonic"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "haier",
+        "panasonic"
+      ],
+      "missing_brand_too": [
+        "vizio",
+        "konka",
+        "sharp"
+      ],
+      "avg_completeness": 86
+    },
+    {
+      "category_id": "laptop",
+      "category_name": "笔记本",
+      "level": 3,
+      "parent": "computer_system",
+      "priority": "core",
+      "product_count": 40,
+      "brand_count": 13,
+      "core_brand_total": 17,
+      "core_brand_covered": 13,
+      "core_brand_coverage_pct": 76,
+      "missing_core_brands": [
+        "razer",
+        "lg",
+        "samsung",
+        "gigabyte"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "lg",
+        "samsung"
+      ],
+      "missing_brand_too": [
+        "razer",
+        "gigabyte"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "earphone",
+      "category_name": "耳机",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 45,
+      "brand_count": 16,
+      "core_brand_total": 18,
+      "core_brand_covered": 15,
+      "core_brand_coverage_pct": 83,
+      "missing_core_brands": [
+        "jabra",
+        "soundcore",
+        "shokz"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "jabra",
+        "soundcore",
+        "shokz"
+      ],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "cpu",
+      "category_name": "CPU",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 40,
+      "brand_count": 2,
+      "core_brand_total": 2,
+      "core_brand_covered": 2,
+      "core_brand_coverage_pct": 100,
+      "missing_core_brands": [],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "gpu",
+      "category_name": "显卡",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 209,
+      "brand_count": 3,
+      "core_brand_total": 3,
+      "core_brand_covered": 3,
+      "core_brand_coverage_pct": 100,
+      "missing_core_brands": [],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [],
+      "avg_completeness": 99
+    },
+    {
+      "category_id": "cleaning_robot",
+      "category_name": "清洁机器人",
+      "level": 3,
+      "parent": "smart_device",
+      "priority": "secondary",
+      "product_count": 40,
+      "brand_count": 9,
+      "core_brand_total": 9,
+      "core_brand_covered": 9,
+      "core_brand_coverage_pct": 100,
+      "missing_core_brands": [],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "smart_appliance",
+      "category_name": "智能家电",
+      "level": 3,
+      "parent": "smart_device",
+      "priority": "secondary",
+      "product_count": 40,
+      "brand_count": 8,
+      "core_brand_total": 7,
+      "core_brand_covered": 7,
+      "core_brand_coverage_pct": 100,
+      "missing_core_brands": [],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [],
+      "avg_completeness": 100
+    },
+    {
+      "category_id": "foldable_phone",
+      "category_name": "折叠屏手机",
+      "level": 2,
+      "parent": "mobile",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "samsung",
+        "huawei",
+        "honor",
+        "oppo",
+        "vivo",
+        "xiaomi",
+        "google",
+        "motorola",
+        "apple"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung",
+        "huawei",
+        "honor",
+        "oppo",
+        "vivo",
+        "xiaomi",
+        "apple"
+      ],
+      "missing_brand_too": [
+        "google",
+        "motorola"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "gaming_phone",
+      "category_name": "游戏手机",
+      "level": 2,
+      "parent": "mobile",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "asus",
+        "nubia",
+        "lenovo",
+        "xiaomi",
+        "iqoo",
+        "oneplus"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "lenovo",
+        "xiaomi",
+        "oneplus"
+      ],
+      "missing_brand_too": [
+        "nubia",
+        "iqoo"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "desktop",
+      "category_name": "台式机",
+      "level": 3,
+      "parent": "computer_system",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 11,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "apple",
+        "lenovo",
+        "hp",
+        "dell",
+        "asus",
+        "acer",
+        "msi",
+        "huawei",
+        "xiaomi",
+        "microsoft",
+        "razer"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "apple",
+        "lenovo",
+        "hp",
+        "dell",
+        "asus",
+        "acer",
+        "msi",
+        "huawei",
+        "xiaomi",
+        "microsoft"
+      ],
+      "missing_brand_too": [
+        "razer"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "mini_pc",
+      "category_name": "迷你主机",
+      "level": 3,
+      "parent": "computer_system",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "apple",
+        "intel",
+        "asus",
+        "lenovo",
+        "hp",
+        "dell",
+        "minisforum",
+        "beelink",
+        "geekom"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "apple",
+        "intel",
+        "asus",
+        "lenovo",
+        "hp",
+        "dell"
+      ],
+      "missing_brand_too": [
+        "minisforum",
+        "beelink",
+        "geekom"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "pc_handheld",
+      "category_name": "PC掌机",
+      "level": 3,
+      "parent": "computer_system",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "valve",
+        "asus",
+        "lenovo",
+        "gpd",
+        "aya",
+        "onexplayer",
+        "msi"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "lenovo",
+        "msi"
+      ],
+      "missing_brand_too": [
+        "valve",
+        "gpd",
+        "aya",
+        "onexplayer"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "motherboard",
+      "category_name": "主板",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "asus",
+        "msi",
+        "gigabyte",
+        "asrock",
+        "biostar",
+        "evga",
+        "nzxt"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "msi"
+      ],
+      "missing_brand_too": [
+        "gigabyte",
+        "asrock",
+        "biostar",
+        "evga",
+        "nzxt"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "memory",
+      "category_name": "内存",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 8,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "kingston",
+        "corsair",
+        "gskill",
+        "samsung",
+        "skhynix",
+        "crucial",
+        "teamgroup",
+        "adata"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung"
+      ],
+      "missing_brand_too": [
+        "kingston",
+        "corsair",
+        "gskill",
+        "skhynix",
+        "crucial",
+        "teamgroup",
+        "adata"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "ssd",
+      "category_name": "SSD",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 10,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "samsung",
+        "wd",
+        "kingston",
+        "crucial",
+        "seagate",
+        "skhynix",
+        "sandisk",
+        "adata",
+        "lexar",
+        "kioxia"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung"
+      ],
+      "missing_brand_too": [
+        "wd",
+        "kingston",
+        "crucial",
+        "seagate",
+        "skhynix",
+        "sandisk",
+        "adata",
+        "lexar",
+        "kioxia"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "psu",
+      "category_name": "电源",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "corsair",
+        "seasonic",
+        "evga",
+        "fsp",
+        "coolermaster",
+        "bequiet",
+        "superflower",
+        "thermaltake",
+        "greatwall"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "corsair",
+        "seasonic",
+        "evga",
+        "fsp",
+        "coolermaster",
+        "bequiet",
+        "superflower",
+        "thermaltake",
+        "greatwall"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "cooler",
+      "category_name": "散热",
+      "level": 3,
+      "parent": "pc_hardware",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "noctua",
+        "coolermaster",
+        "deepcool",
+        "nzxt",
+        "bequiet",
+        "arctic",
+        "corsair",
+        "thermalright",
+        "idcooling"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "noctua",
+        "coolermaster",
+        "deepcool",
+        "nzxt",
+        "bequiet",
+        "arctic",
+        "corsair",
+        "thermalright",
+        "idcooling"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "ereader",
+      "category_name": "电子书阅读器",
+      "level": 2,
+      "parent": "tablet_reading",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "amazon",
+        "kobo",
+        "boox",
+        "xiaomi",
+        "pocketbook",
+        "ireader"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "amazon",
+        "kobo",
+        "boox",
+        "pocketbook",
+        "ireader"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "mouse",
+      "category_name": "鼠标",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "logitech",
+        "razer",
+        "steelseries",
+        "corsair",
+        "zowie",
+        "glorious",
+        "roccat",
+        "asus",
+        "dell"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "logitech",
+        "asus",
+        "dell"
+      ],
+      "missing_brand_too": [
+        "razer",
+        "steelseries",
+        "corsair",
+        "zowie",
+        "glorious",
+        "roccat"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "dock",
+      "category_name": "扩展坞",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "caldigit",
+        "belkin",
+        "anker",
+        "satechi",
+        "owc",
+        "baseus",
+        "ugreen",
+        "hp",
+        "dell"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "anker",
+        "hp",
+        "dell"
+      ],
+      "missing_brand_too": [
+        "caldigit",
+        "belkin",
+        "satechi",
+        "owc",
+        "baseus",
+        "ugreen"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "webcam",
+      "category_name": "摄像头",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "logitech",
+        "razer",
+        "elgato",
+        "obsbot",
+        "anker",
+        "microsoft",
+        "dell"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "logitech",
+        "anker",
+        "microsoft",
+        "dell"
+      ],
+      "missing_brand_too": [
+        "razer",
+        "elgato",
+        "obsbot"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "mobile_storage",
+      "category_name": "移动存储",
+      "level": 2,
+      "parent": "peripheral_display",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "samsung",
+        "wd",
+        "sandisk",
+        "seagate",
+        "toshiba",
+        "kingston",
+        "crucial",
+        "adata",
+        "lacie"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung"
+      ],
+      "missing_brand_too": [
+        "wd",
+        "sandisk",
+        "seagate",
+        "toshiba",
+        "kingston",
+        "crucial",
+        "adata",
+        "lacie"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "speaker",
+      "category_name": "音箱",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 12,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "bose",
+        "jbl",
+        "sony",
+        "harmankardon",
+        "edifier",
+        "apple",
+        "sonos",
+        "marshall",
+        "bangolufsen",
+        "xiaomi",
+        "amazon",
+        "googlenest"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "bose",
+        "jbl",
+        "sony",
+        "edifier",
+        "apple",
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "harmankardon",
+        "sonos",
+        "marshall",
+        "bangolufsen",
+        "amazon",
+        "googlenest"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "microphone",
+      "category_name": "麦克风",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "shure",
+        "rode",
+        "blue",
+        "audiotechnica",
+        "samson",
+        "hyperx",
+        "fifine",
+        "elgato",
+        "sennheiser"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "sennheiser"
+      ],
+      "missing_brand_too": [
+        "shure",
+        "rode",
+        "blue",
+        "audiotechnica",
+        "samson",
+        "hyperx",
+        "fifine",
+        "elgato"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "projector",
+      "category_name": "投影仪",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 10,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "epson",
+        "benq",
+        "xgimi",
+        "jmgo",
+        "ankern",
+        "lg",
+        "sony",
+        "hisense",
+        "dangbei",
+        "xiaomi"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "benq",
+        "lg",
+        "sony",
+        "hisense",
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "epson",
+        "xgimi",
+        "jmgo",
+        "ankern",
+        "dangbei"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "soundbar",
+      "category_name": "回音壁",
+      "level": 2,
+      "parent": "audio_video",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 10,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "samsung",
+        "sony",
+        "bose",
+        "jbl",
+        "lg",
+        "yamaha",
+        "sonos",
+        "vizio",
+        "xiaomi",
+        "sennheiser"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung",
+        "sony",
+        "bose",
+        "jbl",
+        "lg",
+        "xiaomi",
+        "sennheiser"
+      ],
+      "missing_brand_too": [
+        "yamaha",
+        "sonos",
+        "vizio"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "smartband",
+      "category_name": "智能手环",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "xiaomi",
+        "huawei",
+        "honor",
+        "fitbit",
+        "samsung",
+        "garmin",
+        "amazfit"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "xiaomi",
+        "huawei",
+        "honor",
+        "samsung",
+        "garmin"
+      ],
+      "missing_brand_too": [
+        "fitbit",
+        "amazfit"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "smartring",
+      "category_name": "智能戒指",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "oura",
+        "samsung",
+        "amazfit",
+        "ringconn",
+        "circular",
+        "ultrahuman"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "samsung"
+      ],
+      "missing_brand_too": [
+        "oura",
+        "amazfit",
+        "ringconn",
+        "circular",
+        "ultrahuman"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "smartglasses",
+      "category_name": "智能眼镜",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "meta",
+        "xreal",
+        "rokid",
+        "huawei",
+        "xiaomi",
+        "inmo",
+        "tclrayneo"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "huawei",
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "meta",
+        "xreal",
+        "rokid",
+        "inmo",
+        "tclrayneo"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "vr",
+      "category_name": "VR设备",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "meta",
+        "pico",
+        "htc",
+        "sony",
+        "valve",
+        "bigscreen"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "sony"
+      ],
+      "missing_brand_too": [
+        "meta",
+        "pico",
+        "htc",
+        "valve",
+        "bigscreen"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "ar",
+      "category_name": "AR设备",
+      "level": 2,
+      "parent": "wear_xr",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 5,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "apple",
+        "microsoft",
+        "rokid",
+        "xreal",
+        "magicleap"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "apple",
+        "microsoft"
+      ],
+      "missing_brand_too": [
+        "rokid",
+        "xreal",
+        "magicleap"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "lens",
+      "category_name": "镜头",
+      "level": 2,
+      "parent": "imaging_drone",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 11,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "canon",
+        "nikon",
+        "sony",
+        "sigma",
+        "tamron",
+        "fujifilm",
+        "panasonic",
+        "zeiss",
+        "leica",
+        "tokina",
+        "samyang"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "canon",
+        "nikon",
+        "sony",
+        "fujifilm",
+        "panasonic"
+      ],
+      "missing_brand_too": [
+        "sigma",
+        "tamron",
+        "zeiss",
+        "leica",
+        "tokina",
+        "samyang"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "action_cam",
+      "category_name": "运动相机",
+      "level": 2,
+      "parent": "imaging_drone",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "gopro",
+        "dji",
+        "insta360",
+        "sony",
+        "akaso",
+        "sjcam"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "sony"
+      ],
+      "missing_brand_too": [
+        "gopro",
+        "dji",
+        "insta360",
+        "akaso",
+        "sjcam"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "gimbal",
+      "category_name": "云台稳定器",
+      "level": 2,
+      "parent": "imaging_drone",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 5,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "dji",
+        "zhiyun",
+        "feiyutech",
+        "moza",
+        "hohem"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "dji",
+        "zhiyun",
+        "feiyutech",
+        "moza",
+        "hohem"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "drone",
+      "category_name": "无人机",
+      "level": 2,
+      "parent": "imaging_drone",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "dji",
+        "autel",
+        "hubsan",
+        "parrot",
+        "skydio",
+        "xiaomi"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "dji",
+        "autel",
+        "hubsan",
+        "parrot",
+        "skydio"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "console",
+      "category_name": "游戏主机",
+      "level": 2,
+      "parent": "gaming",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 4,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "sony",
+        "microsoft",
+        "nintendo",
+        "valve"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "sony",
+        "microsoft"
+      ],
+      "missing_brand_too": [
+        "nintendo",
+        "valve"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "handheld_console",
+      "category_name": "掌机",
+      "level": 2,
+      "parent": "gaming",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 6,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "nintendo",
+        "valve",
+        "asus",
+        "lenovo",
+        "gpd",
+        "aya"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "lenovo"
+      ],
+      "missing_brand_too": [
+        "nintendo",
+        "valve",
+        "gpd",
+        "aya"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "gamepad",
+      "category_name": "游戏手柄",
+      "level": 2,
+      "parent": "gaming",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "microsoft",
+        "sony",
+        "nintendo",
+        "logitech",
+        "razer",
+        "8bitdo",
+        "scuf"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "microsoft",
+        "sony",
+        "logitech"
+      ],
+      "missing_brand_too": [
+        "nintendo",
+        "razer",
+        "8bitdo",
+        "scuf"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "racing_wheel",
+      "category_name": "方向盘",
+      "level": 2,
+      "parent": "gaming",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 5,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "logitech",
+        "thrustmaster",
+        "fanatec",
+        "moza",
+        "simucube"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "logitech"
+      ],
+      "missing_brand_too": [
+        "thrustmaster",
+        "fanatec",
+        "moza",
+        "simucube"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "router",
+      "category_name": "路由器",
+      "level": 2,
+      "parent": "network_smart",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 13,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "tplink",
+        "asus",
+        "netgear",
+        "huawei",
+        "xiaomi",
+        "linksys",
+        "mikrotik",
+        "ubiquiti",
+        "dlink",
+        "mercusys",
+        "h3c",
+        "tenda",
+        "googlenest"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "huawei",
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "tplink",
+        "netgear",
+        "linksys",
+        "mikrotik",
+        "ubiquiti",
+        "dlink",
+        "mercusys",
+        "h3c",
+        "tenda",
+        "googlenest"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "mesh",
+      "category_name": "Mesh路由器",
+      "level": 2,
+      "parent": "network_smart",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 8,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "tplink",
+        "asus",
+        "netgear",
+        "huawei",
+        "xiaomi",
+        "eero",
+        "linksys",
+        "tenda"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "asus",
+        "huawei",
+        "xiaomi"
+      ],
+      "missing_brand_too": [
+        "tplink",
+        "netgear",
+        "eero",
+        "linksys",
+        "tenda"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "switch",
+      "category_name": "交换机",
+      "level": 2,
+      "parent": "network_smart",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 9,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "cisco",
+        "tplink",
+        "netgear",
+        "h3c",
+        "huawei",
+        "ubiquiti",
+        "dlink",
+        "mikrotik",
+        "ruijie"
+      ],
+      "missing_brand_exists_elsewhere": [
+        "huawei"
+      ],
+      "missing_brand_too": [
+        "cisco",
+        "tplink",
+        "netgear",
+        "h3c",
+        "ubiquiti",
+        "dlink",
+        "mikrotik",
+        "ruijie"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "nas",
+      "category_name": "NAS",
+      "level": 2,
+      "parent": "network_smart",
+      "priority": "core",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 7,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "synology",
+        "qnap",
+        "asustor",
+        "terramaster",
+        "ugreen",
+        "wd",
+        "seagate"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "synology",
+        "qnap",
+        "asustor",
+        "terramaster",
+        "ugreen",
+        "wd",
+        "seagate"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "ai_device",
+      "category_name": "AI设备",
+      "level": 2,
+      "parent": "ai_new",
+      "priority": "secondary",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 8,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "plaud",
+        "rabbit",
+        "humane",
+        "meta",
+        "google",
+        "xreal",
+        "rime",
+        "fil"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "plaud",
+        "rabbit",
+        "humane",
+        "meta",
+        "google",
+        "xreal",
+        "rime",
+        "fil"
+      ],
+      "avg_completeness": null
+    },
+    {
+      "category_id": "robot_device",
+      "category_name": "消费机器人",
+      "level": 2,
+      "parent": "ai_new",
+      "priority": "secondary",
+      "product_count": 0,
+      "brand_count": 0,
+      "core_brand_total": 4,
+      "core_brand_covered": 0,
+      "core_brand_coverage_pct": 0,
+      "missing_core_brands": [
+        "unitree",
+        "figure",
+        "ti5",
+        "ufes"
+      ],
+      "missing_brand_exists_elsewhere": [],
+      "missing_brand_too": [
+        "unitree",
+        "figure",
+        "ti5",
+        "ufes"
+      ],
+      "avg_completeness": null
+    }
+  ]
+}

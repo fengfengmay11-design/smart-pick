@@ -1,0 +1,636 @@
+[
+  {
+    "brand_id": "sony",
+    "primary_category_id": "console",
+    "model": "PlayStation 5 Pro",
+    "full_name": "索尼 PlayStation 5 Pro",
+    "status": "active",
+    "release_date": "2024-11-07",
+    "source_url": "https://jingfen.jd.com/detail/JeKCVyL9yC0OS3RjMxdzug4EzNUN4_3xcjr5rtZJKSV8XVaD.html",
+    "tags": [
+      "旗舰",
+      "高性能",
+      "游戏"
+    ],
+    "specs": {
+      "cpu": "AMD Zen 2 8核16线程",
+      "gpu": "AMD RDNA 3（约16.7 TFLOPS）",
+      "storage": {
+        "value": 2,
+        "unit": "TB",
+        "display_value": "2TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "无标配（可外接 Disc Drive 光驱）",
+      "weight": {
+        "value": 3100,
+        "unit": "g",
+        "display_value": "3.1kg"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 6299
+      }
+    ]
+  },
+  {
+    "brand_id": "sony",
+    "primary_category_id": "console",
+    "model": "PlayStation 5 Slim (Disc Edition)",
+    "full_name": "索尼 PlayStation 5 Slim 光驱版",
+    "status": "active",
+    "release_date": "2023-11-01",
+    "source_url": "https://jingfen.jd.com/detail/BXTDvTM1aqS1TNScruDR1TNScruDRT_3klNtU2Bs105ihSG02.html",
+    "tags": [
+      "轻薄",
+      "游戏"
+    ],
+    "specs": {
+      "cpu": "AMD Zen 2 8核16线程",
+      "gpu": "AMD RDNA 2（9.2–10.3 TFLOPS）",
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "有（4K UHD 蓝光）",
+      "weight": {
+        "value": 3200,
+        "unit": "g",
+        "display_value": "3.2kg"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 4399
+      }
+    ]
+  },
+  {
+    "brand_id": "microsoft",
+    "primary_category_id": "console",
+    "model": "Xbox Series X Digital Edition",
+    "full_name": "微软 Xbox Series X 数字版",
+    "status": "active",
+    "release_date": "2024-10-29",
+    "source_url": "https://www.microsoftstore.com.cn/xbox/xbox-series-x",
+    "tags": [
+      "高性能",
+      "游戏",
+      "无光驱"
+    ],
+    "specs": {
+      "cpu": "AMD Zen 2 定制 8核",
+      "gpu": "AMD RDNA 2（12 TFLOPS）",
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "ram": {
+        "value": 16,
+        "unit": "GB",
+        "display_value": "16GB GDDR6"
+      },
+      "resolution": "4K（最高8K输出）",
+      "fps": "120",
+      "disc_drive": "无（纯数字版）",
+      "weight": {
+        "value": 4450,
+        "unit": "g",
+        "display_value": "4.45kg"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3899
+      }
+    ]
+  },
+  {
+    "brand_id": "nintendo",
+    "primary_category_id": "console",
+    "model": "Nintendo Switch 2",
+    "full_name": "任天堂 Switch 2",
+    "status": "active",
+    "release_date": "2025-06-05",
+    "source_url": "https://www.nintendo.com/us/hardware/switch-2/",
+    "tags": [
+      "掌机",
+      "混合形态",
+      "游戏"
+    ],
+    "specs": {
+      "cpu": "NVIDIA 定制处理器（含 AI 加速/DLSS）",
+      "gpu": "NVIDIA 定制（基于 Ampere 架构）",
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "display_value": "256GB UFS"
+      },
+      "ram": {
+        "value": 12,
+        "unit": "GB",
+        "display_value": "12GB LPDDR5"
+      },
+      "resolution": "1080p（掌机）/4K（底座）",
+      "fps": "120（掌机）/60（4K底座）",
+      "disc_drive": "无（游戏卡带）",
+      "weight": {
+        "value": 401,
+        "unit": "g",
+        "display_value": "401g（含 Joy-Con）"
+      }
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "valve",
+    "primary_category_id": "handheld_console",
+    "model": "Steam Deck OLED",
+    "full_name": "Valve Steam Deck OLED",
+    "status": "active",
+    "release_date": "2023-11-16",
+    "source_url": "https://www.steamdeck.com/",
+    "tags": [
+      "掌机",
+      "SteamOS",
+      "OLED"
+    ],
+    "specs": {
+      "cpu": "AMD Zen 2 4核8线程",
+      "gpu": "AMD RDNA 2（8 CU）",
+      "screen_size": {
+        "value": 7.4,
+        "unit": "inch",
+        "display_value": "7.4英寸"
+      },
+      "resolution": "1280×800",
+      "refresh_rate": {
+        "value": 90,
+        "unit": "Hz",
+        "display_value": "90Hz"
+      },
+      "battery": {
+        "value": 50,
+        "unit": "Wh",
+        "display_value": "50Wh"
+      },
+      "storage": {
+        "value": 512,
+        "unit": "GB",
+        "display_value": "512GB SSD"
+      },
+      "weight": {
+        "value": 640,
+        "unit": "g",
+        "display_value": "640g"
+      }
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "asus",
+    "primary_category_id": "handheld_console",
+    "model": "ROG Ally X",
+    "full_name": "华硕 ROG Ally X",
+    "status": "active",
+    "release_date": "2024-07-22",
+    "source_url": "https://rog.asus.com/handheld-gaming/rog-ally-x/",
+    "tags": [
+      "掌机",
+      "游戏",
+      "高性能"
+    ],
+    "specs": {
+      "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
+      "gpu": "AMD RDNA 3（12 CU）",
+      "screen_size": {
+        "value": 7,
+        "unit": "inch",
+        "display_value": "7英寸"
+      },
+      "resolution": "1920×1080",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "battery": {
+        "value": 80,
+        "unit": "Wh",
+        "display_value": "80Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 678,
+        "unit": "g",
+        "display_value": "678g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 5449
+      }
+    ]
+  },
+  {
+    "brand_id": "lenovo",
+    "primary_category_id": "handheld_console",
+    "model": "Legion Go",
+    "full_name": "联想 Legion Go",
+    "status": "active",
+    "release_date": "2023-10-31",
+    "source_url": "https://www.lenovo.com/us/en/p/handhelds/legion-go/83e10000us/",
+    "tags": [
+      "掌机",
+      "大屏",
+      "可拆卸"
+    ],
+    "specs": {
+      "cpu": "AMD Ryzen Z1 Extreme（Zen 4 8核）",
+      "gpu": "AMD RDNA 3（12 CU）",
+      "screen_size": {
+        "value": 8.8,
+        "unit": "inch",
+        "display_value": "8.8英寸"
+      },
+      "resolution": "2560×1600",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz"
+      },
+      "battery": {
+        "value": 49.2,
+        "unit": "Wh",
+        "display_value": "49.2Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 854,
+        "unit": "g",
+        "display_value": "854g"
+      }
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "lenovo",
+    "primary_category_id": "handheld_console",
+    "model": "Legion Go 2",
+    "full_name": "联想 Legion Go 2",
+    "status": "active",
+    "release_date": "2026-01-07",
+    "source_url": "https://www.lenovo.com/us/en/p/handhelds/legion-go-2/83hv0000us/",
+    "tags": [
+      "掌机",
+      "OLED",
+      "旗舰"
+    ],
+    "specs": {
+      "cpu": "AMD Ryzen Z2 Extreme（Zen 5 8核）",
+      "gpu": "AMD RDNA 3.5（12 CU）",
+      "screen_size": {
+        "value": 8.8,
+        "unit": "inch",
+        "display_value": "8.8英寸"
+      },
+      "resolution": "2560×1600",
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz",
+        "display_value": "144Hz"
+      },
+      "battery": {
+        "value": 74,
+        "unit": "Wh",
+        "display_value": "74Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 920,
+        "unit": "g",
+        "display_value": "920g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 9699
+      }
+    ]
+  },
+  {
+    "brand_id": "msi",
+    "primary_category_id": "handheld_console",
+    "model": "Claw 8 AI+",
+    "full_name": "微星 Claw 8 AI+",
+    "status": "active",
+    "release_date": "2025-01-15",
+    "source_url": "https://www.msi.com/Handheld/Claw-8-AI-Plus",
+    "tags": [
+      "掌机",
+      "AI",
+      "大屏"
+    ],
+    "specs": {
+      "cpu": "Intel Core Ultra 7 258V（Lunar Lake 8核）",
+      "gpu": "Intel Arc 140V（Xe2 8核）",
+      "screen_size": {
+        "value": 8,
+        "unit": "inch",
+        "display_value": "8英寸"
+      },
+      "resolution": "1920×1200",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "battery": {
+        "value": 80,
+        "unit": "Wh",
+        "display_value": "80Wh"
+      },
+      "storage": {
+        "value": 1,
+        "unit": "TB",
+        "display_value": "1TB SSD"
+      },
+      "weight": {
+        "value": 795,
+        "unit": "g",
+        "display_value": "795g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 7699
+      }
+    ]
+  },
+  {
+    "brand_id": "sony",
+    "primary_category_id": "gamepad",
+    "model": "DualSense Edge",
+    "full_name": "索尼 DualSense Edge 无线控制器",
+    "status": "active",
+    "release_date": "2023-01-26",
+    "source_url": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
+    "tags": [
+      "旗舰",
+      "可换摇杆",
+      "PS5"
+    ],
+    "specs": {
+      "connectivity": "无线（蓝牙）/ USB-C 有线",
+      "compatibility": "PlayStation 5、PC",
+      "battery": {
+        "value": 1050,
+        "unit": "mAh",
+        "display_value": "约1050mAh（续航约5-6h）"
+      },
+      "weight": {
+        "value": 322,
+        "unit": "g",
+        "display_value": "322g"
+      },
+      "features": "可更换摇杆模块、背键、摇杆死区/按键映射自定义、自适应扳机、触觉反馈"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1599
+      }
+    ]
+  },
+  {
+    "brand_id": "razer",
+    "primary_category_id": "gamepad",
+    "model": "Wolverine V3 Pro",
+    "full_name": "雷蛇 Wolverine V3 Pro 无线手柄",
+    "status": "active",
+    "release_date": "2024-08-28",
+    "source_url": "https://www.razer.com/console-controllers/razer-wolverine-v3-pro",
+    "tags": [
+      "无线",
+      "Xbox",
+      "Hall效应"
+    ],
+    "specs": {
+      "connectivity": "Razer HyperSpeed 无线 / USB-C 有线",
+      "compatibility": "Xbox Series X|S、PC",
+      "battery": null,
+      "weight": {
+        "value": 304,
+        "unit": "g",
+        "display_value": "304g"
+      },
+      "features": "霍尔效应摇杆与扳机、4个背后鼠标点击背键+2个爪握肩键、Razer Sensa HD 触觉反馈、可更换摇杆帽"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "8bitdo",
+    "primary_category_id": "gamepad",
+    "model": "Ultimate 2 Wireless",
+    "full_name": "八位堂 Ultimate 2 无线手柄",
+    "status": "active",
+    "release_date": "2025-04-02",
+    "source_url": "https://www.8bitdo.com/ultimate-2-wireless-controller/",
+    "tags": [
+      "无线",
+      "TMR摇杆",
+      "Hall效应"
+    ],
+    "specs": {
+      "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android、Apple）/ USB-C 有线",
+      "compatibility": "Windows、Android、Apple（iOS/iPadOS/macOS/visionOS）、SteamOS",
+      "battery": null,
+      "weight": {
+        "value": 246,
+        "unit": "g",
+        "display_value": "246g"
+      },
+      "features": "TMR 霍尔摇杆、霍尔效应扳机（线性/触觉可切换）、RGB Fire Ring、L4/R4 快拨键、2个背键、6轴体感、Turbo"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "8bitdo",
+    "primary_category_id": "gamepad",
+    "model": "Ultimate 2C Wireless",
+    "full_name": "八位堂 Ultimate 2C 无线手柄",
+    "status": "active",
+    "release_date": "2024-07-15",
+    "source_url": "https://www.8bitdo.com/ultimate-2c-wireless-controller/",
+    "tags": [
+      "无线",
+      "性价比",
+      "Hall效应"
+    ],
+    "specs": {
+      "connectivity": "2.4G 无线（Windows）/ 蓝牙（Android）/ USB-C 有线",
+      "compatibility": "Windows、Android",
+      "battery": {
+        "value": 480,
+        "unit": "mAh",
+        "display_value": "480mAh（2.4G约19h/蓝牙约32h）"
+      },
+      "weight": {
+        "value": 217.5,
+        "unit": "g",
+        "display_value": "217.5g"
+      },
+      "features": "霍尔效应摇杆与扳机、L4/R4 快拨键、1000Hz 轮询率、Turbo、自定义按键映射"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "thrustmaster",
+    "primary_category_id": "racing_wheel",
+    "model": "T598P",
+    "full_name": "图马思特 T598P 直驱方向盘",
+    "status": "active",
+    "release_date": "2024-11-01",
+    "source_url": "https://jingfen.jd.com/detail/aBXTr0NJuNXH0gCVlOevH0gCVlOevX_3paYfDHQiNT0idJ4zs.html",
+    "tags": [
+      "直驱",
+      "PS5",
+      "力反馈"
+    ],
+    "specs": {
+      "compatibility": "PlayStation 5、PlayStation 4、PC",
+      "rotation": {
+        "value": 1080,
+        "unit": "°",
+        "display_value": "1080°"
+      },
+      "force_feedback": "Direct Axial Drive 直驱，5 Nm 恒定扭矩（带超调，峰值更高）",
+      "pedals": "H.E.A.R.T. 磁性双踏板（可升级为三踏板）",
+      "connectivity": "USB"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3399
+      }
+    ]
+  },
+  {
+    "brand_id": "logitech",
+    "primary_category_id": "racing_wheel",
+    "model": "G PRO Racing Wheel",
+    "full_name": "罗技 G PRO 直驱赛车方向盘",
+    "status": "active",
+    "release_date": "2024-06-24",
+    "source_url": "https://jingfen.jd.com/detail/ejQ4e410RoI04MWY9w5L04MF6PAPzQ_3vbTdJShC6Z4scTKx8.html",
+    "tags": [
+      "直驱",
+      "力反馈",
+      "专业"
+    ],
+    "specs": {
+      "compatibility": "PC（国行版）；另有 PlayStation / Xbox 版本",
+      "rotation": {
+        "value": 900,
+        "unit": "°",
+        "display_value": "900°（可调节）"
+      },
+      "force_feedback": "11 Nm 直驱 TRUEFORCE 力反馈",
+      "pedals": "需另购 PRO Racing Pedals（单独销售）",
+      "connectivity": "USB + 电源"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 14865
+      }
+    ]
+  },
+  {
+    "brand_id": "fanatec",
+    "primary_category_id": "racing_wheel",
+    "model": "ClubSport DD",
+    "full_name": "Fanatec ClubSport DD 直驱底座",
+    "status": "active",
+    "release_date": "2023-11-07",
+    "source_url": "https://www.fanatec.com/us/en/p/wheel-bases/clubsport-dd",
+    "tags": [
+      "直驱",
+      "力反馈",
+      "PC/Xbox"
+    ],
+    "specs": {
+      "compatibility": "PC、Xbox（需搭配 Xbox 授权方向盘）",
+      "rotation": {
+        "value": 2520,
+        "unit": "°",
+        "display_value": "最高2520°（可调）"
+      },
+      "force_feedback": "直驱，15 Nm 扭矩（FullForce 力反馈协议）",
+      "pedals": "需另购（兼容 ClubSport / CSL Pedals）",
+      "connectivity": "USB + 电源"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "fanatec",
+    "primary_category_id": "racing_wheel",
+    "model": "ClubSport DD+",
+    "full_name": "Fanatec ClubSport DD+ 直驱底座",
+    "status": "active",
+    "release_date": "2023-11-07",
+    "source_url": "https://www.fanatec.com/eu/en/p/wheel-bases/cs_dd+_eu/clubsport-dd-plus",
+    "tags": [
+      "直驱",
+      "力反馈",
+      "PS5",
+      "旗舰"
+    ],
+    "specs": {
+      "compatibility": "PlayStation 5、PC、Xbox（需搭配 Xbox 授权方向盘）",
+      "rotation": {
+        "value": 2520,
+        "unit": "°",
+        "display_value": "最高2520°（可调）"
+      },
+      "force_feedback": "直驱，18 Nm 扭矩（FullForce 力反馈协议）",
+      "pedals": "需另购（兼容 ClubSport / CSL Pedals）",
+      "connectivity": "USB + 电源"
+    },
+    "prices": []
+  }
+]

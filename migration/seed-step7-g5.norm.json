@@ -1,0 +1,354 @@
+[
+  {
+    "brand_id": "ugreen",
+    "primary_category_id": "dock",
+    "model": "绿联 Revodok Max 213 (U710)",
+    "full_name": "绿联 雷电4 扩展坞 Revodok Max 213 13合1",
+    "status": "active",
+    "release_date": "2024-07-06",
+    "source_url": "https://jingfen.jd.com/detail/Ee4o5ollBUghoIgdfJmthoIrTJ8Pj4_3tyFQIj1wyWoz4bhnW.html",
+    "tags": [
+      "办公",
+      "雷电4",
+      "多接口"
+    ],
+    "specs": {
+      "ports": "13合1（HDMI 2.1、USB-C、USB-A、2.5G RJ45、SD/microSD、3.5mm音频等）",
+      "interface": "雷电4 (Thunderbolt 4)",
+      "power_delivery": {
+        "value": 90,
+        "unit": "W",
+        "display_value": "90W"
+      },
+      "compatibility": "雷电4 / 雷电3 / USB4 / USB-C 设备（Mac / Windows）",
+      "weight": {
+        "value": 805,
+        "unit": "g",
+        "display_value": "805g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1239
+      }
+    ]
+  },
+  {
+    "brand_id": "anker",
+    "primary_category_id": "dock",
+    "model": "Anker 675 USB-C Docking Station (A8377)",
+    "full_name": "Anker 675 USB-C 扩展坞 12合1 显示器支架/无线充电",
+    "status": "active",
+    "release_date": "2023-02-08",
+    "source_url": "https://www.anker.com/products/a8377",
+    "tags": [
+      "办公",
+      "显示器支架",
+      "无线充电",
+      "多接口"
+    ],
+    "specs": {
+      "ports": "12合1（HDMI 2.0、3×USB-A、2×USB-C、SD/microSD、3.5mm、RJ45千兆网口、Qi无线充电板）",
+      "interface": "USB-C",
+      "power_delivery": {
+        "value": 100,
+        "unit": "W",
+        "display_value": "100W"
+      },
+      "compatibility": "Windows 10/11、macOS 10.14+、Chrome OS",
+      "weight": null
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "anker",
+    "primary_category_id": "dock",
+    "model": "Anker Prime TB5 Docking Station (A83B5)",
+    "full_name": "Anker Prime TB5 雷电5 扩展坞 14合1 140W 8K",
+    "status": "active",
+    "release_date": "2025-04-23",
+    "source_url": "https://anker.com/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
+    "tags": [
+      "雷电5",
+      "办公",
+      "8K",
+      "多接口"
+    ],
+    "specs": {
+      "ports": "14合1（雷电5宿主口、DP、HDMI 2.1、多USB-C/A、2.5G网口、SD/microSD、3.5mm等）",
+      "interface": "雷电5 (Thunderbolt 5)",
+      "power_delivery": {
+        "value": 140,
+        "unit": "W",
+        "display_value": "140W"
+      },
+      "compatibility": "雷电5 / 雷电4 / USB4 / USB-C 设备（Mac / Windows）",
+      "weight": {
+        "value": 1086,
+        "unit": "g",
+        "display_value": "1086g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2499
+      }
+    ]
+  },
+  {
+    "brand_id": "logitech",
+    "primary_category_id": "webcam",
+    "model": "罗技 MX Brio",
+    "full_name": "罗技 MX Brio 4K 网络摄像头",
+    "status": "active",
+    "release_date": "2024-03-01",
+    "source_url": "https://ir.logitech.com/press-releases/press-release-details/2024/Logitech-Introduces-MX-Brio-Its-Most-Advanced-Webcam-Designed-for-the-Evolving-Ways-of-Working-and-Streaming/default.aspx",
+    "tags": [
+      "直播",
+      "视频会议",
+      "4K"
+    ],
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 90,
+        "unit": "°",
+        "display_value": "90°"
+      },
+      "autofocus": true,
+      "microphone": "双波束成形降噪麦克风",
+      "interface": "USB-C",
+      "connection": "USB-C 有线"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1149
+      }
+    ]
+  },
+  {
+    "brand_id": "obsbot",
+    "primary_category_id": "webcam",
+    "model": "OBSBOT Tiny 2",
+    "full_name": "睿魔 OBSBOT Tiny 2 4K AI 网络摄像头",
+    "status": "active",
+    "release_date": "2023-09-14",
+    "source_url": "https://www.obsbot.cn/cn/news/obsbot-launches-tiny-2",
+    "tags": [
+      "直播",
+      "AI追踪",
+      "4K",
+      "视频会议"
+    ],
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 85.5,
+        "unit": "°",
+        "display_value": "85.5°"
+      },
+      "autofocus": true,
+      "microphone": "双全向降噪麦克风",
+      "interface": "USB-C 3.0",
+      "connection": "USB-C 有线"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1644
+      }
+    ]
+  },
+  {
+    "brand_id": "insta360",
+    "primary_category_id": "webcam",
+    "model": "影石 Insta360 Link 2",
+    "full_name": "影石 Insta360 Link 2 4K 网络摄像头",
+    "status": "active",
+    "release_date": "2024-09-24",
+    "source_url": "https://www.ithome.com/0/803/933.htm",
+    "tags": [
+      "直播",
+      "AI",
+      "4K",
+      "视频会议"
+    ],
+    "specs": {
+      "resolution": "4K (3840×2160)",
+      "fps": "4K@30fps / 1080p@60fps",
+      "fov": {
+        "value": 79.5,
+        "unit": "°",
+        "display_value": "79.5°"
+      },
+      "autofocus": true,
+      "microphone": "AI 降噪麦克风",
+      "interface": "USB-C",
+      "connection": "USB-C 有线"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1398
+      }
+    ]
+  },
+  {
+    "brand_id": "elgato",
+    "primary_category_id": "webcam",
+    "model": "Elgato Facecam MK.2",
+    "full_name": "Elgato Facecam MK.2 1080p60 网络摄像头",
+    "status": "active",
+    "release_date": "2024-03-28",
+    "source_url": "https://www.elgato.com/ch/zh/p/facecam-mk2",
+    "tags": [
+      "直播",
+      "流媒体",
+      "1080p"
+    ],
+    "specs": {
+      "resolution": "1080p (1920×1080)",
+      "fps": "1080p@60fps / 720p@120fps",
+      "fov": {
+        "value": 84,
+        "unit": "°",
+        "display_value": "84°"
+      },
+      "autofocus": false,
+      "microphone": "无（无内置麦克风）",
+      "interface": "USB-C (USB 3.0)",
+      "connection": "USB-C 有线"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1299
+      }
+    ]
+  },
+  {
+    "brand_id": "samsung",
+    "primary_category_id": "mobile_storage",
+    "model": "三星 T9 移动固态硬盘",
+    "full_name": "三星 T9 Portable SSD 移动固态硬盘 (1TB/2TB/4TB)",
+    "status": "active",
+    "release_date": "2023-10-03",
+    "source_url": "https://www.samsung.com.cn/news/product/samsung-mobile-ssd-t9-released",
+    "tags": [
+      "便携",
+      "高速",
+      "创作者"
+    ],
+    "specs": {
+      "capacity": "1TB / 2TB / 4TB",
+      "interface": "USB 3.2 Gen 2x2 (20Gbps)",
+      "read_speed": {
+        "value": 2000,
+        "unit": "MB/s",
+        "display_value": "2000MB/s"
+      },
+      "write_speed": {
+        "value": 1950,
+        "unit": "MB/s",
+        "display_value": "1950MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 122,
+        "unit": "g",
+        "display_value": "122g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2589
+      }
+    ]
+  },
+  {
+    "brand_id": "crucial",
+    "primary_category_id": "mobile_storage",
+    "model": "英睿达 X10 Pro 移动固态硬盘",
+    "full_name": "Crucial X10 Pro Portable SSD (1TB/2TB/4TB)",
+    "status": "active",
+    "release_date": "2023-07-25",
+    "source_url": "https://www.crucial.com/content/crucial/en-us/home/compatible-upgrade-for.html/hp-compaq/pavilion-gaming-15-cx0058tx.html",
+    "tags": [
+      "便携",
+      "高速",
+      "创作者"
+    ],
+    "specs": {
+      "capacity": "1TB / 2TB / 4TB",
+      "interface": "USB 3.2 Gen 2x2 (20Gbps)",
+      "read_speed": {
+        "value": 2100,
+        "unit": "MB/s",
+        "display_value": "2100MB/s"
+      },
+      "write_speed": {
+        "value": 2000,
+        "unit": "MB/s",
+        "display_value": "2000MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 42,
+        "unit": "g",
+        "display_value": "42g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 839
+      }
+    ]
+  },
+  {
+    "brand_id": "kingston",
+    "primary_category_id": "mobile_storage",
+    "model": "金士顿 XS1000 移动固态硬盘",
+    "full_name": "Kingston XS1000 External SSD (1TB/2TB)",
+    "status": "active",
+    "release_date": "2023-09-05",
+    "source_url": "https://www.kingston.com/en/company/press/article/71177",
+    "tags": [
+      "便携",
+      "轻巧",
+      "备份"
+    ],
+    "specs": {
+      "capacity": "1TB / 2TB",
+      "interface": "USB 3.2 Gen 2 (10Gbps)",
+      "read_speed": {
+        "value": 1050,
+        "unit": "MB/s",
+        "display_value": "1050MB/s"
+      },
+      "write_speed": {
+        "value": 1000,
+        "unit": "MB/s",
+        "display_value": "1000MB/s"
+      },
+      "form_factor": "便携式固态硬盘 (PSSD)",
+      "weight": {
+        "value": 28.7,
+        "unit": "g",
+        "display_value": "28.7g"
+      }
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 879
+      }
+    ]
+  }
+]

@@ -1,0 +1,318 @@
+{
+  "products": [
+    {
+      "brand_id": "amazon",
+      "primary_category_id": "ereader",
+      "model": "Kindle Paperwhite (2024)",
+      "full_name": "亚马逊 Kindle Paperwhite (第12代/2024)",
+      "status": "active",
+      "release_date": "2024-10-16",
+      "source_url": "https://www.pcmag.com/reviews/amazon-kindle-paperwhite-2024",
+      "tags": ["阅读", "护眼", "便携"],
+      "specs": {
+        "screen_size": {"value": 7, "unit": "inch", "display_value": "7英寸"},
+        "resolution": "300ppi (1264×1680)",
+        "panel": "电子墨水 Carta 1300",
+        "storage": {"value": 16, "unit": "GB", "display_value": "16GB"},
+        "battery": {"value": 12, "unit": "week", "display_value": "12周"},
+        "weight": {"value": 211, "unit": "g", "display_value": "211g"},
+        "waterproof": "IPX8",
+        "os": "封闭阅读系统"
+      },
+      "prices": [
+        {"source": "jd", "price": 1899}
+      ]
+    },
+    {
+      "brand_id": "amazon",
+      "primary_category_id": "ereader",
+      "model": "Kindle Colorsoft",
+      "full_name": "亚马逊 Kindle Colorsoft (Signature Edition)",
+      "status": "active",
+      "release_date": "2024-10-30",
+      "source_url": "https://bookfere.com/post/1128.html",
+      "tags": ["彩色阅读", "护眼", "漫画"],
+      "specs": {
+        "screen_size": {"value": 7, "unit": "inch", "display_value": "7英寸"},
+        "resolution": "300ppi (黑白) / 150ppi (彩色)",
+        "panel": "E Ink Kaleido 3 彩色墨水屏",
+        "storage": {"value": 32, "unit": "GB", "display_value": "32GB"},
+        "battery": {"value": 8, "unit": "week", "display_value": "8周"},
+        "weight": {"value": 219, "unit": "g", "display_value": "219g"},
+        "waterproof": "IPX8",
+        "os": "封闭阅读系统"
+      },
+      "prices": []
+    },
+    {
+      "brand_id": "ireader",
+      "primary_category_id": "ereader",
+      "model": "iReader Neo 2",
+      "full_name": "掌阅 iReader Neo 2",
+      "status": "active",
+      "release_date": "2024-03-01",
+      "source_url": "https://news.zol.com.cn/878/8782061.html",
+      "tags": ["便携", "阅读", "护眼"],
+      "specs": {
+        "screen_size": {"value": 6, "unit": "inch", "display_value": "6英寸"},
+        "resolution": "1072×1448 (300ppi)",
+        "panel": "电子墨水 Carta 1300",
+        "storage": {"value": 32, "unit": "GB", "display_value": "32GB"},
+        "battery": {"value": 44, "unit": "hour", "display_value": "44小时"},
+        "weight": {"value": 149, "unit": "g", "display_value": "149g"},
+        "waterproof": null,
+        "os": "封闭阅读系统"
+      },
+      "prices": [
+        {"source": "jd", "price": 989}
+      ]
+    },
+    {
+      "brand_id": "boox",
+      "primary_category_id": "ereader",
+      "model": "BOOX Go Color 7",
+      "full_name": "文石 BOOX Go Color 7",
+      "status": "active",
+      "release_date": "2024-05-01",
+      "source_url": "https://news.zol.com.cn/876/8764426.html",
+      "tags": ["彩色阅读", "开放系统", "漫画"],
+      "specs": {
+        "screen_size": {"value": 7, "unit": "inch", "display_value": "7英寸"},
+        "resolution": "1680×1264 (黑白300ppi / 彩色150ppi)",
+        "panel": "E Ink Kaleido 3 彩色墨水屏",
+        "storage": {"value": 64, "unit": "GB", "display_value": "64GB"},
+        "battery": {"value": 2300, "unit": "mAh", "display_value": "2300mAh"},
+        "weight": {"value": 195, "unit": "g", "display_value": "195g"},
+        "waterproof": "防泼水（非完全防水）",
+        "os": "Android 12"
+      },
+      "prices": []
+    },
+    {
+      "brand_id": "boox",
+      "primary_category_id": "ereader",
+      "model": "BOOX Page",
+      "full_name": "文石 BOOX Page",
+      "status": "active",
+      "release_date": "2023-06-25",
+      "source_url": "https://www.newskj.org/gdsp/174507.html",
+      "tags": ["阅读", "开放系统", "便携"],
+      "specs": {
+        "screen_size": {"value": 7, "unit": "inch", "display_value": "7英寸"},
+        "resolution": "1680×1264 (300ppi)",
+        "panel": "电子墨水 Carta 1200",
+        "storage": {"value": 32, "unit": "GB", "display_value": "32GB"},
+        "battery": {"value": 2300, "unit": "mAh", "display_value": "2300mAh"},
+        "weight": {"value": 195, "unit": "g", "display_value": "195g"},
+        "waterproof": null,
+        "os": "Android 11"
+      },
+      "prices": []
+    },
+    {
+      "brand_id": "apple",
+      "primary_category_id": "computer_system",
+      "model": "MacBook Air 13 (M3, 2024)",
+      "full_name": "苹果 MacBook Air 13英寸 M3 (2024)",
+      "status": "active",
+      "release_date": "2024-03-04",
+      "source_url": "https://support.apple.com/zh-cn/118551",
+      "tags": ["轻薄", "办公", "便携"],
+      "specs": {
+        "cpu": "Apple M3 (8核CPU + 10核GPU)",
+        "gpu": "Apple M3 集成GPU (10核)",
+        "ram": {"value": 16, "unit": "GB", "display_value": "16GB"},
+        "storage": {"value": 512, "unit": "GB", "display_value": "512GB"},
+        "screen_size": {"value": 13.6, "unit": "inch", "display_value": "13.6英寸"},
+        "screen_resolution": "2560×1664",
+        "refresh_rate": {"value": 60, "unit": "Hz", "display_value": "60Hz"},
+        "weight": {"value": 1.24, "unit": "kg", "display_value": "1.24kg"},
+        "os": "macOS",
+        "ports": "MagSafe 3, 2×雷雳/USB4, 3.5mm耳机孔"
+      },
+      "prices": [
+        {"source": "jd", "price": 8199}
+      ]
+    },
+    {
+      "brand_id": "apple",
+      "primary_category_id": "computer_system",
+      "model": "MacBook Pro 14 (M4, 2024)",
+      "full_name": "苹果 MacBook Pro 14英寸 M4 (2024)",
+      "status": "active",
+      "release_date": "2024-10-30",
+      "source_url": "https://support.apple.com/zh-hk/121552",
+      "tags": ["专业", "创作", "高性能"],
+      "specs": {
+        "cpu": "Apple M4 (10核CPU + 10核GPU)",
+        "gpu": "Apple M4 集成GPU (10核)",
+        "ram": {"value": 16, "unit": "GB", "display_value": "16GB"},
+        "storage": {"value": 512, "unit": "GB", "display_value": "512GB"},
+        "screen_size": {"value": 14.2, "unit": "inch", "display_value": "14.2英寸"},
+        "screen_resolution": "3024×1964",
+        "refresh_rate": {"value": 120, "unit": "Hz", "display_value": "120Hz (ProMotion)"},
+        "weight": {"value": 1.55, "unit": "kg", "display_value": "1.55kg"},
+        "os": "macOS",
+        "ports": "MagSafe 3, 3×雷雳4/USB4, HDMI, SDXC, 3.5mm耳机孔"
+      },
+      "prices": [
+        {"source": "jd", "price": 12249}
+      ]
+    },
+    {
+      "brand_id": "lenovo",
+      "primary_category_id": "computer_system",
+      "model": "ThinkBook 14+ 2024 (Ultra版)",
+      "full_name": "联想 ThinkBook 14+ 2024 酷睿Ultra版",
+      "status": "active",
+      "release_date": "2024-03-01",
+      "source_url": "https://www.lenovo.com.cn/wiki/product-doc-28770.html",
+      "tags": ["办公", "全能", "AI"],
+      "specs": {
+        "cpu": "Intel Core Ultra7 155H (16核)",
+        "gpu": "NVIDIA GeForce RTX 4060 (可选)",
+        "ram": {"value": 32, "unit": "GB", "display_value": "32GB"},
+        "storage": {"value": 1, "unit": "TB", "display_value": "1TB"},
+        "screen_size": {"value": 14.5, "unit": "inch", "display_value": "14.5英寸"},
+        "screen_resolution": "3072×1920",
+        "refresh_rate": {"value": 120, "unit": "Hz", "display_value": "120Hz"},
+        "weight": {"value": 1.5, "unit": "kg", "display_value": "1.5kg"},
+        "os": "Windows 11",
+        "ports": "雷电4, 全功能USB-C, 2×USB3.2, HDMI2.1, MicroSD, RJ45, TGX扩展坞"
+      },
+      "prices": [
+        {"source": "jd", "price": 5599}
+      ]
+    },
+    {
+      "brand_id": "mechrevo",
+      "primary_category_id": "computer_system",
+      "model": "机械革命 极光X",
+      "full_name": "机械革命 极光X 游戏本",
+      "status": "active",
+      "release_date": "2024-07-03",
+      "source_url": "https://www.ithome.com/0/812/57.htm",
+      "tags": ["游戏", "高性能"],
+      "specs": {
+        "cpu": "Intel Core i7-12800HX (16核24线程)",
+        "gpu": "NVIDIA GeForce RTX 4060 (140W)",
+        "ram": {"value": 16, "unit": "GB", "display_value": "16GB"},
+        "storage": {"value": 512, "unit": "GB", "display_value": "512GB"},
+        "screen_size": {"value": 16, "unit": "inch", "display_value": "16英寸"},
+        "screen_resolution": "2560×1600",
+        "refresh_rate": {"value": 165, "unit": "Hz", "display_value": "165Hz"},
+        "weight": {"value": 2.2, "unit": "kg", "display_value": "2.2kg"},
+        "os": "Windows 11",
+        "ports": "3×USB3.2 Gen1, 2×USB-C, Mini-DP, HDMI2.1, RJ45"
+      },
+      "prices": [
+        {"source": "jd", "price": 5999}
+      ]
+    },
+    {
+      "brand_id": "noctua",
+      "primary_category_id": "pc_hardware",
+      "model": "NH-D15 G2",
+      "full_name": "猫头鹰 NH-D15 G2 双塔风冷散热器",
+      "status": "active",
+      "release_date": "2024-07-01",
+      "source_url": "https://noctua.at/nh-d15-g2",
+      "tags": ["静音", "风冷", "旗舰"],
+      "specs": {
+        "type": "CPU双塔风冷散热器",
+        "interface": "LGA1851/1700/1200/115x, AM5/AM4",
+        "power": {"value": 300, "unit": "W", "display_value": "300W (解热能力)"},
+        "compatibility": "Intel LGA1851/1700/1200/115x, AMD AM5/AM4",
+        "form_factor": "150×152×168mm",
+        "weight": {"value": 1520, "unit": "g", "display_value": "1520g"}
+      },
+      "prices": [
+        {"source": "jd", "price": 1199}
+      ]
+    },
+    {
+      "brand_id": "seasonic",
+      "primary_category_id": "pc_hardware",
+      "model": "VERTEX GX-1000",
+      "full_name": "海韵 VERTEX GX-1000 全模组电源",
+      "status": "active",
+      "release_date": "2024-01-01",
+      "source_url": "https://m.expreview.com/87185.html",
+      "tags": ["全模组", "ATX3.0", "金牌"],
+      "specs": {
+        "type": "ATX 电源",
+        "interface": "ATX 3.0/3.1, 24pin, 12V-2×6 (12VHPWR)",
+        "power": {"value": 1000, "unit": "W", "display_value": "1000W"},
+        "compatibility": "ATX",
+        "form_factor": "160×150×86mm",
+        "weight": {"value": 1850, "unit": "g", "display_value": "1850g"}
+      },
+      "prices": [
+        {"source": "jd", "price": 1599}
+      ]
+    },
+    {
+      "brand_id": "crucial",
+      "primary_category_id": "pc_hardware",
+      "model": "Crucial T705",
+      "full_name": "英睿达 Crucial T705 PCIe 5.0 SSD",
+      "status": "active",
+      "release_date": "2024-03-15",
+      "source_url": "https://m.expreview.com/92799.html",
+      "tags": ["高速", "PCIe5.0", "固态硬盘"],
+      "specs": {
+        "type": "NVMe M.2 SSD (PCIe 5.0)",
+        "interface": "M.2 PCIe 5.0 x4 (NVMe)",
+        "power": null,
+        "compatibility": "台式机/笔记本, 兼容 PCIe 5.0/4.0/3.0",
+        "form_factor": "M.2 2280",
+        "weight": null
+      },
+      "prices": [
+        {"source": "jd", "price": 1379}
+      ]
+    },
+    {
+      "brand_id": "gigabyte",
+      "primary_category_id": "pc_hardware",
+      "model": "B850 AORUS ELITE WIFI7",
+      "full_name": "技嘉 B850 AORUS ELITE WIFI7 主板",
+      "status": "active",
+      "release_date": "2025-01-06",
+      "source_url": "https://www.gigabyte.cn/Motherboard/B850-AORUS-ELITE-WIFI7",
+      "tags": ["AMD", "WiFi7", "DDR5"],
+      "specs": {
+        "type": "ATX 主板",
+        "interface": "AM5, DDR5, PCIe 5.0",
+        "power": null,
+        "compatibility": "AMD AM5 (Ryzen 7000/8000/9000)",
+        "form_factor": "ATX",
+        "weight": null
+      },
+      "prices": [
+        {"source": "jd", "price": 1649}
+      ]
+    },
+    {
+      "brand_id": "kingston",
+      "primary_category_id": "pc_hardware",
+      "model": "FURY Beast DDR5 6000",
+      "full_name": "金士顿 FURY Beast DDR5 6000 内存",
+      "status": "active",
+      "release_date": "2024-03-01",
+      "source_url": "https://diy.zol.com.cn/877/8775647.html",
+      "tags": ["内存", "高频", "游戏"],
+      "specs": {
+        "type": "DDR5 台式机内存",
+        "interface": "288-Pin DIMM, DDR5",
+        "power": null,
+        "compatibility": "Intel XMP 3.0 / AMD EXPO",
+        "form_factor": "UDIMM",
+        "weight": null
+      },
+      "prices": [
+        {"source": "jd", "price": 1849}
+      ]
+    }
+  ]
+}

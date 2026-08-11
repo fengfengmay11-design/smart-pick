@@ -1,0 +1,390 @@
+[
+  {
+    "brand_id": "huawei",
+    "primary_category_id": "foldable_phone",
+    "model": "Mate X7",
+    "full_name": "华为 Mate X7",
+    "status": "active",
+    "release_date": "2025-12-05",
+    "series_id": null,
+    "generation": "Mate X7",
+    "aliases": [
+      "Mate X7",
+      "华为Mate X7",
+      "HUAWEI Mate X7"
+    ],
+    "tags": [
+      "foldable",
+      "flagship",
+      "harmonyos",
+      "kirin",
+      "5g"
+    ],
+    "data_source": "web",
+    "source_url": "https://wap.zol.com.cn/2150/2149094/index.html",
+    "specs": {
+      "body_height": "156.8mm (展开/折叠 同)",
+      "body_width": "144.2mm (展开) / 73.8mm (折叠)",
+      "body_thickness": "4.5mm (展开) / 9.5mm (折叠)",
+      "body_weight": "235g",
+      "body_material": "铝合金边框, 素皮后壳",
+      "ram": "12GB / 16GB",
+      "screen_size": "主:8英寸; 副:6.49英寸",
+      "screen_resolution": "主:2416x2210px; 副:2440x1080px",
+      "screen_material": "主:OLED(LTPO); 副:OLED(LTPO)",
+      "screen_refresh_rate": "120Hz (1-120)",
+      "screen_type": "折叠屏 OLED (挖孔屏)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙6.0 (支持 LDAC, L2HC)",
+      "features_wifi": "Wi-Fi 6/7 (802.11a/b/g/n/ac/ax/be)",
+      "features_nfc": "支持",
+      "features_infrared": "支持",
+      "features_usb": "USB Type-C (USB 3.1 Gen1, 支持 DP1.2)",
+      "features_waterproof": "IP58 / IP59",
+      "features_satellite": "北斗卫星消息",
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "12GB+256GB 曜石黑",
+        "storage": "256GB",
+        "memory": "12GB",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 12999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "honor",
+    "primary_category_id": "foldable_phone",
+    "model": "Magic V5",
+    "full_name": "荣耀 Magic V5",
+    "status": "active",
+    "release_date": "2025-07-02",
+    "series_id": null,
+    "generation": "Magic V5",
+    "aliases": [
+      "Magic V5",
+      "荣耀Magic V5",
+      "荣耀 V5"
+    ],
+    "tags": [
+      "foldable",
+      "flagship",
+      "magicos",
+      "snapdragon",
+      "5g"
+    ],
+    "data_source": "web",
+    "source_url": "https://wap.zol.com.cn/2132/2131995/index.html",
+    "specs": {
+      "body_height": "156.8mm (展开/折叠 同)",
+      "body_width": "145.9mm (展开) / 74.3mm (折叠)",
+      "body_thickness": "4.1mm (展开, 暖白) / 4.2mm (展开, 其他) / 8.8mm (折叠, 暖白) / 9.0mm (折叠, 其他)",
+      "body_weight": "217g (暖白) / 222g (其他配色)",
+      "body_material": "铝合金中框, 玻璃/素皮后壳",
+      "ram": "12GB / 16GB",
+      "screen_size": "主:7.95英寸; 副:6.43英寸",
+      "screen_resolution": "主:2352x2172px; 副:2376x1060px",
+      "screen_material": "主:柔性OLED; 副:OLED(LTPO)",
+      "screen_refresh_rate": "120Hz",
+      "screen_type": "折叠屏 OLED (挖孔屏)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙6.0 (支持 LDAC, aptX 系列)",
+      "features_wifi": "Wi-Fi 6/7 (802.11 ax/be)",
+      "features_nfc": "支持",
+      "features_infrared": "支持",
+      "features_usb": "USB Type-C (USB 3.1 Gen1, 支持 DP1.2)",
+      "features_waterproof": "IP58 / IP59",
+      "features_satellite": "北斗卫星通信",
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "12GB+256GB 绒黑色",
+        "storage": "256GB",
+        "memory": "12GB",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 8999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "samsung",
+    "primary_category_id": "foldable_phone",
+    "model": "Galaxy Z TriFold",
+    "full_name": "三星 Galaxy Z TriFold",
+    "status": "active",
+    "release_date": "2025-12-09",
+    "series_id": null,
+    "generation": "Galaxy Z TriFold",
+    "aliases": [
+      "Galaxy Z TriFold",
+      "三星Z TriFold",
+      "三星三折叠"
+    ],
+    "tags": [
+      "foldable",
+      "trifold",
+      "flagship",
+      "oneui",
+      "5g"
+    ],
+    "data_source": "web",
+    "source_url": "https://wap.zol.com.cn/2151/2150420/index.html",
+    "specs": {
+      "body_height": "159.2mm (展开/折叠 同)",
+      "body_width": "214.1mm (展开) / 75.0mm (折叠)",
+      "body_thickness": "3.9mm (展开) / 12.9mm (折叠)",
+      "body_weight": "309g",
+      "body_material": "装甲铝边框, 陶瓷玻纤背板",
+      "ram": "16GB",
+      "screen_size": "主:10英寸; 副:6.5英寸",
+      "screen_resolution": "主:2160x1584px; 副:2520x1080px",
+      "screen_material": "第二代动态AMOLED",
+      "screen_refresh_rate": "120Hz",
+      "screen_type": "三折叠屏 AMOLED (挖孔屏)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙5.4",
+      "features_wifi": "Wi-Fi 6/7 (802.11a/b/g/n/ac/ax/be)",
+      "features_nfc": "支持",
+      "features_infrared": null,
+      "features_usb": "USB Type-C (USB 3.2 Gen1)",
+      "features_waterproof": "IP48",
+      "features_satellite": "天通卫星通讯 (语音/短信)",
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "16GB+512GB 时空黑",
+        "storage": "512GB",
+        "memory": "16GB",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 19999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "vivo",
+    "primary_category_id": "foldable_phone",
+    "model": "X Fold5",
+    "full_name": "vivo X Fold5",
+    "status": "active",
+    "release_date": "2025-07-02",
+    "series_id": null,
+    "generation": "X Fold5",
+    "aliases": [
+      "X Fold5",
+      "vivo X Fold5",
+      "vivo折叠5"
+    ],
+    "tags": [
+      "foldable",
+      "flagship",
+      "zeiss",
+      "originos",
+      "5g"
+    ],
+    "data_source": "web",
+    "source_url": "https://wap.zol.com.cn/2131/2130358/index.html",
+    "specs": {
+      "body_height": "159.68mm (展开/折叠 同)",
+      "body_width": "142.29mm (展开) / 72.60mm (折叠)",
+      "body_thickness": "4.55mm (展开, 明白/青松) / 4.3mm (展开, 钛度) / 9.7mm (折叠, 明白/青松) / 9.2mm (折叠, 钛度)",
+      "body_weight": "226g (明白/青松) / 217g (钛度)",
+      "body_material": "铝合金中框",
+      "ram": "12GB / 16GB",
+      "screen_size": "主:8.03英寸; 副:6.53英寸",
+      "screen_resolution": "主:2480x2200px; 副:2748x1172px",
+      "screen_material": "AMOLED",
+      "screen_refresh_rate": "120Hz",
+      "screen_type": "折叠屏 AMOLED (挖孔屏, 曲面)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙5.4 (支持 LDAC, LHDC 5.0)",
+      "features_wifi": "Wi-Fi 6/7 (802.11a/b/g/n/ac/ax/be)",
+      "features_nfc": "支持 (HCE/eSE 支付)",
+      "features_infrared": "支持",
+      "features_usb": "USB Type-C (USB 3.2 Gen1, 支持 DP 投屏)",
+      "features_waterproof": "IPX8 / IPX9",
+      "features_satellite": null,
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "12GB+256GB 钛度",
+        "storage": "256GB",
+        "memory": "12GB",
+        "color": "Titanium",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 6999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "nubia",
+    "primary_category_id": "gaming_phone",
+    "model": "红魔11 Pro",
+    "full_name": "努比亚 红魔11 Pro",
+    "status": "active",
+    "release_date": "2025-10-17",
+    "series_id": null,
+    "generation": "红魔11 Pro",
+    "aliases": [
+      "红魔11 Pro",
+      "红魔11Pro",
+      "REDMAGIC 11 Pro",
+      "努比亚红魔11 Pro"
+    ],
+    "tags": [
+      "gaming",
+      "flagship",
+      "snapdragon",
+      "144hz",
+      "5g",
+      "active-cooling"
+    ],
+    "data_source": "web",
+    "source_url": "https://detail.zol.com.cn/series/57/35005/param_10920086_bfadfec3_0_1.html",
+    "specs": {
+      "body_height": "163.82mm",
+      "body_width": "76.54mm",
+      "body_thickness": "8.9mm",
+      "body_weight": "230g",
+      "body_material": "铝合金中框, 透明玻璃/素皮后壳",
+      "ram": "12GB / 16GB",
+      "screen_size": "6.85英寸",
+      "screen_resolution": "2688x1216px (1.5K)",
+      "screen_material": "京东方 X10 OLED (屏下真全面屏)",
+      "screen_refresh_rate": "144Hz",
+      "screen_type": "OLED 真全面屏 (屏下摄像头, 无挖孔)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙5.4",
+      "features_wifi": "Wi-Fi 6/7 (802.11a/b/g/n/ac/ax/be)",
+      "features_nfc": "支持 (全功能 NFC)",
+      "features_infrared": "支持 (红外遥控)",
+      "features_usb": "USB Type-C",
+      "features_waterproof": "IPX8",
+      "features_satellite": null,
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "12GB+256GB 暗夜骑士",
+        "storage": "256GB",
+        "memory": "12GB",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 4999,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "nubia",
+    "primary_category_id": "gaming_phone",
+    "model": "红魔11 Air",
+    "full_name": "努比亚 红魔11 Air",
+    "status": "active",
+    "release_date": "2026-01-20",
+    "series_id": null,
+    "generation": "红魔11 Air",
+    "aliases": [
+      "红魔11 Air",
+      "红魔11Air",
+      "REDMAGIC 11 Air",
+      "努比亚红魔11 Air"
+    ],
+    "tags": [
+      "gaming",
+      "thin-light",
+      "snapdragon",
+      "144hz",
+      "5g",
+      "active-cooling"
+    ],
+    "data_source": "web",
+    "source_url": "https://detail.zol.com.cn/series/57/35005/param_10922979_0_1.html",
+    "specs": {
+      "body_height": "163.82mm",
+      "body_width": "76.54mm",
+      "body_thickness": "7.85mm",
+      "body_weight": "207g",
+      "body_material": "金属中框, 透明玻璃后盖",
+      "ram": "12GB / 16GB",
+      "screen_size": "6.85英寸",
+      "screen_resolution": "2688x1216px (1.5K)",
+      "screen_material": "京东方 Q10 OLED (悟空屏, 屏下真全面屏)",
+      "screen_refresh_rate": "144Hz",
+      "screen_type": "OLED 真全面屏 (屏下摄像头, 无挖孔)",
+      "features_dual_sim": "支持 (双 Nano SIM)",
+      "features_five_g": "支持 (移动/联通/电信/广电 5G)",
+      "features_bluetooth": "蓝牙5.4",
+      "features_wifi": "Wi-Fi 6/7 (802.11a/b/g/n/ac/ax/be)",
+      "features_nfc": "支持 (全功能 NFC)",
+      "features_infrared": "支持 (红外遥控)",
+      "features_usb": "USB Type-C",
+      "features_waterproof": null,
+      "features_satellite": null,
+      "features_esim": null,
+      "features_expandable_storage": null
+    },
+    "variants": [
+      {
+        "variant_name": "12GB+256GB 量子黑",
+        "storage": "256GB",
+        "memory": "12GB",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3499,
+        "price_type": "current"
+      }
+    ]
+  }
+]

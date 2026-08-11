@@ -1,0 +1,379 @@
+[
+  {
+    "brand_id": "razer",
+    "primary_category_id": "mouse",
+    "model": "DeathAdder V3 Pro",
+    "full_name": "Razer DeathAdder V3 Pro",
+    "status": "active",
+    "release_date": "2022-08-11",
+    "series_id": null,
+    "generation": "V3 Pro",
+    "aliases": [
+      "DeathAdder V3 Pro",
+      "炼狱蝰蛇V3专业版",
+      "DA V3 Pro"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "lightweight",
+      "ergonomic",
+      "fps"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.razer.com/cn-zh/gaming-mice/razer-deathadder-v3-pro",
+    "specs": {
+      "battery": "最长 90 小时 (1000Hz 无线)",
+      "buttons": "5 个可编程按键",
+      "connection": "无线 (Razer HyperSpeed 2.4GHz) + USB-C 有线充电",
+      "dpi": "最高 30000 DPI",
+      "polling_rate": "1000Hz (可选配 HyperPolling 4000Hz 加密狗)",
+      "sensor": "Razer Focus Pro 30K 光学传感器 (750 IPS / 70G)",
+      "shape": "右手人体工学",
+      "switch": "Razer 第三代光学微动 (9000 万次)",
+      "weight": "63g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      },
+      {
+        "variant_name": "白色",
+        "color": "White",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 829,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "razer",
+    "primary_category_id": "mouse",
+    "model": "Viper V3 Pro",
+    "full_name": "Razer Viper V3 Pro",
+    "status": "active",
+    "release_date": "2024-03-15",
+    "series_id": null,
+    "generation": "V3 Pro",
+    "aliases": [
+      "Viper V3 Pro",
+      "毒蝰V3专业版",
+      "毒蝰V3pro"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "lightweight",
+      "symmetrical",
+      "fps",
+      "8khz"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.razer.com/cn-zh/gaming-mice/razer-viper-v3-pro",
+    "specs": {
+      "battery": "约 95 小时 (1000Hz) / 约 17 小时 (8000Hz)",
+      "buttons": "6 个可编程按键",
+      "connection": "无线 (Razer HyperSpeed 2.4GHz) + USB-C 有线充电",
+      "dpi": "最高 35000 DPI",
+      "polling_rate": "1000Hz 标配，随附 HyperPolling 8000Hz 无线适配器",
+      "sensor": "Razer Focus Pro 35K Gen-2 光学传感器 (750 IPS / 70G)",
+      "shape": "对称 (右手为主)",
+      "switch": "Razer 第四代光学微动 (9000 万次)",
+      "weight": "55g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      },
+      {
+        "variant_name": "白色",
+        "color": "White",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 979,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "steelseries",
+    "primary_category_id": "mouse",
+    "model": "Aerox 5 Wireless",
+    "full_name": "SteelSeries Aerox 5 Wireless",
+    "status": "active",
+    "release_date": "2022-05-12",
+    "series_id": null,
+    "generation": "Aerox 5",
+    "aliases": [
+      "Aerox 5 Wireless",
+      "赛睿 Aerox 5 无线",
+      "寒冰 Aerox 5"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "lightweight",
+      "honeycomb",
+      "mmo",
+      "ip54"
+    ],
+    "data_source": "web",
+    "source_url": "https://steelseries.com/gaming-mice/aerox-5-wireless",
+    "specs": {
+      "battery": "最长 180 小时",
+      "buttons": "9 个可编程按键",
+      "connection": "三模 (Quantum 2.0 无线 2.4GHz / 蓝牙 5.0 / USB-C 有线)",
+      "dpi": "最高 18000 CPI",
+      "polling_rate": "1000Hz",
+      "sensor": "TrueMove Air 光学传感器 (400 IPS / 40G)",
+      "shape": "对称 (右手为主)",
+      "switch": "TTC Gold 光学微动 (8000 万次)",
+      "weight": "74g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      },
+      {
+        "variant_name": "白色",
+        "color": "White",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 919,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "corsair",
+    "primary_category_id": "mouse",
+    "model": "M75 AIR",
+    "full_name": "CORSAIR M75 AIR Wireless",
+    "status": "active",
+    "release_date": "2023-11-09",
+    "series_id": null,
+    "generation": "M75",
+    "aliases": [
+      "M75 AIR",
+      "海盗船 M75 AIR",
+      "USCORSAIR M75 AIR"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "ultralight",
+      "ergonomic",
+      "fps",
+      "no-rgb"
+    ],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/Wl4yEImv2rafIxeXONsNfIxeXONsN4_3QWdizJbT0yI0Fr081.html",
+    "specs": {
+      "battery": "约 34 小时 (2.4GHz) / 约 100 小时 (蓝牙)",
+      "buttons": null,
+      "connection": "三模 (SLIPSTREAM 2.4GHz / 蓝牙 / USB-C 有线)",
+      "dpi": "100–26000 DPI",
+      "polling_rate": "1000Hz",
+      "sensor": "CORSAIR MARKSMAN 光学传感器 (650 IPS / 50G)",
+      "shape": "右手人体工学",
+      "switch": "光学微动 (1 亿次)",
+      "weight": "60g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      },
+      {
+        "variant_name": "白色",
+        "color": "White",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 635,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "corsair",
+    "primary_category_id": "mouse",
+    "model": "M75 WIRELESS",
+    "full_name": "CORSAIR M75 WIRELESS",
+    "status": "active",
+    "release_date": "2024-02-01",
+    "series_id": null,
+    "generation": "M75",
+    "aliases": [
+      "M75 WIRELESS",
+      "海盗船 M75 无线",
+      "USCORSAIR M75 WIRELESS"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "ambidextrous",
+      "rgb",
+      "fps"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.corsair.com/ww/sc/explorer/gamer/mice/corsair-m75-wirelesswired-everything-you-need-to-know/",
+    "specs": {
+      "battery": "最长 105 小时 (2.4GHz 关灯) / 210 小时 (蓝牙关灯)",
+      "buttons": "7 个可编程按键 (iCUE)",
+      "connection": "三模 (SLIPSTREAM 2.4GHz / 蓝牙 4.2 / USB-C 有线)",
+      "dpi": "100–26000 DPI",
+      "polling_rate": "最高 1000Hz",
+      "sensor": "CORSAIR MARKSMAN 光学传感器 (650 IPS)",
+      "shape": "完全对称 (左右手通用, 双侧可换侧键)",
+      "switch": "光学微动",
+      "weight": "89g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      },
+      {
+        "variant_name": "白色",
+        "color": "White",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 769,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "zowie",
+    "primary_category_id": "mouse",
+    "model": "EC2-CW",
+    "full_name": "ZOWIE EC2-CW",
+    "status": "active",
+    "release_date": "2022-09-15",
+    "series_id": null,
+    "generation": "EC-CW",
+    "aliases": [
+      "EC2-CW",
+      "卓威 EC2-CW",
+      "ZOWIE EC2 CW"
+    ],
+    "tags": [
+      "gaming",
+      "wireless",
+      "ergonomic",
+      "driverless",
+      "fps",
+      "esports"
+    ],
+    "data_source": "web",
+    "source_url": "https://zowiegear.benq.com.cn/zh-cn/mouse/ec2-cw.html",
+    "specs": {
+      "battery": "70 小时 (持续移动)",
+      "buttons": "7 个按键",
+      "connection": "2.4GHz 无线 (增强接收基站) + USB-C 有线",
+      "dpi": "400 / 800 / 1600 / 3200 DPI 四档",
+      "polling_rate": "125 / 500 / 1000Hz",
+      "sensor": "PixArt PAW3370 光学传感器",
+      "shape": "非对称人体工学 (右手, M 码)",
+      "switch": null,
+      "weight": "77g"
+    },
+    "variants": [
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 929,
+        "price_type": "current"
+      }
+    ]
+  },
+  {
+    "brand_id": "roccat",
+    "primary_category_id": "mouse",
+    "model": "Kone XP",
+    "full_name": "ROCCAT Kone XP",
+    "status": "active",
+    "release_date": "2022-03-22",
+    "series_id": null,
+    "generation": "Kone XP",
+    "aliases": [
+      "Kone XP",
+      "冰豹 Kone XP",
+      "ROCCAT KONE XP"
+    ],
+    "tags": [
+      "gaming",
+      "wired",
+      "rgb",
+      "multi-button",
+      "ergonomic"
+    ],
+    "data_source": "web",
+    "source_url": "https://www.roccat.com/products/kone-xp",
+    "specs": {
+      "battery": null,
+      "buttons": "15 个可编程按键 (含 4D Krystal 滚轮)",
+      "connection": "USB-C 有线",
+      "dpi": "最高 19000 DPI",
+      "polling_rate": "1000Hz",
+      "sensor": "ROCCAT Owl-Eye 19K 光学传感器",
+      "shape": "右手人体工学",
+      "switch": "Titan 光学微动 (1 亿次)",
+      "weight": "104g"
+    },
+    "variants": [
+      {
+        "variant_name": "极地白",
+        "color": "White",
+        "status": "active"
+      },
+      {
+        "variant_name": "黑色",
+        "color": "Black",
+        "status": "active"
+      }
+    ],
+    "prices": [
+      {
+        "source": "jd",
+        "price": 399,
+        "price_type": "current"
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "brand_id": "google",
+    "primary_category_id": "smartphone",
+    "model": "Pixel 9 Pro",
+    "full_name": "Google Pixel 9 Pro",
+    "status": "active",
+    "release_date": "2024-08-13",
+    "series_id": "pixel",
+    "generation": "9",
+    "aliases": ["Pixel9Pro", "谷歌9Pro"],
+    "tags": ["flagship", "ai", "photography"],
+    "data_source": "manufacturer",
+    "source_url": "https://store.google.com/product/pixel_9_pro_specs",
+    "specs": {
+      "chipset": { "value": "Google Tensor G4", "unit": null, "display_value": "Google Tensor G4", "original_value": "Google Tensor G4" },
+      "display": { "value": "6.3英寸 LTPO OLED", "unit": null, "display_value": "6.3英寸 LTPO OLED", "original_value": "6.3-inch LTPO OLED" },
+      "battery": { "value": 4700, "unit": "mAh", "display_value": "4700mAh", "original_value": "4700mAh" },
+      "charging": { "value": 37, "unit": "W", "display_value": "37W", "original_value": "37W" },
+      "ram": { "value": 16, "unit": "GB", "display_value": "16GB", "original_value": "16GB" },
+      "storage": { "value": 256, "unit": "GB", "display_value": "256GB", "original_value": "256GB" },
+      "weight": { "value": 199, "unit": "g", "display_value": "199g", "original_value": "199g" }
+    },
+    "variants": [
+      { "variant_name": "8GB+128GB", "storage": "128GB", "memory": "8GB", "color": "Porcelain", "status": "active" },
+      { "variant_name": "16GB+256GB", "storage": "256GB", "memory": "16GB", "color": "Porcelain", "status": "active" }
+    ],
+    "prices": [
+      { "source": "jd", "price": 7999, "price_type": "current" },
+      { "source": "pdd", "price": 7699, "price_type": "current" }
+    ]
+  },
+  {
+    "brand_id": "razer",
+    "primary_category_id": "mouse",
+    "model": "DeathAdder V3 Pro",
+    "full_name": "Razer DeathAdder V3 Pro",
+    "status": "active",
+    "release_date": "2023-05-00",
+    "tags": ["gaming", "wireless", "ergonomic"],
+    "data_source": "manufacturer",
+    "source_url": "https://www.razer.com/gaming-mice/razer-deathadder-v3-pro/specifications",
+    "specs": {
+      "sensor": { "value": "Focus Pro 30K", "unit": null, "display_value": "Focus Pro 30K", "original_value": "Focus Pro 30K" },
+      "weight": { "value": 63, "unit": "g", "display_value": "63g", "original_value": "63g" },
+      "connection": { "value": "2.4GHz / 有线", "unit": null, "display_value": "2.4GHz / 有线", "original_value": "2.4GHz / wired" }
+    },
+    "prices": [
+      { "source": "jd", "price": 1099, "price_type": "current" }
+    ]
+  }
+]

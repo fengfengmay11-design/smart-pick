@@ -1,0 +1,20 @@
+{
+  "_comment": "语义明确的标签合并（其余标签在迁移时统一 slugify 为小写+下划线，避免 Gaming/gaming/游戏 等重复）。不确定同义的标签不合并，保留原值。",
+  "游戏": "gaming", "电竞": "gaming", "Gaming": "gaming", "gaming": "gaming",
+  "旗舰": "flagship", "旗舰性能": "flagship",
+  "轻薄": "lightweight",
+  "性价比": "value",
+  "办公": "business", "商务": "business",
+  "AI": "ai",
+  "OLED": "oled", "oled": "oled",
+  "静音": "silent",
+  "多设备": "multi_device",
+  "防抖": "stabilization",
+  "视频": "video",
+  "全画幅": "full_frame",
+  "变频": "inverter",
+  "自清洁": "self_clean",
+  "新一级": "energy_grade1",
+  "空间音频": "spatial_audio",
+  "拍照": "photography", "摄影": "photography"
+}

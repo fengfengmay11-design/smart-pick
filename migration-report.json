@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-08-07T09:19:40.010Z",
+  "baseline": {
+    "products": 659,
+    "brands": 67,
+    "categories": 13,
+    "phone_variants": 246
+  },
+  "result": {
+    "products": 659,
+    "brands": 67,
+    "categories": 64,
+    "variants": 246,
+    "prices": 1624,
+    "series": 22,
+    "tags": 529
+  },
+  "critical_errors": 0,
+  "needs_review": 0,
+  "per_new_category": {
+    "smartphone": 93,
+    "gpu": 209,
+    "smart_appliance": 40,
+    "cleaning_robot": 40,
+    "laptop": 40,
+    "cpu": 40,
+    "earphone": 45,
+    "monitor": 40,
+    "tablet": 24,
+    "camera": 24,
+    "tv": 24,
+    "smartwatch": 20,
+    "keyboard": 20
+  }
+}

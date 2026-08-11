@@ -1,0 +1,673 @@
+{
+  "generated_at": "2026-08-11 03:18:33",
+  "scale": {
+    "products": 803,
+    "brands": 141,
+    "categories": 64,
+    "specs": 803,
+    "variants": 301,
+    "prices": 1753,
+    "schema_categories": 46,
+    "tags": 754,
+    "series": 22
+  },
+  "integrity": {
+    "dup_product_id": 0,
+    "invalid_brand_ref": [],
+    "invalid_category_ref": [],
+    "dangling_series_ref": [
+      "google-pixel-9",
+      "google-pixel-9-pro-xl",
+      "motorola-edge-50-ultra",
+      "redmi-redmi-k80",
+      "iqoo-iqoo-13",
+      "meizu-meizu-21",
+      "nubia-z70-ultra",
+      "amazfit-balance-2",
+      "fitbit-charge-6",
+      "coros-pace-3",
+      "oneplus-watch-2",
+      "oppo-watch-x",
+      "vivo-watch-3",
+      "razer-blackwidow-v4-75",
+      "cherry-mx-8-2-xaga",
+      "corsair-k70-max",
+      "hhkb-professional-hybrid-type-s",
+      "steelseries-apex-pro-tkl-gen3",
+      "ikbc-c87"
+    ],
+    "orphan_specs": [],
+    "orphan_variants": [],
+    "orphan_prices": [],
+    "products_without_specs": [],
+    "dup_brand_model": []
+  },
+  "pricing": {
+    "total_price_records": 1753,
+    "by_source": {
+      "jd": 936,
+      "pdd": 812,
+      "ref": 4,
+      "official": 1
+    },
+    "products_with_price": 788,
+    "products_without_price": 15,
+    "coverage_pct": 98.1,
+    "records_with_source_url": 9,
+    "zero_or_negative": [],
+    "no_price_list": [
+      {
+        "id": "nintendo-nintendo-switch-2",
+        "brand": "任天堂",
+        "model": "Nintendo Switch 2",
+        "category": "console"
+      },
+      {
+        "id": "valve-steam-deck-oled",
+        "brand": "Valve",
+        "model": "Steam Deck OLED",
+        "category": "handheld_console"
+      },
+      {
+        "id": "8bitdo-ultimate-2c-wireless",
+        "brand": "八位堂",
+        "model": "Ultimate 2C Wireless",
+        "category": "gamepad"
+      },
+      {
+        "id": "fanatec-clubsport-dd",
+        "brand": "Fanatec",
+        "model": "ClubSport DD",
+        "category": "racing_wheel"
+      },
+      {
+        "id": "fanatec-clubsport-dd-2",
+        "brand": "Fanatec",
+        "model": "ClubSport DD+",
+        "category": "racing_wheel"
+      },
+      {
+        "id": "benq-gp520",
+        "brand": "明基",
+        "model": "GP520",
+        "category": "projector"
+      },
+      {
+        "id": "anker-anker-675-usb-c-docking-station-a8377",
+        "brand": "Anker",
+        "model": "Anker 675 USB-C Docking Station (A8377)",
+        "category": "dock"
+      },
+      {
+        "id": "asus-asus-zenwifi-bq16",
+        "brand": "华硕",
+        "model": "ASUS ZenWiFi BQ16",
+        "category": "mesh"
+      },
+      {
+        "id": "netgear-netgear-orbi-970-rbe973",
+        "brand": "网件",
+        "model": "NETGEAR Orbi 970 (RBE973)",
+        "category": "mesh"
+      },
+      {
+        "id": "amazon-kindle-colorsoft",
+        "brand": "亚马逊",
+        "model": "Kindle Colorsoft",
+        "category": "ereader"
+      },
+      {
+        "id": "boox-boox-go-color-7",
+        "brand": "文石",
+        "model": "BOOX Go Color 7",
+        "category": "ereader"
+      },
+      {
+        "id": "boox-boox-page",
+        "brand": "文石",
+        "model": "BOOX Page",
+        "category": "ereader"
+      },
+      {
+        "id": "dreame-roboticmower-a1",
+        "brand": "追觅",
+        "model": "Roboticmower A1",
+        "category": "robot_device"
+      },
+      {
+        "id": "ecovacs-goat-g1",
+        "brand": "科沃斯",
+        "model": "GOAT G1",
+        "category": "robot_device"
+      },
+      {
+        "id": "ecovacs-winbot-w2-omni",
+        "brand": "科沃斯",
+        "model": "WINBOT W2 OMNI",
+        "category": "robot_device"
+      }
+    ]
+  },
+  "categories": {
+    "total": 64,
+    "level1": 10,
+    "leaf": 54,
+    "populated": 46,
+    "empty_leaf": [
+      "desktop",
+      "mini_pc",
+      "pc_handheld",
+      "motherboard",
+      "memory",
+      "ssd",
+      "psu",
+      "cooler"
+    ],
+    "distribution": [
+      [
+        "gpu",
+        209
+      ],
+      [
+        "smartphone",
+        100
+      ],
+      [
+        "earphone",
+        45
+      ],
+      [
+        "smart_appliance",
+        40
+      ],
+      [
+        "cleaning_robot",
+        40
+      ],
+      [
+        "laptop",
+        40
+      ],
+      [
+        "cpu",
+        40
+      ],
+      [
+        "monitor",
+        40
+      ],
+      [
+        "smartwatch",
+        26
+      ],
+      [
+        "keyboard",
+        26
+      ],
+      [
+        "tablet",
+        24
+      ],
+      [
+        "camera",
+        24
+      ],
+      [
+        "tv",
+        24
+      ],
+      [
+        "mouse",
+        7
+      ],
+      [
+        "handheld_console",
+        5
+      ],
+      [
+        "projector",
+        5
+      ],
+      [
+        "router",
+        5
+      ],
+      [
+        "nas",
+        5
+      ],
+      [
+        "ereader",
+        5
+      ],
+      [
+        "pc_hardware",
+        5
+      ],
+      [
+        "foldable_phone",
+        4
+      ],
+      [
+        "action_cam",
+        4
+      ],
+      [
+        "console",
+        4
+      ],
+      [
+        "gamepad",
+        4
+      ],
+      [
+        "racing_wheel",
+        4
+      ],
+      [
+        "speaker",
+        4
+      ],
+      [
+        "microphone",
+        4
+      ],
+      [
+        "webcam",
+        4
+      ],
+      [
+        "mesh",
+        4
+      ],
+      [
+        "computer_system",
+        4
+      ],
+      [
+        "robot_device",
+        4
+      ],
+      [
+        "drone",
+        3
+      ],
+      [
+        "gimbal",
+        3
+      ],
+      [
+        "lens",
+        3
+      ],
+      [
+        "smartband",
+        3
+      ],
+      [
+        "smartring",
+        3
+      ],
+      [
+        "smartglasses",
+        3
+      ],
+      [
+        "vr",
+        3
+      ],
+      [
+        "ar",
+        3
+      ],
+      [
+        "soundbar",
+        3
+      ],
+      [
+        "dock",
+        3
+      ],
+      [
+        "mobile_storage",
+        3
+      ],
+      [
+        "switch",
+        3
+      ],
+      [
+        "smart_device",
+        3
+      ],
+      [
+        "ai_device",
+        3
+      ],
+      [
+        "gaming_phone",
+        2
+      ]
+    ]
+  },
+  "specs_quality": {
+    "overall_fill_pct": 96.9,
+    "categories_without_schema": [],
+    "thin_products_count": 7,
+    "thin_products_sample": [
+      {
+        "id": "google-pixel-9",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "google-pixel-9-pro-xl",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "motorola-edge-50-ultra",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "redmi-redmi-k80",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "iqoo-iqoo-13",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "meizu-meizu-21",
+        "have": 5,
+        "need": 22
+      },
+      {
+        "id": "nubia-z70-ultra",
+        "have": 5,
+        "need": 22
+      }
+    ],
+    "zero_value_fields": 366,
+    "zero_value_sample": [
+      "gpu-radeon-rx-7700.tensor_cores",
+      "gpu-radeon-rx-7400.tensor_cores",
+      "gpu-radeon-rx-9060.tensor_cores",
+      "gpu-radeon-rx-9060-xt-16-gb.tensor_cores",
+      "gpu-radeon-rx-9060-xt-8-gb.tensor_cores",
+      "gpu-radeon-rx-9070-gre.tensor_cores",
+      "gpu-radeon-rx-9070.tensor_cores",
+      "gpu-radeon-rx-9070-xt.tensor_cores",
+      "gpu-radeon-rx-7650-gre.tensor_cores",
+      "gpu-arc-b570.tensor_cores",
+      "gpu-arc-130t-mobile.vram",
+      "gpu-arc-130t-mobile.memory_bus"
+    ]
+  },
+  "tags": {
+    "defined": 754,
+    "used_distinct": 671,
+    "used_not_defined": [],
+    "defined_not_used": 83,
+    "products_without_tags": [],
+    "spec_leak_tags": [],
+    "top_tags": [
+      [
+        "flagship",
+        45
+      ],
+      [
+        "value",
+        41
+      ],
+      [
+        "lightweight",
+        36
+      ],
+      [
+        "gaming",
+        34
+      ],
+      [
+        "energy_grade1",
+        27
+      ],
+      [
+        "ampere",
+        26
+      ],
+      [
+        "入门",
+        25
+      ],
+      [
+        "高性价比",
+        23
+      ],
+      [
+        "turing",
+        22
+      ],
+      [
+        "长续航",
+        20
+      ],
+      [
+        "inverter",
+        19
+      ],
+      [
+        "gcn_4_0",
+        18
+      ]
+    ]
+  },
+  "provenance": {
+    "with_official_url": 302,
+    "without_official_url": 501,
+    "needs_review": 51,
+    "confidence": {
+      "high": 74,
+      "medium": 729
+    },
+    "data_source": {
+      "migration_legacy": 659,
+      "manufacturer": 23,
+      "web": 25,
+      "ai_extracted": 96
+    },
+    "avg_completeness": 96.6
+  },
+  "build": {
+    "files": 44,
+    "total_items": 803,
+    "matches_db": true,
+    "per_file": {
+      "data-ac.js": 40,
+      "data-action_cam.js": 4,
+      "data-ai_device.js": 3,
+      "data-ar.js": 3,
+      "data-camera.js": 24,
+      "data-computer_system.js": 4,
+      "data-console.js": 4,
+      "data-cpu.js": 40,
+      "data-dock.js": 3,
+      "data-drone.js": 3,
+      "data-earphone.js": 45,
+      "data-ereader.js": 5,
+      "data-gamepad.js": 4,
+      "data-gimbal.js": 3,
+      "data-gpu.js": 209,
+      "data-handheld_console.js": 5,
+      "data-keyboard.js": 26,
+      "data-laptop.js": 40,
+      "data-lens.js": 3,
+      "data-mesh.js": 4,
+      "data-microphone.js": 4,
+      "data-mobile_storage.js": 3,
+      "data-monitor.js": 40,
+      "data-mouse.js": 7,
+      "data-nas.js": 5,
+      "data-pc_hardware.js": 5,
+      "data-projector.js": 5,
+      "data-racing_wheel.js": 4,
+      "data-robot.js": 40,
+      "data-robot_device.js": 4,
+      "data-router.js": 5,
+      "data-smart_device.js": 3,
+      "data-smartband.js": 3,
+      "data-smartglasses.js": 3,
+      "data-smartring.js": 3,
+      "data-soundbar.js": 3,
+      "data-speaker.js": 4,
+      "data-switch.js": 3,
+      "data-tablet.js": 24,
+      "data-tv.js": 24,
+      "data-vr.js": 3,
+      "data-watch.js": 26,
+      "data-webcam.js": 4,
+      "phone-data.js": 106
+    }
+  },
+  "frontend": {
+    "registered_categories": 44,
+    "groups": [
+      {
+        "name": "手机平板",
+        "cats": 3
+      },
+      {
+        "name": "电脑硬件",
+        "cats": 10
+      },
+      {
+        "name": "影音娱乐",
+        "cats": 7
+      },
+      {
+        "name": "影像拍摄",
+        "cats": 5
+      },
+      {
+        "name": "游戏设备",
+        "cats": 4
+      },
+      {
+        "name": "智能穿戴",
+        "cats": 6
+      },
+      {
+        "name": "网络存储",
+        "cats": 4
+      },
+      {
+        "name": "家居家电",
+        "cats": 5
+      }
+    ],
+    "ungrouped": [],
+    "grouped_not_registered": [],
+    "data_script_refs": 0,
+    "missing_script_refs": [
+      "data-ac.js",
+      "data-action_cam.js",
+      "data-ai_device.js",
+      "data-ar.js",
+      "data-camera.js",
+      "data-computer_system.js",
+      "data-console.js",
+      "data-cpu.js",
+      "data-dock.js",
+      "data-drone.js",
+      "data-earphone.js",
+      "data-ereader.js",
+      "data-gamepad.js",
+      "data-gimbal.js",
+      "data-gpu.js",
+      "data-handheld_console.js",
+      "data-keyboard.js",
+      "data-laptop.js",
+      "data-lens.js",
+      "data-mesh.js",
+      "data-microphone.js",
+      "data-mobile_storage.js",
+      "data-monitor.js",
+      "data-mouse.js",
+      "data-nas.js",
+      "data-pc_hardware.js",
+      "data-projector.js",
+      "data-racing_wheel.js",
+      "data-robot.js",
+      "data-robot_device.js",
+      "data-router.js",
+      "data-smart_device.js",
+      "data-smartband.js",
+      "data-smartglasses.js",
+      "data-smartring.js",
+      "data-soundbar.js",
+      "data-speaker.js",
+      "data-switch.js",
+      "data-tablet.js",
+      "data-tv.js",
+      "data-vr.js",
+      "data-watch.js",
+      "data-webcam.js",
+      "phone-data.js"
+    ],
+    "uses_pickPrice": 43,
+    "uses_pickSource": 43,
+    "hardcoded_price_min": 0,
+    "raw_yen_interpolation": 0,
+    "db_leaf_cats_not_exposed": [
+      "smartphone",
+      "smart_appliance",
+      "cleaning_robot",
+      "smartwatch",
+      "foldable_phone",
+      "gaming_phone"
+    ],
+    "items_reachable": 803,
+    "all_items_reachable": true
+  },
+  "issues": [
+    {
+      "level": "CRITICAL",
+      "msg": "data 文件未被引用 44 个"
+    },
+    {
+      "level": "WARNING",
+      "msg": "悬空 series_id 19 条"
+    },
+    {
+      "level": "WARNING",
+      "msg": "无价商品 15 款（已确认无国行报价）"
+    },
+    {
+      "level": "WARNING",
+      "msg": "空叶子品类 8 个"
+    },
+    {
+      "level": "WARNING",
+      "msg": "规格数值为 0 的字段 366 个"
+    },
+    {
+      "level": "WARNING",
+      "msg": "规格填充率<50% 的商品 7 款"
+    },
+    {
+      "level": "WARNING",
+      "msg": "无官网链接商品 501 款"
+    },
+    {
+      "level": "WARNING",
+      "msg": "标记待复核商品 51 款"
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "warning": 7
+  }
+}

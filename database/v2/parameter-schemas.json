@@ -1,0 +1,474 @@
+{
+  "_comment": "每个有 spec 的品类对应的标准参数字段集；其他品类通过 category→schema 继承最近祖先的 schema（见 parameter-key-mapping.json 的 schema_family 映射）。",
+  "action_cam": [
+    "resolution",
+    "fps",
+    "stabilization",
+    "waterproof",
+    "weight",
+    "battery",
+    "connectivity"
+  ],
+  "ai_device": [
+    "type",
+    "model",
+    "connectivity",
+    "battery",
+    "display",
+    "compatibility"
+  ],
+  "ar": [
+    "resolution",
+    "fov",
+    "weight",
+    "battery",
+    "display",
+    "connectivity",
+    "platform"
+  ],
+  "camera": [
+    "ibis",
+    "mount",
+    "resolution",
+    "screen",
+    "sensor",
+    "video",
+    "weight"
+  ],
+  "cleaning_robot": [
+    "base_station",
+    "battery",
+    "dustbin",
+    "height",
+    "hot_water_mop",
+    "lidar",
+    "obstacle_avoidance",
+    "suction",
+    "water_tank"
+  ],
+  "computer_system": [
+    "cpu",
+    "gpu",
+    "ram",
+    "storage",
+    "screen_size",
+    "screen_resolution",
+    "refresh_rate",
+    "weight",
+    "os",
+    "ports"
+  ],
+  "console": [
+    "cpu",
+    "gpu",
+    "storage",
+    "ram",
+    "resolution",
+    "fps",
+    "disc_drive",
+    "weight"
+  ],
+  "cpu": [
+    "base_clock",
+    "boost_clock",
+    "cache",
+    "cores",
+    "igpu",
+    "memory",
+    "pcie",
+    "process",
+    "socket",
+    "tdp"
+  ],
+  "dock": [
+    "ports",
+    "interface",
+    "power_delivery",
+    "compatibility",
+    "weight"
+  ],
+  "drone": [
+    "camera_resolution",
+    "flight_time",
+    "range",
+    "weight",
+    "gimbal",
+    "sensors",
+    "max_speed"
+  ],
+  "earphone": [
+    "battery",
+    "bluetooth",
+    "charging",
+    "codec",
+    "driver",
+    "noise",
+    "type",
+    "waterproof",
+    "weight"
+  ],
+  "ereader": [
+    "screen_size",
+    "resolution",
+    "panel",
+    "storage",
+    "battery",
+    "weight",
+    "waterproof",
+    "os"
+  ],
+  "foldable_phone": [
+    "body_height",
+    "body_material",
+    "body_thickness",
+    "body_weight",
+    "body_width",
+    "features_bluetooth",
+    "features_dual_sim",
+    "features_esim",
+    "features_expandable_storage",
+    "features_five_g",
+    "features_infrared",
+    "features_nfc",
+    "features_satellite",
+    "features_usb",
+    "features_waterproof",
+    "features_wifi",
+    "ram",
+    "screen_material",
+    "screen_refresh_rate",
+    "screen_resolution",
+    "screen_size",
+    "screen_type"
+  ],
+  "gamepad": [
+    "connectivity",
+    "compatibility",
+    "battery",
+    "weight",
+    "features"
+  ],
+  "gaming_phone": [
+    "body_height",
+    "body_material",
+    "body_thickness",
+    "body_weight",
+    "body_width",
+    "features_bluetooth",
+    "features_dual_sim",
+    "features_esim",
+    "features_expandable_storage",
+    "features_five_g",
+    "features_infrared",
+    "features_nfc",
+    "features_satellite",
+    "features_usb",
+    "features_waterproof",
+    "features_wifi",
+    "ram",
+    "screen_material",
+    "screen_refresh_rate",
+    "screen_resolution",
+    "screen_size",
+    "screen_type"
+  ],
+  "gimbal": [
+    "payload",
+    "weight",
+    "battery",
+    "axes",
+    "connectivity",
+    "compatibility"
+  ],
+  "gpu": [
+    "base_clock",
+    "boost_clock",
+    "bus_interface",
+    "direct_x",
+    "fp32",
+    "memory_bandwidth",
+    "memory_bus",
+    "process_size",
+    "rops",
+    "rt_cores",
+    "shaders",
+    "tdp",
+    "tensor_cores",
+    "tmus",
+    "vram",
+    "vram_type",
+    "vulkan"
+  ],
+  "handheld_console": [
+    "cpu",
+    "gpu",
+    "screen_size",
+    "resolution",
+    "refresh_rate",
+    "battery",
+    "storage",
+    "weight"
+  ],
+  "keyboard": [
+    "backlight",
+    "battery",
+    "connection",
+    "hotswap",
+    "keycap",
+    "layout",
+    "switch",
+    "weight"
+  ],
+  "laptop": [
+    "battery",
+    "cpu",
+    "os",
+    "ram",
+    "resolution",
+    "screen",
+    "storage",
+    "weight"
+  ],
+  "lens": [
+    "mount",
+    "focal_length",
+    "aperture",
+    "stabilization",
+    "weight",
+    "filter_thread"
+  ],
+  "mesh": [
+    "nodes",
+    "wifi_standard",
+    "speed",
+    "coverage",
+    "ports",
+    "cpu"
+  ],
+  "microphone": [
+    "pattern",
+    "connectivity",
+    "frequency_response",
+    "sample_rate",
+    "interface"
+  ],
+  "mobile_storage": [
+    "capacity",
+    "interface",
+    "read_speed",
+    "write_speed",
+    "form_factor",
+    "weight"
+  ],
+  "monitor": [
+    "brightness",
+    "contrast",
+    "hdr",
+    "panel",
+    "ports",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "speakers"
+  ],
+  "mouse": [
+    "battery",
+    "buttons",
+    "connection",
+    "dpi",
+    "polling_rate",
+    "sensor",
+    "shape",
+    "switch",
+    "weight"
+  ],
+  "nas": [
+    "bays",
+    "cpu",
+    "ram",
+    "max_capacity",
+    "ports",
+    "raid"
+  ],
+  "pc_hardware": [
+    "type",
+    "interface",
+    "power",
+    "compatibility",
+    "form_factor",
+    "weight"
+  ],
+  "projector": [
+    "brightness",
+    "resolution",
+    "contrast",
+    "throw_ratio",
+    "tech",
+    "os",
+    "speakers",
+    "ports"
+  ],
+  "racing_wheel": [
+    "compatibility",
+    "rotation",
+    "force_feedback",
+    "pedals",
+    "connectivity"
+  ],
+  "robot_device": [
+    "type",
+    "battery",
+    "connectivity",
+    "weight",
+    "sensors",
+    "navigation"
+  ],
+  "router": [
+    "wifi_standard",
+    "speed",
+    "bands",
+    "ports",
+    "cpu",
+    "ram",
+    "coverage"
+  ],
+  "smart_appliance": [
+    "area",
+    "cooling_capacity",
+    "energy_rating",
+    "heating_capacity",
+    "horsepower",
+    "noise",
+    "refrigerant",
+    "type",
+    "wifi"
+  ],
+  "smart_device": [
+    "type",
+    "connectivity",
+    "power",
+    "compatibility"
+  ],
+  "smartband": [
+    "screen",
+    "battery",
+    "health",
+    "gps",
+    "waterproof",
+    "weight",
+    "os"
+  ],
+  "smartglasses": [
+    "weight",
+    "battery",
+    "display",
+    "camera",
+    "microphone",
+    "connectivity"
+  ],
+  "smartphone": [
+    "body_height",
+    "body_material",
+    "body_thickness",
+    "body_weight",
+    "body_width",
+    "features_bluetooth",
+    "features_dual_sim",
+    "features_esim",
+    "features_expandable_storage",
+    "features_five_g",
+    "features_infrared",
+    "features_nfc",
+    "features_satellite",
+    "features_usb",
+    "features_waterproof",
+    "features_wifi",
+    "ram",
+    "screen_material",
+    "screen_refresh_rate",
+    "screen_resolution",
+    "screen_size",
+    "screen_type"
+  ],
+  "smartring": [
+    "battery",
+    "health",
+    "waterproof",
+    "weight",
+    "sensor",
+    "compatibility"
+  ],
+  "smartwatch": [
+    "battery",
+    "chip",
+    "gps",
+    "health",
+    "os",
+    "screen",
+    "size",
+    "waterproof",
+    "weight"
+  ],
+  "soundbar": [
+    "channels",
+    "power",
+    "connectivity",
+    "dolby",
+    "ports",
+    "subwoofer"
+  ],
+  "speaker": [
+    "power",
+    "driver",
+    "connectivity",
+    "battery",
+    "waterproof",
+    "weight"
+  ],
+  "switch": [
+    "ports",
+    "speed",
+    "managed",
+    "poe",
+    "layers"
+  ],
+  "tablet": [
+    "battery",
+    "chip",
+    "ram",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "storage",
+    "weight"
+  ],
+  "tv": [
+    "brightness",
+    "hdr",
+    "panel",
+    "ports",
+    "refresh_rate",
+    "resolution",
+    "size",
+    "sound",
+    "system"
+  ],
+  "vr": [
+    "resolution",
+    "refresh_rate",
+    "fov",
+    "tracking",
+    "weight",
+    "connectivity",
+    "platform"
+  ],
+  "webcam": [
+    "resolution",
+    "fps",
+    "fov",
+    "autofocus",
+    "microphone",
+    "interface",
+    "connection"
+  ]
+}

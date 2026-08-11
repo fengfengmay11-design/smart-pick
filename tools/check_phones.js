@@ -1,5 +1,5 @@
 const fs = require('fs');
-const code = fs.readFileSync('phone-data.js', 'utf8');
+const code = fs.readFileSync('data/phone-data.js', 'utf8');
 const fn = new Function(code + '\nreturn PHONE_DATA;');
 const DATA = fn();
 const NEW = [

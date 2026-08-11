@@ -1,0 +1,329 @@
+[
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "smart_device",
+    "model": "智能中控屏 Max",
+    "full_name": "小米智能中控屏 Max",
+    "status": "active",
+    "release_date": "2025-09-01",
+    "source_url": "https://m.zol.com.cn/article/10404158.html",
+    "tags": [
+      "智能家居",
+      "中控屏",
+      "米家"
+    ],
+    "specs": {
+      "type": "智能中控屏",
+      "connectivity": "Wi-Fi 双频(2.4G/5G) + 蓝牙 5.3 + 有线以太网",
+      "power": "电源底盒供电 (DC)",
+      "compatibility": "米家 / 内置 Mesh 2.0 网关"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2299
+      }
+    ]
+  },
+  {
+    "brand_id": "huawei",
+    "primary_category_id": "smart_device",
+    "model": "全屋智能中控屏 S2",
+    "full_name": "华为全屋智能中控屏 S2",
+    "status": "active",
+    "release_date": "2023-05-18",
+    "source_url": "https://consumer.huawei.com/cn/wholehome/control-panel-s2",
+    "tags": [
+      "智能家居",
+      "中控屏",
+      "全屋智能"
+    ],
+    "specs": {
+      "type": "智能中控屏",
+      "connectivity": "Wi-Fi + 蓝牙",
+      "power": "磁吸 Dock 充电",
+      "compatibility": "HarmonyOS 全屋智能生态"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "smart_device",
+    "model": "智能门锁 M30 Pro",
+    "full_name": "小米智能门锁 M30 Pro",
+    "status": "active",
+    "release_date": "2024-10-29",
+    "source_url": "https://www.mi.com/mi-doorlocks/m30-pro",
+    "tags": [
+      "智能门锁",
+      "安防",
+      "米家"
+    ],
+    "specs": {
+      "type": "智能门锁",
+      "connectivity": "Wi-Fi 2.4GHz + 蓝牙 5.3 + NFC",
+      "power": "5000mAh 可充电锂电池 + Type-C 应急供电",
+      "compatibility": "米家"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3499
+      }
+    ]
+  },
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "ai_device",
+    "model": "XIAOMI AI Glasses (M2442G1)",
+    "full_name": "小米 AI 眼镜",
+    "status": "active",
+    "release_date": "2025-06-26",
+    "source_url": "https://www.mi.com/shop/buy/detail?product_id=21399",
+    "tags": [
+      "AI",
+      "智能眼镜",
+      "翻译",
+      "便携"
+    ],
+    "specs": {
+      "type": "AI 智能眼镜",
+      "model": "XIAOMI AI Glasses",
+      "connectivity": "Wi-Fi 6 + 蓝牙 5.4",
+      "battery": {
+        "value": 263,
+        "unit": "mAh",
+        "display_value": "263mAh"
+      },
+      "display": "无内嵌屏幕（可选单色电致变色镜片）",
+      "compatibility": "Android 10+ / iOS 15+"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1699
+      }
+    ]
+  },
+  {
+    "brand_id": "iflytek",
+    "primary_category_id": "ai_device",
+    "model": "AI 学习机 T20 Pro",
+    "full_name": "科大讯飞 AI 学习机 T20 Pro",
+    "status": "active",
+    "release_date": "2023-02-06",
+    "source_url": "https://www.cnii.com.cn/rmydb/202302/t20230206_444490.html",
+    "tags": [
+      "AI",
+      "学习机",
+      "教育"
+    ],
+    "specs": {
+      "type": "AI 学习机",
+      "model": "T20 Pro",
+      "connectivity": "Wi-Fi + 蓝牙",
+      "battery": {
+        "value": 12000,
+        "unit": "mAh",
+        "display_value": "12000mAh"
+      },
+      "display": "13.3 英寸 2.5K(2560×1600) 90Hz 护眼屏",
+      "compatibility": "讯飞 AI 学习系统 / Android"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "rokid",
+    "primary_category_id": "ai_device",
+    "model": "Rokid Glasses",
+    "full_name": "Rokid Glasses 光波导 AI 智能眼镜",
+    "status": "active",
+    "release_date": "2025-09-01",
+    "source_url": "https://glasses.rokid.com/",
+    "tags": [
+      "AI",
+      "智能眼镜",
+      "AR",
+      "翻译"
+    ],
+    "specs": {
+      "type": "AI 智能眼镜",
+      "model": "Rokid Glasses",
+      "connectivity": "Wi-Fi 6 + 蓝牙 5.3",
+      "battery": {
+        "value": 210,
+        "unit": "mAh",
+        "display_value": "210mAh"
+      },
+      "display": "双目单色 Micro-LED (480×398) 衍射光波导",
+      "compatibility": "Android / iOS (Rokid App)"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3299
+      }
+    ]
+  },
+  {
+    "brand_id": "iflytek",
+    "primary_category_id": "ai_device",
+    "model": "翻译机 4.0 星火版",
+    "full_name": "科大讯飞翻译机 4.0 星火版",
+    "status": "active",
+    "release_date": "2024-10-01",
+    "source_url": "https://detail.zol.com.cn/cpu/index2125600.shtml",
+    "tags": [
+      "AI",
+      "翻译机",
+      "便携",
+      "出国"
+    ],
+    "specs": {
+      "type": "AI 翻译机",
+      "model": "翻译机 4.0 星火版",
+      "connectivity": "Wi-Fi + 蓝牙 + 蜂窝网络(SIM)",
+      "battery": {
+        "value": 2000,
+        "unit": "mAh",
+        "display_value": "2000mAh"
+      },
+      "display": "5.05 英寸高清翻译屏",
+      "compatibility": "Android / iOS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1999
+      }
+    ]
+  },
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "robot_device",
+    "model": "CyberDog 2 (MS2242CN)",
+    "full_name": "小米第二代仿生四足机器人 CyberDog 2",
+    "status": "active",
+    "release_date": "2023-08-14",
+    "source_url": "https://news.zol.com.cn/828/8289893.html",
+    "tags": [
+      "机器人",
+      "四足",
+      "AI",
+      "开发平台"
+    ],
+    "specs": {
+      "type": "四足机器人 / 机器狗",
+      "battery": {
+        "value": 4500,
+        "unit": "mAh",
+        "display_value": "4500mAh"
+      },
+      "connectivity": "Wi-Fi + 蓝牙 5.0",
+      "weight": {
+        "value": 8.9,
+        "unit": "kg",
+        "display_value": "8.9kg"
+      },
+      "sensors": "19 组传感器（激光雷达、ToF、触摸、摄像头、超声波等）",
+      "navigation": "AI 多模态融合感知 + 自研动态平衡算法 + SLAM"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "dreame",
+    "primary_category_id": "robot_device",
+    "model": "Roboticmower A1",
+    "full_name": "追觅智能割草机器人 A1",
+    "status": "active",
+    "release_date": "2023-09-01",
+    "source_url": "http://www.topnews.cn/news/145DDFE746BF4572",
+    "tags": [
+      "机器人",
+      "割草",
+      "无边界",
+      "庭院"
+    ],
+    "specs": {
+      "type": "割草机器人",
+      "battery": {
+        "value": 5,
+        "unit": "Ah",
+        "display_value": "5Ah"
+      },
+      "connectivity": "Wi-Fi + 蓝牙 + App",
+      "weight": {
+        "value": 12,
+        "unit": "kg",
+        "display_value": "12kg"
+      },
+      "sensors": "LiDAR（OmniSense 3D 超感系统）",
+      "navigation": "LiDAR 无边界导航 + 弓字形路径规划"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "ecovacs",
+    "primary_category_id": "robot_device",
+    "model": "GOAT G1",
+    "full_name": "科沃斯 GOAT G1 割草机器人",
+    "status": "active",
+    "release_date": "2023-03-01",
+    "source_url": "https://www.ecovacs.com/au/shop/goat-robotic-lawn-mower/goat-g1",
+    "tags": [
+      "机器人",
+      "割草",
+      "庭院",
+      "AI避障"
+    ],
+    "specs": {
+      "type": "割草机器人",
+      "battery": {
+        "value": 5200,
+        "unit": "mAh",
+        "display_value": "5200mAh"
+      },
+      "connectivity": "Wi-Fi + 蓝牙",
+      "weight": {
+        "value": 23.4,
+        "unit": "kg",
+        "display_value": "23.4kg"
+      },
+      "sensors": "RGBD 全景摄像头 + 鱼眼摄像头 + ToF 传感器",
+      "navigation": "TrueMapping 多融合定位(RTK+UWB+视觉) + AIVI 3D 避障"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "ecovacs",
+    "primary_category_id": "robot_device",
+    "model": "WINBOT W2 OMNI",
+    "full_name": "科沃斯窗宝 W2 OMNI 擦窗机器人",
+    "status": "active",
+    "release_date": "2023-12-27",
+    "source_url": "https://tech.sina.cn/mobile/xp/2023-12-28/detail-imzznsym8255671.d.html",
+    "tags": [
+      "机器人",
+      "擦窗",
+      "家庭",
+      "安防"
+    ],
+    "specs": {
+      "type": "擦窗机器人",
+      "battery": {
+        "value": 5200,
+        "unit": "mAh",
+        "display_value": "5200mAh"
+      },
+      "connectivity": "Wi-Fi + App",
+      "weight": {
+        "value": 1.6,
+        "unit": "kg",
+        "display_value": "1.6kg"
+      },
+      "sensors": "光耦边缘检测传感器 + 重力加速传感器",
+      "navigation": "WIN-SLAM 4.0 智能路径规划"
+    },
+    "prices": []
+  }
+]

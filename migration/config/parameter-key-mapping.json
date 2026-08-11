@@ -1,0 +1,27 @@
+{
+  "_comment": "字段规范与跨品类别名说明。本步骤不做破坏性字段重命名，仅在文档层记录规范。",
+  "canonical_field_convention": {
+    "numeric_computable": "使用 {value, unit, display_value, original_value} 结构化（如 screen_size, weight, vram）",
+    "non_numeric_or_compound": "保留为字符串（如 resolution \"2556×1179\"、screen \"14英寸 2.8K OLED\"、battery runtime \"6h+30h\"）"
+  },
+  "cross_category_aliases": {
+    "body_weight": "smartphone 用 body_weight；laptop/tablet/earphone 等用 weight；二者同义（产品重量），schema 各自独立，搜索层应按别名归一",
+    "screen": "laptop/tablet/smartwatch/camera/tv 用组合字符串 screen；smartphone 拆分为 screen_size/screen_resolution/screen_material/screen_type/screen_refresh_rate",
+    "battery": "语义分裂：laptop/cleaning_robot 的 battery = 容量(mAh) 结构化；earphone/keyboard/smartwatch/tablet 的 battery = 续航时长(字符串，如 6h+30h / 约10小时)，二者不同义，不强行统一"
+  },
+  "schema_family": {
+    "camera": "camera",
+    "cleaning_robot": "cleaning_robot",
+    "cpu": "cpu",
+    "earphone": "earphone",
+    "gpu": "gpu",
+    "keyboard": "keyboard",
+    "laptop": "laptop",
+    "monitor": "monitor",
+    "smart_appliance": "smart_appliance",
+    "smartphone": "smartphone",
+    "smartwatch": "smartwatch",
+    "tablet": "tablet",
+    "tv": "tv"
+  }
+}

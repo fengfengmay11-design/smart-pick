@@ -1,0 +1,554 @@
+[
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "smartband",
+    "model": "小米手环10",
+    "full_name": "小米手环10",
+    "status": "active",
+    "release_date": "2025-06-26",
+    "source_url": "https://smartwear.zol.com.cn/1003/10038966.html",
+    "tags": [
+      "长续航",
+      "健康监测",
+      "彩色陶瓷"
+    ],
+    "specs": {
+      "screen": "1.72英寸 AMOLED",
+      "battery": {
+        "value": 21,
+        "unit": "day",
+        "display_value": "21天"
+      },
+      "health": "心率/血氧/睡眠监测",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 15.95,
+        "unit": "g",
+        "display_value": "15.95g"
+      },
+      "os": "HyperOS 2.0"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 269
+      }
+    ]
+  },
+  {
+    "brand_id": "huawei",
+    "primary_category_id": "smartband",
+    "model": "华为手环10",
+    "full_name": "华为手环10",
+    "status": "active",
+    "release_date": "2025-03-13",
+    "source_url": "https://consumer.huawei.com/cn/wearables/band10/specs/",
+    "tags": [
+      "轻薄",
+      "健康监测",
+      "睡眠"
+    ],
+    "specs": {
+      "screen": "1.47英寸 AMOLED",
+      "battery": {
+        "value": 14,
+        "unit": "day",
+        "display_value": "14天"
+      },
+      "health": "心率/血氧/睡眠监测",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 15,
+        "unit": "g",
+        "display_value": "15g"
+      },
+      "os": "HarmonyOS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 269
+      }
+    ]
+  },
+  {
+    "brand_id": "honor",
+    "primary_category_id": "smartband",
+    "model": "荣耀手环10",
+    "full_name": "荣耀手环10",
+    "status": "active",
+    "release_date": "2025-04-01",
+    "source_url": "https://www.honor.com/cn/wearables/honor-band-10/spec",
+    "tags": [
+      "轻薄",
+      "心脏健康",
+      "长续航"
+    ],
+    "specs": {
+      "screen": "1.57英寸 AMOLED",
+      "battery": {
+        "value": 14,
+        "unit": "day",
+        "display_value": "14天"
+      },
+      "health": "心率/血氧/睡眠/心脏健康",
+      "gps": null,
+      "waterproof": "5ATM",
+      "weight": {
+        "value": 14.7,
+        "unit": "g",
+        "display_value": "14.7g"
+      },
+      "os": "RTOS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 249
+      }
+    ]
+  },
+  {
+    "brand_id": "oura",
+    "primary_category_id": "smartring",
+    "model": "Oura Ring 4",
+    "full_name": "Oura Ring 4",
+    "status": "active",
+    "release_date": "2024-10-01",
+    "source_url": "https://support.ouraring.com/hc/en-us/articles/33045011508115-Oura-Ring-4",
+    "tags": [
+      "睡眠监测",
+      "健康监测",
+      "钛金属"
+    ],
+    "specs": {
+      "battery": {
+        "value": 8,
+        "unit": "day",
+        "display_value": "5-8天"
+      },
+      "health": "心率/血氧/睡眠/体温/压力",
+      "waterproof": "100m",
+      "weight": {
+        "value": 5.2,
+        "unit": "g",
+        "display_value": "3.3-5.2g"
+      },
+      "sensor": "Smart Sensing（红光/红外血氧、绿光/红外PPG心率、体温、加速度）",
+      "compatibility": "iOS/Android"
+    },
+    "prices": []
+  },
+  {
+    "brand_id": "samsung",
+    "primary_category_id": "smartring",
+    "model": "Samsung Galaxy Ring",
+    "full_name": "Samsung Galaxy Ring",
+    "status": "active",
+    "release_date": "2024-11-08",
+    "source_url": "https://biz.zol.com.cn/886/8866501.html",
+    "tags": [
+      "健康监测",
+      "睡眠",
+      "钛金属"
+    ],
+    "specs": {
+      "battery": {
+        "value": 7,
+        "unit": "day",
+        "display_value": "7天"
+      },
+      "health": "心率/血氧/睡眠/体温",
+      "waterproof": "10ATM",
+      "weight": {
+        "value": 3,
+        "unit": "g",
+        "display_value": "2.3-3.0g"
+      },
+      "sensor": "皮肤温度/加速度/BioActive生物传感器",
+      "compatibility": "Android/Samsung Health"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 2999
+      }
+    ]
+  },
+  {
+    "brand_id": "amazfit",
+    "primary_category_id": "smartring",
+    "model": "Amazfit Helio Ring",
+    "full_name": "Amazfit Helio Ring",
+    "status": "active",
+    "release_date": "2024-05-01",
+    "source_url": "https://in.amazfit.com/products/amazfit-helio-ring",
+    "tags": [
+      "睡眠",
+      "恢复",
+      "钛金属"
+    ],
+    "specs": {
+      "battery": {
+        "value": 4,
+        "unit": "day",
+        "display_value": "4天"
+      },
+      "health": "心率/血氧/压力/皮肤温度",
+      "waterproof": "10ATM",
+      "weight": {
+        "value": 3.75,
+        "unit": "g",
+        "display_value": "3.65-3.82g"
+      },
+      "sensor": "BioTracker PPG心率/温度/EDA/加速度",
+      "compatibility": "Android 7.0+/iOS 14.0+"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1199
+      }
+    ]
+  },
+  {
+    "brand_id": "xiaomi",
+    "primary_category_id": "smartglasses",
+    "model": "小米AI眼镜",
+    "full_name": "小米AI眼镜",
+    "status": "active",
+    "release_date": "2025-06-26",
+    "source_url": "https://www.mi.com/prod/xiaomi-ai-glasses",
+    "tags": [
+      "AI助手",
+      "第一视角拍摄",
+      "电致变色"
+    ],
+    "specs": {
+      "weight": {
+        "value": 40,
+        "unit": "g",
+        "display_value": "40g"
+      },
+      "battery": {
+        "value": 8.6,
+        "unit": "h",
+        "display_value": "8.6小时"
+      },
+      "display": null,
+      "camera": "1200万像素 / 2K@30fps",
+      "microphone": "5麦克风阵列（含骨传导）",
+      "connectivity": "Wi-Fi 6 / 蓝牙5.4"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1999
+      }
+    ]
+  },
+  {
+    "brand_id": "rokid",
+    "primary_category_id": "smartglasses",
+    "model": "Rokid Glasses",
+    "full_name": "Rokid Glasses",
+    "status": "active",
+    "release_date": "2025-06-01",
+    "source_url": "https://glasses.rokid.com/",
+    "tags": [
+      "AI助手",
+      "拍摄",
+      "翻译"
+    ],
+    "specs": {
+      "weight": {
+        "value": 49,
+        "unit": "g",
+        "display_value": "49g"
+      },
+      "battery": {
+        "value": 12,
+        "unit": "h",
+        "display_value": "12小时"
+      },
+      "display": null,
+      "camera": "1200万像素（索尼IMX681）",
+      "microphone": "4麦克风阵列",
+      "connectivity": "Wi-Fi 6 / 蓝牙5.3"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3558
+      }
+    ]
+  },
+  {
+    "brand_id": "thunderbird",
+    "primary_category_id": "smartglasses",
+    "model": "雷鸟V3 AI拍摄眼镜",
+    "full_name": "雷鸟V3 AI拍摄眼镜",
+    "status": "active",
+    "release_date": "2025-01-10",
+    "source_url": "https://tech.cnr.cn/techxp/20250108/t20250108_527034395.shtml",
+    "tags": [
+      "AI拍摄",
+      "第一视角",
+      "翻译"
+    ],
+    "specs": {
+      "weight": {
+        "value": 39,
+        "unit": "g",
+        "display_value": "39g"
+      },
+      "battery": {
+        "value": 30,
+        "unit": "h",
+        "display_value": "30小时(含充电盒)"
+      },
+      "display": null,
+      "camera": "索尼IMX681 / 4K照片",
+      "microphone": "3麦克风阵列",
+      "connectivity": "Wi-Fi / 蓝牙5.x"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1799
+      }
+    ]
+  },
+  {
+    "brand_id": "pico",
+    "primary_category_id": "vr",
+    "model": "PICO 4 Ultra",
+    "full_name": "PICO 4 Ultra",
+    "status": "active",
+    "release_date": "2024-09-02",
+    "source_url": "https://www.picoxr.com/global/products/pico4-ultra",
+    "tags": [
+      "混合现实",
+      "高刷",
+      "Wi-Fi7"
+    ],
+    "specs": {
+      "resolution": "2160×2160/眼",
+      "refresh_rate": {
+        "value": 90,
+        "unit": "Hz",
+        "display_value": "90Hz"
+      },
+      "fov": {
+        "value": 105,
+        "unit": "°",
+        "display_value": "105°"
+      },
+      "tracking": "6DoF 内向外",
+      "weight": {
+        "value": 580,
+        "unit": "g",
+        "display_value": "580g"
+      },
+      "connectivity": "Wi-Fi 7 / 蓝牙5.x / USB-C",
+      "platform": "PICO OS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 5599
+      }
+    ]
+  },
+  {
+    "brand_id": "meta",
+    "primary_category_id": "vr",
+    "model": "Meta Quest 3",
+    "full_name": "Meta Quest 3",
+    "status": "active",
+    "release_date": "2023-10-10",
+    "source_url": "https://www.specifications.global/zh-CN/glasses-xr/Meta-Quest-3-512GB-VR-Headset-899-00583-01?view=markdown",
+    "tags": [
+      "混合现实",
+      "高刷",
+      "空间计算"
+    ],
+    "specs": {
+      "resolution": "2064×2208/眼",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "120Hz"
+      },
+      "fov": {
+        "value": 110,
+        "unit": "°",
+        "display_value": "110°(水平)"
+      },
+      "tracking": "6DoF 内向外",
+      "weight": {
+        "value": 515,
+        "unit": "g",
+        "display_value": "515g"
+      },
+      "connectivity": "Wi-Fi 6E / 蓝牙5.2 / USB-C",
+      "platform": "Meta Horizon OS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 4498
+      }
+    ]
+  },
+  {
+    "brand_id": "apple",
+    "primary_category_id": "vr",
+    "model": "Apple Vision Pro",
+    "full_name": "Apple Vision Pro",
+    "status": "active",
+    "release_date": "2024-06-28",
+    "source_url": "https://apple.com.cn/apple-vision-pro/specs/",
+    "tags": [
+      "空间计算",
+      "Micro-OLED",
+      "眼动追踪"
+    ],
+    "specs": {
+      "resolution": "2300万像素（双眼）",
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz",
+        "display_value": "90-120Hz"
+      },
+      "fov": null,
+      "tracking": "6DoF 眼动+手部追踪",
+      "weight": {
+        "value": 750,
+        "unit": "g",
+        "display_value": "750-800g"
+      },
+      "connectivity": "Wi-Fi / 蓝牙5.3",
+      "platform": "visionOS"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 29999
+      }
+    ]
+  },
+  {
+    "brand_id": "xreal",
+    "primary_category_id": "ar",
+    "model": "XREAL One Pro",
+    "full_name": "XREAL One Pro",
+    "status": "active",
+    "release_date": "2025-03-01",
+    "source_url": "https://jingfen.jd.com/detail/WaTLAKMymP2L73m4bVSQL7aIegMIlT_sweEZ0b5w0bKIFNm4k.html",
+    "tags": [
+      "巨幕观影",
+      "原生3DoF",
+      "便携"
+    ],
+    "specs": {
+      "resolution": "1920×1080/眼",
+      "fov": {
+        "value": 57,
+        "unit": "°",
+        "display_value": "57°"
+      },
+      "weight": {
+        "value": 80,
+        "unit": "g",
+        "display_value": "约80g"
+      },
+      "battery": null,
+      "display": "Sony Micro-OLED 0.55″",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "XREAL / Nebula"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 4299
+      }
+    ]
+  },
+  {
+    "brand_id": "thunderbird",
+    "primary_category_id": "ar",
+    "model": "雷鸟 Air 3s",
+    "full_name": "雷鸟 Air 3s",
+    "status": "active",
+    "release_date": "2025-05-27",
+    "source_url": "https://www.ithome.com/0/858/852.htm",
+    "tags": [
+      "巨幕观影",
+      "BirdBath",
+      "便携"
+    ],
+    "specs": {
+      "resolution": "1920×1080",
+      "fov": {
+        "value": 46,
+        "unit": "°",
+        "display_value": "46°"
+      },
+      "weight": {
+        "value": 76,
+        "unit": "g",
+        "display_value": "76g"
+      },
+      "battery": null,
+      "display": "Micro-OLED（第5.5代）",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "雷鸟OS / RayNeo"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 1599
+      }
+    ]
+  },
+  {
+    "brand_id": "xreal",
+    "primary_category_id": "ar",
+    "model": "XREAL One",
+    "full_name": "XREAL One",
+    "status": "active",
+    "release_date": "2024-12-10",
+    "source_url": "https://www.ithome.com/0/816/676.htm",
+    "tags": [
+      "巨幕观影",
+      "原生3DoF",
+      "便携"
+    ],
+    "specs": {
+      "resolution": "1920×1080/眼",
+      "fov": {
+        "value": 50,
+        "unit": "°",
+        "display_value": "50°"
+      },
+      "weight": {
+        "value": 84,
+        "unit": "g",
+        "display_value": "84g"
+      },
+      "battery": null,
+      "display": "Sony Micro-OLED 0.68″",
+      "connectivity": "USB-C (DisplayPort)",
+      "platform": "XREAL / Nebula"
+    },
+    "prices": [
+      {
+        "source": "jd",
+        "price": 3299
+      }
+    ]
+  }
+]

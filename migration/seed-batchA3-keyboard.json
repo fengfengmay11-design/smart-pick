@@ -1,0 +1,174 @@
+[
+  {
+    "brand_id": "razer",
+    "primary_category_id": "keyboard",
+    "model": "BlackWidow V4 75%",
+    "full_name": "Razer BlackWidow V4 75%",
+    "status": "active",
+    "release_date": "2023-09-01",
+    "series_id": "blackwidow",
+    "generation": "V4",
+    "aliases": ["BlackWidow V4 75%", "黑寡妇V4 75%", "BW V4 75%"],
+    "tags": ["gaming", "mechanical", "hotswap", "rgb", "gasket", "75%"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/DhQHD2dUd6yA2zpAiqP8A2zT4QQmqQ_3as8DQU6NxI25SH3QB.html",
+    "specs": {
+      "backlight": "RGB (Razer Chroma)",
+      "battery": null,
+      "connection": "有线 (可拆卸 Type-C)",
+      "hotswap": true,
+      "keycap": "双色注塑键帽",
+      "layout": "75% (81键)",
+      "switch": "Razer 机械轴 (绿轴/黄轴可选, 热插拔)",
+      "weight": null
+    },
+    "variants": [
+      { "variant_name": "白色", "color": "White", "status": "active" },
+      { "variant_name": "黑色", "color": "Black", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 979, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "cherry",
+    "primary_category_id": "keyboard",
+    "model": "MX 8.2 XAGA",
+    "full_name": "CHERRY MX 8.2 XAGA",
+    "status": "active",
+    "release_date": "2023-05-01",
+    "series_id": "mx8",
+    "generation": "8.2",
+    "aliases": ["MX 8.2 XAGA", "樱桃 8.2 Xaga", "MX8.2"],
+    "tags": ["wireless", "tri-mode", "mechanical", "hotswap", "rgb"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/Wl4yEImv2rafIxeaargEfIxeaargE4_3QWdizJbT0yI0BYMS1.html",
+    "specs": {
+      "backlight": "RGB",
+      "battery": null,
+      "connection": "三模 (2.4G/蓝牙5.0/有线)",
+      "hotswap": true,
+      "keycap": "三透 PBT 双色注塑键帽",
+      "layout": "87键 (TKL)",
+      "switch": "CHERRY MX2A 机械轴 (红轴等)",
+      "weight": null
+    },
+    "variants": [
+      { "variant_name": "曜石黑", "color": "Obsidian Black", "status": "active" },
+      { "variant_name": "宝可梦耿鬼联名", "color": "Gengar", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1399, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "corsair",
+    "primary_category_id": "keyboard",
+    "model": "K70 MAX",
+    "full_name": "Corsair K70 MAX",
+    "status": "active",
+    "release_date": "2023-09-01",
+    "series_id": "k70",
+    "generation": "MAX",
+    "aliases": ["K70 MAX", "K70 MAX RGB", "海盗船K70 MAX"],
+    "tags": ["gaming", "magnetic", "rgb", "full_size", "aluminum", "8000hz"],
+    "data_source": "manufacturer",
+    "source_url": "https://www.corsair.com/us/tw/explorer/gamer/keyboards/corsair-k70-max-everything-you-need-to-kno/",
+    "specs": {
+      "backlight": "RGB (逐键可编程)",
+      "battery": null,
+      "connection": "有线 USB Type-C (可拆卸)",
+      "hotswap": false,
+      "keycap": "PBT 双色注塑 (1.5mm)",
+      "layout": "全尺寸 (104键)",
+      "switch": "CORSAIR MGX 磁轴 (线性, 45g, 触发点0.4-3.6mm可调)",
+      "weight": { "value": 1390, "unit": "g", "display_value": "1390g", "original_value": "1.39kg" }
+    },
+    "variants": [
+      { "variant_name": "灰黑", "color": "Space Gray", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1899, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "hhkb",
+    "primary_category_id": "keyboard",
+    "model": "Professional HYBRID Type-S",
+    "full_name": "HHKB Professional HYBRID Type-S",
+    "status": "active",
+    "release_date": "2023-06-01",
+    "series_id": "professional",
+    "generation": "HYBRID Type-S",
+    "aliases": ["HHKB HYBRID Type-S", "HHKB 静电容", "HYBRID Type-S"],
+    "tags": ["capacitive", "compact", "wireless", "silent", "mac", "60%"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/wAQEbDC7ZWCwD1Ycu5FtwD1Ycu5FtQ_3ioM2Cq6vBEDMPUDVS.html",
+    "specs": {
+      "backlight": "无背光",
+      "battery": null,
+      "connection": "双模 (蓝牙4.2 + 有线 Type-C)",
+      "hotswap": false,
+      "keycap": "PBT 热升华键帽",
+      "layout": "60键 (HHKB配列)",
+      "switch": "静电容轴 (Type-S 静音)",
+      "weight": { "value": 540, "unit": "g", "display_value": "540g", "original_value": "540g(不含电池)" }
+    },
+    "variants": [
+      { "variant_name": "白色有刻", "color": "White Legend", "status": "active" },
+      { "variant_name": "黑色无刻", "color": "Black Blank", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 2399, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "steelseries",
+    "primary_category_id": "keyboard",
+    "model": "Apex Pro TKL (Gen3)",
+    "full_name": "SteelSeries Apex Pro TKL (Gen3)",
+    "status": "active",
+    "release_date": "2023-10-01",
+    "series_id": "apex",
+    "generation": "Pro TKL Gen3",
+    "aliases": ["Apex Pro TKL Gen3", "赛睿 Apex Pro TKL", "Apex Pro TKL"],
+    "tags": ["gaming", "magnetic", "rgb", "rapid_trigger", "tkl"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/IwQNjSHBiNu3HsDmnSAM3HsDmnSAMQ_cIOf4YJfN3YSwYyMkJ.html",
+    "specs": {
+      "backlight": "RGB (动态可调)",
+      "battery": null,
+      "connection": "有线 USB Type-C",
+      "hotswap": false,
+      "keycap": "ABS 键帽",
+      "layout": "TKL (84键)",
+      "switch": "OmniPoint 3.0 磁轴 (0.1-4.0mm 可调, Rapid Trigger)",
+      "weight": null
+    },
+    "variants": [
+      { "variant_name": "月曜白 (有线)", "color": "White", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1849, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "ikbc",
+    "primary_category_id": "keyboard",
+    "model": "C87",
+    "full_name": "iKBC C87",
+    "status": "active",
+    "release_date": "2020-01-01",
+    "series_id": "c",
+    "generation": "C87",
+    "aliases": ["C87", "ikbc C87", "C87 机械键盘"],
+    "tags": ["office", "mechanical", "budget", "pbt", "tkl"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/ra4Pac2yJfhEclRMPaTpEclRMPaTp4_3df4Cvoiv2PPiwjTKt.html",
+    "specs": {
+      "backlight": "无背光 (预留灯位)",
+      "battery": null,
+      "connection": "有线 USB",
+      "hotswap": false,
+      "keycap": "PBT 双色注塑键帽",
+      "layout": "87键 (TKL)",
+      "switch": "CHERRY MX 原厂轴 (黑/青/茶/红/银)",
+      "weight": null
+    },
+    "variants": [
+      { "variant_name": "黑色 青轴", "color": "Black/Blue", "status": "active" },
+      { "variant_name": "黑色 红轴", "color": "Black/Red", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 218, "price_type": "current" } ]
+  }
+]

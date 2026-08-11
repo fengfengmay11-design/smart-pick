@@ -1,0 +1,178 @@
+[
+  {
+    "brand_id": "amazfit",
+    "primary_category_id": "smartwatch",
+    "model": "Balance",
+    "full_name": "Amazfit Balance",
+    "status": "active",
+    "release_date": "2023-09-01",
+    "series_id": "balance",
+    "generation": "1",
+    "aliases": ["Amazfit Balance", "华米 Balance", "Balance"],
+    "tags": ["sports", "health", "long_battery", "amoled", "dual_band_gps"],
+    "data_source": "web",
+    "source_url": "https://m.smzdm.com/p/129031499/",
+    "specs": {
+      "size": { "value": 46, "unit": "mm", "display_value": "46mm", "original_value": "46mm" },
+      "screen": "1.5英寸 AMOLED 480×480",
+      "battery": { "value": 14, "unit": "天", "display_value": "14天", "original_value": "14天" },
+      "gps": "双频 GPS (GPS/GLONASS/Galileo/QZSS)",
+      "health": "心率/血氧/睡眠/压力/身体成分",
+      "weight": { "value": 35, "unit": "g", "display_value": "35g", "original_value": "35g" },
+      "os": "Zepp OS 3.0",
+      "waterproof": "5ATM"
+    },
+    "variants": [
+      { "variant_name": "午夜印象", "color": "Midnight", "status": "active" },
+      { "variant_name": "沙石黑", "color": "Sandstone", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1299, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "fitbit",
+    "primary_category_id": "smartwatch",
+    "model": "Charge 6",
+    "full_name": "Fitbit Charge 6",
+    "status": "active",
+    "release_date": "2023-09-28",
+    "series_id": "charge",
+    "generation": "6",
+    "aliases": ["Fitbit Charge 6", "Charge 6", "Fitbit 充电手环6"],
+    "tags": ["fitness_band", "health", "gps", "ecg"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/1Z44nJW5pEKdJo0ayU5FdJhj1BtS24_3fgGnd48MW3ScNgPwN.html",
+    "specs": {
+      "screen": "1.04英寸 AMOLED",
+      "battery": { "value": 7, "unit": "天", "display_value": "7天", "original_value": "7天" },
+      "gps": "内置 GPS (GPS/GLONASS/Galileo)",
+      "health": "心率/血氧/ECG/压力/皮肤温度",
+      "weight": { "value": 37, "unit": "g", "display_value": "37g", "original_value": "37g(含表带)" },
+      "os": "Fitbit OS",
+      "waterproof": "5ATM"
+    },
+    "variants": [
+      { "variant_name": "黑曜石", "color": "Obsidian", "status": "active" },
+      { "variant_name": "珊瑚色", "color": "Coral", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 957, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "coros",
+    "primary_category_id": "smartwatch",
+    "model": "Pace 3",
+    "full_name": "COROS Pace 3",
+    "status": "active",
+    "release_date": "2023-08-01",
+    "series_id": "pace",
+    "generation": "3",
+    "aliases": ["COROS Pace 3", "高驰 Pace 3", "Pace3"],
+    "tags": ["sports", "running", "dual_band_gps", "long_battery"],
+    "data_source": "web",
+    "source_url": "https://jingfen.jd.com/detail/Z5JIYS9QGTfNC6NrCoHBux4W_3NM15bg0mG7Zem8bim.html",
+    "specs": {
+      "size": { "value": 42, "unit": "mm", "display_value": "42mm", "original_value": "42mm" },
+      "screen": "1.2英寸 MIP 半透反射 LCD 触控",
+      "battery": { "value": 24, "unit": "天", "display_value": "24天", "original_value": "24天(日常)/38h(GPS)" },
+      "gps": "双频 GPS (GPS/北斗/Galileo/QZSS)",
+      "health": "心率/血氧/训练负荷/睡眠",
+      "weight": { "value": 30, "unit": "g", "display_value": "30g", "original_value": "30g(含织物表带)" },
+      "os": "COROS OS",
+      "waterproof": "5ATM"
+    },
+    "variants": [
+      { "variant_name": "黑色硅胶", "color": "Black Silicone", "status": "active" },
+      { "variant_name": "白色织物", "color": "White Fabric", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1699, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "oneplus",
+    "primary_category_id": "smartwatch",
+    "model": "Watch 2",
+    "full_name": "OnePlus Watch 2",
+    "status": "active",
+    "release_date": "2024-02-26",
+    "series_id": "watch",
+    "generation": "2",
+    "aliases": ["OnePlus Watch 2", "一加手表2", "Watch 2"],
+    "tags": ["smartwatch", "esim", "wear_os", "flagship"],
+    "data_source": "web",
+    "source_url": "https://www.smzdm.com/p/148842934/",
+    "specs": {
+      "size": { "value": 46, "unit": "mm", "display_value": "46mm", "original_value": "46mm" },
+      "screen": "1.43英寸 AMOLED 466×466",
+      "battery": { "value": 100, "unit": "hour", "display_value": "100h", "original_value": "100小时(全智能)/12天(省电)" },
+      "gps": "双频 GPS",
+      "health": "心率/血氧/睡眠/压力/体温",
+      "weight": { "value": 49, "unit": "g", "display_value": "49g", "original_value": "49g" },
+      "os": "ColorOS Watch 6.0 (Wear OS 4 内核)",
+      "chip": "Snapdragon W5 Gen1 + BES2700",
+      "waterproof": "5ATM + IP68"
+    },
+    "variants": [
+      { "variant_name": "陨石黑", "color": "Obsidian Black", "status": "active" },
+      { "variant_name": "星云绿", "color": "Stellar Green", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1599, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "oppo",
+    "primary_category_id": "smartwatch",
+    "model": "Watch X",
+    "full_name": "OPPO Watch X",
+    "status": "active",
+    "release_date": "2024-05-01",
+    "series_id": "watch_x",
+    "generation": "X",
+    "aliases": ["OPPO Watch X", "OPPO手表X", "Watch X"],
+    "tags": ["smartwatch", "esim", "wear_os", "flagship"],
+    "data_source": "web",
+    "source_url": "https://detail.zol.com.cn/series/827/10856653_1.html",
+    "specs": {
+      "size": { "value": 46, "unit": "mm", "display_value": "46mm", "original_value": "46mm" },
+      "screen": "1.43英寸 LTPO AMOLED 466×466",
+      "battery": { "value": 100, "unit": "hour", "display_value": "100h", "original_value": "100小时(全智能)/12天(省电)" },
+      "gps": "双频 GPS",
+      "health": "心率/血氧/睡眠/鼾症评估",
+      "weight": { "value": 49, "unit": "g", "display_value": "49g", "original_value": "49g" },
+      "os": "ColorOS Watch (Wear OS 4 内核)",
+      "chip": "Snapdragon W5 + BES2700",
+      "waterproof": "5ATM + IP68"
+    },
+    "variants": [
+      { "variant_name": "星夜飞行", "color": "Mars Brown", "status": "active" },
+      { "variant_name": "冰川岩灰", "color": "Glacier Grey", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1799, "price_type": "current" } ]
+  },
+  {
+    "brand_id": "vivo",
+    "primary_category_id": "smartwatch",
+    "model": "Watch 3",
+    "full_name": "vivo Watch 3",
+    "status": "active",
+    "release_date": "2023-11-13",
+    "series_id": "watch_3",
+    "generation": "3",
+    "aliases": ["vivo Watch 3", "vivo手表3", "Watch 3"],
+    "tags": ["smartwatch", "esim", "bluetooth", "blueos"],
+    "data_source": "manufacturer",
+    "source_url": "https://m.vivo.com.cn/vivo/param/vivowatch3",
+    "specs": {
+      "size": { "value": 46, "unit": "mm", "display_value": "46mm", "original_value": "46mm" },
+      "screen": "1.43英寸 AMOLED 466×466",
+      "battery": { "value": 16, "unit": "天", "display_value": "16天", "original_value": "16天(蓝牙)/8天(eSIM)" },
+      "gps": "GPS (GPS/北斗/GLONASS/Galileo/QZSS)",
+      "health": "心率/血氧/睡眠/压力",
+      "weight": { "value": 36, "unit": "g", "display_value": "36g", "original_value": "36g(不含表带)" },
+      "os": "BlueOS (蓝河)",
+      "chip": "BES2700BP + 展锐通信芯片",
+      "waterproof": "5ATM"
+    },
+    "variants": [
+      { "variant_name": "辰夜黑 软胶", "color": "Midnight Black", "status": "active" },
+      { "variant_name": "月光白", "color": "Moonlight White", "status": "active" }
+    ],
+    "prices": [ { "source": "jd", "price": 1099, "price_type": "current" } ]
+  }
+]

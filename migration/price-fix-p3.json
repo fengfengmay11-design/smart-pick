@@ -1,0 +1,58 @@
+[
+  {
+    "product_id": "huawei-s2",
+    "price": 7399,
+    "source": "official",
+    "source_url": "https://consumer.huawei.com/cn/wholehome/business-product/",
+    "note": "华为官网标价 ¥7399（华为全屋智能 智能中控屏 S2）"
+  },
+  {
+    "product_id": "iflytek-ai-t20-pro",
+    "price": 8999,
+    "source": "ref",
+    "source_url": "https://detail.zol.com.cn/Mills/index1941367.shtml",
+    "note": "ZOL 参考报价 ¥8999（13.3英寸/8+512G 标准配置），商家报价区间 ¥7884–9313"
+  },
+  {
+    "product_id": "xiaomi-cyberdog-2-ms2242cn",
+    "price": 12999,
+    "source": "ref",
+    "source_url": "https://mashdigi.com/xiaomi-continues-to-enter-the-bionic-robot-market-launching-the-second-generation-bionic-quadruped-robot-cyberdog-2-that-is-more-like-a-dog/",
+    "note": "小米官方发布价 ¥12999（限量开发者产品，需资质审核，部分渠道已停售）"
+  },
+  {
+    "product_id": "ecovacs-winbot-w2-omni",
+    "price": 2039,
+    "source": "ref",
+    "source_url": "https://jd.zol.com.cn/1121/11214643.html",
+    "note": "国行对应型号为窗宝 W2S 全能基站版（型号 WG893-12）；京东商城售价约 ¥2039，促销到手约 ¥1670。精确 'W2 OMNI' 命名海外版无国行 RMB 价"
+  },
+  {
+    "product_id": "fanatec-clubsport-dd",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无官方行货渠道（Fanatec 授权经销商列表不含中国大陆）；海外定价 EU €599.95 / US $699.99。注：真实 ClubSport DD 为 15Nm，用户描述 8Nm 实为 CSL DD"
+  },
+  {
+    "product_id": "fanatec-clubsport-dd-2",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无官方行货渠道；海外定价 EU €799.95 / US $899.99。注：真实 ClubSport DD+ 为 18Nm"
+  },
+  {
+    "product_id": "ecovacs-goat-g1",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内无行货；科沃斯德国官网 G1 已下架（推荐 A1600 €1499），历史报告价约 €1099，美版 $2149"
+  },
+  {
+    "product_id": "dreame-roboticmower-a1",
+    "price": null,
+    "source": null,
+    "source_url": null,
+    "note": "国内未上市行货（追觅中国官网在售 A3 系列，A1 仅海外销售，约 $899–1999）"
+  }
+]
