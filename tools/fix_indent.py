@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, '.')
 from gen_phone_append import NEW_PHONES, to_js
 
-PATH = "phone-data.js"
+PATH = "data/phone-data.js"
 with open(PATH, "r", encoding="utf-8") as f:
     lines = f.readlines()
 

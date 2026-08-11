@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10 06:53:33",
+  "generated_at": "2026-08-11 03:18:33",
   "scale": {
     "products": 803,
     "brands": 141,
@@ -570,8 +570,53 @@
     ],
     "ungrouped": [],
     "grouped_not_registered": [],
-    "data_script_refs": 44,
-    "missing_script_refs": [],
+    "data_script_refs": 0,
+    "missing_script_refs": [
+      "data-ac.js",
+      "data-action_cam.js",
+      "data-ai_device.js",
+      "data-ar.js",
+      "data-camera.js",
+      "data-computer_system.js",
+      "data-console.js",
+      "data-cpu.js",
+      "data-dock.js",
+      "data-drone.js",
+      "data-earphone.js",
+      "data-ereader.js",
+      "data-gamepad.js",
+      "data-gimbal.js",
+      "data-gpu.js",
+      "data-handheld_console.js",
+      "data-keyboard.js",
+      "data-laptop.js",
+      "data-lens.js",
+      "data-mesh.js",
+      "data-microphone.js",
+      "data-mobile_storage.js",
+      "data-monitor.js",
+      "data-mouse.js",
+      "data-nas.js",
+      "data-pc_hardware.js",
+      "data-projector.js",
+      "data-racing_wheel.js",
+      "data-robot.js",
+      "data-robot_device.js",
+      "data-router.js",
+      "data-smart_device.js",
+      "data-smartband.js",
+      "data-smartglasses.js",
+      "data-smartring.js",
+      "data-soundbar.js",
+      "data-speaker.js",
+      "data-switch.js",
+      "data-tablet.js",
+      "data-tv.js",
+      "data-vr.js",
+      "data-watch.js",
+      "data-webcam.js",
+      "phone-data.js"
+    ],
     "uses_pickPrice": 43,
     "uses_pickSource": 43,
     "hardcoded_price_min": 0,
@@ -588,6 +633,10 @@
     "all_items_reachable": true
   },
   "issues": [
+    {
+      "level": "CRITICAL",
+      "msg": "data 文件未被引用 44 个"
+    },
     {
       "level": "WARNING",
       "msg": "悬空 series_id 19 条"
@@ -618,7 +667,7 @@
     }
   ],
   "summary": {
-    "critical": 0,
+    "critical": 1,
     "warning": 7
   }
 }

@@ -13,9 +13,9 @@ const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 
 const sandbox = {};
 vm.createContext(sandbox);
-const files = fs.readdirSync(ROOT).filter(f => /^(data-.*|phone-data)\.js$/.test(f)).sort();
+const files = fs.readdirSync(path.join(ROOT, 'data')).filter(f => /^(data-.*|phone-data)\.js$/.test(f)).sort();
 for (const f of files) {
-  const src = fs.readFileSync(path.join(ROOT, f), 'utf8');
+  const src = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8');
   vm.runInContext(src.replace(/^\s*const\s/m, 'var '), sandbox, { timeout: 8000 });
 }
 const start = html.indexOf('function pickPrice(');

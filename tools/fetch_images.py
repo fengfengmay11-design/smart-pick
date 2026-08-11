@@ -15,10 +15,10 @@
   python tools/fetch_images.py
 
   # 只补某个文件
-  python tools/fetch_images.py --only phone-data.js
+  python tools/fetch_images.py --only data/phone-data.js
 
   # 覆盖重下（比如某张图抓错了）
-  python tools/fetch_images.py --only data-tv.js --force
+  python tools/fetch_images.py --only data/data-tv.js --force
 
 依赖：仅标准库。
 """
@@ -38,20 +38,21 @@ IMG_DIR = os.path.join(ROOT, "images")
 
 # 数据文件 -> (常量名, 搜索词后缀)
 # 后缀用来消歧义，避免搜「小米 15」搜出一堆无关图
+# 注意：数据文件已收进 data/ 子目录，键名带 data/ 前缀
 SOURCES = {
-    "phone-data.js":    ("PHONE_DATA",    "手机 官方图"),
-    "data-tablet.js":   ("TABLET_DATA",   "平板电脑 官方图"),
-    "data-camera.js":   ("CAMERA_DATA",   "相机 官方图"),
-    "data-tv.js":       ("TV_DATA",       "电视 官方图"),
-    "data-watch.js":    ("WATCH_DATA",    "智能手表 官方图"),
-    "data-keyboard.js": ("KEYBOARD_DATA", "键盘 官方图"),
-    "data-gpu.js":      ("GPU_DATA",      "显卡 官方图"),
-    "data-cpu.js":      ("CPU_DATA",      "处理器 盒装图"),
-    "data-laptop.js":   ("LAPTOP_DATA",   "笔记本电脑 官方图"),
-    "data-ac.js":       ("AC_DATA",       "空调 官方图"),
-    "data-robot.js":    ("ROBOT_DATA",    "扫地机器人 官方图"),
-    "data-earphone.js": ("EARPHONE_DATA", "耳机 官方图"),
-    "data-monitor.js":  ("MONITOR_DATA",  "显示器 官方图"),
+    "data/phone-data.js":    ("PHONE_DATA",    "手机 官方图"),
+    "data/data-tablet.js":   ("TABLET_DATA",   "平板电脑 官方图"),
+    "data/data-camera.js":   ("CAMERA_DATA",   "相机 官方图"),
+    "data/data-tv.js":       ("TV_DATA",       "电视 官方图"),
+    "data/data-watch.js":    ("WATCH_DATA",    "智能手表 官方图"),
+    "data/data-keyboard.js": ("KEYBOARD_DATA", "键盘 官方图"),
+    "data/data-gpu.js":      ("GPU_DATA",      "显卡 官方图"),
+    "data/data-cpu.js":      ("CPU_DATA",      "处理器 盒装图"),
+    "data/data-laptop.js":   ("LAPTOP_DATA",   "笔记本电脑 官方图"),
+    "data/data-ac.js":       ("AC_DATA",       "空调 官方图"),
+    "data/data-robot.js":    ("ROBOT_DATA",    "扫地机器人 官方图"),
+    "data/data-earphone.js": ("EARPHONE_DATA", "耳机 官方图"),
+    "data/data-monitor.js":  ("MONITOR_DATA",  "显示器 官方图"),
 }
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
@@ -61,7 +62,7 @@ MIN_BYTES = 2000  # 小于这个基本是占位图/错误页，判为失败
 def load_items(filename, const_name):
     """用 node 求值数据文件，拿到 [{id, brand, model}, ...]。
     比正则解析可靠——各数据文件的 JS 风格并不统一。"""
-    path = os.path.join(ROOT, filename)
+    path = os.path.join(ROOT, "data", filename)
     if not os.path.exists(path):
         return []
     script = (

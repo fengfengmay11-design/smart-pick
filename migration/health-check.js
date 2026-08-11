@@ -151,10 +151,10 @@ R.provenance = {
 
 // ---------- 7. 构建产物 ----------
 const sb = {}; vm.createContext(sb);
-const dataFiles = fs.readdirSync(ROOT).filter(f => /^(data-.*|phone-data)\.js$/.test(f)).sort();
+const dataFiles = fs.readdirSync(path.join(ROOT, 'data')).filter(f => /^(data-.*|phone-data)\.js$/.test(f)).sort();
 let buildTotal = 0; const perFile = {};
 for (const f of dataFiles) {
-  const src = fs.readFileSync(path.join(ROOT, f), 'utf8');
+  const src = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8');
   const m = src.match(/^\s*(?:const|var|let)\s+([A-Z0-9_]+)\s*=/m);
   vm.runInContext(src.replace(/^\s*const\s/m, 'var '), sb);
   const n = Array.isArray(sb[m[1]]) ? sb[m[1]].length : 0;

@@ -44,12 +44,16 @@ all.forEach((prod, i) => {
   (groups[oldCat] = groups[oldCat] || []).push(prod);
 });
 
+// 构建产物统一输出到 data/ 子目录（根目录保持整洁）
+const DATA_DIR = path.join(ROOT, 'data');
+if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
 let total = 0;
 for (const [key, arr] of Object.entries(groups)) {
   const fm = FILEMAP[key];
   const [file, varName] = fm || [`data-${key}.js`, key.toUpperCase() + '_DATA'];
   const content = `// AUTO-GENERATED from database/v2 via migration/build-data-js.js — DO NOT EDIT BY HAND\nconst ${varName} = ${JSON.stringify(arr, null, 2)};\n`;
-  fs.writeFileSync(path.join(ROOT, file), content);
+  fs.writeFileSync(path.join(DATA_DIR, file), content);
   total += arr.length;
   console.log(`  ${file.padEnd(22)} ${varName.padEnd(16)} ${arr.length} 款`);
 }

@@ -400,7 +400,7 @@ def to_js(d):
 
 
 def main():
-    path = "phone-data.js"
+    path = "data/phone-data.js"
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
 

@@ -13,7 +13,7 @@ const jread = f => JSON.parse(read(f));
 const jwrite = (f, o) => fs.writeFileSync(f, JSON.stringify(o, null, 2));
 
 function loadData(file) {
-  const code = read(path.join(ROOT, file));
+  const code = read(path.join(ROOT, 'data', file));
   const m = code.match(/const\s+\w+_DATA\s*=\s*(\[[\s\S]*?\];)/);
   if (!m) throw new Error('无法解析数组: ' + file);
   return eval(m[1].replace(/;\s*$/, ''));
