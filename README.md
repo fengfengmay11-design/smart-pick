@@ -2,17 +2,16 @@
 
 > 一个面向普通消费者的 **AI 驱动选购决策工具**：不再让用户对着一堆参数表发愁，而是把"我该买哪个"这个真实决策问题，交给一个可解释、可自评的推荐引擎来回答。
 
-覆盖 **13 大品类、659 款真实产品**，纯前端零后端即可运行。
+覆盖 **44 大品类、803 款真实产品**，纯前端零后端即可运行。
 
 <p align="center">
   <a href="https://fengfengmay11-design.github.io/smart-pick/"><b>🔗 在线体验 Demo (GitHub Pages)</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://5d8be35e22104c7d896fd65b42dc23b1.tc-nanjing.share.codebuddy.woa.com">备用链接</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/品类-13%20大类-4f46e5" alt="品类" />
-  <img src="https://img.shields.io/badge/产品-659%20款-6366f1" alt="产品数" />
+  <img src="https://img.shields.io/badge/品类-44%20大类-4f46e5" alt="品类" />
+  <img src="https://img.shields.io/badge/产品-803%20款-6366f1" alt="产品数" />
+  <img src="https://img.shields.io/badge/价格-1753%20条%20联网核真-10b981" alt="价格" />
   <img src="https://img.shields.io/badge/AI-可解释推荐引擎-8b5cf6" alt="AI" />
   <img src="https://img.shields.io/badge/技术栈-原生JS%20零依赖-0ea5e9" alt="技术栈" />
   <img src="https://img.shields.io/badge/License-MIT-10b981" alt="License" />
@@ -81,23 +80,26 @@
 
 ## 四、功能一览
 
-- **13 大品类对比**：手机 / 显卡 / CPU / 笔记本 / 空调 / 扫地机器人 / 耳机 / 显示器 / 平板 / 相机 / 电视 / 智能手表 / 机械键盘，共 659 款真实型号
-- **多品类通用框架**：通过品类配置对象抽象数据访问，新增品类无需改动渲染逻辑
-- **智能对比**：最多 3 款并排，按品类拆分维度、自动高亮差异、生成结论
-- **AI 自然语言选购**：一句话描述需求，AI 解析意图并从全库推荐（详见上文）
+- **44 大品类对比**：手机 / 平板 / 电子书 / 笔记本 / CPU / 显卡 / 显示器 / 键盘 / 鼠标 / 耳机 / 电视 / 投影仪 / 相机 / 镜头 / 运动相机 / 无人机 / 游戏主机 / 掌机 / 手柄 / 智能手表 / 手环 / 戒指 / VR / AR / 路由器 / NAS / 空调 / 扫地机器人 / 服务机器人 等，共 803 款真实型号
+- **两级轻量分类导航**：一级横向 Tab（8 大类）+ 当前组具体品类 Chip，分类区仅占 2 行高度
+- **多品类通用框架**：通过品类配置对象抽象数据访问，新增品类零改动渲染逻辑
+- **智能对比**：最多 3 款并排，按品类拆分维度、自动高亮差异、生成结论（去"性价比"偏置，按系统/防水/屏幕/芯片等真实维度给建议）
+- **AI 自然语言选购**：一句话描述需求，AI 解析意图并从全库推荐；输入框/快捷词/说明文案随所选品类动态联动（详见上文）
 - **AI 帮我选**：在已选产品内做可解释推荐（详见上文）
 - **动态筛选与排序**：筛选条件按品类自动切换（价格 / 品牌 / 参数区间）
-- **多平台比价**：展示不同电商渠道到手价
+- **多平台比价**：展示不同电商渠道到手价（京东 / 拼多多 / 参考价，取最低真实价）
 - **移动端优先**：430px 移动容器，毛玻璃导航 + 渐变按钮的现代 UI
 
 ## 五、技术栈与架构
 
 - **纯前端单页应用**：原生 HTML/CSS/JavaScript，零框架、零依赖，开箱即用
-- **数据分层**：`index.html`（视图 + 逻辑）+ 13 个品类数据文件（`phone-data.js` + 12 个 `data-*.js`）
-- **品类抽象层**：`CATEGORIES` 配置对象 + `cat()` 统一数据访问入口，解耦渲染与数据
+- **数据分层**：`index.html`（视图 + 逻辑）+ 44 个品类数据文件（`phone-data.js` + 43 个 `data-*.js`，由 `migration/build-data-js.js` 从 V2 规范化数据库自动生成）
+- **V2 规范化数据库**（`database/v2/`）：products / brands / categories / specs / variants / prices / tags 分层 JSON，配 `validate-db.js` 全库校验（0 致命错误）+ `db-adapter.js` 等价性验证
+- **品类抽象层**：`CATEGORIES` 配置对象 + `cat()` 统一数据访问入口，解耦渲染与数据；44 品类零硬编码分支
+- **AI 品类预设体系**：`AI_PRESETS` 44 品类专属文案 + 8 分组 fallback + 通用兜底，新增品类零成本接入
 - **推荐引擎**：`generateHelpResult()` —— 打分 / 归一化 / 置信度 / 质量自评
 - **AI 意图理解后端（阶段二，可选）**：Python FastAPI + 大模型（DeepSeek，OpenAI 兼容），见 `server/`
-- **部署**：前端任意静态托管即可（CloudStudio / GitHub Pages / Vercel）
+- **部署**：前端任意静态托管即可（GitHub Pages / CloudStudio / Vercel）
 
 ### 分层架构：LLM 负责「理解」，引擎负责「决策」
 
@@ -223,4 +225,4 @@ git push -u origin main
 
 AI 产品方向，关注 **AI 能力在真实消费场景的落地** 与 **AI 输出的质量评估**。本项目从一个"参数对比页"出发，重点探索了如何把 AI 做成**可解释、可自评、值得信任**的决策助手——而不只是一个更花哨的信息展示工具。
 
-> 项目从手机对比起步，逐步演进为覆盖 13 大品类的通用决策框架，核心是产品定位的持续迭代与 AI 能力的深度设计。
+> 项目从手机对比起步，逐步演进为覆盖 44 大品类、803 款产品的通用决策框架，核心是产品定位的持续迭代与 AI 能力的深度设计。
